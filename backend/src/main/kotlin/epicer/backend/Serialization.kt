@@ -1,106 +1,36 @@
 package epicer.backend
 
-import epicer.backend.db.mapping.UserEntity
 import epicer.backend.model.InterfaceUsersFunctions
-import epicer.backend.model.Priority
-import epicer.backend.model.Task
-import epicer.backend.model.TaskRepository
+import epicer.backend.model.UserModel
 import io.ktor.http.*
-import io.ktor.serialization.kotlinx.json.*
-import io.ktor.server.application.*
-import io.ktor.server.plugins.calllogging.*
-import io.ktor.server.plugins.contentnegotiation.*
-import io.ktor.server.request.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
-import org.jetbrains.exposed.sql.*
-import org.slf4j.event.*
-
-import io.ktor.http.*
-import io.ktor.serialization.*
+import io.ktor.serialization.JsonConvertException
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.contentnegotiation.*
-import io.ktor.server.request.*
+import io.ktor.server.request.receive
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-fun Application.configureSerialization(repository: TaskRepository, usersFunctions: InterfaceUsersFunctions) {
+fun Application.configureSerialization(usersFunctions: InterfaceUsersFunctions) {
     install(ContentNegotiation) {
         json()
     }
     routing {
-        route("/tasks") {
+        route("/users") {
             get {
-                val tasks = repository.allTasks()
-                call.respond(tasks)
+                val users = usersFunctions.allUsers()
+                call.respond(HttpStatusCode.OK, users)
             }
-
-            get("/byName/{taskName}") {
-                val name = call.parameters["taskName"]
-                if (name == null) {
-                    call.respond(HttpStatusCode.BadRequest)
-                    return@get
-                }
-                val task = repository.taskByName(name)
-                if (task == null) {
-                    call.respond(HttpStatusCode.NotFound)
-                    return@get
-                }
-                call.respond(task)
-            }
-
-            get("/byPriority/{priority}") {
-                val priorityAsText = call.parameters["priority"]
-                if (priorityAsText == null) {
-                    call.respond(HttpStatusCode.BadRequest)
-                    return@get
-                }
-                try {
-                    val priority = Priority.valueOf(priorityAsText)
-                    val tasks = repository.tasksByPriority(priority)
-
-
-                    if (tasks.isEmpty()) {
-                        call.respond(HttpStatusCode.NotFound)
-                        return@get
-                    }
-                    call.respond(tasks)
-                } catch (ex: IllegalArgumentException) {
-                    call.respond(HttpStatusCode.BadRequest)
-                }
-            }
-
             post {
                 try {
-                    val task = call.receive<Task>()
-                    repository.addTask(task)
+                    val newUser = call.receive<UserModel>()
+                    usersFunctions.createUser(newUser)
                     call.respond(HttpStatusCode.NoContent)
                 } catch (ex: IllegalStateException) {
                     call.respond(HttpStatusCode.BadRequest)
                 } catch (ex: JsonConvertException) {
                     call.respond(HttpStatusCode.BadRequest)
                 }
-            }
-
-            delete("/{taskName}") {
-                val name = call.parameters["taskName"]
-                if (name == null) {
-                    call.respond(HttpStatusCode.BadRequest)
-                    return@delete
-                }
-                if (repository.removeTask(name)) {
-                    call.respond(HttpStatusCode.NoContent)
-                } else {
-                    call.respond(HttpStatusCode.NotFound)
-                }
-            }
-        }
-        route("/users") {
-            get {
-//                val users = usersFunctions.allUsers()
-//                call.respond(HttpStatusCode.OK, users)
-                call.respond()
             }
         }
     }

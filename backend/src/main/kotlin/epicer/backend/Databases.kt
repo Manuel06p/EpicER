@@ -1,9 +1,10 @@
 package epicer.backend
 
-import epicer.backend.db.mapping.RecipesTable
-import epicer.backend.db.mapping.UsersTable
+import epicer.backend.db.tables.*
 import io.ktor.server.application.*
+import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.sql.*
+import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransaction
 import org.jetbrains.exposed.sql.transactions.transaction
 
 fun Application.configureDatabases() {
@@ -19,3 +20,6 @@ fun Application.configureDatabases() {
         SchemaUtils.create(RecipesTable)
     }
 }
+
+suspend fun <T> suspendTransaction(block: Transaction.() -> T): T =
+    newSuspendedTransaction(Dispatchers.IO, statement = block)

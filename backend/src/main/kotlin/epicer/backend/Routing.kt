@@ -14,7 +14,7 @@ import org.slf4j.event.*
 
 fun Application.configureRouting() {
     routing {
-        post("/createTables") {
+        post("/") {
 
         }
     }

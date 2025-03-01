@@ -3,6 +3,7 @@ val h2_version: String by project
 val kotlin_version: String by project
 val logback_version: String by project
 val mariadb_jdbc_version: String by project
+val jbcrypt_version: String by project
 
 plugins {
     kotlin("jvm") version "2.1.10"
@@ -40,4 +41,5 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
     implementation("org.mariadb.jdbc:mariadb-java-client:$mariadb_jdbc_version")
+    implementation("org.mindrot:jbcrypt:$jbcrypt_version")
 }
