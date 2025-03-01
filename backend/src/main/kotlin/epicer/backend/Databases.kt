@@ -1,17 +1,21 @@
 package epicer.backend
 
-import io.ktor.http.*
-import io.ktor.serialization.kotlinx.json.*
+import epicer.backend.db.mapping.RecipesTable
+import epicer.backend.db.mapping.UsersTable
 import io.ktor.server.application.*
-import io.ktor.server.plugins.calllogging.*
-import io.ktor.server.plugins.contentnegotiation.*
-import io.ktor.server.request.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import org.jetbrains.exposed.sql.*
-import org.slf4j.event.*
+import org.jetbrains.exposed.sql.transactions.transaction
 
 fun Application.configureDatabases() {
+    Database.connect(
+        "jdbc:mariadb://192.168.1.100:3306/epicer",
+        driver = "org.mariadb.jdbc.Driver",
+        user = "epicer",
+        password = "epicerpass"
+    )
 
-
+    transaction {
+        SchemaUtils.create(UsersTable)
+        SchemaUtils.create(RecipesTable)
+    }
 }

@@ -4,6 +4,20 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/backend" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/frontend" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/frontend" />
+            <option value="$PROJECT_DIR$/frontend/site" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>

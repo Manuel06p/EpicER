@@ -9,12 +9,13 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.jetbrains.exposed.sql.*
+import org.jetbrains.exposed.sql.transactions.transaction
 import org.slf4j.event.*
 
 fun Application.configureRouting() {
     routing {
-        get("/") {
-            call.respondText("Hello World!")
+        post("/createTables") {
+
         }
     }
 }
