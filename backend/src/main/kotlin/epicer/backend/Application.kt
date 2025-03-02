@@ -1,11 +1,8 @@
 package epicer.backend
 
 
-import epicer.backend.model.InterfaceUsersFunctions
-import epicer.backend.model.UsersFunctions
+import epicer.backend.services.UsersService
 import io.ktor.server.application.*
-import org.jetbrains.exposed.sql.SchemaUtils
-import org.jetbrains.exposed.sql.transactions.transaction
 
 fun main(args: Array<String>) {
     io.ktor.server.netty.EngineMain.main(args)
@@ -13,7 +10,7 @@ fun main(args: Array<String>) {
 
 fun Application.module() {
     configureDatabases()
-    configureSerialization(usersFunctions = UsersFunctions())
+    configureSerialization(userService = UsersService())
 
     configureMonitoring()
     configureRouting()

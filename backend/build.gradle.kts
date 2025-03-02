@@ -4,6 +4,7 @@ val kotlin_version: String by project
 val logback_version: String by project
 val mariadb_jdbc_version: String by project
 val jbcrypt_version: String by project
+val kotlinx_datetime_version: String by project
 
 plugins {
     kotlin("jvm") version "2.1.10"
@@ -30,6 +31,7 @@ dependencies {
     implementation("io.ktor:ktor-server-core")
     implementation("io.ktor:ktor-server-content-negotiation")
     implementation("io.ktor:ktor-serialization-kotlinx-json")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:$kotlinx_datetime_version")
     implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
     implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
     implementation("com.h2database:h2:$h2_version")
@@ -42,4 +44,5 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
     implementation("org.mariadb.jdbc:mariadb-java-client:$mariadb_jdbc_version")
     implementation("org.mindrot:jbcrypt:$jbcrypt_version")
+    implementation("org.jetbrains.exposed:exposed-java-time:$exposed_version")
 }
