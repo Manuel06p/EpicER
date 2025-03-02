@@ -1,7 +1,7 @@
 package epicer.backend
 
-import epicer.backend.models.RecipesTable
-import epicer.backend.models.UsersTable
+import epicer.backend.model.RecipesTable
+import epicer.backend.model.UsersTable
 import io.ktor.server.application.*
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.sql.*

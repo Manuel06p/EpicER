@@ -1,9 +1,6 @@
-package epicer.backend.services.interfaces
+package epicer.backend.service.`interface`
 
-import epicer.backend.dto.BaseUserDTO
-import epicer.backend.dto.NewUserDTO
-import epicer.backend.dto.UpdateUserDTO
-import epicer.backend.dto.UserDTO
+import epicer.backend.dto.user.*
 
 interface IUserService {
     suspend fun getUsers(): List<UserDTO>

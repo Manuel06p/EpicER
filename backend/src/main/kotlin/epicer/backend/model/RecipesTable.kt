@@ -1,4 +1,4 @@
-package epicer.backend.models
+package epicer.backend.model
 
 import org.jetbrains.exposed.dao.id.IntIdTable
 import org.jetbrains.exposed.sql.ReferenceOption

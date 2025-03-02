@@ -1,11 +1,8 @@
-package epicer.backend.services
+package epicer.backend.service
 
-import epicer.backend.dto.BaseUserDTO
-import epicer.backend.services.interfaces.IUserService
-import epicer.backend.dto.NewUserDTO
-import epicer.backend.dto.UpdateUserDTO
-import epicer.backend.dto.UserDTO
-import epicer.backend.models.UsersTable
+import epicer.backend.dto.user.*
+import epicer.backend.service.`interface`.IUserService
+import epicer.backend.model.UsersTable
 import epicer.backend.suspendTransaction
 import epicer.backend.utils.hashPassword
 import kotlinx.datetime.toKotlinLocalDateTime

@@ -1,8 +1,7 @@
 package epicer.backend
 
-import epicer.backend.dto.NewUserDTO
-import epicer.backend.dto.UpdateUserDTO
-import epicer.backend.services.interfaces.IUserService
+import epicer.backend.dto.user.*
+import epicer.backend.service.`interface`.IUserService
 import io.ktor.http.*
 import io.ktor.serialization.*
 import io.ktor.serialization.kotlinx.json.*

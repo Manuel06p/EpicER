@@ -1,7 +1,7 @@
 package epicer.backend
 
 
-import epicer.backend.services.UsersService
+import epicer.backend.service.UsersService
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
