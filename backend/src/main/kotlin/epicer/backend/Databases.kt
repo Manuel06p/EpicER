@@ -1,5 +1,8 @@
 package epicer.backend
 
+import epicer.backend.model.ImagesTable
+import epicer.backend.model.IngredientsRecipesTable
+import epicer.backend.model.IngredientsTable
 import epicer.backend.model.RecipesTable
 import epicer.backend.model.UsersTable
 import io.ktor.server.application.*
@@ -18,7 +21,10 @@ fun Application.configureDatabases() {
 
     transaction {
         SchemaUtils.create(UsersTable)
+        SchemaUtils.create(ImagesTable)
         SchemaUtils.create(RecipesTable)
+        SchemaUtils.create(IngredientsTable)
+        SchemaUtils.create(IngredientsRecipesTable)
     }
 }
 
