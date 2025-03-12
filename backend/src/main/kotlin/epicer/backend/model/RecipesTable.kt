@@ -9,4 +9,5 @@ object RecipesTable : IntIdTable("recipes") {
     val portions = integer("portions").nullable()
     val is_public = bool("is_public")
     val owner = reference("owner", UsersTable, onUpdate = ReferenceOption.CASCADE, onDelete = ReferenceOption.CASCADE)
+    val image = reference("image", ImagesTable, onUpdate = ReferenceOption.CASCADE, onDelete = ReferenceOption.SET_NULL).nullable()
 }

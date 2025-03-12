@@ -1,9 +1,16 @@
 package epicer.backend
 
 import epicer.backend.model.ImagesTable
+import epicer.backend.model.IngredientsInRecipesTable
 import epicer.backend.model.IngredientsRecipesTable
 import epicer.backend.model.IngredientsTable
 import epicer.backend.model.RecipesTable
+import epicer.backend.model.SectionsTable
+import epicer.backend.model.StepsImages
+import epicer.backend.model.StepsIngredientsInRecipe
+import epicer.backend.model.StepsTable
+import epicer.backend.model.UnitTypesTable
+import epicer.backend.model.UnitsTable
 import epicer.backend.model.UsersTable
 import io.ktor.server.application.*
 import kotlinx.coroutines.Dispatchers
@@ -25,6 +32,13 @@ fun Application.configureDatabases() {
         SchemaUtils.create(RecipesTable)
         SchemaUtils.create(IngredientsTable)
         SchemaUtils.create(IngredientsRecipesTable)
+        SchemaUtils.create(UnitTypesTable)
+        SchemaUtils.create(UnitsTable)
+        SchemaUtils.create(IngredientsInRecipesTable)
+        SchemaUtils.create(SectionsTable)
+        SchemaUtils.create(StepsTable)
+        SchemaUtils.create(StepsIngredientsInRecipe)
+        SchemaUtils.create(StepsImages)
     }
 }
 
