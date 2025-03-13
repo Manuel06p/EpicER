@@ -5,9 +5,9 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class UserDTO(
+    val id: Int,
     val username: String,
     val hashed_password: String,
     val name: String,
-    val is_admin: Boolean,
     val created_at: LocalDateTime,
 )

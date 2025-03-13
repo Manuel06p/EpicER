@@ -3,8 +3,7 @@ package epicer.backend.dto.user
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class NewUserDTO(
+data class LoginUserDTO (
     val username: String,
     val password: String,
-    val name: String,
 )

@@ -7,5 +7,4 @@ data class UpdateUserDTO(
     val username: String?,
     val password: String?,
     val name: String?,
-    val is_admin: Boolean?,
 )

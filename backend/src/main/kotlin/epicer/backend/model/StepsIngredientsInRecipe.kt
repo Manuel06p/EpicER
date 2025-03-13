@@ -1,9 +1,6 @@
 package epicer.backend.model
 
-import epicer.backend.model.IngredientsRecipesTable.ingredient
-import epicer.backend.model.IngredientsRecipesTable.recipe
 import org.jetbrains.exposed.dao.id.CompositeIdTable
-import org.jetbrains.exposed.dao.id.IntIdTable
 import org.jetbrains.exposed.sql.ReferenceOption
 
 object StepsIngredientsInRecipe: CompositeIdTable("steps_ingredients_in_recipe") {

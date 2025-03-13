@@ -5,6 +5,7 @@ val logback_version: String by project
 val mariadb_jdbc_version: String by project
 val jbcrypt_version: String by project
 val kotlinx_datetime_version: String by project
+val ktor_version: String by project
 
 plugins {
     kotlin("jvm") version "2.1.10"
@@ -45,4 +46,7 @@ dependencies {
     implementation("org.mariadb.jdbc:mariadb-java-client:$mariadb_jdbc_version")
     implementation("org.mindrot:jbcrypt:$jbcrypt_version")
     implementation("org.jetbrains.exposed:exposed-java-time:$exposed_version")
+    implementation("io.ktor:ktor-server-auth:$ktor_version")
+    implementation("io.ktor:ktor-server-auth-jwt:$ktor_version")
+    testImplementation("io.ktor:ktor-server-test-host-jvm:3.1.1")
 }

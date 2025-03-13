@@ -1,7 +1,6 @@
 package epicer.backend.model
 
 import org.jetbrains.exposed.dao.id.CompositeIdTable
-import org.jetbrains.exposed.dao.id.IntIdTable
 import org.jetbrains.exposed.sql.ReferenceOption
 
 object IngredientsRecipesTable : CompositeIdTable("ingredients_recipes") {
