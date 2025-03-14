@@ -8,6 +8,7 @@ import io.ktor.serialization.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
+import io.ktor.server.auth.jwt.JWTPrincipal
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
@@ -19,50 +20,52 @@ fun Application.configureSerialization(userService: IUserService) {
 
     }
     routing {
-        route("/users") {
+        route("/me") {
             authenticate("auth-jwt") {
-                withRoles("administrator") {
-                    get {
-                        val users = userService.getUsers()
-                        call.respond(HttpStatusCode.OK, users)
-                    }
+                route("/user") {
+                    get() {
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
 
-                    get("/{username}") {
-                        val username = call.parameters["username"]  // Get the username from the path parameter
-                        if (username != null) {
-                            println(username)
-                            val user = userService.getFullUserByUsername(username)  // Get user by username
-                            if (user != null) {
-                                print(user)
-                                call.respond(HttpStatusCode.OK, user)
+                        if (userId != null) {
+                            val baseUserDTO = userService.getBaseUserById(userId)
+                            if (baseUserDTO != null) {
+                                call.respond(HttpStatusCode.OK, baseUserDTO)
                             } else {
                                 call.respond(HttpStatusCode.NotFound, "User not found")
                             }
-                        } else {
-                            call.respond(HttpStatusCode.BadRequest, "Username parameter is missing")
+                        }
+                    }
+                    patch() {
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                        val updateUser = call.receive<UpdateUserDTO>()
+
+                        if (userId != null) {
+                            userService.updateUserById(userId, updateUser)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                    }
+                    delete() {
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                        if (userId != null) {
+                            userService.deleteUserById(userId)
+                            call.respond(HttpStatusCode.NoContent)
                         }
                     }
                 }
 
-                delete("/{username}") {
-                    val username = call.parameters["username"]
-                    if (username != null) {
-                        userService.deleteUser(username)
-                        call.respond(HttpStatusCode.NoContent)
-                    } else {
-                        call.respond(HttpStatusCode.BadRequest, "Username parameter is missing")
-                    }
-                }
-
-                patch("/{username}") {
-                    val updateUsername = call.parameters["username"]
-                    val updateUser = call.receive<UpdateUserDTO>()
-                    println(updateUser)
-                    if (updateUsername != null) {
-                        userService.updateUser(updateUsername, updateUser)
-                        call.respond(HttpStatusCode.NoContent)
-                    } else {
-                        call.respond(HttpStatusCode.BadRequest, "Username parameter is missing")
+            }
+        }
+        route("/users") {
+            authenticate("auth-jwt") {
+                withRoles("administrator") {
+                    get {
+                        val users = userService.getBaseUsers()
+                        call.respond(HttpStatusCode.OK, users)
                     }
                 }
             }

@@ -7,5 +7,6 @@ import kotlinx.serialization.Serializable
 data class BaseUserDTO(
     val username: String,
     val name: String,
+    val roles: List<String>,
     val created_at: LocalDateTime,
 )
