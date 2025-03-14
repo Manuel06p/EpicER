@@ -1,59 +1,122 @@
 package epicer.backend
 
+import com.auth0.jwt.JWT
+import com.auth0.jwt.algorithms.Algorithm
+import epicer.backend.dto.user.LoginUserDTO
+import epicer.backend.dto.user.NewUserDTO
+import epicer.backend.dto.user.UpdateUserDTO
+import epicer.backend.service.`interface`.IUserService
+import epicer.backend.utils.verifyPassword
 import io.ktor.http.*
+import io.ktor.serialization.JsonConvertException
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.auth.AuthenticationChecked
+import io.ktor.server.auth.authenticate
 import io.ktor.server.auth.jwt.JWTPrincipal
 import io.ktor.server.auth.principal
 import io.ktor.server.plugins.calllogging.*
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
+import io.ktor.server.response.respond
 import io.ktor.server.routing.*
 import io.ktor.util.pipeline.PipelineContext
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.slf4j.event.*
+import java.util.Date
 
 
-fun Application.configureRouting() {
+fun Application.configureRouting(userService: IUserService) {
     routing {
-        post("/") {
+        post("/login") {
+            val loginUserDTO = call.receive<LoginUserDTO>()
 
+            val user = userService.getFullUserByUsername(loginUserDTO.username)
+
+            // Controllo credenziali
+            if (user == null) {
+                call.respond(HttpStatusCode.Unauthorized, "User doesn't exist")
+                return@post
+            } else if (!verifyPassword(loginUserDTO.password, user.hashed_password)) {
+                call.respond(HttpStatusCode.Unauthorized, "Wrong password")
+                return@post
+            } else {
+                // Generazione JWT
+                val token = JWT.create()
+                    .withIssuer("epicer-backend")
+                    .withClaim("id", user.id)
+                    .withClaim("username", user.username)
+                    .withClaim("roles", user.roles) // Admin flag
+                    .withExpiresAt(Date(System.currentTimeMillis() + 600000)) // Scadenza: 10 minuti
+                    .sign(Algorithm.HMAC256("supersegreto"))
+
+                call.respond(mapOf("token" to token))
+            }
         }
-    }
-}
 
-fun Route.withRoles(vararg roles: String, build: Route.() -> Unit) {
-    val route = createChild(object : RouteSelector() {
-        override suspend fun evaluate(context: RoutingResolveContext, segmentIndex: Int): RouteSelectorEvaluation {
-            return RouteSelectorEvaluation.Transparent
+        route("/me") {
+            authenticate("auth-jwt") {
+                route("/user") {
+                    get() {
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                        if (userId != null) {
+                            val baseUserDTO = userService.getBaseUserById(userId)
+                            if (baseUserDTO != null) {
+                                call.respond(HttpStatusCode.OK, baseUserDTO)
+                            } else {
+                                call.respond(HttpStatusCode.NotFound, "User not found")
+                            }
+                        }
+                    }
+                    patch() {
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                        val updateUser = call.receive<UpdateUserDTO>()
+
+                        if (userId != null) {
+                            userService.updateUserById(userId, updateUser)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                    }
+                    delete() {
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                        if (userId != null) {
+                            userService.deleteUserById(userId)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                    }
+                }
+
+            }
         }
+        route("/users") {
+            authenticate("auth-jwt") {
+                withRoles("administrator") {
+                    get {
+                        val users = userService.getBaseUsers()
+                        call.respond(HttpStatusCode.OK, users)
+                    }
+                }
+            }
 
-    })
-    route.install(RoleAuthorizationPlugin) {
-        roles(roles.toSet())
-    }
-
-    route.build()
-}
-
-
-class RoleBaseConfiguration {
-    val requiredRoles = mutableSetOf<String>()
-    fun roles(roles: Set<String>) {
-        requiredRoles.addAll(roles)
-    }
-}
-
-val RoleAuthorizationPlugin = createRouteScopedPlugin("RoleAuthorizationPlugin", ::RoleBaseConfiguration) {
-    on(AuthenticationChecked) { call ->
-        val principal = call.principal<JWTPrincipal>() ?: return@on
-        val roles = principal.payload.getClaim("roles").asList(String::class.java).toSet()
-
-        if (pluginConfig.requiredRoles.isNotEmpty() && roles.intersect(pluginConfig.requiredRoles).isEmpty()) {
-            call.respondText("You don`t have access to this resource.", status = HttpStatusCode.Unauthorized)
+            post {
+                try {
+                    val newUser = call.receive<NewUserDTO>()
+                    userService.createUser(newUser)
+                    call.respond(HttpStatusCode.NoContent)
+                } catch (ex: IllegalStateException) {
+                    call.respond(HttpStatusCode.BadRequest)
+                } catch (ex: JsonConvertException) {
+                    call.respond(HttpStatusCode.BadRequest)
+                }
+            }
         }
     }
 }
