@@ -1,0 +1,22 @@
+[
+  {
+    "moduleId": "module org.jetbrains.kotlin:kotlin-stdlib:2.1.10",
+    "file": "C:\\Users\\Pitsch\\IdeaProjects\\EpicER\\common\\build\\kotlinTransformedMetadataLibraries\\commonMain\\org.jetbrains.kotlin-kotlin-stdlib-2.1.10-commonMain-ITmP6A.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0",
+    "file": "C:\\Users\\Pitsch\\IdeaProjects\\EpicER\\common\\build\\kotlinTransformedMetadataLibraries\\commonMain\\org.jetbrains.kotlinx-kotlinx-serialization-json-1.8.0-commonMain-sWF2lQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.2",
+    "file": "C:\\Users\\Pitsch\\IdeaProjects\\EpicER\\common\\build\\kotlinTransformedMetadataLibraries\\commonMain\\org.jetbrains.kotlinx-kotlinx-datetime-0.6.2-commonMain-fgfANw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-serialization-core:1.8.0",
+    "file": "C:\\Users\\Pitsch\\IdeaProjects\\EpicER\\common\\build\\kotlinTransformedMetadataLibraries\\commonMain\\org.jetbrains.kotlinx-kotlinx-serialization-core-1.8.0-commonMain-tao8ug.klib",
+    "sourceSetName": "commonMain"
+  }
+]

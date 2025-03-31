@@ -13,42 +13,56 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var Unit_instance = kotlin_kotlin.$_$.f2;
-  var Enum = kotlin_kotlin.$_$.d9;
-  var protoOf = kotlin_kotlin.$_$.y6;
-  var initMetadataForClass = kotlin_kotlin.$_$.h6;
-  var VOID = kotlin_kotlin.$_$.e;
-  var listOf = kotlin_kotlin.$_$.y3;
-  var removeSurrounding = kotlin_kotlin.$_$.h8;
-  var removePrefix = kotlin_kotlin.$_$.f8;
-  var removeSuffix = kotlin_kotlin.$_$.g8;
-  var endsWith = kotlin_kotlin.$_$.x7;
-  var startsWith = kotlin_kotlin.$_$.m8;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.i6;
-  var getStringHashCode = kotlin_kotlin.$_$.f6;
-  var THROW_CCE = kotlin_kotlin.$_$.k9;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.j;
-  var toString = kotlin_kotlin.$_$.a7;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.h1;
-  var first = kotlin_kotlin.$_$.m3;
-  var drop = kotlin_kotlin.$_$.g3;
-  var to = kotlin_kotlin.$_$.ba;
-  var joinToString = kotlin_kotlin.$_$.r3;
-  var emptyList = kotlin_kotlin.$_$.h3;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.u9;
-  var plus = kotlin_kotlin.$_$.i4;
-  var charSequenceLength = kotlin_kotlin.$_$.y5;
-  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.u1;
-  var charArrayOf = kotlin_kotlin.$_$.w5;
-  var split = kotlin_kotlin.$_$.k8;
-  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.d1;
-  var startsWith_0 = kotlin_kotlin.$_$.n8;
-  var toMutableList = kotlin_kotlin.$_$.u4;
-  var removeFirst = kotlin_kotlin.$_$.l4;
-  var endsWith_0 = kotlin_kotlin.$_$.w7;
+  var THROW_IAE = kotlin_kotlin.$_$.vg;
+  var enumEntries = kotlin_kotlin.$_$.db;
+  var Unit_getInstance = kotlin_kotlin.$_$.b5;
+  var Enum = kotlin_kotlin.$_$.jg;
+  var protoOf = kotlin_kotlin.$_$.dd;
+  var initMetadataForClass = kotlin_kotlin.$_$.zb;
+  var VOID = kotlin_kotlin.$_$.g;
+  var listOf = kotlin_kotlin.$_$.m8;
+  var CoroutineImpl = kotlin_kotlin.$_$.za;
+  var THROW_CCE = kotlin_kotlin.$_$.ug;
+  var SequenceScope = kotlin_kotlin.$_$.wd;
+  var mutableListOf = kotlin_kotlin.$_$.s8;
+  var removeFirst = kotlin_kotlin.$_$.c9;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.o;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.ja;
+  var initMetadataForLambda = kotlin_kotlin.$_$.dc;
+  var removeSurrounding = kotlin_kotlin.$_$.cf;
+  var removePrefix = kotlin_kotlin.$_$.ze;
+  var removeSuffix = kotlin_kotlin.$_$.bf;
+  var endsWith = kotlin_kotlin.$_$.ne;
+  var startsWith = kotlin_kotlin.$_$.if;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ac;
+  var getStringHashCode = kotlin_kotlin.$_$.xb;
+  var toString = kotlin_kotlin.$_$.gd;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.y1;
+  var first = kotlin_kotlin.$_$.w7;
+  var drop = kotlin_kotlin.$_$.p7;
+  var to = kotlin_kotlin.$_$.zh;
+  var joinToString = kotlin_kotlin.$_$.e8;
+  var emptyList = kotlin_kotlin.$_$.q7;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.rh;
+  var plus = kotlin_kotlin.$_$.y8;
+  var sequence = kotlin_kotlin.$_$.ee;
+  var charSequenceLength = kotlin_kotlin.$_$.nb;
+  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.t2;
+  var charArrayOf = kotlin_kotlin.$_$.kb;
+  var split = kotlin_kotlin.$_$.gf;
+  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.t1;
+  var startsWith_0 = kotlin_kotlin.$_$.jf;
+  var toMutableList = kotlin_kotlin.$_$.aa;
+  var endsWith_0 = kotlin_kotlin.$_$.me;
+  var SuspendFunction1 = kotlin_kotlin.$_$.ab;
+  var Regex_init_$Create$ = kotlin_kotlin.$_$.g1;
+  var objectCreate = kotlin_kotlin.$_$.cd;
+  var get_lastIndex = kotlin_kotlin.$_$.h8;
+  var replace = kotlin_kotlin.$_$.ff;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(AcceptResult, 'AcceptResult', VOID, Enum);
+  initMetadataForLambda(RouteTree$Node$_get_nodes_$slambda_9kqj3, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForCompanion(Companion);
   initMetadataForClass(Info, 'Info');
   initMetadataForClass(Match, 'Match', VOID, Enum);
@@ -59,24 +73,140 @@
   initMetadataForClass(DynamicNode, 'DynamicNode', VOID, ChildNode);
   initMetadataForClass(ResolvedEntry, 'ResolvedEntry');
   initMetadataForClass(RouteTree, 'RouteTree', RouteTree);
+  initMetadataForClass(PatternMapper, 'PatternMapper');
   //endregion
   var AcceptResult_NONE_instance;
   var AcceptResult_SINGLE_instance;
   var AcceptResult_ALL_instance;
+  function values() {
+    return [AcceptResult_NONE_getInstance(), AcceptResult_SINGLE_getInstance(), AcceptResult_ALL_getInstance()];
+  }
+  function valueOf(value) {
+    switch (value) {
+      case 'NONE':
+        return AcceptResult_NONE_getInstance();
+      case 'SINGLE':
+        return AcceptResult_SINGLE_getInstance();
+      case 'ALL':
+        return AcceptResult_ALL_getInstance();
+      default:
+        AcceptResult_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries() {
+    if ($ENTRIES == null)
+      $ENTRIES = enumEntries(values());
+    return $ENTRIES;
+  }
   var AcceptResult_entriesInitialized;
   function AcceptResult_initEntries() {
     if (AcceptResult_entriesInitialized)
-      return Unit_instance;
+      return Unit_getInstance();
     AcceptResult_entriesInitialized = true;
     AcceptResult_NONE_instance = new AcceptResult('NONE', 0);
     AcceptResult_SINGLE_instance = new AcceptResult('SINGLE', 1);
     AcceptResult_ALL_instance = new AcceptResult('ALL', 2);
+  }
+  var $ENTRIES;
+  function _get__staticChildren__e0ay3f($this) {
+    return $this._staticChildren_1;
+  }
+  function _set__dynamicChild__bia9c9($this, _set____db54di) {
+    $this._dynamicChild_1 = _set____db54di;
+  }
+  function _get__dynamicChild__3ph963($this) {
+    return $this._dynamicChild_1;
   }
   function AcceptResult(name, ordinal) {
     Enum.call(this, name, ordinal);
   }
   function resolve$createResolvedEntry(this$0, consumedPart) {
     return listOf(new ResolvedEntry(this$0, consumedPart));
+  }
+  function RouteTree$Node$_get_nodes_$slambda_9kqj3(this$0, resultContinuation) {
+    this.this$0__1 = this$0;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf(RouteTree$Node$_get_nodes_$slambda_9kqj3).invoke_b7agel_k$ = function ($this$sequence, $completion) {
+    var tmp = this.create_8w91ht_k$($this$sequence, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(RouteTree$Node$_get_nodes_$slambda_9kqj3).invoke_qns8j1_k$ = function (p1, $completion) {
+    return this.invoke_b7agel_k$(p1 instanceof SequenceScope ? p1 : THROW_CCE(), $completion);
+  };
+  protoOf(RouteTree$Node$_get_nodes_$slambda_9kqj3).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(3);
+            this.nodeQueue0__1 = mutableListOf([this.this$0__1]);
+            this.set_state_rjd8d0_k$(1);
+            continue $sm;
+          case 1:
+            if (!!this.nodeQueue0__1.isEmpty_y1axqb_k$()) {
+              this.set_state_rjd8d0_k$(4);
+              continue $sm;
+            }
+
+            this.node1__1 = removeFirst(this.nodeQueue0__1);
+            var tmp_0 = this;
+            tmp_0.nodePath2__1 = ArrayList_init_$Create$();
+            this.nodePath2__1.add_utx5q5_k$(this.node1__1);
+            this.parent3__1 = this.node1__1.parent_1;
+            while (!(this.parent3__1 == null)) {
+              this.nodePath2__1.add_dl6gt3_k$(0, this.parent3__1);
+              this.parent3__1 = this.parent3__1.parent_1;
+            }
+
+            this.set_state_rjd8d0_k$(2);
+            suspendResult = this.$this$sequence_1.yield_3xhcex_k$(this.nodePath2__1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 2:
+            this.nodeQueue0__1.addAll_4lagoh_k$(this.node1__1.get_children_4cwbp4_k$());
+            this.set_state_rjd8d0_k$(1);
+            continue $sm;
+          case 3:
+            throw this.get_exception_x0n6w6_k$();
+          case 4:
+            return Unit_getInstance();
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 3) {
+          throw e;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
+        }
+      }
+     while (true);
+  };
+  protoOf(RouteTree$Node$_get_nodes_$slambda_9kqj3).create_8w91ht_k$ = function ($this$sequence, completion) {
+    var i = new RouteTree$Node$_get_nodes_$slambda_9kqj3(this.this$0__1, completion);
+    i.$this$sequence_1 = $this$sequence;
+    return i;
+  };
+  protoOf(RouteTree$Node$_get_nodes_$slambda_9kqj3).create_wyq9v6_k$ = function (value, completion) {
+    return this.create_8w91ht_k$(value instanceof SequenceScope ? value : THROW_CCE(), completion);
+  };
+  function RouteTree$Node$_get_nodes_$slambda_9kqj3_0(this$0, resultContinuation) {
+    var i = new RouteTree$Node$_get_nodes_$slambda_9kqj3(this$0, resultContinuation);
+    var l = function ($this$sequence, $completion) {
+      return i.invoke_b7agel_k$($this$sequence, $completion);
+    };
+    l.$arity = 1;
+    return l;
   }
   function AcceptResult_NONE_getInstance() {
     AcceptResult_initEntries();
@@ -91,8 +221,9 @@
     return AcceptResult_ALL_instance;
   }
   function Companion() {
+    Companion_instance = this;
   }
-  protoOf(Companion).k37 = function (routeSegment) {
+  protoOf(Companion).tryCreateFrom_1s9czd_k$ = function (routeSegment) {
     if (!isDynamicSegment(routeSegment))
       return null;
     var name = routeSegment;
@@ -116,30 +247,76 @@
   };
   var Companion_instance;
   function Companion_getInstance() {
+    if (Companion_instance == null)
+      new Companion();
     return Companion_instance;
   }
   var Match_SINGLE_instance;
   var Match_REST_instance;
   var Match_REST_OPTIONAL_instance;
+  function values_0() {
+    return [Match_SINGLE_getInstance(), Match_REST_getInstance(), Match_REST_OPTIONAL_getInstance()];
+  }
+  function valueOf_0(value) {
+    switch (value) {
+      case 'SINGLE':
+        return Match_SINGLE_getInstance();
+      case 'REST':
+        return Match_REST_getInstance();
+      case 'REST_OPTIONAL':
+        return Match_REST_OPTIONAL_getInstance();
+      default:
+        Match_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_0() {
+    if ($ENTRIES_0 == null)
+      $ENTRIES_0 = enumEntries(values_0());
+    return $ENTRIES_0;
+  }
   var Match_entriesInitialized;
   function Match_initEntries() {
     if (Match_entriesInitialized)
-      return Unit_instance;
+      return Unit_getInstance();
     Match_entriesInitialized = true;
     Match_SINGLE_instance = new Match('SINGLE', 0);
     Match_REST_instance = new Match('REST', 1);
     Match_REST_OPTIONAL_instance = new Match('REST_OPTIONAL', 2);
   }
+  var $ENTRIES_0;
   function Info(name, match) {
-    this.l37_1 = name;
-    this.m37_1 = match;
+    Companion_getInstance();
+    this.name_1 = name;
+    this.match_1 = match;
   }
+  protoOf(Info).get_name_woqyms_k$ = function () {
+    return this.name_1;
+  };
+  protoOf(Info).get_match_iv3el8_k$ = function () {
+    return this.match_1;
+  };
+  protoOf(Info).component1_7eebsc_k$ = function () {
+    return this.name_1;
+  };
+  protoOf(Info).component2_7eebsb_k$ = function () {
+    return this.match_1;
+  };
+  protoOf(Info).copy_qpkj1j_k$ = function (name, match) {
+    return new Info(name, match);
+  };
+  protoOf(Info).copy$default_ajivda_k$ = function (name, match, $super) {
+    name = name === VOID ? this.name_1 : name;
+    match = match === VOID ? this.match_1 : match;
+    return $super === VOID ? this.copy_qpkj1j_k$(name, match) : $super.copy_qpkj1j_k$.call(this, name, match);
+  };
   protoOf(Info).toString = function () {
-    return 'Info(name=' + this.l37_1 + ', match=' + this.m37_1.toString() + ')';
+    return 'Info(name=' + this.name_1 + ', match=' + this.match_1.toString() + ')';
   };
   protoOf(Info).hashCode = function () {
-    var result = getStringHashCode(this.l37_1);
-    result = imul(result, 31) + this.m37_1.hashCode() | 0;
+    var result = getStringHashCode(this.name_1);
+    result = imul(result, 31) + this.match_1.hashCode() | 0;
     return result;
   };
   protoOf(Info).equals = function (other) {
@@ -148,14 +325,17 @@
     if (!(other instanceof Info))
       return false;
     var tmp0_other_with_cast = other instanceof Info ? other : THROW_CCE();
-    if (!(this.l37_1 === tmp0_other_with_cast.l37_1))
+    if (!(this.name_1 === tmp0_other_with_cast.name_1))
       return false;
-    if (!this.m37_1.equals(tmp0_other_with_cast.m37_1))
+    if (!this.match_1.equals(tmp0_other_with_cast.match_1))
       return false;
     return true;
   };
   function Match(name, ordinal) {
     Enum.call(this, name, ordinal);
+  }
+  function _get_info__d89bod($this) {
+    return $this.info_1;
   }
   function Match_SINGLE_getInstance() {
     Match_initEntries();
@@ -171,52 +351,64 @@
   }
   function Node(parent, sourceRouteSegment) {
     parent = parent === VOID ? null : parent;
-    this.n37_1 = parent;
-    this.o37_1 = sourceRouteSegment;
-    this.p37_1 = null;
+    this.parent_1 = parent;
+    this.sourceRouteSegment_1 = sourceRouteSegment;
+    this._data_1 = null;
     var tmp = this;
     // Inline function 'kotlin.collections.mutableListOf' call
-    tmp.q37_1 = ArrayList_init_$Create$();
-    this.r37_1 = null;
-    this.s37_1 = this.o37_1;
-    this.t37_1 = false;
+    tmp._staticChildren_1 = ArrayList_init_$Create$();
+    this._dynamicChild_1 = null;
+    this.name_1 = this.sourceRouteSegment_1;
+    this.isRouteTerminator_1 = false;
   }
-  protoOf(Node).u37 = function () {
-    return this.p37_1;
+  protoOf(Node).get_parent_hy4reb_k$ = function () {
+    return this.parent_1;
   };
-  protoOf(Node).bp = function () {
+  protoOf(Node).get_sourceRouteSegment_7qwr9u_k$ = function () {
+    return this.sourceRouteSegment_1;
+  };
+  protoOf(Node).set__data_yxyb97_k$ = function (_set____db54di) {
+    this._data_1 = _set____db54di;
+  };
+  protoOf(Node).get__data_yco901_k$ = function () {
+    return this._data_1;
+  };
+  protoOf(Node).get_data_wokkxf_k$ = function () {
+    return this._data_1;
+  };
+  protoOf(Node).get_children_4cwbp4_k$ = function () {
     // Inline function 'kotlin.collections.buildList' call
     // Inline function 'kotlin.collections.buildListInternal' call
     // Inline function 'kotlin.apply' call
     var this_0 = ArrayList_init_$Create$();
     // Inline function 'com.varabyte.kobweb.navigation.Node.<get-children>.<anonymous>' call
-    this_0.n(this.q37_1);
-    var tmp0_safe_receiver = this.r37_1;
+    this_0.addAll_4lagoh_k$(this._staticChildren_1);
+    var tmp0_safe_receiver = this._dynamicChild_1;
     if (tmp0_safe_receiver == null)
       null;
     else {
       // Inline function 'kotlin.let' call
       // Inline function 'com.varabyte.kobweb.navigation.Node.<get-children>.<anonymous>.<anonymous>' call
-      this_0.e(tmp0_safe_receiver);
+      this_0.add_utx5q5_k$(tmp0_safe_receiver);
     }
-    return this_0.i5();
+    return this_0.build_nmwvly_k$();
   };
-  protoOf(Node).j2c = function () {
-    return this.s37_1;
+  protoOf(Node).get_name_woqyms_k$ = function () {
+    return this.name_1;
   };
-  protoOf(Node).v37 = function () {
-    return this.t37_1;
+  protoOf(Node).get_isRouteTerminator_8jl3dp_k$ = function () {
+    return this.isRouteTerminator_1;
   };
-  protoOf(Node).y37 = function (routeSegment) {
-    var tmp0 = this.bp();
+  protoOf(Node).findChild_rhky47_k$ = function (routeSegment) {
+    var tmp0 = this.get_children_4cwbp4_k$();
     var tmp$ret$1;
     $l$block: {
       // Inline function 'kotlin.collections.firstOrNull' call
-      var _iterator__ex2g4s = tmp0.g();
-      while (_iterator__ex2g4s.h()) {
-        var element = _iterator__ex2g4s.i();
+      var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var element = _iterator__ex2g4s.next_20eer_k$();
         // Inline function 'com.varabyte.kobweb.navigation.Node.findChild.<anonymous>' call
-        if (element.x37(routeSegment)) {
+        if (element.matches_j19087_k$(routeSegment)) {
           tmp$ret$1 = element;
           break $l$block;
         }
@@ -225,16 +417,16 @@
     }
     return tmp$ret$1;
   };
-  protoOf(Node).z37 = function (routeSegment) {
+  protoOf(Node).createChild_48vfnq_k$ = function (routeSegment) {
     // Inline function 'kotlin.check' call
-    if (!(this.y37(routeSegment) == null)) {
+    if (!(this.findChild_rhky47_k$(routeSegment) == null)) {
       // Inline function 'com.varabyte.kobweb.navigation.Node.createChild.<anonymous>' call
       var message = 'Node.createChild called unexpectedly. Please report this issue.';
       throw IllegalStateException_init_$Create$(toString(message));
     }
     // Inline function 'kotlin.check' call
-    if (!!this.v37()) {
-      var message_0 = 'User attempted to register an invalid route. "' + this.o37_1 + '" must be the last segment of the route, but it was followed by "' + routeSegment + '".';
+    if (!!this.get_isRouteTerminator_8jl3dp_k$()) {
+      var message_0 = 'User attempted to register an invalid route. "' + this.sourceRouteSegment_1 + '" must be the last segment of the route, but it was followed by "' + routeSegment + '".';
       throw IllegalStateException_init_$Create$(toString(message_0));
     }
     var tmp;
@@ -242,21 +434,21 @@
       // Inline function 'kotlin.also' call
       var this_0 = new DynamicNode(this, routeSegment);
       // Inline function 'com.varabyte.kobweb.navigation.Node.createChild.<anonymous>' call
-      this.r37_1 = this_0;
+      this._dynamicChild_1 = this_0;
       tmp = this_0;
     } else {
       // Inline function 'kotlin.also' call
       var this_1 = new StaticNode(this, routeSegment);
       // Inline function 'com.varabyte.kobweb.navigation.Node.createChild.<anonymous>' call
-      this.q37_1.e(this_1);
+      this._staticChildren_1.add_utx5q5_k$(this_1);
       tmp = this_1;
     }
     return tmp;
   };
-  protoOf(Node).a38 = function (routeSegments) {
-    var consumeResult = this.w37(routeSegments);
+  protoOf(Node).resolve_kdk6xi_k$ = function (routeSegments) {
+    var consumeResult = this.accepts_7ck42f_k$(routeSegments);
     var tmp;
-    switch (consumeResult.m2_1) {
+    switch (consumeResult.get_ordinal_ip24qg_k$()) {
       case 0:
         return null;
       case 1:
@@ -270,21 +462,21 @@
         break;
     }
     var _destruct__k2r9zo = tmp;
-    var consumedPart = _destruct__k2r9zo.te();
-    var remainingSegments = _destruct__k2r9zo.ue();
-    if (remainingSegments.p() && this.u37() == null)
+    var consumedPart = _destruct__k2r9zo.component1_7eebsc_k$();
+    var remainingSegments = _destruct__k2r9zo.component2_7eebsb_k$();
+    if (remainingSegments.isEmpty_y1axqb_k$() && this.get_data_wokkxf_k$() == null)
       return null;
-    if (remainingSegments.p())
+    if (remainingSegments.isEmpty_y1axqb_k$())
       return resolve$createResolvedEntry(this, consumedPart);
-    var tmp0 = this.bp();
+    var tmp0 = this.get_children_4cwbp4_k$();
     var tmp$ret$1;
     $l$block: {
       // Inline function 'kotlin.collections.firstNotNullOfOrNull' call
-      var _iterator__ex2g4s = tmp0.g();
-      while (_iterator__ex2g4s.h()) {
-        var element = _iterator__ex2g4s.i();
+      var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var element = _iterator__ex2g4s.next_20eer_k$();
         // Inline function 'com.varabyte.kobweb.navigation.Node.resolve.<anonymous>' call
-        var result = element.a38(remainingSegments);
+        var result = element.resolve_kdk6xi_k$(remainingSegments);
         if (!(result == null)) {
           tmp$ret$1 = result;
           break $l$block;
@@ -303,14 +495,17 @@
     }
     return tmp_0;
   };
+  protoOf(Node).get_nodes_ivvt6w_k$ = function () {
+    return sequence(RouteTree$Node$_get_nodes_$slambda_9kqj3_0(this, null));
+  };
   function RootNode() {
     Node.call(this, null, '');
   }
-  protoOf(RootNode).x37 = function (routeSegment) {
+  protoOf(RootNode).matches_j19087_k$ = function (routeSegment) {
     // Inline function 'kotlin.text.isEmpty' call
     return charSequenceLength(routeSegment) === 0;
   };
-  protoOf(RootNode).w37 = function (routeSegments) {
+  protoOf(RootNode).accepts_7ck42f_k$ = function (routeSegments) {
     // Inline function 'kotlin.check' call
     if (!(first(routeSegments) === '')) {
       throw IllegalStateException_init_$Create$('Check failed.');
@@ -323,18 +518,18 @@
   function StaticNode(parent, sourceRouteSegment) {
     ChildNode.call(this, parent, sourceRouteSegment);
   }
-  protoOf(StaticNode).x37 = function (routeSegment) {
-    return routeSegment === this.o37_1;
+  protoOf(StaticNode).matches_j19087_k$ = function (routeSegment) {
+    return routeSegment === this.sourceRouteSegment_1;
   };
-  protoOf(StaticNode).w37 = function (routeSegments) {
-    if (this.x37(first(routeSegments)))
+  protoOf(StaticNode).accepts_7ck42f_k$ = function (routeSegments) {
+    if (this.matches_j19087_k$(first(routeSegments)))
       return AcceptResult_SINGLE_getInstance();
     return AcceptResult_NONE_getInstance();
   };
   function DynamicNode(parent, sourceRouteSegment) {
     ChildNode.call(this, parent, sourceRouteSegment);
     var tmp = this;
-    var tmp0_elvis_lhs = Companion_instance.k37(sourceRouteSegment);
+    var tmp0_elvis_lhs = Companion_getInstance().tryCreateFrom_1s9czd_k$(sourceRouteSegment);
     var tmp_0;
     if (tmp0_elvis_lhs == null) {
       var message = 'Expected a dynamic route segment here, but got "' + sourceRouteSegment + '"';
@@ -342,34 +537,34 @@
     } else {
       tmp_0 = tmp0_elvis_lhs;
     }
-    tmp.w38_1 = tmp_0;
-    this.x38_1 = this.w38_1.l37_1;
-    this.y38_1 = !this.w38_1.m37_1.equals(Match_SINGLE_getInstance());
+    tmp.info_1 = tmp_0;
+    this.name_2 = this.info_1.name_1;
+    this.isRouteTerminator_2 = !this.info_1.match_1.equals(Match_SINGLE_getInstance());
   }
-  protoOf(DynamicNode).j2c = function () {
-    return this.x38_1;
+  protoOf(DynamicNode).get_name_woqyms_k$ = function () {
+    return this.name_2;
   };
-  protoOf(DynamicNode).v37 = function () {
-    return this.y38_1;
+  protoOf(DynamicNode).get_isRouteTerminator_8jl3dp_k$ = function () {
+    return this.isRouteTerminator_2;
   };
-  protoOf(DynamicNode).x37 = function (routeSegment) {
-    var tmp0_safe_receiver = Companion_instance.k37(routeSegment);
+  protoOf(DynamicNode).matches_j19087_k$ = function (routeSegment) {
+    var tmp0_safe_receiver = Companion_getInstance().tryCreateFrom_1s9czd_k$(routeSegment);
     if (tmp0_safe_receiver == null)
       null;
     else {
       // Inline function 'kotlin.let' call
-      if (!this.w38_1.equals(tmp0_safe_receiver)) {
+      if (!this.info_1.equals(tmp0_safe_receiver)) {
         // Inline function 'kotlin.error' call
-        var message = 'User is attempting to register a dynamic route that conflicts with another dynamic route already set up. "' + routeSegment + '" is being registered but "' + this.o37_1 + '" already exists.';
+        var message = 'User is attempting to register a dynamic route that conflicts with another dynamic route already set up. "' + routeSegment + '" is being registered but "' + this.sourceRouteSegment_1 + '" already exists.';
         throw IllegalStateException_init_$Create$(toString(message));
       }
       return true;
     }
     return false;
   };
-  protoOf(DynamicNode).w37 = function (routeSegments) {
+  protoOf(DynamicNode).accepts_7ck42f_k$ = function (routeSegments) {
     var tmp;
-    switch (this.w38_1.m37_1.m2_1) {
+    switch (this.info_1.match_1.get_ordinal_ip24qg_k$()) {
       case 0:
         tmp = AcceptResult_SINGLE_getInstance();
         break;
@@ -386,21 +581,33 @@
     return tmp;
   };
   function ResolvedEntry(node, capturedRouteSegment) {
-    this.z38_1 = node;
-    this.a39_1 = capturedRouteSegment;
+    this.node_1 = node;
+    this.capturedRouteSegment_1 = capturedRouteSegment;
+  }
+  protoOf(ResolvedEntry).get_node_wor8sr_k$ = function () {
+    return this.node_1;
+  };
+  protoOf(ResolvedEntry).get_capturedRouteSegment_txp7g1_k$ = function () {
+    return this.capturedRouteSegment_1;
+  };
+  function _get_root__dd8asp($this) {
+    return $this.root_1;
+  }
+  function _get_redirects__2c3o62($this) {
+    return $this.redirects_1;
   }
   function resolveWithoutRedirects($this, route) {
-    return $this.b39_1.a38(split(route, charArrayOf([_Char___init__impl__6a9atx(47)])));
+    return $this.root_1.resolve_kdk6xi_k$(split(route, charArrayOf([_Char___init__impl__6a9atx(47)])));
   }
   function resolveAllowingRedirects($this, route) {
     // Inline function 'kotlin.collections.fold' call
     var accumulator = route;
-    var _iterator__ex2g4s = $this.c39_1.g();
-    while (_iterator__ex2g4s.h()) {
-      var element = _iterator__ex2g4s.i();
+    var _iterator__ex2g4s = $this.redirects_1.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
       // Inline function 'com.varabyte.kobweb.navigation.RouteTree.resolveAllowingRedirects.<anonymous>' call
       var route_0 = accumulator;
-      var tmp0_elvis_lhs = element.f39(route_0);
+      var tmp0_elvis_lhs = element.map_epzkwu_k$(route_0);
       accumulator = tmp0_elvis_lhs == null ? route_0 : tmp0_elvis_lhs;
     }
     var redirectedRoute = accumulator;
@@ -409,7 +616,7 @@
   function checkRoute($this, route) {
     // Inline function 'kotlin.collections.isNotEmpty' call
     // Inline function 'kotlin.require' call
-    if (!!$this.b39_1.bp().p()) {
+    if (!!$this.root_1.get_children_4cwbp4_k$().isEmpty_y1axqb_k$()) {
       // Inline function 'com.varabyte.kobweb.navigation.RouteTree.checkRoute.<anonymous>' call
       var message = "No routes were ever registered. This is unexpected and probably means no `@Page` was defined (or pages were defined in the wrong place where Kobweb couldn't discover them).";
       throw IllegalArgumentException_init_$Create$(toString(message));
@@ -431,40 +638,50 @@
     return toRouteString(resolvedNodes);
   }
   function RouteTree() {
-    this.b39_1 = new RootNode();
+    this.root_1 = new RootNode();
     var tmp = this;
     // Inline function 'kotlin.collections.mutableListOf' call
-    tmp.c39_1 = ArrayList_init_$Create$();
+    tmp.redirects_1 = ArrayList_init_$Create$();
   }
-  protoOf(RouteTree).g39 = function (route, allowRedirects) {
+  protoOf(RouteTree).resolve_7ctaaf_k$ = function (route, allowRedirects) {
     return allowRedirects ? resolveAllowingRedirects(this, route) : resolveWithoutRedirects(this, route);
   };
-  protoOf(RouteTree).h39 = function (route) {
+  protoOf(RouteTree).resolve$default_qmjuym_k$ = function (route, allowRedirects, $super) {
+    allowRedirects = allowRedirects === VOID ? true : allowRedirects;
+    return $super === VOID ? this.resolve_7ctaaf_k$(route, allowRedirects) : $super.resolve_7ctaaf_k$.call(this, route, allowRedirects);
+  };
+  protoOf(RouteTree).isRegistered_1ncfv6_k$ = function (route) {
     return !(checkRoute(this, route) == null);
   };
-  protoOf(RouteTree).i39 = function (route, data) {
+  protoOf(RouteTree).register_ela2uv_k$ = function (route, data) {
     var routeSegments = toMutableList(split(route, charArrayOf([_Char___init__impl__6a9atx(47)])));
-    var currNode = this.b39_1;
+    var currNode = this.root_1;
     // Inline function 'kotlin.require' call
     // Inline function 'kotlin.require' call
-    if (!this.b39_1.x37(removeFirst(routeSegments))) {
+    if (!this.root_1.matches_j19087_k$(removeFirst(routeSegments))) {
       // Inline function 'kotlin.require.<anonymous>' call
       var message = 'Failed requirement.';
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
     $l$loop: while (true) {
       // Inline function 'kotlin.collections.isNotEmpty' call
-      if (!!routeSegments.p()) {
+      if (!!routeSegments.isEmpty_y1axqb_k$()) {
         break $l$loop;
       }
       var nextRouteSegment = removeFirst(routeSegments);
-      var tmp0_elvis_lhs = currNode.y37(nextRouteSegment);
-      currNode = tmp0_elvis_lhs == null ? currNode.z37(nextRouteSegment) : tmp0_elvis_lhs;
+      var tmp0_elvis_lhs = currNode.findChild_rhky47_k$(nextRouteSegment);
+      currNode = tmp0_elvis_lhs == null ? currNode.createChild_48vfnq_k$(nextRouteSegment) : tmp0_elvis_lhs;
     }
-    if (!(currNode.u37() == null))
+    if (!(currNode.get_data_wokkxf_k$() == null))
       return false;
-    currNode.p37_1 = data;
+    currNode._data_1 = data;
     return true;
+  };
+  protoOf(RouteTree).registerRedirect_o9yje9_k$ = function (redirectRoute, actualRoute) {
+    this.redirects_1.add_utx5q5_k$(PatternMapper_init_$Create$('^' + redirectRoute + '$', actualRoute));
+  };
+  protoOf(RouteTree).get_nodes_ivvt6w_k$ = function () {
+    return this.root_1.get_nodes_ivvt6w_k$();
   };
   function toRouteString(_this__u8e3s4) {
     return joinToString(_this__u8e3s4, '/', VOID, VOID, VOID, VOID, toRouteString$lambda);
@@ -473,11 +690,45 @@
     return startsWith_0(_this__u8e3s4, _Char___init__impl__6a9atx(123)) && endsWith_0(_this__u8e3s4, _Char___init__impl__6a9atx(125));
   }
   function toRouteString$lambda(it) {
-    return it.a39_1;
+    return it.capturedRouteSegment_1;
   }
-  //region block: init
-  Companion_instance = new Companion();
-  //endregion
+  function PatternMapper_init_$Init$(pattern, target, $this) {
+    PatternMapper.call($this, Regex_init_$Create$(pattern), target);
+    return $this;
+  }
+  function PatternMapper_init_$Create$(pattern, target) {
+    return PatternMapper_init_$Init$(pattern, target, objectCreate(protoOf(PatternMapper)));
+  }
+  function PatternMapper(pattern, target) {
+    this.pattern_1 = pattern;
+    this.target_1 = target;
+  }
+  protoOf(PatternMapper).get_pattern_btfv4p_k$ = function () {
+    return this.pattern_1;
+  };
+  protoOf(PatternMapper).get_target_juba8q_k$ = function () {
+    return this.target_1;
+  };
+  protoOf(PatternMapper).map_epzkwu_k$ = function (text) {
+    var tmp0_safe_receiver = this.pattern_1.matchEntire_6100vb_k$(text);
+    var tmp;
+    if (tmp0_safe_receiver == null) {
+      tmp = null;
+    } else {
+      // Inline function 'kotlin.let' call
+      var final = this.target_1;
+      var inductionVariable = get_lastIndex(tmp0_safe_receiver.get_groupValues_rkv314_k$());
+      if (0 <= inductionVariable)
+        do {
+          var i = inductionVariable;
+          inductionVariable = inductionVariable + -1 | 0;
+          final = replace(final, '$' + i, tmp0_safe_receiver.get_groupValues_rkv314_k$().get_c1px32_k$(i));
+        }
+         while (0 <= inductionVariable);
+      return final;
+    }
+    return tmp;
+  };
   //region block: exports
   _.$_$ = _.$_$ || {};
   _.$_$.a = DynamicNode;

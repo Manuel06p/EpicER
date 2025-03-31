@@ -15,10 +15,10 @@
 }(function (_, kotlin_kotlin, kotlin_org_jetbrains_compose_runtime_runtime) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.y6;
-  var initMetadataForClass = kotlin_kotlin.$_$.h6;
-  var VOID = kotlin_kotlin.$_$.e;
-  var compositionLocalOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.m;
+  var protoOf = kotlin_kotlin.$_$.dd;
+  var initMetadataForClass = kotlin_kotlin.$_$.zb;
+  var VOID = kotlin_kotlin.$_$.g;
+  var compositionLocalOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.q;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(MarkdownContext, 'MarkdownContext');
@@ -30,9 +30,15 @@
   var LocalMarkdownContext;
   var com_varabyte_kobwebx_markdown_MarkdownContext$stable;
   function MarkdownContext(path, frontMatter) {
-    this.q44_1 = path;
-    this.r44_1 = frontMatter;
+    this.path_1 = path;
+    this.frontMatter_1 = frontMatter;
   }
+  protoOf(MarkdownContext).get_path_wos8ry_k$ = function () {
+    return this.path_1;
+  };
+  protoOf(MarkdownContext).get_frontMatter_iz7ndr_k$ = function () {
+    return this.frontMatter_1;
+  };
   function LocalMarkdownContext$lambda() {
     _init_properties_MarkdownContext_kt__bijofm();
     return null;

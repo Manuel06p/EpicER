@@ -2,9 +2,9 @@ package epicer.backend
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
-import epicer.shared.dto.user.LoginUserDTO
-import epicer.shared.dto.user.NewUserDTO
-import epicer.shared.dto.user.UpdateUserDTO
+import epicer.common.dto.user.LoginUserDTO
+import epicer.common.dto.user.NewUserDTO
+import epicer.common.dto.user.UpdateUserDTO
 import epicer.backend.service.`interface`.IUserService
 import epicer.backend.utils.verifyPassword
 import io.ktor.http.*

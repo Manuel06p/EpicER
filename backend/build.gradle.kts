@@ -53,5 +53,5 @@ dependencies {
     implementation("io.ktor:ktor-server-auth:$ktor_version")
     implementation("io.ktor:ktor-server-auth-jwt:$ktor_version")
 
-    implementation(project(":shared"))  // Link the shared module
+    implementation(project(":common"))  // Link the shared module
 }

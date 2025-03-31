@@ -6,11 +6,11 @@ import epicer.backend.model.UsersTable
 import epicer.backend.service.`interface`.IUserService
 import epicer.backend.suspendTransaction
 import epicer.backend.utils.hashPassword
-import epicer.shared.dto.user.BaseUserDTO
-import epicer.shared.dto.user.FullUserDTO
-import epicer.shared.dto.user.NewUserDTO
-import epicer.shared.dto.user.UpdateUserDTO
-import epicer.shared.dto.user.UserDTO
+import epicer.common.dto.user.BaseUserDTO
+import epicer.common.dto.user.FullUserDTO
+import epicer.common.dto.user.NewUserDTO
+import epicer.common.dto.user.UpdateUserDTO
+import epicer.common.dto.user.*
 import kotlinx.datetime.toKotlinLocalDateTime
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq

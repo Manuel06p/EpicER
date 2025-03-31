@@ -5,6 +5,9 @@
       <module name="backend" target="11" />
       <module name="backend.main" target="11" />
       <module name="backend.test" target="11" />
+      <module name="epicer.shared" target="23" />
+      <module name="epicer.shared.main" target="23" />
+      <module name="epicer.shared.test" target="23" />
       <module name="frontend.site" target="11" />
       <module name="shared" target="11" />
       <module name="shared.main" target="11" />
