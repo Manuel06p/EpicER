@@ -1,3 +1,7 @@
+val kotlinx_datetime_version: String by project
+val kotlinx_serialization_version: String by project
+
+
 import com.varabyte.kobweb.gradle.application.util.configAsKobwebApplication
 
 plugins {
@@ -24,9 +28,11 @@ kotlin {
     configAsKobwebApplication("frontend" /*, includeServer = true*/)
 
     sourceSets {
-//        commonMain.dependencies {
-//          // Add shared dependencies between JS and JVM here if building a fullstack app
-//        }
+        commonMain.dependencies {
+            implementation("io.ktor:ktor-serialization-kotlinx-json:$kotlinx_serialization_version")
+            implementation("org.jetbrains.kotlinx:kotlinx-datetime:$kotlinx_datetime_version")
+            implementation(project(":shared"))  // Import shared module
+        }
 
         jsMain.dependencies {
             implementation(libs.compose.runtime)

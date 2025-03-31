@@ -5,7 +5,11 @@ val logback_version: String by project
 val mariadb_jdbc_version: String by project
 val jbcrypt_version: String by project
 val kotlinx_datetime_version: String by project
+val kotlinx_serialization_version: String by project
 val ktor_version: String by project
+
+tasks.register("prepareKotlinBuildScriptModel"){}
+
 
 plugins {
     kotlin("jvm") version "2.1.10"
@@ -31,7 +35,7 @@ repositories {
 dependencies {
     implementation("io.ktor:ktor-server-core")
     implementation("io.ktor:ktor-server-content-negotiation")
-    implementation("io.ktor:ktor-serialization-kotlinx-json")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$kotlinx_serialization_version")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:$kotlinx_datetime_version")
     implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
     implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
@@ -48,5 +52,6 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-java-time:$exposed_version")
     implementation("io.ktor:ktor-server-auth:$ktor_version")
     implementation("io.ktor:ktor-server-auth-jwt:$ktor_version")
-    testImplementation("io.ktor:ktor-server-test-host-jvm:3.1.1")
+
+    implementation(project(":shared"))  // Link the shared module
 }

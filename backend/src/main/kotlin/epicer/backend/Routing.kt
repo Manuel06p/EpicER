@@ -2,29 +2,20 @@ package epicer.backend
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
-import epicer.backend.dto.user.LoginUserDTO
-import epicer.backend.dto.user.NewUserDTO
-import epicer.backend.dto.user.UpdateUserDTO
+import epicer.shared.dto.user.LoginUserDTO
+import epicer.shared.dto.user.NewUserDTO
+import epicer.shared.dto.user.UpdateUserDTO
 import epicer.backend.service.`interface`.IUserService
 import epicer.backend.utils.verifyPassword
 import io.ktor.http.*
 import io.ktor.serialization.JsonConvertException
-import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
-import io.ktor.server.auth.AuthenticationChecked
 import io.ktor.server.auth.authenticate
 import io.ktor.server.auth.jwt.JWTPrincipal
 import io.ktor.server.auth.principal
-import io.ktor.server.plugins.calllogging.*
-import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.request.*
-import io.ktor.server.response.*
 import io.ktor.server.response.respond
 import io.ktor.server.routing.*
-import io.ktor.util.pipeline.PipelineContext
-import org.jetbrains.exposed.sql.*
-import org.jetbrains.exposed.sql.transactions.transaction
-import org.slf4j.event.*
 import java.util.Date
 
 

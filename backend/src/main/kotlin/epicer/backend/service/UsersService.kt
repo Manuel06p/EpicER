@@ -1,12 +1,16 @@
 package epicer.backend.service
 
-import epicer.backend.dto.user.*
 import epicer.backend.model.RolesTable
 import epicer.backend.model.UsersRolesTable
 import epicer.backend.model.UsersTable
 import epicer.backend.service.`interface`.IUserService
 import epicer.backend.suspendTransaction
 import epicer.backend.utils.hashPassword
+import epicer.shared.dto.user.BaseUserDTO
+import epicer.shared.dto.user.FullUserDTO
+import epicer.shared.dto.user.NewUserDTO
+import epicer.shared.dto.user.UpdateUserDTO
+import epicer.shared.dto.user.UserDTO
 import kotlinx.datetime.toKotlinLocalDateTime
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq

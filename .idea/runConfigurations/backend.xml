@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="backend" type="KtorApplicationConfigurationType" factoryName="Ktor">
-    <option name="MAIN_CLASS_NAME" value="io.ktor.server.netty.EngineMain" />
-    <module name="backend.main" />
+    <option name="MAIN_CLASS_NAME" value="epicer.backend.ApplicationKt" />
+    <module name="epicer.backend.main" />
     <option name="alternativeJrePath" />
     <option name="alternativeJrePathEnabled" value="false" />
     <option name="includeProvidedScope" value="false" />
-    <option name="mainClass" value="io.ktor.server.netty.EngineMain" />
+    <option name="mainClass" value="epicer.backend.ApplicationKt" />
     <option name="passParentEnvs" value="true" />
     <option name="programParameters" value="" />
     <option name="shortenCommandLine" />
