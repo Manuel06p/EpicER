@@ -9,7 +9,7 @@ val kotlinx_serialization_version: String by project
 val ktor_version: String by project
 
 tasks.register("prepareKotlinBuildScriptModel"){}
-
+tasks.register("prepareKotlinIdeaImport"){}
 
 plugins {
     kotlin("jvm") version "2.1.10"

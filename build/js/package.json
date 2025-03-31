@@ -1,0 +1,17 @@
+{
+  "name": "epicer",
+  "version": "unspecified",
+  "private": true,
+  "workspaces": [
+    "packages\\frontend",
+    "packages\\frontend-test",
+    "packages_imported/Kotlin-DateTime-library-kotlinx-datetime/0.6.2",
+    "packages_imported/html-core-js/1.7.3"
+  ],
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "resolutions": {}
+}

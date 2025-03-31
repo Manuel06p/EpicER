@@ -2,6 +2,8 @@ val kotlinx_datetime_version: String by project
 val kotlinx_serialization_version: String by project
 
 tasks.register("prepareKotlinBuildScriptModel"){}
+tasks.register("prepareKotlinIdeaImport"){}
+
 
 repositories {
     mavenCentral()

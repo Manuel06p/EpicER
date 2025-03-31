@@ -5,49 +5,53 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="temurin-23" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/frontend" />
-            <option value="$PROJECT_DIR$/frontend.site" />
+            <option value="$PROJECT_DIR$/frontend/site" />
             <option value="$PROJECT_DIR$/shared" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="gradleJvm" value="temurin-23" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/frontend" />
-            <option value="$PROJECT_DIR$/frontend.site" />
+            <option value="$PROJECT_DIR$/frontend/site" />
             <option value="$PROJECT_DIR$/shared" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/frontend" />
+        <option name="gradleJvm" value="temurin-23" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/frontend" />
-            <option value="$PROJECT_DIR$/frontend.site" />
+            <option value="$PROJECT_DIR$/frontend/site" />
             <option value="$PROJECT_DIR$/shared" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/shared" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="temurin-23" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/frontend" />
-            <option value="$PROJECT_DIR$/frontend.site" />
+            <option value="$PROJECT_DIR$/frontend/site" />
             <option value="$PROJECT_DIR$/shared" />
           </set>
         </option>

@@ -69,7 +69,6 @@ private fun GridCell(color: Color, row: Int, column: Int, width: Int? = null, he
 @Page
 @Composable
 fun HomePage() {
-    BaseUserDTO();
 
 //    PageLayout("Home") {
 //        Row(HeroContainerStyle.toModifier()) {
