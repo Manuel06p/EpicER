@@ -28,16 +28,16 @@
   'use strict';
   //region block: imports
   var rememberComposableLambda = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c;
-  var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
-  var Companion_getInstance = kotlin_org_jetbrains_compose_runtime_runtime.$_$.g1;
-  var THROW_CCE = kotlin_kotlin.$_$.ug;
-  var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.v;
+  var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.y;
+  var Companion_getInstance = kotlin_org_jetbrains_compose_runtime_runtime.$_$.i1;
+  var THROW_CCE = kotlin_kotlin.$_$.sh;
+  var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.x;
   var KobwebApp = kotlin_com_varabyte_kobweb_kobweb_core.$_$.c;
-  var Unit_getInstance = kotlin_kotlin.$_$.b5;
-  var KobwebComposeStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w3;
-  var SilkFoundationStyles = kotlin_com_varabyte_kobweb_silk_foundation.$_$.y1;
-  var SilkWidgetVariables = kotlin_com_varabyte_kobweb_silk_widgets.$_$.m;
-  var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.a1;
+  var Unit_getInstance = kotlin_kotlin.$_$.f5;
+  var KobwebComposeStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z3;
+  var SilkFoundationStyles = kotlin_com_varabyte_kobweb_silk_foundation.$_$.x1;
+  var SilkWidgetVariables = kotlin_com_varabyte_kobweb_silk_widgets.$_$.n;
+  var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
   //endregion
   //region block: pre-declaration
   //endregion

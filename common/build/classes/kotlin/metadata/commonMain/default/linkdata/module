@@ -1,2 +1,2 @@
 
-<common_commonMain>:epicer.common.dto.user
+<common_commonMain>:epicer.common.dto:epicer.common.dto.user

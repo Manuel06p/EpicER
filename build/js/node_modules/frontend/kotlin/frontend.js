@@ -1,8 +1,8 @@
 (function (factory) {
   if (typeof define === 'function' && define.amd)
-    define(['exports', './kotlin-kotlin-stdlib.js', './kobweb-frontend-kobweb-core.js', './kobweb-frontend-silk-foundation.js', './compose-multiplatform-core-compose-runtime-runtime.js', './html-internal-html-core-runtime.js', './kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js', './kobweb-frontend-silk-widgets.js', './kobweb-frontend-silk-widgets-kobweb.js', './kobweb-frontend-kobwebx-markdown.js', './html-html-core.js', './kobweb-frontend-compose-html-ext.js', './kobweb-frontend-kobweb-silk.js', './kotlinx-coroutines-core.js', './kobweb-frontend-kobweb-compose.js', './kobweb-frontend-browser-ext.js', './epicer-common.js'], factory);
+    define(['exports', './kotlin-kotlin-stdlib.js', './kobweb-frontend-kobweb-core.js', './kobweb-frontend-silk-foundation.js', './compose-multiplatform-core-compose-runtime-runtime.js', './html-internal-html-core-runtime.js', './kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js', './kobweb-frontend-silk-widgets.js', './kobweb-frontend-silk-widgets-kobweb.js', './kobweb-frontend-kobwebx-markdown.js', './html-html-core.js', './kobweb-frontend-compose-html-ext.js', './kobweb-frontend-kobweb-silk.js', './kotlinx-coroutines-core.js', './kobweb-frontend-kobweb-compose.js', './kobweb-frontend-browser-ext.js', './kotlinx-serialization-kotlinx-serialization-json.js', './epicer-common.js', './kotlinx-serialization-kotlinx-serialization-core.js'], factory);
   else if (typeof exports === 'object')
-    factory(module.exports, require('./kotlin-kotlin-stdlib.js'), require('./kobweb-frontend-kobweb-core.js'), require('./kobweb-frontend-silk-foundation.js'), require('./compose-multiplatform-core-compose-runtime-runtime.js'), require('./html-internal-html-core-runtime.js'), require('./kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js'), require('./kobweb-frontend-silk-widgets.js'), require('./kobweb-frontend-silk-widgets-kobweb.js'), require('./kobweb-frontend-kobwebx-markdown.js'), require('./html-html-core.js'), require('./kobweb-frontend-compose-html-ext.js'), require('./kobweb-frontend-kobweb-silk.js'), require('./kotlinx-coroutines-core.js'), require('./kobweb-frontend-kobweb-compose.js'), require('./kobweb-frontend-browser-ext.js'), require('./epicer-common.js'));
+    factory(module.exports, require('./kotlin-kotlin-stdlib.js'), require('./kobweb-frontend-kobweb-core.js'), require('./kobweb-frontend-silk-foundation.js'), require('./compose-multiplatform-core-compose-runtime-runtime.js'), require('./html-internal-html-core-runtime.js'), require('./kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js'), require('./kobweb-frontend-silk-widgets.js'), require('./kobweb-frontend-silk-widgets-kobweb.js'), require('./kobweb-frontend-kobwebx-markdown.js'), require('./html-html-core.js'), require('./kobweb-frontend-compose-html-ext.js'), require('./kobweb-frontend-kobweb-silk.js'), require('./kotlinx-coroutines-core.js'), require('./kobweb-frontend-kobweb-compose.js'), require('./kobweb-frontend-browser-ext.js'), require('./kotlinx-serialization-kotlinx-serialization-json.js'), require('./epicer-common.js'), require('./kotlinx-serialization-kotlinx-serialization-core.js'));
   else {
     if (typeof globalThis['kotlin-kotlin-stdlib'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kotlin-kotlin-stdlib' was not found. Please, check whether 'kotlin-kotlin-stdlib' is loaded prior to 'epicer.frontend:site'.");
@@ -49,226 +49,257 @@
     if (typeof globalThis['kobweb-frontend-browser-ext'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kobweb-frontend-browser-ext' was not found. Please, check whether 'kobweb-frontend-browser-ext' is loaded prior to 'epicer.frontend:site'.");
     }
+    if (typeof globalThis['kotlinx-serialization-kotlinx-serialization-json'] === 'undefined') {
+      throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kotlinx-serialization-kotlinx-serialization-json' was not found. Please, check whether 'kotlinx-serialization-kotlinx-serialization-json' is loaded prior to 'epicer.frontend:site'.");
+    }
     if (typeof globalThis['epicer-common'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'epicer-common' was not found. Please, check whether 'epicer-common' is loaded prior to 'epicer.frontend:site'.");
     }
-    globalThis['epicer.frontend:site'] = factory(typeof globalThis['epicer.frontend:site'] === 'undefined' ? {} : globalThis['epicer.frontend:site'], globalThis['kotlin-kotlin-stdlib'], globalThis['kobweb-frontend-kobweb-core'], globalThis['kobweb-frontend-silk-foundation'], globalThis['compose-multiplatform-core-compose-runtime-runtime'], globalThis['html-internal-html-core-runtime'], kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat, globalThis['kobweb-frontend-silk-widgets'], globalThis['kobweb-frontend-silk-widgets-kobweb'], globalThis['kobweb-frontend-kobwebx-markdown'], globalThis['html-html-core'], globalThis['kobweb-frontend-compose-html-ext'], globalThis['kobweb-frontend-kobweb-silk'], globalThis['kotlinx-coroutines-core'], globalThis['kobweb-frontend-kobweb-compose'], globalThis['kobweb-frontend-browser-ext'], globalThis['epicer-common']);
+    if (typeof globalThis['kotlinx-serialization-kotlinx-serialization-core'] === 'undefined') {
+      throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kotlinx-serialization-kotlinx-serialization-core' was not found. Please, check whether 'kotlinx-serialization-kotlinx-serialization-core' is loaded prior to 'epicer.frontend:site'.");
+    }
+    globalThis['epicer.frontend:site'] = factory(typeof globalThis['epicer.frontend:site'] === 'undefined' ? {} : globalThis['epicer.frontend:site'], globalThis['kotlin-kotlin-stdlib'], globalThis['kobweb-frontend-kobweb-core'], globalThis['kobweb-frontend-silk-foundation'], globalThis['compose-multiplatform-core-compose-runtime-runtime'], globalThis['html-internal-html-core-runtime'], kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat, globalThis['kobweb-frontend-silk-widgets'], globalThis['kobweb-frontend-silk-widgets-kobweb'], globalThis['kobweb-frontend-kobwebx-markdown'], globalThis['html-html-core'], globalThis['kobweb-frontend-compose-html-ext'], globalThis['kobweb-frontend-kobweb-silk'], globalThis['kotlinx-coroutines-core'], globalThis['kobweb-frontend-kobweb-compose'], globalThis['kobweb-frontend-browser-ext'], globalThis['kotlinx-serialization-kotlinx-serialization-json'], globalThis['epicer-common'], globalThis['kotlinx-serialization-kotlinx-serialization-core']);
   }
-}(function (_, kotlin_kotlin, kotlin_com_varabyte_kobweb_kobweb_core, kotlin_com_varabyte_kobweb_silk_foundation, kotlin_org_jetbrains_compose_runtime_runtime, kotlin_org_jetbrains_compose_html_internal_html_core_runtime, kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat, kotlin_com_varabyte_kobweb_silk_widgets, kotlin_com_varabyte_kobweb_silk_widgets_kobweb, kotlin_com_varabyte_kobwebx_kobwebx_markdown, kotlin_org_jetbrains_compose_html_html_core, kotlin_com_varabyte_kobweb_compose_html_ext, kotlin_com_varabyte_kobweb_kobweb_silk, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core, kotlin_com_varabyte_kobweb_kobweb_compose, kotlin_com_varabyte_kobweb_browser_ext, kotlin_epicer_common) {
+}(function (_, kotlin_kotlin, kotlin_com_varabyte_kobweb_kobweb_core, kotlin_com_varabyte_kobweb_silk_foundation, kotlin_org_jetbrains_compose_runtime_runtime, kotlin_org_jetbrains_compose_html_internal_html_core_runtime, kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat, kotlin_com_varabyte_kobweb_silk_widgets, kotlin_com_varabyte_kobweb_silk_widgets_kobweb, kotlin_com_varabyte_kobwebx_kobwebx_markdown, kotlin_org_jetbrains_compose_html_html_core, kotlin_com_varabyte_kobweb_compose_html_ext, kotlin_com_varabyte_kobweb_kobweb_silk, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core, kotlin_com_varabyte_kobweb_kobweb_compose, kotlin_com_varabyte_kobweb_browser_ext, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json, kotlin_epicer_common, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core) {
   'use strict';
   //region block: imports
-  var ensureNotNull = kotlin_kotlin.$_$.oh;
+  var ensureNotNull = kotlin_kotlin.$_$.mi;
   var get_api = kotlin_com_varabyte_kobweb_kobweb_core.$_$.a;
   var AppGlobals_getInstance = kotlin_com_varabyte_kobweb_kobweb_core.$_$.j;
-  var to = kotlin_kotlin.$_$.zh;
-  var mapOf = kotlin_kotlin.$_$.p8;
+  var to = kotlin_kotlin.$_$.bj;
+  var mapOf = kotlin_kotlin.$_$.v8;
   var Companion_getInstance = kotlin_com_varabyte_kobweb_kobweb_core.$_$.k;
   var Router = kotlin_com_varabyte_kobweb_kobweb_core.$_$.f;
   var initKobweb = kotlin_com_varabyte_kobweb_kobweb_core.$_$.b;
   var set_additionalSilkInitialization = kotlin_com_varabyte_kobweb_silk_foundation.$_$.d;
-  var removePrefix = kotlin_kotlin.$_$.ze;
+  var removePrefix = kotlin_kotlin.$_$.nf;
   var remove = kotlin_com_varabyte_kobweb_kobweb_core.$_$.h;
   var UpdateHistoryMode_REPLACE_getInstance = kotlin_com_varabyte_kobweb_kobweb_core.$_$.i;
   var composableLambdaInstance = kotlin_org_jetbrains_compose_runtime_runtime.$_$.a;
   var renderComposable = kotlin_org_jetbrains_compose_html_internal_html_core_runtime.$_$.e;
-  var Unit_getInstance = kotlin_kotlin.$_$.b5;
+  var Unit_getInstance = kotlin_kotlin.$_$.f5;
   var rememberComposableLambda = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c;
-  var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
-  var Companion_getInstance_0 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.g1;
-  var THROW_CCE = kotlin_kotlin.$_$.ug;
-  var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.v;
+  var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.y;
+  var Companion_getInstance_0 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.i1;
+  var THROW_CCE = kotlin_kotlin.$_$.sh;
+  var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.x;
   var DeferringHost = kotlin_com_varabyte_kobweb_silk_foundation.$_$.c;
-  var protoOf = kotlin_kotlin.$_$.dd;
-  var initMetadataForObject = kotlin_kotlin.$_$.ec;
+  var protoOf = kotlin_kotlin.$_$.kd;
+  var initMetadataForObject = kotlin_kotlin.$_$.lc;
   var removeClass = kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.$_$.d;
   var hasClass = kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.$_$.c;
-  var toString = kotlin_kotlin.$_$.yh;
-  var toInt = kotlin_kotlin.$_$.rf;
-  var charSequenceLength = kotlin_kotlin.$_$.nb;
-  var toBoolean = kotlin_kotlin.$_$.of;
-  var isBlank = kotlin_kotlin.$_$.re;
-  var removeSuffix = kotlin_kotlin.$_$.bf;
-  var initSilkWidgets = kotlin_com_varabyte_kobweb_silk_widgets.$_$.n;
+  var toString = kotlin_kotlin.$_$.aj;
+  var toInt = kotlin_kotlin.$_$.ig;
+  var charSequenceLength = kotlin_kotlin.$_$.ub;
+  var toBoolean = kotlin_kotlin.$_$.eg;
+  var isBlank = kotlin_kotlin.$_$.df;
+  var removeSuffix = kotlin_kotlin.$_$.pf;
+  var initSilkWidgets = kotlin_com_varabyte_kobweb_silk_widgets.$_$.o;
   var initSilkWidgetsKobweb = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.f;
   var com_varabyte_kobweb_navigation_Router$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_core.$_$.g;
   var get_LocalMarkdownContext = kotlin_com_varabyte_kobwebx_kobwebx_markdown.$_$.a;
-  var emptyMap = kotlin_kotlin.$_$.r7;
+  var emptyMap = kotlin_kotlin.$_$.v7;
   var MarkdownContext = kotlin_com_varabyte_kobwebx_kobwebx_markdown.$_$.b;
   var CompositionLocalProvider = kotlin_org_jetbrains_compose_runtime_runtime.$_$.e;
-  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.l6;
-  var Code = kotlin_org_jetbrains_compose_html_html_core.$_$.v5;
-  var GenericTag = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.s2;
-  var Li = kotlin_org_jetbrains_compose_html_html_core.$_$.f6;
-  var Em = kotlin_org_jetbrains_compose_html_html_core.$_$.y5;
+  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.t6;
+  var Code = kotlin_org_jetbrains_compose_html_html_core.$_$.b6;
+  var GenericTag = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.w2;
+  var Li = kotlin_org_jetbrains_compose_html_html_core.$_$.n6;
+  var Em = kotlin_org_jetbrains_compose_html_html_core.$_$.e6;
   var Link = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.c;
-  var H1 = kotlin_org_jetbrains_compose_html_html_core.$_$.z5;
-  var P = kotlin_org_jetbrains_compose_html_html_core.$_$.h6;
-  var HorizontalDivider = kotlin_com_varabyte_kobweb_silk_widgets.$_$.h;
-  var H2 = kotlin_org_jetbrains_compose_html_html_core.$_$.a6;
-  var H3 = kotlin_org_jetbrains_compose_html_html_core.$_$.b6;
-  var H4 = kotlin_org_jetbrains_compose_html_html_core.$_$.c6;
-  var Ul = kotlin_org_jetbrains_compose_html_html_core.$_$.m6;
-  var Pre = kotlin_org_jetbrains_compose_html_html_core.$_$.g6;
-  var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.a1;
-  var Companion_getInstance_1 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.f2;
-  var loadFromLocalStorage = kotlin_com_varabyte_kobweb_silk_foundation.$_$.r1;
-  var get_systemPreference = kotlin_com_varabyte_kobweb_silk_foundation.$_$.u1;
+  var H1 = kotlin_org_jetbrains_compose_html_html_core.$_$.g6;
+  var P = kotlin_org_jetbrains_compose_html_html_core.$_$.p6;
+  var HorizontalDivider = kotlin_com_varabyte_kobweb_silk_widgets.$_$.i;
+  var H2 = kotlin_org_jetbrains_compose_html_html_core.$_$.h6;
+  var H3 = kotlin_org_jetbrains_compose_html_html_core.$_$.i6;
+  var H4 = kotlin_org_jetbrains_compose_html_html_core.$_$.j6;
+  var Ul = kotlin_org_jetbrains_compose_html_html_core.$_$.u6;
+  var Pre = kotlin_org_jetbrains_compose_html_html_core.$_$.o6;
+  var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
+  var Companion_getInstance_1 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.e2;
+  var loadFromLocalStorage = kotlin_com_varabyte_kobweb_silk_foundation.$_$.q1;
+  var get_systemPreference = kotlin_com_varabyte_kobweb_silk_foundation.$_$.t1;
   var SilkApp = kotlin_com_varabyte_kobweb_kobweb_silk.$_$.a;
-  var CoroutineImpl = kotlin_kotlin.$_$.za;
+  var CoroutineImpl = kotlin_kotlin.$_$.gb;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.r;
-  var isInterface = kotlin_kotlin.$_$.oc;
-  var saveToLocalStorage = kotlin_com_varabyte_kobweb_silk_foundation.$_$.s1;
-  var initMetadataForLambda = kotlin_kotlin.$_$.dc;
-  var LaunchedEffect = kotlin_org_jetbrains_compose_runtime_runtime.$_$.l;
-  var get_SmoothColorStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.o;
+  var isInterface = kotlin_kotlin.$_$.vc;
+  var saveToLocalStorage = kotlin_com_varabyte_kobweb_silk_foundation.$_$.r1;
+  var initMetadataForLambda = kotlin_kotlin.$_$.kc;
+  var LaunchedEffect = kotlin_org_jetbrains_compose_runtime_runtime.$_$.m;
+  var get_SmoothColorStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.p;
   var com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.g1;
   var toModifier = kotlin_com_varabyte_kobweb_silk_foundation.$_$.l1;
-  var get_vh = kotlin_org_jetbrains_compose_html_html_core.$_$.p5;
-  var minHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h2;
-  var Companion_getInstance_2 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u3;
-  var scrollBehavior = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z2;
-  var Surface = kotlin_com_varabyte_kobweb_silk_widgets.$_$.i;
-  var SuspendFunction1 = kotlin_kotlin.$_$.ab;
+  var get_vh = kotlin_org_jetbrains_compose_html_html_core.$_$.v5;
+  var minHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k2;
+  var Companion_getInstance_2 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.y3;
+  var scrollBehavior = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c3;
+  var Surface = kotlin_com_varabyte_kobweb_silk_widgets.$_$.j;
+  var SuspendFunction1 = kotlin_kotlin.$_$.hb;
   var registerStyleBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.e;
-  var get_HorizontalDividerStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.g;
+  var get_HorizontalDividerStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.h;
   var VOID = kotlin_kotlin.$_$.g;
-  var modifyStyleBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.w1;
-  var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h4;
-  var get_cssRem = kotlin_org_jetbrains_compose_html_html_core.$_$.y3;
-  var fontSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m1;
-  var Companion_getInstance_4 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.v3;
-  var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d3;
-  var lineHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x1;
+  var modifyStyleBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.v1;
+  var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l4;
+  var get_cssRem = kotlin_org_jetbrains_compose_html_html_core.$_$.e4;
+  var fontSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q1;
+  var Companion_getInstance_4 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.z3;
+  var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h3;
+  var lineHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a2;
   var toPalette = kotlin_com_varabyte_kobweb_silk_foundation.$_$.p1;
-  var get_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.s;
-  var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e1;
-  var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.j5;
-  var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u2;
-  var get_percent = kotlin_org_jetbrains_compose_html_html_core.$_$.h5;
-  var borderRadius = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u;
-  var ButtonVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.v;
-  var Colors_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z3;
-  var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a3;
-  var MediaFeature = kotlin_org_jetbrains_compose_html_html_core.$_$.v2;
-  var fontFamily = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l1;
-  var fillMaxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j1;
-  var Companion_getInstance_5 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.e2;
+  var get_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.t;
+  var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i1;
+  var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.p5;
+  var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x2;
+  var get_percent = kotlin_org_jetbrains_compose_html_html_core.$_$.n5;
+  var borderRadius = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y;
+  var ButtonVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.w;
+  var Colors_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d4;
+  var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e3;
+  var MediaFeature = kotlin_org_jetbrains_compose_html_html_core.$_$.b3;
+  var fontFamily = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p1;
+  var fillMaxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n1;
+  var Companion_getInstance_5 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.d2;
   var base = kotlin_com_varabyte_kobweb_silk_foundation.$_$.e1;
   var get_ButtonStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.a;
   var addVariantBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.b1;
-  var Companion_getInstance_6 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y3;
-  var initMetadataForClass = kotlin_kotlin.$_$.zb;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.rh;
-  var set_background = kotlin_com_varabyte_kobweb_silk_widgets.$_$.r;
-  var set_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.t;
-  var fillMaxSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i1;
-  var fontWeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o1;
-  var margin = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f2;
-  var margin_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e2;
-  var Companion_getInstance_7 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.n3;
-  var fontWeight_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n1;
-  var Companion_getInstance_8 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.t3;
-  var overflowWrap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p2;
-  var Companion_getInstance_9 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.s3;
-  var Companion_getInstance_10 = kotlin_org_jetbrains_compose_html_html_core.$_$.l;
-  var display = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g1;
-  var backgroundColor = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q;
-  var Companion_getInstance_11 = kotlin_org_jetbrains_compose_html_html_core.$_$.o;
-  var border = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w;
-  var overflow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q2;
+  var Companion_getInstance_6 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c4;
+  var initMetadataForClass = kotlin_kotlin.$_$.gc;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.si;
+  var set_background = kotlin_com_varabyte_kobweb_silk_widgets.$_$.s;
+  var set_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.u;
+  var fillMaxSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m1;
+  var fontWeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s1;
+  var margin = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i2;
+  var margin_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h2;
+  var Companion_getInstance_7 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r3;
+  var fontWeight_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r1;
+  var Companion_getInstance_8 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.x3;
+  var overflowWrap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s2;
+  var Companion_getInstance_9 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.w3;
+  var Companion_getInstance_10 = kotlin_org_jetbrains_compose_html_html_core.$_$.n;
+  var display = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k1;
+  var backgroundColor = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t;
+  var Companion_getInstance_11 = kotlin_org_jetbrains_compose_html_html_core.$_$.q;
+  var border = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a1;
+  var overflow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t2;
   var toAttrs = kotlin_com_varabyte_kobweb_silk_foundation.$_$.i1;
-  var Div = kotlin_org_jetbrains_compose_html_html_core.$_$.w5;
+  var Div = kotlin_org_jetbrains_compose_html_html_core.$_$.c6;
   var CssStyle = kotlin_com_varabyte_kobweb_silk_foundation.$_$.y;
-  var maxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g2;
-  var toAttrs_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u3;
-  var Svg = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.q2;
-  var gridTemplateRows = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t1;
-  var Center_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d4;
-  var com_varabyte_kobweb_compose_ui_Alignment_Center$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o3;
+  var maxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j2;
+  var toAttrs_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x3;
+  var Svg = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u2;
+  var gridTemplateRows = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x1;
+  var Center_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h4;
+  var com_varabyte_kobweb_compose_ui_Alignment_Center$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r3;
   var Box = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c;
-  var Breakpoint_MD_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.z1;
-  var padding_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v2;
-  var Stop = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.p2;
-  var RadialGradient = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.o2;
-  var _SvgId___init__impl__pmt7ru = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.f3;
-  var Defs = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.k2;
-  var Path = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.n2;
-  var get_fr = kotlin_org_jetbrains_compose_html_html_core.$_$.g4;
-  var gridRow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r1;
-  var TopStart_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g4;
-  var CenterHorizontally_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b4;
-  var com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p3;
+  var Breakpoint_MD_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.y1;
+  var padding_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y2;
+  var Stop = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.t2;
+  var RadialGradient = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.s2;
+  var _SvgId___init__impl__pmt7ru = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.j3;
+  var Defs = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.o2;
+  var Path = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r2;
+  var get_fr = kotlin_org_jetbrains_compose_html_html_core.$_$.m4;
+  var gridRow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v1;
+  var TopStart_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k4;
+  var CenterHorizontally_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f4;
+  var com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s3;
   var Column = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d;
   var SpanText = kotlin_com_varabyte_kobweb_silk_foundation.$_$.a;
-  var get_ColorVar = kotlin_com_varabyte_kobweb_silk_widgets.$_$.q;
+  var get_ColorVar = kotlin_com_varabyte_kobweb_silk_widgets.$_$.r;
   var get_UncoloredLinkVariant = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.d;
   var com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.h1;
   var Link_0 = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.b;
-  var Companion_getInstance_12 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.a4;
-  var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m3;
-  var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.i6;
-  var padding_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w2;
+  var Companion_getInstance_12 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.e4;
+  var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p3;
+  var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.q6;
+  var padding_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z2;
   var get_UndecoratedLinkVariant = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.e;
   var Companion_getInstance_13 = kotlin_com_varabyte_kobweb_browser_ext.$_$.j;
-  var PopupPlacement_BottomRight_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.u;
-  var Tooltip = kotlin_com_varabyte_kobweb_silk_widgets.$_$.k;
-  var THROW_IAE = kotlin_kotlin.$_$.vg;
-  var enumEntries = kotlin_kotlin.$_$.db;
-  var Enum = kotlin_kotlin.$_$.jg;
-  var CenterVertically_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c4;
-  var com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q3;
+  var PopupPlacement_BottomRight_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.v;
+  var Tooltip = kotlin_com_varabyte_kobweb_silk_widgets.$_$.l;
+  var THROW_IAE = kotlin_kotlin.$_$.th;
+  var enumEntries = kotlin_kotlin.$_$.kb;
+  var Enum = kotlin_kotlin.$_$.hh;
+  var CenterVertically_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g4;
+  var com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t3;
   var Row = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e;
-  var OverlayVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.w;
-  var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l2;
-  var Overlay = kotlin_com_varabyte_kobweb_silk_widgets.$_$.j;
-  var HamburgerIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.d;
-  var CloseIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.c;
-  var height = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v1;
+  var OverlayVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.x;
+  var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o2;
+  var Overlay = kotlin_com_varabyte_kobweb_silk_widgets.$_$.k;
+  var HamburgerIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.e;
+  var CloseIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.d;
+  var height = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y1;
   var Image = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.a;
-  var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.u;
-  var KMutableProperty0 = kotlin_kotlin.$_$.rd;
-  var THROW_ISE = kotlin_kotlin.$_$.wg;
-  var getLocalDelegateReference = kotlin_kotlin.$_$.ub;
+  var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
+  var KMutableProperty0 = kotlin_kotlin.$_$.ae;
+  var THROW_ISE = kotlin_kotlin.$_$.uh;
+  var getLocalDelegateReference = kotlin_kotlin.$_$.bc;
   var Spacer = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f;
-  var gap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p1;
+  var gap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t1;
   var displayIfAtLeast = kotlin_com_varabyte_kobweb_silk_foundation.$_$.j;
   var displayUntil = kotlin_com_varabyte_kobweb_silk_foundation.$_$.k;
-  var translateX = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j3;
-  var SunIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.f;
-  var MoonIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.e;
-  var padding_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t2;
-  var End_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e4;
-  var com_varabyte_kobweb_compose_ui_Alignment_End$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r3;
-  var fillMaxHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h1;
+  var translateX = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m3;
+  var SunIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.g;
+  var MoonIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.f;
+  var padding_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w2;
+  var End_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i4;
+  var com_varabyte_kobweb_compose_ui_Alignment_End$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u3;
+  var fillMaxHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l1;
   var clamp = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.c;
-  var width = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n3;
-  var CenterEnd_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a4;
-  var get_ms = kotlin_org_jetbrains_compose_html_html_core.$_$.e5;
-  var Companion_getInstance_14 = kotlin_org_jetbrains_compose_html_html_core.$_$.h;
-  var Companion_getInstance_15 = kotlin_org_jetbrains_compose_html_html_core.$_$.f;
-  var Companion_getInstance_16 = kotlin_org_jetbrains_compose_html_html_core.$_$.g;
+  var width = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q3;
+  var CenterEnd_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e4;
+  var get_ms = kotlin_org_jetbrains_compose_html_html_core.$_$.k5;
+  var Companion_getInstance_14 = kotlin_org_jetbrains_compose_html_html_core.$_$.j;
+  var Companion_getInstance_15 = kotlin_org_jetbrains_compose_html_html_core.$_$.h;
+  var Companion_getInstance_16 = kotlin_org_jetbrains_compose_html_html_core.$_$.i;
   var com_varabyte_kobweb_silk_style_animation_Keyframes$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.g;
   var toAnimation = kotlin_com_varabyte_kobweb_silk_foundation.$_$.h;
-  var animation = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m;
-  var borderRadius_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t;
-  var onAnimationEnd = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k2;
+  var animation = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n;
+  var borderRadius_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x;
+  var onAnimationEnd = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n2;
   var Keyframes = kotlin_com_varabyte_kobweb_silk_foundation.$_$.f;
-  var get_em = kotlin_org_jetbrains_compose_html_html_core.$_$.a4;
+  var get_em = kotlin_org_jetbrains_compose_html_html_core.$_$.g4;
   var Button = kotlin_com_varabyte_kobweb_silk_widgets.$_$.b;
-  var gridItem = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q1;
-  var NewUserDTO = kotlin_epicer_common.$_$.a;
-  var textShadow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f3;
+  var get_http = kotlin_com_varabyte_kobweb_browser_ext.$_$.b;
+  var Default_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
+  var LoginUserDTO = kotlin_epicer_common.$_$.b;
+  var getKClass = kotlin_kotlin.$_$.e;
+  var arrayOf = kotlin_kotlin.$_$.hi;
+  var createKType = kotlin_kotlin.$_$.b;
+  var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j2;
+  var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.a2;
+  var encodeToByteArray = kotlin_kotlin.$_$.we;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.qa;
+  var decodeToString = kotlin_kotlin.$_$.te;
+  var TokenDTO = kotlin_epicer_common.$_$.c;
+  var Exception = kotlin_kotlin.$_$.jh;
+  var initMetadataForCoroutine = kotlin_kotlin.$_$.ic;
+  var mapOf_0 = kotlin_kotlin.$_$.w8;
+  var BaseUserDTO = kotlin_epicer_common.$_$.a;
+  var gridItem = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u1;
   var rememberPageContext = kotlin_com_varabyte_kobweb_kobweb_core.$_$.d;
-  var Blue_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.g2;
-  var com_varabyte_kobweb_silk_theme_colors_ColorPalettes_Blue$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.q1;
-  var Monochrome_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.i2;
-  var com_varabyte_kobweb_compose_ui_graphics_Color_Rgb$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i;
-  var grid = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u1;
-  var margin_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d2;
-  var boxShadow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a1;
-  var KProperty0 = kotlin_kotlin.$_$.td;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.wb;
+  var margin_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g2;
+  var boxShadow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e1;
+  var KProperty0 = kotlin_kotlin.$_$.ce;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.dc;
   var StyleVariable = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.h;
+  var createCompositionCoroutineScope = kotlin_org_jetbrains_compose_runtime_runtime.$_$.s;
+  var CompositionScopedCoroutineScopeCanceller = kotlin_org_jetbrains_compose_runtime_runtime.$_$.f;
+  var Center_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a4;
+  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g;
+  var EmptyCoroutineContext_getInstance = kotlin_kotlin.$_$.n4;
+  var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.y;
+  var Text_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.e;
+  var Input = kotlin_com_varabyte_kobweb_silk_widgets.$_$.c;
+  var Password_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.d;
+  var Form = kotlin_org_jetbrains_compose_html_html_core.$_$.f6;
+  var SpaceBetween_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b4;
+  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_SpaceBetween$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h;
+  var joinToString = kotlin_kotlin.$_$.j8;
+  var Color_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.m;
+  var Color = kotlin_org_jetbrains_compose_html_html_core.$_$.f3;
+  var background = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(ComposableSingletons$MainKt, 'ComposableSingletons$MainKt');
@@ -281,7 +312,13 @@
   initMetadataForObject(ComposableSingletons$FooterKt, 'ComposableSingletons$FooterKt');
   initMetadataForClass(SideMenuState, 'SideMenuState', VOID, Enum);
   initMetadataForObject(ComposableSingletons$NavHeaderKt, 'ComposableSingletons$NavHeaderKt');
+  initMetadataForCoroutine($loginCOROUTINE$0, CoroutineImpl);
+  initMetadataForCoroutine($getMyBaseUserDTOCOROUTINE$1, CoroutineImpl);
   initMetadataForObject(ComposableSingletons$IndexKt, 'ComposableSingletons$IndexKt');
+  initMetadataForObject(ComposableSingletons$LoginKt, 'ComposableSingletons$LoginKt');
+  initMetadataForLambda(LoginPage$lambda$lambda$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
+  initMetadataForObject(ComposableSingletons$MeKt, 'ComposableSingletons$MeKt');
+  initMetadataForLambda(ProfilePage$lambda$lambda$lambda$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   //endregion
   function forceReloadNow() {
     window.stop();
@@ -326,7 +363,7 @@
     while (!(root.firstChild == null)) {
       root.removeChild(ensureNotNull(root.firstChild));
     }
-    renderComposable('root', ComposableLambda$invoke$ref_3(composableLambdaInstance(1108811911, true, main$lambda_2(router))));
+    renderComposable('root', ComposableLambda$invoke$ref_5(composableLambdaInstance(1108811911, true, main$lambda_2(router))));
   }
   function ComposableLambda$invoke$ref($boundThis) {
     return function (p0, p1) {
@@ -357,19 +394,47 @@
     return Unit_getInstance();
   }
   function ComposableLambda$invoke$ref_1($boundThis) {
+    return function (p0, p1) {
+      return $boundThis.invoke_z8di7s_k$(p0, p1);
+    };
+  }
+  function ComposableSingletons$MainKt$lambda_3$lambda_ezu85n($composer, $changed) {
+    var $composer_0 = $composer;
+    if (!(($changed & 3) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
+      LoginPage($composer_0, 0);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    return Unit_getInstance();
+  }
+  function ComposableLambda$invoke$ref_2($boundThis) {
+    return function (p0, p1) {
+      return $boundThis.invoke_z8di7s_k$(p0, p1);
+    };
+  }
+  function ComposableSingletons$MainKt$lambda_4$lambda_r7ncra($composer, $changed) {
+    var $composer_0 = $composer;
+    if (!(($changed & 3) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
+      ProfilePage($composer_0, 0);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    return Unit_getInstance();
+  }
+  function ComposableLambda$invoke$ref_3($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ComposableSingletons$MainKt$lambda_3$lambda_ezu85n(it, $composer, $changed) {
+  function ComposableSingletons$MainKt$lambda_5$lambda_1lz4ax(it, $composer, $changed) {
     var $composer_0 = $composer;
     var $dirty = $changed;
     if (($changed & 6) === 0)
       $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(it) ? 4 : 2);
     if (!(($dirty & 19) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
       // Inline function 'kotlin.run' call
-      // Inline function 'ComposableSingletons$MainKt.lambda-3.<anonymous>.<anonymous>' call
-      var dispatchReceiver = rememberComposableLambda(-440954647, true, ComposableSingletons$MainKt$lambda_3$lambda$lambda_g9fe80(it), $composer_0, 54);
+      // Inline function 'ComposableSingletons$MainKt.lambda-5.<anonymous>.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(-440954647, true, ComposableSingletons$MainKt$lambda_5$lambda$lambda_4wkiwu(it), $composer_0, 54);
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
@@ -380,8 +445,8 @@
       var it_0 = $composer_1.rememberedValue_4dg93v_k$();
       var tmp;
       if (invalid || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'ComposableSingletons$MainKt.lambda-3.<anonymous>.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_2(dispatchReceiver);
+        // Inline function 'ComposableSingletons$MainKt.lambda-5.<anonymous>.<anonymous>.<anonymous>' call
+        var value = ComposableLambda$invoke$ref_4(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
       } else {
@@ -396,7 +461,7 @@
     }
     return Unit_getInstance();
   }
-  function ComposableSingletons$MainKt$lambda_3$lambda$lambda_g9fe80($it) {
+  function ComposableSingletons$MainKt$lambda_5$lambda$lambda_4wkiwu($it) {
     return function ($composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
@@ -409,7 +474,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_2($boundThis) {
+  function ComposableLambda$invoke$ref_4($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -421,7 +486,11 @@
     var tmp_0 = this;
     tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_0(composableLambdaInstance(1712232191, false, ComposableSingletons$MainKt$lambda_2$lambda_dts8wk));
     var tmp_1 = this;
-    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_1(composableLambdaInstance(854823496, false, ComposableSingletons$MainKt$lambda_3$lambda_ezu85n));
+    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_1(composableLambdaInstance(-1088822656, false, ComposableSingletons$MainKt$lambda_3$lambda_ezu85n));
+    var tmp_2 = this;
+    tmp_2.lambda_4_r8sbbm_1 = ComposableLambda$invoke$ref_2(composableLambdaInstance(405089793, false, ComposableSingletons$MainKt$lambda_4$lambda_r7ncra));
+    var tmp_3 = this;
+    tmp_3.lambda_5_r8sbbl_1 = ComposableLambda$invoke$ref_3(composableLambdaInstance(854823496, false, ComposableSingletons$MainKt$lambda_5$lambda_1lz4ax));
   }
   protoOf(ComposableSingletons$MainKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
@@ -431,6 +500,12 @@
   };
   protoOf(ComposableSingletons$MainKt).get_lambda_3_2j4eos_k$ = function () {
     return this.lambda_3_r8sbbn_1;
+  };
+  protoOf(ComposableSingletons$MainKt).get_lambda_4_ifn4t9_k$ = function () {
+    return this.lambda_4_r8sbbm_1;
+  };
+  protoOf(ComposableSingletons$MainKt).get_lambda_5_yc5uxq_k$ = function () {
+    return this.lambda_5_r8sbbl_1;
   };
   var ComposableSingletons$MainKt_instance;
   function ComposableSingletons$MainKt_getInstance() {
@@ -521,6 +596,8 @@
   function main$lambda(ctx) {
     ctx.get_router_j3zccy_k$().register_vkebx7_k$('/', ComposableSingletons$MainKt_getInstance().lambda_1_r8sbbp_1);
     ctx.get_router_j3zccy_k$().register_vkebx7_k$('/about', ComposableSingletons$MainKt_getInstance().lambda_2_r8sbbo_1);
+    ctx.get_router_j3zccy_k$().register_vkebx7_k$('/login', ComposableSingletons$MainKt_getInstance().lambda_3_r8sbbn_1);
+    ctx.get_router_j3zccy_k$().register_vkebx7_k$('/me', ComposableSingletons$MainKt_getInstance().lambda_4_r8sbbm_1);
     return Unit_getInstance();
   }
   function main$lambda_0($this$addRouteInterceptor) {
@@ -547,7 +624,7 @@
     initTheme(ctx);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_3($boundThis) {
+  function ComposableLambda$invoke$ref_5($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -557,7 +634,7 @@
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 3) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
-        $router.renderActivePage_fc13h0_k$(ComposableSingletons$MainKt_getInstance().lambda_3_r8sbbn_1, $composer_0, 6 | com_varabyte_kobweb_navigation_Router$stableprop_getter() << 3, 0);
+        $router.renderActivePage_fc13h0_k$(ComposableSingletons$MainKt_getInstance().lambda_5_r8sbbl_1, $composer_0, 6 | com_varabyte_kobweb_navigation_Router$stableprop_getter() << 3, 0);
         tmp = Unit_getInstance();
       } else {
         $composer_0.skipToGroupEnd_lh3zi2_k$();
@@ -566,7 +643,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_4($boundThis) {
+  function ComposableLambda$invoke$ref_6($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -588,7 +665,7 @@
       var tmp;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'main.<anonymous>.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_4(dispatchReceiver);
+        var value = ComposableLambda$invoke$ref_6(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
       } else {
@@ -622,7 +699,7 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(AboutPage$lambda($changed));
     }
   }
-  function ComposableLambda$invoke$ref_5($boundThis) {
+  function ComposableLambda$invoke$ref_7($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -632,7 +709,7 @@
     Text('About this template', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_6($boundThis) {
+  function ComposableLambda$invoke$ref_8($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -642,7 +719,7 @@
     Text('This template is intended to both demonstrate some fundamentals of the Kobweb framework and act a starting point you can build your own site from.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_7($boundThis) {
+  function ComposableLambda$invoke$ref_9($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -652,7 +729,7 @@
     Text('Learn', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_8($boundThis) {
+  function ComposableLambda$invoke$ref_10($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -662,7 +739,7 @@
     Text("If this is your first time using Kobweb, please open this site's project in an IDE and take a few minutes to look around the code.", $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_9($boundThis) {
+  function ComposableLambda$invoke$ref_11($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -672,7 +749,7 @@
     Text('Files', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_10($boundThis) {
+  function ComposableLambda$invoke$ref_12($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -682,7 +759,7 @@
     Text('AppEntry.kt', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_11($boundThis) {
+  function ComposableLambda$invoke$ref_13($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -692,7 +769,7 @@
     Text('@App', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_12($boundThis) {
+  function ComposableLambda$invoke$ref_14($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -704,7 +781,7 @@
     Text('.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_13($boundThis) {
+  function ComposableLambda$invoke$ref_15($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -714,7 +791,7 @@
     Text('AppStyles.kt', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_14($boundThis) {
+  function ComposableLambda$invoke$ref_16($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -724,7 +801,7 @@
     Text('An example of declaring generally useful styles that can be used anywhere across the whole site. Otherwise, you normally declare styles close to the widget that uses them.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_15($boundThis) {
+  function ComposableLambda$invoke$ref_17($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -734,7 +811,7 @@
     Text('SiteTheme.kt', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_16($boundThis) {
+  function ComposableLambda$invoke$ref_18($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -744,7 +821,7 @@
     Text('An example of how to define some site-specific colors, effectively extending the palette provided by Silk.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_17($boundThis) {
+  function ComposableLambda$invoke$ref_19($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -754,7 +831,7 @@
     Text('components/', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_18($boundThis) {
+  function ComposableLambda$invoke$ref_20($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -764,7 +841,7 @@
     Text('By convention, Kobweb codebases organize reusable site components under this folder. Within it, you have:', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_19($boundThis) {
+  function ComposableLambda$invoke$ref_21($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -774,7 +851,7 @@
     Text('layouts/', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_20($boundThis) {
+  function ComposableLambda$invoke$ref_22($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -786,7 +863,7 @@
     Text(' Represents top-level organization for pages', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_21($boundThis) {
+  function ComposableLambda$invoke$ref_23($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -796,7 +873,7 @@
     Text('sections/', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_22($boundThis) {
+  function ComposableLambda$invoke$ref_24($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -808,7 +885,7 @@
     Text(' Areas of content that appear across multiple pages (such as nav bars and footers)', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_23($boundThis) {
+  function ComposableLambda$invoke$ref_25($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -818,7 +895,7 @@
     Text('widgets/', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_24($boundThis) {
+  function ComposableLambda$invoke$ref_26($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -830,7 +907,7 @@
     Text(' Home for low-level UI pieces that you can use around your site', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_25($boundThis) {
+  function ComposableLambda$invoke$ref_27($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -842,7 +919,7 @@
     Li(null, ComposableSingletons$AboutKt_getInstance().lambda_20_7sywp0__1, $composer_0, 48, 1);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_26($boundThis) {
+  function ComposableLambda$invoke$ref_28($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -852,7 +929,7 @@
     Text('pages/', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_27($boundThis) {
+  function ComposableLambda$invoke$ref_29($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -862,7 +939,7 @@
     Text('@Composable', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_28($boundThis) {
+  function ComposableLambda$invoke$ref_30($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -872,7 +949,7 @@
     Text('@Page', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_29($boundThis) {
+  function ComposableLambda$invoke$ref_31($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -882,7 +959,7 @@
     Text('resources/markdown', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_30($boundThis) {
+  function ComposableLambda$invoke$ref_32($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -898,7 +975,7 @@
     Text(' folder.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_31($boundThis) {
+  function ComposableLambda$invoke$ref_33($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -908,7 +985,7 @@
     Text('resources/', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_32($boundThis) {
+  function ComposableLambda$invoke$ref_34($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -918,7 +995,7 @@
     Text('public', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_33($boundThis) {
+  function ComposableLambda$invoke$ref_35($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -930,7 +1007,7 @@
     Text(' If you want to host any media on your site (such as an icon, an image, text configuration files, movies, fonts, etc.), you should put it under this folder.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_34($boundThis) {
+  function ComposableLambda$invoke$ref_36($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -940,7 +1017,7 @@
     Text('markdown', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_35($boundThis) {
+  function ComposableLambda$invoke$ref_37($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -952,7 +1029,7 @@
     Text(' Any markdown discovered in here by Kobweb at compile time will be converted into pages on your site.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_36($boundThis) {
+  function ComposableLambda$invoke$ref_38($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -963,7 +1040,7 @@
     Li(null, ComposableSingletons$AboutKt_getInstance().lambda_31_7sywpw_1, $composer_0, 48, 1);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_37($boundThis) {
+  function ComposableLambda$invoke$ref_39($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -973,7 +1050,7 @@
     Text('Classes', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_38($boundThis) {
+  function ComposableLambda$invoke$ref_40($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -983,7 +1060,7 @@
     Text('The Kobweb and Silk APIs introduce a lot of powerful concepts. Here are some of the most important ones to know about which you can find used throughout this template.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_39($boundThis) {
+  function ComposableLambda$invoke$ref_41($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -993,7 +1070,7 @@
     Text('Modifier', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_40($boundThis) {
+  function ComposableLambda$invoke$ref_42($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1003,7 +1080,7 @@
     Text('Modifier', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_41($boundThis) {
+  function ComposableLambda$invoke$ref_43($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1015,7 +1092,7 @@
     Text(' keyword that Android developers will recognize from the Jetpack Compose API. In a webdev context, this is used for setting CSS styles and html attributes on elements in the page.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_42($boundThis) {
+  function ComposableLambda$invoke$ref_44($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1025,7 +1102,7 @@
     Text('CssStyle', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_43($boundThis) {
+  function ComposableLambda$invoke$ref_45($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1035,7 +1112,7 @@
     Text('CssStyle', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_44($boundThis) {
+  function ComposableLambda$invoke$ref_46($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1047,7 +1124,7 @@
     Text(' class in a Kotlin-idiomatic way. You can find examples of style blocks used throughout the template.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_45($boundThis) {
+  function ComposableLambda$invoke$ref_47($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1057,7 +1134,7 @@
     Text('Keyframes', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_46($boundThis) {
+  function ComposableLambda$invoke$ref_48($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1067,7 +1144,7 @@
     Text('Keyframes', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_47($boundThis) {
+  function ComposableLambda$invoke$ref_49($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1077,7 +1154,7 @@
     Text('CssStyle', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_48($boundThis) {
+  function ComposableLambda$invoke$ref_50($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1087,7 +1164,7 @@
     Text('Modifier.animation(YourKeyframes.toAnimation(...))', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_49($boundThis) {
+  function ComposableLambda$invoke$ref_51($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1103,7 +1180,7 @@
     Text(' to reference them.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_50($boundThis) {
+  function ComposableLambda$invoke$ref_52($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1113,7 +1190,7 @@
     Text('Starting Point', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_51($boundThis) {
+  function ComposableLambda$invoke$ref_53($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1123,7 +1200,7 @@
     Text('About', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_52($boundThis) {
+  function ComposableLambda$invoke$ref_54($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1135,7 +1212,7 @@
     Text(" page and working from there. However, you are welcome to modify or delete anything you find in the template that you don't plan to use in your final site.", $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_53($boundThis) {
+  function ComposableLambda$invoke$ref_55($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1145,7 +1222,7 @@
     Text("If instead you'd like to start from scratch, you can run", $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_54($boundThis) {
+  function ComposableLambda$invoke$ref_56($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1155,7 +1232,7 @@
     Text('$ kobweb create app/empty\n', $composer_0, 0);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_55($boundThis) {
+  function ComposableLambda$invoke$ref_57($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1165,7 +1242,7 @@
     Code(null, ComposableSingletons$AboutKt_getInstance().lambda_50_7sywrl_1, $composer_0, 48, 1);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_56($boundThis) {
+  function ComposableLambda$invoke$ref_58($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1175,7 +1252,7 @@
     Text('which will create a new project with nothing inside of it except for a minimal, skeletal structure.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_57($boundThis) {
+  function ComposableLambda$invoke$ref_59($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1185,7 +1262,7 @@
     Text('Export and Deploy', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_58($boundThis) {
+  function ComposableLambda$invoke$ref_60($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1195,7 +1272,7 @@
     Text("When you are ready to share your site with the world, you'll want to export it first. This will create a production snapshot of your site.", $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_59($boundThis) {
+  function ComposableLambda$invoke$ref_61($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1205,7 +1282,7 @@
     Text('static layout', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_60($boundThis) {
+  function ComposableLambda$invoke$ref_62($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1215,7 +1292,7 @@
     Text('full stack', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_61($boundThis) {
+  function ComposableLambda$invoke$ref_63($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -1229,7 +1306,7 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_62($boundThis) {
+  function ComposableLambda$invoke$ref_64($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1245,7 +1322,7 @@
     Text('.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_63($boundThis) {
+  function ComposableLambda$invoke$ref_65($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1255,7 +1332,7 @@
     Text('For most sites, a static layout site is what you want, so to do that, return to the command line and run:', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_64($boundThis) {
+  function ComposableLambda$invoke$ref_66($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1265,7 +1342,7 @@
     Text('$ kobweb export --layout static\n', $composer_0, 0);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_65($boundThis) {
+  function ComposableLambda$invoke$ref_67($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1275,7 +1352,7 @@
     Code(null, ComposableSingletons$AboutKt_getInstance().lambda_60_7sywsg_1, $composer_0, 48, 1);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_66($boundThis) {
+  function ComposableLambda$invoke$ref_68($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1285,7 +1362,7 @@
     Text('.kobweb/site', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_67($boundThis) {
+  function ComposableLambda$invoke$ref_69($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1297,7 +1374,7 @@
     Text(' folder.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_68($boundThis) {
+  function ComposableLambda$invoke$ref_70($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1307,7 +1384,7 @@
     Text('Test it locally by running:', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_69($boundThis) {
+  function ComposableLambda$invoke$ref_71($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1317,7 +1394,7 @@
     Text('$ kobweb run --layout static --env prod\n', $composer_0, 0);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_70($boundThis) {
+  function ComposableLambda$invoke$ref_72($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1327,7 +1404,7 @@
     Code(null, ComposableSingletons$AboutKt_getInstance().lambda_65_7sywsl_1, $composer_0, 48, 1);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_71($boundThis) {
+  function ComposableLambda$invoke$ref_73($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1337,7 +1414,7 @@
     Text("If you're satisfied, you can upload your site files to the static website host provider of your choice. Each provider has its own instructions for how it discovers your files, so please refer to their documentation.", $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_72($boundThis) {
+  function ComposableLambda$invoke$ref_74($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -1351,7 +1428,7 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_73($boundThis) {
+  function ComposableLambda$invoke$ref_75($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -1363,7 +1440,7 @@
     Text(' for some concrete examples of exporting a Kobweb site to two popular static website hosting providers.', $composer_0, 6);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_74($boundThis) {
+  function ComposableLambda$invoke$ref_76($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -1733,7 +1810,7 @@
     $this$H2.id_e4l56n_k$('export-and-deploy');
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_75($boundThis) {
+  function ComposableLambda$invoke$ref_77($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -1750,147 +1827,147 @@
   function ComposableSingletons$AboutKt() {
     ComposableSingletons$AboutKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_5(composableLambdaInstance(1029801623, false, ComposableSingletons$AboutKt$lambda_1$lambda_irurs3));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_7(composableLambdaInstance(1029801623, false, ComposableSingletons$AboutKt$lambda_1$lambda_irurs3));
     var tmp_0 = this;
-    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_6(composableLambdaInstance(-1907008424, false, ComposableSingletons$AboutKt$lambda_2$lambda_nfmt4u));
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_8(composableLambdaInstance(-1907008424, false, ComposableSingletons$AboutKt$lambda_2$lambda_nfmt4u));
     var tmp_1 = this;
-    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_7(composableLambdaInstance(325938648, false, ComposableSingletons$AboutKt$lambda_3$lambda_5dznxd));
+    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_9(composableLambdaInstance(325938648, false, ComposableSingletons$AboutKt$lambda_3$lambda_5dznxd));
     var tmp_2 = this;
-    tmp_2.lambda_4_r8sbbm_1 = ComposableLambda$invoke$ref_8(composableLambdaInstance(668240655, false, ComposableSingletons$AboutKt$lambda_4$lambda_y7m4zk));
+    tmp_2.lambda_4_r8sbbm_1 = ComposableLambda$invoke$ref_10(composableLambdaInstance(668240655, false, ComposableSingletons$AboutKt$lambda_4$lambda_y7m4zk));
     var tmp_3 = this;
-    tmp_3.lambda_5_r8sbbl_1 = ComposableLambda$invoke$ref_9(composableLambdaInstance(-377924327, false, ComposableSingletons$AboutKt$lambda_5$lambda_7zvfxd));
+    tmp_3.lambda_5_r8sbbl_1 = ComposableLambda$invoke$ref_11(composableLambdaInstance(-377924327, false, ComposableSingletons$AboutKt$lambda_5$lambda_7zvfxd));
     var tmp_4 = this;
-    tmp_4.lambda_6_r8sbbk_1 = ComposableLambda$invoke$ref_10(composableLambdaInstance(-1081787302, false, ComposableSingletons$AboutKt$lambda_6$lambda_ktr14u));
+    tmp_4.lambda_6_r8sbbk_1 = ComposableLambda$invoke$ref_12(composableLambdaInstance(-1081787302, false, ComposableSingletons$AboutKt$lambda_6$lambda_ktr14u));
     var tmp_5 = this;
-    tmp_5.lambda_7_r8sbbj_1 = ComposableLambda$invoke$ref_11(composableLambdaInstance(-1751536431, false, ComposableSingletons$AboutKt$lambda_7$lambda_ldqjs3));
+    tmp_5.lambda_7_r8sbbj_1 = ComposableLambda$invoke$ref_13(composableLambdaInstance(-1751536431, false, ComposableSingletons$AboutKt$lambda_7$lambda_ldqjs3));
     var tmp_6 = this;
-    tmp_6.lambda_8_r8sbbi_1 = ComposableLambda$invoke$ref_12(composableLambdaInstance(-35622320, false, ComposableSingletons$AboutKt$lambda_8$lambda_7fvxa4));
+    tmp_6.lambda_8_r8sbbi_1 = ComposableLambda$invoke$ref_14(composableLambdaInstance(-35622320, false, ComposableSingletons$AboutKt$lambda_8$lambda_7fvxa4));
     var tmp_7 = this;
-    tmp_7.lambda_9_r8sbbh_1 = ComposableLambda$invoke$ref_13(composableLambdaInstance(-863210863, false, ComposableSingletons$AboutKt$lambda_9$lambda_yrlnmt));
+    tmp_7.lambda_9_r8sbbh_1 = ComposableLambda$invoke$ref_15(composableLambdaInstance(-863210863, false, ComposableSingletons$AboutKt$lambda_9$lambda_yrlnmt));
     var tmp_8 = this;
-    tmp_8.lambda_10_7sywo5__1 = ComposableLambda$invoke$ref_14(composableLambdaInstance(-739485295, false, ComposableSingletons$AboutKt$lambda_10$lambda_i5qkjn));
+    tmp_8.lambda_10_7sywo5__1 = ComposableLambda$invoke$ref_16(composableLambdaInstance(-739485295, false, ComposableSingletons$AboutKt$lambda_10$lambda_i5qkjn));
     var tmp_9 = this;
-    tmp_9.lambda_11_7sywo6__1 = ComposableLambda$invoke$ref_15(composableLambdaInstance(-1567073838, false, ComposableSingletons$AboutKt$lambda_11$lambda_o1r0da));
+    tmp_9.lambda_11_7sywo6__1 = ComposableLambda$invoke$ref_17(composableLambdaInstance(-1567073838, false, ComposableSingletons$AboutKt$lambda_11$lambda_o1r0da));
     var tmp_10 = this;
-    tmp_10.lambda_12_7sywo7__1 = ComposableLambda$invoke$ref_16(composableLambdaInstance(-1443348270, false, ComposableSingletons$AboutKt$lambda_12$lambda_4rvgox));
+    tmp_10.lambda_12_7sywo7__1 = ComposableLambda$invoke$ref_18(composableLambdaInstance(-1443348270, false, ComposableSingletons$AboutKt$lambda_12$lambda_4rvgox));
     var tmp_11 = this;
-    tmp_11.lambda_13_7sywo8__1 = ComposableLambda$invoke$ref_17(composableLambdaInstance(2024030483, false, ComposableSingletons$AboutKt$lambda_13$lambda_xlhxr4));
+    tmp_11.lambda_13_7sywo8__1 = ComposableLambda$invoke$ref_19(composableLambdaInstance(2024030483, false, ComposableSingletons$AboutKt$lambda_13$lambda_xlhxr4));
     var tmp_12 = this;
-    tmp_12.lambda_14_7sywo9__1 = ComposableLambda$invoke$ref_18(composableLambdaInstance(-2147211245, false, ComposableSingletons$AboutKt$lambda_14$lambda_8lzn5t));
+    tmp_12.lambda_14_7sywo9__1 = ComposableLambda$invoke$ref_20(composableLambdaInstance(-2147211245, false, ComposableSingletons$AboutKt$lambda_14$lambda_8lzn5t));
     var tmp_13 = this;
-    tmp_13.lambda_15_7sywoa_1 = ComposableLambda$invoke$ref_19(composableLambdaInstance(-620307083, false, ComposableSingletons$AboutKt$lambda_15$lambda_k7mtwe));
+    tmp_13.lambda_15_7sywoa_1 = ComposableLambda$invoke$ref_21(composableLambdaInstance(-620307083, false, ComposableSingletons$AboutKt$lambda_15$lambda_k7mtwe));
     var tmp_14 = this;
-    tmp_14.lambda_16_7sywob_1 = ComposableLambda$invoke$ref_20(composableLambdaInstance(101910772, false, ComposableSingletons$AboutKt$lambda_16$lambda_lzur0j));
+    tmp_14.lambda_16_7sywob_1 = ComposableLambda$invoke$ref_22(composableLambdaInstance(101910772, false, ComposableSingletons$AboutKt$lambda_16$lambda_lzur0j));
     var tmp_15 = this;
-    tmp_15.lambda_17_7sywoc_1 = ComposableLambda$invoke$ref_21(composableLambdaInstance(1627565086, false, ComposableSingletons$AboutKt$lambda_17$lambda_6trq1o));
+    tmp_15.lambda_17_7sywoc_1 = ComposableLambda$invoke$ref_23(composableLambdaInstance(1627565086, false, ComposableSingletons$AboutKt$lambda_17$lambda_6trq1o));
     var tmp_16 = this;
-    tmp_16.lambda_18_7sywod_1 = ComposableLambda$invoke$ref_22(composableLambdaInstance(-105778211, false, ComposableSingletons$AboutKt$lambda_18$lambda_zdpuv9));
+    tmp_16.lambda_18_7sywod_1 = ComposableLambda$invoke$ref_24(composableLambdaInstance(-105778211, false, ComposableSingletons$AboutKt$lambda_18$lambda_zdpuv9));
     var tmp_17 = this;
-    tmp_17.lambda_19_7sywoe_1 = ComposableLambda$invoke$ref_23(composableLambdaInstance(-548351235, false, ComposableSingletons$AboutKt$lambda_19$lambda_6k3dt2));
+    tmp_17.lambda_19_7sywoe_1 = ComposableLambda$invoke$ref_25(composableLambdaInstance(-548351235, false, ComposableSingletons$AboutKt$lambda_19$lambda_6k3dt2));
     var tmp_18 = this;
-    tmp_18.lambda_20_7sywp0__1 = ComposableLambda$invoke$ref_24(composableLambdaInstance(2013272764, false, ComposableSingletons$AboutKt$lambda_20$lambda_bqdg8s));
+    tmp_18.lambda_20_7sywp0__1 = ComposableLambda$invoke$ref_26(composableLambdaInstance(2013272764, false, ComposableSingletons$AboutKt$lambda_20$lambda_bqdg8s));
     var tmp_19 = this;
-    tmp_19.lambda_21_7sywp1__1 = ComposableLambda$invoke$ref_25(composableLambdaInstance(-2032345627, false, ComposableSingletons$AboutKt$lambda_21$lambda_h390tf));
+    tmp_19.lambda_21_7sywp1__1 = ComposableLambda$invoke$ref_27(composableLambdaInstance(-2032345627, false, ComposableSingletons$AboutKt$lambda_21$lambda_h390tf));
     var tmp_20 = this;
-    tmp_20.lambda_22_7sywp2__1 = ComposableLambda$invoke$ref_26(composableLambdaInstance(1320167508, false, ComposableSingletons$AboutKt$lambda_22$lambda_p48k3i));
+    tmp_20.lambda_22_7sywp2__1 = ComposableLambda$invoke$ref_28(composableLambdaInstance(1320167508, false, ComposableSingletons$AboutKt$lambda_22$lambda_p48k3i));
     var tmp_21 = this;
-    tmp_21.lambda_23_7sywp3__1 = ComposableLambda$invoke$ref_27(composableLambdaInstance(-272021035, false, ComposableSingletons$AboutKt$lambda_23$lambda_3pdwyp));
+    tmp_21.lambda_23_7sywp3__1 = ComposableLambda$invoke$ref_29(composableLambdaInstance(-272021035, false, ComposableSingletons$AboutKt$lambda_23$lambda_3pdwyp));
     var tmp_22 = this;
-    tmp_22.lambda_24_7sywp4__1 = ComposableLambda$invoke$ref_28(composableLambdaInstance(-1919578100, false, ComposableSingletons$AboutKt$lambda_24$lambda_wj0e0w));
+    tmp_22.lambda_24_7sywp4__1 = ComposableLambda$invoke$ref_30(composableLambdaInstance(-1919578100, false, ComposableSingletons$AboutKt$lambda_24$lambda_wj0e0w));
     var tmp_23 = this;
-    tmp_23.lambda_25_7sywp5__1 = ComposableLambda$invoke$ref_29(composableLambdaInstance(-653507315, false, ComposableSingletons$AboutKt$lambda_25$lambda_9oh6w1));
+    tmp_23.lambda_25_7sywp5__1 = ComposableLambda$invoke$ref_31(composableLambdaInstance(-653507315, false, ComposableSingletons$AboutKt$lambda_25$lambda_9oh6w1));
     var tmp_24 = this;
-    tmp_24.lambda_26_7sywp6__1 = ComposableLambda$invoke$ref_30(composableLambdaInstance(1443893076, false, ComposableSingletons$AboutKt$lambda_26$lambda_j55a66));
+    tmp_24.lambda_26_7sywp6__1 = ComposableLambda$invoke$ref_32(composableLambdaInstance(1443893076, false, ComposableSingletons$AboutKt$lambda_26$lambda_j55a66));
     var tmp_25 = this;
-    tmp_25.lambda_27_7sywp7__1 = ComposableLambda$invoke$ref_31(composableLambdaInstance(616304533, false, ComposableSingletons$AboutKt$lambda_27$lambda_n2caqr));
+    tmp_25.lambda_27_7sywp7__1 = ComposableLambda$invoke$ref_33(composableLambdaInstance(616304533, false, ComposableSingletons$AboutKt$lambda_27$lambda_n2caqr));
     var tmp_26 = this;
-    tmp_26.lambda_28_7sywp8__1 = ComposableLambda$invoke$ref_32(composableLambdaInstance(237648108, false, ComposableSingletons$AboutKt$lambda_28$lambda_5ra6bg));
+    tmp_26.lambda_28_7sywp8__1 = ComposableLambda$invoke$ref_34(composableLambdaInstance(237648108, false, ComposableSingletons$AboutKt$lambda_28$lambda_5ra6bg));
     var tmp_27 = this;
-    tmp_27.lambda_29_7sywp9__1 = ComposableLambda$invoke$ref_33(composableLambdaInstance(-1495695189, false, ComposableSingletons$AboutKt$lambda_29$lambda_ykwndn));
+    tmp_27.lambda_29_7sywp9__1 = ComposableLambda$invoke$ref_35(composableLambdaInstance(-1495695189, false, ComposableSingletons$AboutKt$lambda_29$lambda_ykwndn));
     var tmp_28 = this;
-    tmp_28.lambda_30_7sywpv_1 = ComposableLambda$invoke$ref_34(composableLambdaInstance(74252629, false, ComposableSingletons$AboutKt$lambda_30$lambda_temkxx));
+    tmp_28.lambda_30_7sywpv_1 = ComposableLambda$invoke$ref_36(composableLambdaInstance(74252629, false, ComposableSingletons$AboutKt$lambda_30$lambda_temkxx));
     var tmp_29 = this;
-    tmp_29.lambda_31_7sywpw_1 = ComposableLambda$invoke$ref_35(composableLambdaInstance(778655060, false, ComposableSingletons$AboutKt$lambda_31$lambda_csuzz0));
+    tmp_29.lambda_31_7sywpw_1 = ComposableLambda$invoke$ref_37(composableLambdaInstance(778655060, false, ComposableSingletons$AboutKt$lambda_31$lambda_csuzz0));
     var tmp_30 = this;
-    tmp_30.lambda_32_7sywpx_1 = ComposableLambda$invoke$ref_36(composableLambdaInstance(478272860, false, ComposableSingletons$AboutKt$lambda_32$lambda_g0rh37));
+    tmp_30.lambda_32_7sywpx_1 = ComposableLambda$invoke$ref_38(composableLambdaInstance(478272860, false, ComposableSingletons$AboutKt$lambda_32$lambda_g0rh37));
     var tmp_31 = this;
-    tmp_31.lambda_33_7sywpy_1 = ComposableLambda$invoke$ref_37(composableLambdaInstance(1239242640, false, ComposableSingletons$AboutKt$lambda_33$lambda_q6q3tq));
+    tmp_31.lambda_33_7sywpy_1 = ComposableLambda$invoke$ref_39(composableLambdaInstance(1239242640, false, ComposableSingletons$AboutKt$lambda_33$lambda_q6q3tq));
     var tmp_32 = this;
-    tmp_32.lambda_34_7sywpz_1 = ComposableLambda$invoke$ref_38(composableLambdaInstance(740030101, false, ComposableSingletons$AboutKt$lambda_34$lambda_2mwd8h));
+    tmp_32.lambda_34_7sywpz_1 = ComposableLambda$invoke$ref_40(composableLambdaInstance(740030101, false, ComposableSingletons$AboutKt$lambda_34$lambda_2mwd8h));
     var tmp_33 = this;
-    tmp_33.lambda_35_7sywq0__1 = ComposableLambda$invoke$ref_39(composableLambdaInstance(-87558442, false, ComposableSingletons$AboutKt$lambda_35$lambda_vgiuao));
+    tmp_33.lambda_35_7sywq0__1 = ComposableLambda$invoke$ref_41(composableLambdaInstance(-87558442, false, ComposableSingletons$AboutKt$lambda_35$lambda_vgiuao));
     var tmp_34 = this;
-    tmp_34.lambda_36_7sywq1__1 = ComposableLambda$invoke$ref_40(composableLambdaInstance(-1679746985, false, ComposableSingletons$AboutKt$lambda_36$lambda_aqyqm9));
+    tmp_34.lambda_36_7sywq1__1 = ComposableLambda$invoke$ref_42(composableLambdaInstance(-1679746985, false, ComposableSingletons$AboutKt$lambda_36$lambda_aqyqm9));
     var tmp_35 = this;
-    tmp_35.lambda_37_7sywq2__1 = ComposableLambda$invoke$ref_41(composableLambdaInstance(36167126, false, ComposableSingletons$AboutKt$lambda_37$lambda_i2nqfy));
+    tmp_35.lambda_37_7sywq2__1 = ComposableLambda$invoke$ref_43(composableLambdaInstance(36167126, false, ComposableSingletons$AboutKt$lambda_37$lambda_i2nqfy));
     var tmp_36 = this;
-    tmp_36.lambda_38_7sywq3__1 = ComposableLambda$invoke$ref_42(composableLambdaInstance(-791421417, false, ComposableSingletons$AboutKt$lambda_38$lambda_o4tugz));
+    tmp_36.lambda_38_7sywq3__1 = ComposableLambda$invoke$ref_44(composableLambdaInstance(-791421417, false, ComposableSingletons$AboutKt$lambda_38$lambda_o4tugz));
     var tmp_37 = this;
-    tmp_37.lambda_39_7sywq4__1 = ComposableLambda$invoke$ref_43(composableLambdaInstance(1911357336, false, ComposableSingletons$AboutKt$lambda_39$lambda_4osml8));
+    tmp_37.lambda_39_7sywq4__1 = ComposableLambda$invoke$ref_45(composableLambdaInstance(1911357336, false, ComposableSingletons$AboutKt$lambda_39$lambda_4osml8));
     var tmp_38 = this;
-    tmp_38.lambda_40_7sywqq_1 = ComposableLambda$invoke$ref_44(composableLambdaInstance(-667695849, false, ComposableSingletons$AboutKt$lambda_40$lambda_hhfui));
+    tmp_38.lambda_40_7sywqq_1 = ComposableLambda$invoke$ref_46(composableLambdaInstance(-667695849, false, ComposableSingletons$AboutKt$lambda_40$lambda_hhfui));
     var tmp_39 = this;
-    tmp_39.lambda_41_7sywqr_1 = ComposableLambda$invoke$ref_45(composableLambdaInstance(-1495284392, false, ComposableSingletons$AboutKt$lambda_41$lambda_sc517p));
+    tmp_39.lambda_41_7sywqr_1 = ComposableLambda$invoke$ref_47(composableLambdaInstance(-1495284392, false, ComposableSingletons$AboutKt$lambda_41$lambda_sc517p));
     var tmp_40 = this;
-    tmp_40.lambda_42_7sywqs_1 = ComposableLambda$invoke$ref_46(composableLambdaInstance(-156081130, false, ComposableSingletons$AboutKt$lambda_42$lambda_dvcjp8));
+    tmp_40.lambda_42_7sywqs_1 = ComposableLambda$invoke$ref_48(composableLambdaInstance(-156081130, false, ComposableSingletons$AboutKt$lambda_42$lambda_dvcjp8));
     var tmp_41 = this;
-    tmp_41.lambda_43_7sywqt_1 = ComposableLambda$invoke$ref_47(composableLambdaInstance(309257407, false, ComposableSingletons$AboutKt$lambda_43$lambda_ey9xcz));
+    tmp_41.lambda_43_7sywqt_1 = ComposableLambda$invoke$ref_49(composableLambdaInstance(309257407, false, ComposableSingletons$AboutKt$lambda_43$lambda_ey9xcz));
     var tmp_42 = this;
-    tmp_42.lambda_44_7sywqu_1 = ComposableLambda$invoke$ref_48(composableLambdaInstance(902746078, false, ComposableSingletons$AboutKt$lambda_44$lambda_r97njy));
+    tmp_42.lambda_44_7sywqu_1 = ComposableLambda$invoke$ref_50(composableLambdaInstance(902746078, false, ComposableSingletons$AboutKt$lambda_44$lambda_r97njy));
     var tmp_43 = this;
-    tmp_43.lambda_45_7sywqv_1 = ComposableLambda$invoke$ref_49(composableLambdaInstance(1497648759, false, ComposableSingletons$AboutKt$lambda_45$lambda_1keti9));
+    tmp_43.lambda_45_7sywqv_1 = ComposableLambda$invoke$ref_51(composableLambdaInstance(1497648759, false, ComposableSingletons$AboutKt$lambda_45$lambda_1keti9));
     var tmp_44 = this;
-    tmp_44.lambda_46_7sywqw_1 = ComposableLambda$invoke$ref_50(composableLambdaInstance(-953271153, false, ComposableSingletons$AboutKt$lambda_46$lambda_ue1akg));
+    tmp_44.lambda_46_7sywqw_1 = ComposableLambda$invoke$ref_52(composableLambdaInstance(-953271153, false, ComposableSingletons$AboutKt$lambda_46$lambda_ue1akg));
     var tmp_45 = this;
-    tmp_45.lambda_47_7sywqx_1 = ComposableLambda$invoke$ref_51(composableLambdaInstance(1255749692, false, ComposableSingletons$AboutKt$lambda_47$lambda_btgach));
+    tmp_45.lambda_47_7sywqx_1 = ComposableLambda$invoke$ref_53(composableLambdaInstance(1255749692, false, ComposableSingletons$AboutKt$lambda_47$lambda_btgach));
     var tmp_46 = this;
-    tmp_46.lambda_48_7sywqy_1 = ComposableLambda$invoke$ref_52(composableLambdaInstance(793785784, false, ComposableSingletons$AboutKt$lambda_48$lambda_h066pq));
+    tmp_46.lambda_48_7sywqy_1 = ComposableLambda$invoke$ref_54(composableLambdaInstance(793785784, false, ComposableSingletons$AboutKt$lambda_48$lambda_h066pq));
     var tmp_47 = this;
-    tmp_47.lambda_49_7sywqz_1 = ComposableLambda$invoke$ref_53(composableLambdaInstance(89922809, false, ComposableSingletons$AboutKt$lambda_49$lambda_p7be77));
+    tmp_47.lambda_49_7sywqz_1 = ComposableLambda$invoke$ref_55(composableLambdaInstance(89922809, false, ComposableSingletons$AboutKt$lambda_49$lambda_p7be77));
     var tmp_48 = this;
-    tmp_48.lambda_50_7sywrl_1 = ComposableLambda$invoke$ref_54(composableLambdaInstance(-1129255028, false, ComposableSingletons$AboutKt$lambda_50$lambda_udlgmx));
+    tmp_48.lambda_50_7sywrl_1 = ComposableLambda$invoke$ref_56(composableLambdaInstance(-1129255028, false, ComposableSingletons$AboutKt$lambda_50$lambda_udlgmx));
     var tmp_49 = this;
-    tmp_49.lambda_51_7sywrm_1 = ComposableLambda$invoke$ref_55(composableLambdaInstance(586659083, false, ComposableSingletons$AboutKt$lambda_51$lambda_1jyzkq));
+    tmp_49.lambda_51_7sywrm_1 = ComposableLambda$invoke$ref_57(composableLambdaInstance(586659083, false, ComposableSingletons$AboutKt$lambda_51$lambda_1jyzkq));
     var tmp_50 = this;
-    tmp_50.lambda_52_7sywrn_1 = ComposableLambda$invoke$ref_56(composableLambdaInstance(-613940166, false, ComposableSingletons$AboutKt$lambda_52$lambda_r9nhhh));
+    tmp_50.lambda_52_7sywrn_1 = ComposableLambda$invoke$ref_58(composableLambdaInstance(-613940166, false, ComposableSingletons$AboutKt$lambda_52$lambda_r9nhhh));
     var tmp_51 = this;
-    tmp_51.lambda_53_7sywro_1 = ComposableLambda$invoke$ref_57(composableLambdaInstance(-1657134128, false, ComposableSingletons$AboutKt$lambda_53$lambda_exu3fg));
+    tmp_51.lambda_53_7sywro_1 = ComposableLambda$invoke$ref_59(composableLambdaInstance(-1657134128, false, ComposableSingletons$AboutKt$lambda_53$lambda_exu3fg));
     var tmp_52 = this;
-    tmp_52.lambda_54_7sywrp_1 = ComposableLambda$invoke$ref_58(composableLambdaInstance(-1317803141, false, ComposableSingletons$AboutKt$lambda_54$lambda_dvsdmr));
+    tmp_52.lambda_54_7sywrp_1 = ComposableLambda$invoke$ref_60(composableLambdaInstance(-1317803141, false, ComposableSingletons$AboutKt$lambda_54$lambda_dvsdmr));
     var tmp_53 = this;
-    tmp_53.lambda_55_7sywrq_1 = ComposableLambda$invoke$ref_59(composableLambdaInstance(-1559702208, false, ComposableSingletons$AboutKt$lambda_55$lambda_sbp7a6));
+    tmp_53.lambda_55_7sywrq_1 = ComposableLambda$invoke$ref_61(composableLambdaInstance(-1559702208, false, ComposableSingletons$AboutKt$lambda_55$lambda_sbp7a6));
     var tmp_54 = this;
-    tmp_54.lambda_56_7sywrr_1 = ComposableLambda$invoke$ref_60(composableLambdaInstance(-1547849559, false, ComposableSingletons$AboutKt$lambda_56$lambda_hx9s1));
+    tmp_54.lambda_56_7sywrr_1 = ComposableLambda$invoke$ref_62(composableLambdaInstance(-1547849559, false, ComposableSingletons$AboutKt$lambda_56$lambda_hx9s1));
     var tmp_55 = this;
-    tmp_55.lambda_57_7sywrs_1 = ComposableLambda$invoke$ref_61(composableLambdaInstance(-1341273682, false, ComposableSingletons$AboutKt$lambda_57$lambda_tbjqu8));
+    tmp_55.lambda_57_7sywrs_1 = ComposableLambda$invoke$ref_63(composableLambdaInstance(-1341273682, false, ComposableSingletons$AboutKt$lambda_57$lambda_tbjqu8));
     var tmp_56 = this;
-    tmp_56.lambda_58_7sywrt_1 = ComposableLambda$invoke$ref_62(composableLambdaInstance(-2021666116, false, ComposableSingletons$AboutKt$lambda_58$lambda_cvxu2p));
+    tmp_56.lambda_58_7sywrt_1 = ComposableLambda$invoke$ref_64(composableLambdaInstance(-2021666116, false, ComposableSingletons$AboutKt$lambda_58$lambda_cvxu2p));
     var tmp_57 = this;
-    tmp_57.lambda_59_7sywru_1 = ComposableLambda$invoke$ref_63(composableLambdaInstance(1569438205, false, ComposableSingletons$AboutKt$lambda_59$lambda_fxomzi));
+    tmp_57.lambda_59_7sywru_1 = ComposableLambda$invoke$ref_65(composableLambdaInstance(1569438205, false, ComposableSingletons$AboutKt$lambda_59$lambda_fxomzi));
     var tmp_58 = this;
-    tmp_58.lambda_60_7sywsg_1 = ComposableLambda$invoke$ref_64(composableLambdaInstance(764944707, false, ComposableSingletons$AboutKt$lambda_60$lambda_arekjs));
+    tmp_58.lambda_60_7sywsg_1 = ComposableLambda$invoke$ref_66(composableLambdaInstance(764944707, false, ComposableSingletons$AboutKt$lambda_60$lambda_arekjs));
     var tmp_59 = this;
-    tmp_59.lambda_61_7sywsh_1 = ComposableLambda$invoke$ref_65(composableLambdaInstance(490963714, false, ComposableSingletons$AboutKt$lambda_61$lambda_vg30d5));
+    tmp_59.lambda_61_7sywsh_1 = ComposableLambda$invoke$ref_67(composableLambdaInstance(490963714, false, ComposableSingletons$AboutKt$lambda_61$lambda_vg30d5));
     var tmp_60 = this;
-    tmp_60.lambda_62_7sywsi_1 = ComposableLambda$invoke$ref_66(composableLambdaInstance(-788154659, false, ComposableSingletons$AboutKt$lambda_62$lambda_2mgjay));
+    tmp_60.lambda_62_7sywsi_1 = ComposableLambda$invoke$ref_68(composableLambdaInstance(-788154659, false, ComposableSingletons$AboutKt$lambda_62$lambda_2mgjay));
     var tmp_61 = this;
-    tmp_61.lambda_63_7sywsj_1 = ComposableLambda$invoke$ref_67(composableLambdaInstance(865575230, false, ComposableSingletons$AboutKt$lambda_63$lambda_q75xr9));
+    tmp_61.lambda_63_7sywsj_1 = ComposableLambda$invoke$ref_69(composableLambdaInstance(865575230, false, ComposableSingletons$AboutKt$lambda_63$lambda_q75xr9));
     var tmp_62 = this;
-    tmp_62.lambda_64_7sywsk_1 = ComposableLambda$invoke$ref_68(composableLambdaInstance(161712255, false, ComposableSingletons$AboutKt$lambda_64$lambda_g0bn5o));
+    tmp_62.lambda_64_7sywsk_1 = ComposableLambda$invoke$ref_70(composableLambdaInstance(161712255, false, ComposableSingletons$AboutKt$lambda_64$lambda_g0bn5o));
     var tmp_63 = this;
-    tmp_63.lambda_65_7sywsl_1 = ComposableLambda$invoke$ref_69(composableLambdaInstance(61081732, false, ComposableSingletons$AboutKt$lambda_65$lambda_ctatwj));
+    tmp_63.lambda_65_7sywsl_1 = ComposableLambda$invoke$ref_71(composableLambdaInstance(61081732, false, ComposableSingletons$AboutKt$lambda_65$lambda_ctatwj));
     var tmp_64 = this;
-    tmp_64.lambda_66_7sywsm_1 = ComposableLambda$invoke$ref_70(composableLambdaInstance(-212899261, false, ComposableSingletons$AboutKt$lambda_66$lambda_te6r0e));
+    tmp_64.lambda_66_7sywsm_1 = ComposableLambda$invoke$ref_72(composableLambdaInstance(-212899261, false, ComposableSingletons$AboutKt$lambda_66$lambda_te6r0e));
     var tmp_65 = this;
-    tmp_65.lambda_67_7sywsn_1 = ComposableLambda$invoke$ref_71(composableLambdaInstance(-542150720, false, ComposableSingletons$AboutKt$lambda_67$lambda_kk9y7));
+    tmp_65.lambda_67_7sywsn_1 = ComposableLambda$invoke$ref_73(composableLambdaInstance(-542150720, false, ComposableSingletons$AboutKt$lambda_67$lambda_kk9y7));
     var tmp_66 = this;
-    tmp_66.lambda_68_7sywso_1 = ComposableLambda$invoke$ref_72(composableLambdaInstance(1833125448, false, ComposableSingletons$AboutKt$lambda_68$lambda_s92740));
+    tmp_66.lambda_68_7sywso_1 = ComposableLambda$invoke$ref_74(composableLambdaInstance(1833125448, false, ComposableSingletons$AboutKt$lambda_68$lambda_s92740));
     var tmp_67 = this;
-    tmp_67.lambda_69_7sywsp_1 = ComposableLambda$invoke$ref_73(composableLambdaInstance(1152733014, false, ComposableSingletons$AboutKt$lambda_69$lambda_dyfdsx));
+    tmp_67.lambda_69_7sywsp_1 = ComposableLambda$invoke$ref_75(composableLambdaInstance(1152733014, false, ComposableSingletons$AboutKt$lambda_69$lambda_dyfdsx));
     var tmp_68 = this;
-    tmp_68.lambda_70_7sywtb_1 = ComposableLambda$invoke$ref_74(composableLambdaInstance(1731502906, false, ComposableSingletons$AboutKt$lambda_70$lambda_j4pg8n));
+    tmp_68.lambda_70_7sywtb_1 = ComposableLambda$invoke$ref_76(composableLambdaInstance(1731502906, false, ComposableSingletons$AboutKt$lambda_70$lambda_j4pg8n));
     var tmp_69 = this;
-    tmp_69.lambda_71_7sywtc_1 = ComposableLambda$invoke$ref_75(composableLambdaInstance(1799439731, false, ComposableSingletons$AboutKt$lambda_71$lambda_9ox0tk));
+    tmp_69.lambda_71_7sywtc_1 = ComposableLambda$invoke$ref_77(composableLambdaInstance(1799439731, false, ComposableSingletons$AboutKt$lambda_71$lambda_9ox0tk));
   }
   protoOf(ComposableSingletons$AboutKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
@@ -2147,7 +2224,7 @@
       var tmp;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.AppEntry.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_77(dispatchReceiver);
+        var value = ComposableLambda$invoke$ref_79(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
       } else {
@@ -2227,7 +2304,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_76($boundThis) {
+  function ComposableLambda$invoke$ref_78($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -2272,7 +2349,7 @@
         var tmp_3;
         if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.AppEntry.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value_0 = ComposableLambda$invoke$ref_76(dispatchReceiver);
+          var value_0 = ComposableLambda$invoke$ref_78(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value_0);
           tmp_3 = value_0;
         } else {
@@ -2290,7 +2367,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_77($boundThis) {
+  function ComposableLambda$invoke$ref_79($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -2488,7 +2565,7 @@
       var tmp;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.layouts.MarkdownLayout.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_79(dispatchReceiver);
+        var value = ComposableLambda$invoke$ref_81(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
       } else {
@@ -2590,7 +2667,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_78($boundThis) {
+  function ComposableLambda$invoke$ref_80($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -2616,7 +2693,7 @@
         var tmp_2;
         if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.components.layouts.MarkdownLayout.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_78(dispatchReceiver);
+          var value = ComposableLambda$invoke$ref_80(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value);
           tmp_2 = value;
         } else {
@@ -2634,7 +2711,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_79($boundThis) {
+  function ComposableLambda$invoke$ref_81($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -2700,7 +2777,7 @@
       var tmp_3;
       if (invalid || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.layouts.SvgCobweb.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_82(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_84(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_3 = value_0;
       } else {
@@ -2785,7 +2862,7 @@
       var tmp_6;
       if (invalid_0 || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.layouts.PageLayout.<anonymous>.<anonymous>' call
-        var value_1 = ComposableLambda$invoke$ref_85(dispatchReceiver);
+        var value_1 = ComposableLambda$invoke$ref_87(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_1);
         tmp_6 = value_1;
       } else {
@@ -2845,7 +2922,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_80($boundThis) {
+  function ComposableLambda$invoke$ref_82($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -2884,7 +2961,7 @@
       var tmp_1;
       if (invalid || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.layouts.SvgCobweb.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_80(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_82(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_1 = value_0;
       } else {
@@ -2897,7 +2974,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_81($boundThis) {
+  function ComposableLambda$invoke$ref_83($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -2933,7 +3010,7 @@
       var tmp;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.layouts.SvgCobweb.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_81(dispatchReceiver);
+        var value = ComposableLambda$invoke$ref_83(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
       } else {
@@ -2964,7 +3041,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_82($boundThis) {
+  function ComposableLambda$invoke$ref_84($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3035,7 +3112,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_83($boundThis) {
+  function ComposableLambda$invoke$ref_85($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3068,7 +3145,7 @@
         var tmp_3;
         if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.components.layouts.PageLayout.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_83(dispatchReceiver);
+          var value = ComposableLambda$invoke$ref_85(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value);
           tmp_3 = value;
         } else {
@@ -3086,7 +3163,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_84($boundThis) {
+  function ComposableLambda$invoke$ref_86($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3119,7 +3196,7 @@
         var tmp_3;
         if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.components.layouts.PageLayout.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_84(dispatchReceiver);
+          var value = ComposableLambda$invoke$ref_86(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value);
           tmp_3 = value;
         } else {
@@ -3138,7 +3215,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_85($boundThis) {
+  function ComposableLambda$invoke$ref_87($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3188,7 +3265,7 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(Footer$lambda(modifier_0, $changed, $default));
     }
   }
-  function ComposableLambda$invoke$ref_86($boundThis) {
+  function ComposableLambda$invoke$ref_88($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3206,7 +3283,7 @@
     Link_0('https://ui-rocket.com', 'UI Rocket', tmp_1, tmp_2, null, null, null, null, $composer_0, 54 | com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter() << 9, 240);
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_87($boundThis) {
+  function ComposableLambda$invoke$ref_89($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3223,9 +3300,9 @@
   function ComposableSingletons$FooterKt() {
     ComposableSingletons$FooterKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_86(composableLambdaInstance(-1544343439, false, ComposableSingletons$FooterKt$lambda_1$lambda_a73781));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_88(composableLambdaInstance(-1544343439, false, ComposableSingletons$FooterKt$lambda_1$lambda_a73781));
     var tmp_0 = this;
-    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_87(composableLambdaInstance(-772890093, false, ComposableSingletons$FooterKt$lambda_2$lambda_imj9u6));
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_89(composableLambdaInstance(-772890093, false, ComposableSingletons$FooterKt$lambda_2$lambda_imj9u6));
   }
   protoOf(ComposableSingletons$FooterKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
@@ -3345,7 +3422,7 @@
       var tmp_1;
       if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.sections.ColorModeButton.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_95(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_97(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_1 = value_0;
       } else {
@@ -3527,7 +3604,7 @@
       var tmp_3;
       if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.sections.SideMenu.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_97(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_99(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_3 = value_0;
       } else {
@@ -3547,7 +3624,7 @@
       tmp1_safe_receiver.updateScope_t8jcf_k$(SideMenu$lambda_1(menuState, close, onAnimationEnd, $changed));
     }
   }
-  function ComposableLambda$invoke$ref_88($boundThis) {
+  function ComposableLambda$invoke$ref_90($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -3561,7 +3638,7 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_89($boundThis) {
+  function ComposableLambda$invoke$ref_91($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -3575,7 +3652,7 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_90($boundThis) {
+  function ComposableLambda$invoke$ref_92($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -3596,7 +3673,7 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_91($boundThis) {
+  function ComposableLambda$invoke$ref_93($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3611,7 +3688,7 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_92($boundThis) {
+  function ComposableLambda$invoke$ref_94($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3735,7 +3812,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_93($boundThis) {
+  function ComposableLambda$invoke$ref_95($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3756,7 +3833,7 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_94($boundThis) {
+  function ComposableLambda$invoke$ref_96($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -3773,19 +3850,19 @@
   function ComposableSingletons$NavHeaderKt() {
     ComposableSingletons$NavHeaderKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_88(composableLambdaInstance(-91839594, false, ComposableSingletons$NavHeaderKt$lambda_1$lambda_vv16hm));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_90(composableLambdaInstance(-91839594, false, ComposableSingletons$NavHeaderKt$lambda_1$lambda_vv16hm));
     var tmp_0 = this;
-    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_89(composableLambdaInstance(725795911, false, ComposableSingletons$NavHeaderKt$lambda_2$lambda_31epff));
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_91(composableLambdaInstance(725795911, false, ComposableSingletons$NavHeaderKt$lambda_2$lambda_31epff));
     var tmp_1 = this;
-    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_90(composableLambdaInstance(1622588087, false, ComposableSingletons$NavHeaderKt$lambda_3$lambda_ps7rms));
+    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_92(composableLambdaInstance(1622588087, false, ComposableSingletons$NavHeaderKt$lambda_3$lambda_ps7rms));
     var tmp_2 = this;
-    tmp_2.lambda_4_r8sbbm_1 = ComposableLambda$invoke$ref_91(composableLambdaInstance(-1925636372, false, ComposableSingletons$NavHeaderKt$lambda_4$lambda_gf9ta5));
+    tmp_2.lambda_4_r8sbbm_1 = ComposableLambda$invoke$ref_93(composableLambdaInstance(-1925636372, false, ComposableSingletons$NavHeaderKt$lambda_4$lambda_gf9ta5));
     var tmp_3 = this;
-    tmp_3.lambda_5_r8sbbl_1 = ComposableLambda$invoke$ref_92(composableLambdaInstance(246730019, false, ComposableSingletons$NavHeaderKt$lambda_5$lambda_cecns2));
+    tmp_3.lambda_5_r8sbbl_1 = ComposableLambda$invoke$ref_94(composableLambdaInstance(246730019, false, ComposableSingletons$NavHeaderKt$lambda_5$lambda_cecns2));
     var tmp_4 = this;
-    tmp_4.lambda_6_r8sbbk_1 = ComposableLambda$invoke$ref_93(composableLambdaInstance(569001705, false, ComposableSingletons$NavHeaderKt$lambda_6$lambda_tt4x4v));
+    tmp_4.lambda_6_r8sbbk_1 = ComposableLambda$invoke$ref_95(composableLambdaInstance(569001705, false, ComposableSingletons$NavHeaderKt$lambda_6$lambda_tt4x4v));
     var tmp_5 = this;
-    tmp_5.lambda_7_r8sbbj_1 = ComposableLambda$invoke$ref_94(composableLambdaInstance(1722910988, false, ComposableSingletons$NavHeaderKt$lambda_7$lambda_zig2o));
+    tmp_5.lambda_7_r8sbbj_1 = ComposableLambda$invoke$ref_96(composableLambdaInstance(1722910988, false, ComposableSingletons$NavHeaderKt$lambda_7$lambda_zig2o));
   }
   protoOf(ComposableSingletons$NavHeaderKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
@@ -3891,7 +3968,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_95($boundThis) {
+  function ComposableLambda$invoke$ref_97($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -3978,7 +4055,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_96($boundThis) {
+  function ComposableLambda$invoke$ref_98($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -4091,7 +4168,7 @@
         var tmp_17;
         if (invalid_0 || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.components.sections.SideMenu.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value_1 = ComposableLambda$invoke$ref_96(dispatchReceiver);
+          var value_1 = ComposableLambda$invoke$ref_98(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value_1);
           tmp_17 = value_1;
         } else {
@@ -4110,7 +4187,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_97($boundThis) {
+  function ComposableLambda$invoke$ref_99($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -4186,7 +4263,7 @@
       var tmp_3;
       if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.widgets.IconButton.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_98(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_100(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_3 = value_0;
       } else {
@@ -4225,7 +4302,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_98($boundThis) {
+  function ComposableLambda$invoke$ref_100($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -4236,6 +4313,143 @@
       return Unit_getInstance();
     };
   }
+  function get_backend_url() {
+    return backend_url;
+  }
+  var backend_url;
+  function login(loginUserDTO, $completion) {
+    var tmp = new $loginCOROUTINE$0(loginUserDTO, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  }
+  function getMyBaseUserDTO($completion) {
+    var tmp = new $getMyBaseUserDTOCOROUTINE$1($completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  }
+  function $loginCOROUTINE$0(loginUserDTO, resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+    this.loginUserDTO_1 = loginUserDTO;
+  }
+  protoOf($loginCOROUTINE$0).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(3);
+            this.set_state_rjd8d0_k$(1);
+            var tmp_0 = get_http(window);
+            var tmp_1 = mapOf(to('Content-Type', 'application/json'));
+            var tmp0 = Default_getInstance();
+            var value = this.loginUserDTO_1;
+            var this_0 = tmp0.get_serializersModule_piitvg_k$();
+            var this_1 = serializer(this_0, createKType(getKClass(LoginUserDTO), arrayOf([]), false));
+            suspendResult = tmp_0.tryPost$default_2anpnz_k$('http://localhost:8080/login', tmp_1, encodeToByteArray(tmp0.encodeToString_k0apqx_k$(isInterface(this_1, KSerializer) ? this_1 : THROW_CCE(), value)), VOID, VOID, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var tmp0_safe_receiver = suspendResult;
+            var ARGUMENT = tmp0_safe_receiver == null ? null : decodeToString(tmp0_safe_receiver);
+            var response = toString(ARGUMENT);
+            this.set_exceptionState_fex74n_k$(2);
+            var this_2 = Default_getInstance();
+            var this_3 = this_2.get_serializersModule_piitvg_k$();
+            var this_4 = serializer(this_3, createKType(getKClass(TokenDTO), arrayOf([]), false));
+            var tokenDTO = this_2.decodeFromString_jwu9sq_k$(isInterface(this_4, KSerializer) ? this_4 : THROW_CCE(), response);
+            return tokenDTO;
+          case 2:
+            this.set_exceptionState_fex74n_k$(3);
+            var tmp_2 = this.get_exception_x0n6w6_k$();
+            if (tmp_2 instanceof Exception) {
+              var e = this.get_exception_x0n6w6_k$();
+              return null;
+            } else {
+              throw this.get_exception_x0n6w6_k$();
+            }
+
+          case 3:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e_0 = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 3) {
+          throw e_0;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e_0);
+        }
+      }
+     while (true);
+  };
+  function $getMyBaseUserDTOCOROUTINE$1(resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf($getMyBaseUserDTOCOROUTINE$1).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(3);
+            var tmp_0 = this;
+            var tmp0_elvis_lhs = localStorage.getItem('jwtToken');
+            var tmp_1;
+            if (tmp0_elvis_lhs == null) {
+              return null;
+            } else {
+              tmp_1 = tmp0_elvis_lhs;
+            }
+
+            tmp_0.token0__1 = tmp_1;
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = get_http(window).tryGet$default_oel9mv_k$('http://localhost:8080/me/user', mapOf_0([to('Content-Type', 'application/json'), to('Authorization', 'Bearer ' + this.token0__1)]), VOID, VOID, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var tmp1_safe_receiver = suspendResult;
+            var ARGUMENT = tmp1_safe_receiver == null ? null : decodeToString(tmp1_safe_receiver);
+            var response = toString(ARGUMENT);
+            this.set_exceptionState_fex74n_k$(2);
+            var this_0 = Default_getInstance();
+            var this_1 = this_0.get_serializersModule_piitvg_k$();
+            var this_2 = serializer(this_1, createKType(getKClass(BaseUserDTO), arrayOf([]), false));
+            var baseUserDTO = this_0.decodeFromString_jwu9sq_k$(isInterface(this_2, KSerializer) ? this_2 : THROW_CCE(), response);
+            return baseUserDTO;
+          case 2:
+            this.set_exceptionState_fex74n_k$(3);
+            var tmp_2 = this.get_exception_x0n6w6_k$();
+            if (tmp_2 instanceof Exception) {
+              var e = this.get_exception_x0n6w6_k$();
+              return null;
+            } else {
+              throw this.get_exception_x0n6w6_k$();
+            }
+
+          case 3:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e_0 = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 3) {
+          throw e_0;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e_0);
+        }
+      }
+     while (true);
+  };
   function get_HeroContainerStyle() {
     _init_properties_Index_kt__ifxcv4();
     return HeroContainerStyle;
@@ -4307,32 +4521,72 @@
     var $composer_0 = $composer;
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(710540476);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
-      var newUser = new NewUserDTO('sc', 'ss', 'Finalmente funziona!');
-      Text(newUser.get_name_woqyms_k$(), $composer_0, 0);
-      PageLayout('Home', ComposableSingletons$IndexKt_getInstance().lambda_6_r8sbbk_1, $composer_0, 54);
+      var ctx = rememberPageContext($composer_0, 0);
+      $composer_0.startReplaceGroup_5hh8aj_k$(752651855);
+      var tmp0 = $composer_0;
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = $composer_0.changedInstance_s1wkiy_k$(ctx);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = tmp0.rememberedValue_4dg93v_k$();
+      var tmp;
+      if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.HomePage.<anonymous>' call
+        var value = HomePage$lambda(ctx);
+        tmp0.updateRememberedValue_l1wh71_k$(value);
+        tmp = value;
+      } else {
+        tmp = it;
+      }
+      var tmp_0 = tmp;
+      var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      Button(tmp0_group, null, null, null, false, null, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 805306368, 510);
+      $composer_0.startReplaceGroup_5hh8aj_k$(752655788);
+      var tmp2 = $composer_0;
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid_0 = $composer_0.changedInstance_s1wkiy_k$(ctx);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_0 = tmp2.rememberedValue_4dg93v_k$();
+      var tmp_1;
+      if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.HomePage.<anonymous>' call
+        var value_0 = HomePage$lambda_0(ctx);
+        tmp2.updateRememberedValue_l1wh71_k$(value_0);
+        tmp_1 = value_0;
+      } else {
+        tmp_1 = it_0;
+      }
+      var tmp_2 = tmp_1;
+      var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      Button(tmp1_group, null, null, null, false, null, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 805306368, 510);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
+    var tmp2_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp2_safe_receiver == null)
       null;
     else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(HomePage$lambda($changed));
+      tmp2_safe_receiver.updateScope_t8jcf_k$(HomePage$lambda_1($changed));
     }
   }
-  function ComposableLambda$invoke$ref_99($boundThis) {
+  function ComposableLambda$invoke$ref_101($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ComposableSingletons$IndexKt$lambda_1$lambda_5yb608($this$Div, $composer, $changed) {
+  function ComposableSingletons$IndexKt$lambda_1$lambda_5yb608($this$Button, $composer, $changed) {
     var $composer_0 = $composer;
-    SpanText('You can read the ', null, null, null, $composer_0, 6, 14);
-    Link_0('/about', 'About', null, null, null, null, null, null, $composer_0, 54, 252);
-    SpanText(' page for more information.', null, null, null, $composer_0, 6, 14);
+    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+      Text('Login!', $composer_0, 6);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_100($boundThis) {
+  function ComposableLambda$invoke$ref_102($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -4340,237 +4594,7 @@
   function ComposableSingletons$IndexKt$lambda_2$lambda_yrxn2f($this$Button, $composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      Text('This could be your CTA', $composer_0, 6);
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    return Unit_getInstance();
-  }
-  function ComposableLambda$invoke$ref_101($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function ComposableSingletons$IndexKt$lambda_3$lambda_7fjxui($this$Box, $composer, $changed) {
-    var $composer_0 = $composer;
-    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      var sitePalette = toSitePalette(Companion_getInstance_1().get_current_2iudd5_k$($composer_0, 6));
-      var tmp = gap(Companion_getInstance_3(), get_cssRem(2));
-      // Inline function 'kotlin.run' call
-      // Inline function 'epicer.frontend.pages.ComposableSingletons$IndexKt.lambda-3.<anonymous>.<anonymous>' call
-      var dispatchReceiver = rememberComposableLambda(1485719077, true, ComposableSingletons$IndexKt$lambda_3$lambda$lambda_h8z03p(sitePalette), $composer_0, 54);
-      // Inline function 'androidx.compose.runtime.remember' call
-      var $composer_1 = $composer_0;
-      sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
-      // Inline function 'androidx.compose.runtime.cache' call
-      var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = $composer_1.rememberedValue_4dg93v_k$();
-      var tmp_0;
-      if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.ComposableSingletons$IndexKt.lambda-3.<anonymous>.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_103(dispatchReceiver);
-        $composer_1.updateRememberedValue_l1wh71_k$(value);
-        tmp_0 = value;
-      } else {
-        tmp_0 = it;
-      }
-      var tmp_1 = tmp_0;
-      var tmp0 = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
-      sourceInformationMarkerEnd($composer_1);
-      Column(tmp, null, null, null, tmp0, $composer_0, 24576, 14);
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    return Unit_getInstance();
-  }
-  function ComposableSingletons$IndexKt$lambda_3$lambda$lambda$lambda_o3atbu($sitePalette) {
-    return function ($this$Div, $composer, $changed) {
-      var $composer_0 = $composer;
-      var tmp = Companion_getInstance_3();
-      var tmp_0;
-      switch (Companion_getInstance_1().get_current_2iudd5_k$($composer_0, 6).get_ordinal_ip24qg_k$()) {
-        case 0:
-          tmp_0 = Colors_getInstance().get_Black_i7mvue_k$();
-          break;
-        case 1:
-          tmp_0 = Colors_getInstance().get_White_ij46ow_k$();
-          break;
-        default:
-          noWhenBranchMatchedException();
-          break;
-      }
-      var tmp_1 = color(tmp, tmp_0);
-      SpanText('Use this template as your starting point for ', tmp_1, null, null, $composer_0, 6, 12);
-      var tmp_2 = textShadow(color(Companion_getInstance_3(), $sitePalette.get_brand_ipc50e_k$().get_accent_avafv7_k$()), get_px(0), get_px(0), get_cssRem(0.5), Colors_getInstance().get_Gray_wo2eh8_k$());
-      SpanText('Kobweb', tmp_2, null, null, $composer_0, 6, 12);
-      return Unit_getInstance();
-    };
-  }
-  function ComposableLambda$invoke$ref_102($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function ComposableSingletons$IndexKt$lambda_3$lambda$lambda$lambda_o3atbu_0($ctx) {
-    return function (it) {
-      $ctx.get_router_j3zccy_k$().tryRoutingTo$default_gm9buu_k$('/about');
-      return Unit_getInstance();
-    };
-  }
-  function ComposableSingletons$IndexKt$lambda_3$lambda$lambda_h8z03p($sitePalette) {
-    return function ($this$Column, $composer, $changed) {
-      var $composer_0 = $composer;
-      var tmp;
-      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-        var tmp_0 = get_HeadlineTextStyle();
-        var tmp_1 = toAttrs(tmp_0, null, $composer_0, com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter(), 1);
-        // Inline function 'kotlin.run' call
-        // Inline function 'epicer.frontend.pages.ComposableSingletons$IndexKt.lambda-3.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-        var dispatchReceiver = rememberComposableLambda(-1132234426, true, ComposableSingletons$IndexKt$lambda_3$lambda$lambda$lambda_o3atbu($sitePalette), $composer_0, 54);
-        // Inline function 'androidx.compose.runtime.remember' call
-        var $composer_1 = $composer_0;
-        sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
-        // Inline function 'androidx.compose.runtime.cache' call
-        var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
-        // Inline function 'kotlin.let' call
-        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-        var it = $composer_1.rememberedValue_4dg93v_k$();
-        var tmp_2;
-        if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-          // Inline function 'epicer.frontend.pages.ComposableSingletons$IndexKt.lambda-3.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_102(dispatchReceiver);
-          $composer_1.updateRememberedValue_l1wh71_k$(value);
-          tmp_2 = value;
-        } else {
-          tmp_2 = it;
-        }
-        var tmp_3 = tmp_2;
-        var tmp0 = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
-        sourceInformationMarkerEnd($composer_1);
-        Div(tmp_1, tmp0, $composer_0, 48, 0);
-        var tmp_4 = get_SubheadlineTextStyle();
-        Div(toAttrs(tmp_4, null, $composer_0, com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter(), 1), ComposableSingletons$IndexKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 48, 0);
-        var ctx = rememberPageContext($composer_0, 0);
-        $composer_0.startReplaceGroup_5hh8aj_k$(-421152821);
-        // Inline function 'androidx.compose.runtime.cache' call
-        var invalid_0 = $composer_0.changedInstance_s1wkiy_k$(ctx);
-        // Inline function 'kotlin.let' call
-        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-        var it_0 = $composer_0.rememberedValue_4dg93v_k$();
-        var tmp_5;
-        if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-          // Inline function 'epicer.frontend.pages.ComposableSingletons$IndexKt.lambda-3.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value_0 = ComposableSingletons$IndexKt$lambda_3$lambda$lambda$lambda_o3atbu_0(ctx);
-          $composer_0.updateRememberedValue_l1wh71_k$(value_0);
-          tmp_5 = value_0;
-        } else {
-          tmp_5 = it_0;
-        }
-        var tmp_6 = tmp_5;
-        var tmp0_group = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
-        $composer_0.endReplaceGroup_ek144q_k$();
-        var tmp_7 = Blue_getInstance();
-        Button(tmp0_group, null, null, null, false, null, tmp_7, null, null, ComposableSingletons$IndexKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 805306368 | com_varabyte_kobweb_silk_theme_colors_ColorPalettes_Blue$stableprop_getter() << 18, 446);
-        tmp = Unit_getInstance();
-      } else {
-        $composer_0.skipToGroupEnd_lh3zi2_k$();
-        tmp = Unit_getInstance();
-      }
-      return Unit_getInstance();
-    };
-  }
-  function ComposableLambda$invoke$ref_103($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function ComposableLambda$invoke$ref_104($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function ComposableSingletons$IndexKt$lambda_4$lambda_le2j7p($this$Div, $composer, $changed) {
-    var $composer_0 = $composer;
-    var sitePalette = toSitePalette(Companion_getInstance_1().get_current_2iudd5_k$($composer_0, 6));
-    GridCell(sitePalette.get_brand_ipc50e_k$().get_primary_3xuktj_k$(), 1, 1, 2, 2, $composer_0, 28080, 0);
-    var tmp = Monochrome_getInstance().get__600_woggg0_k$();
-    GridCell(tmp, 1, 3, null, null, $composer_0, 432 | com_varabyte_kobweb_compose_ui_graphics_Color_Rgb$stableprop_getter(), 24);
-    var tmp_0 = Monochrome_getInstance().get__100_wogcqj_k$();
-    GridCell(tmp_0, 1, 4, 2, null, $composer_0, 3504 | com_varabyte_kobweb_compose_ui_graphics_Color_Rgb$stableprop_getter(), 16);
-    var tmp_1 = sitePalette.get_brand_ipc50e_k$().get_accent_avafv7_k$();
-    GridCell(tmp_1, 2, 3, 2, null, $composer_0, 3504, 16);
-    var tmp_2 = Monochrome_getInstance().get__300_woge7x_k$();
-    GridCell(tmp_2, 2, 5, null, null, $composer_0, 432 | com_varabyte_kobweb_compose_ui_graphics_Color_Rgb$stableprop_getter(), 24);
-    var tmp_3 = Monochrome_getInstance().get__800_woghxe_k$();
-    GridCell(tmp_3, 3, 1, 5, null, $composer_0, 3504 | com_varabyte_kobweb_compose_ui_graphics_Color_Rgb$stableprop_getter(), 16);
-    return Unit_getInstance();
-  }
-  function ComposableLambda$invoke$ref_105($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function ComposableSingletons$IndexKt$lambda_5$lambda_ktf1p8($this$Row, $composer, $changed) {
-    var $composer_0 = $composer;
-    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      Box(null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_3_r8sbbn_1, $composer_0, 3072, 7);
-      var tmp = displayIfAtLeast(toModifier(get_HomeGridStyle(), $composer_0, com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter()), Breakpoint_MD_getInstance());
-      $composer_0.startReplaceGroup_5hh8aj_k$(-1316935769);
-      // Inline function 'androidx.compose.runtime.cache' call
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = $composer_0.rememberedValue_4dg93v_k$();
-      var tmp_0;
-      if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.ComposableSingletons$IndexKt.lambda-5.<anonymous>.<anonymous>' call
-        var value = ComposableSingletons$IndexKt$lambda_5$lambda$lambda_3x0x15;
-        $composer_0.updateRememberedValue_l1wh71_k$(value);
-        tmp_0 = value;
-      } else {
-        tmp_0 = it;
-      }
-      var tmp_1 = tmp_0;
-      var tmp0_group = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
-      $composer_0.endReplaceGroup_ek144q_k$();
-      Div(toAttrs_0(grid(tmp, tmp0_group)), ComposableSingletons$IndexKt_getInstance().lambda_4_r8sbbm_1, $composer_0, 48, 0);
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    return Unit_getInstance();
-  }
-  function ComposableSingletons$IndexKt$lambda_5$lambda$lambda_3x0x15($this$grid) {
-    $this$grid.rows_c0wtyb_k$(ComposableSingletons$IndexKt$lambda_5$lambda$lambda$lambda_kgzzy4);
-    $this$grid.columns_o4h109_k$(ComposableSingletons$IndexKt$lambda_5$lambda$lambda$lambda_kgzzy4_0);
-    return Unit_getInstance();
-  }
-  function ComposableSingletons$IndexKt$lambda_5$lambda$lambda$lambda_kgzzy4($this$rows) {
-    $this$rows.repeat_n9ti1_k$(3, ComposableSingletons$IndexKt$lambda_5$lambda$lambda$lambda$lambda_o33jyx);
-    return Unit_getInstance();
-  }
-  function ComposableSingletons$IndexKt$lambda_5$lambda$lambda$lambda$lambda_o33jyx($this$repeat) {
-    $this$repeat.size_q03g6h_k$(get_fr(1));
-    return Unit_getInstance();
-  }
-  function ComposableSingletons$IndexKt$lambda_5$lambda$lambda$lambda_kgzzy4_0($this$columns) {
-    $this$columns.repeat_n9ti1_k$(5, ComposableSingletons$IndexKt$lambda_5$lambda$lambda$lambda$lambda_o33jyx_0);
-    return Unit_getInstance();
-  }
-  function ComposableSingletons$IndexKt$lambda_5$lambda$lambda$lambda$lambda_o33jyx_0($this$repeat) {
-    $this$repeat.size_q03g6h_k$(get_fr(1));
-    return Unit_getInstance();
-  }
-  function ComposableLambda$invoke$ref_106($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function ComposableSingletons$IndexKt$lambda_6$lambda_807fcz($this$PageLayout, $composer, $changed) {
-    var $composer_0 = $composer;
-    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      var tmp = toModifier(get_HeroContainerStyle(), $composer_0, com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter());
-      Row(tmp, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_5_r8sbbl_1, $composer_0, 24576, 14);
+      Text('Me!', $composer_0, 6);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
@@ -4579,35 +4603,15 @@
   function ComposableSingletons$IndexKt() {
     ComposableSingletons$IndexKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_99(composableLambdaInstance(532549167, false, ComposableSingletons$IndexKt$lambda_1$lambda_5yb608));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_101(composableLambdaInstance(-2055556404, false, ComposableSingletons$IndexKt$lambda_1$lambda_5yb608));
     var tmp_0 = this;
-    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_100(composableLambdaInstance(2117495861, false, ComposableSingletons$IndexKt$lambda_2$lambda_yrxn2f));
-    var tmp_1 = this;
-    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_101(composableLambdaInstance(-283016580, false, ComposableSingletons$IndexKt$lambda_3$lambda_7fjxui));
-    var tmp_2 = this;
-    tmp_2.lambda_4_r8sbbm_1 = ComposableLambda$invoke$ref_104(composableLambdaInstance(1596011939, false, ComposableSingletons$IndexKt$lambda_4$lambda_le2j7p));
-    var tmp_3 = this;
-    tmp_3.lambda_5_r8sbbl_1 = ComposableLambda$invoke$ref_105(composableLambdaInstance(254698050, false, ComposableSingletons$IndexKt$lambda_5$lambda_ktf1p8));
-    var tmp_4 = this;
-    tmp_4.lambda_6_r8sbbk_1 = ComposableLambda$invoke$ref_106(composableLambdaInstance(-2032543323, false, ComposableSingletons$IndexKt$lambda_6$lambda_807fcz));
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_102(composableLambdaInstance(2068699381, false, ComposableSingletons$IndexKt$lambda_2$lambda_yrxn2f));
   }
   protoOf(ComposableSingletons$IndexKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
   };
   protoOf(ComposableSingletons$IndexKt).get_lambda_2_ddebfp_k$ = function () {
     return this.lambda_2_r8sbbo_1;
-  };
-  protoOf(ComposableSingletons$IndexKt).get_lambda_3_2j4eos_k$ = function () {
-    return this.lambda_3_r8sbbn_1;
-  };
-  protoOf(ComposableSingletons$IndexKt).get_lambda_4_ifn4t9_k$ = function () {
-    return this.lambda_4_r8sbbm_1;
-  };
-  protoOf(ComposableSingletons$IndexKt).get_lambda_5_yc5uxq_k$ = function () {
-    return this.lambda_5_r8sbbl_1;
-  };
-  protoOf(ComposableSingletons$IndexKt).get_lambda_6_ksfgwx_k$ = function () {
-    return this.lambda_6_r8sbbk_1;
   };
   var ComposableSingletons$IndexKt_instance;
   function ComposableSingletons$IndexKt_getInstance() {
@@ -4650,7 +4654,19 @@
       return Unit_getInstance();
     };
   }
-  function HomePage$lambda($$changed) {
+  function HomePage$lambda($ctx) {
+    return function (it) {
+      $ctx.get_router_j3zccy_k$().navigateTo$default_onbd51_k$('/login');
+      return Unit_getInstance();
+    };
+  }
+  function HomePage$lambda_0($ctx) {
+    return function (it) {
+      $ctx.get_router_j3zccy_k$().navigateTo$default_onbd51_k$('/me');
+      return Unit_getInstance();
+    };
+  }
+  function HomePage$lambda_1($$changed) {
     return function ($composer, $force) {
       HomePage($composer, updateChangedFlags($$changed | 1));
       return Unit_getInstance();
@@ -4673,11 +4689,924 @@
       HomeGridCellStyle = base(tmp_0, VOID, HomeGridCellStyle$lambda);
     }
   }
+  function LoginPage($composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1791325235);
+    if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
+      $composer_0.startReplaceGroup_5hh8aj_k$(-38022611);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_0 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = this_0.rememberedValue_4dg93v_k$();
+      var tmp;
+      if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>' call
+        var value = mutableStateOf('');
+        this_0.updateRememberedValue_l1wh71_k$(value);
+        tmp = value;
+      } else {
+        tmp = it;
+      }
+      var tmp_0 = tmp;
+      var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var username$delegate = tmp0_group;
+      $composer_0.startReplaceGroup_5hh8aj_k$(-38020947);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_1 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_0 = this_1.rememberedValue_4dg93v_k$();
+      var tmp_1;
+      if (false || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>' call
+        var value_0 = mutableStateOf('');
+        this_1.updateRememberedValue_l1wh71_k$(value_0);
+        tmp_1 = value_0;
+      } else {
+        tmp_1 = it_0;
+      }
+      var tmp_2 = tmp_1;
+      var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var password$delegate = tmp1_group;
+      // Inline function 'androidx.compose.runtime.rememberCoroutineScope' call
+      var getContext = null;
+      var $composer_1 = $composer_0;
+      sourceInformationMarkerStart($composer_1, 773894976, 'CC(rememberCoroutineScope)482@20254L144:Effects.kt#9igjgp');
+      if (!((1 & 1) === 0)) {
+        getContext = LoginPage$lambda_3;
+      }
+      var composer = $composer_1;
+      sourceInformationMarkerStart($composer_1, -954370320, 'CC(remember):Effects.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_1 = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp_3;
+      if (false || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'androidx.compose.runtime.rememberCoroutineScope.<anonymous>' call
+        var value_1 = new CompositionScopedCoroutineScopeCanceller(createCompositionCoroutineScope(getContext(), composer));
+        $composer_1.updateRememberedValue_l1wh71_k$(value_1);
+        tmp_3 = value_1;
+      } else {
+        tmp_3 = it_1;
+      }
+      var tmp_4 = tmp_3;
+      var tmp1_group_0 = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_1);
+      var wrapper = tmp1_group_0;
+      var tmp0 = wrapper.get_coroutineScope_5k7h45_k$();
+      sourceInformationMarkerEnd($composer_1);
+      var coroutineScope = tmp0;
+      var tmp0_modifier = fillMaxSize(Companion_getInstance_3());
+      var tmp1_horizontalAlignment = CenterHorizontally_getInstance();
+      var tmp2_verticalArrangement = Center_getInstance_0();
+      // Inline function 'kotlin.run' call
+      // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(-1906329814, true, LoginPage$lambda_4(coroutineScope, username$delegate, password$delegate), $composer_0, 54);
+      // Inline function 'androidx.compose.runtime.remember' call
+      var $composer_2 = $composer_0;
+      sourceInformationMarkerStart($composer_2, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = $composer_2.changed_ga7h3f_k$(dispatchReceiver);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_2 = $composer_2.rememberedValue_4dg93v_k$();
+      var tmp_5;
+      if (invalid || it_2 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>' call
+        var value_2 = ComposableLambda$invoke$ref_105(dispatchReceiver);
+        $composer_2.updateRememberedValue_l1wh71_k$(value_2);
+        tmp_5 = value_2;
+      } else {
+        tmp_5 = it_2;
+      }
+      var tmp_6 = tmp_5;
+      var tmp0_0 = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_2);
+      Column(tmp0_modifier, tmp2_verticalArrangement, tmp1_horizontalAlignment, null, tmp0_0, $composer_0, 24576 | com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stableprop_getter() << 3 | com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter() << 6, 8);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp2_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp2_safe_receiver == null)
+      null;
+    else {
+      tmp2_safe_receiver.updateScope_t8jcf_k$(LoginPage$lambda_5($changed));
+    }
+  }
+  function ComposableLambda$invoke$ref_103($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn($this$Button, $composer, $changed) {
+    var $composer_0 = $composer;
+    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+      Text('Login', $composer_0, 6);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    return Unit_getInstance();
+  }
+  function ComposableSingletons$LoginKt() {
+    ComposableSingletons$LoginKt_instance = this;
+    var tmp = this;
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_103(composableLambdaInstance(-594381229, false, ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn));
+  }
+  protoOf(ComposableSingletons$LoginKt).get_lambda_1_t9x1k6_k$ = function () {
+    return this.lambda_1_r8sbbp_1;
+  };
+  var ComposableSingletons$LoginKt_instance;
+  function ComposableSingletons$LoginKt_getInstance() {
+    if (ComposableSingletons$LoginKt_instance == null)
+      new ComposableSingletons$LoginKt();
+    return ComposableSingletons$LoginKt_instance;
+  }
+  function LoginPage$lambda($username$delegate) {
+    // Inline function 'androidx.compose.runtime.getValue' call
+    getLocalDelegateReference('username', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    return $username$delegate.get_value_j01efc_k$();
+  }
+  function LoginPage$lambda_0($username$delegate, _set____db54di) {
+    getLocalDelegateReference('username', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    $username$delegate.set_value_v1vabv_k$(_set____db54di);
+    return Unit_getInstance();
+  }
+  function LoginPage$lambda_1($password$delegate) {
+    // Inline function 'androidx.compose.runtime.getValue' call
+    getLocalDelegateReference('password', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    return $password$delegate.get_value_j01efc_k$();
+  }
+  function LoginPage$lambda_2($password$delegate, _set____db54di) {
+    getLocalDelegateReference('password', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    $password$delegate.set_value_v1vabv_k$(_set____db54di);
+    return Unit_getInstance();
+  }
+  function LoginPage$lambda_3() {
+    return EmptyCoroutineContext_getInstance();
+  }
+  function LoginPage$lambda$lambda$lambda($username$delegate) {
+    return function (it) {
+      LoginPage$lambda_0($username$delegate, it);
+      return Unit_getInstance();
+    };
+  }
+  function LoginPage$lambda$lambda$lambda_0($password$delegate) {
+    return function (it) {
+      LoginPage$lambda_2($password$delegate, it);
+      return Unit_getInstance();
+    };
+  }
+  function LoginPage$lambda$lambda$lambda$slambda($username$delegate, $password$delegate, resultContinuation) {
+    this.$username$delegate_1 = $username$delegate;
+    this.$password$delegate_1 = $password$delegate;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf(LoginPage$lambda$lambda$lambda$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
+    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(LoginPage$lambda$lambda$lambda$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
+    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  };
+  protoOf(LoginPage$lambda$lambda$lambda$slambda).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(2);
+            localStorage.setItem('jwtToken', '');
+            this.loginUserDTO0__1 = new LoginUserDTO(LoginPage$lambda(this.$username$delegate_1), LoginPage$lambda_1(this.$password$delegate_1));
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = login(this.loginUserDTO0__1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var tokenDTO = suspendResult;
+            if (!(tokenDTO == null)) {
+              localStorage.setItem('jwtToken', tokenDTO.get_token_iz6pxs_k$());
+            }
+
+            return Unit_getInstance();
+          case 2:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 2) {
+          throw e;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
+        }
+      }
+     while (true);
+  };
+  protoOf(LoginPage$lambda$lambda$lambda$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
+    var i = new LoginPage$lambda$lambda$lambda$slambda(this.$username$delegate_1, this.$password$delegate_1, completion);
+    i.$this$launch_1 = $this$launch;
+    return i;
+  };
+  protoOf(LoginPage$lambda$lambda$lambda$slambda).create_wyq9v6_k$ = function (value, completion) {
+    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
+  };
+  function LoginPage$lambda$lambda$lambda$slambda_0($username$delegate, $password$delegate, resultContinuation) {
+    var i = new LoginPage$lambda$lambda$lambda$slambda($username$delegate, $password$delegate, resultContinuation);
+    var l = function ($this$launch, $completion) {
+      return i.invoke_d9fzmj_k$($this$launch, $completion);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function LoginPage$lambda$lambda$lambda_1($coroutineScope, $username$delegate, $password$delegate) {
+    return function (it) {
+      launch($coroutineScope, VOID, VOID, LoginPage$lambda$lambda$lambda$slambda_0($username$delegate, $password$delegate, null));
+      return Unit_getInstance();
+    };
+  }
+  function LoginPage$lambda$lambda($coroutineScope, $username$delegate, $password$delegate) {
+    return function ($this$Form, $composer, $changed) {
+      var $composer_0 = $composer;
+      Text('Username:', $composer_0, 6);
+      var tmp0_type = Text_getInstance();
+      var tmp1_value = LoginPage$lambda($username$delegate);
+      $composer_0.startReplaceGroup_5hh8aj_k$(1876272701);
+      // Inline function 'androidx.compose.runtime.cache' call
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = $composer_0.rememberedValue_4dg93v_k$();
+      var tmp;
+      if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        var value = LoginPage$lambda$lambda$lambda($username$delegate);
+        $composer_0.updateRememberedValue_l1wh71_k$(value);
+        tmp = value;
+      } else {
+        tmp = it;
+      }
+      var tmp_0 = tmp;
+      var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      Input(tmp0_type, tmp1_value, tmp0_group, null, null, 'ex: james', null, false, false, false, false, false, null, null, null, null, null, null, $composer_0, 196992, 0, 262104);
+      Text('Password:', $composer_0, 6);
+      var tmp2_type = Password_getInstance();
+      var tmp3_value = LoginPage$lambda_1($password$delegate);
+      $composer_0.startReplaceGroup_5hh8aj_k$(1876280125);
+      // Inline function 'androidx.compose.runtime.cache' call
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_0 = $composer_0.rememberedValue_4dg93v_k$();
+      var tmp_1;
+      if (false || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        var value_0 = LoginPage$lambda$lambda$lambda_0($password$delegate);
+        $composer_0.updateRememberedValue_l1wh71_k$(value_0);
+        tmp_1 = value_0;
+      } else {
+        tmp_1 = it_0;
+      }
+      var tmp_2 = tmp_1;
+      var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      Input(tmp2_type, tmp3_value, tmp1_group, null, null, 'ex: P4ssword!', null, false, false, false, false, false, null, null, null, null, null, null, $composer_0, 196992, 0, 262104);
+      $composer_0.startReplaceGroup_5hh8aj_k$(1876285086);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = $composer_0.changedInstance_s1wkiy_k$($coroutineScope);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_1 = $composer_0.rememberedValue_4dg93v_k$();
+      var tmp_3;
+      if (invalid || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        var value_1 = LoginPage$lambda$lambda$lambda_1($coroutineScope, $username$delegate, $password$delegate);
+        $composer_0.updateRememberedValue_l1wh71_k$(value_1);
+        tmp_3 = value_1;
+      } else {
+        tmp_3 = it_1;
+      }
+      var tmp_4 = tmp_3;
+      var tmp2_group = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      Button(tmp2_group, null, null, null, false, null, null, null, null, ComposableSingletons$LoginKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 805306368, 510);
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_104($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function LoginPage$lambda_4($coroutineScope, $username$delegate, $password$delegate) {
+    return function ($this$Column, $composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+        // Inline function 'kotlin.run' call
+        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>' call
+        var dispatchReceiver = rememberComposableLambda(2065010755, true, LoginPage$lambda$lambda($coroutineScope, $username$delegate, $password$delegate), $composer_0, 54);
+        // Inline function 'androidx.compose.runtime.remember' call
+        var $composer_1 = $composer_0;
+        sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+        // Inline function 'androidx.compose.runtime.cache' call
+        var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it = $composer_1.rememberedValue_4dg93v_k$();
+        var tmp_0;
+        if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+          var value = ComposableLambda$invoke$ref_104(dispatchReceiver);
+          $composer_1.updateRememberedValue_l1wh71_k$(value);
+          tmp_0 = value;
+        } else {
+          tmp_0 = it;
+        }
+        var tmp_1 = tmp_0;
+        var tmp0 = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
+        sourceInformationMarkerEnd($composer_1);
+        Form(null, null, tmp0, $composer_0, 384, 3);
+        tmp = Unit_getInstance();
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_105($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function LoginPage$lambda_5($$changed) {
+    return function ($composer, $force) {
+      LoginPage($composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
+  function ProfilePage($composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-495191110);
+    if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
+      $composer_0.startReplaceGroup_5hh8aj_k$(992033293);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_0 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = this_0.rememberedValue_4dg93v_k$();
+      var tmp;
+      if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>' call
+        var value = mutableStateOf('');
+        this_0.updateRememberedValue_l1wh71_k$(value);
+        tmp = value;
+      } else {
+        tmp = it;
+      }
+      var tmp_0 = tmp;
+      var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var username$delegate = tmp0_group;
+      $composer_0.startReplaceGroup_5hh8aj_k$(992034829);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_1 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_0 = this_1.rememberedValue_4dg93v_k$();
+      var tmp_1;
+      if (false || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>' call
+        var value_0 = mutableStateOf('');
+        this_1.updateRememberedValue_l1wh71_k$(value_0);
+        tmp_1 = value_0;
+      } else {
+        tmp_1 = it_0;
+      }
+      var tmp_2 = tmp_1;
+      var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var name$delegate = tmp1_group;
+      $composer_0.startReplaceGroup_5hh8aj_k$(992036397);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_2 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_1 = this_2.rememberedValue_4dg93v_k$();
+      var tmp_3;
+      if (false || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>' call
+        var value_1 = mutableStateOf('');
+        this_2.updateRememberedValue_l1wh71_k$(value_1);
+        tmp_3 = value_1;
+      } else {
+        tmp_3 = it_1;
+      }
+      var tmp_4 = tmp_3;
+      var tmp2_group = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var roles$delegate = tmp2_group;
+      $composer_0.startReplaceGroup_5hh8aj_k$(992038093);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_3 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_2 = this_3.rememberedValue_4dg93v_k$();
+      var tmp_5;
+      if (false || it_2 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>' call
+        var value_2 = mutableStateOf('');
+        this_3.updateRememberedValue_l1wh71_k$(value_2);
+        tmp_5 = value_2;
+      } else {
+        tmp_5 = it_2;
+      }
+      var tmp_6 = tmp_5;
+      var tmp3_group = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var createdAt$delegate = tmp3_group;
+      // Inline function 'androidx.compose.runtime.rememberCoroutineScope' call
+      var getContext = null;
+      var $composer_1 = $composer_0;
+      sourceInformationMarkerStart($composer_1, 773894976, 'CC(rememberCoroutineScope)482@20254L144:Effects.kt#9igjgp');
+      if (!((1 & 1) === 0)) {
+        getContext = ProfilePage$lambda_7;
+      }
+      var composer = $composer_1;
+      sourceInformationMarkerStart($composer_1, -954370320, 'CC(remember):Effects.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_3 = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp_7;
+      if (false || it_3 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'androidx.compose.runtime.rememberCoroutineScope.<anonymous>' call
+        var value_3 = new CompositionScopedCoroutineScopeCanceller(createCompositionCoroutineScope(getContext(), composer));
+        $composer_1.updateRememberedValue_l1wh71_k$(value_3);
+        tmp_7 = value_3;
+      } else {
+        tmp_7 = it_3;
+      }
+      var tmp_8 = tmp_7;
+      var tmp1_group_0 = (tmp_8 == null ? true : !(tmp_8 == null)) ? tmp_8 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_1);
+      var wrapper = tmp1_group_0;
+      var tmp0 = wrapper.get_coroutineScope_5k7h45_k$();
+      sourceInformationMarkerEnd($composer_1);
+      var coroutineScope = tmp0;
+      var tmp0_modifier = borderRadius(padding(fillMaxSize(Companion_getInstance_3()), get_px(20)), get_px(12));
+      var tmp1_horizontalAlignment = CenterHorizontally_getInstance();
+      var tmp2_verticalArrangement = Center_getInstance_0();
+      // Inline function 'kotlin.run' call
+      // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(-475922973, true, ProfilePage$lambda_8(coroutineScope, username$delegate, name$delegate, roles$delegate, createdAt$delegate), $composer_0, 54);
+      // Inline function 'androidx.compose.runtime.remember' call
+      var $composer_2 = $composer_0;
+      sourceInformationMarkerStart($composer_2, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = $composer_2.changed_ga7h3f_k$(dispatchReceiver);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_4 = $composer_2.rememberedValue_4dg93v_k$();
+      var tmp_9;
+      if (invalid || it_4 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>' call
+        var value_4 = ComposableLambda$invoke$ref_109(dispatchReceiver);
+        $composer_2.updateRememberedValue_l1wh71_k$(value_4);
+        tmp_9 = value_4;
+      } else {
+        tmp_9 = it_4;
+      }
+      var tmp_10 = tmp_9;
+      var tmp0_0 = (tmp_10 == null ? true : !(tmp_10 == null)) ? tmp_10 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_2);
+      Column(tmp0_modifier, tmp2_verticalArrangement, tmp1_horizontalAlignment, null, tmp0_0, $composer_0, 24576 | com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stableprop_getter() << 3 | com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter() << 6, 8);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp4_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp4_safe_receiver == null)
+      null;
+    else {
+      tmp4_safe_receiver.updateScope_t8jcf_k$(ProfilePage$lambda_9($changed));
+    }
+  }
+  function ProfileDetail(label, value, $composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-1581206132);
+    var $dirty = $changed;
+    if (($changed & 6) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(label) ? 4 : 2);
+    if (($changed & 48) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(value) ? 32 : 16);
+    if (!(($dirty & 19) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      var tmp = padding_1(fillMaxWidth(Companion_getInstance_3()), get_px(20));
+      var tmp_0 = SpaceBetween_getInstance();
+      // Inline function 'kotlin.run' call
+      // Inline function 'epicer.frontend.pages.ProfileDetail.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(-278961073, true, ProfileDetail$lambda(label, value), $composer_0, 54);
+      // Inline function 'androidx.compose.runtime.remember' call
+      var $composer_1 = $composer_0;
+      sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp_1;
+      if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.ProfileDetail.<anonymous>.<anonymous>' call
+        var value_0 = ComposableLambda$invoke$ref_110(dispatchReceiver);
+        $composer_1.updateRememberedValue_l1wh71_k$(value_0);
+        tmp_1 = value_0;
+      } else {
+        tmp_1 = it;
+      }
+      var tmp_2 = tmp_1;
+      var tmp0 = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_1);
+      Row(tmp, tmp_0, null, null, tmp0, $composer_0, 24576 | com_varabyte_kobweb_compose_foundation_layout_Arrangement_SpaceBetween$stableprop_getter() << 3, 12);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(ProfileDetail$lambda_0(label, value, $changed));
+    }
+  }
+  function ComposableLambda$invoke$ref_106($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ComposableSingletons$MeKt$lambda_1$lambda_2swfsc($this$Button, $composer, $changed) {
+    var $composer_0 = $composer;
+    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+      var tmp = fontWeight_0(fontSize(Companion_getInstance_3(), get_px(16)), Companion_getInstance_7().get_Bold_wnz5ke_k$());
+      SpanText('Get My Profile', tmp, null, null, $composer_0, 6, 12);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    return Unit_getInstance();
+  }
+  function ComposableSingletons$MeKt() {
+    ComposableSingletons$MeKt_instance = this;
+    var tmp = this;
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_106(composableLambdaInstance(-240436586, false, ComposableSingletons$MeKt$lambda_1$lambda_2swfsc));
+  }
+  protoOf(ComposableSingletons$MeKt).get_lambda_1_t9x1k6_k$ = function () {
+    return this.lambda_1_r8sbbp_1;
+  };
+  var ComposableSingletons$MeKt_instance;
+  function ComposableSingletons$MeKt_getInstance() {
+    if (ComposableSingletons$MeKt_instance == null)
+      new ComposableSingletons$MeKt();
+    return ComposableSingletons$MeKt_instance;
+  }
+  function ProfilePage$lambda($username$delegate) {
+    // Inline function 'androidx.compose.runtime.getValue' call
+    getLocalDelegateReference('username', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    return $username$delegate.get_value_j01efc_k$();
+  }
+  function ProfilePage$lambda_0($username$delegate, _set____db54di) {
+    getLocalDelegateReference('username', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    $username$delegate.set_value_v1vabv_k$(_set____db54di);
+    return Unit_getInstance();
+  }
+  function ProfilePage$lambda_1($name$delegate) {
+    // Inline function 'androidx.compose.runtime.getValue' call
+    getLocalDelegateReference('name', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    return $name$delegate.get_value_j01efc_k$();
+  }
+  function ProfilePage$lambda_2($name$delegate, _set____db54di) {
+    getLocalDelegateReference('name', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    $name$delegate.set_value_v1vabv_k$(_set____db54di);
+    return Unit_getInstance();
+  }
+  function ProfilePage$lambda_3($roles$delegate) {
+    // Inline function 'androidx.compose.runtime.getValue' call
+    getLocalDelegateReference('roles', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    return $roles$delegate.get_value_j01efc_k$();
+  }
+  function ProfilePage$lambda_4($roles$delegate, _set____db54di) {
+    getLocalDelegateReference('roles', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    $roles$delegate.set_value_v1vabv_k$(_set____db54di);
+    return Unit_getInstance();
+  }
+  function ProfilePage$lambda_5($createdAt$delegate) {
+    // Inline function 'androidx.compose.runtime.getValue' call
+    getLocalDelegateReference('createdAt', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    return $createdAt$delegate.get_value_j01efc_k$();
+  }
+  function ProfilePage$lambda_6($createdAt$delegate, _set____db54di) {
+    getLocalDelegateReference('createdAt', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    $createdAt$delegate.set_value_v1vabv_k$(_set____db54di);
+    return Unit_getInstance();
+  }
+  function ProfilePage$lambda_7() {
+    return EmptyCoroutineContext_getInstance();
+  }
+  function ProfilePage$lambda$lambda$lambda$lambda$slambda($username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate, resultContinuation) {
+    this.$username$delegate_1 = $username$delegate;
+    this.$name$delegate_1 = $name$delegate;
+    this.$roles$delegate_1 = $roles$delegate;
+    this.$createdAt$delegate_1 = $createdAt$delegate;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf(ProfilePage$lambda$lambda$lambda$lambda$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
+    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(ProfilePage$lambda$lambda$lambda$lambda$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
+    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  };
+  protoOf(ProfilePage$lambda$lambda$lambda$lambda$slambda).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(2);
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = getMyBaseUserDTO(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var baseUserDTO = suspendResult;
+            if (!(baseUserDTO == null)) {
+              ProfilePage$lambda_0(this.$username$delegate_1, baseUserDTO.get_username_ytz5i7_k$());
+              ProfilePage$lambda_2(this.$name$delegate_1, baseUserDTO.get_name_woqyms_k$());
+              ProfilePage$lambda_4(this.$roles$delegate_1, joinToString(baseUserDTO.get_roles_iy35hw_k$(), ', '));
+              ProfilePage$lambda_6(this.$createdAt$delegate_1, baseUserDTO.get_created_at_2h7xbn_k$().toString());
+            }
+
+            return Unit_getInstance();
+          case 2:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 2) {
+          throw e;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
+        }
+      }
+     while (true);
+  };
+  protoOf(ProfilePage$lambda$lambda$lambda$lambda$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
+    var i = new ProfilePage$lambda$lambda$lambda$lambda$slambda(this.$username$delegate_1, this.$name$delegate_1, this.$roles$delegate_1, this.$createdAt$delegate_1, completion);
+    i.$this$launch_1 = $this$launch;
+    return i;
+  };
+  protoOf(ProfilePage$lambda$lambda$lambda$lambda$slambda).create_wyq9v6_k$ = function (value, completion) {
+    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
+  };
+  function ProfilePage$lambda$lambda$lambda$lambda$slambda_0($username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate, resultContinuation) {
+    var i = new ProfilePage$lambda$lambda$lambda$lambda$slambda($username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate, resultContinuation);
+    var l = function ($this$launch, $completion) {
+      return i.invoke_d9fzmj_k$($this$launch, $completion);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function ProfilePage$lambda$lambda$lambda$lambda($coroutineScope, $username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate) {
+    return function (it) {
+      launch($coroutineScope, VOID, VOID, ProfilePage$lambda$lambda$lambda$lambda$slambda_0($username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate, null));
+      return Unit_getInstance();
+    };
+  }
+  function ProfilePage$lambda$lambda$lambda($coroutineScope, $username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate) {
+    return function ($this$Column, $composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+        var tmp_0 = fontWeight_0(fontSize(Companion_getInstance_3(), get_px(24)), Companion_getInstance_7().get_Bold_wnz5ke_k$());
+        SpanText('User Profile', tmp_0, null, null, $composer_0, 6, 12);
+        Spacer($composer_0, 0);
+        ProfileDetail('Username', ProfilePage$lambda($username$delegate), $composer_0, 6);
+        ProfileDetail('Name', ProfilePage$lambda_1($name$delegate), $composer_0, 6);
+        ProfileDetail('Roles', ProfilePage$lambda_3($roles$delegate), $composer_0, 6);
+        ProfileDetail('Created At', ProfilePage$lambda_5($createdAt$delegate), $composer_0, 6);
+        Spacer($composer_0, 0);
+        $composer_0.startReplaceGroup_5hh8aj_k$(-2048861621);
+        // Inline function 'androidx.compose.runtime.cache' call
+        var invalid = $composer_0.changedInstance_s1wkiy_k$($coroutineScope);
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it = $composer_0.rememberedValue_4dg93v_k$();
+        var tmp_1;
+        if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+          var value = ProfilePage$lambda$lambda$lambda$lambda($coroutineScope, $username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate);
+          $composer_0.updateRememberedValue_l1wh71_k$(value);
+          tmp_1 = value;
+        } else {
+          tmp_1 = it;
+        }
+        var tmp_2 = tmp_1;
+        var tmp0_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+        $composer_0.endReplaceGroup_ek144q_k$();
+        var tmp_3 = padding_0(Companion_getInstance_3(), get_px(10));
+        // Inline function 'org.jetbrains.compose.web.css.Color.white' call
+        Color_getInstance();
+        var tmp$ret$4 = Color('white');
+        var tmp_4 = padding(borderRadius(color(tmp_3, tmp$ret$4), get_px(8)), get_px(10));
+        Button(tmp0_group, tmp_4, null, null, false, null, null, null, null, ComposableSingletons$MeKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 805306368, 508);
+        tmp = Unit_getInstance();
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_107($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ProfilePage$lambda$lambda($coroutineScope, $username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate) {
+    return function ($this$Box, $composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+        var tmp_0 = padding(Companion_getInstance_3(), get_px(24));
+        var tmp_1 = CenterHorizontally_getInstance();
+        // Inline function 'kotlin.run' call
+        // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        var dispatchReceiver = rememberComposableLambda(-1288802170, true, ProfilePage$lambda$lambda$lambda($coroutineScope, $username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate), $composer_0, 54);
+        // Inline function 'androidx.compose.runtime.remember' call
+        var $composer_1 = $composer_0;
+        sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+        // Inline function 'androidx.compose.runtime.cache' call
+        var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it = $composer_1.rememberedValue_4dg93v_k$();
+        var tmp_2;
+        if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+          var value = ComposableLambda$invoke$ref_107(dispatchReceiver);
+          $composer_1.updateRememberedValue_l1wh71_k$(value);
+          tmp_2 = value;
+        } else {
+          tmp_2 = it;
+        }
+        var tmp_3 = tmp_2;
+        var tmp0 = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
+        sourceInformationMarkerEnd($composer_1);
+        Column(tmp_0, null, tmp_1, null, tmp0, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter() << 6, 10);
+        tmp = Unit_getInstance();
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_108($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ProfilePage$lambda_8($coroutineScope, $username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate) {
+    return function ($this$Column, $composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+        var tmp_0 = borderRadius(padding(background(fillMaxWidth(Companion_getInstance_3()), Color('#17153B'), []), get_px(16)), get_px(12));
+        // Inline function 'kotlin.run' call
+        // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>' call
+        var dispatchReceiver = rememberComposableLambda(1262878877, true, ProfilePage$lambda$lambda($coroutineScope, $username$delegate, $name$delegate, $roles$delegate, $createdAt$delegate), $composer_0, 54);
+        // Inline function 'androidx.compose.runtime.remember' call
+        var $composer_1 = $composer_0;
+        sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+        // Inline function 'androidx.compose.runtime.cache' call
+        var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it = $composer_1.rememberedValue_4dg93v_k$();
+        var tmp_1;
+        if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+          var value = ComposableLambda$invoke$ref_108(dispatchReceiver);
+          $composer_1.updateRememberedValue_l1wh71_k$(value);
+          tmp_1 = value;
+        } else {
+          tmp_1 = it;
+        }
+        var tmp_2 = tmp_1;
+        var tmp0 = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+        sourceInformationMarkerEnd($composer_1);
+        Box(tmp_0, null, null, tmp0, $composer_0, 3072, 6);
+        tmp = Unit_getInstance();
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_109($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ProfilePage$lambda_9($$changed) {
+    return function ($composer, $force) {
+      ProfilePage($composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
+  function ProfileDetail$lambda($label, $value) {
+    return function ($this$Row, $composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+        var tmp_0 = $label + ':';
+        var tmp_1 = fontWeight_0(Companion_getInstance_3(), Companion_getInstance_7().get_SemiBold_aid1c4_k$());
+        SpanText(tmp_0, tmp_1, null, null, $composer_0, 0, 12);
+        // Inline function 'kotlin.text.ifEmpty' call
+        var this_0 = $value;
+        var tmp_2;
+        // Inline function 'kotlin.text.isEmpty' call
+        if (charSequenceLength(this_0) === 0) {
+          // Inline function 'epicer.frontend.pages.ProfileDetail.<anonymous>.<anonymous>.<anonymous>' call
+          tmp_2 = 'N/A';
+        } else {
+          tmp_2 = this_0;
+        }
+        var tmp_3 = tmp_2;
+        var tmp_4 = Companion_getInstance_3();
+        SpanText(tmp_3, tmp_4, null, null, $composer_0, 48, 12);
+        tmp = Unit_getInstance();
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_110($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ProfileDetail$lambda_0($label, $value, $$changed) {
+    return function ($composer, $force) {
+      ProfileDetail($label, $value, $composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
   //region block: init
   COLOR_MODE_KEY = 'frontend:colorMode';
   epicer_frontend_SitePalette_Brand$stable = 8;
   epicer_frontend_SitePalette$stable = 8;
   epicer_frontend_SitePalettes$stable = 8;
+  backend_url = 'http://localhost:8080/';
   //endregion
   mainWrapper();
   return _;
