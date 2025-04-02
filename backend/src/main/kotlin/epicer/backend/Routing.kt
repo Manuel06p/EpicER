@@ -50,6 +50,9 @@ fun Application.configureRouting(userService: IUserService) {
 
         route("/me") {
             authenticate("auth-jwt") {
+                get {
+                    call.respond(HttpStatusCode.OK)
+                }
                 route("/user") {
                     get() {
                         val principal = call.principal<JWTPrincipal>()

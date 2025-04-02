@@ -13,6 +13,8 @@ import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonObject
 import org.w3c.fetch.Headers
 import org.w3c.fetch.RequestInit
+import kotlin.js.json
+import kotlin.math.log
 
 const val backend_url: String = "http://localhost:8080/"
 
@@ -30,6 +32,31 @@ suspend fun login(loginUserDTO: LoginUserDTO): TokenDTO? {
         return null
     }
 }
+
+suspend fun isLogged(): Boolean {
+    val token = localStorage.getItem("jwtToken") ?: return false
+
+    try {
+        val response = window.fetch(
+            backend_url + "me",
+            RequestInit(
+                method = "GET",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token"
+                )
+            )
+        ).await()
+
+        return response.status.toInt() == 200
+    } catch (e: Exception) {
+        println("Error checking login status: ${e.message}")
+    }
+
+    return false
+}
+
+
 
 suspend fun getMyBaseUserDTO(): BaseUserDTO? {
     val token = localStorage.getItem("jwtToken") ?: return null

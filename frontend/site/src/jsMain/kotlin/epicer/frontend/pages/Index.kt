@@ -2,6 +2,7 @@ package epicer.frontend.pages
 
 import androidx.compose.runtime.Composable
 import com.varabyte.kobweb.compose.css.StyleVariable
+import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.graphics.Color
 import com.varabyte.kobweb.compose.ui.modifiers.*
@@ -54,21 +55,24 @@ private fun GridCell(color: Color, row: Int, column: Int, width: Int? = null, he
 @Composable
 fun HomePage() {
     val ctx = rememberPageContext()
-    Button(
-        onClick = {
-            ctx.router.navigateTo("/login")
-        }
-    ) {
-        Text("Login!")
-    }
-    Button(
-        onClick = {
-            ctx.router.navigateTo("/me")
-        }
-    ) {
-        Text("Me!")
-    }
 
+    Column {
+        Button(
+            onClick = {
+                ctx.router.navigateTo("/login")
+            }
+        ) {
+            Text("Login!")
+        }
+
+        Button(
+            onClick = {
+                ctx.router.navigateTo("/me")
+            }
+        ) {
+            Text("Me!")
+        }
+    }
 }
 
 
