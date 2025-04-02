@@ -362,18 +362,18 @@ if (typeof String.prototype.endsWith === 'undefined') {
   initMetadataForClass(createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$2, VOID, VOID, CoroutineImpl);
   initMetadataForClass(EmptyContinuation$$inlined$Continuation$1, VOID, VOID, VOID, [Continuation]);
   initMetadataForClass(EnumEntriesSerializationProxy, 'EnumEntriesSerializationProxy');
+  initMetadataForClass(NoSuchElementException, 'NoSuchElementException', NoSuchElementException_init_$Create$, RuntimeException);
+  initMetadataForClass(ArithmeticException, 'ArithmeticException', ArithmeticException_init_$Create$, RuntimeException);
+  initMetadataForClass(UninitializedPropertyAccessException, 'UninitializedPropertyAccessException', UninitializedPropertyAccessException_init_$Create$, RuntimeException);
+  initMetadataForClass(NullPointerException, 'NullPointerException', NullPointerException_init_$Create$, RuntimeException);
+  initMetadataForClass(ClassCastException, 'ClassCastException', ClassCastException_init_$Create$, RuntimeException);
+  initMetadataForClass(AssertionError, 'AssertionError', AssertionError_init_$Create$, Error_0);
   initMetadataForClass(IllegalArgumentException, 'IllegalArgumentException', IllegalArgumentException_init_$Create$, RuntimeException);
   initMetadataForClass(UnsupportedOperationException, 'UnsupportedOperationException', UnsupportedOperationException_init_$Create$, RuntimeException);
-  initMetadataForClass(NoSuchElementException, 'NoSuchElementException', NoSuchElementException_init_$Create$, RuntimeException);
-  initMetadataForClass(IndexOutOfBoundsException, 'IndexOutOfBoundsException', IndexOutOfBoundsException_init_$Create$, RuntimeException);
-  initMetadataForClass(ArithmeticException, 'ArithmeticException', ArithmeticException_init_$Create$, RuntimeException);
-  initMetadataForClass(ConcurrentModificationException, 'ConcurrentModificationException', ConcurrentModificationException_init_$Create$, RuntimeException);
-  initMetadataForClass(AssertionError, 'AssertionError', AssertionError_init_$Create$, Error_0);
   initMetadataForClass(NumberFormatException, 'NumberFormatException', NumberFormatException_init_$Create$, IllegalArgumentException);
-  initMetadataForClass(NullPointerException, 'NullPointerException', NullPointerException_init_$Create$, RuntimeException);
+  initMetadataForClass(IndexOutOfBoundsException, 'IndexOutOfBoundsException', IndexOutOfBoundsException_init_$Create$, RuntimeException);
   initMetadataForClass(NoWhenBranchMatchedException, 'NoWhenBranchMatchedException', NoWhenBranchMatchedException_init_$Create$, RuntimeException);
-  initMetadataForClass(ClassCastException, 'ClassCastException', ClassCastException_init_$Create$, RuntimeException);
-  initMetadataForClass(UninitializedPropertyAccessException, 'UninitializedPropertyAccessException', UninitializedPropertyAccessException_init_$Create$, RuntimeException);
+  initMetadataForClass(ConcurrentModificationException, 'ConcurrentModificationException', ConcurrentModificationException_init_$Create$, RuntimeException);
   initMetadataForClass(JsPolyfill, 'JsPolyfill', VOID, VOID, [Annotation]);
   initMetadataForInterface(Serializable, 'Serializable');
   initMetadataForClass(ExperimentalAssociatedObjects, 'ExperimentalAssociatedObjects', VOID, VOID, [Annotation]);
@@ -9804,6 +9804,10 @@ if (typeof String.prototype.endsWith === 'undefined') {
     return output;
   }
   var output;
+  function println(message) {
+    _init_properties_console_kt__rfg7jv();
+    get_output().println_ghnc0w_k$(message);
+  }
   function BaseOutput() {
   }
   protoOf(BaseOutput).println_uvj9r3_k$ = function () {
@@ -9882,10 +9886,6 @@ if (typeof String.prototype.endsWith === 'undefined') {
   protoOf(BufferedOutput).flush_shahbo_k$ = function () {
     this.buffer_1 = '';
   };
-  function println(message) {
-    _init_properties_console_kt__rfg7jv();
-    get_output().println_ghnc0w_k$(message);
-  }
   var properties_initialized_console_kt_gll9dl;
   function _init_properties_console_kt__rfg7jv() {
     if (!properties_initialized_console_kt_gll9dl) {
@@ -10724,6 +10724,29 @@ if (typeof String.prototype.endsWith === 'undefined') {
   }
   function EnumEntriesSerializationProxy(entries) {
   }
+  function NoSuchElementException_init_$Init$($this) {
+    RuntimeException_init_$Init$($this);
+    NoSuchElementException.call($this);
+    return $this;
+  }
+  function NoSuchElementException_init_$Create$() {
+    var tmp = NoSuchElementException_init_$Init$(objectCreate(protoOf(NoSuchElementException)));
+    captureStack(tmp, NoSuchElementException_init_$Create$);
+    return tmp;
+  }
+  function NoSuchElementException_init_$Init$_0(message, $this) {
+    RuntimeException_init_$Init$_0(message, $this);
+    NoSuchElementException.call($this);
+    return $this;
+  }
+  function NoSuchElementException_init_$Create$_0(message) {
+    var tmp = NoSuchElementException_init_$Init$_0(message, objectCreate(protoOf(NoSuchElementException)));
+    captureStack(tmp, NoSuchElementException_init_$Create$_0);
+    return tmp;
+  }
+  function NoSuchElementException() {
+    captureStack(this, NoSuchElementException);
+  }
   function Exception_init_$Init$($this) {
     extendThrowable($this);
     Exception.call($this);
@@ -10767,200 +10790,71 @@ if (typeof String.prototype.endsWith === 'undefined') {
   function Exception() {
     captureStack(this, Exception);
   }
-  function IllegalArgumentException_init_$Init$($this) {
+  function ArithmeticException_init_$Init$($this) {
     RuntimeException_init_$Init$($this);
-    IllegalArgumentException.call($this);
+    ArithmeticException.call($this);
     return $this;
   }
-  function IllegalArgumentException_init_$Create$() {
-    var tmp = IllegalArgumentException_init_$Init$(objectCreate(protoOf(IllegalArgumentException)));
-    captureStack(tmp, IllegalArgumentException_init_$Create$);
+  function ArithmeticException_init_$Create$() {
+    var tmp = ArithmeticException_init_$Init$(objectCreate(protoOf(ArithmeticException)));
+    captureStack(tmp, ArithmeticException_init_$Create$);
     return tmp;
   }
-  function IllegalArgumentException_init_$Init$_0(message, $this) {
+  function ArithmeticException_init_$Init$_0(message, $this) {
     RuntimeException_init_$Init$_0(message, $this);
-    IllegalArgumentException.call($this);
+    ArithmeticException.call($this);
     return $this;
   }
-  function IllegalArgumentException_init_$Create$_0(message) {
-    var tmp = IllegalArgumentException_init_$Init$_0(message, objectCreate(protoOf(IllegalArgumentException)));
-    captureStack(tmp, IllegalArgumentException_init_$Create$_0);
+  function ArithmeticException_init_$Create$_0(message) {
+    var tmp = ArithmeticException_init_$Init$_0(message, objectCreate(protoOf(ArithmeticException)));
+    captureStack(tmp, ArithmeticException_init_$Create$_0);
     return tmp;
   }
-  function IllegalArgumentException_init_$Init$_1(message, cause, $this) {
+  function ArithmeticException() {
+    captureStack(this, ArithmeticException);
+  }
+  function UninitializedPropertyAccessException_init_$Init$($this) {
+    RuntimeException_init_$Init$($this);
+    UninitializedPropertyAccessException.call($this);
+    return $this;
+  }
+  function UninitializedPropertyAccessException_init_$Create$() {
+    var tmp = UninitializedPropertyAccessException_init_$Init$(objectCreate(protoOf(UninitializedPropertyAccessException)));
+    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$);
+    return tmp;
+  }
+  function UninitializedPropertyAccessException_init_$Init$_0(message, $this) {
+    RuntimeException_init_$Init$_0(message, $this);
+    UninitializedPropertyAccessException.call($this);
+    return $this;
+  }
+  function UninitializedPropertyAccessException_init_$Create$_0(message) {
+    var tmp = UninitializedPropertyAccessException_init_$Init$_0(message, objectCreate(protoOf(UninitializedPropertyAccessException)));
+    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$_0);
+    return tmp;
+  }
+  function UninitializedPropertyAccessException_init_$Init$_1(message, cause, $this) {
     RuntimeException_init_$Init$_1(message, cause, $this);
-    IllegalArgumentException.call($this);
+    UninitializedPropertyAccessException.call($this);
     return $this;
   }
-  function IllegalArgumentException_init_$Create$_1(message, cause) {
-    var tmp = IllegalArgumentException_init_$Init$_1(message, cause, objectCreate(protoOf(IllegalArgumentException)));
-    captureStack(tmp, IllegalArgumentException_init_$Create$_1);
+  function UninitializedPropertyAccessException_init_$Create$_1(message, cause) {
+    var tmp = UninitializedPropertyAccessException_init_$Init$_1(message, cause, objectCreate(protoOf(UninitializedPropertyAccessException)));
+    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$_1);
     return tmp;
   }
-  function IllegalArgumentException_init_$Init$_2(cause, $this) {
+  function UninitializedPropertyAccessException_init_$Init$_2(cause, $this) {
     RuntimeException_init_$Init$_2(cause, $this);
-    IllegalArgumentException.call($this);
+    UninitializedPropertyAccessException.call($this);
     return $this;
   }
-  function IllegalArgumentException_init_$Create$_2(cause) {
-    var tmp = IllegalArgumentException_init_$Init$_2(cause, objectCreate(protoOf(IllegalArgumentException)));
-    captureStack(tmp, IllegalArgumentException_init_$Create$_2);
+  function UninitializedPropertyAccessException_init_$Create$_2(cause) {
+    var tmp = UninitializedPropertyAccessException_init_$Init$_2(cause, objectCreate(protoOf(UninitializedPropertyAccessException)));
+    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$_2);
     return tmp;
   }
-  function IllegalArgumentException() {
-    captureStack(this, IllegalArgumentException);
-  }
-  function IllegalStateException_init_$Init$($this) {
-    RuntimeException_init_$Init$($this);
-    IllegalStateException.call($this);
-    return $this;
-  }
-  function IllegalStateException_init_$Create$() {
-    var tmp = IllegalStateException_init_$Init$(objectCreate(protoOf(IllegalStateException)));
-    captureStack(tmp, IllegalStateException_init_$Create$);
-    return tmp;
-  }
-  function IllegalStateException_init_$Init$_0(message, $this) {
-    RuntimeException_init_$Init$_0(message, $this);
-    IllegalStateException.call($this);
-    return $this;
-  }
-  function IllegalStateException_init_$Create$_0(message) {
-    var tmp = IllegalStateException_init_$Init$_0(message, objectCreate(protoOf(IllegalStateException)));
-    captureStack(tmp, IllegalStateException_init_$Create$_0);
-    return tmp;
-  }
-  function IllegalStateException_init_$Init$_1(message, cause, $this) {
-    RuntimeException_init_$Init$_1(message, cause, $this);
-    IllegalStateException.call($this);
-    return $this;
-  }
-  function IllegalStateException_init_$Create$_1(message, cause) {
-    var tmp = IllegalStateException_init_$Init$_1(message, cause, objectCreate(protoOf(IllegalStateException)));
-    captureStack(tmp, IllegalStateException_init_$Create$_1);
-    return tmp;
-  }
-  function IllegalStateException_init_$Init$_2(cause, $this) {
-    RuntimeException_init_$Init$_2(cause, $this);
-    IllegalStateException.call($this);
-    return $this;
-  }
-  function IllegalStateException_init_$Create$_2(cause) {
-    var tmp = IllegalStateException_init_$Init$_2(cause, objectCreate(protoOf(IllegalStateException)));
-    captureStack(tmp, IllegalStateException_init_$Create$_2);
-    return tmp;
-  }
-  function IllegalStateException() {
-    captureStack(this, IllegalStateException);
-  }
-  function UnsupportedOperationException_init_$Init$($this) {
-    RuntimeException_init_$Init$($this);
-    UnsupportedOperationException.call($this);
-    return $this;
-  }
-  function UnsupportedOperationException_init_$Create$() {
-    var tmp = UnsupportedOperationException_init_$Init$(objectCreate(protoOf(UnsupportedOperationException)));
-    captureStack(tmp, UnsupportedOperationException_init_$Create$);
-    return tmp;
-  }
-  function UnsupportedOperationException_init_$Init$_0(message, $this) {
-    RuntimeException_init_$Init$_0(message, $this);
-    UnsupportedOperationException.call($this);
-    return $this;
-  }
-  function UnsupportedOperationException_init_$Create$_0(message) {
-    var tmp = UnsupportedOperationException_init_$Init$_0(message, objectCreate(protoOf(UnsupportedOperationException)));
-    captureStack(tmp, UnsupportedOperationException_init_$Create$_0);
-    return tmp;
-  }
-  function UnsupportedOperationException_init_$Init$_1(message, cause, $this) {
-    RuntimeException_init_$Init$_1(message, cause, $this);
-    UnsupportedOperationException.call($this);
-    return $this;
-  }
-  function UnsupportedOperationException_init_$Create$_1(message, cause) {
-    var tmp = UnsupportedOperationException_init_$Init$_1(message, cause, objectCreate(protoOf(UnsupportedOperationException)));
-    captureStack(tmp, UnsupportedOperationException_init_$Create$_1);
-    return tmp;
-  }
-  function UnsupportedOperationException_init_$Init$_2(cause, $this) {
-    RuntimeException_init_$Init$_2(cause, $this);
-    UnsupportedOperationException.call($this);
-    return $this;
-  }
-  function UnsupportedOperationException_init_$Create$_2(cause) {
-    var tmp = UnsupportedOperationException_init_$Init$_2(cause, objectCreate(protoOf(UnsupportedOperationException)));
-    captureStack(tmp, UnsupportedOperationException_init_$Create$_2);
-    return tmp;
-  }
-  function UnsupportedOperationException() {
-    captureStack(this, UnsupportedOperationException);
-  }
-  function RuntimeException_init_$Init$($this) {
-    Exception_init_$Init$($this);
-    RuntimeException.call($this);
-    return $this;
-  }
-  function RuntimeException_init_$Create$() {
-    var tmp = RuntimeException_init_$Init$(objectCreate(protoOf(RuntimeException)));
-    captureStack(tmp, RuntimeException_init_$Create$);
-    return tmp;
-  }
-  function RuntimeException_init_$Init$_0(message, $this) {
-    Exception_init_$Init$_0(message, $this);
-    RuntimeException.call($this);
-    return $this;
-  }
-  function RuntimeException_init_$Create$_0(message) {
-    var tmp = RuntimeException_init_$Init$_0(message, objectCreate(protoOf(RuntimeException)));
-    captureStack(tmp, RuntimeException_init_$Create$_0);
-    return tmp;
-  }
-  function RuntimeException_init_$Init$_1(message, cause, $this) {
-    Exception_init_$Init$_1(message, cause, $this);
-    RuntimeException.call($this);
-    return $this;
-  }
-  function RuntimeException_init_$Create$_1(message, cause) {
-    var tmp = RuntimeException_init_$Init$_1(message, cause, objectCreate(protoOf(RuntimeException)));
-    captureStack(tmp, RuntimeException_init_$Create$_1);
-    return tmp;
-  }
-  function RuntimeException_init_$Init$_2(cause, $this) {
-    Exception_init_$Init$_2(cause, $this);
-    RuntimeException.call($this);
-    return $this;
-  }
-  function RuntimeException_init_$Create$_2(cause) {
-    var tmp = RuntimeException_init_$Init$_2(cause, objectCreate(protoOf(RuntimeException)));
-    captureStack(tmp, RuntimeException_init_$Create$_2);
-    return tmp;
-  }
-  function RuntimeException() {
-    captureStack(this, RuntimeException);
-  }
-  function NoSuchElementException_init_$Init$($this) {
-    RuntimeException_init_$Init$($this);
-    NoSuchElementException.call($this);
-    return $this;
-  }
-  function NoSuchElementException_init_$Create$() {
-    var tmp = NoSuchElementException_init_$Init$(objectCreate(protoOf(NoSuchElementException)));
-    captureStack(tmp, NoSuchElementException_init_$Create$);
-    return tmp;
-  }
-  function NoSuchElementException_init_$Init$_0(message, $this) {
-    RuntimeException_init_$Init$_0(message, $this);
-    NoSuchElementException.call($this);
-    return $this;
-  }
-  function NoSuchElementException_init_$Create$_0(message) {
-    var tmp = NoSuchElementException_init_$Init$_0(message, objectCreate(protoOf(NoSuchElementException)));
-    captureStack(tmp, NoSuchElementException_init_$Create$_0);
-    return tmp;
-  }
-  function NoSuchElementException() {
-    captureStack(this, NoSuchElementException);
+  function UninitializedPropertyAccessException() {
+    captureStack(this, UninitializedPropertyAccessException);
   }
   function Error_init_$Init$($this) {
     extendThrowable($this);
@@ -11005,94 +10899,51 @@ if (typeof String.prototype.endsWith === 'undefined') {
   function Error_0() {
     captureStack(this, Error_0);
   }
-  function IndexOutOfBoundsException_init_$Init$($this) {
+  function NullPointerException_init_$Init$($this) {
     RuntimeException_init_$Init$($this);
-    IndexOutOfBoundsException.call($this);
+    NullPointerException.call($this);
     return $this;
   }
-  function IndexOutOfBoundsException_init_$Create$() {
-    var tmp = IndexOutOfBoundsException_init_$Init$(objectCreate(protoOf(IndexOutOfBoundsException)));
-    captureStack(tmp, IndexOutOfBoundsException_init_$Create$);
+  function NullPointerException_init_$Create$() {
+    var tmp = NullPointerException_init_$Init$(objectCreate(protoOf(NullPointerException)));
+    captureStack(tmp, NullPointerException_init_$Create$);
     return tmp;
   }
-  function IndexOutOfBoundsException_init_$Init$_0(message, $this) {
+  function NullPointerException_init_$Init$_0(message, $this) {
     RuntimeException_init_$Init$_0(message, $this);
-    IndexOutOfBoundsException.call($this);
+    NullPointerException.call($this);
     return $this;
   }
-  function IndexOutOfBoundsException_init_$Create$_0(message) {
-    var tmp = IndexOutOfBoundsException_init_$Init$_0(message, objectCreate(protoOf(IndexOutOfBoundsException)));
-    captureStack(tmp, IndexOutOfBoundsException_init_$Create$_0);
+  function NullPointerException_init_$Create$_0(message) {
+    var tmp = NullPointerException_init_$Init$_0(message, objectCreate(protoOf(NullPointerException)));
+    captureStack(tmp, NullPointerException_init_$Create$_0);
     return tmp;
   }
-  function IndexOutOfBoundsException() {
-    captureStack(this, IndexOutOfBoundsException);
+  function NullPointerException() {
+    captureStack(this, NullPointerException);
   }
-  function ArithmeticException_init_$Init$($this) {
+  function ClassCastException_init_$Init$($this) {
     RuntimeException_init_$Init$($this);
-    ArithmeticException.call($this);
+    ClassCastException.call($this);
     return $this;
   }
-  function ArithmeticException_init_$Create$() {
-    var tmp = ArithmeticException_init_$Init$(objectCreate(protoOf(ArithmeticException)));
-    captureStack(tmp, ArithmeticException_init_$Create$);
+  function ClassCastException_init_$Create$() {
+    var tmp = ClassCastException_init_$Init$(objectCreate(protoOf(ClassCastException)));
+    captureStack(tmp, ClassCastException_init_$Create$);
     return tmp;
   }
-  function ArithmeticException_init_$Init$_0(message, $this) {
+  function ClassCastException_init_$Init$_0(message, $this) {
     RuntimeException_init_$Init$_0(message, $this);
-    ArithmeticException.call($this);
+    ClassCastException.call($this);
     return $this;
   }
-  function ArithmeticException_init_$Create$_0(message) {
-    var tmp = ArithmeticException_init_$Init$_0(message, objectCreate(protoOf(ArithmeticException)));
-    captureStack(tmp, ArithmeticException_init_$Create$_0);
+  function ClassCastException_init_$Create$_0(message) {
+    var tmp = ClassCastException_init_$Init$_0(message, objectCreate(protoOf(ClassCastException)));
+    captureStack(tmp, ClassCastException_init_$Create$_0);
     return tmp;
   }
-  function ArithmeticException() {
-    captureStack(this, ArithmeticException);
-  }
-  function ConcurrentModificationException_init_$Init$($this) {
-    RuntimeException_init_$Init$($this);
-    ConcurrentModificationException.call($this);
-    return $this;
-  }
-  function ConcurrentModificationException_init_$Create$() {
-    var tmp = ConcurrentModificationException_init_$Init$(objectCreate(protoOf(ConcurrentModificationException)));
-    captureStack(tmp, ConcurrentModificationException_init_$Create$);
-    return tmp;
-  }
-  function ConcurrentModificationException_init_$Init$_0(message, $this) {
-    RuntimeException_init_$Init$_0(message, $this);
-    ConcurrentModificationException.call($this);
-    return $this;
-  }
-  function ConcurrentModificationException_init_$Create$_0(message) {
-    var tmp = ConcurrentModificationException_init_$Init$_0(message, objectCreate(protoOf(ConcurrentModificationException)));
-    captureStack(tmp, ConcurrentModificationException_init_$Create$_0);
-    return tmp;
-  }
-  function ConcurrentModificationException_init_$Init$_1(message, cause, $this) {
-    RuntimeException_init_$Init$_1(message, cause, $this);
-    ConcurrentModificationException.call($this);
-    return $this;
-  }
-  function ConcurrentModificationException_init_$Create$_1(message, cause) {
-    var tmp = ConcurrentModificationException_init_$Init$_1(message, cause, objectCreate(protoOf(ConcurrentModificationException)));
-    captureStack(tmp, ConcurrentModificationException_init_$Create$_1);
-    return tmp;
-  }
-  function ConcurrentModificationException_init_$Init$_2(cause, $this) {
-    RuntimeException_init_$Init$_2(cause, $this);
-    ConcurrentModificationException.call($this);
-    return $this;
-  }
-  function ConcurrentModificationException_init_$Create$_2(cause) {
-    var tmp = ConcurrentModificationException_init_$Init$_2(cause, objectCreate(protoOf(ConcurrentModificationException)));
-    captureStack(tmp, ConcurrentModificationException_init_$Create$_2);
-    return tmp;
-  }
-  function ConcurrentModificationException() {
-    captureStack(this, ConcurrentModificationException);
+  function ClassCastException() {
+    captureStack(this, ClassCastException);
   }
   function AssertionError_init_$Init$($this) {
     Error_init_$Init$($this);
@@ -11138,6 +10989,135 @@ if (typeof String.prototype.endsWith === 'undefined') {
   function AssertionError() {
     captureStack(this, AssertionError);
   }
+  function RuntimeException_init_$Init$($this) {
+    Exception_init_$Init$($this);
+    RuntimeException.call($this);
+    return $this;
+  }
+  function RuntimeException_init_$Create$() {
+    var tmp = RuntimeException_init_$Init$(objectCreate(protoOf(RuntimeException)));
+    captureStack(tmp, RuntimeException_init_$Create$);
+    return tmp;
+  }
+  function RuntimeException_init_$Init$_0(message, $this) {
+    Exception_init_$Init$_0(message, $this);
+    RuntimeException.call($this);
+    return $this;
+  }
+  function RuntimeException_init_$Create$_0(message) {
+    var tmp = RuntimeException_init_$Init$_0(message, objectCreate(protoOf(RuntimeException)));
+    captureStack(tmp, RuntimeException_init_$Create$_0);
+    return tmp;
+  }
+  function RuntimeException_init_$Init$_1(message, cause, $this) {
+    Exception_init_$Init$_1(message, cause, $this);
+    RuntimeException.call($this);
+    return $this;
+  }
+  function RuntimeException_init_$Create$_1(message, cause) {
+    var tmp = RuntimeException_init_$Init$_1(message, cause, objectCreate(protoOf(RuntimeException)));
+    captureStack(tmp, RuntimeException_init_$Create$_1);
+    return tmp;
+  }
+  function RuntimeException_init_$Init$_2(cause, $this) {
+    Exception_init_$Init$_2(cause, $this);
+    RuntimeException.call($this);
+    return $this;
+  }
+  function RuntimeException_init_$Create$_2(cause) {
+    var tmp = RuntimeException_init_$Init$_2(cause, objectCreate(protoOf(RuntimeException)));
+    captureStack(tmp, RuntimeException_init_$Create$_2);
+    return tmp;
+  }
+  function RuntimeException() {
+    captureStack(this, RuntimeException);
+  }
+  function IllegalArgumentException_init_$Init$($this) {
+    RuntimeException_init_$Init$($this);
+    IllegalArgumentException.call($this);
+    return $this;
+  }
+  function IllegalArgumentException_init_$Create$() {
+    var tmp = IllegalArgumentException_init_$Init$(objectCreate(protoOf(IllegalArgumentException)));
+    captureStack(tmp, IllegalArgumentException_init_$Create$);
+    return tmp;
+  }
+  function IllegalArgumentException_init_$Init$_0(message, $this) {
+    RuntimeException_init_$Init$_0(message, $this);
+    IllegalArgumentException.call($this);
+    return $this;
+  }
+  function IllegalArgumentException_init_$Create$_0(message) {
+    var tmp = IllegalArgumentException_init_$Init$_0(message, objectCreate(protoOf(IllegalArgumentException)));
+    captureStack(tmp, IllegalArgumentException_init_$Create$_0);
+    return tmp;
+  }
+  function IllegalArgumentException_init_$Init$_1(message, cause, $this) {
+    RuntimeException_init_$Init$_1(message, cause, $this);
+    IllegalArgumentException.call($this);
+    return $this;
+  }
+  function IllegalArgumentException_init_$Create$_1(message, cause) {
+    var tmp = IllegalArgumentException_init_$Init$_1(message, cause, objectCreate(protoOf(IllegalArgumentException)));
+    captureStack(tmp, IllegalArgumentException_init_$Create$_1);
+    return tmp;
+  }
+  function IllegalArgumentException_init_$Init$_2(cause, $this) {
+    RuntimeException_init_$Init$_2(cause, $this);
+    IllegalArgumentException.call($this);
+    return $this;
+  }
+  function IllegalArgumentException_init_$Create$_2(cause) {
+    var tmp = IllegalArgumentException_init_$Init$_2(cause, objectCreate(protoOf(IllegalArgumentException)));
+    captureStack(tmp, IllegalArgumentException_init_$Create$_2);
+    return tmp;
+  }
+  function IllegalArgumentException() {
+    captureStack(this, IllegalArgumentException);
+  }
+  function UnsupportedOperationException_init_$Init$($this) {
+    RuntimeException_init_$Init$($this);
+    UnsupportedOperationException.call($this);
+    return $this;
+  }
+  function UnsupportedOperationException_init_$Create$() {
+    var tmp = UnsupportedOperationException_init_$Init$(objectCreate(protoOf(UnsupportedOperationException)));
+    captureStack(tmp, UnsupportedOperationException_init_$Create$);
+    return tmp;
+  }
+  function UnsupportedOperationException_init_$Init$_0(message, $this) {
+    RuntimeException_init_$Init$_0(message, $this);
+    UnsupportedOperationException.call($this);
+    return $this;
+  }
+  function UnsupportedOperationException_init_$Create$_0(message) {
+    var tmp = UnsupportedOperationException_init_$Init$_0(message, objectCreate(protoOf(UnsupportedOperationException)));
+    captureStack(tmp, UnsupportedOperationException_init_$Create$_0);
+    return tmp;
+  }
+  function UnsupportedOperationException_init_$Init$_1(message, cause, $this) {
+    RuntimeException_init_$Init$_1(message, cause, $this);
+    UnsupportedOperationException.call($this);
+    return $this;
+  }
+  function UnsupportedOperationException_init_$Create$_1(message, cause) {
+    var tmp = UnsupportedOperationException_init_$Init$_1(message, cause, objectCreate(protoOf(UnsupportedOperationException)));
+    captureStack(tmp, UnsupportedOperationException_init_$Create$_1);
+    return tmp;
+  }
+  function UnsupportedOperationException_init_$Init$_2(cause, $this) {
+    RuntimeException_init_$Init$_2(cause, $this);
+    UnsupportedOperationException.call($this);
+    return $this;
+  }
+  function UnsupportedOperationException_init_$Create$_2(cause) {
+    var tmp = UnsupportedOperationException_init_$Init$_2(cause, objectCreate(protoOf(UnsupportedOperationException)));
+    captureStack(tmp, UnsupportedOperationException_init_$Create$_2);
+    return tmp;
+  }
+  function UnsupportedOperationException() {
+    captureStack(this, UnsupportedOperationException);
+  }
   function NumberFormatException_init_$Init$($this) {
     IllegalArgumentException_init_$Init$($this);
     NumberFormatException.call($this);
@@ -11161,28 +11141,28 @@ if (typeof String.prototype.endsWith === 'undefined') {
   function NumberFormatException() {
     captureStack(this, NumberFormatException);
   }
-  function NullPointerException_init_$Init$($this) {
+  function IndexOutOfBoundsException_init_$Init$($this) {
     RuntimeException_init_$Init$($this);
-    NullPointerException.call($this);
+    IndexOutOfBoundsException.call($this);
     return $this;
   }
-  function NullPointerException_init_$Create$() {
-    var tmp = NullPointerException_init_$Init$(objectCreate(protoOf(NullPointerException)));
-    captureStack(tmp, NullPointerException_init_$Create$);
+  function IndexOutOfBoundsException_init_$Create$() {
+    var tmp = IndexOutOfBoundsException_init_$Init$(objectCreate(protoOf(IndexOutOfBoundsException)));
+    captureStack(tmp, IndexOutOfBoundsException_init_$Create$);
     return tmp;
   }
-  function NullPointerException_init_$Init$_0(message, $this) {
+  function IndexOutOfBoundsException_init_$Init$_0(message, $this) {
     RuntimeException_init_$Init$_0(message, $this);
-    NullPointerException.call($this);
+    IndexOutOfBoundsException.call($this);
     return $this;
   }
-  function NullPointerException_init_$Create$_0(message) {
-    var tmp = NullPointerException_init_$Init$_0(message, objectCreate(protoOf(NullPointerException)));
-    captureStack(tmp, NullPointerException_init_$Create$_0);
+  function IndexOutOfBoundsException_init_$Create$_0(message) {
+    var tmp = IndexOutOfBoundsException_init_$Init$_0(message, objectCreate(protoOf(IndexOutOfBoundsException)));
+    captureStack(tmp, IndexOutOfBoundsException_init_$Create$_0);
     return tmp;
   }
-  function NullPointerException() {
-    captureStack(this, NullPointerException);
+  function IndexOutOfBoundsException() {
+    captureStack(this, IndexOutOfBoundsException);
   }
   function NoWhenBranchMatchedException_init_$Init$($this) {
     RuntimeException_init_$Init$($this);
@@ -11227,71 +11207,91 @@ if (typeof String.prototype.endsWith === 'undefined') {
   function NoWhenBranchMatchedException() {
     captureStack(this, NoWhenBranchMatchedException);
   }
-  function ClassCastException_init_$Init$($this) {
+  function IllegalStateException_init_$Init$($this) {
     RuntimeException_init_$Init$($this);
-    ClassCastException.call($this);
+    IllegalStateException.call($this);
     return $this;
   }
-  function ClassCastException_init_$Create$() {
-    var tmp = ClassCastException_init_$Init$(objectCreate(protoOf(ClassCastException)));
-    captureStack(tmp, ClassCastException_init_$Create$);
+  function IllegalStateException_init_$Create$() {
+    var tmp = IllegalStateException_init_$Init$(objectCreate(protoOf(IllegalStateException)));
+    captureStack(tmp, IllegalStateException_init_$Create$);
     return tmp;
   }
-  function ClassCastException_init_$Init$_0(message, $this) {
+  function IllegalStateException_init_$Init$_0(message, $this) {
     RuntimeException_init_$Init$_0(message, $this);
-    ClassCastException.call($this);
+    IllegalStateException.call($this);
     return $this;
   }
-  function ClassCastException_init_$Create$_0(message) {
-    var tmp = ClassCastException_init_$Init$_0(message, objectCreate(protoOf(ClassCastException)));
-    captureStack(tmp, ClassCastException_init_$Create$_0);
+  function IllegalStateException_init_$Create$_0(message) {
+    var tmp = IllegalStateException_init_$Init$_0(message, objectCreate(protoOf(IllegalStateException)));
+    captureStack(tmp, IllegalStateException_init_$Create$_0);
     return tmp;
   }
-  function ClassCastException() {
-    captureStack(this, ClassCastException);
-  }
-  function UninitializedPropertyAccessException_init_$Init$($this) {
-    RuntimeException_init_$Init$($this);
-    UninitializedPropertyAccessException.call($this);
-    return $this;
-  }
-  function UninitializedPropertyAccessException_init_$Create$() {
-    var tmp = UninitializedPropertyAccessException_init_$Init$(objectCreate(protoOf(UninitializedPropertyAccessException)));
-    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$);
-    return tmp;
-  }
-  function UninitializedPropertyAccessException_init_$Init$_0(message, $this) {
-    RuntimeException_init_$Init$_0(message, $this);
-    UninitializedPropertyAccessException.call($this);
-    return $this;
-  }
-  function UninitializedPropertyAccessException_init_$Create$_0(message) {
-    var tmp = UninitializedPropertyAccessException_init_$Init$_0(message, objectCreate(protoOf(UninitializedPropertyAccessException)));
-    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$_0);
-    return tmp;
-  }
-  function UninitializedPropertyAccessException_init_$Init$_1(message, cause, $this) {
+  function IllegalStateException_init_$Init$_1(message, cause, $this) {
     RuntimeException_init_$Init$_1(message, cause, $this);
-    UninitializedPropertyAccessException.call($this);
+    IllegalStateException.call($this);
     return $this;
   }
-  function UninitializedPropertyAccessException_init_$Create$_1(message, cause) {
-    var tmp = UninitializedPropertyAccessException_init_$Init$_1(message, cause, objectCreate(protoOf(UninitializedPropertyAccessException)));
-    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$_1);
+  function IllegalStateException_init_$Create$_1(message, cause) {
+    var tmp = IllegalStateException_init_$Init$_1(message, cause, objectCreate(protoOf(IllegalStateException)));
+    captureStack(tmp, IllegalStateException_init_$Create$_1);
     return tmp;
   }
-  function UninitializedPropertyAccessException_init_$Init$_2(cause, $this) {
+  function IllegalStateException_init_$Init$_2(cause, $this) {
     RuntimeException_init_$Init$_2(cause, $this);
-    UninitializedPropertyAccessException.call($this);
+    IllegalStateException.call($this);
     return $this;
   }
-  function UninitializedPropertyAccessException_init_$Create$_2(cause) {
-    var tmp = UninitializedPropertyAccessException_init_$Init$_2(cause, objectCreate(protoOf(UninitializedPropertyAccessException)));
-    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$_2);
+  function IllegalStateException_init_$Create$_2(cause) {
+    var tmp = IllegalStateException_init_$Init$_2(cause, objectCreate(protoOf(IllegalStateException)));
+    captureStack(tmp, IllegalStateException_init_$Create$_2);
     return tmp;
   }
-  function UninitializedPropertyAccessException() {
-    captureStack(this, UninitializedPropertyAccessException);
+  function IllegalStateException() {
+    captureStack(this, IllegalStateException);
+  }
+  function ConcurrentModificationException_init_$Init$($this) {
+    RuntimeException_init_$Init$($this);
+    ConcurrentModificationException.call($this);
+    return $this;
+  }
+  function ConcurrentModificationException_init_$Create$() {
+    var tmp = ConcurrentModificationException_init_$Init$(objectCreate(protoOf(ConcurrentModificationException)));
+    captureStack(tmp, ConcurrentModificationException_init_$Create$);
+    return tmp;
+  }
+  function ConcurrentModificationException_init_$Init$_0(message, $this) {
+    RuntimeException_init_$Init$_0(message, $this);
+    ConcurrentModificationException.call($this);
+    return $this;
+  }
+  function ConcurrentModificationException_init_$Create$_0(message) {
+    var tmp = ConcurrentModificationException_init_$Init$_0(message, objectCreate(protoOf(ConcurrentModificationException)));
+    captureStack(tmp, ConcurrentModificationException_init_$Create$_0);
+    return tmp;
+  }
+  function ConcurrentModificationException_init_$Init$_1(message, cause, $this) {
+    RuntimeException_init_$Init$_1(message, cause, $this);
+    ConcurrentModificationException.call($this);
+    return $this;
+  }
+  function ConcurrentModificationException_init_$Create$_1(message, cause) {
+    var tmp = ConcurrentModificationException_init_$Init$_1(message, cause, objectCreate(protoOf(ConcurrentModificationException)));
+    captureStack(tmp, ConcurrentModificationException_init_$Create$_1);
+    return tmp;
+  }
+  function ConcurrentModificationException_init_$Init$_2(cause, $this) {
+    RuntimeException_init_$Init$_2(cause, $this);
+    ConcurrentModificationException.call($this);
+    return $this;
+  }
+  function ConcurrentModificationException_init_$Create$_2(cause) {
+    var tmp = ConcurrentModificationException_init_$Init$_2(cause, objectCreate(protoOf(ConcurrentModificationException)));
+    captureStack(tmp, ConcurrentModificationException_init_$Create$_2);
+    return tmp;
+  }
+  function ConcurrentModificationException() {
+    captureStack(this, ConcurrentModificationException);
   }
   function JsPolyfill(implementation) {
     this.implementation_1 = implementation;
@@ -21516,9 +21516,6 @@ if (typeof String.prototype.endsWith === 'undefined') {
       tmp$ret$1 = '';
     }
     return toString_1(tmp$ret$1);
-  }
-  function isNullOrEmpty_1(_this__u8e3s4) {
-    return _this__u8e3s4 == null || charSequenceLength(_this__u8e3s4) === 0;
   }
   function substringAfterLast(_this__u8e3s4, delimiter, missingDelimiterValue) {
     missingDelimiterValue = missingDelimiterValue === VOID ? _this__u8e3s4 : missingDelimiterValue;

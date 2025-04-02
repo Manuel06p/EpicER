@@ -88,11 +88,11 @@
   var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.zi;
   var SideEffect = kotlin_org_jetbrains_compose_runtime_runtime.$_$.p;
   var RememberObserver = kotlin_org_jetbrains_compose_runtime_runtime.$_$.o;
-  var lazy = kotlin_kotlin.$_$.ri;
   var invalidApplier = kotlin_org_jetbrains_compose_runtime_runtime.$_$.t;
   var DomApplier = kotlin_org_jetbrains_compose_html_internal_html_core_runtime.$_$.b;
   var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
   var composableLambda = kotlin_org_jetbrains_compose_runtime_runtime.$_$.b;
+  var lazy = kotlin_kotlin.$_$.ri;
   var DisposableEffect_0 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.k;
   var KProperty1 = kotlin_kotlin.$_$.de;
   var getPropertyCallableRef = kotlin_kotlin.$_$.dc;
@@ -895,47 +895,43 @@
     return setCheckedValue;
   }
   var setCheckedValue;
-  function action(_this__u8e3s4, value) {
+  function placeholder(_this__u8e3s4, value) {
     _init_properties_Attrs_kt__w5qjhs();
-    return _this__u8e3s4.attr_w68641_k$('action', value);
+    return _this__u8e3s4.attr_w68641_k$('placeholder', value);
+  }
+  function src(_this__u8e3s4, value) {
+    _init_properties_Attrs_kt__w5qjhs();
+    return _this__u8e3s4.attr_w68641_k$('src', value);
+  }
+  function required(_this__u8e3s4) {
+    _init_properties_Attrs_kt__w5qjhs();
+    return _this__u8e3s4.attr_w68641_k$('required', '');
   }
   function type_0(_this__u8e3s4, value) {
     _init_properties_Attrs_kt__w5qjhs();
     return _this__u8e3s4.attr_w68641_k$('type', value.get_str_18ivy0_k$());
   }
-  function placeholder(_this__u8e3s4, value) {
+  function alt(_this__u8e3s4, value) {
     _init_properties_Attrs_kt__w5qjhs();
-    return _this__u8e3s4.attr_w68641_k$('placeholder', value);
+    return _this__u8e3s4.attr_w68641_k$('alt', value);
+  }
+  function href(_this__u8e3s4, value) {
+    _init_properties_Attrs_kt__w5qjhs();
+    return _this__u8e3s4.attr_w68641_k$('href', value);
   }
   function readOnly(_this__u8e3s4) {
     _init_properties_Attrs_kt__w5qjhs();
     return _this__u8e3s4.attr_w68641_k$('readonly', '');
   }
-  function required(_this__u8e3s4) {
+  function type_1(_this__u8e3s4, value) {
     _init_properties_Attrs_kt__w5qjhs();
-    return _this__u8e3s4.attr_w68641_k$('required', '');
+    return _this__u8e3s4.attr_w68641_k$('type', value.get_typeStr_cucz82_k$());
   }
   function autoComplete(_this__u8e3s4, value) {
     _init_properties_Attrs_kt__w5qjhs();
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return _this__u8e3s4.attr_w68641_k$('autocomplete', value);
-  }
-  function type_1(_this__u8e3s4, value) {
-    _init_properties_Attrs_kt__w5qjhs();
-    return _this__u8e3s4.attr_w68641_k$('type', value.get_typeStr_cucz82_k$());
-  }
-  function alt(_this__u8e3s4, value) {
-    _init_properties_Attrs_kt__w5qjhs();
-    return _this__u8e3s4.attr_w68641_k$('alt', value);
-  }
-  function src(_this__u8e3s4, value) {
-    _init_properties_Attrs_kt__w5qjhs();
-    return _this__u8e3s4.attr_w68641_k$('src', value);
-  }
-  function href(_this__u8e3s4, value) {
-    _init_properties_Attrs_kt__w5qjhs();
-    return _this__u8e3s4.attr_w68641_k$('href', value);
   }
   function setInputValue$lambda(e, v) {
     _init_properties_Attrs_kt__w5qjhs();
@@ -8445,66 +8441,240 @@
     return Style_0;
   }
   var Style_0;
-  function Companion_18() {
-    Companion_instance_18 = this;
-    var tmp = this;
-    // Inline function 'kotlin.collections.mutableMapOf' call
-    tmp.buildersCache_1 = LinkedHashMap_init_$Create$();
-  }
-  protoOf(Companion_18).get_buildersCache_bdbdva_k$ = function () {
-    return this.buildersCache_1;
-  };
-  protoOf(Companion_18).createBuilder_cjmhhk_k$ = function (tagName) {
-    // Inline function 'kotlin.text.lowercase' call
-    // Inline function 'kotlin.js.asDynamic' call
-    var tagLowercase = tagName.toLowerCase();
-    // Inline function 'kotlin.collections.getOrPut' call
-    var this_0 = this.buildersCache_1;
-    var value = this_0.get_wei43m_k$(tagLowercase);
-    var tmp;
-    if (value == null) {
-      // Inline function 'org.jetbrains.compose.web.dom.Companion.createBuilder.<anonymous>' call
-      var answer = new ElementBuilderImplementation(tagLowercase);
-      this_0.put_4fpzoq_k$(tagLowercase, answer);
-      tmp = answer;
+  function H2_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(881063629);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(881063629, $dirty, -1, 'org.jetbrains.compose.web.dom.H2 (Elements.kt:539)');
+      }
+      TagElement(get_H2(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
     } else {
-      tmp = value;
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
-    // Inline function 'kotlin.js.unsafeCast' call
-    // Inline function 'kotlin.js.asDynamic' call
-    return tmp;
-  };
-  var Companion_instance_18;
-  function Companion_getInstance_19() {
-    if (Companion_instance_18 == null)
-      new Companion_18();
-    return Companion_instance_18;
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(H2$lambda(attrs_0, content_0, $changed, $default));
+    }
   }
-  function ElementBuilder() {
+  function P_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-892332201);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(-892332201, $dirty, -1, 'org.jetbrains.compose.web.dom.P (Elements.kt:569)');
+      }
+      TagElement(get_P(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(P$lambda(attrs_0, content_0, $changed, $default));
+    }
   }
-  function _get_tagName__m9buy4($this) {
-    return $this.tagName_1;
+  function Code_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(960073712);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(960073712, $dirty, -1, 'org.jetbrains.compose.web.dom.Code (Elements.kt:810)');
+      }
+      TagElement(get_Code(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Code$lambda(attrs_0, content_0, $changed, $default));
+    }
   }
-  function _get_el__ndc0ck($this) {
-    var tmp0 = $this.el$delegate_1;
-    // Inline function 'kotlin.getValue' call
-    el$factory();
-    return tmp0.get_value_j01efc_k$();
+  function H1_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(867530828);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(867530828, $dirty, -1, 'org.jetbrains.compose.web.dom.H1 (Elements.kt:533)');
+      }
+      TagElement(get_H1(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(H1$lambda(attrs_0, content_0, $changed, $default));
+    }
   }
-  function ElementBuilderImplementation$el$delegate$lambda(this$0) {
-    return function () {
-      return document.createElement(this$0.tagName_1);
-    };
+  function Span_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-606646835);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(-606646835, $dirty, -1, 'org.jetbrains.compose.web.dom.Span (Elements.kt:617)');
+      }
+      TagElement(get_Span(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Span$lambda(attrs_0, content_0, $changed, $default));
+    }
   }
-  function ElementBuilderImplementation(tagName) {
-    this.tagName_1 = tagName;
-    var tmp = this;
-    tmp.el$delegate_1 = lazy(ElementBuilderImplementation$el$delegate$lambda(this));
+  function Pre_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1813332106);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(1813332106, $dirty, -1, 'org.jetbrains.compose.web.dom.Pre (Elements.kt:798)');
+      }
+      TagElement(get_Pre(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Pre$lambda(attrs_0, content_0, $changed, $default));
+    }
   }
-  protoOf(ElementBuilderImplementation).create_md4cuc_k$ = function () {
-    var tmp = _get_el__ndc0ck(this).cloneNode();
-    return tmp instanceof Element ? tmp : THROW_CCE();
-  };
   function Div_0(attrs, content, $composer, $changed, $default) {
     _init_properties_Elements_kt__eyv5nt();
     var attrs_0 = {_v: attrs};
@@ -8542,6 +8712,282 @@
       null;
     else {
       tmp0_safe_receiver.updateScope_t8jcf_k$(Div$lambda(attrs_0, content_0, $changed, $default));
+    }
+  }
+  function H3_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(894596430);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(894596430, $dirty, -1, 'org.jetbrains.compose.web.dom.H3 (Elements.kt:545)');
+      }
+      TagElement(get_H3(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(H3$lambda(attrs_0, content_0, $changed, $default));
+    }
+  }
+  function Companion_18() {
+    Companion_instance_18 = this;
+    var tmp = this;
+    // Inline function 'kotlin.collections.mutableMapOf' call
+    tmp.buildersCache_1 = LinkedHashMap_init_$Create$();
+  }
+  protoOf(Companion_18).get_buildersCache_bdbdva_k$ = function () {
+    return this.buildersCache_1;
+  };
+  protoOf(Companion_18).createBuilder_cjmhhk_k$ = function (tagName) {
+    // Inline function 'kotlin.text.lowercase' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tagLowercase = tagName.toLowerCase();
+    // Inline function 'kotlin.collections.getOrPut' call
+    var this_0 = this.buildersCache_1;
+    var value = this_0.get_wei43m_k$(tagLowercase);
+    var tmp;
+    if (value == null) {
+      // Inline function 'org.jetbrains.compose.web.dom.Companion.createBuilder.<anonymous>' call
+      var answer = new ElementBuilderImplementation(tagLowercase);
+      this_0.put_4fpzoq_k$(tagLowercase, answer);
+      tmp = answer;
+    } else {
+      tmp = value;
+    }
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return tmp;
+  };
+  var Companion_instance_18;
+  function Companion_getInstance_19() {
+    if (Companion_instance_18 == null)
+      new Companion_18();
+    return Companion_instance_18;
+  }
+  function ElementBuilder() {
+  }
+  function A_0(href, attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var href_0 = {_v: href};
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1386364631);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(href_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 32 : 16);
+    if (!(($default & 4) === 0))
+      $dirty = $dirty | 384;
+    else if (($changed & 896) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 256 : 128);
+    if (!(($dirty & 731) === 146) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        href_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 4) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(1386364631, $dirty, -1, 'org.jetbrains.compose.web.dom.A (Elements.kt:508)');
+      }
+      var tmp = get_A();
+      $composer_0.startReplaceableGroup_ip860b_k$(-1579100093);
+      var tmp0 = $composer_0;
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = !!($composer_0.changed_ga7h3f_k$(href_0._v) | $composer_0.changedInstance_s1wkiy_k$(attrs_0._v));
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = tmp0.rememberedValue_4dg93v_k$();
+      var tmp_0;
+      if (invalid || it === Companion_getInstance().get_Empty_i9b85g_k$()) {
+        // Inline function 'org.jetbrains.compose.web.dom.A.<anonymous>' call
+        var value = A$lambda(href_0, attrs_0);
+        tmp0.updateRememberedValue_l1wh71_k$(value);
+        tmp_0 = value;
+      } else {
+        tmp_0 = it;
+      }
+      var tmp_1 = tmp_0;
+      var tmpCache = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
+      $composer_0.endReplaceableGroup_ern0ak_k$();
+      TagElement(tmp, tmpCache, content_0._v, $composer_0, 896 & $dirty);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(A$lambda_0(href_0, attrs_0, content_0, $changed, $default));
+    }
+  }
+  function Li_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-991532288);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(-991532288, $dirty, -1, 'org.jetbrains.compose.web.dom.Li (Elements.kt:639)');
+      }
+      TagElement(get_Li(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Li$lambda(attrs_0, content_0, $changed, $default));
+    }
+  }
+  function Br_0(attrs, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-1362499962);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($dirty & 11) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(-1362499962, $dirty, -1, 'org.jetbrains.compose.web.dom.Br (Elements.kt:621)');
+      }
+      TagElement(get_Br(), attrs_0._v, null, $composer_0, 384 | 112 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Br$lambda(attrs_0, $changed, $default));
+    }
+  }
+  function Img_0(src, alt, attrs, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var alt_0 = {_v: alt};
+    var attrs_0 = {_v: attrs};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(140604733);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(src) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(alt_0._v) ? 32 : 16);
+    if (!(($default & 4) === 0))
+      $dirty = $dirty | 384;
+    else if (($changed & 896) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 256 : 128);
+    if (!(($dirty & 731) === 146) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 2) === 0)) {
+        alt_0._v = '';
+      }
+      if (!(($default & 4) === 0)) {
+        attrs_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(140604733, $dirty, -1, 'org.jetbrains.compose.web.dom.Img (Elements.kt:646)');
+      }
+      var tmp = get_Img();
+      $composer_0.startReplaceableGroup_ip860b_k$(-1579095656);
+      var tmp0 = $composer_0;
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = !!(!!($composer_0.changed_ga7h3f_k$(src) | $composer_0.changed_ga7h3f_k$(alt_0._v)) | $composer_0.changedInstance_s1wkiy_k$(attrs_0._v));
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = tmp0.rememberedValue_4dg93v_k$();
+      var tmp_0;
+      if (invalid || it === Companion_getInstance().get_Empty_i9b85g_k$()) {
+        // Inline function 'org.jetbrains.compose.web.dom.Img.<anonymous>' call
+        var value = Img$lambda(src, alt_0, attrs_0);
+        tmp0.updateRememberedValue_l1wh71_k$(value);
+        tmp_0 = value;
+      } else {
+        tmp_0 = it;
+      }
+      var tmp_1 = tmp_0;
+      var tmpCache = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
+      $composer_0.endReplaceableGroup_ern0ak_k$();
+      TagElement(tmp, tmpCache, null, $composer_0, 384);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Img$lambda_0(src, alt_0, attrs_0, $changed, $default));
     }
   }
   function Text_1(value, $composer, $changed) {
@@ -8602,603 +9048,6 @@
       null;
     else {
       tmp0_safe_receiver.updateScope_t8jcf_k$(Text$lambda_1(value, $changed));
-    }
-  }
-  function Code_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(960073712);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(960073712, $dirty, -1, 'org.jetbrains.compose.web.dom.Code (Elements.kt:810)');
-      }
-      TagElement(get_Code(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Code$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function Li_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-991532288);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(-991532288, $dirty, -1, 'org.jetbrains.compose.web.dom.Li (Elements.kt:639)');
-      }
-      TagElement(get_Li(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Li$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function Em_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(420948395);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(420948395, $dirty, -1, 'org.jetbrains.compose.web.dom.Em (Elements.kt:575)');
-      }
-      TagElement(get_Em(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Em$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function H1_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(867530828);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(867530828, $dirty, -1, 'org.jetbrains.compose.web.dom.H1 (Elements.kt:533)');
-      }
-      TagElement(get_H1(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(H1$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function P_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-892332201);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(-892332201, $dirty, -1, 'org.jetbrains.compose.web.dom.P (Elements.kt:569)');
-      }
-      TagElement(get_P(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(P$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function H2_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(881063629);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(881063629, $dirty, -1, 'org.jetbrains.compose.web.dom.H2 (Elements.kt:539)');
-      }
-      TagElement(get_H2(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(H2$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function H3_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(894596430);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(894596430, $dirty, -1, 'org.jetbrains.compose.web.dom.H3 (Elements.kt:545)');
-      }
-      TagElement(get_H3(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(H3$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function H4_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(908129231);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(908129231, $dirty, -1, 'org.jetbrains.compose.web.dom.H4 (Elements.kt:551)');
-      }
-      TagElement(get_H4(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(H4$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function Ul_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-1470249702);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(-1470249702, $dirty, -1, 'org.jetbrains.compose.web.dom.Ul (Elements.kt:627)');
-      }
-      TagElement(get_Ul(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Ul$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function Pre_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1813332106);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(1813332106, $dirty, -1, 'org.jetbrains.compose.web.dom.Pre (Elements.kt:798)');
-      }
-      TagElement(get_Pre(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Pre$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function Span_0(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-606646835);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(-606646835, $dirty, -1, 'org.jetbrains.compose.web.dom.Span (Elements.kt:617)');
-      }
-      TagElement(get_Span(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Span$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function Form_0(action, attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var action_0 = {_v: action};
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(19547000);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(action_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 32 : 16);
-    if (!(($default & 4) === 0))
-      $dirty = $dirty | 384;
-    else if (($changed & 896) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 256 : 128);
-    if (!(($dirty & 731) === 146) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        action_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 4) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(19547000, $dirty, -1, 'org.jetbrains.compose.web.dom.Form (Elements.kt:662)');
-      }
-      var tmp = get_Form();
-      $composer_0.startReplaceableGroup_ip860b_k$(-1579095321);
-      var tmp0 = $composer_0;
-      // Inline function 'androidx.compose.runtime.cache' call
-      var invalid = !!($composer_0.changed_ga7h3f_k$(action_0._v) | $composer_0.changedInstance_s1wkiy_k$(attrs_0._v));
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = tmp0.rememberedValue_4dg93v_k$();
-      var tmp_0;
-      if (invalid || it === Companion_getInstance().get_Empty_i9b85g_k$()) {
-        // Inline function 'org.jetbrains.compose.web.dom.Form.<anonymous>' call
-        var value = Form$lambda(action_0, attrs_0);
-        tmp0.updateRememberedValue_l1wh71_k$(value);
-        tmp_0 = value;
-      } else {
-        tmp_0 = it;
-      }
-      var tmp_1 = tmp_0;
-      var tmpCache = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
-      $composer_0.endReplaceableGroup_ern0ak_k$();
-      TagElement(tmp, tmpCache, content_0._v, $composer_0, 896 & $dirty);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Form$lambda_0(action_0, attrs_0, content_0, $changed, $default));
-    }
-  }
-  function Button_1(attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var content_0 = {_v: content};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(17018421);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
-    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
-        content_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(17018421, $dirty, -1, 'org.jetbrains.compose.web.dom.Button (Elements.kt:527)');
-      }
-      TagElement(get_Button(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Button$lambda(attrs_0, content_0, $changed, $default));
-    }
-  }
-  function Hr_0(attrs, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1499320512);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($dirty & 11) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(1499320512, $dirty, -1, 'org.jetbrains.compose.web.dom.Hr (Elements.kt:845)');
-      }
-      TagElement(get_Hr(), attrs_0._v, null, $composer_0, 384 | 112 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Hr$lambda(attrs_0, $changed, $default));
-    }
-  }
-  function Br_0(attrs, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var attrs_0 = {_v: attrs};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-1362499962);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
-    if (!(($dirty & 11) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 1) === 0)) {
-        attrs_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(-1362499962, $dirty, -1, 'org.jetbrains.compose.web.dom.Br (Elements.kt:621)');
-      }
-      TagElement(get_Br(), attrs_0._v, null, $composer_0, 384 | 112 & $dirty << 3);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Br$lambda(attrs_0, $changed, $default));
     }
   }
   function Input_0(type, attrs, $composer, $changed) {
@@ -9292,123 +9141,32 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(Input$lambda_1(type, attrs, $changed));
     }
   }
-  function Img_0(src, alt, attrs, $composer, $changed, $default) {
+  function H4_0(attrs, content, $composer, $changed, $default) {
     _init_properties_Elements_kt__eyv5nt();
-    var alt_0 = {_v: alt};
-    var attrs_0 = {_v: attrs};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(140604733);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(src) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(alt_0._v) ? 32 : 16);
-    if (!(($default & 4) === 0))
-      $dirty = $dirty | 384;
-    else if (($changed & 896) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 256 : 128);
-    if (!(($dirty & 731) === 146) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 2) === 0)) {
-        alt_0._v = '';
-      }
-      if (!(($default & 4) === 0)) {
-        attrs_0._v = null;
-      }
-      if (isTraceInProgress()) {
-        traceEventStart(140604733, $dirty, -1, 'org.jetbrains.compose.web.dom.Img (Elements.kt:646)');
-      }
-      var tmp = get_Img();
-      $composer_0.startReplaceableGroup_ip860b_k$(-1579095656);
-      var tmp0 = $composer_0;
-      // Inline function 'androidx.compose.runtime.cache' call
-      var invalid = !!(!!($composer_0.changed_ga7h3f_k$(src) | $composer_0.changed_ga7h3f_k$(alt_0._v)) | $composer_0.changedInstance_s1wkiy_k$(attrs_0._v));
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = tmp0.rememberedValue_4dg93v_k$();
-      var tmp_0;
-      if (invalid || it === Companion_getInstance().get_Empty_i9b85g_k$()) {
-        // Inline function 'org.jetbrains.compose.web.dom.Img.<anonymous>' call
-        var value = Img$lambda(src, alt_0, attrs_0);
-        tmp0.updateRememberedValue_l1wh71_k$(value);
-        tmp_0 = value;
-      } else {
-        tmp_0 = it;
-      }
-      var tmp_1 = tmp_0;
-      var tmpCache = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
-      $composer_0.endReplaceableGroup_ern0ak_k$();
-      TagElement(tmp, tmpCache, null, $composer_0, 384);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Img$lambda_0(src, alt_0, attrs_0, $changed, $default));
-    }
-  }
-  function A_0(href, attrs, content, $composer, $changed, $default) {
-    _init_properties_Elements_kt__eyv5nt();
-    var href_0 = {_v: href};
     var attrs_0 = {_v: attrs};
     var content_0 = {_v: content};
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1386364631);
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(908129231);
     var $dirty = $changed;
     if (!(($default & 1) === 0))
       $dirty = $dirty | 6;
     else if (($changed & 14) === 0)
-      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(href_0._v) ? 4 : 2);
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
     if (!(($default & 2) === 0))
       $dirty = $dirty | 48;
     else if (($changed & 112) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 32 : 16);
-    if (!(($default & 4) === 0))
-      $dirty = $dirty | 384;
-    else if (($changed & 896) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 256 : 128);
-    if (!(($dirty & 731) === 146) || !$composer_0.get_skipping_3owdve_k$()) {
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
       if (!(($default & 1) === 0)) {
-        href_0._v = null;
-      }
-      if (!(($default & 2) === 0)) {
         attrs_0._v = null;
       }
-      if (!(($default & 4) === 0)) {
+      if (!(($default & 2) === 0)) {
         content_0._v = null;
       }
       if (isTraceInProgress()) {
-        traceEventStart(1386364631, $dirty, -1, 'org.jetbrains.compose.web.dom.A (Elements.kt:508)');
+        traceEventStart(908129231, $dirty, -1, 'org.jetbrains.compose.web.dom.H4 (Elements.kt:551)');
       }
-      var tmp = get_A();
-      $composer_0.startReplaceableGroup_ip860b_k$(-1579100093);
-      var tmp0 = $composer_0;
-      // Inline function 'androidx.compose.runtime.cache' call
-      var invalid = !!($composer_0.changed_ga7h3f_k$(href_0._v) | $composer_0.changedInstance_s1wkiy_k$(attrs_0._v));
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = tmp0.rememberedValue_4dg93v_k$();
-      var tmp_0;
-      if (invalid || it === Companion_getInstance().get_Empty_i9b85g_k$()) {
-        // Inline function 'org.jetbrains.compose.web.dom.A.<anonymous>' call
-        var value = A$lambda(href_0, attrs_0);
-        tmp0.updateRememberedValue_l1wh71_k$(value);
-        tmp_0 = value;
-      } else {
-        tmp_0 = it;
-      }
-      var tmp_1 = tmp_0;
-      var tmpCache = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
-      $composer_0.endReplaceableGroup_ern0ak_k$();
-      TagElement(tmp, tmpCache, content_0._v, $composer_0, 896 & $dirty);
+      TagElement(get_H4(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
       if (isTraceInProgress()) {
         traceEventEnd();
       }
@@ -9419,7 +9177,155 @@
     if (tmp0_safe_receiver == null)
       null;
     else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(A$lambda_0(href_0, attrs_0, content_0, $changed, $default));
+      tmp0_safe_receiver.updateScope_t8jcf_k$(H4$lambda(attrs_0, content_0, $changed, $default));
+    }
+  }
+  function Ul_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-1470249702);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(-1470249702, $dirty, -1, 'org.jetbrains.compose.web.dom.Ul (Elements.kt:627)');
+      }
+      TagElement(get_Ul(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Ul$lambda(attrs_0, content_0, $changed, $default));
+    }
+  }
+  function Em_0(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(420948395);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(420948395, $dirty, -1, 'org.jetbrains.compose.web.dom.Em (Elements.kt:575)');
+      }
+      TagElement(get_Em(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Em$lambda(attrs_0, content_0, $changed, $default));
+    }
+  }
+  function Button_1(attrs, content, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(17018421);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 112) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 32 : 16);
+    if (!(($dirty & 91) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 2) === 0)) {
+        content_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(17018421, $dirty, -1, 'org.jetbrains.compose.web.dom.Button (Elements.kt:527)');
+      }
+      TagElement(get_Button(), attrs_0._v, content_0._v, $composer_0, 112 & $dirty << 3 | 896 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Button$lambda(attrs_0, content_0, $changed, $default));
+    }
+  }
+  function Hr_0(attrs, $composer, $changed, $default) {
+    _init_properties_Elements_kt__eyv5nt();
+    var attrs_0 = {_v: attrs};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1499320512);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 14) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 4 : 2);
+    if (!(($dirty & 11) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 1) === 0)) {
+        attrs_0._v = null;
+      }
+      if (isTraceInProgress()) {
+        traceEventStart(1499320512, $dirty, -1, 'org.jetbrains.compose.web.dom.Hr (Elements.kt:845)');
+      }
+      TagElement(get_Hr(), attrs_0._v, null, $composer_0, 384 | 112 & $dirty << 3);
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Hr$lambda(attrs_0, $changed, $default));
     }
   }
   function Style_1(applyAttrs, cssRules, $composer, $changed, $default) {
@@ -9501,6 +9407,29 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(Style$lambda_1(applyAttrs_0, cssRules, $changed, $default));
     }
   }
+  function _get_tagName__m9buy4($this) {
+    return $this.tagName_1;
+  }
+  function _get_el__ndc0ck($this) {
+    var tmp0 = $this.el$delegate_1;
+    // Inline function 'kotlin.getValue' call
+    el$factory();
+    return tmp0.get_value_j01efc_k$();
+  }
+  function ElementBuilderImplementation$el$delegate$lambda(this$0) {
+    return function () {
+      return document.createElement(this$0.tagName_1);
+    };
+  }
+  function ElementBuilderImplementation(tagName) {
+    this.tagName_1 = tagName;
+    var tmp = this;
+    tmp.el$delegate_1 = lazy(ElementBuilderImplementation$el$delegate$lambda(this));
+  }
+  protoOf(ElementBuilderImplementation).create_md4cuc_k$ = function () {
+    var tmp = _get_el__ndc0ck(this).cloneNode();
+    return tmp instanceof Element ? tmp : THROW_CCE();
+  };
   function clearCSSRules(_this__u8e3s4) {
     _init_properties_Elements_kt__eyv5nt();
     // Inline function 'kotlin.repeat' call
@@ -9515,9 +9444,99 @@
       }
        while (inductionVariable < times);
   }
+  function H2$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      H2_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function P$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      P_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Code$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      Code_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function H1$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      H1_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Span$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      Span_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Pre$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      Pre_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
   function Div$lambda($attrs, $content, $$changed, $$default) {
     return function ($composer, $force) {
       Div_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function H3$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      H3_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function A$lambda($href, $attrs) {
+    return function ($this$TagElement) {
+      var tmp;
+      if (!($href._v == null)) {
+        href($this$TagElement, $href._v);
+        tmp = Unit_getInstance();
+      }
+      var tmp_0;
+      if (!($attrs._v == null)) {
+        tmp_0 = $attrs._v($this$TagElement);
+      }
+      return Unit_getInstance();
+    };
+  }
+  function A$lambda_0($href, $attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      A_0($href._v, $attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Li$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      Li_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Br$lambda($attrs, $$changed, $$default) {
+    return function ($composer, $force) {
+      Br_0($attrs._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Img$lambda($src, $alt, $attrs) {
+    return function ($this$TagElement) {
+      alt(src($this$TagElement, $src), $alt._v);
+      var tmp;
+      if (!($attrs._v == null)) {
+        tmp = $attrs._v($this$TagElement);
+      }
+      return Unit_getInstance();
+    };
+  }
+  function Img$lambda_0($src, $alt, $attrs, $$changed, $$default) {
+    return function ($composer, $force) {
+      Img_0($src, $alt._v, $attrs._v, $composer, updateChangedFlags($$changed | 1), $$default);
       return Unit_getInstance();
     };
   }
@@ -9534,112 +9553,6 @@
   function Text$lambda_1($value, $$changed) {
     return function ($composer, $force) {
       Text_1($value, $composer, updateChangedFlags($$changed | 1));
-      return Unit_getInstance();
-    };
-  }
-  function Code$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Code_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Li$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Li_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Em$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Em_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function H1$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      H1_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function P$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      P_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function H2$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      H2_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function H3$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      H3_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function H4$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      H4_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Ul$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Ul_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Pre$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Pre_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Span$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Span_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Form$lambda($action, $attrs) {
-    return function ($this$TagElement) {
-      var tmp;
-      // Inline function 'kotlin.text.isNullOrEmpty' call
-      var this_0 = $action._v;
-      if (!(this_0 == null || charSequenceLength(this_0) === 0)) {
-        action($this$TagElement, $action._v);
-        tmp = Unit_getInstance();
-      }
-      var tmp_0;
-      if (!($attrs._v == null)) {
-        tmp_0 = $attrs._v($this$TagElement);
-      }
-      return Unit_getInstance();
-    };
-  }
-  function Form$lambda_0($action, $attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Form_0($action._v, $attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Button$lambda($attrs, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Button_1($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Hr$lambda($attrs, $$changed, $$default) {
-    return function ($composer, $force) {
-      Hr_0($attrs._v, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Br$lambda($attrs, $$changed, $$default) {
-    return function ($composer, $force) {
-      Br_0($attrs._v, $composer, updateChangedFlags($$changed | 1), $$default);
       return Unit_getInstance();
     };
   }
@@ -9715,39 +9628,33 @@
       return Unit_getInstance();
     };
   }
-  function Img$lambda($src, $alt, $attrs) {
-    return function ($this$TagElement) {
-      alt(src($this$TagElement, $src), $alt._v);
-      var tmp;
-      if (!($attrs._v == null)) {
-        tmp = $attrs._v($this$TagElement);
-      }
-      return Unit_getInstance();
-    };
-  }
-  function Img$lambda_0($src, $alt, $attrs, $$changed, $$default) {
+  function H4$lambda($attrs, $content, $$changed, $$default) {
     return function ($composer, $force) {
-      Img_0($src, $alt._v, $attrs._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      H4_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
       return Unit_getInstance();
     };
   }
-  function A$lambda($href, $attrs) {
-    return function ($this$TagElement) {
-      var tmp;
-      if (!($href._v == null)) {
-        href($this$TagElement, $href._v);
-        tmp = Unit_getInstance();
-      }
-      var tmp_0;
-      if (!($attrs._v == null)) {
-        tmp_0 = $attrs._v($this$TagElement);
-      }
-      return Unit_getInstance();
-    };
-  }
-  function A$lambda_0($href, $attrs, $content, $$changed, $$default) {
+  function Ul$lambda($attrs, $content, $$changed, $$default) {
     return function ($composer, $force) {
-      A_0($href._v, $attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      Ul_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Em$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      Em_0($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Button$lambda($attrs, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      Button_1($attrs._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Hr$lambda($attrs, $$changed, $$default) {
+    return function ($composer, $force) {
+      Hr_0($attrs._v, $composer, updateChangedFlags($$changed | 1), $$default);
       return Unit_getInstance();
     };
   }
@@ -11155,22 +11062,21 @@
   _.$_$.c6 = Div_0;
   _.$_$.d6 = ElementBuilder;
   _.$_$.e6 = Em_0;
-  _.$_$.f6 = Form_0;
-  _.$_$.g6 = H1_0;
-  _.$_$.h6 = H2_0;
-  _.$_$.i6 = H3_0;
-  _.$_$.j6 = H4_0;
-  _.$_$.k6 = Hr_0;
-  _.$_$.l6 = Img_0;
-  _.$_$.m6 = Input_0;
-  _.$_$.n6 = Li_0;
-  _.$_$.o6 = Pre_0;
-  _.$_$.p6 = P_0;
-  _.$_$.q6 = Span_0;
-  _.$_$.r6 = Style_1;
-  _.$_$.s6 = TagElement;
-  _.$_$.t6 = Text_1;
-  _.$_$.u6 = Ul_0;
+  _.$_$.f6 = H1_0;
+  _.$_$.g6 = H2_0;
+  _.$_$.h6 = H3_0;
+  _.$_$.i6 = H4_0;
+  _.$_$.j6 = Hr_0;
+  _.$_$.k6 = Img_0;
+  _.$_$.l6 = Input_0;
+  _.$_$.m6 = Li_0;
+  _.$_$.n6 = Pre_0;
+  _.$_$.o6 = P_0;
+  _.$_$.p6 = Span_0;
+  _.$_$.q6 = Style_1;
+  _.$_$.r6 = TagElement;
+  _.$_$.s6 = Text_1;
+  _.$_$.t6 = Ul_0;
   //endregion
   return _;
 }));

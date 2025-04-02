@@ -160,7 +160,7 @@
   var Companion_getInstance_1 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.i1;
   var DisposableEffect = kotlin_org_jetbrains_compose_runtime_runtime.$_$.j;
   var ElementBuilder = kotlin_org_jetbrains_compose_html_html_core.$_$.d6;
-  var TagElement = kotlin_org_jetbrains_compose_html_html_core.$_$.s6;
+  var TagElement = kotlin_org_jetbrains_compose_html_html_core.$_$.r6;
   var to = kotlin_kotlin.$_$.bj;
   var lazy = kotlin_kotlin.$_$.ri;
   var charArrayOf = kotlin_kotlin.$_$.rb;
@@ -1280,6 +1280,11 @@
     if (!(animations.length === 0)) {
       _this__u8e3s4.property_wcrait_k$('animation', joinToString_0(animations, ', '));
     }
+  }
+  function get_autoLength() {
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return 'auto';
   }
   var com_varabyte_kobweb_compose_css_BackgroundAttachment$stable;
   var com_varabyte_kobweb_compose_css_BackgroundClip$stable;

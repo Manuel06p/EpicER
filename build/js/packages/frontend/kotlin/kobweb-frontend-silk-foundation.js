@@ -31,7 +31,7 @@
   var Companion_getInstance = kotlin_org_jetbrains_compose_runtime_runtime.$_$.i1;
   var THROW_CCE = kotlin_kotlin.$_$.sh;
   var Unit_getInstance = kotlin_kotlin.$_$.f5;
-  var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.r6;
+  var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.q6;
   var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
   var StyleSheet = kotlin_org_jetbrains_compose_html_html_core.$_$.p3;
   var VOID = kotlin_kotlin.$_$.g;
@@ -39,7 +39,7 @@
   var protoOf = kotlin_kotlin.$_$.kd;
   var initMetadataForObject = kotlin_kotlin.$_$.lc;
   var initMetadataForInterface = kotlin_kotlin.$_$.jc;
-  var Companion_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l4;
+  var Companion_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m4;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.t2;
   var startsWith = kotlin_kotlin.$_$.yf;
   var endsWith = kotlin_kotlin.$_$.xe;
@@ -49,10 +49,10 @@
   var rememberComposableLambda = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c;
   var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.y;
   var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.x;
-  var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.q6;
+  var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.p6;
   var com_varabyte_kobweb_compose_dom_ElementRefScope$stableprop_getter = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.x2;
   var registerRefScope = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.b3;
-  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.t6;
+  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.s6;
   var initMetadataForClass = kotlin_kotlin.$_$.gc;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.o;
   var mutableStateListOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.v;

@@ -94,39 +94,39 @@
   var toBoolean = kotlin_kotlin.$_$.eg;
   var isBlank = kotlin_kotlin.$_$.df;
   var removeSuffix = kotlin_kotlin.$_$.pf;
-  var initSilkWidgets = kotlin_com_varabyte_kobweb_silk_widgets.$_$.o;
+  var initSilkWidgets = kotlin_com_varabyte_kobweb_silk_widgets.$_$.p;
   var initSilkWidgetsKobweb = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.f;
   var com_varabyte_kobweb_navigation_Router$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_core.$_$.g;
   var get_LocalMarkdownContext = kotlin_com_varabyte_kobwebx_kobwebx_markdown.$_$.a;
   var emptyMap = kotlin_kotlin.$_$.v7;
   var MarkdownContext = kotlin_com_varabyte_kobwebx_kobwebx_markdown.$_$.b;
   var CompositionLocalProvider = kotlin_org_jetbrains_compose_runtime_runtime.$_$.e;
-  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.t6;
+  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.s6;
   var Code = kotlin_org_jetbrains_compose_html_html_core.$_$.b6;
   var GenericTag = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.w2;
-  var Li = kotlin_org_jetbrains_compose_html_html_core.$_$.n6;
+  var Li = kotlin_org_jetbrains_compose_html_html_core.$_$.m6;
   var Em = kotlin_org_jetbrains_compose_html_html_core.$_$.e6;
   var Link = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.c;
-  var H1 = kotlin_org_jetbrains_compose_html_html_core.$_$.g6;
-  var P = kotlin_org_jetbrains_compose_html_html_core.$_$.p6;
+  var H1 = kotlin_org_jetbrains_compose_html_html_core.$_$.f6;
+  var P = kotlin_org_jetbrains_compose_html_html_core.$_$.o6;
   var HorizontalDivider = kotlin_com_varabyte_kobweb_silk_widgets.$_$.i;
-  var H2 = kotlin_org_jetbrains_compose_html_html_core.$_$.h6;
-  var H3 = kotlin_org_jetbrains_compose_html_html_core.$_$.i6;
-  var H4 = kotlin_org_jetbrains_compose_html_html_core.$_$.j6;
-  var Ul = kotlin_org_jetbrains_compose_html_html_core.$_$.u6;
-  var Pre = kotlin_org_jetbrains_compose_html_html_core.$_$.o6;
+  var H2 = kotlin_org_jetbrains_compose_html_html_core.$_$.g6;
+  var H3 = kotlin_org_jetbrains_compose_html_html_core.$_$.h6;
+  var H4 = kotlin_org_jetbrains_compose_html_html_core.$_$.i6;
+  var Ul = kotlin_org_jetbrains_compose_html_html_core.$_$.t6;
+  var Pre = kotlin_org_jetbrains_compose_html_html_core.$_$.n6;
   var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
   var Companion_getInstance_1 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.e2;
   var loadFromLocalStorage = kotlin_com_varabyte_kobweb_silk_foundation.$_$.q1;
   var get_systemPreference = kotlin_com_varabyte_kobweb_silk_foundation.$_$.t1;
   var SilkApp = kotlin_com_varabyte_kobweb_kobweb_silk.$_$.a;
   var CoroutineImpl = kotlin_kotlin.$_$.gb;
-  var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.r;
+  var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.s;
   var isInterface = kotlin_kotlin.$_$.vc;
   var saveToLocalStorage = kotlin_com_varabyte_kobweb_silk_foundation.$_$.r1;
   var initMetadataForLambda = kotlin_kotlin.$_$.kc;
   var LaunchedEffect = kotlin_org_jetbrains_compose_runtime_runtime.$_$.m;
-  var get_SmoothColorStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.p;
+  var get_SmoothColorStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.q;
   var com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.g1;
   var toModifier = kotlin_com_varabyte_kobweb_silk_foundation.$_$.l1;
   var get_vh = kotlin_org_jetbrains_compose_html_html_core.$_$.v5;
@@ -139,20 +139,20 @@
   var get_HorizontalDividerStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.h;
   var VOID = kotlin_kotlin.$_$.g;
   var modifyStyleBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.v1;
-  var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l4;
+  var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m4;
   var get_cssRem = kotlin_org_jetbrains_compose_html_html_core.$_$.e4;
   var fontSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q1;
   var Companion_getInstance_4 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.z3;
   var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h3;
   var lineHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a2;
   var toPalette = kotlin_com_varabyte_kobweb_silk_foundation.$_$.p1;
-  var get_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.t;
+  var get_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.u;
   var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i1;
   var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.p5;
   var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x2;
   var get_percent = kotlin_org_jetbrains_compose_html_html_core.$_$.n5;
   var borderRadius = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y;
-  var ButtonVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.w;
+  var ButtonVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.x;
   var Colors_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d4;
   var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e3;
   var MediaFeature = kotlin_org_jetbrains_compose_html_html_core.$_$.b3;
@@ -165,8 +165,8 @@
   var Companion_getInstance_6 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c4;
   var initMetadataForClass = kotlin_kotlin.$_$.gc;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.si;
-  var set_background = kotlin_com_varabyte_kobweb_silk_widgets.$_$.s;
-  var set_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.u;
+  var set_background = kotlin_com_varabyte_kobweb_silk_widgets.$_$.t;
+  var set_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.v;
   var fillMaxSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m1;
   var fontWeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s1;
   var margin = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i2;
@@ -201,32 +201,32 @@
   var Path = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r2;
   var get_fr = kotlin_org_jetbrains_compose_html_html_core.$_$.m4;
   var gridRow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v1;
-  var TopStart_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k4;
+  var TopStart_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l4;
   var CenterHorizontally_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f4;
   var com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s3;
   var Column = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d;
   var SpanText = kotlin_com_varabyte_kobweb_silk_foundation.$_$.a;
-  var get_ColorVar = kotlin_com_varabyte_kobweb_silk_widgets.$_$.r;
+  var get_ColorVar = kotlin_com_varabyte_kobweb_silk_widgets.$_$.s;
   var get_UncoloredLinkVariant = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.d;
   var com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.h1;
   var Link_0 = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.b;
   var Companion_getInstance_12 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.e4;
   var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p3;
-  var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.q6;
+  var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.p6;
   var padding_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z2;
   var get_UndecoratedLinkVariant = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.e;
   var Companion_getInstance_13 = kotlin_com_varabyte_kobweb_browser_ext.$_$.j;
-  var PopupPlacement_BottomRight_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.v;
-  var Tooltip = kotlin_com_varabyte_kobweb_silk_widgets.$_$.l;
+  var PopupPlacement_BottomRight_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.w;
+  var Tooltip = kotlin_com_varabyte_kobweb_silk_widgets.$_$.m;
   var THROW_IAE = kotlin_kotlin.$_$.th;
   var enumEntries = kotlin_kotlin.$_$.kb;
   var Enum = kotlin_kotlin.$_$.hh;
   var CenterVertically_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g4;
   var com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t3;
   var Row = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e;
-  var OverlayVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.x;
+  var OverlayVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.y;
   var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o2;
-  var Overlay = kotlin_com_varabyte_kobweb_silk_widgets.$_$.k;
+  var Overlay = kotlin_com_varabyte_kobweb_silk_widgets.$_$.l;
   var HamburgerIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.e;
   var CloseIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.d;
   var height = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y1;
@@ -275,6 +275,9 @@
   var TokenDTO = kotlin_epicer_common.$_$.c;
   var Exception = kotlin_kotlin.$_$.jh;
   var initMetadataForCoroutine = kotlin_kotlin.$_$.ic;
+  var json = kotlin_kotlin.$_$.bd;
+  var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
+  var println = kotlin_kotlin.$_$.lb;
   var mapOf_0 = kotlin_kotlin.$_$.w8;
   var BaseUserDTO = kotlin_epicer_common.$_$.a;
   var gridItem = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u1;
@@ -284,16 +287,19 @@
   var KProperty0 = kotlin_kotlin.$_$.ce;
   var getPropertyCallableRef = kotlin_kotlin.$_$.dc;
   var StyleVariable = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.h;
-  var createCompositionCoroutineScope = kotlin_org_jetbrains_compose_runtime_runtime.$_$.s;
-  var CompositionScopedCoroutineScopeCanceller = kotlin_org_jetbrains_compose_runtime_runtime.$_$.f;
   var Center_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a4;
   var com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g;
+  var createCompositionCoroutineScope = kotlin_org_jetbrains_compose_runtime_runtime.$_$.s;
+  var CompositionScopedCoroutineScopeCanceller = kotlin_org_jetbrains_compose_runtime_runtime.$_$.f;
+  var size = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f3;
+  var AdvancedPopover = kotlin_com_varabyte_kobweb_silk_widgets.$_$.k;
   var EmptyCoroutineContext_getInstance = kotlin_kotlin.$_$.n4;
-  var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.y;
+  var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.z;
+  var Start_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j4;
   var Text_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.e;
   var Input = kotlin_com_varabyte_kobweb_silk_widgets.$_$.c;
   var Password_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.d;
-  var Form = kotlin_org_jetbrains_compose_html_html_core.$_$.f6;
+  var margin_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f2;
   var SpaceBetween_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b4;
   var com_varabyte_kobweb_compose_foundation_layout_Arrangement_SpaceBetween$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h;
   var joinToString = kotlin_kotlin.$_$.j8;
@@ -313,10 +319,11 @@
   initMetadataForClass(SideMenuState, 'SideMenuState', VOID, Enum);
   initMetadataForObject(ComposableSingletons$NavHeaderKt, 'ComposableSingletons$NavHeaderKt');
   initMetadataForCoroutine($loginCOROUTINE$0, CoroutineImpl);
-  initMetadataForCoroutine($getMyBaseUserDTOCOROUTINE$1, CoroutineImpl);
+  initMetadataForCoroutine($isLoggedCOROUTINE$1, CoroutineImpl);
+  initMetadataForCoroutine($getMyBaseUserDTOCOROUTINE$2, CoroutineImpl);
   initMetadataForObject(ComposableSingletons$IndexKt, 'ComposableSingletons$IndexKt');
   initMetadataForObject(ComposableSingletons$LoginKt, 'ComposableSingletons$LoginKt');
-  initMetadataForLambda(LoginPage$lambda$lambda$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
+  initMetadataForLambda(LoginForm$lambda$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForObject(ComposableSingletons$MeKt, 'ComposableSingletons$MeKt');
   initMetadataForLambda(ProfilePage$lambda$lambda$lambda$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   //endregion
@@ -4323,8 +4330,14 @@
     tmp.set_exception_px07aa_k$(null);
     return tmp.doResume_5yljmg_k$();
   }
+  function isLogged($completion) {
+    var tmp = new $isLoggedCOROUTINE$1($completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  }
   function getMyBaseUserDTO($completion) {
-    var tmp = new $getMyBaseUserDTOCOROUTINE$1($completion);
+    var tmp = new $getMyBaseUserDTOCOROUTINE$2($completion);
     tmp.set_result_xj64lm_k$(Unit_getInstance());
     tmp.set_exception_px07aa_k$(null);
     return tmp.doResume_5yljmg_k$();
@@ -4388,10 +4401,96 @@
       }
      while (true);
   };
-  function $getMyBaseUserDTOCOROUTINE$1(resultContinuation) {
+  function $isLoggedCOROUTINE$1(resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf($getMyBaseUserDTOCOROUTINE$1).doResume_5yljmg_k$ = function () {
+  protoOf($isLoggedCOROUTINE$1).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(3);
+            var tmp_0 = this;
+            var tmp0_elvis_lhs = localStorage.getItem('jwtToken');
+            var tmp_1;
+            if (tmp0_elvis_lhs == null) {
+              return false;
+            } else {
+              tmp_1 = tmp0_elvis_lhs;
+            }
+
+            tmp_0.token0__1 = tmp_1;
+            this.set_exceptionState_fex74n_k$(2);
+            this.set_state_rjd8d0_k$(1);
+            var tmp_2 = window;
+            var headers = json([to('Content-Type', 'application/json'), to('Authorization', 'Bearer ' + this.token0__1)]);
+            var body = undefined;
+            var referrer = undefined;
+            var referrerPolicy = undefined;
+            var mode = undefined;
+            var credentials = undefined;
+            var cache = undefined;
+            var redirect = undefined;
+            var integrity = undefined;
+            var keepalive = undefined;
+            var window_0 = undefined;
+            var o = {};
+            o['method'] = 'GET';
+            o['headers'] = headers;
+            o['body'] = body;
+            o['referrer'] = referrer;
+            o['referrerPolicy'] = referrerPolicy;
+            o['mode'] = mode;
+            o['credentials'] = credentials;
+            o['cache'] = cache;
+            o['redirect'] = redirect;
+            o['integrity'] = integrity;
+            o['keepalive'] = keepalive;
+            o['window'] = window_0;
+            suspendResult = await_0(tmp_2.fetch('http://localhost:8080/me', o), this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var response = suspendResult;
+            return response.status === 200;
+          case 2:
+            this.set_exceptionState_fex74n_k$(3);
+            var tmp_3 = this.get_exception_x0n6w6_k$();
+            if (tmp_3 instanceof Exception) {
+              var e = this.get_exception_x0n6w6_k$();
+              println('Error checking login status: ' + e.message);
+              this.set_state_rjd8d0_k$(4);
+              continue $sm;
+            } else {
+              throw this.get_exception_x0n6w6_k$();
+            }
+
+          case 3:
+            throw this.get_exception_x0n6w6_k$();
+          case 4:
+            this.set_exceptionState_fex74n_k$(3);
+            return false;
+        }
+      } catch ($p) {
+        var e_0 = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 3) {
+          throw e_0;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e_0);
+        }
+      }
+     while (true);
+  };
+  function $getMyBaseUserDTOCOROUTINE$2(resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf($getMyBaseUserDTOCOROUTINE$2).doResume_5yljmg_k$ = function () {
     var suspendResult = this.get_result_iyg5d2_k$();
     $sm: do
       try {
@@ -4522,54 +4621,38 @@
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(710540476);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
       var ctx = rememberPageContext($composer_0, 0);
-      $composer_0.startReplaceGroup_5hh8aj_k$(752651855);
-      var tmp0 = $composer_0;
+      // Inline function 'kotlin.run' call
+      // Inline function 'epicer.frontend.pages.HomePage.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(729808613, true, HomePage$lambda(ctx), $composer_0, 54);
+      // Inline function 'androidx.compose.runtime.remember' call
+      var $composer_1 = $composer_0;
+      sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
       // Inline function 'androidx.compose.runtime.cache' call
-      var invalid = $composer_0.changedInstance_s1wkiy_k$(ctx);
+      var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
       // Inline function 'kotlin.let' call
       // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = tmp0.rememberedValue_4dg93v_k$();
+      var it = $composer_1.rememberedValue_4dg93v_k$();
       var tmp;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.HomePage.<anonymous>' call
-        var value = HomePage$lambda(ctx);
-        tmp0.updateRememberedValue_l1wh71_k$(value);
+        // Inline function 'epicer.frontend.pages.HomePage.<anonymous>.<anonymous>' call
+        var value = ComposableLambda$invoke$ref_103(dispatchReceiver);
+        $composer_1.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
       } else {
         tmp = it;
       }
       var tmp_0 = tmp;
-      var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
-      $composer_0.endReplaceGroup_ek144q_k$();
-      Button(tmp0_group, null, null, null, false, null, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 805306368, 510);
-      $composer_0.startReplaceGroup_5hh8aj_k$(752655788);
-      var tmp2 = $composer_0;
-      // Inline function 'androidx.compose.runtime.cache' call
-      var invalid_0 = $composer_0.changedInstance_s1wkiy_k$(ctx);
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it_0 = tmp2.rememberedValue_4dg93v_k$();
-      var tmp_1;
-      if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.HomePage.<anonymous>' call
-        var value_0 = HomePage$lambda_0(ctx);
-        tmp2.updateRememberedValue_l1wh71_k$(value_0);
-        tmp_1 = value_0;
-      } else {
-        tmp_1 = it_0;
-      }
-      var tmp_2 = tmp_1;
-      var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
-      $composer_0.endReplaceGroup_ek144q_k$();
-      Button(tmp1_group, null, null, null, false, null, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 805306368, 510);
+      var tmp0 = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_1);
+      Column(null, null, null, null, tmp0, $composer_0, 24576, 15);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
-    var tmp2_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp2_safe_receiver == null)
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
       null;
     else {
-      tmp2_safe_receiver.updateScope_t8jcf_k$(HomePage$lambda_1($changed));
+      tmp0_safe_receiver.updateScope_t8jcf_k$(HomePage$lambda_0($changed));
     }
   }
   function ComposableLambda$invoke$ref_101($boundThis) {
@@ -4603,9 +4686,9 @@
   function ComposableSingletons$IndexKt() {
     ComposableSingletons$IndexKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_101(composableLambdaInstance(-2055556404, false, ComposableSingletons$IndexKt$lambda_1$lambda_5yb608));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_101(composableLambdaInstance(-998454027, false, ComposableSingletons$IndexKt$lambda_1$lambda_5yb608));
     var tmp_0 = this;
-    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_102(composableLambdaInstance(2068699381, false, ComposableSingletons$IndexKt$lambda_2$lambda_yrxn2f));
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_102(composableLambdaInstance(-611360610, false, ComposableSingletons$IndexKt$lambda_2$lambda_yrxn2f));
   }
   protoOf(ComposableSingletons$IndexKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
@@ -4654,19 +4737,75 @@
       return Unit_getInstance();
     };
   }
-  function HomePage$lambda($ctx) {
+  function HomePage$lambda$lambda($ctx) {
     return function (it) {
       $ctx.get_router_j3zccy_k$().navigateTo$default_onbd51_k$('/login');
       return Unit_getInstance();
     };
   }
-  function HomePage$lambda_0($ctx) {
+  function HomePage$lambda$lambda_0($ctx) {
     return function (it) {
       $ctx.get_router_j3zccy_k$().navigateTo$default_onbd51_k$('/me');
       return Unit_getInstance();
     };
   }
-  function HomePage$lambda_1($$changed) {
+  function HomePage$lambda($ctx) {
+    return function ($this$Column, $composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+        $composer_0.startReplaceGroup_5hh8aj_k$(153757334);
+        // Inline function 'androidx.compose.runtime.cache' call
+        var invalid = $composer_0.changedInstance_s1wkiy_k$($ctx);
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it = $composer_0.rememberedValue_4dg93v_k$();
+        var tmp_0;
+        if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.pages.HomePage.<anonymous>.<anonymous>.<anonymous>' call
+          var value = HomePage$lambda$lambda($ctx);
+          $composer_0.updateRememberedValue_l1wh71_k$(value);
+          tmp_0 = value;
+        } else {
+          tmp_0 = it;
+        }
+        var tmp_1 = tmp_0;
+        var tmp0_group = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
+        $composer_0.endReplaceGroup_ek144q_k$();
+        Button(tmp0_group, null, null, null, false, null, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 805306368, 510);
+        $composer_0.startReplaceGroup_5hh8aj_k$(153762195);
+        // Inline function 'androidx.compose.runtime.cache' call
+        var invalid_0 = $composer_0.changedInstance_s1wkiy_k$($ctx);
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it_0 = $composer_0.rememberedValue_4dg93v_k$();
+        var tmp_2;
+        if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.pages.HomePage.<anonymous>.<anonymous>.<anonymous>' call
+          var value_0 = HomePage$lambda$lambda_0($ctx);
+          $composer_0.updateRememberedValue_l1wh71_k$(value_0);
+          tmp_2 = value_0;
+        } else {
+          tmp_2 = it_0;
+        }
+        var tmp_3 = tmp_2;
+        var tmp1_group = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
+        $composer_0.endReplaceGroup_ek144q_k$();
+        Button(tmp1_group, null, null, null, false, null, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 805306368, 510);
+        tmp = Unit_getInstance();
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_103($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function HomePage$lambda_0($$changed) {
     return function ($composer, $force) {
       HomePage($composer, updateChangedFlags($$changed | 1));
       return Unit_getInstance();
@@ -4693,7 +4832,26 @@
     var $composer_0 = $composer;
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1791325235);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
-      $composer_0.startReplaceGroup_5hh8aj_k$(-38022611);
+      var tmp0_modifier = fillMaxSize(Companion_getInstance_3());
+      var tmp1_horizontalAlignment = CenterHorizontally_getInstance();
+      var tmp2_verticalArrangement = Center_getInstance_0();
+      Column(tmp0_modifier, tmp2_verticalArrangement, tmp1_horizontalAlignment, null, ComposableSingletons$LoginKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 24576 | com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stableprop_getter() << 3 | com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter() << 6, 8);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(LoginPage$lambda($changed));
+    }
+  }
+  function LoginForm($composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(456231336);
+    if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
+      var ctx = rememberPageContext($composer_0, 0);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-311025246);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_0 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4701,7 +4859,7 @@
       var it = this_0.rememberedValue_4dg93v_k$();
       var tmp;
       if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>' call
+        // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>' call
         var value = mutableStateOf('');
         this_0.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
@@ -4712,7 +4870,7 @@
       var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
       $composer_0.endReplaceGroup_ek144q_k$();
       var username$delegate = tmp0_group;
-      $composer_0.startReplaceGroup_5hh8aj_k$(-38020947);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-311023582);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_1 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4720,7 +4878,7 @@
       var it_0 = this_1.rememberedValue_4dg93v_k$();
       var tmp_1;
       if (false || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>' call
+        // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>' call
         var value_0 = mutableStateOf('');
         this_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_1 = value_0;
@@ -4731,41 +4889,83 @@
       var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
       $composer_0.endReplaceGroup_ek144q_k$();
       var password$delegate = tmp1_group;
+      $composer_0.startReplaceGroup_5hh8aj_k$(-311021691);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_2 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_1 = this_2.rememberedValue_4dg93v_k$();
+      var tmp_3;
+      if (false || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>' call
+        var value_1 = mutableStateOf(false);
+        this_2.updateRememberedValue_l1wh71_k$(value_1);
+        tmp_3 = value_1;
+      } else {
+        tmp_3 = it_1;
+      }
+      var tmp_4 = tmp_3;
+      var tmp2_group = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var showSuccessLogin = {_v: tmp2_group};
+      $composer_0.startReplaceGroup_5hh8aj_k$(-311019739);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_3 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_2 = this_3.rememberedValue_4dg93v_k$();
+      var tmp_5;
+      if (false || it_2 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>' call
+        var value_2 = mutableStateOf(false);
+        this_3.updateRememberedValue_l1wh71_k$(value_2);
+        tmp_5 = value_2;
+      } else {
+        tmp_5 = it_2;
+      }
+      var tmp_6 = tmp_5;
+      var tmp3_group = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var showFailedLogin = {_v: tmp3_group};
       // Inline function 'androidx.compose.runtime.rememberCoroutineScope' call
       var getContext = null;
       var $composer_1 = $composer_0;
       sourceInformationMarkerStart($composer_1, 773894976, 'CC(rememberCoroutineScope)482@20254L144:Effects.kt#9igjgp');
       if (!((1 & 1) === 0)) {
-        getContext = LoginPage$lambda_3;
+        getContext = LoginForm$lambda_3;
       }
       var composer = $composer_1;
       sourceInformationMarkerStart($composer_1, -954370320, 'CC(remember):Effects.kt#9igjgp');
       // Inline function 'androidx.compose.runtime.cache' call
       // Inline function 'kotlin.let' call
       // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it_1 = $composer_1.rememberedValue_4dg93v_k$();
-      var tmp_3;
-      if (false || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+      var it_3 = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp_7;
+      if (false || it_3 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'androidx.compose.runtime.rememberCoroutineScope.<anonymous>' call
-        var value_1 = new CompositionScopedCoroutineScopeCanceller(createCompositionCoroutineScope(getContext(), composer));
-        $composer_1.updateRememberedValue_l1wh71_k$(value_1);
-        tmp_3 = value_1;
+        var value_3 = new CompositionScopedCoroutineScopeCanceller(createCompositionCoroutineScope(getContext(), composer));
+        $composer_1.updateRememberedValue_l1wh71_k$(value_3);
+        tmp_7 = value_3;
       } else {
-        tmp_3 = it_1;
+        tmp_7 = it_3;
       }
-      var tmp_4 = tmp_3;
-      var tmp1_group_0 = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
+      var tmp_8 = tmp_7;
+      var tmp1_group_0 = (tmp_8 == null ? true : !(tmp_8 == null)) ? tmp_8 : THROW_CCE();
       sourceInformationMarkerEnd($composer_1);
       var wrapper = tmp1_group_0;
       var tmp0 = wrapper.get_coroutineScope_5k7h45_k$();
       sourceInformationMarkerEnd($composer_1);
       var coroutineScope = tmp0;
-      var tmp0_modifier = fillMaxSize(Companion_getInstance_3());
+      var tmp_9 = Companion_getInstance_3();
+      // Inline function 'com.varabyte.kobweb.compose.css.autoLength' call
+      // Inline function 'kotlin.js.unsafeCast' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp0_modifier = size(tmp_9, 'auto');
       var tmp1_horizontalAlignment = CenterHorizontally_getInstance();
       var tmp2_verticalArrangement = Center_getInstance_0();
       // Inline function 'kotlin.run' call
-      // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>' call
-      var dispatchReceiver = rememberComposableLambda(-1906329814, true, LoginPage$lambda_4(coroutineScope, username$delegate, password$delegate), $composer_0, 54);
+      // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(1053543583, true, LoginForm$lambda_4(showSuccessLogin, showFailedLogin, username$delegate, password$delegate, coroutineScope, ctx), $composer_0, 54);
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_2 = $composer_0;
       sourceInformationMarkerStart($composer_2, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
@@ -4773,36 +4973,148 @@
       var invalid = $composer_2.changed_ga7h3f_k$(dispatchReceiver);
       // Inline function 'kotlin.let' call
       // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it_2 = $composer_2.rememberedValue_4dg93v_k$();
-      var tmp_5;
-      if (invalid || it_2 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>' call
-        var value_2 = ComposableLambda$invoke$ref_105(dispatchReceiver);
-        $composer_2.updateRememberedValue_l1wh71_k$(value_2);
-        tmp_5 = value_2;
+      var it_4 = $composer_2.rememberedValue_4dg93v_k$();
+      var tmp_10;
+      if (invalid || it_4 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>.<anonymous>' call
+        var value_4 = ComposableLambda$invoke$ref_106(dispatchReceiver);
+        $composer_2.updateRememberedValue_l1wh71_k$(value_4);
+        tmp_10 = value_4;
       } else {
-        tmp_5 = it_2;
+        tmp_10 = it_4;
       }
-      var tmp_6 = tmp_5;
-      var tmp0_0 = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
+      var tmp_11 = tmp_10;
+      var tmp0_0 = (tmp_11 == null ? true : !(tmp_11 == null)) ? tmp_11 : THROW_CCE();
       sourceInformationMarkerEnd($composer_2);
       Column(tmp0_modifier, tmp2_verticalArrangement, tmp1_horizontalAlignment, null, tmp0_0, $composer_0, 24576 | com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stableprop_getter() << 3 | com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter() << 6, 8);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
-    var tmp2_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp2_safe_receiver == null)
+    var tmp4_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp4_safe_receiver == null)
       null;
     else {
-      tmp2_safe_receiver.updateScope_t8jcf_k$(LoginPage$lambda_5($changed));
+      tmp4_safe_receiver.updateScope_t8jcf_k$(LoginForm$lambda_5($changed));
     }
   }
-  function ComposableLambda$invoke$ref_103($boundThis) {
+  function showPopover(state, message, showDelayMs, hideDelayMs, $composer, $changed, $default) {
+    var showDelayMs_0 = {_v: showDelayMs};
+    var hideDelayMs_0 = {_v: hideDelayMs};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(159609959);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 6) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(state) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 48) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(message) ? 32 : 16);
+    if (!(($default & 4) === 0))
+      $dirty = $dirty | 384;
+    else if (($changed & 384) === 0)
+      $dirty = $dirty | ($composer_0.changed_kpusro_k$(showDelayMs_0._v) ? 256 : 128);
+    if (!(($default & 8) === 0))
+      $dirty = $dirty | 3072;
+    else if (($changed & 3072) === 0)
+      $dirty = $dirty | ($composer_0.changed_kpusro_k$(hideDelayMs_0._v) ? 2048 : 1024);
+    if (!(($dirty & 1171) === 1170) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 4) === 0)) {
+        showDelayMs_0._v = 100;
+      }
+      if (!(($default & 8) === 0)) {
+        hideDelayMs_0._v = 3000;
+      }
+      var tmp = Companion_getInstance_13().get_PreviousSibling_b9lu4i_k$();
+      var tmp_0 = showDelayMs_0._v;
+      var tmp_1 = hideDelayMs_0._v;
+      // Inline function 'kotlin.run' call
+      // Inline function 'epicer.frontend.pages.showPopover.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(-1592519823, true, showPopover$lambda(message, state, showDelayMs_0, hideDelayMs_0), $composer_0, 54);
+      // Inline function 'androidx.compose.runtime.remember' call
+      var $composer_1 = $composer_0;
+      sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp_2;
+      if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.pages.showPopover.<anonymous>.<anonymous>' call
+        var value = ComposableLambda$invoke$ref_107(dispatchReceiver);
+        $composer_1.updateRememberedValue_l1wh71_k$(value);
+        tmp_2 = value;
+      } else {
+        tmp_2 = it;
+      }
+      var tmp_3 = tmp_2;
+      var tmp0 = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_1);
+      AdvancedPopover(tmp, null, null, null, tmp_0, tmp_1, null, null, null, null, null, tmp0, $composer_0, 57344 & $dirty << 6 | 458752 & $dirty << 6, 48, 1998);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(showPopover$lambda_0(state, message, showDelayMs_0, hideDelayMs_0, $changed, $default));
+    }
+  }
+  function ComposableLambda$invoke$ref_104($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn($this$Button, $composer, $changed) {
+  function ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn($this$Column, $composer, $changed) {
+    var $composer_0 = $composer;
+    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+      // Inline function 'androidx.compose.runtime.rememberCoroutineScope' call
+      var getContext = null;
+      var $composer_1 = $composer_0;
+      sourceInformationMarkerStart($composer_1, 773894976, 'CC(rememberCoroutineScope)482@20254L144:Effects.kt#9igjgp');
+      if (!((1 & 1) === 0)) {
+        getContext = ComposableSingletons$LoginKt$lambda_1$lambda$lambda_p94owc;
+      }
+      var composer = $composer_1;
+      sourceInformationMarkerStart($composer_1, -954370320, 'CC(remember):Effects.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp;
+      if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'androidx.compose.runtime.rememberCoroutineScope.<anonymous>' call
+        var value = new CompositionScopedCoroutineScopeCanceller(createCompositionCoroutineScope(getContext(), composer));
+        $composer_1.updateRememberedValue_l1wh71_k$(value);
+        tmp = value;
+      } else {
+        tmp = it;
+      }
+      var tmp_0 = tmp;
+      var tmp1_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_1);
+      var wrapper = tmp1_group;
+      var tmp0 = wrapper.get_coroutineScope_5k7h45_k$();
+      sourceInformationMarkerEnd($composer_1);
+      var coroutineScope = tmp0;
+      LoginForm($composer_0, 0);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    return Unit_getInstance();
+  }
+  function ComposableSingletons$LoginKt$lambda_1$lambda$lambda_p94owc() {
+    return EmptyCoroutineContext_getInstance();
+  }
+  function ComposableLambda$invoke$ref_105($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ComposableSingletons$LoginKt$lambda_2$lambda_r5us6a($this$Button, $composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
       Text('Login', $composer_0, 6);
@@ -4814,10 +5126,15 @@
   function ComposableSingletons$LoginKt() {
     ComposableSingletons$LoginKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_103(composableLambdaInstance(-594381229, false, ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_104(composableLambdaInstance(-1906329814, false, ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn));
+    var tmp_0 = this;
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_105(composableLambdaInstance(-982990705, false, ComposableSingletons$LoginKt$lambda_2$lambda_r5us6a));
   }
   protoOf(ComposableSingletons$LoginKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
+  };
+  protoOf(ComposableSingletons$LoginKt).get_lambda_2_ddebfp_k$ = function () {
+    return this.lambda_2_r8sbbo_1;
   };
   var ComposableSingletons$LoginKt_instance;
   function ComposableSingletons$LoginKt_getInstance() {
@@ -4825,64 +5142,79 @@
       new ComposableSingletons$LoginKt();
     return ComposableSingletons$LoginKt_instance;
   }
-  function LoginPage$lambda($username$delegate) {
+  function LoginForm$lambda($username$delegate) {
     // Inline function 'androidx.compose.runtime.getValue' call
     getLocalDelegateReference('username', KMutableProperty0, true, function () {
       return THROW_ISE();
     });
     return $username$delegate.get_value_j01efc_k$();
   }
-  function LoginPage$lambda_0($username$delegate, _set____db54di) {
+  function LoginForm$lambda_0($username$delegate, _set____db54di) {
     getLocalDelegateReference('username', KMutableProperty0, true, function () {
       return THROW_ISE();
     });
     $username$delegate.set_value_v1vabv_k$(_set____db54di);
     return Unit_getInstance();
   }
-  function LoginPage$lambda_1($password$delegate) {
+  function LoginForm$lambda_1($password$delegate) {
     // Inline function 'androidx.compose.runtime.getValue' call
     getLocalDelegateReference('password', KMutableProperty0, true, function () {
       return THROW_ISE();
     });
     return $password$delegate.get_value_j01efc_k$();
   }
-  function LoginPage$lambda_2($password$delegate, _set____db54di) {
+  function LoginForm$lambda_2($password$delegate, _set____db54di) {
     getLocalDelegateReference('password', KMutableProperty0, true, function () {
       return THROW_ISE();
     });
     $password$delegate.set_value_v1vabv_k$(_set____db54di);
     return Unit_getInstance();
   }
-  function LoginPage$lambda_3() {
+  function LoginPage$lambda($$changed) {
+    return function ($composer, $force) {
+      LoginPage($composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
+  function LoginForm$lambda_3() {
     return EmptyCoroutineContext_getInstance();
   }
-  function LoginPage$lambda$lambda$lambda($username$delegate) {
+  function LoginForm$lambda$lambda($username$delegate) {
     return function (it) {
-      LoginPage$lambda_0($username$delegate, it);
+      LoginForm$lambda_0($username$delegate, it);
       return Unit_getInstance();
     };
   }
-  function LoginPage$lambda$lambda$lambda_0($password$delegate) {
+  function LoginForm$lambda$lambda_0($password$delegate) {
     return function (it) {
-      LoginPage$lambda_2($password$delegate, it);
+      LoginForm$lambda_2($password$delegate, it);
       return Unit_getInstance();
     };
   }
-  function LoginPage$lambda$lambda$lambda$slambda($username$delegate, $password$delegate, resultContinuation) {
+  function LoginForm$lambda$lambda$slambda$lambda($ctx) {
+    return function () {
+      $ctx.get_router_j3zccy_k$().navigateTo$default_onbd51_k$('/');
+      return Unit_getInstance();
+    };
+  }
+  function LoginForm$lambda$lambda$slambda($showSuccessLogin, $showFailedLogin, $username$delegate, $password$delegate, $ctx, resultContinuation) {
+    this.$showSuccessLogin_1 = $showSuccessLogin;
+    this.$showFailedLogin_1 = $showFailedLogin;
     this.$username$delegate_1 = $username$delegate;
     this.$password$delegate_1 = $password$delegate;
+    this.$ctx_1 = $ctx;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(LoginPage$lambda$lambda$lambda$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
+  protoOf(LoginForm$lambda$lambda$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
     var tmp = this.create_rcuf4x_k$($this$launch, $completion);
     tmp.set_result_xj64lm_k$(Unit_getInstance());
     tmp.set_exception_px07aa_k$(null);
     return tmp.doResume_5yljmg_k$();
   };
-  protoOf(LoginPage$lambda$lambda$lambda$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
+  protoOf(LoginForm$lambda$lambda$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
     return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
-  protoOf(LoginPage$lambda$lambda$lambda$slambda).doResume_5yljmg_k$ = function () {
+  protoOf(LoginForm$lambda$lambda$slambda).doResume_5yljmg_k$ = function () {
     var suspendResult = this.get_result_iyg5d2_k$();
     $sm: do
       try {
@@ -4891,7 +5223,7 @@
           case 0:
             this.set_exceptionState_fex74n_k$(2);
             localStorage.setItem('jwtToken', '');
-            this.loginUserDTO0__1 = new LoginUserDTO(LoginPage$lambda(this.$username$delegate_1), LoginPage$lambda_1(this.$password$delegate_1));
+            this.loginUserDTO0__1 = new LoginUserDTO(LoginForm$lambda(this.$username$delegate_1), LoginForm$lambda_1(this.$password$delegate_1));
             this.set_state_rjd8d0_k$(1);
             suspendResult = login(this.loginUserDTO0__1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -4903,6 +5235,11 @@
             var tokenDTO = suspendResult;
             if (!(tokenDTO == null)) {
               localStorage.setItem('jwtToken', tokenDTO.get_token_iz6pxs_k$());
+              this.$showSuccessLogin_1._v.set_value_v1vabv_k$(true);
+              var tmp_0 = window;
+              tmp_0.setTimeout(LoginForm$lambda$lambda$slambda$lambda(this.$ctx_1), 3000);
+            } else {
+              this.$showFailedLogin_1._v.set_value_v1vabv_k$(true);
             }
 
             return Unit_getInstance();
@@ -4920,129 +5257,152 @@
       }
      while (true);
   };
-  protoOf(LoginPage$lambda$lambda$lambda$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
-    var i = new LoginPage$lambda$lambda$lambda$slambda(this.$username$delegate_1, this.$password$delegate_1, completion);
+  protoOf(LoginForm$lambda$lambda$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
+    var i = new LoginForm$lambda$lambda$slambda(this.$showSuccessLogin_1, this.$showFailedLogin_1, this.$username$delegate_1, this.$password$delegate_1, this.$ctx_1, completion);
     i.$this$launch_1 = $this$launch;
     return i;
   };
-  protoOf(LoginPage$lambda$lambda$lambda$slambda).create_wyq9v6_k$ = function (value, completion) {
+  protoOf(LoginForm$lambda$lambda$slambda).create_wyq9v6_k$ = function (value, completion) {
     return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
   };
-  function LoginPage$lambda$lambda$lambda$slambda_0($username$delegate, $password$delegate, resultContinuation) {
-    var i = new LoginPage$lambda$lambda$lambda$slambda($username$delegate, $password$delegate, resultContinuation);
+  function LoginForm$lambda$lambda$slambda_0($showSuccessLogin, $showFailedLogin, $username$delegate, $password$delegate, $ctx, resultContinuation) {
+    var i = new LoginForm$lambda$lambda$slambda($showSuccessLogin, $showFailedLogin, $username$delegate, $password$delegate, $ctx, resultContinuation);
     var l = function ($this$launch, $completion) {
       return i.invoke_d9fzmj_k$($this$launch, $completion);
     };
     l.$arity = 1;
     return l;
   }
-  function LoginPage$lambda$lambda$lambda_1($coroutineScope, $username$delegate, $password$delegate) {
+  function LoginForm$lambda$lambda_1($coroutineScope, $showSuccessLogin, $showFailedLogin, $username$delegate, $password$delegate, $ctx) {
     return function (it) {
-      launch($coroutineScope, VOID, VOID, LoginPage$lambda$lambda$lambda$slambda_0($username$delegate, $password$delegate, null));
+      launch($coroutineScope, VOID, VOID, LoginForm$lambda$lambda$slambda_0($showSuccessLogin, $showFailedLogin, $username$delegate, $password$delegate, $ctx, null));
       return Unit_getInstance();
     };
   }
-  function LoginPage$lambda$lambda($coroutineScope, $username$delegate, $password$delegate) {
-    return function ($this$Form, $composer, $changed) {
+  function LoginForm$lambda_4($showSuccessLogin, $showFailedLogin, $username$delegate, $password$delegate, $coroutineScope, $ctx) {
+    return function ($this$Column, $composer, $changed) {
       var $composer_0 = $composer;
-      Text('Username:', $composer_0, 6);
-      var tmp0_type = Text_getInstance();
-      var tmp1_value = LoginPage$lambda($username$delegate);
-      $composer_0.startReplaceGroup_5hh8aj_k$(1876272701);
-      // Inline function 'androidx.compose.runtime.cache' call
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = $composer_0.rememberedValue_4dg93v_k$();
+      var $dirty = $changed;
       var tmp;
-      if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-        var value = LoginPage$lambda$lambda$lambda($username$delegate);
-        $composer_0.updateRememberedValue_l1wh71_k$(value);
-        tmp = value;
-      } else {
-        tmp = it;
+      if (($changed & 6) === 0) {
+        $dirty = $dirty | ($composer_0.changed_ga7h3f_k$($this$Column) ? 4 : 2);
+        tmp = Unit_getInstance();
       }
-      var tmp_0 = tmp;
-      var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
-      $composer_0.endReplaceGroup_ek144q_k$();
-      Input(tmp0_type, tmp1_value, tmp0_group, null, null, 'ex: james', null, false, false, false, false, false, null, null, null, null, null, null, $composer_0, 196992, 0, 262104);
-      Text('Password:', $composer_0, 6);
-      var tmp2_type = Password_getInstance();
-      var tmp3_value = LoginPage$lambda_1($password$delegate);
-      $composer_0.startReplaceGroup_5hh8aj_k$(1876280125);
-      // Inline function 'androidx.compose.runtime.cache' call
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it_0 = $composer_0.rememberedValue_4dg93v_k$();
-      var tmp_1;
-      if (false || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-        var value_0 = LoginPage$lambda$lambda$lambda_0($password$delegate);
-        $composer_0.updateRememberedValue_l1wh71_k$(value_0);
-        tmp_1 = value_0;
+      var tmp_0;
+      if (!(($dirty & 19) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
+        var tmp0_modifier = fontWeight_0($this$Column.align_45bqjp_k$(fontSize(Companion_getInstance_3(), get_px(30)), Start_getInstance()), Companion_getInstance_7().get_SemiBold_aid1c4_k$());
+        SpanText('Login', tmp0_modifier, null, null, $composer_0, 6, 12);
+        HorizontalDivider(null, null, $composer_0, 0, 3);
+        var tmp1_modifier = margin_0($this$Column.align_45bqjp_k$(Companion_getInstance_3(), Start_getInstance()), get_px(5));
+        SpanText('Username', tmp1_modifier, null, null, $composer_0, 6, 12);
+        var tmp2_modifier = margin(Companion_getInstance_3(), VOID, VOID, get_px(10));
+        var tmp3_type = Text_getInstance();
+        var tmp4_value = LoginForm$lambda($username$delegate);
+        $composer_0.startReplaceGroup_5hh8aj_k$(1092088723);
+        // Inline function 'androidx.compose.runtime.cache' call
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it = $composer_0.rememberedValue_4dg93v_k$();
+        var tmp_1;
+        if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>.<anonymous>.<anonymous>' call
+          var value = LoginForm$lambda$lambda($username$delegate);
+          $composer_0.updateRememberedValue_l1wh71_k$(value);
+          tmp_1 = value;
+        } else {
+          tmp_1 = it;
+        }
+        var tmp_2 = tmp_1;
+        var tmp0_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+        $composer_0.endReplaceGroup_ek144q_k$();
+        Input(tmp3_type, tmp4_value, tmp0_group, tmp2_modifier, null, 'ex: james', null, false, false, false, false, false, null, null, null, null, null, null, $composer_0, 196992, 0, 262096);
+        var tmp_3 = margin_0($this$Column.align_45bqjp_k$(Companion_getInstance_3(), Start_getInstance()), get_px(5));
+        SpanText('Password', tmp_3, null, null, $composer_0, 6, 12);
+        var tmp5_modifier = margin(Companion_getInstance_3(), VOID, VOID, get_px(10));
+        var tmp6_type = Password_getInstance();
+        var tmp7_value = LoginForm$lambda_1($password$delegate);
+        $composer_0.startReplaceGroup_5hh8aj_k$(1092103379);
+        // Inline function 'androidx.compose.runtime.cache' call
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it_0 = $composer_0.rememberedValue_4dg93v_k$();
+        var tmp_4;
+        if (false || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>.<anonymous>.<anonymous>' call
+          var value_0 = LoginForm$lambda$lambda_0($password$delegate);
+          $composer_0.updateRememberedValue_l1wh71_k$(value_0);
+          tmp_4 = value_0;
+        } else {
+          tmp_4 = it_0;
+        }
+        var tmp_5 = tmp_4;
+        var tmp1_group = (tmp_5 == null ? true : !(tmp_5 == null)) ? tmp_5 : THROW_CCE();
+        $composer_0.endReplaceGroup_ek144q_k$();
+        Input(tmp6_type, tmp7_value, tmp1_group, tmp5_modifier, null, 'ex: P4ssword!', null, false, false, false, false, false, null, null, null, null, null, null, $composer_0, 196992, 0, 262096);
+        var tmp8_modifier = margin_2(Companion_getInstance_3(), get_px(10));
+        var tmp_6 = LoginForm$lambda$lambda_1($coroutineScope, $showSuccessLogin, $showFailedLogin, $username$delegate, $password$delegate, $ctx);
+        Button(tmp_6, tmp8_modifier, null, null, false, null, null, null, null, ComposableSingletons$LoginKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 805306368, 508);
+        $composer_0.startReplaceGroup_5hh8aj_k$(1092133098);
+        if ($showSuccessLogin._v.get_value_j01efc_k$()) {
+          var tmp_7 = $showSuccessLogin._v;
+          showPopover(tmp_7, '\u2705 Login Successful!', 0, 0, $composer_0, 48, 12);
+        }
+        $composer_0.endReplaceGroup_ek144q_k$();
+        if ($showFailedLogin._v.get_value_j01efc_k$()) {
+          var tmp_8 = $showFailedLogin._v;
+          showPopover(tmp_8, '\u274C Login Failed!', 0, 0, $composer_0, 48, 12);
+        }
+        tmp_0 = Unit_getInstance();
       } else {
-        tmp_1 = it_0;
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp_0 = Unit_getInstance();
       }
-      var tmp_2 = tmp_1;
-      var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
-      $composer_0.endReplaceGroup_ek144q_k$();
-      Input(tmp2_type, tmp3_value, tmp1_group, null, null, 'ex: P4ssword!', null, false, false, false, false, false, null, null, null, null, null, null, $composer_0, 196992, 0, 262104);
-      $composer_0.startReplaceGroup_5hh8aj_k$(1876285086);
-      // Inline function 'androidx.compose.runtime.cache' call
-      var invalid = $composer_0.changedInstance_s1wkiy_k$($coroutineScope);
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it_1 = $composer_0.rememberedValue_4dg93v_k$();
-      var tmp_3;
-      if (invalid || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-        var value_1 = LoginPage$lambda$lambda$lambda_1($coroutineScope, $username$delegate, $password$delegate);
-        $composer_0.updateRememberedValue_l1wh71_k$(value_1);
-        tmp_3 = value_1;
-      } else {
-        tmp_3 = it_1;
-      }
-      var tmp_4 = tmp_3;
-      var tmp2_group = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
-      $composer_0.endReplaceGroup_ek144q_k$();
-      Button(tmp2_group, null, null, null, false, null, null, null, null, ComposableSingletons$LoginKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 805306368, 510);
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_104($boundThis) {
+  function ComposableLambda$invoke$ref_106($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function LoginPage$lambda_4($coroutineScope, $username$delegate, $password$delegate) {
-    return function ($this$Column, $composer, $changed) {
+  function LoginForm$lambda_5($$changed) {
+    return function ($composer, $force) {
+      LoginForm($composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
+  function showPopover$lambda$lambda($state) {
+    return function () {
+      $state.set_value_v1vabv_k$(false);
+      return Unit_getInstance();
+    };
+  }
+  function showPopover$lambda($message, $state, $showDelayMs, $hideDelayMs) {
+    return function ($this$AdvancedPopover, $composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-        // Inline function 'kotlin.run' call
-        // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>' call
-        var dispatchReceiver = rememberComposableLambda(2065010755, true, LoginPage$lambda$lambda($coroutineScope, $username$delegate, $password$delegate), $composer_0, 54);
-        // Inline function 'androidx.compose.runtime.remember' call
-        var $composer_1 = $composer_0;
-        sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+        Text($message, $composer_0, 0);
+        var tmp_0 = window;
+        $composer_0.startReplaceGroup_5hh8aj_k$(237501736);
         // Inline function 'androidx.compose.runtime.cache' call
-        var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+        var invalid = $composer_0.changed_ga7h3f_k$($state);
         // Inline function 'kotlin.let' call
         // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-        var it = $composer_1.rememberedValue_4dg93v_k$();
-        var tmp_0;
+        var it = $composer_0.rememberedValue_4dg93v_k$();
+        var tmp_1;
         if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-          // Inline function 'epicer.frontend.pages.LoginPage.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_104(dispatchReceiver);
-          $composer_1.updateRememberedValue_l1wh71_k$(value);
-          tmp_0 = value;
+          // Inline function 'epicer.frontend.pages.showPopover.<anonymous>.<anonymous>.<anonymous>' call
+          var value = showPopover$lambda$lambda($state);
+          $composer_0.updateRememberedValue_l1wh71_k$(value);
+          tmp_1 = value;
         } else {
-          tmp_0 = it;
+          tmp_1 = it;
         }
-        var tmp_1 = tmp_0;
-        var tmp0 = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
-        sourceInformationMarkerEnd($composer_1);
-        Form(null, null, tmp0, $composer_0, 384, 3);
+        var tmp_2 = tmp_1;
+        var tmp0_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
+        $composer_0.endReplaceGroup_ek144q_k$();
+        tmp_0.setTimeout(tmp0_group, $showDelayMs._v + $hideDelayMs._v | 0);
         tmp = Unit_getInstance();
       } else {
         $composer_0.skipToGroupEnd_lh3zi2_k$();
@@ -5051,14 +5411,14 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_105($boundThis) {
+  function ComposableLambda$invoke$ref_107($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function LoginPage$lambda_5($$changed) {
+  function showPopover$lambda_0($state, $message, $showDelayMs, $hideDelayMs, $$changed, $$default) {
     return function ($composer, $force) {
-      LoginPage($composer, updateChangedFlags($$changed | 1));
+      showPopover($state, $message, $showDelayMs._v, $hideDelayMs._v, $composer, updateChangedFlags($$changed | 1), $$default);
       return Unit_getInstance();
     };
   }
@@ -5066,7 +5426,7 @@
     var $composer_0 = $composer;
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-495191110);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
-      $composer_0.startReplaceGroup_5hh8aj_k$(992033293);
+      $composer_0.startReplaceGroup_5hh8aj_k$(992018861);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_0 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -5085,7 +5445,7 @@
       var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
       $composer_0.endReplaceGroup_ek144q_k$();
       var username$delegate = tmp0_group;
-      $composer_0.startReplaceGroup_5hh8aj_k$(992034829);
+      $composer_0.startReplaceGroup_5hh8aj_k$(992020397);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_1 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -5104,7 +5464,7 @@
       var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
       $composer_0.endReplaceGroup_ek144q_k$();
       var name$delegate = tmp1_group;
-      $composer_0.startReplaceGroup_5hh8aj_k$(992036397);
+      $composer_0.startReplaceGroup_5hh8aj_k$(992021965);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_2 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -5123,7 +5483,7 @@
       var tmp2_group = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
       $composer_0.endReplaceGroup_ek144q_k$();
       var roles$delegate = tmp2_group;
-      $composer_0.startReplaceGroup_5hh8aj_k$(992038093);
+      $composer_0.startReplaceGroup_5hh8aj_k$(992023661);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_3 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -5188,7 +5548,7 @@
       var tmp_9;
       if (invalid || it_4 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>' call
-        var value_4 = ComposableLambda$invoke$ref_109(dispatchReceiver);
+        var value_4 = ComposableLambda$invoke$ref_111(dispatchReceiver);
         $composer_2.updateRememberedValue_l1wh71_k$(value_4);
         tmp_9 = value_4;
       } else {
@@ -5233,7 +5593,7 @@
       var tmp_1;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.pages.ProfileDetail.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_110(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_112(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_1 = value_0;
       } else {
@@ -5253,7 +5613,7 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(ProfileDetail$lambda_0(label, value, $changed));
     }
   }
-  function ComposableLambda$invoke$ref_106($boundThis) {
+  function ComposableLambda$invoke$ref_108($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5271,7 +5631,7 @@
   function ComposableSingletons$MeKt() {
     ComposableSingletons$MeKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_106(composableLambdaInstance(-240436586, false, ComposableSingletons$MeKt$lambda_1$lambda_2swfsc));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_108(composableLambdaInstance(-240436586, false, ComposableSingletons$MeKt$lambda_1$lambda_2swfsc));
   }
   protoOf(ComposableSingletons$MeKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
@@ -5431,7 +5791,7 @@
         ProfileDetail('Roles', ProfilePage$lambda_3($roles$delegate), $composer_0, 6);
         ProfileDetail('Created At', ProfilePage$lambda_5($createdAt$delegate), $composer_0, 6);
         Spacer($composer_0, 0);
-        $composer_0.startReplaceGroup_5hh8aj_k$(-2048861621);
+        $composer_0.startReplaceGroup_5hh8aj_k$(-2048876053);
         // Inline function 'androidx.compose.runtime.cache' call
         var invalid = $composer_0.changedInstance_s1wkiy_k$($coroutineScope);
         // Inline function 'kotlin.let' call
@@ -5463,7 +5823,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_107($boundThis) {
+  function ComposableLambda$invoke$ref_109($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5489,7 +5849,7 @@
         var tmp_2;
         if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_107(dispatchReceiver);
+          var value = ComposableLambda$invoke$ref_109(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value);
           tmp_2 = value;
         } else {
@@ -5507,7 +5867,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_108($boundThis) {
+  function ComposableLambda$invoke$ref_110($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5532,7 +5892,7 @@
         var tmp_1;
         if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_108(dispatchReceiver);
+          var value = ComposableLambda$invoke$ref_110(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value);
           tmp_1 = value;
         } else {
@@ -5550,7 +5910,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_109($boundThis) {
+  function ComposableLambda$invoke$ref_111($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5590,7 +5950,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_110($boundThis) {
+  function ComposableLambda$invoke$ref_112($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };

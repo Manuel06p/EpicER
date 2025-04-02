@@ -16239,6 +16239,37 @@
   function setTimeout_0(window_0, handler, timeout) {
     return window_0.setTimeout(handler, timeout);
   }
+  function await_0(_this__u8e3s4, $completion) {
+    // Inline function 'kotlinx.coroutines.suspendCancellableCoroutine.<anonymous>' call
+    var cancellable = new CancellableContinuationImpl(intercepted($completion), 1);
+    cancellable.initCancellability_shqc60_k$();
+    // Inline function 'kotlinx.coroutines.await.<anonymous>' call
+    var tmp = await$lambda(cancellable);
+    _this__u8e3s4.then(tmp, await$lambda_0(cancellable));
+    return cancellable.getResult_fck196_k$();
+  }
+  function await$lambda($cont) {
+    return function (it) {
+      // Inline function 'kotlin.coroutines.resume' call
+      var this_0 = $cont;
+      // Inline function 'kotlin.Companion.success' call
+      Companion_getInstance();
+      var tmp$ret$0 = _Result___init__impl__xyqfz8(it);
+      this_0.resumeWith_dtxwbr_k$(tmp$ret$0);
+      return Unit_getInstance();
+    };
+  }
+  function await$lambda_0($cont) {
+    return function (it) {
+      // Inline function 'kotlin.coroutines.resumeWithException' call
+      var this_0 = $cont;
+      // Inline function 'kotlin.Companion.failure' call
+      Companion_getInstance();
+      var tmp$ret$0 = _Result___init__impl__xyqfz8(createFailure(it));
+      this_0.resumeWith_dtxwbr_k$(tmp$ret$0);
+      return Unit_getInstance();
+    };
+  }
   function asCoroutineDispatcher(_this__u8e3s4) {
     // Inline function 'kotlin.js.asDynamic' call
     var tmp0_elvis_lhs = _this__u8e3s4.coroutineDispatcher;
@@ -17018,28 +17049,29 @@
   _.$_$.a = CoroutineStart_UNDISPATCHED_getInstance;
   _.$_$.b = collect;
   _.$_$.c = first;
-  _.$_$.d = cancelAndJoin;
-  _.$_$.e = coroutineScope;
-  _.$_$.f = withContext;
-  _.$_$.g = Key_getInstance_2;
-  _.$_$.h = MutableStateFlow_0;
-  _.$_$.i = asStateFlow;
-  _.$_$.j = launchIn;
-  _.$_$.k = merge;
-  _.$_$.l = onEach;
-  _.$_$.m = takeWhile;
-  _.$_$.n = CancellableContinuationImpl;
-  _.$_$.o = CompletableDeferred_0;
-  _.$_$.p = CoroutineDispatcher;
-  _.$_$.q = CoroutineScope_0;
-  _.$_$.r = CoroutineScope;
-  _.$_$.s = Job_0;
-  _.$_$.t = SupervisorJob;
-  _.$_$.u = asCoroutineDispatcher;
-  _.$_$.v = cancel_1;
-  _.$_$.w = cancel_2;
-  _.$_$.x = get_job;
-  _.$_$.y = launch;
+  _.$_$.d = await_0;
+  _.$_$.e = cancelAndJoin;
+  _.$_$.f = coroutineScope;
+  _.$_$.g = withContext;
+  _.$_$.h = Key_getInstance_2;
+  _.$_$.i = MutableStateFlow_0;
+  _.$_$.j = asStateFlow;
+  _.$_$.k = launchIn;
+  _.$_$.l = merge;
+  _.$_$.m = onEach;
+  _.$_$.n = takeWhile;
+  _.$_$.o = CancellableContinuationImpl;
+  _.$_$.p = CompletableDeferred_0;
+  _.$_$.q = CoroutineDispatcher;
+  _.$_$.r = CoroutineScope_0;
+  _.$_$.s = CoroutineScope;
+  _.$_$.t = Job_0;
+  _.$_$.u = SupervisorJob;
+  _.$_$.v = asCoroutineDispatcher;
+  _.$_$.w = cancel_1;
+  _.$_$.x = cancel_2;
+  _.$_$.y = get_job;
+  _.$_$.z = launch;
   //endregion
   return _;
 }));

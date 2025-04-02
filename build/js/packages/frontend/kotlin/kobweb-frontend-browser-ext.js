@@ -46,10 +46,10 @@
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.x;
   var EventListener = kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.$_$.e;
   var initMetadataForObject = kotlin_kotlin.$_$.lc;
-  var CompletableDeferred = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.o;
-  var asCoroutineDispatcher = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.u;
-  var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.q;
-  var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.y;
+  var CompletableDeferred = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.p;
+  var asCoroutineDispatcher = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.v;
+  var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.r;
+  var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.z;
   var Exception = kotlin_kotlin.$_$.jh;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.i1;
   var decodeToString = kotlin_kotlin.$_$.te;
@@ -64,7 +64,7 @@
   var captureStack = kotlin_kotlin.$_$.qb;
   var intercepted = kotlin_kotlin.$_$.sa;
   var SafeContinuation_init_$Create$ = kotlin_kotlin.$_$.f1;
-  var CoroutineScope_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.r;
+  var CoroutineScope_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.s;
   var isInterface = kotlin_kotlin.$_$.vc;
   var Companion_getInstance = kotlin_kotlin.$_$.a5;
   var _Result___init__impl__xyqfz8 = kotlin_kotlin.$_$.y2;

@@ -44,7 +44,7 @@
   var lazy = kotlin_kotlin.$_$.ri;
   var THROW_CCE = kotlin_kotlin.$_$.sh;
   var Annotation = kotlin_kotlin.$_$.ah;
-  var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.r6;
+  var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.q6;
   var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.p5;
   var padding = kotlin_org_jetbrains_compose_html_html_core.$_$.m5;
   var margin = kotlin_org_jetbrains_compose_html_html_core.$_$.f5;
@@ -119,7 +119,7 @@
   var contains_0 = kotlin_kotlin.$_$.se;
   var toMutableMap = kotlin_kotlin.$_$.ja;
   var Div = kotlin_org_jetbrains_compose_html_html_core.$_$.c6;
-  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.t6;
+  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.s6;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(ApiFetcher, 'ApiFetcher', VOID, VOID, VOID, [4, 5]);

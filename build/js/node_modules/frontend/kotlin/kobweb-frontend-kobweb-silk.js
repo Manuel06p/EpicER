@@ -36,7 +36,7 @@
   var Unit_getInstance = kotlin_kotlin.$_$.f5;
   var KobwebComposeStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z3;
   var SilkFoundationStyles = kotlin_com_varabyte_kobweb_silk_foundation.$_$.x1;
-  var SilkWidgetVariables = kotlin_com_varabyte_kobweb_silk_widgets.$_$.n;
+  var SilkWidgetVariables = kotlin_com_varabyte_kobweb_silk_widgets.$_$.o;
   var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
   //endregion
   //region block: pre-declaration

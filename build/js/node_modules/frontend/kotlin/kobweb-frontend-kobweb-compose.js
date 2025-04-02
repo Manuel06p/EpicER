@@ -22,7 +22,7 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.r6;
+  var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.q6;
   var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
   var Unit_getInstance = kotlin_kotlin.$_$.f5;
   var protoOf = kotlin_kotlin.$_$.kd;
@@ -4408,9 +4408,10 @@
   _.$_$.g4 = CenterVertically_getInstance;
   _.$_$.h4 = Center_getInstance_0;
   _.$_$.i4 = End_getInstance_0;
-  _.$_$.j4 = TopCenter_getInstance;
-  _.$_$.k4 = TopStart_getInstance;
-  _.$_$.l4 = Companion_getInstance_9;
+  _.$_$.j4 = Start_getInstance_0;
+  _.$_$.k4 = TopCenter_getInstance;
+  _.$_$.l4 = TopStart_getInstance;
+  _.$_$.m4 = Companion_getInstance_9;
   //endregion
   return _;
 }));
