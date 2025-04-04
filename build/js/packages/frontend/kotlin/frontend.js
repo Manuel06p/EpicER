@@ -1,8 +1,8 @@
 (function (factory) {
   if (typeof define === 'function' && define.amd)
-    define(['exports', './kotlin-kotlin-stdlib.js', './kobweb-frontend-kobweb-core.js', './kobweb-frontend-silk-foundation.js', './compose-multiplatform-core-compose-runtime-runtime.js', './html-internal-html-core-runtime.js', './kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js', './kobweb-frontend-silk-widgets.js', './kobweb-frontend-silk-widgets-kobweb.js', './kobweb-frontend-kobwebx-markdown.js', './html-html-core.js', './kobweb-frontend-compose-html-ext.js', './kobweb-frontend-kobweb-silk.js', './kotlinx-coroutines-core.js', './kobweb-frontend-kobweb-compose.js', './kobweb-frontend-browser-ext.js', './kotlinx-serialization-kotlinx-serialization-json.js', './epicer-common.js', './kotlinx-serialization-kotlinx-serialization-core.js'], factory);
+    define(['exports', './kotlin-kotlin-stdlib.js', './kobweb-frontend-kobweb-core.js', './kobweb-frontend-silk-foundation.js', './compose-multiplatform-core-compose-runtime-runtime.js', './html-internal-html-core-runtime.js', './kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js', './kobweb-frontend-silk-widgets.js', './kobweb-frontend-silk-widgets-kobweb.js', './kobweb-frontend-kobwebx-markdown.js', './html-html-core.js', './kobweb-frontend-compose-html-ext.js', './kobweb-frontend-kobweb-silk.js', './kotlinx-coroutines-core.js', './kobweb-frontend-kobweb-compose.js', './kotlinx-serialization-kotlinx-serialization-json.js', './epicer-common.js', './kotlinx-serialization-kotlinx-serialization-core.js', './kobweb-frontend-silk-icons-fa.js', './kobweb-frontend-browser-ext.js'], factory);
   else if (typeof exports === 'object')
-    factory(module.exports, require('./kotlin-kotlin-stdlib.js'), require('./kobweb-frontend-kobweb-core.js'), require('./kobweb-frontend-silk-foundation.js'), require('./compose-multiplatform-core-compose-runtime-runtime.js'), require('./html-internal-html-core-runtime.js'), require('./kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js'), require('./kobweb-frontend-silk-widgets.js'), require('./kobweb-frontend-silk-widgets-kobweb.js'), require('./kobweb-frontend-kobwebx-markdown.js'), require('./html-html-core.js'), require('./kobweb-frontend-compose-html-ext.js'), require('./kobweb-frontend-kobweb-silk.js'), require('./kotlinx-coroutines-core.js'), require('./kobweb-frontend-kobweb-compose.js'), require('./kobweb-frontend-browser-ext.js'), require('./kotlinx-serialization-kotlinx-serialization-json.js'), require('./epicer-common.js'), require('./kotlinx-serialization-kotlinx-serialization-core.js'));
+    factory(module.exports, require('./kotlin-kotlin-stdlib.js'), require('./kobweb-frontend-kobweb-core.js'), require('./kobweb-frontend-silk-foundation.js'), require('./compose-multiplatform-core-compose-runtime-runtime.js'), require('./html-internal-html-core-runtime.js'), require('./kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js'), require('./kobweb-frontend-silk-widgets.js'), require('./kobweb-frontend-silk-widgets-kobweb.js'), require('./kobweb-frontend-kobwebx-markdown.js'), require('./html-html-core.js'), require('./kobweb-frontend-compose-html-ext.js'), require('./kobweb-frontend-kobweb-silk.js'), require('./kotlinx-coroutines-core.js'), require('./kobweb-frontend-kobweb-compose.js'), require('./kotlinx-serialization-kotlinx-serialization-json.js'), require('./epicer-common.js'), require('./kotlinx-serialization-kotlinx-serialization-core.js'), require('./kobweb-frontend-silk-icons-fa.js'), require('./kobweb-frontend-browser-ext.js'));
   else {
     if (typeof globalThis['kotlin-kotlin-stdlib'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kotlin-kotlin-stdlib' was not found. Please, check whether 'kotlin-kotlin-stdlib' is loaded prior to 'epicer.frontend:site'.");
@@ -46,9 +46,6 @@
     if (typeof globalThis['kobweb-frontend-kobweb-compose'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kobweb-frontend-kobweb-compose' was not found. Please, check whether 'kobweb-frontend-kobweb-compose' is loaded prior to 'epicer.frontend:site'.");
     }
-    if (typeof globalThis['kobweb-frontend-browser-ext'] === 'undefined') {
-      throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kobweb-frontend-browser-ext' was not found. Please, check whether 'kobweb-frontend-browser-ext' is loaded prior to 'epicer.frontend:site'.");
-    }
     if (typeof globalThis['kotlinx-serialization-kotlinx-serialization-json'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kotlinx-serialization-kotlinx-serialization-json' was not found. Please, check whether 'kotlinx-serialization-kotlinx-serialization-json' is loaded prior to 'epicer.frontend:site'.");
     }
@@ -58,9 +55,15 @@
     if (typeof globalThis['kotlinx-serialization-kotlinx-serialization-core'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kotlinx-serialization-kotlinx-serialization-core' was not found. Please, check whether 'kotlinx-serialization-kotlinx-serialization-core' is loaded prior to 'epicer.frontend:site'.");
     }
-    globalThis['epicer.frontend:site'] = factory(typeof globalThis['epicer.frontend:site'] === 'undefined' ? {} : globalThis['epicer.frontend:site'], globalThis['kotlin-kotlin-stdlib'], globalThis['kobweb-frontend-kobweb-core'], globalThis['kobweb-frontend-silk-foundation'], globalThis['compose-multiplatform-core-compose-runtime-runtime'], globalThis['html-internal-html-core-runtime'], kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat, globalThis['kobweb-frontend-silk-widgets'], globalThis['kobweb-frontend-silk-widgets-kobweb'], globalThis['kobweb-frontend-kobwebx-markdown'], globalThis['html-html-core'], globalThis['kobweb-frontend-compose-html-ext'], globalThis['kobweb-frontend-kobweb-silk'], globalThis['kotlinx-coroutines-core'], globalThis['kobweb-frontend-kobweb-compose'], globalThis['kobweb-frontend-browser-ext'], globalThis['kotlinx-serialization-kotlinx-serialization-json'], globalThis['epicer-common'], globalThis['kotlinx-serialization-kotlinx-serialization-core']);
+    if (typeof globalThis['kobweb-frontend-silk-icons-fa'] === 'undefined') {
+      throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kobweb-frontend-silk-icons-fa' was not found. Please, check whether 'kobweb-frontend-silk-icons-fa' is loaded prior to 'epicer.frontend:site'.");
+    }
+    if (typeof globalThis['kobweb-frontend-browser-ext'] === 'undefined') {
+      throw new Error("Error loading module 'epicer.frontend:site'. Its dependency 'kobweb-frontend-browser-ext' was not found. Please, check whether 'kobweb-frontend-browser-ext' is loaded prior to 'epicer.frontend:site'.");
+    }
+    globalThis['epicer.frontend:site'] = factory(typeof globalThis['epicer.frontend:site'] === 'undefined' ? {} : globalThis['epicer.frontend:site'], globalThis['kotlin-kotlin-stdlib'], globalThis['kobweb-frontend-kobweb-core'], globalThis['kobweb-frontend-silk-foundation'], globalThis['compose-multiplatform-core-compose-runtime-runtime'], globalThis['html-internal-html-core-runtime'], kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat, globalThis['kobweb-frontend-silk-widgets'], globalThis['kobweb-frontend-silk-widgets-kobweb'], globalThis['kobweb-frontend-kobwebx-markdown'], globalThis['html-html-core'], globalThis['kobweb-frontend-compose-html-ext'], globalThis['kobweb-frontend-kobweb-silk'], globalThis['kotlinx-coroutines-core'], globalThis['kobweb-frontend-kobweb-compose'], globalThis['kotlinx-serialization-kotlinx-serialization-json'], globalThis['epicer-common'], globalThis['kotlinx-serialization-kotlinx-serialization-core'], globalThis['kobweb-frontend-silk-icons-fa'], globalThis['kobweb-frontend-browser-ext']);
   }
-}(function (_, kotlin_kotlin, kotlin_com_varabyte_kobweb_kobweb_core, kotlin_com_varabyte_kobweb_silk_foundation, kotlin_org_jetbrains_compose_runtime_runtime, kotlin_org_jetbrains_compose_html_internal_html_core_runtime, kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat, kotlin_com_varabyte_kobweb_silk_widgets, kotlin_com_varabyte_kobweb_silk_widgets_kobweb, kotlin_com_varabyte_kobwebx_kobwebx_markdown, kotlin_org_jetbrains_compose_html_html_core, kotlin_com_varabyte_kobweb_compose_html_ext, kotlin_com_varabyte_kobweb_kobweb_silk, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core, kotlin_com_varabyte_kobweb_kobweb_compose, kotlin_com_varabyte_kobweb_browser_ext, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json, kotlin_epicer_common, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core) {
+}(function (_, kotlin_kotlin, kotlin_com_varabyte_kobweb_kobweb_core, kotlin_com_varabyte_kobweb_silk_foundation, kotlin_org_jetbrains_compose_runtime_runtime, kotlin_org_jetbrains_compose_html_internal_html_core_runtime, kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat, kotlin_com_varabyte_kobweb_silk_widgets, kotlin_com_varabyte_kobweb_silk_widgets_kobweb, kotlin_com_varabyte_kobwebx_kobwebx_markdown, kotlin_org_jetbrains_compose_html_html_core, kotlin_com_varabyte_kobweb_compose_html_ext, kotlin_com_varabyte_kobweb_kobweb_silk, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core, kotlin_com_varabyte_kobweb_kobweb_compose, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json, kotlin_epicer_common, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_com_varabyte_kobwebx_silk_icons_fa, kotlin_com_varabyte_kobweb_browser_ext) {
   'use strict';
   //region block: imports
   var ensureNotNull = kotlin_kotlin.$_$.mi;
@@ -130,80 +133,80 @@
   var com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.g1;
   var toModifier = kotlin_com_varabyte_kobweb_silk_foundation.$_$.l1;
   var get_vh = kotlin_org_jetbrains_compose_html_html_core.$_$.v5;
-  var minHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k2;
+  var minHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l2;
   var Companion_getInstance_2 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.y3;
-  var scrollBehavior = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c3;
+  var scrollBehavior = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d3;
   var Surface = kotlin_com_varabyte_kobweb_silk_widgets.$_$.j;
   var SuspendFunction1 = kotlin_kotlin.$_$.hb;
   var registerStyleBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.e;
   var get_HorizontalDividerStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.h;
   var VOID = kotlin_kotlin.$_$.g;
   var modifyStyleBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.v1;
-  var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m4;
+  var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o4;
   var get_cssRem = kotlin_org_jetbrains_compose_html_html_core.$_$.e4;
-  var fontSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q1;
+  var fontSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r1;
   var Companion_getInstance_4 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.z3;
-  var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h3;
-  var lineHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a2;
+  var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i3;
+  var lineHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b2;
   var toPalette = kotlin_com_varabyte_kobweb_silk_foundation.$_$.p1;
   var get_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.u;
-  var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i1;
+  var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j1;
   var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.p5;
-  var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x2;
+  var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y2;
   var get_percent = kotlin_org_jetbrains_compose_html_html_core.$_$.n5;
-  var borderRadius = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y;
+  var borderRadius = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z;
   var ButtonVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.x;
-  var Colors_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d4;
-  var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e3;
+  var Colors_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f4;
+  var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f3;
   var MediaFeature = kotlin_org_jetbrains_compose_html_html_core.$_$.b3;
-  var fontFamily = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p1;
-  var fillMaxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n1;
+  var fontFamily = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q1;
+  var fillMaxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o1;
   var Companion_getInstance_5 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.d2;
   var base = kotlin_com_varabyte_kobweb_silk_foundation.$_$.e1;
   var get_ButtonStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.a;
   var addVariantBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.b1;
-  var Companion_getInstance_6 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c4;
+  var Companion_getInstance_6 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e4;
   var initMetadataForClass = kotlin_kotlin.$_$.gc;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.si;
   var set_background = kotlin_com_varabyte_kobweb_silk_widgets.$_$.t;
   var set_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.v;
-  var fillMaxSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m1;
-  var fontWeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s1;
-  var margin = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i2;
-  var margin_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h2;
+  var fillMaxSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n1;
+  var fontWeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t1;
+  var margin = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j2;
+  var margin_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i2;
   var Companion_getInstance_7 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r3;
-  var fontWeight_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r1;
+  var fontWeight_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s1;
   var Companion_getInstance_8 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.x3;
-  var overflowWrap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s2;
+  var overflowWrap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t2;
   var Companion_getInstance_9 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.w3;
   var Companion_getInstance_10 = kotlin_org_jetbrains_compose_html_html_core.$_$.n;
-  var display = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k1;
-  var backgroundColor = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t;
+  var display = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l1;
+  var backgroundColor = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u;
   var Companion_getInstance_11 = kotlin_org_jetbrains_compose_html_html_core.$_$.q;
-  var border = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a1;
-  var overflow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t2;
+  var border = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b1;
+  var overflow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u2;
   var toAttrs = kotlin_com_varabyte_kobweb_silk_foundation.$_$.i1;
   var Div = kotlin_org_jetbrains_compose_html_html_core.$_$.c6;
   var CssStyle = kotlin_com_varabyte_kobweb_silk_foundation.$_$.y;
-  var maxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j2;
-  var toAttrs_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x3;
+  var maxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k2;
+  var toAttrs_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y3;
   var Svg = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u2;
-  var gridTemplateRows = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x1;
-  var Center_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h4;
-  var com_varabyte_kobweb_compose_ui_Alignment_Center$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r3;
+  var gridTemplateRows = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y1;
+  var Center_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j4;
+  var com_varabyte_kobweb_compose_ui_Alignment_Center$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s3;
   var Box = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c;
   var Breakpoint_MD_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.y1;
-  var padding_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y2;
+  var padding_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z2;
   var Stop = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.t2;
   var RadialGradient = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.s2;
   var _SvgId___init__impl__pmt7ru = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.j3;
   var Defs = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.o2;
   var Path = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r2;
   var get_fr = kotlin_org_jetbrains_compose_html_html_core.$_$.m4;
-  var gridRow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v1;
-  var TopStart_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l4;
-  var CenterHorizontally_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f4;
-  var com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s3;
+  var gridRow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w1;
+  var TopStart_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n4;
+  var CenterHorizontally_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h4;
+  var com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t3;
   var Column = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d;
   var SpanText = kotlin_com_varabyte_kobweb_silk_foundation.$_$.a;
   var get_ColorVar = kotlin_com_varabyte_kobweb_silk_widgets.$_$.s;
@@ -211,64 +214,73 @@
   var com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.h1;
   var Link_0 = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.b;
   var Companion_getInstance_12 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.e4;
-  var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p3;
+  var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q3;
   var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.p6;
-  var padding_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z2;
-  var get_UndecoratedLinkVariant = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.e;
-  var Companion_getInstance_13 = kotlin_com_varabyte_kobweb_browser_ext.$_$.j;
-  var PopupPlacement_BottomRight_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.w;
-  var Tooltip = kotlin_com_varabyte_kobweb_silk_widgets.$_$.m;
-  var THROW_IAE = kotlin_kotlin.$_$.th;
-  var enumEntries = kotlin_kotlin.$_$.kb;
-  var Enum = kotlin_kotlin.$_$.hh;
-  var CenterVertically_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g4;
-  var com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t3;
+  var padding_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a3;
+  var background = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v;
+  var CenterVertically_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i4;
+  var com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u3;
   var Row = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e;
-  var OverlayVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.y;
-  var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o2;
-  var Overlay = kotlin_com_varabyte_kobweb_silk_widgets.$_$.l;
-  var HamburgerIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.e;
-  var CloseIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.d;
-  var height = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y1;
-  var Image = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.a;
-  var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
-  var KMutableProperty0 = kotlin_kotlin.$_$.ae;
-  var THROW_ISE = kotlin_kotlin.$_$.uh;
-  var getLocalDelegateReference = kotlin_kotlin.$_$.bc;
-  var Spacer = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f;
-  var gap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t1;
-  var displayIfAtLeast = kotlin_com_varabyte_kobweb_silk_foundation.$_$.j;
-  var displayUntil = kotlin_com_varabyte_kobweb_silk_foundation.$_$.k;
-  var translateX = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m3;
-  var SunIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.g;
-  var MoonIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.f;
-  var padding_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w2;
-  var End_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i4;
-  var com_varabyte_kobweb_compose_ui_Alignment_End$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u3;
-  var fillMaxHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l1;
-  var clamp = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.c;
-  var width = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q3;
-  var CenterEnd_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e4;
-  var get_ms = kotlin_org_jetbrains_compose_html_html_core.$_$.k5;
-  var Companion_getInstance_14 = kotlin_org_jetbrains_compose_html_html_core.$_$.j;
-  var Companion_getInstance_15 = kotlin_org_jetbrains_compose_html_html_core.$_$.h;
-  var Companion_getInstance_16 = kotlin_org_jetbrains_compose_html_html_core.$_$.i;
-  var com_varabyte_kobweb_silk_style_animation_Keyframes$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.g;
-  var toAnimation = kotlin_com_varabyte_kobweb_silk_foundation.$_$.h;
-  var animation = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n;
-  var borderRadius_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x;
-  var onAnimationEnd = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n2;
-  var Keyframes = kotlin_com_varabyte_kobweb_silk_foundation.$_$.f;
-  var get_em = kotlin_org_jetbrains_compose_html_html_core.$_$.g4;
-  var Button = kotlin_com_varabyte_kobweb_silk_widgets.$_$.b;
-  var get_http = kotlin_com_varabyte_kobweb_browser_ext.$_$.b;
   var Default_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
-  var LoginUserDTO = kotlin_epicer_common.$_$.b;
+  var BaseUserDTO = kotlin_epicer_common.$_$.a;
   var getKClass = kotlin_kotlin.$_$.e;
   var arrayOf = kotlin_kotlin.$_$.hi;
   var createKType = kotlin_kotlin.$_$.b;
   var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j2;
   var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.a2;
+  var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
+  var margin_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f2;
+  var End_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c4;
+  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_End$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h;
+  var KMutableProperty0 = kotlin_kotlin.$_$.ae;
+  var THROW_ISE = kotlin_kotlin.$_$.uh;
+  var getLocalDelegateReference = kotlin_kotlin.$_$.bc;
+  var IconStyle_FILLED_getInstance = kotlin_com_varabyte_kobwebx_silk_icons_fa.$_$.b;
+  var FaCircleUser = kotlin_com_varabyte_kobwebx_silk_icons_fa.$_$.a;
+  var width = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r3;
+  var height = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z1;
+  var Companion_getInstance_13 = kotlin_org_jetbrains_compose_html_html_core.$_$.r;
+  var position = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b3;
+  var translateX = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n3;
+  var Overlay = kotlin_com_varabyte_kobweb_silk_widgets.$_$.l;
+  var Button = kotlin_com_varabyte_kobweb_silk_widgets.$_$.b;
+  var get_UndecoratedLinkVariant = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.e;
+  var Companion_getInstance_14 = kotlin_com_varabyte_kobweb_browser_ext.$_$.j;
+  var PopupPlacement_BottomRight_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.w;
+  var Tooltip = kotlin_com_varabyte_kobweb_silk_widgets.$_$.m;
+  var THROW_IAE = kotlin_kotlin.$_$.th;
+  var enumEntries = kotlin_kotlin.$_$.kb;
+  var Enum = kotlin_kotlin.$_$.hh;
+  var OverlayVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.y;
+  var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p2;
+  var HamburgerIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.e;
+  var CloseIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.d;
+  var Image = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.a;
+  var Spacer = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f;
+  var gap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u1;
+  var displayIfAtLeast = kotlin_com_varabyte_kobweb_silk_foundation.$_$.j;
+  var displayUntil = kotlin_com_varabyte_kobweb_silk_foundation.$_$.k;
+  var SunIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.g;
+  var MoonIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.f;
+  var padding_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x2;
+  var End_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k4;
+  var com_varabyte_kobweb_compose_ui_Alignment_End$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v3;
+  var fillMaxHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m1;
+  var clamp = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.c;
+  var CenterEnd_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g4;
+  var get_ms = kotlin_org_jetbrains_compose_html_html_core.$_$.k5;
+  var Companion_getInstance_15 = kotlin_org_jetbrains_compose_html_html_core.$_$.j;
+  var Companion_getInstance_16 = kotlin_org_jetbrains_compose_html_html_core.$_$.h;
+  var Companion_getInstance_17 = kotlin_org_jetbrains_compose_html_html_core.$_$.i;
+  var com_varabyte_kobweb_silk_style_animation_Keyframes$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.g;
+  var toAnimation = kotlin_com_varabyte_kobweb_silk_foundation.$_$.h;
+  var animation = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o;
+  var borderRadius_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y;
+  var onAnimationEnd = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o2;
+  var Keyframes = kotlin_com_varabyte_kobweb_silk_foundation.$_$.f;
+  var get_em = kotlin_org_jetbrains_compose_html_html_core.$_$.g4;
+  var get_http = kotlin_com_varabyte_kobweb_browser_ext.$_$.b;
+  var LoginUserDTO = kotlin_epicer_common.$_$.b;
   var encodeToByteArray = kotlin_kotlin.$_$.we;
   var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.qa;
   var decodeToString = kotlin_kotlin.$_$.te;
@@ -279,33 +291,31 @@
   var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
   var println = kotlin_kotlin.$_$.lb;
   var mapOf_0 = kotlin_kotlin.$_$.w8;
-  var BaseUserDTO = kotlin_epicer_common.$_$.a;
-  var gridItem = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u1;
+  var gridItem = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v1;
   var rememberPageContext = kotlin_com_varabyte_kobweb_kobweb_core.$_$.d;
-  var margin_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g2;
-  var boxShadow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e1;
+  var margin_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h2;
+  var boxShadow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f1;
   var KProperty0 = kotlin_kotlin.$_$.ce;
   var getPropertyCallableRef = kotlin_kotlin.$_$.dc;
   var StyleVariable = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.h;
-  var Center_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a4;
+  var Center_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b4;
   var com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g;
   var createCompositionCoroutineScope = kotlin_org_jetbrains_compose_runtime_runtime.$_$.s;
   var CompositionScopedCoroutineScopeCanceller = kotlin_org_jetbrains_compose_runtime_runtime.$_$.f;
-  var size = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f3;
+  var size = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g3;
   var AdvancedPopover = kotlin_com_varabyte_kobweb_silk_widgets.$_$.k;
   var EmptyCoroutineContext_getInstance = kotlin_kotlin.$_$.n4;
   var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.z;
-  var Start_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j4;
+  var Start_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l4;
   var Text_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.e;
   var Input = kotlin_com_varabyte_kobweb_silk_widgets.$_$.c;
   var Password_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.d;
-  var margin_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f2;
-  var SpaceBetween_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b4;
-  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_SpaceBetween$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h;
+  var margin_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g2;
+  var SpaceBetween_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d4;
+  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_SpaceBetween$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i;
   var joinToString = kotlin_kotlin.$_$.j8;
   var Color_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.m;
   var Color = kotlin_org_jetbrains_compose_html_html_core.$_$.f3;
-  var background = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(ComposableSingletons$MainKt, 'ComposableSingletons$MainKt');
@@ -316,12 +326,13 @@
   initMetadataForObject(SitePalettes, 'SitePalettes');
   initMetadataForLambda(PageLayout$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForObject(ComposableSingletons$FooterKt, 'ComposableSingletons$FooterKt');
-  initMetadataForClass(SideMenuState, 'SideMenuState', VOID, Enum);
   initMetadataForObject(ComposableSingletons$NavHeaderKt, 'ComposableSingletons$NavHeaderKt');
+  initMetadataForClass(SideMenuState, 'SideMenuState', VOID, Enum);
+  initMetadataForObject(ComposableSingletons$NavHeaderBAKKt, 'ComposableSingletons$NavHeaderBAKKt');
   initMetadataForCoroutine($loginCOROUTINE$0, CoroutineImpl);
   initMetadataForCoroutine($isLoggedCOROUTINE$1, CoroutineImpl);
   initMetadataForCoroutine($getMyBaseUserDTOCOROUTINE$2, CoroutineImpl);
-  initMetadataForObject(ComposableSingletons$IndexKt, 'ComposableSingletons$IndexKt');
+  initMetadataForLambda(HomePage$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForObject(ComposableSingletons$LoginKt, 'ComposableSingletons$LoginKt');
   initMetadataForLambda(LoginForm$lambda$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForObject(ComposableSingletons$MeKt, 'ComposableSingletons$MeKt');
@@ -3341,20 +3352,367 @@
       FooterStyle = base(tmp, VOID, FooterStyle$lambda);
     }
   }
+  function NavHeader($composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(882291110);
+    if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
+      var tmp = background(padding_1(fillMaxWidth(Companion_getInstance_3()), get_px(20)), toSitePalette(Companion_getInstance_1().get_current_2iudd5_k$($composer_0, 6)).get_nearBackground_c1s3l_k$(), []);
+      var tmp_0 = CenterVertically_getInstance();
+      Row(tmp, null, tmp_0, null, ComposableSingletons$NavHeaderKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter() << 6, 10);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(NavHeader$lambda($changed));
+    }
+  }
+  function HeaderUser($composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(973249578);
+    if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
+      var storedUserJson = localStorage.getItem('myBaseUserDTO');
+      var tmp;
+      if (storedUserJson == null) {
+        tmp = null;
+      } else {
+        // Inline function 'kotlin.let' call
+        // Inline function 'epicer.frontend.components.sections.HeaderUser.<anonymous>' call
+        // Inline function 'kotlinx.serialization.json.Json.decodeFromString' call
+        var this_0 = Default_getInstance();
+        // Inline function 'kotlinx.serialization.serializer' call
+        var this_1 = this_0.get_serializersModule_piitvg_k$();
+        // Inline function 'kotlinx.serialization.internal.cast' call
+        var this_2 = serializer(this_1, createKType(getKClass(BaseUserDTO), arrayOf([]), false));
+        var tmp$ret$1 = isInterface(this_2, KSerializer) ? this_2 : THROW_CCE();
+        tmp = this_0.decodeFromString_jwu9sq_k$(tmp$ret$1, storedUserJson);
+      }
+      var baseUserDTO = tmp;
+      $composer_0.startReplaceGroup_5hh8aj_k$(-63651454);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_3 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = this_3.rememberedValue_4dg93v_k$();
+      var tmp_0;
+      if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.components.sections.HeaderUser.<anonymous>' call
+        var value = mutableStateOf(false);
+        this_3.updateRememberedValue_l1wh71_k$(value);
+        tmp_0 = value;
+      } else {
+        tmp_0 = it;
+      }
+      var tmp_1 = tmp_0;
+      var tmp0_group = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var userOverlay$delegate = tmp0_group;
+      $composer_0.startReplaceGroup_5hh8aj_k$(-63649391);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_4 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_0 = this_4.rememberedValue_4dg93v_k$();
+      var tmp_2;
+      if (false || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.components.sections.HeaderUser.<anonymous>' call
+        var value_0 = mutableStateOf(null);
+        this_4.updateRememberedValue_l1wh71_k$(value_0);
+        tmp_2 = value_0;
+      } else {
+        tmp_2 = it_0;
+      }
+      var tmp_3 = tmp_2;
+      var tmp1_group = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      var layoutCoordinates$delegate = tmp1_group;
+      var tmp_4 = margin_1(Companion_getInstance_3(), VOID, get_px(60));
+      var tmp_5 = End_getInstance();
+      var tmp_6 = CenterVertically_getInstance();
+      // Inline function 'kotlin.run' call
+      // Inline function 'epicer.frontend.components.sections.HeaderUser.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(-148787385, true, HeaderUser$lambda_3(baseUserDTO, userOverlay$delegate), $composer_0, 54);
+      // Inline function 'androidx.compose.runtime.remember' call
+      var $composer_1 = $composer_0;
+      sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_1 = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp_7;
+      if (invalid || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'epicer.frontend.components.sections.HeaderUser.<anonymous>.<anonymous>' call
+        var value_1 = ComposableLambda$invoke$ref_94(dispatchReceiver);
+        $composer_1.updateRememberedValue_l1wh71_k$(value_1);
+        tmp_7 = value_1;
+      } else {
+        tmp_7 = it_1;
+      }
+      var tmp_8 = tmp_7;
+      var tmp0 = (tmp_8 == null ? true : !(tmp_8 == null)) ? tmp_8 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_1);
+      Row(tmp_4, tmp_5, tmp_6, null, tmp0, $composer_0, 24576 | com_varabyte_kobweb_compose_foundation_layout_Arrangement_End$stableprop_getter() << 3 | com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter() << 6, 8);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp2_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp2_safe_receiver == null)
+      null;
+    else {
+      tmp2_safe_receiver.updateScope_t8jcf_k$(HeaderUser$lambda_4($changed));
+    }
+  }
+  function HeaderNavigator($composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-1590071072);
+    if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
+      var tmp = fillMaxWidth(Companion_getInstance_3());
+      var tmp_0 = End_getInstance();
+      Row(tmp, tmp_0, null, null, ComposableSingletons$NavHeaderKt_getInstance().lambda_3_r8sbbn_1, $composer_0, 24576 | com_varabyte_kobweb_compose_foundation_layout_Arrangement_End$stableprop_getter() << 3, 12);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(HeaderNavigator$lambda($changed));
+    }
+  }
+  function ComposableLambda$invoke$ref_90($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ComposableSingletons$NavHeaderKt$lambda_1$lambda_vv16hm($this$Row, $composer, $changed) {
+    var $composer_0 = $composer;
+    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+      HeaderNavigator($composer_0, 0);
+      HeaderUser($composer_0, 0);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    return Unit_getInstance();
+  }
+  function ComposableLambda$invoke$ref_91($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ComposableSingletons$NavHeaderKt$lambda_2$lambda_31epff($this$Overlay, $composer, $changed) {
+    var $composer_0 = $composer;
+    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+      SpanText('CIAO', null, null, null, $composer_0, 6, 14);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    return Unit_getInstance();
+  }
+  function ComposableLambda$invoke$ref_92($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function ComposableSingletons$NavHeaderKt$lambda_3$lambda_ps7rms($this$Row, $composer, $changed) {
+    var $composer_0 = $composer;
+    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+      Text('', $composer_0, 6);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    return Unit_getInstance();
+  }
+  function ComposableSingletons$NavHeaderKt() {
+    ComposableSingletons$NavHeaderKt_instance = this;
+    var tmp = this;
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_90(composableLambdaInstance(569001705, false, ComposableSingletons$NavHeaderKt$lambda_1$lambda_vv16hm));
+    var tmp_0 = this;
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_91(composableLambdaInstance(-1604660644, false, ComposableSingletons$NavHeaderKt$lambda_2$lambda_31epff));
+    var tmp_1 = this;
+    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_92(composableLambdaInstance(-586496029, false, ComposableSingletons$NavHeaderKt$lambda_3$lambda_ps7rms));
+  }
+  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_1_t9x1k6_k$ = function () {
+    return this.lambda_1_r8sbbp_1;
+  };
+  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_2_ddebfp_k$ = function () {
+    return this.lambda_2_r8sbbo_1;
+  };
+  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_3_2j4eos_k$ = function () {
+    return this.lambda_3_r8sbbn_1;
+  };
+  var ComposableSingletons$NavHeaderKt_instance;
+  function ComposableSingletons$NavHeaderKt_getInstance() {
+    if (ComposableSingletons$NavHeaderKt_instance == null)
+      new ComposableSingletons$NavHeaderKt();
+    return ComposableSingletons$NavHeaderKt_instance;
+  }
+  function HeaderUser$lambda($userOverlay$delegate) {
+    // Inline function 'androidx.compose.runtime.getValue' call
+    getLocalDelegateReference('userOverlay', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    return $userOverlay$delegate.get_value_j01efc_k$();
+  }
+  function HeaderUser$lambda_0($userOverlay$delegate, _set____db54di) {
+    getLocalDelegateReference('userOverlay', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    $userOverlay$delegate.set_value_v1vabv_k$(_set____db54di);
+    return Unit_getInstance();
+  }
+  function HeaderUser$lambda_1($layoutCoordinates$delegate) {
+    // Inline function 'androidx.compose.runtime.getValue' call
+    getLocalDelegateReference('layoutCoordinates', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    return $layoutCoordinates$delegate.get_value_j01efc_k$();
+  }
+  function HeaderUser$lambda_2($layoutCoordinates$delegate, _set____db54di) {
+    getLocalDelegateReference('layoutCoordinates', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    $layoutCoordinates$delegate.set_value_v1vabv_k$(_set____db54di);
+    return Unit_getInstance();
+  }
+  function NavHeader$lambda($$changed) {
+    return function ($composer, $force) {
+      NavHeader($composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
+  function HeaderUser$lambda$lambda($userOverlay$delegate) {
+    return function (it) {
+      HeaderUser$lambda_0($userOverlay$delegate, !HeaderUser$lambda($userOverlay$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function HeaderUser$lambda$lambda_0($userOverlay$delegate) {
+    return function ($this$Button, $composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+        var tmp0_style = IconStyle_FILLED_getInstance();
+        var tmp1_modifier = padding(fontSize(Companion_getInstance_3(), get_px(50)), get_px(8));
+        FaCircleUser(tmp1_modifier, tmp0_style, null, $composer_0, 48, 4);
+        if (HeaderUser$lambda($userOverlay$delegate)) {
+          var tmp_0 = height(width(Companion_getInstance_3(), get_px(100)), get_px(100));
+          // Inline function 'org.jetbrains.compose.web.css.Companion.Relative' call
+          Companion_getInstance_13();
+          // Inline function 'org.jetbrains.compose.web.css.Position' call
+          // Inline function 'kotlin.js.unsafeCast' call
+          // Inline function 'kotlin.js.asDynamic' call
+          var tmp$ret$3 = 'relative';
+          var tmp_1 = translateX(position(tmp_0, tmp$ret$3), get_px(20));
+          Overlay(tmp_1, null, null, null, ComposableSingletons$NavHeaderKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 24576, 14);
+        }
+        tmp = Unit_getInstance();
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_93($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function HeaderUser$lambda_3($baseUserDTO, $userOverlay$delegate) {
+    return function ($this$Row, $composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
+        var tmp0_safe_receiver = $baseUserDTO;
+        var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.get_name_woqyms_k$();
+        var tmp_0 = tmp1_elvis_lhs == null ? 'UsernameNotFound' : tmp1_elvis_lhs;
+        var tmp_1 = fontSize(Companion_getInstance_3(), get_px(30));
+        SpanText(tmp_0, tmp_1, null, null, $composer_0, 0, 12);
+        var tmp2_variant = get_CircleButtonVariant().then_9h6e8h_k$(get_UncoloredButtonVariant());
+        var tmp3_modifier = margin_1(fillMaxSize(Companion_getInstance_3()), VOID, VOID, VOID, get_px(20));
+        $composer_0.startReplaceGroup_5hh8aj_k$(662567097);
+        // Inline function 'androidx.compose.runtime.cache' call
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it = $composer_0.rememberedValue_4dg93v_k$();
+        var tmp_2;
+        if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.components.sections.HeaderUser.<anonymous>.<anonymous>.<anonymous>' call
+          var value = HeaderUser$lambda$lambda($userOverlay$delegate);
+          $composer_0.updateRememberedValue_l1wh71_k$(value);
+          tmp_2 = value;
+        } else {
+          tmp_2 = it;
+        }
+        var tmp_3 = tmp_2;
+        var tmp0_group = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
+        $composer_0.endReplaceGroup_ek144q_k$();
+        // Inline function 'kotlin.run' call
+        // Inline function 'epicer.frontend.components.sections.HeaderUser.<anonymous>.<anonymous>.<anonymous>' call
+        var dispatchReceiver = rememberComposableLambda(1414832471, true, HeaderUser$lambda$lambda_0($userOverlay$delegate), $composer_0, 54);
+        // Inline function 'androidx.compose.runtime.remember' call
+        var $composer_1 = $composer_0;
+        sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+        // Inline function 'androidx.compose.runtime.cache' call
+        var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+        // Inline function 'kotlin.let' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it_0 = $composer_1.rememberedValue_4dg93v_k$();
+        var tmp_4;
+        if (invalid || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'epicer.frontend.components.sections.HeaderUser.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+          var value_0 = ComposableLambda$invoke$ref_93(dispatchReceiver);
+          $composer_1.updateRememberedValue_l1wh71_k$(value_0);
+          tmp_4 = value_0;
+        } else {
+          tmp_4 = it_0;
+        }
+        var tmp_5 = tmp_4;
+        var tmp0 = (tmp_5 == null ? true : !(tmp_5 == null)) ? tmp_5 : THROW_CCE();
+        sourceInformationMarkerEnd($composer_1);
+        Button(tmp0_group, tmp3_modifier, tmp2_variant, null, false, null, null, null, null, tmp0, $composer_0, 805306374 | com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter() << 6, 504);
+        tmp = Unit_getInstance();
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_94($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function HeaderUser$lambda_4($$changed) {
+    return function ($composer, $force) {
+      HeaderUser($composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
+  function HeaderNavigator$lambda($$changed) {
+    return function ($composer, $force) {
+      HeaderNavigator($composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
   function get_NavHeaderStyle() {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     return NavHeaderStyle;
   }
   var NavHeaderStyle;
   function get_SideMenuSlideInAnim() {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     return SideMenuSlideInAnim;
   }
   var SideMenuSlideInAnim;
   function NavLink(path, text, $composer, $changed) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-302450727);
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1064400297);
     var $dirty = $changed;
     if (($changed & 6) === 0)
       $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(path) ? 4 : 2);
@@ -3374,9 +3732,9 @@
     }
   }
   function MenuItems($composer, $changed) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(251936183);
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-1639384309);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
       NavLink('/', 'Home', $composer_0, 54);
       NavLink('/about', 'About', $composer_0, 54);
@@ -3391,9 +3749,9 @@
     }
   }
   function ColorModeButton($composer, $changed) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(735165710);
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1816045652);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
       var colorMode$delegate = Companion_getInstance_1().get_currentState_dmzs7c_k$($composer_0, 6);
       $composer_0.startReplaceGroup_5hh8aj_k$(1990066514);
@@ -3417,7 +3775,7 @@
       $composer_0.endReplaceGroup_ek144q_k$();
       // Inline function 'kotlin.run' call
       // Inline function 'epicer.frontend.components.sections.ColorModeButton.<anonymous>' call
-      var dispatchReceiver = rememberComposableLambda(-1666194905, true, ColorModeButton$lambda_2(colorMode$delegate), $composer_0, 54);
+      var dispatchReceiver = rememberComposableLambda(-142753637, true, ColorModeButton$lambda_2(colorMode$delegate), $composer_0, 54);
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
@@ -3429,7 +3787,7 @@
       var tmp_1;
       if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.sections.ColorModeButton.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_97(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_102(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_1 = value_0;
       } else {
@@ -3439,7 +3797,7 @@
       var tmp0_0 = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
       sourceInformationMarkerEnd($composer_1);
       IconButton(tmp0_group, tmp0_0, $composer_0, 48);
-      var tmp_3 = Companion_getInstance_13().get_PreviousSibling_b9lu4i_k$();
+      var tmp_3 = Companion_getInstance_14().get_PreviousSibling_b9lu4i_k$();
       var tmp_4 = PopupPlacement_BottomRight_getInstance();
       Tooltip(tmp_3, 'Toggle color mode', null, null, tmp_4, false, null, null, 0, 0, null, null, $composer_0, 24624, 0, 4076);
     } else {
@@ -3453,14 +3811,14 @@
     }
   }
   function HamburgerButton(onClick, $composer, $changed) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-652272497);
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-885289677);
     var $dirty = $changed;
     if (($changed & 6) === 0)
       $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(onClick) ? 4 : 2);
     if (!(($dirty & 3) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
-      IconButton(onClick, ComposableSingletons$NavHeaderKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 48 | 14 & $dirty);
+      IconButton(onClick, ComposableSingletons$NavHeaderBAKKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 48 | 14 & $dirty);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
@@ -3472,14 +3830,14 @@
     }
   }
   function CloseButton(onClick, $composer, $changed) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1936236992);
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1558064738);
     var $dirty = $changed;
     if (($changed & 6) === 0)
       $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(onClick) ? 4 : 2);
     if (!(($dirty & 3) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
-      IconButton(onClick, ComposableSingletons$NavHeaderKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 48 | 14 & $dirty);
+      IconButton(onClick, ComposableSingletons$NavHeaderBAKKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 48 | 14 & $dirty);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
@@ -3546,14 +3904,14 @@
     }
     return tmp;
   };
-  function NavHeader($composer, $changed) {
-    _init_properties_NavHeader_kt__vdotjy();
+  function NavHeaderBAK($composer, $changed) {
+    _init_properties_NavHeaderBAK_kt__kggl8();
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(882291110);
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-2043204524);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
       var tmp = toModifier(get_NavHeaderStyle(), $composer_0, com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter());
       var tmp_0 = CenterVertically_getInstance();
-      Row(tmp, null, tmp_0, null, ComposableSingletons$NavHeaderKt_getInstance().lambda_6_r8sbbk_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter() << 6, 10);
+      Row(tmp, null, tmp_0, null, ComposableSingletons$NavHeaderBAKKt_getInstance().lambda_6_r8sbbk_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter() << 6, 10);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
@@ -3561,13 +3919,13 @@
     if (tmp0_safe_receiver == null)
       null;
     else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(NavHeader$lambda($changed));
+      tmp0_safe_receiver.updateScope_t8jcf_k$(NavHeaderBAK$lambda($changed));
     }
   }
   function SideMenu(menuState, close, onAnimationEnd, $composer, $changed) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-442318563);
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(379975141);
     var $dirty = $changed;
     if (($changed & 6) === 0)
       $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(menuState) ? 4 : 2);
@@ -3577,7 +3935,7 @@
       $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(onAnimationEnd) ? 256 : 128);
     if (!(($dirty & 147) === 146) || !$composer_0.get_skipping_3owdve_k$()) {
       var tmp = setVariable(Companion_getInstance_3(), OverlayVars_getInstance().get_BackgroundColor_qhx06s_k$(), Colors_getInstance().get_Transparent_cxh4g9_k$());
-      $composer_0.startReplaceGroup_5hh8aj_k$(115578985);
+      $composer_0.startReplaceGroup_5hh8aj_k$(115579081);
       var tmp0 = $composer_0;
       // Inline function 'androidx.compose.runtime.cache' call
       var invalid = ($dirty & 112) === 32;
@@ -3599,7 +3957,7 @@
       var tmp_2 = onClick(tmp, tmp0_group);
       // Inline function 'kotlin.run' call
       // Inline function 'epicer.frontend.components.sections.SideMenu.<anonymous>' call
-      var dispatchReceiver = rememberComposableLambda(-315450553, true, SideMenu$lambda_0(menuState, onAnimationEnd, close), $composer_0, 54);
+      var dispatchReceiver = rememberComposableLambda(333640571, true, SideMenu$lambda_0(menuState, onAnimationEnd, close), $composer_0, 54);
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
@@ -3611,7 +3969,7 @@
       var tmp_3;
       if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.sections.SideMenu.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_99(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_104(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_3 = value_0;
       } else {
@@ -3631,12 +3989,12 @@
       tmp1_safe_receiver.updateScope_t8jcf_k$(SideMenu$lambda_1(menuState, close, onAnimationEnd, $changed));
     }
   }
-  function ComposableLambda$invoke$ref_90($boundThis) {
+  function ComposableLambda$invoke$ref_95($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_1$lambda_vv16hm($composer, $changed) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_1$lambda_qlul0w($composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 3) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
       HamburgerIcon(null, $composer_0, 0, 1);
@@ -3645,12 +4003,12 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_91($boundThis) {
+  function ComposableLambda$invoke$ref_96($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_2$lambda_31epff($composer, $changed) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_2$lambda_flmzw1($composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 3) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
       CloseIcon(null, $composer_0, 0, 1);
@@ -3659,12 +4017,12 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_92($boundThis) {
+  function ComposableLambda$invoke$ref_97($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_3$lambda_ps7rms($composer, $changed) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_3$lambda_d7zh66($composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 3) === 2) || !$composer_0.get_skipping_3owdve_k$()) {
       var tmp = height(Companion_getInstance_3(), get_cssRem(2));
@@ -3680,12 +4038,12 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_93($boundThis) {
+  function ComposableLambda$invoke$ref_98($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_4$lambda_gf9ta5($this$Row, $composer, $changed) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_4$lambda_szi3qr($this$Row, $composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
       MenuItems($composer_0, 0);
@@ -3695,22 +4053,22 @@
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_94($boundThis) {
+  function ComposableLambda$invoke$ref_99($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_5$lambda_cecns2($this$Row, $composer, $changed) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_5$lambda_5vmok($this$Row, $composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      $composer_0.startReplaceGroup_5hh8aj_k$(590580027);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-1952982559);
       // Inline function 'androidx.compose.runtime.cache' call
       // Inline function 'kotlin.let' call
       // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
       var it = $composer_0.rememberedValue_4dg93v_k$();
       var tmp;
       if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.components.sections.ComposableSingletons$NavHeaderKt.lambda-5.<anonymous>.<anonymous>' call
+        // Inline function 'epicer.frontend.components.sections.ComposableSingletons$NavHeaderBAKKt.lambda-5.<anonymous>.<anonymous>' call
         var value = mutableStateOf(SideMenuState_CLOSED_getInstance());
         $composer_0.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
@@ -3722,15 +4080,15 @@
       $composer_0.endReplaceGroup_ek144q_k$();
       var menuState$delegate = tmp0_group;
       ColorModeButton($composer_0, 0);
-      $composer_0.startReplaceGroup_5hh8aj_k$(590583852);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-1952978734);
       // Inline function 'androidx.compose.runtime.cache' call
       // Inline function 'kotlin.let' call
       // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
       var it_0 = $composer_0.rememberedValue_4dg93v_k$();
       var tmp_1;
       if (false || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.components.sections.ComposableSingletons$NavHeaderKt.lambda-5.<anonymous>.<anonymous>' call
-        var value_0 = ComposableSingletons$NavHeaderKt$lambda_5$lambda$lambda_tjf03t(menuState$delegate);
+        // Inline function 'epicer.frontend.components.sections.ComposableSingletons$NavHeaderBAKKt.lambda-5.<anonymous>.<anonymous>' call
+        var value_0 = ComposableSingletons$NavHeaderBAKKt$lambda_5$lambda$lambda_cywwzj(menuState$delegate);
         $composer_0.updateRememberedValue_l1wh71_k$(value_0);
         tmp_1 = value_0;
       } else {
@@ -3742,15 +4100,15 @@
       HamburgerButton(tmp1_group, $composer_0, 6);
       if (!invoke$lambda(menuState$delegate).equals(SideMenuState_CLOSED_getInstance())) {
         var tmp_3 = invoke$lambda(menuState$delegate);
-        $composer_0.startReplaceGroup_5hh8aj_k$(590589451);
+        $composer_0.startReplaceGroup_5hh8aj_k$(-1952973135);
         // Inline function 'androidx.compose.runtime.cache' call
         // Inline function 'kotlin.let' call
         // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
         var it_1 = $composer_0.rememberedValue_4dg93v_k$();
         var tmp_4;
         if (false || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-          // Inline function 'epicer.frontend.components.sections.ComposableSingletons$NavHeaderKt.lambda-5.<anonymous>.<anonymous>' call
-          var value_1 = ComposableSingletons$NavHeaderKt$lambda_5$lambda$lambda_tjf03t_0(menuState$delegate);
+          // Inline function 'epicer.frontend.components.sections.ComposableSingletons$NavHeaderBAKKt.lambda-5.<anonymous>.<anonymous>' call
+          var value_1 = ComposableSingletons$NavHeaderBAKKt$lambda_5$lambda$lambda_cywwzj_0(menuState$delegate);
           $composer_0.updateRememberedValue_l1wh71_k$(value_1);
           tmp_4 = value_1;
         } else {
@@ -3759,15 +4117,15 @@
         var tmp_5 = tmp_4;
         var tmp2_group = (tmp_5 == null ? true : !(tmp_5 == null)) ? tmp_5 : THROW_CCE();
         $composer_0.endReplaceGroup_ek144q_k$();
-        $composer_0.startReplaceGroup_5hh8aj_k$(590591798);
+        $composer_0.startReplaceGroup_5hh8aj_k$(-1952970788);
         // Inline function 'androidx.compose.runtime.cache' call
         // Inline function 'kotlin.let' call
         // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
         var it_2 = $composer_0.rememberedValue_4dg93v_k$();
         var tmp_6;
         if (false || it_2 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-          // Inline function 'epicer.frontend.components.sections.ComposableSingletons$NavHeaderKt.lambda-5.<anonymous>.<anonymous>' call
-          var value_2 = ComposableSingletons$NavHeaderKt$lambda_5$lambda$lambda_tjf03t_1(menuState$delegate);
+          // Inline function 'epicer.frontend.components.sections.ComposableSingletons$NavHeaderBAKKt.lambda-5.<anonymous>.<anonymous>' call
+          var value_2 = ComposableSingletons$NavHeaderBAKKt$lambda_5$lambda$lambda_cywwzj_1(menuState$delegate);
           $composer_0.updateRememberedValue_l1wh71_k$(value_2);
           tmp_6 = value_2;
         } else {
@@ -3797,19 +4155,19 @@
     $menuState$delegate.set_value_v1vabv_k$(_set____db54di);
     return Unit_getInstance();
   }
-  function ComposableSingletons$NavHeaderKt$lambda_5$lambda$lambda_tjf03t($menuState$delegate) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_5$lambda$lambda_cywwzj($menuState$delegate) {
     return function () {
       invoke$lambda_0($menuState$delegate, SideMenuState_OPEN_getInstance());
       return Unit_getInstance();
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_5$lambda$lambda_tjf03t_0($menuState$delegate) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_5$lambda$lambda_cywwzj_0($menuState$delegate) {
     return function () {
       invoke$lambda_0($menuState$delegate, invoke$lambda($menuState$delegate).close_1keygo_k$());
       return Unit_getInstance();
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_5$lambda$lambda_tjf03t_1($menuState$delegate) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_5$lambda$lambda_cywwzj_1($menuState$delegate) {
     return function () {
       var tmp;
       if (invoke$lambda($menuState$delegate).equals(SideMenuState_CLOSING_getInstance())) {
@@ -3819,33 +4177,33 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_95($boundThis) {
+  function ComposableLambda$invoke$ref_100($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_6$lambda_tt4x4v($this$Row, $composer, $changed) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_6$lambda_snqudn($this$Row, $composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      Link('https://kobweb.varabyte.com', null, null, null, null, null, null, ComposableSingletons$NavHeaderKt_getInstance().lambda_3_r8sbbn_1, $composer_0, 12582918, 126);
+      Link('https://kobweb.varabyte.com', null, null, null, null, null, null, ComposableSingletons$NavHeaderBAKKt_getInstance().lambda_3_r8sbbn_1, $composer_0, 12582918, 126);
       Spacer($composer_0, 0);
       var tmp = displayIfAtLeast(gap(Companion_getInstance_3(), get_cssRem(1.5)), Breakpoint_MD_getInstance());
       var tmp_0 = CenterVertically_getInstance();
-      Row(tmp, null, tmp_0, null, ComposableSingletons$NavHeaderKt_getInstance().lambda_4_r8sbbm_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter() << 6, 10);
+      Row(tmp, null, tmp_0, null, ComposableSingletons$NavHeaderBAKKt_getInstance().lambda_4_r8sbbm_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter() << 6, 10);
       var tmp_1 = displayUntil(gap(fontSize(Companion_getInstance_3(), get_cssRem(1.5)), get_cssRem(1)), Breakpoint_MD_getInstance());
       var tmp_2 = CenterVertically_getInstance();
-      Row(tmp_1, null, tmp_2, null, ComposableSingletons$NavHeaderKt_getInstance().lambda_5_r8sbbl_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter() << 6, 10);
+      Row(tmp_1, null, tmp_2, null, ComposableSingletons$NavHeaderBAKKt_getInstance().lambda_5_r8sbbl_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stableprop_getter() << 6, 10);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
     return Unit_getInstance();
   }
-  function ComposableLambda$invoke$ref_96($boundThis) {
+  function ComposableLambda$invoke$ref_101($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ComposableSingletons$NavHeaderKt$lambda_7$lambda_zig2o($this$Column, $composer, $changed) {
+  function ComposableSingletons$NavHeaderBAKKt$lambda_7$lambda_djqqja($this$Column, $composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
       MenuItems($composer_0, 0);
@@ -3854,52 +4212,52 @@
     }
     return Unit_getInstance();
   }
-  function ComposableSingletons$NavHeaderKt() {
-    ComposableSingletons$NavHeaderKt_instance = this;
+  function ComposableSingletons$NavHeaderBAKKt() {
+    ComposableSingletons$NavHeaderBAKKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_90(composableLambdaInstance(-91839594, false, ComposableSingletons$NavHeaderKt$lambda_1$lambda_vv16hm));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_95(composableLambdaInstance(433444044, false, ComposableSingletons$NavHeaderBAKKt$lambda_1$lambda_qlul0w));
     var tmp_0 = this;
-    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_91(composableLambdaInstance(725795911, false, ComposableSingletons$NavHeaderKt$lambda_2$lambda_31epff));
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_96(composableLambdaInstance(1853237883, false, ComposableSingletons$NavHeaderBAKKt$lambda_2$lambda_flmzw1));
     var tmp_1 = this;
-    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_92(composableLambdaInstance(1622588087, false, ComposableSingletons$NavHeaderKt$lambda_3$lambda_ps7rms));
+    tmp_1.lambda_3_r8sbbn_1 = ComposableLambda$invoke$ref_97(composableLambdaInstance(-1246337883, false, ComposableSingletons$NavHeaderBAKKt$lambda_3$lambda_d7zh66));
     var tmp_2 = this;
-    tmp_2.lambda_4_r8sbbm_1 = ComposableLambda$invoke$ref_93(composableLambdaInstance(-1925636372, false, ComposableSingletons$NavHeaderKt$lambda_4$lambda_gf9ta5));
+    tmp_2.lambda_4_r8sbbm_1 = ComposableLambda$invoke$ref_98(composableLambdaInstance(-611840742, false, ComposableSingletons$NavHeaderBAKKt$lambda_4$lambda_szi3qr));
     var tmp_3 = this;
-    tmp_3.lambda_5_r8sbbl_1 = ComposableLambda$invoke$ref_94(composableLambdaInstance(246730019, false, ComposableSingletons$NavHeaderKt$lambda_5$lambda_cecns2));
+    tmp_3.lambda_5_r8sbbl_1 = ComposableLambda$invoke$ref_99(composableLambdaInstance(-293603823, false, ComposableSingletons$NavHeaderBAKKt$lambda_5$lambda_5vmok));
     var tmp_4 = this;
-    tmp_4.lambda_6_r8sbbk_1 = ComposableLambda$invoke$ref_95(composableLambdaInstance(569001705, false, ComposableSingletons$NavHeaderKt$lambda_6$lambda_tt4x4v));
+    tmp_4.lambda_6_r8sbbk_1 = ComposableLambda$invoke$ref_100(composableLambdaInstance(-1039629481, false, ComposableSingletons$NavHeaderBAKKt$lambda_6$lambda_snqudn));
     var tmp_5 = this;
-    tmp_5.lambda_7_r8sbbj_1 = ComposableLambda$invoke$ref_96(composableLambdaInstance(1722910988, false, ComposableSingletons$NavHeaderKt$lambda_7$lambda_zig2o));
+    tmp_5.lambda_7_r8sbbj_1 = ComposableLambda$invoke$ref_101(composableLambdaInstance(-1380289642, false, ComposableSingletons$NavHeaderBAKKt$lambda_7$lambda_djqqja));
   }
-  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_1_t9x1k6_k$ = function () {
+  protoOf(ComposableSingletons$NavHeaderBAKKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
   };
-  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_2_ddebfp_k$ = function () {
+  protoOf(ComposableSingletons$NavHeaderBAKKt).get_lambda_2_ddebfp_k$ = function () {
     return this.lambda_2_r8sbbo_1;
   };
-  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_3_2j4eos_k$ = function () {
+  protoOf(ComposableSingletons$NavHeaderBAKKt).get_lambda_3_2j4eos_k$ = function () {
     return this.lambda_3_r8sbbn_1;
   };
-  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_4_ifn4t9_k$ = function () {
+  protoOf(ComposableSingletons$NavHeaderBAKKt).get_lambda_4_ifn4t9_k$ = function () {
     return this.lambda_4_r8sbbm_1;
   };
-  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_5_yc5uxq_k$ = function () {
+  protoOf(ComposableSingletons$NavHeaderBAKKt).get_lambda_5_yc5uxq_k$ = function () {
     return this.lambda_5_r8sbbl_1;
   };
-  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_6_ksfgwx_k$ = function () {
+  protoOf(ComposableSingletons$NavHeaderBAKKt).get_lambda_6_ksfgwx_k$ = function () {
     return this.lambda_6_r8sbbk_1;
   };
-  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_7_4vwqsg_k$ = function () {
+  protoOf(ComposableSingletons$NavHeaderBAKKt).get_lambda_7_4vwqsg_k$ = function () {
     return this.lambda_7_r8sbbj_1;
   };
-  var ComposableSingletons$NavHeaderKt_instance;
-  function ComposableSingletons$NavHeaderKt_getInstance() {
-    if (ComposableSingletons$NavHeaderKt_instance == null)
-      new ComposableSingletons$NavHeaderKt();
-    return ComposableSingletons$NavHeaderKt_instance;
+  var ComposableSingletons$NavHeaderBAKKt_instance;
+  function ComposableSingletons$NavHeaderBAKKt_getInstance() {
+    if (ComposableSingletons$NavHeaderBAKKt_instance == null)
+      new ComposableSingletons$NavHeaderBAKKt();
+    return ComposableSingletons$NavHeaderBAKKt_instance;
   }
   function ColorModeButton$lambda($colorMode$delegate) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     // Inline function 'androidx.compose.runtime.getValue' call
     getLocalDelegateReference('colorMode', KMutableProperty0, true, function () {
       return THROW_ISE();
@@ -3907,7 +4265,7 @@
     return $colorMode$delegate.get_value_j01efc_k$();
   }
   function ColorModeButton$lambda_0($colorMode$delegate, _set____db54di) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     getLocalDelegateReference('colorMode', KMutableProperty0, true, function () {
       return THROW_ISE();
     });
@@ -3915,21 +4273,21 @@
     return Unit_getInstance();
   }
   function NavHeaderStyle$lambda($this$base) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     return padding(fillMaxWidth(Companion_getInstance_3()), get_cssRem(1));
   }
   function SideMenuSlideInAnim$lambda($this$Keyframes) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     $this$Keyframes.from_1urvt_k$(SideMenuSlideInAnim$lambda$lambda);
     $this$Keyframes.to_txs6jq_k$(SideMenuSlideInAnim$lambda$lambda_0);
     return Unit_getInstance();
   }
   function SideMenuSlideInAnim$lambda$lambda() {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     return translateX(Companion_getInstance_3(), get_percent(100));
   }
   function SideMenuSlideInAnim$lambda$lambda_0() {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     return Companion_getInstance_3();
   }
   function NavLink$lambda($path, $text, $$changed) {
@@ -3975,7 +4333,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_97($boundThis) {
+  function ComposableLambda$invoke$ref_102($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
@@ -3998,9 +4356,9 @@
       return Unit_getInstance();
     };
   }
-  function NavHeader$lambda($$changed) {
+  function NavHeaderBAK$lambda($$changed) {
     return function ($composer, $force) {
-      NavHeader($composer, updateChangedFlags($$changed | 1));
+      NavHeaderBAK($composer, updateChangedFlags($$changed | 1));
       return Unit_getInstance();
     };
   }
@@ -4011,7 +4369,7 @@
     };
   }
   function SideMenu$lambda$lambda(it) {
-    _init_properties_NavHeader_kt__vdotjy();
+    _init_properties_NavHeaderBAK_kt__kggl8();
     it.stopPropagation_5qf8uy_k$();
     return Unit_getInstance();
   }
@@ -4032,7 +4390,7 @@
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-        $composer_0.startReplaceGroup_5hh8aj_k$(587447814);
+        $composer_0.startReplaceGroup_5hh8aj_k$(587450054);
         // Inline function 'androidx.compose.runtime.cache' call
         var invalid = $composer_0.changed_ga7h3f_k$($close);
         // Inline function 'kotlin.let' call
@@ -4052,8 +4410,8 @@
         $composer_0.endReplaceGroup_ek144q_k$();
         CloseButton(tmp0_group, $composer_0, 0);
         var tmp_2 = fontSize(gap(padding_2(Companion_getInstance_3(), VOID, get_cssRem(0.75)), get_cssRem(1.5)), get_cssRem(1.4));
-        var tmp_3 = End_getInstance();
-        Column(tmp_2, null, tmp_3, null, ComposableSingletons$NavHeaderKt_getInstance().lambda_7_r8sbbj_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_End$stableprop_getter() << 6, 10);
+        var tmp_3 = End_getInstance_0();
+        Column(tmp_2, null, tmp_3, null, ComposableSingletons$NavHeaderBAKKt_getInstance().lambda_7_r8sbbj_1, $composer_0, 24576 | com_varabyte_kobweb_compose_ui_Alignment_End$stableprop_getter() << 6, 10);
         tmp = Unit_getInstance();
       } else {
         $composer_0.skipToGroupEnd_lh3zi2_k$();
@@ -4062,7 +4420,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_98($boundThis) {
+  function ComposableLambda$invoke$ref_103($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -4078,21 +4436,21 @@
       }
       var tmp_0;
       if (!(($dirty & 19) === 18) || !$composer_0.get_skipping_3owdve_k$()) {
-        $composer_0.startMovableGroup_clfloq_k$(-1279871118, $menuState);
-        var tmp_1 = backgroundColor(gap(padding_0($this$Overlay.align_s6rwef_k$(width(fillMaxHeight(Companion_getInstance_3()), clamp(get_cssRem(8), get_percent(33), get_cssRem(10))), CenterEnd_getInstance()), get_cssRem(1), get_cssRem(1)), get_cssRem(1.5)), toSitePalette(Companion_getInstance_1().get_current_2iudd5_k$($composer_0, 6)).get_nearBackground_c1s3l_k$());
+        $composer_0.startMovableGroup_clfloq_k$(-1279870955, $menuState);
+        var tmp_1 = backgroundColor(gap(padding_0(padding_0($this$Overlay.align_s6rwef_k$(width(fillMaxHeight(Companion_getInstance_3()), clamp(get_cssRem(8), get_percent(33), get_cssRem(10))), CenterEnd_getInstance()), get_cssRem(1), get_cssRem(1)), get_cssRem(1), get_cssRem(1)), get_cssRem(1.5)), toSitePalette(Companion_getInstance_1().get_current_2iudd5_k$($composer_0, 6)).get_nearBackground_c1s3l_k$());
         var tmp_2 = get_SideMenuSlideInAnim();
         var tmp_3 = get_ms(200);
         var tmp_4;
         if ($menuState.equals(SideMenuState_OPEN_getInstance())) {
           // Inline function 'org.jetbrains.compose.web.css.Companion.EaseOut' call
-          Companion_getInstance_14();
+          Companion_getInstance_15();
           // Inline function 'org.jetbrains.compose.web.css.AnimationTimingFunction' call
           // Inline function 'kotlin.js.unsafeCast' call
           // Inline function 'kotlin.js.asDynamic' call
           tmp_4 = 'ease-out';
         } else {
           // Inline function 'org.jetbrains.compose.web.css.Companion.EaseIn' call
-          Companion_getInstance_14();
+          Companion_getInstance_15();
           // Inline function 'org.jetbrains.compose.web.css.AnimationTimingFunction' call
           // Inline function 'kotlin.js.unsafeCast' call
           // Inline function 'kotlin.js.asDynamic' call
@@ -4102,14 +4460,14 @@
         var tmp_6;
         if ($menuState.equals(SideMenuState_OPEN_getInstance())) {
           // Inline function 'org.jetbrains.compose.web.css.Companion.Normal' call
-          Companion_getInstance_15();
+          Companion_getInstance_16();
           // Inline function 'org.jetbrains.compose.web.css.AnimationDirection' call
           // Inline function 'kotlin.js.unsafeCast' call
           // Inline function 'kotlin.js.asDynamic' call
           tmp_6 = 'normal';
         } else {
           // Inline function 'org.jetbrains.compose.web.css.Companion.Reverse' call
-          Companion_getInstance_15();
+          Companion_getInstance_16();
           // Inline function 'org.jetbrains.compose.web.css.AnimationDirection' call
           // Inline function 'kotlin.js.unsafeCast' call
           // Inline function 'kotlin.js.asDynamic' call
@@ -4117,13 +4475,13 @@
         }
         var tmp_7 = tmp_6;
         // Inline function 'org.jetbrains.compose.web.css.Companion.Forwards' call
-        Companion_getInstance_16();
+        Companion_getInstance_17();
         // Inline function 'org.jetbrains.compose.web.css.AnimationFillMode' call
         // Inline function 'kotlin.js.unsafeCast' call
         // Inline function 'kotlin.js.asDynamic' call
         var tmp_8 = 'forwards';
         var tmp_9 = borderRadius_0(animation(tmp_1, [toAnimation(tmp_2, tmp_3, tmp_5, null, null, tmp_7, tmp_8, null, $composer_0, com_varabyte_kobweb_silk_style_animation_Keyframes$stableprop_getter(), 76)]), get_cssRem(2));
-        $composer_0.startReplaceGroup_5hh8aj_k$(-1279832075);
+        $composer_0.startReplaceGroup_5hh8aj_k$(-1279829835);
         // Inline function 'androidx.compose.runtime.cache' call
         // Inline function 'kotlin.let' call
         // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
@@ -4141,7 +4499,7 @@
         var tmp0_group = (tmp_11 == null ? true : !(tmp_11 == null)) ? tmp_11 : THROW_CCE();
         $composer_0.endReplaceGroup_ek144q_k$();
         var tmp_12 = onClick(tmp_9, tmp0_group);
-        $composer_0.startReplaceGroup_5hh8aj_k$(-1279830127);
+        $composer_0.startReplaceGroup_5hh8aj_k$(-1279827887);
         // Inline function 'androidx.compose.runtime.cache' call
         var invalid = $composer_0.changed_ga7h3f_k$($onAnimationEnd);
         // Inline function 'kotlin.let' call
@@ -4160,10 +4518,10 @@
         var tmp1_group = (tmp_14 == null ? true : !(tmp_14 == null)) ? tmp_14 : THROW_CCE();
         $composer_0.endReplaceGroup_ek144q_k$();
         var tmp_15 = onAnimationEnd(tmp_12, tmp1_group);
-        var tmp_16 = End_getInstance();
+        var tmp_16 = End_getInstance_0();
         // Inline function 'kotlin.run' call
         // Inline function 'epicer.frontend.components.sections.SideMenu.<anonymous>.<anonymous>.<anonymous>' call
-        var dispatchReceiver = rememberComposableLambda(1421240483, true, SideMenu$lambda$lambda_1($close), $composer_0, 54);
+        var dispatchReceiver = rememberComposableLambda(920246431, true, SideMenu$lambda$lambda_1($close), $composer_0, 54);
         // Inline function 'androidx.compose.runtime.remember' call
         var $composer_1 = $composer_0;
         sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
@@ -4175,7 +4533,7 @@
         var tmp_17;
         if (invalid_0 || it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.components.sections.SideMenu.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value_1 = ComposableLambda$invoke$ref_98(dispatchReceiver);
+          var value_1 = ComposableLambda$invoke$ref_103(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value_1);
           tmp_17 = value_1;
         } else {
@@ -4194,7 +4552,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_99($boundThis) {
+  function ComposableLambda$invoke$ref_104($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -4217,10 +4575,10 @@
     SideMenuState_initEntries();
     return SideMenuState_CLOSING_instance;
   }
-  var properties_initialized_NavHeader_kt_f5zrgg;
-  function _init_properties_NavHeader_kt__vdotjy() {
-    if (!properties_initialized_NavHeader_kt_f5zrgg) {
-      properties_initialized_NavHeader_kt_f5zrgg = true;
+  var properties_initialized_NavHeaderBAK_kt_5x95k2;
+  function _init_properties_NavHeaderBAK_kt__kggl8() {
+    if (!properties_initialized_NavHeaderBAK_kt_5x95k2) {
+      properties_initialized_NavHeaderBAK_kt_5x95k2 = true;
       var tmp = Companion_getInstance_5();
       NavHeaderStyle = base(tmp, VOID, NavHeaderStyle$lambda);
       SideMenuSlideInAnim = new Keyframes(SideMenuSlideInAnim$lambda);
@@ -4270,7 +4628,7 @@
       var tmp_3;
       if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.components.widgets.IconButton.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_100(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_105(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_3 = value_0;
       } else {
@@ -4309,7 +4667,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_100($boundThis) {
+  function ComposableLambda$invoke$ref_105($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -4621,86 +4979,36 @@
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(710540476);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
       var ctx = rememberPageContext($composer_0, 0);
-      // Inline function 'kotlin.run' call
-      // Inline function 'epicer.frontend.pages.HomePage.<anonymous>' call
-      var dispatchReceiver = rememberComposableLambda(729808613, true, HomePage$lambda(ctx), $composer_0, 54);
-      // Inline function 'androidx.compose.runtime.remember' call
-      var $composer_1 = $composer_0;
-      sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+      $composer_0.startReplaceGroup_5hh8aj_k$(752670448);
+      var tmp0 = $composer_0;
       // Inline function 'androidx.compose.runtime.cache' call
-      var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+      var invalid = $composer_0.changedInstance_s1wkiy_k$(ctx);
       // Inline function 'kotlin.let' call
       // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = $composer_1.rememberedValue_4dg93v_k$();
+      var it = tmp0.rememberedValue_4dg93v_k$();
       var tmp;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'epicer.frontend.pages.HomePage.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_103(dispatchReceiver);
-        $composer_1.updateRememberedValue_l1wh71_k$(value);
+        // Inline function 'epicer.frontend.pages.HomePage.<anonymous>' call
+        var value = HomePage$slambda_0(ctx, null);
+        tmp0.updateRememberedValue_l1wh71_k$(value);
         tmp = value;
       } else {
         tmp = it;
       }
       var tmp_0 = tmp;
-      var tmp0 = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
-      sourceInformationMarkerEnd($composer_1);
-      Column(null, null, null, null, tmp0, $composer_0, 24576, 15);
+      var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      LaunchedEffect(Unit_getInstance(), tmp0_group, $composer_0, 6);
+      NavHeader($composer_0, 0);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
+    var tmp1_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp1_safe_receiver == null)
       null;
     else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(HomePage$lambda_0($changed));
+      tmp1_safe_receiver.updateScope_t8jcf_k$(HomePage$lambda($changed));
     }
-  }
-  function ComposableLambda$invoke$ref_101($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function ComposableSingletons$IndexKt$lambda_1$lambda_5yb608($this$Button, $composer, $changed) {
-    var $composer_0 = $composer;
-    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      Text('Login!', $composer_0, 6);
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    return Unit_getInstance();
-  }
-  function ComposableLambda$invoke$ref_102($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function ComposableSingletons$IndexKt$lambda_2$lambda_yrxn2f($this$Button, $composer, $changed) {
-    var $composer_0 = $composer;
-    if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      Text('Me!', $composer_0, 6);
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    return Unit_getInstance();
-  }
-  function ComposableSingletons$IndexKt() {
-    ComposableSingletons$IndexKt_instance = this;
-    var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_101(composableLambdaInstance(-998454027, false, ComposableSingletons$IndexKt$lambda_1$lambda_5yb608));
-    var tmp_0 = this;
-    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_102(composableLambdaInstance(-611360610, false, ComposableSingletons$IndexKt$lambda_2$lambda_yrxn2f));
-  }
-  protoOf(ComposableSingletons$IndexKt).get_lambda_1_t9x1k6_k$ = function () {
-    return this.lambda_1_r8sbbp_1;
-  };
-  protoOf(ComposableSingletons$IndexKt).get_lambda_2_ddebfp_k$ = function () {
-    return this.lambda_2_r8sbbo_1;
-  };
-  var ComposableSingletons$IndexKt_instance;
-  function ComposableSingletons$IndexKt_getInstance() {
-    if (ComposableSingletons$IndexKt_instance == null)
-      new ComposableSingletons$IndexKt();
-    return ComposableSingletons$IndexKt_instance;
   }
   function HeroContainerStyle$lambda($this$CssStyle) {
     _init_properties_Index_kt__ifxcv4();
@@ -4716,7 +5024,7 @@
   function HeroContainerStyle$lambda$lambda_0() {
     _init_properties_Index_kt__ifxcv4();
     var tmp = Companion_getInstance_3();
-    return margin_1(tmp, HeroContainerStyle$lambda$lambda$lambda);
+    return margin_2(tmp, HeroContainerStyle$lambda$lambda$lambda);
   }
   function HeroContainerStyle$lambda$lambda$lambda($this$margin) {
     _init_properties_Index_kt__ifxcv4();
@@ -4737,75 +5045,78 @@
       return Unit_getInstance();
     };
   }
-  function HomePage$lambda$lambda($ctx) {
-    return function (it) {
-      $ctx.get_router_j3zccy_k$().navigateTo$default_onbd51_k$('/login');
-      return Unit_getInstance();
-    };
+  function HomePage$slambda($ctx, resultContinuation) {
+    this.$ctx_1 = $ctx;
+    CoroutineImpl.call(this, resultContinuation);
   }
-  function HomePage$lambda$lambda_0($ctx) {
-    return function (it) {
-      $ctx.get_router_j3zccy_k$().navigateTo$default_onbd51_k$('/me');
-      return Unit_getInstance();
-    };
-  }
-  function HomePage$lambda($ctx) {
-    return function ($this$Column, $composer, $changed) {
-      var $composer_0 = $composer;
-      var tmp;
-      if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-        $composer_0.startReplaceGroup_5hh8aj_k$(153757334);
-        // Inline function 'androidx.compose.runtime.cache' call
-        var invalid = $composer_0.changedInstance_s1wkiy_k$($ctx);
-        // Inline function 'kotlin.let' call
-        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-        var it = $composer_0.rememberedValue_4dg93v_k$();
-        var tmp_0;
-        if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-          // Inline function 'epicer.frontend.pages.HomePage.<anonymous>.<anonymous>.<anonymous>' call
-          var value = HomePage$lambda$lambda($ctx);
-          $composer_0.updateRememberedValue_l1wh71_k$(value);
-          tmp_0 = value;
-        } else {
-          tmp_0 = it;
+  protoOf(HomePage$slambda).invoke_d9fzmj_k$ = function ($this$LaunchedEffect, $completion) {
+    var tmp = this.create_rcuf4x_k$($this$LaunchedEffect, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(HomePage$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
+    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  };
+  protoOf(HomePage$slambda).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(3);
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = isLogged(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var ARGUMENT = suspendResult;
+            if (!ARGUMENT) {
+              this.$ctx_1.get_router_j3zccy_k$().navigateTo$default_onbd51_k$('/login');
+              this.set_state_rjd8d0_k$(2);
+              continue $sm;
+            } else {
+              this.set_state_rjd8d0_k$(2);
+              continue $sm;
+            }
+
+          case 2:
+            return Unit_getInstance();
+          case 3:
+            throw this.get_exception_x0n6w6_k$();
         }
-        var tmp_1 = tmp_0;
-        var tmp0_group = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
-        $composer_0.endReplaceGroup_ek144q_k$();
-        Button(tmp0_group, null, null, null, false, null, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 805306368, 510);
-        $composer_0.startReplaceGroup_5hh8aj_k$(153762195);
-        // Inline function 'androidx.compose.runtime.cache' call
-        var invalid_0 = $composer_0.changedInstance_s1wkiy_k$($ctx);
-        // Inline function 'kotlin.let' call
-        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-        var it_0 = $composer_0.rememberedValue_4dg93v_k$();
-        var tmp_2;
-        if (invalid_0 || it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-          // Inline function 'epicer.frontend.pages.HomePage.<anonymous>.<anonymous>.<anonymous>' call
-          var value_0 = HomePage$lambda$lambda_0($ctx);
-          $composer_0.updateRememberedValue_l1wh71_k$(value_0);
-          tmp_2 = value_0;
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 3) {
+          throw e;
         } else {
-          tmp_2 = it_0;
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
         }
-        var tmp_3 = tmp_2;
-        var tmp1_group = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
-        $composer_0.endReplaceGroup_ek144q_k$();
-        Button(tmp1_group, null, null, null, false, null, null, null, null, ComposableSingletons$IndexKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 805306368, 510);
-        tmp = Unit_getInstance();
-      } else {
-        $composer_0.skipToGroupEnd_lh3zi2_k$();
-        tmp = Unit_getInstance();
       }
-      return Unit_getInstance();
+     while (true);
+  };
+  protoOf(HomePage$slambda).create_rcuf4x_k$ = function ($this$LaunchedEffect, completion) {
+    var i = new HomePage$slambda(this.$ctx_1, completion);
+    i.$this$LaunchedEffect_1 = $this$LaunchedEffect;
+    return i;
+  };
+  protoOf(HomePage$slambda).create_wyq9v6_k$ = function (value, completion) {
+    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
+  };
+  function HomePage$slambda_0($ctx, resultContinuation) {
+    var i = new HomePage$slambda($ctx, resultContinuation);
+    var l = function ($this$LaunchedEffect, $completion) {
+      return i.invoke_d9fzmj_k$($this$LaunchedEffect, $completion);
     };
+    l.$arity = 1;
+    return l;
   }
-  function ComposableLambda$invoke$ref_103($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function HomePage$lambda_0($$changed) {
+  function HomePage$lambda($$changed) {
     return function ($composer, $force) {
       HomePage($composer, updateChangedFlags($$changed | 1));
       return Unit_getInstance();
@@ -4851,7 +5162,7 @@
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(456231336);
     if (!($changed === 0) || !$composer_0.get_skipping_3owdve_k$()) {
       var ctx = rememberPageContext($composer_0, 0);
-      $composer_0.startReplaceGroup_5hh8aj_k$(-311025246);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-311031550);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_0 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4870,7 +5181,7 @@
       var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
       $composer_0.endReplaceGroup_ek144q_k$();
       var username$delegate = tmp0_group;
-      $composer_0.startReplaceGroup_5hh8aj_k$(-311023582);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-311029886);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_1 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4889,7 +5200,7 @@
       var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
       $composer_0.endReplaceGroup_ek144q_k$();
       var password$delegate = tmp1_group;
-      $composer_0.startReplaceGroup_5hh8aj_k$(-311021691);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-311027995);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_2 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4908,7 +5219,7 @@
       var tmp2_group = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
       $composer_0.endReplaceGroup_ek144q_k$();
       var showSuccessLogin = {_v: tmp2_group};
-      $composer_0.startReplaceGroup_5hh8aj_k$(-311019739);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-311026043);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_3 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4977,7 +5288,7 @@
       var tmp_10;
       if (invalid || it_4 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.pages.LoginForm.<anonymous>.<anonymous>' call
-        var value_4 = ComposableLambda$invoke$ref_106(dispatchReceiver);
+        var value_4 = ComposableLambda$invoke$ref_108(dispatchReceiver);
         $composer_2.updateRememberedValue_l1wh71_k$(value_4);
         tmp_10 = value_4;
       } else {
@@ -5026,7 +5337,7 @@
       if (!(($default & 8) === 0)) {
         hideDelayMs_0._v = 3000;
       }
-      var tmp = Companion_getInstance_13().get_PreviousSibling_b9lu4i_k$();
+      var tmp = Companion_getInstance_14().get_PreviousSibling_b9lu4i_k$();
       var tmp_0 = showDelayMs_0._v;
       var tmp_1 = hideDelayMs_0._v;
       // Inline function 'kotlin.run' call
@@ -5043,7 +5354,7 @@
       var tmp_2;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.pages.showPopover.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_107(dispatchReceiver);
+        var value = ComposableLambda$invoke$ref_109(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value);
         tmp_2 = value;
       } else {
@@ -5063,7 +5374,7 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(showPopover$lambda_0(state, message, showDelayMs_0, hideDelayMs_0, $changed, $default));
     }
   }
-  function ComposableLambda$invoke$ref_104($boundThis) {
+  function ComposableLambda$invoke$ref_106($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5071,45 +5382,13 @@
   function ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn($this$Column, $composer, $changed) {
     var $composer_0 = $composer;
     if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
-      // Inline function 'androidx.compose.runtime.rememberCoroutineScope' call
-      var getContext = null;
-      var $composer_1 = $composer_0;
-      sourceInformationMarkerStart($composer_1, 773894976, 'CC(rememberCoroutineScope)482@20254L144:Effects.kt#9igjgp');
-      if (!((1 & 1) === 0)) {
-        getContext = ComposableSingletons$LoginKt$lambda_1$lambda$lambda_p94owc;
-      }
-      var composer = $composer_1;
-      sourceInformationMarkerStart($composer_1, -954370320, 'CC(remember):Effects.kt#9igjgp');
-      // Inline function 'androidx.compose.runtime.cache' call
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = $composer_1.rememberedValue_4dg93v_k$();
-      var tmp;
-      if (false || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-        // Inline function 'androidx.compose.runtime.rememberCoroutineScope.<anonymous>' call
-        var value = new CompositionScopedCoroutineScopeCanceller(createCompositionCoroutineScope(getContext(), composer));
-        $composer_1.updateRememberedValue_l1wh71_k$(value);
-        tmp = value;
-      } else {
-        tmp = it;
-      }
-      var tmp_0 = tmp;
-      var tmp1_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
-      sourceInformationMarkerEnd($composer_1);
-      var wrapper = tmp1_group;
-      var tmp0 = wrapper.get_coroutineScope_5k7h45_k$();
-      sourceInformationMarkerEnd($composer_1);
-      var coroutineScope = tmp0;
       LoginForm($composer_0, 0);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
     return Unit_getInstance();
   }
-  function ComposableSingletons$LoginKt$lambda_1$lambda$lambda_p94owc() {
-    return EmptyCoroutineContext_getInstance();
-  }
-  function ComposableLambda$invoke$ref_105($boundThis) {
+  function ComposableLambda$invoke$ref_107($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5126,9 +5405,9 @@
   function ComposableSingletons$LoginKt() {
     ComposableSingletons$LoginKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_104(composableLambdaInstance(-1906329814, false, ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_106(composableLambdaInstance(-1906329814, false, ComposableSingletons$LoginKt$lambda_1$lambda_f1msqn));
     var tmp_0 = this;
-    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_105(composableLambdaInstance(-982990705, false, ComposableSingletons$LoginKt$lambda_2$lambda_r5us6a));
+    tmp_0.lambda_2_r8sbbo_1 = ComposableLambda$invoke$ref_107(composableLambdaInstance(-982990705, false, ComposableSingletons$LoginKt$lambda_2$lambda_r5us6a));
   }
   protoOf(ComposableSingletons$LoginKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
@@ -5221,7 +5500,7 @@
         var tmp = this.get_state_iypx7s_k$();
         switch (tmp) {
           case 0:
-            this.set_exceptionState_fex74n_k$(2);
+            this.set_exceptionState_fex74n_k$(4);
             localStorage.setItem('jwtToken', '');
             this.loginUserDTO0__1 = new LoginUserDTO(LoginForm$lambda(this.$username$delegate_1), LoginForm$lambda_1(this.$password$delegate_1));
             this.set_state_rjd8d0_k$(1);
@@ -5232,23 +5511,44 @@
 
             continue $sm;
           case 1:
-            var tokenDTO = suspendResult;
-            if (!(tokenDTO == null)) {
-              localStorage.setItem('jwtToken', tokenDTO.get_token_iz6pxs_k$());
-              this.$showSuccessLogin_1._v.set_value_v1vabv_k$(true);
-              var tmp_0 = window;
-              tmp_0.setTimeout(LoginForm$lambda$lambda$slambda$lambda(this.$ctx_1), 3000);
+            this.tokenDTO1__1 = suspendResult;
+            if (!(this.tokenDTO1__1 == null)) {
+              localStorage.setItem('jwtToken', this.tokenDTO1__1.get_token_iz6pxs_k$());
+              this.set_state_rjd8d0_k$(2);
+              suspendResult = getMyBaseUserDTO(this);
+              if (suspendResult === get_COROUTINE_SUSPENDED()) {
+                return suspendResult;
+              }
+              continue $sm;
             } else {
+              var tmp_0 = this;
               this.$showFailedLogin_1._v.set_value_v1vabv_k$(true);
+              tmp_0.WHEN_RESULT2__1 = Unit_getInstance();
+              this.set_state_rjd8d0_k$(3);
+              continue $sm;
             }
 
-            return Unit_getInstance();
           case 2:
+            var baseUserDTO = suspendResult;
+            var tmp_1 = localStorage;
+            var this_0 = Default_getInstance();
+            var this_1 = this_0.get_serializersModule_piitvg_k$();
+            var this_2 = serializer(this_1, createKType(getKClass(BaseUserDTO), arrayOf([]), true));
+            tmp_1.setItem('myBaseUserDTO', this_0.encodeToString_k0apqx_k$(isInterface(this_2, KSerializer) ? this_2 : THROW_CCE(), baseUserDTO));
+            this.$showSuccessLogin_1._v.set_value_v1vabv_k$(true);
+            var tmp_2 = this;
+            var tmp_3 = window;
+            tmp_2.WHEN_RESULT2__1 = tmp_3.setTimeout(LoginForm$lambda$lambda$slambda$lambda(this.$ctx_1), 3000);
+            this.set_state_rjd8d0_k$(3);
+            continue $sm;
+          case 3:
+            return Unit_getInstance();
+          case 4:
             throw this.get_exception_x0n6w6_k$();
         }
       } catch ($p) {
         var e = $p;
-        if (this.get_exceptionState_wflpxn_k$() === 2) {
+        if (this.get_exceptionState_wflpxn_k$() === 4) {
           throw e;
         } else {
           this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
@@ -5298,7 +5598,7 @@
         var tmp2_modifier = margin(Companion_getInstance_3(), VOID, VOID, get_px(10));
         var tmp3_type = Text_getInstance();
         var tmp4_value = LoginForm$lambda($username$delegate);
-        $composer_0.startReplaceGroup_5hh8aj_k$(1092088723);
+        $composer_0.startReplaceGroup_5hh8aj_k$(1092082419);
         // Inline function 'androidx.compose.runtime.cache' call
         // Inline function 'kotlin.let' call
         // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
@@ -5321,7 +5621,7 @@
         var tmp5_modifier = margin(Companion_getInstance_3(), VOID, VOID, get_px(10));
         var tmp6_type = Password_getInstance();
         var tmp7_value = LoginForm$lambda_1($password$delegate);
-        $composer_0.startReplaceGroup_5hh8aj_k$(1092103379);
+        $composer_0.startReplaceGroup_5hh8aj_k$(1092097075);
         // Inline function 'androidx.compose.runtime.cache' call
         // Inline function 'kotlin.let' call
         // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
@@ -5339,10 +5639,10 @@
         var tmp1_group = (tmp_5 == null ? true : !(tmp_5 == null)) ? tmp_5 : THROW_CCE();
         $composer_0.endReplaceGroup_ek144q_k$();
         Input(tmp6_type, tmp7_value, tmp1_group, tmp5_modifier, null, 'ex: P4ssword!', null, false, false, false, false, false, null, null, null, null, null, null, $composer_0, 196992, 0, 262096);
-        var tmp8_modifier = margin_2(Companion_getInstance_3(), get_px(10));
+        var tmp8_modifier = margin_3(Companion_getInstance_3(), get_px(10));
         var tmp_6 = LoginForm$lambda$lambda_1($coroutineScope, $showSuccessLogin, $showFailedLogin, $username$delegate, $password$delegate, $ctx);
         Button(tmp_6, tmp8_modifier, null, null, false, null, null, null, null, ComposableSingletons$LoginKt_getInstance().lambda_2_r8sbbo_1, $composer_0, 805306368, 508);
-        $composer_0.startReplaceGroup_5hh8aj_k$(1092133098);
+        $composer_0.startReplaceGroup_5hh8aj_k$(1092131882);
         if ($showSuccessLogin._v.get_value_j01efc_k$()) {
           var tmp_7 = $showSuccessLogin._v;
           showPopover(tmp_7, '\u2705 Login Successful!', 0, 0, $composer_0, 48, 12);
@@ -5360,7 +5660,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_106($boundThis) {
+  function ComposableLambda$invoke$ref_108($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5384,7 +5684,7 @@
       if (!(($changed & 17) === 16) || !$composer_0.get_skipping_3owdve_k$()) {
         Text($message, $composer_0, 0);
         var tmp_0 = window;
-        $composer_0.startReplaceGroup_5hh8aj_k$(237501736);
+        $composer_0.startReplaceGroup_5hh8aj_k$(237500520);
         // Inline function 'androidx.compose.runtime.cache' call
         var invalid = $composer_0.changed_ga7h3f_k$($state);
         // Inline function 'kotlin.let' call
@@ -5411,7 +5711,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_107($boundThis) {
+  function ComposableLambda$invoke$ref_109($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5548,7 +5848,7 @@
       var tmp_9;
       if (invalid || it_4 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>' call
-        var value_4 = ComposableLambda$invoke$ref_111(dispatchReceiver);
+        var value_4 = ComposableLambda$invoke$ref_113(dispatchReceiver);
         $composer_2.updateRememberedValue_l1wh71_k$(value_4);
         tmp_9 = value_4;
       } else {
@@ -5593,7 +5893,7 @@
       var tmp_1;
       if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'epicer.frontend.pages.ProfileDetail.<anonymous>.<anonymous>' call
-        var value_0 = ComposableLambda$invoke$ref_112(dispatchReceiver);
+        var value_0 = ComposableLambda$invoke$ref_114(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value_0);
         tmp_1 = value_0;
       } else {
@@ -5613,7 +5913,7 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(ProfileDetail$lambda_0(label, value, $changed));
     }
   }
-  function ComposableLambda$invoke$ref_108($boundThis) {
+  function ComposableLambda$invoke$ref_110($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5631,7 +5931,7 @@
   function ComposableSingletons$MeKt() {
     ComposableSingletons$MeKt_instance = this;
     var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_108(composableLambdaInstance(-240436586, false, ComposableSingletons$MeKt$lambda_1$lambda_2swfsc));
+    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_110(composableLambdaInstance(-240436586, false, ComposableSingletons$MeKt$lambda_1$lambda_2swfsc));
   }
   protoOf(ComposableSingletons$MeKt).get_lambda_1_t9x1k6_k$ = function () {
     return this.lambda_1_r8sbbp_1;
@@ -5823,7 +6123,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_109($boundThis) {
+  function ComposableLambda$invoke$ref_111($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5849,7 +6149,7 @@
         var tmp_2;
         if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_109(dispatchReceiver);
+          var value = ComposableLambda$invoke$ref_111(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value);
           tmp_2 = value;
         } else {
@@ -5867,7 +6167,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_110($boundThis) {
+  function ComposableLambda$invoke$ref_112($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5892,7 +6192,7 @@
         var tmp_1;
         if (invalid || it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'epicer.frontend.pages.ProfilePage.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = ComposableLambda$invoke$ref_110(dispatchReceiver);
+          var value = ComposableLambda$invoke$ref_112(dispatchReceiver);
           $composer_1.updateRememberedValue_l1wh71_k$(value);
           tmp_1 = value;
         } else {
@@ -5910,7 +6210,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_111($boundThis) {
+  function ComposableLambda$invoke$ref_113($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
@@ -5950,7 +6250,7 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_112($boundThis) {
+  function ComposableLambda$invoke$ref_114($boundThis) {
     return function (p0, p1, p2) {
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };

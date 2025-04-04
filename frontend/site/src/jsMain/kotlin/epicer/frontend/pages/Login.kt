@@ -17,10 +17,12 @@ import com.varabyte.kobweb.silk.components.layout.HorizontalDivider
 import com.varabyte.kobweb.silk.components.overlay.AdvancedPopover
 import com.varabyte.kobweb.silk.components.text.SpanText
 import epicer.common.dto.user.LoginUserDTO
+import epicer.frontend.data.getMyBaseUserDTO
 import epicer.frontend.data.login
 import kotlinx.browser.localStorage
 import kotlinx.browser.window
 import kotlinx.coroutines.launch
+import kotlinx.serialization.json.Json
 import org.jetbrains.compose.web.attributes.InputType
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.Text
@@ -36,16 +38,8 @@ fun LoginPage() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        val coroutineScope = rememberCoroutineScope()
-//        var isLogged by remember { mutableStateOf(false) } // Store state
-//        coroutineScope.launch {
-//            isLogged = isLogged()
-//        }
-//        print(isLogged)
-//
-//        if (!isLogged) {
-//
-//        }
+
+
         LoginForm()
 
 
@@ -128,6 +122,10 @@ fun LoginForm(){
 
                     if (tokenDTO != null) {
                         localStorage.setItem("jwtToken", tokenDTO.token)
+                        val baseUserDTO = getMyBaseUserDTO()
+
+                        localStorage.setItem("myBaseUserDTO", Json.encodeToString(baseUserDTO))
+
                         showSuccessLogin.value = true
                         window.setTimeout({
                             ctx.router.navigateTo("/")

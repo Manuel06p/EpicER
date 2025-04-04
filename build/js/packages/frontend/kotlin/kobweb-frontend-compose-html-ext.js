@@ -286,17 +286,17 @@
   initMetadataForClass(ObjectFit, 'ObjectFit');
   initMetadataForClass(CSSOutline, 'CSSOutline');
   initMetadataForCompanion(Companion_26);
-  initMetadataForClass(Overflow, 'Overflow');
-  initMetadataForCompanion(Companion_27);
   initMetadataForClass(OverflowWrap, 'OverflowWrap');
+  initMetadataForCompanion(Companion_27);
+  initMetadataForClass(Overflow, 'Overflow');
   initMetadataForCompanion(Companion_28);
   initMetadataForClass(ScrollBehavior, 'ScrollBehavior');
-  initMetadataForClass(StyleVariable, 'StyleVariable', VOID, VOID, [CSSVariable]);
-  initMetadataForClass(PropertyValue, 'PropertyValue', VOID, StyleVariable);
-  initMetadataForClass(NumberValue, 'NumberValue', VOID, StyleVariable);
-  initMetadataForClass(StringValue, 'StringValue', VOID, StyleVariable);
-  initMetadataForClass(StyleVariablePropertyProvider, 'StyleVariablePropertyProvider');
   initMetadataForClass(StyleVariableNumberProvider, 'StyleVariableNumberProvider');
+  initMetadataForClass(StyleVariable_1, 'StyleVariable', VOID, VOID, [CSSVariable]);
+  initMetadataForClass(PropertyValue, 'PropertyValue', VOID, StyleVariable_1);
+  initMetadataForClass(NumberValue, 'NumberValue', VOID, StyleVariable_1);
+  initMetadataForClass(StringValue, 'StringValue', VOID, StyleVariable_1);
+  initMetadataForClass(StyleVariablePropertyProvider, 'StyleVariablePropertyProvider');
   initMetadataForCompanion(Companion_29);
   initMetadataForClass(UserSelect, 'UserSelect');
   initMetadataForCompanion(Companion_30);
@@ -4109,32 +4109,26 @@
   function Companion_26() {
     Companion_instance_26 = this;
   }
-  protoOf(Companion_26).get_Visible_yikvpz_k$ = function () {
-    return new Overflow('visible');
+  protoOf(Companion_26).get_Normal_22avww_k$ = function () {
+    return new OverflowWrap('normal');
   };
-  protoOf(Companion_26).get_Hidden_viqel_k$ = function () {
-    return new Overflow('hidden');
+  protoOf(Companion_26).get_BreakWord_a9p49s_k$ = function () {
+    return new OverflowWrap('break-word');
   };
-  protoOf(Companion_26).get_Clip_wnzq9l_k$ = function () {
-    return new Overflow('clip');
-  };
-  protoOf(Companion_26).get_Scroll_48xiie_k$ = function () {
-    return new Overflow('scroll');
-  };
-  protoOf(Companion_26).get_Auto_wnyn88_k$ = function () {
-    return new Overflow('auto');
+  protoOf(Companion_26).get_Anywhere_yvjyp0_k$ = function () {
+    return new OverflowWrap('anywhere');
   };
   protoOf(Companion_26).get_Inherit_a1a9e6_k$ = function () {
-    return new Overflow('inherit');
+    return new OverflowWrap('inherit');
   };
   protoOf(Companion_26).get_Initial_a0h2v9_k$ = function () {
-    return new Overflow('initial');
+    return new OverflowWrap('initial');
   };
   protoOf(Companion_26).get_Revert_3t1tzh_k$ = function () {
-    return new Overflow('revert');
+    return new OverflowWrap('revert');
   };
   protoOf(Companion_26).get_Unset_ii4mhs_k$ = function () {
-    return new Overflow('unset');
+    return new OverflowWrap('unset');
   };
   var Companion_instance_26;
   function Companion_getInstance_29() {
@@ -4142,39 +4136,57 @@
       new Companion_26();
     return Companion_instance_26;
   }
-  function Overflow(value) {
+  function OverflowWrap(value) {
     Companion_getInstance_29();
     this.value_1 = value;
   }
-  protoOf(Overflow).toString = function () {
+  protoOf(OverflowWrap).toString = function () {
     return this.value_1;
   };
+  function overflowY(_this__u8e3s4, overflowY) {
+    _this__u8e3s4.property_npxg1h_k$('overflow-y', overflowY);
+  }
+  function overflowX(_this__u8e3s4, overflowX) {
+    _this__u8e3s4.property_npxg1h_k$('overflow-x', overflowX);
+  }
+  function overflowWrap(_this__u8e3s4, overflowWrap) {
+    _this__u8e3s4.property_npxg1h_k$('overflow-wrap', overflowWrap);
+  }
+  function overflow(_this__u8e3s4, overflow) {
+    _this__u8e3s4.property_npxg1h_k$('overflow', overflow);
+  }
   function _get_value__a43j40_26($this) {
     return $this.value_1;
   }
   function Companion_27() {
     Companion_instance_27 = this;
   }
-  protoOf(Companion_27).get_Normal_22avww_k$ = function () {
-    return new OverflowWrap('normal');
+  protoOf(Companion_27).get_Visible_yikvpz_k$ = function () {
+    return new Overflow('visible');
   };
-  protoOf(Companion_27).get_BreakWord_a9p49s_k$ = function () {
-    return new OverflowWrap('break-word');
+  protoOf(Companion_27).get_Hidden_viqel_k$ = function () {
+    return new Overflow('hidden');
   };
-  protoOf(Companion_27).get_Anywhere_yvjyp0_k$ = function () {
-    return new OverflowWrap('anywhere');
+  protoOf(Companion_27).get_Clip_wnzq9l_k$ = function () {
+    return new Overflow('clip');
+  };
+  protoOf(Companion_27).get_Scroll_48xiie_k$ = function () {
+    return new Overflow('scroll');
+  };
+  protoOf(Companion_27).get_Auto_wnyn88_k$ = function () {
+    return new Overflow('auto');
   };
   protoOf(Companion_27).get_Inherit_a1a9e6_k$ = function () {
-    return new OverflowWrap('inherit');
+    return new Overflow('inherit');
   };
   protoOf(Companion_27).get_Initial_a0h2v9_k$ = function () {
-    return new OverflowWrap('initial');
+    return new Overflow('initial');
   };
   protoOf(Companion_27).get_Revert_3t1tzh_k$ = function () {
-    return new OverflowWrap('revert');
+    return new Overflow('revert');
   };
   protoOf(Companion_27).get_Unset_ii4mhs_k$ = function () {
-    return new OverflowWrap('unset');
+    return new Overflow('unset');
   };
   var Companion_instance_27;
   function Companion_getInstance_30() {
@@ -4182,25 +4194,13 @@
       new Companion_27();
     return Companion_instance_27;
   }
-  function OverflowWrap(value) {
+  function Overflow(value) {
     Companion_getInstance_30();
     this.value_1 = value;
   }
-  protoOf(OverflowWrap).toString = function () {
+  protoOf(Overflow).toString = function () {
     return this.value_1;
   };
-  function overflowX(_this__u8e3s4, overflowX) {
-    _this__u8e3s4.property_npxg1h_k$('overflow-x', overflowX);
-  }
-  function overflowY(_this__u8e3s4, overflowY) {
-    _this__u8e3s4.property_npxg1h_k$('overflow-y', overflowY);
-  }
-  function overflow(_this__u8e3s4, overflow) {
-    _this__u8e3s4.property_npxg1h_k$('overflow', overflow);
-  }
-  function overflowWrap(_this__u8e3s4, overflowWrap) {
-    _this__u8e3s4.property_npxg1h_k$('overflow-wrap', overflowWrap);
-  }
   var com_varabyte_kobweb_compose_css_PointerEvents$stable;
   var com_varabyte_kobweb_compose_css_Bottom$stable;
   var com_varabyte_kobweb_compose_css_Top$stable;
@@ -4268,13 +4268,35 @@
   var com_varabyte_kobweb_compose_css_StyleVariablePropertyProvider$stable;
   var com_varabyte_kobweb_compose_css_StyleVariableNumberProvider$stable;
   var com_varabyte_kobweb_compose_css_StyleVariableStringProvider$stable;
+  function StyleVariable(defaultFallback, prefix) {
+    defaultFallback = defaultFallback === VOID ? null : defaultFallback;
+    prefix = prefix === VOID ? null : prefix;
+    return new StyleVariablePropertyProvider(defaultFallback, prefix);
+  }
+  function StyleVariable_0(prefix) {
+    prefix = prefix === VOID ? null : prefix;
+    return new StyleVariablePropertyProvider(null, prefix);
+  }
   function _get_defaultFallback__wdjuwe($this) {
+    return $this.defaultFallback_1;
+  }
+  function _get_prefix__wiwq7t($this) {
+    return $this.prefix_1;
+  }
+  function StyleVariableNumberProvider(defaultFallback, prefix) {
+    this.defaultFallback_1 = defaultFallback;
+    this.prefix_1 = prefix;
+  }
+  protoOf(StyleVariableNumberProvider).getValue_fbnwi2_k$ = function (thisRef, property) {
+    return new NumberValue(provideVariableName(thisRef, property), this.defaultFallback_1, this.prefix_1);
+  };
+  function _get_defaultFallback__wdjuwe_0($this) {
     return $this.defaultFallback_1;
   }
   function PropertyValue(name, defaultFallback, prefix) {
     defaultFallback = defaultFallback === VOID ? null : defaultFallback;
     prefix = prefix === VOID ? null : prefix;
-    StyleVariable.call(this, name, defaultFallback, prefix);
+    StyleVariable_1.call(this, name, defaultFallback, prefix);
   }
   protoOf(PropertyValue).value_wk9s6x_k$ = function (fallback) {
     return this.variableValue_ovgee5_k$(fallback);
@@ -4296,7 +4318,7 @@
       // Inline function 'kotlin.js.asDynamic' call
       tmp = defaultFallback;
     }
-    StyleVariable.call(this, name, tmp, prefix);
+    StyleVariable_1.call(this, name, tmp, prefix);
   }
   protoOf(NumberValue).value_9bth3g_k$ = function (fallback) {
     var tmp;
@@ -4331,7 +4353,7 @@
       // Inline function 'kotlin.js.asDynamic' call
       tmp = defaultFallback;
     }
-    StyleVariable.call(this, name, tmp, prefix);
+    StyleVariable_1.call(this, name, tmp, prefix);
   }
   protoOf(StringValue).value_lu1i8m_k$ = function (fallback) {
     var tmp;
@@ -4352,7 +4374,7 @@
   protoOf(StringValue).value_66g3ir_k$ = function (fallback) {
     return this.value_lu1i8m_k$((fallback == null ? true : typeof fallback === 'string') ? fallback : THROW_CCE());
   };
-  function StyleVariable(name, defaultFallback, prefix) {
+  function StyleVariable_1(name, defaultFallback, prefix) {
     this.defaultFallback_1 = defaultFallback;
     var tmp = this;
     var tmp_0;
@@ -4366,14 +4388,14 @@
     var tmp1_elvis_lhs = tmp_0;
     tmp.name_1 = tmp1_elvis_lhs == null ? name : tmp1_elvis_lhs;
   }
-  protoOf(StyleVariable).get_name_woqyms_k$ = function () {
+  protoOf(StyleVariable_1).get_name_woqyms_k$ = function () {
     return this.name_1;
   };
-  protoOf(StyleVariable).value$default_36t2hw_k$ = function (fallback, $super) {
+  protoOf(StyleVariable_1).value$default_36t2hw_k$ = function (fallback, $super) {
     fallback = fallback === VOID ? null : fallback;
     return $super === VOID ? this.value_66g3ir_k$(fallback) : $super.value_66g3ir_k$.call(this, fallback);
   };
-  protoOf(StyleVariable).variableValue_ovgee5_k$ = function (fallback) {
+  protoOf(StyleVariable_1).variableValue_ovgee5_k$ = function (fallback) {
     var tmp1_safe_receiver = fallback == null ? this.defaultFallback_1 : fallback;
     var tmp;
     if (tmp1_safe_receiver == null) {
@@ -4393,10 +4415,15 @@
     // Inline function 'kotlin.js.asDynamic' call
     return 'var(--' + this.name_1 + (tmp2_elvis_lhs == null ? '' : tmp2_elvis_lhs) + ')';
   };
-  function _get_defaultFallback__wdjuwe_0($this) {
+  function StyleVariable_2(defaultFallback, prefix) {
+    defaultFallback = defaultFallback === VOID ? null : defaultFallback;
+    prefix = prefix === VOID ? null : prefix;
+    return new StyleVariableNumberProvider(defaultFallback, prefix);
+  }
+  function _get_defaultFallback__wdjuwe_1($this) {
     return $this.defaultFallback_1;
   }
-  function _get_prefix__wiwq7t($this) {
+  function _get_prefix__wiwq7t_0($this) {
     return $this.prefix_1;
   }
   function StyleVariablePropertyProvider(defaultFallback, prefix) {
@@ -4406,37 +4433,10 @@
   protoOf(StyleVariablePropertyProvider).getValue_fbnwi2_k$ = function (thisRef, property) {
     return new PropertyValue(provideVariableName(thisRef, property), this.defaultFallback_1, this.prefix_1);
   };
-  function StyleVariable_0(prefix) {
-    prefix = prefix === VOID ? null : prefix;
-    return new StyleVariablePropertyProvider(null, prefix);
-  }
-  function StyleVariable_1(defaultFallback, prefix) {
-    defaultFallback = defaultFallback === VOID ? null : defaultFallback;
-    prefix = prefix === VOID ? null : prefix;
-    return new StyleVariablePropertyProvider(defaultFallback, prefix);
-  }
-  function StyleVariable_2(defaultFallback, prefix) {
-    defaultFallback = defaultFallback === VOID ? null : defaultFallback;
-    prefix = prefix === VOID ? null : prefix;
-    return new StyleVariablePropertyProvider(defaultFallback, prefix);
-  }
-  function _get_defaultFallback__wdjuwe_1($this) {
-    return $this.defaultFallback_1;
-  }
-  function _get_prefix__wiwq7t_0($this) {
-    return $this.prefix_1;
-  }
-  function StyleVariableNumberProvider(defaultFallback, prefix) {
-    this.defaultFallback_1 = defaultFallback;
-    this.prefix_1 = prefix;
-  }
-  protoOf(StyleVariableNumberProvider).getValue_fbnwi2_k$ = function (thisRef, property) {
-    return new NumberValue(provideVariableName(thisRef, property), this.defaultFallback_1, this.prefix_1);
-  };
   function StyleVariable_3(defaultFallback, prefix) {
     defaultFallback = defaultFallback === VOID ? null : defaultFallback;
     prefix = prefix === VOID ? null : prefix;
-    return new StyleVariableNumberProvider(defaultFallback, prefix);
+    return new StyleVariablePropertyProvider(defaultFallback, prefix);
   }
   function provideVariableName(groupObject, property) {
     // Inline function 'kotlin.text.buildString' call
@@ -4451,10 +4451,10 @@
     return this_0.toString();
   }
   function setVariable(_this__u8e3s4, variable, value) {
-    _this__u8e3s4.property_npxg1h_k$('--' + variable.name_1, value);
+    _this__u8e3s4.property_jk9dw6_k$('--' + variable.name_1, value);
   }
   function setVariable_0(_this__u8e3s4, variable, value) {
-    _this__u8e3s4.property_jk9dw6_k$('--' + variable.name_1, value);
+    _this__u8e3s4.property_npxg1h_k$('--' + variable.name_1, value);
   }
   var com_varabyte_kobweb_compose_css_CaptionSide$stable;
   var com_varabyte_kobweb_compose_css_TextAlign$stable;
@@ -8023,10 +8023,10 @@
   _.$_$.c = clamp;
   _.$_$.d = ComparableStyleScope;
   _.$_$.e = NumberValue;
-  _.$_$.f = StyleVariable_3;
-  _.$_$.g = StyleVariable_2;
+  _.$_$.f = StyleVariable_2;
+  _.$_$.g = StyleVariable;
   _.$_$.h = StyleVariable_0;
-  _.$_$.i = StyleVariable_1;
+  _.$_$.i = StyleVariable_3;
   _.$_$.j = alignItems;
   _.$_$.k = animation;
   _.$_$.l = appearance;
@@ -8073,8 +8073,8 @@
   _.$_$.a2 = overflow;
   _.$_$.b2 = paddingInline;
   _.$_$.c2 = scrollBehavior;
-  _.$_$.d2 = setVariable;
-  _.$_$.e2 = setVariable_0;
+  _.$_$.d2 = setVariable_0;
+  _.$_$.e2 = setVariable;
   _.$_$.f2 = textAlign;
   _.$_$.g2 = textDecorationLine;
   _.$_$.h2 = toDegrees;
@@ -8118,8 +8118,8 @@
   _.$_$.t3 = Companion_getInstance_4;
   _.$_$.u3 = Companion_getInstance_25;
   _.$_$.v3 = Companion_getInstance_28;
-  _.$_$.w3 = Companion_getInstance_29;
-  _.$_$.x3 = Companion_getInstance_30;
+  _.$_$.w3 = Companion_getInstance_30;
+  _.$_$.x3 = Companion_getInstance_29;
   _.$_$.y3 = Companion_getInstance_31;
   _.$_$.z3 = Companion_getInstance_33;
   _.$_$.a4 = Companion_getInstance_35;

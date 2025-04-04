@@ -119,6 +119,19 @@
     },
     "ec5f683e2e51ee8e5cdb632f5487b6e0": {
       "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-coroutines-core-js\\1.8.1\\6d0facd74a1b6ae17fa00d7034f31bde38ed4b2\\kotlinx-coroutines-core-js-1.8.1.klib"
+    },
+    "b649bb236ae3ff48f6e2b89e55cc8694": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobwebx\\silk-icons-mdi-js\\0.20.3\\bad9a2819a952580862d0ad8518b3051289ac496\\silk-icons-mdi-js-0.20.3.klib"
+    },
+    "3302c54e1aeb9bc205019155f93e9405": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobwebx\\silk-icons-fa-js\\0.20.3\\376b5eae7b05f7ff421bfac89a61735c5280989\\silk-icons-fa-js-0.20.3.klib"
+    },
+    "3f1531697b23e6c88627ed45e65192cd": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.github.stevdza-san\\KotlinBootstrap\\0.1.5\\709b7801338ae2f6bb4e9fd1d3794468111746b1\\KotlinBootstrap-0.1.5.jar"
+    },
+    "57598b94fdaf84926403d9581d92854a": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.github.stevdza-san.KotlinBootstrap\\bootstrap-js\\0.1.5\\d96ec6cee04e1049b93baa5df63515f0ee125f3d\\bootstrap-js-0.1.5.klib",
+      "target": "kotlinbs-bootstrap\\0.1.5"
     }
   }
 }

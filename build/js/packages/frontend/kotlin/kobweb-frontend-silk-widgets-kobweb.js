@@ -40,17 +40,17 @@
   var get_BorderColorVar = kotlin_com_varabyte_kobweb_silk_widgets.$_$.r;
   var StyleVariable = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.i;
   var initMetadataForObject = kotlin_kotlin.$_$.lc;
-  var Companion_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m4;
+  var Companion_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o4;
   var Companion_getInstance_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u3;
-  var listStyle = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b2;
+  var listStyle = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c2;
   var Companion_getInstance_1 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.z3;
-  var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h3;
+  var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i3;
   var get_cssRem = kotlin_org_jetbrains_compose_html_html_core.$_$.e4;
-  var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x2;
+  var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y2;
   var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.p5;
-  var borderRadius = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y;
+  var borderRadius = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z;
   var Companion_getInstance_2 = kotlin_org_jetbrains_compose_html_html_core.$_$.q;
-  var border = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a1;
+  var border = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b1;
   var KProperty1 = kotlin_kotlin.$_$.de;
   var getPropertyCallableRef = kotlin_kotlin.$_$.dc;
   var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.d2;
@@ -59,8 +59,8 @@
   var com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter = kotlin_com_varabyte_kobweb_silk_foundation.$_$.h1;
   var com_varabyte_kobweb_compose_dom_ElementRefScope$stableprop_getter = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.x2;
   var Companion_getInstance_4 = kotlin_org_jetbrains_compose_html_html_core.$_$.n;
-  var display = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k1;
-  var toAttrs = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x3;
+  var display = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l1;
+  var toAttrs = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y3;
   var rememberComposableLambda = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c;
   var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.y;
   var Companion_getInstance_5 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.i1;
@@ -73,9 +73,9 @@
   var Img = kotlin_org_jetbrains_compose_html_html_core.$_$.k6;
   var Unit_getInstance = kotlin_kotlin.$_$.f5;
   var get_percent = kotlin_org_jetbrains_compose_html_html_core.$_$.n5;
-  var width = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q3;
+  var width = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r3;
   var Companion_getInstance_7 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.v3;
-  var objectFit = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m2;
+  var objectFit = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n2;
   var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
   var registerRefScope = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.a3;
   var CssStyle = kotlin_com_varabyte_kobweb_silk_foundation.$_$.z;
@@ -85,17 +85,17 @@
   var get_visited = kotlin_com_varabyte_kobweb_silk_foundation.$_$.v;
   var get_hover = kotlin_com_varabyte_kobweb_silk_foundation.$_$.r;
   var Companion_getInstance_8 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.a4;
-  var textDecorationLine = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i3;
-  var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i1;
+  var textDecorationLine = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j3;
+  var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j1;
   var get_ColorVar = kotlin_com_varabyte_kobweb_silk_widgets.$_$.s;
-  var registerRefScope_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.b3;
   var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.s6;
+  var registerRefScope_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.b3;
   var addVariant = kotlin_com_varabyte_kobweb_silk_foundation.$_$.c1;
-  var Colors_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d4;
+  var Colors_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f4;
   var get_SilkColorsStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.n;
   var modifyStyleBase = kotlin_com_varabyte_kobweb_silk_foundation.$_$.v1;
   var toPalette = kotlin_com_varabyte_kobweb_silk_foundation.$_$.p1;
-  var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e3;
+  var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f3;
   var ColorGroup = kotlin_com_varabyte_kobweb_silk_foundation.$_$.m1;
   var initMetadataForClass = kotlin_kotlin.$_$.gc;
   var MutablePalette = kotlin_com_varabyte_kobweb_silk_foundation.$_$.n1;
@@ -493,107 +493,7 @@
       new LinkVars();
     return LinkVars_instance;
   }
-  function Link(path, modifier, variant, openInternalLinksStrategy, openExternalLinksStrategy, updateHistoryMode, ref, content, $composer, $changed, $default) {
-    _init_properties_Link_kt__dm1ox2();
-    var modifier_0 = {_v: modifier};
-    var variant_0 = {_v: variant};
-    var openInternalLinksStrategy_0 = {_v: openInternalLinksStrategy};
-    var openExternalLinksStrategy_0 = {_v: openExternalLinksStrategy};
-    var updateHistoryMode_0 = {_v: updateHistoryMode};
-    var ref_0 = {_v: ref};
-    var $composer_0 = $composer;
-    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-253586851);
-    var $dirty = $changed;
-    if (!(($default & 1) === 0))
-      $dirty = $dirty | 6;
-    else if (($changed & 6) === 0)
-      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(path) ? 4 : 2);
-    if (!(($default & 2) === 0))
-      $dirty = $dirty | 48;
-    else if (($changed & 48) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(modifier_0._v) ? 32 : 16);
-    if (!(($default & 4) === 0))
-      $dirty = $dirty | 384;
-    else if (($changed & 384) === 0)
-      $dirty = $dirty | ((($changed & 512) === 0 ? $composer_0.changed_ga7h3f_k$(variant_0._v) : $composer_0.changedInstance_s1wkiy_k$(variant_0._v)) ? 256 : 128);
-    if (!(($default & 8) === 0))
-      $dirty = $dirty | 3072;
-    else if (($changed & 3072) === 0)
-      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(openInternalLinksStrategy_0._v) ? 2048 : 1024);
-    if (!(($default & 16) === 0))
-      $dirty = $dirty | 24576;
-    else if (($changed & 24576) === 0)
-      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(openExternalLinksStrategy_0._v) ? 16384 : 8192);
-    if (!(($default & 32) === 0))
-      $dirty = $dirty | 196608;
-    else if (($changed & 196608) === 0)
-      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(updateHistoryMode_0._v) ? 131072 : 65536);
-    if (!(($default & 64) === 0))
-      $dirty = $dirty | 1572864;
-    else if (($changed & 1572864) === 0)
-      $dirty = $dirty | ((($changed & 2097152) === 0 ? $composer_0.changed_ga7h3f_k$(ref_0._v) : $composer_0.changedInstance_s1wkiy_k$(ref_0._v)) ? 1048576 : 524288);
-    if (!(($default & 128) === 0))
-      $dirty = $dirty | 12582912;
-    else if (($changed & 12582912) === 0)
-      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content) ? 8388608 : 4194304);
-    if (!(($dirty & 4793491) === 4793490) || !$composer_0.get_skipping_3owdve_k$()) {
-      if (!(($default & 2) === 0)) {
-        modifier_0._v = Companion_getInstance();
-      }
-      if (!(($default & 4) === 0)) {
-        variant_0._v = null;
-      }
-      if (!(($default & 8) === 0)) {
-        openInternalLinksStrategy_0._v = null;
-      }
-      if (!(($default & 16) === 0)) {
-        openExternalLinksStrategy_0._v = null;
-      }
-      if (!(($default & 32) === 0)) {
-        updateHistoryMode_0._v = null;
-      }
-      if (!(($default & 64) === 0)) {
-        ref_0._v = null;
-      }
-      var tmp = toAttrs(toModifier(get_LinkStyle(), [variant_0._v], $composer_0, com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter() | com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter() << 3).then_mmfvo6_k$(modifier_0._v));
-      var tmp_0 = openInternalLinksStrategy_0._v;
-      var tmp_1 = openExternalLinksStrategy_0._v;
-      var tmp_2 = updateHistoryMode_0._v;
-      // Inline function 'kotlin.run' call
-      // Inline function 'com.varabyte.kobweb.silk.components.navigation.Link.<anonymous>' call
-      var dispatchReceiver = rememberComposableLambda(682923050, true, Link$lambda(ref_0, content), $composer_0, 54);
-      // Inline function 'androidx.compose.runtime.remember' call
-      var $composer_1 = $composer_0;
-      sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
-      // Inline function 'androidx.compose.runtime.cache' call
-      var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
-      // Inline function 'kotlin.let' call
-      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it = $composer_1.rememberedValue_4dg93v_k$();
-      var tmp_3;
-      if (invalid || it === Companion_getInstance_5().get_Empty_i9b85g_k$()) {
-        // Inline function 'com.varabyte.kobweb.silk.components.navigation.Link.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_0(dispatchReceiver);
-        $composer_1.updateRememberedValue_l1wh71_k$(value);
-        tmp_3 = value;
-      } else {
-        tmp_3 = it;
-      }
-      var tmp_4 = tmp_3;
-      var tmp0 = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
-      sourceInformationMarkerEnd($composer_1);
-      Anchor(path, tmp, tmp_0, tmp_1, tmp_2, tmp0, $composer_0, 196608 | 14 & $dirty | 896 & $dirty >> 3 | 7168 & $dirty >> 3 | 57344 & $dirty >> 3, 0);
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Link$lambda_0(path, modifier_0, variant_0, openInternalLinksStrategy_0, openExternalLinksStrategy_0, updateHistoryMode_0, ref_0, content, $changed, $default));
-    }
-  }
-  function Link_0(path, text, modifier, variant, openInternalLinksStrategy, openExternalLinksStrategy, updateHistoryMode, ref, $composer, $changed, $default) {
+  function Link(path, text, modifier, variant, openInternalLinksStrategy, openExternalLinksStrategy, updateHistoryMode, ref, $composer, $changed, $default) {
     _init_properties_Link_kt__dm1ox2();
     var text_0 = {_v: text};
     var modifier_0 = {_v: modifier};
@@ -667,7 +567,7 @@
       var tmp_4 = ref_0._v;
       // Inline function 'kotlin.run' call
       // Inline function 'com.varabyte.kobweb.silk.components.navigation.Link.<anonymous>' call
-      var dispatchReceiver = rememberComposableLambda(598449929, true, Link$lambda_1(text_0, path), $composer_0, 54);
+      var dispatchReceiver = rememberComposableLambda(598449929, true, Link$lambda(text_0, path), $composer_0, 54);
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
@@ -679,7 +579,7 @@
       var tmp_5;
       if (invalid || it === Companion_getInstance_5().get_Empty_i9b85g_k$()) {
         // Inline function 'com.varabyte.kobweb.silk.components.navigation.Link.<anonymous>.<anonymous>' call
-        var value = ComposableLambda$invoke$ref_1(dispatchReceiver);
+        var value = ComposableLambda$invoke$ref_0(dispatchReceiver);
         $composer_1.updateRememberedValue_l1wh71_k$(value);
         tmp_5 = value;
       } else {
@@ -688,7 +588,7 @@
       var tmp_6 = tmp_5;
       var tmp0 = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
       sourceInformationMarkerEnd($composer_1);
-      Link(path, tmp, tmp_0, tmp_1, tmp_2, tmp_3, tmp_4, tmp0, $composer_0, 12582912 | 14 & $dirty | 112 & $dirty >> 3 | com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter() << 6 | 896 & $dirty >> 3 | 7168 & $dirty >> 3 | 57344 & $dirty >> 3 | 458752 & $dirty >> 3 | com_varabyte_kobweb_compose_dom_ElementRefScope$stableprop_getter() << 18 | 3670016 & $dirty >> 3, 0);
+      Link_0(path, tmp, tmp_0, tmp_1, tmp_2, tmp_3, tmp_4, tmp0, $composer_0, 12582912 | 14 & $dirty | 112 & $dirty >> 3 | com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter() << 6 | 896 & $dirty >> 3 | 7168 & $dirty >> 3 | 57344 & $dirty >> 3 | 458752 & $dirty >> 3 | com_varabyte_kobweb_compose_dom_ElementRefScope$stableprop_getter() << 18 | 3670016 & $dirty >> 3, 0);
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
@@ -696,7 +596,107 @@
     if (tmp0_safe_receiver == null)
       null;
     else {
-      tmp0_safe_receiver.updateScope_t8jcf_k$(Link$lambda_2(path, text_0, modifier_0, variant_0, openInternalLinksStrategy_0, openExternalLinksStrategy_0, updateHistoryMode_0, ref_0, $changed, $default));
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Link$lambda_0(path, text_0, modifier_0, variant_0, openInternalLinksStrategy_0, openExternalLinksStrategy_0, updateHistoryMode_0, ref_0, $changed, $default));
+    }
+  }
+  function Link_0(path, modifier, variant, openInternalLinksStrategy, openExternalLinksStrategy, updateHistoryMode, ref, content, $composer, $changed, $default) {
+    _init_properties_Link_kt__dm1ox2();
+    var modifier_0 = {_v: modifier};
+    var variant_0 = {_v: variant};
+    var openInternalLinksStrategy_0 = {_v: openInternalLinksStrategy};
+    var openExternalLinksStrategy_0 = {_v: openExternalLinksStrategy};
+    var updateHistoryMode_0 = {_v: updateHistoryMode};
+    var ref_0 = {_v: ref};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-253586851);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 6) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(path) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 48) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(modifier_0._v) ? 32 : 16);
+    if (!(($default & 4) === 0))
+      $dirty = $dirty | 384;
+    else if (($changed & 384) === 0)
+      $dirty = $dirty | ((($changed & 512) === 0 ? $composer_0.changed_ga7h3f_k$(variant_0._v) : $composer_0.changedInstance_s1wkiy_k$(variant_0._v)) ? 256 : 128);
+    if (!(($default & 8) === 0))
+      $dirty = $dirty | 3072;
+    else if (($changed & 3072) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(openInternalLinksStrategy_0._v) ? 2048 : 1024);
+    if (!(($default & 16) === 0))
+      $dirty = $dirty | 24576;
+    else if (($changed & 24576) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(openExternalLinksStrategy_0._v) ? 16384 : 8192);
+    if (!(($default & 32) === 0))
+      $dirty = $dirty | 196608;
+    else if (($changed & 196608) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(updateHistoryMode_0._v) ? 131072 : 65536);
+    if (!(($default & 64) === 0))
+      $dirty = $dirty | 1572864;
+    else if (($changed & 1572864) === 0)
+      $dirty = $dirty | ((($changed & 2097152) === 0 ? $composer_0.changed_ga7h3f_k$(ref_0._v) : $composer_0.changedInstance_s1wkiy_k$(ref_0._v)) ? 1048576 : 524288);
+    if (!(($default & 128) === 0))
+      $dirty = $dirty | 12582912;
+    else if (($changed & 12582912) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content) ? 8388608 : 4194304);
+    if (!(($dirty & 4793491) === 4793490) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 2) === 0)) {
+        modifier_0._v = Companion_getInstance();
+      }
+      if (!(($default & 4) === 0)) {
+        variant_0._v = null;
+      }
+      if (!(($default & 8) === 0)) {
+        openInternalLinksStrategy_0._v = null;
+      }
+      if (!(($default & 16) === 0)) {
+        openExternalLinksStrategy_0._v = null;
+      }
+      if (!(($default & 32) === 0)) {
+        updateHistoryMode_0._v = null;
+      }
+      if (!(($default & 64) === 0)) {
+        ref_0._v = null;
+      }
+      var tmp = toAttrs(toModifier(get_LinkStyle(), [variant_0._v], $composer_0, com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter() | com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter() << 3).then_mmfvo6_k$(modifier_0._v));
+      var tmp_0 = openInternalLinksStrategy_0._v;
+      var tmp_1 = openExternalLinksStrategy_0._v;
+      var tmp_2 = updateHistoryMode_0._v;
+      // Inline function 'kotlin.run' call
+      // Inline function 'com.varabyte.kobweb.silk.components.navigation.Link.<anonymous>' call
+      var dispatchReceiver = rememberComposableLambda(682923050, true, Link$lambda_1(ref_0, content), $composer_0, 54);
+      // Inline function 'androidx.compose.runtime.remember' call
+      var $composer_1 = $composer_0;
+      sourceInformationMarkerStart($composer_1, 1157296644, 'CC(remember)P(1):Composables.kt#9igjgp');
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp_3;
+      if (invalid || it === Companion_getInstance_5().get_Empty_i9b85g_k$()) {
+        // Inline function 'com.varabyte.kobweb.silk.components.navigation.Link.<anonymous>.<anonymous>' call
+        var value = ComposableLambda$invoke$ref_1(dispatchReceiver);
+        $composer_1.updateRememberedValue_l1wh71_k$(value);
+        tmp_3 = value;
+      } else {
+        tmp_3 = it;
+      }
+      var tmp_4 = tmp_3;
+      var tmp0 = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
+      sourceInformationMarkerEnd($composer_1);
+      Anchor(path, tmp, tmp_0, tmp_1, tmp_2, tmp0, $composer_0, 196608 | 14 & $dirty | 896 & $dirty >> 3 | 7168 & $dirty >> 3 | 57344 & $dirty >> 3, 0);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp0_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.updateScope_t8jcf_k$(Link$lambda_2(path, modifier_0, variant_0, openInternalLinksStrategy_0, openExternalLinksStrategy_0, updateHistoryMode_0, ref_0, content, $changed, $default));
     }
   }
   function LinkStyle$lambda($this$CssStyle) {
@@ -764,26 +764,7 @@
     _init_properties_Link_kt__dm1ox2();
     return textDecorationLine(Companion_getInstance(), Companion_getInstance_8().get_Underline_oo7egz_k$());
   }
-  function Link$lambda($ref, $content) {
-    return function ($this$Anchor, $composer, $changed) {
-      var $composer_0 = $composer;
-      registerRefScope_0($this$Anchor, $ref._v, $composer_0, 14 & $changed | com_varabyte_kobweb_compose_dom_ElementRefScope$stableprop_getter() << 3);
-      $content($composer_0, 0);
-      return Unit_getInstance();
-    };
-  }
-  function ComposableLambda$invoke$ref_0($boundThis) {
-    return function (p0, p1, p2) {
-      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
-    };
-  }
-  function Link$lambda_0($path, $modifier, $variant, $openInternalLinksStrategy, $openExternalLinksStrategy, $updateHistoryMode, $ref, $content, $$changed, $$default) {
-    return function ($composer, $force) {
-      Link($path, $modifier._v, $variant._v, $openInternalLinksStrategy._v, $openExternalLinksStrategy._v, $updateHistoryMode._v, $ref._v, $content, $composer, updateChangedFlags($$changed | 1), $$default);
-      return Unit_getInstance();
-    };
-  }
-  function Link$lambda_1($text, $path) {
+  function Link$lambda($text, $path) {
     return function ($composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
@@ -798,14 +779,33 @@
       return Unit_getInstance();
     };
   }
-  function ComposableLambda$invoke$ref_1($boundThis) {
+  function ComposableLambda$invoke$ref_0($boundThis) {
     return function (p0, p1) {
       return $boundThis.invoke_z8di7s_k$(p0, p1);
     };
   }
-  function Link$lambda_2($path, $text, $modifier, $variant, $openInternalLinksStrategy, $openExternalLinksStrategy, $updateHistoryMode, $ref, $$changed, $$default) {
+  function Link$lambda_0($path, $text, $modifier, $variant, $openInternalLinksStrategy, $openExternalLinksStrategy, $updateHistoryMode, $ref, $$changed, $$default) {
     return function ($composer, $force) {
-      Link_0($path, $text._v, $modifier._v, $variant._v, $openInternalLinksStrategy._v, $openExternalLinksStrategy._v, $updateHistoryMode._v, $ref._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      Link($path, $text._v, $modifier._v, $variant._v, $openInternalLinksStrategy._v, $openExternalLinksStrategy._v, $updateHistoryMode._v, $ref._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
+  }
+  function Link$lambda_1($ref, $content) {
+    return function ($this$Anchor, $composer, $changed) {
+      var $composer_0 = $composer;
+      registerRefScope_0($this$Anchor, $ref._v, $composer_0, 14 & $changed | com_varabyte_kobweb_compose_dom_ElementRefScope$stableprop_getter() << 3);
+      $content($composer_0, 0);
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_1($boundThis) {
+    return function (p0, p1, p2) {
+      return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
+    };
+  }
+  function Link$lambda_2($path, $modifier, $variant, $openInternalLinksStrategy, $openExternalLinksStrategy, $updateHistoryMode, $ref, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      Link_0($path, $modifier._v, $variant._v, $openInternalLinksStrategy._v, $openExternalLinksStrategy._v, $updateHistoryMode._v, $ref._v, $content, $composer, updateChangedFlags($$changed | 1), $$default);
       return Unit_getInstance();
     };
   }
@@ -942,8 +942,8 @@
   //region block: exports
   _.$_$ = _.$_$ || {};
   _.$_$.a = Image;
-  _.$_$.b = Link_0;
-  _.$_$.c = Link;
+  _.$_$.b = Link;
+  _.$_$.c = Link_0;
   _.$_$.d = get_UncoloredLinkVariant;
   _.$_$.e = get_UndecoratedLinkVariant;
   _.$_$.f = initSilkWidgetsKobweb;

@@ -23,6 +23,9 @@ kobweb {
         }
     }
 }
+repositories {
+    maven(url = "https://jitpack.io")
+}
 
 kotlin {
     // This example is frontend only. However, for a fullstack app, you can uncomment the includeServer parameter
@@ -34,7 +37,8 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinx_serialization_version")
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:$kotlinx_datetime_version")
-                implementation(project(":common"))  // Link the shared module
+                implementation(project(":common"))
+//                implementation("com.github.stevdza-san:KotlinBootstrap:0.1.5")
             }
         }
 
@@ -51,7 +55,8 @@ kotlin {
             implementation(libs.kobweb.silk)
             // This default template uses built-in SVG icons, but what's available is limited.
             // Uncomment the following if you want access to a large set of font-awesome icons:
-            // implementation(libs.silk.icons.fa)
+            implementation(libs.silk.icons.mdi)
+            implementation(libs.silk.icons.fa)
             implementation(libs.kobwebx.markdown)
         }
 

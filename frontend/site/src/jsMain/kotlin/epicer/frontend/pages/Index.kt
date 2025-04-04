@@ -1,6 +1,12 @@
 package epicer.frontend.pages
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import com.varabyte.kobweb.compose.css.StyleVariable
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Modifier
@@ -8,15 +14,21 @@ import com.varabyte.kobweb.compose.ui.graphics.Color
 import com.varabyte.kobweb.compose.ui.modifiers.*
 import com.varabyte.kobweb.compose.ui.toAttrs
 import com.varabyte.kobweb.core.Page
+import com.varabyte.kobweb.core.PageContext
 import com.varabyte.kobweb.core.rememberPageContext
 import com.varabyte.kobweb.silk.components.forms.Button
 import com.varabyte.kobweb.silk.style.CssStyle
 import com.varabyte.kobweb.silk.style.base
 import com.varabyte.kobweb.silk.style.breakpoint.Breakpoint
 import com.varabyte.kobweb.silk.style.toModifier
+import epicer.frontend.components.sections.NavHeader
+import epicer.frontend.data.isLogged
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 import org.jetbrains.compose.web.css.cssRem
 import org.jetbrains.compose.web.css.vh
 import org.jetbrains.compose.web.dom.Div
+import org.jetbrains.compose.web.dom.Header
 import org.jetbrains.compose.web.dom.Text
 
 // Container that has a tagline and grid on desktop, and just the tagline on mobile
@@ -56,23 +68,31 @@ private fun GridCell(color: Color, row: Int, column: Int, width: Int? = null, he
 fun HomePage() {
     val ctx = rememberPageContext()
 
-    Column {
-        Button(
-            onClick = {
-                ctx.router.navigateTo("/login")
-            }
-        ) {
-            Text("Login!")
-        }
-
-        Button(
-            onClick = {
-                ctx.router.navigateTo("/me")
-            }
-        ) {
-            Text("Me!")
+    LaunchedEffect(Unit) {
+        if (!isLogged()) {
+            ctx.router.navigateTo("/login")
         }
     }
+
+    NavHeader()
+
+//    Column {
+//        Button(
+//            onClick = {
+//                ctx.router.navigateTo("/login")
+//            }
+//        ) {
+//            Text("Login!")
+//        }
+//
+//        Button(
+//            onClick = {
+//                ctx.router.navigateTo("/me")
+//            }
+//        ) {
+//            Text("Me!")
+//        }
+//    }
 }
 
 

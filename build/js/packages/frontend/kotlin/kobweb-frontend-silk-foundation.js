@@ -38,18 +38,18 @@
   var StyleSheet_init_$Init$ = kotlin_org_jetbrains_compose_html_html_core.$_$.b;
   var protoOf = kotlin_kotlin.$_$.kd;
   var initMetadataForObject = kotlin_kotlin.$_$.lc;
-  var initMetadataForInterface = kotlin_kotlin.$_$.jc;
-  var Companion_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m4;
+  var Companion_getInstance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o4;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.t2;
   var startsWith = kotlin_kotlin.$_$.yf;
   var endsWith = kotlin_kotlin.$_$.xe;
   var Companion_getInstance_1 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.e4;
-  var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p3;
-  var toAttrs = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x3;
+  var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q3;
+  var toAttrs = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y3;
   var rememberComposableLambda = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c;
   var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.y;
   var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.x;
   var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.p6;
+  var initMetadataForInterface = kotlin_kotlin.$_$.jc;
   var com_varabyte_kobweb_compose_dom_ElementRefScope$stableprop_getter = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.x2;
   var registerRefScope = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.b3;
   var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.s6;
@@ -100,18 +100,18 @@
   var isNotEmpty = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.n1;
   var mutableListOf = kotlin_kotlin.$_$.y8;
   var plus_0 = kotlin_kotlin.$_$.c9;
-  var ComparableStyleScope = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.d;
-  var toStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y3;
-  var equals = kotlin_kotlin.$_$.yb;
   var collectionSizeOrDefault = kotlin_kotlin.$_$.d7;
   var substringAfterLast = kotlin_kotlin.$_$.ag;
   var plus_1 = kotlin_kotlin.$_$.e9;
   var hashCode = kotlin_kotlin.$_$.fc;
+  var equals = kotlin_kotlin.$_$.yb;
   var endsWith_0 = kotlin_kotlin.$_$.ye;
   var copyToArray = kotlin_kotlin.$_$.r7;
-  var classNames = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g1;
-  var getValue = kotlin_kotlin.$_$.e8;
+  var classNames = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h1;
   var toList = kotlin_kotlin.$_$.fa;
+  var ComparableStyleScope = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.d;
+  var toStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z3;
+  var getValue = kotlin_kotlin.$_$.e8;
   var com_varabyte_kobweb_compose_css_ComparableStyleScope$stableprop_getter = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.g1;
   var getStringHashCode = kotlin_kotlin.$_$.ec;
   var isBlank = kotlin_kotlin.$_$.df;
@@ -119,6 +119,8 @@
   var Char = kotlin_kotlin.$_$.ch;
   var ComparableAttrsScope_init_$Create$ = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.i3;
   var setOf = kotlin_kotlin.$_$.m9;
+  var distinct = kotlin_kotlin.$_$.s7;
+  var lazy = kotlin_kotlin.$_$.ri;
   var From_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.k;
   var to = kotlin_kotlin.$_$.bj;
   var To_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.l;
@@ -127,8 +129,6 @@
   var StyleScopeBuilder = kotlin_org_jetbrains_compose_html_html_core.$_$.n3;
   var CSSKeyframeRuleDeclaration = kotlin_org_jetbrains_compose_html_html_core.$_$.z2;
   var CSSKeyframesRuleDeclaration = kotlin_org_jetbrains_compose_html_html_core.$_$.a3;
-  var distinct = kotlin_kotlin.$_$.s7;
-  var lazy = kotlin_kotlin.$_$.ri;
   var Companion_getInstance_2 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.l3;
   var KProperty1 = kotlin_kotlin.$_$.de;
   var getPropertyCallableRef = kotlin_kotlin.$_$.dc;
@@ -150,16 +150,16 @@
   var getKClass = kotlin_kotlin.$_$.e;
   var get_cssRem = kotlin_org_jetbrains_compose_html_html_core.$_$.e4;
   var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.z;
-  var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
   var getItem = kotlin_com_varabyte_kobweb_browser_ext.$_$.d;
   var setItem = kotlin_com_varabyte_kobweb_browser_ext.$_$.e;
+  var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
   var createStorageKey = kotlin_com_varabyte_kobweb_browser_ext.$_$.c;
   var KProperty0 = kotlin_kotlin.$_$.ce;
   var compositionLocalOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.r;
-  var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c4;
-  var com_varabyte_kobweb_compose_ui_graphics_Color_Rgb$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j;
+  var Companion_getInstance_3 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e4;
+  var com_varabyte_kobweb_compose_ui_graphics_Color_Rgb$stableprop_getter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k;
   var ensureNotNull = kotlin_kotlin.$_$.mi;
-  var styleModifier = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v3;
+  var styleModifier = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w3;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(SilkStyleSheet, 'SilkStyleSheet', VOID, StyleSheet);
@@ -210,35 +210,35 @@
   }
   initMetadataForInterface(CssStyleScopeBase, 'CssStyleScopeBase');
   initMetadataForClass(CssStyleScope, 'CssStyleScope', VOID, StyleScope, [CssStyleScopeBase, StyleScope]);
+  initMetadataForClass(ClassSelectors, 'ClassSelectors');
+  initMetadataForInterface(GeneralKind, 'GeneralKind', VOID, VOID, [CssKind]);
   initMetadataForInterface(RestrictedKind, 'RestrictedKind', VOID, VOID, [CssKind]);
+  initMetadataForClass(ExtendingCssStyle, 'ExtendingCssStyle', VOID, CssStyle);
+  initMetadataForClass(ImmutableCssStyle, 'ImmutableCssStyle');
   initMetadataForClass(CssStyleBaseScope, 'CssStyleBaseScope', VOID, VOID, [CssStyleScopeBase]);
+  initMetadataForClass(SimpleCssStyle, 'SimpleCssStyle', VOID, CssStyle);
   initMetadataForInterface(StyleGroup, 'StyleGroup');
   initMetadataForClass(Light, 'Light', VOID, VOID, [StyleGroup]);
   initMetadataForClass(Dark, 'Dark', VOID, VOID, [StyleGroup]);
   initMetadataForClass(ColorAgnostic, 'ColorAgnostic', VOID, VOID, [StyleGroup]);
   initMetadataForClass(ColorAware, 'ColorAware', VOID, VOID, [StyleGroup]);
   initMetadataForCompanion(Companion_2);
-  initMetadataForClass(ClassSelectors, 'ClassSelectors');
-  initMetadataForClass(ImmutableCssStyle, 'ImmutableCssStyle');
-  initMetadataForInterface(GeneralKind, 'GeneralKind', VOID, VOID, [CssKind]);
-  initMetadataForClass(ExtendingCssStyle, 'ExtendingCssStyle', VOID, CssStyle);
-  initMetadataForClass(SimpleCssStyle, 'SimpleCssStyle', VOID, CssStyle);
   initMetadataForClass(CssStyle$2, VOID, VOID, CssStyle);
   initMetadataForClass(CssStyle$4, VOID, VOID, CssStyle);
-  initMetadataForClass(base$3, VOID, VOID, CssStyle);
-  initMetadataForClass(CssStyle$5, VOID, VOID, CssStyle);
+  initMetadataForClass(base$2, VOID, VOID, CssStyle);
+  initMetadataForClass(CssStyle$6, VOID, VOID, CssStyle);
   initMetadataForClass(CssStyleVariant, 'CssStyleVariant');
-  initMetadataForClass(SimpleCssStyleVariant$1, VOID, VOID, CssStyle);
   initMetadataForClass(SimpleCssStyleVariant, 'SimpleCssStyleVariant', VOID, CssStyleVariant);
   initMetadataForClass(ExtendingCssStyleVariant, 'ExtendingCssStyleVariant', VOID, SimpleCssStyleVariant);
+  initMetadataForClass(SimpleCssStyleVariant$1, VOID, VOID, CssStyle);
   initMetadataForClass(CompositeCssStyleVariant, 'CompositeCssStyleVariant', VOID, CssStyleVariant);
-  initMetadataForClass(addVariant$1, VOID, VOID, CssStyle);
+  initMetadataForClass(addVariant$2, VOID, VOID, CssStyle);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Key, 'Key');
   initMetadataForClass(CssModifier, 'CssModifier');
-  initMetadataForClass(KeyframesBuilder, 'KeyframesBuilder', VOID, VOID, [CssStyleScopeBase]);
   initMetadataForCompanion(Companion_4);
   initMetadataForClass(Keyframes, 'Keyframes');
+  initMetadataForClass(KeyframesBuilder, 'KeyframesBuilder', VOID, VOID, [CssStyleScopeBase]);
   initMetadataForInterface(BreakpointQueryProvider, 'BreakpointQueryProvider');
   initMetadataForClass(Range, 'Range', VOID, VOID, [BreakpointQueryProvider]);
   initMetadataForClass(Breakpoint, 'Breakpoint', VOID, Enum, [BreakpointQueryProvider, Enum]);
@@ -411,8 +411,6 @@
     return SpanTextStyle;
   }
   var SpanTextStyle;
-  function SpanTextKind() {
-  }
   function SpanText(text, modifier, variant, ref, $composer, $changed, $default) {
     _init_properties_SpanText_kt__upt1hl();
     var modifier_0 = {_v: modifier};
@@ -447,7 +445,7 @@
       if (!(($default & 8) === 0)) {
         ref_0._v = null;
       }
-      var tmp0 = toModifier_0(get_SpanTextStyle(), [variant_0._v], $composer_0, 6).then_mmfvo6_k$(modifier_0._v);
+      var tmp0 = toModifier_1(get_SpanTextStyle(), [variant_0._v], $composer_0, 6).then_mmfvo6_k$(modifier_0._v);
       // Inline function 'com.varabyte.kobweb.compose.ui.thenIf' call
       var tmp;
       if (startsWith(text, _Char___init__impl__6a9atx(32)) || endsWith(text, _Char___init__impl__6a9atx(32))) {
@@ -492,6 +490,8 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(SpanText$lambda_0(text, modifier_0, variant_0, ref_0, $changed, $default));
     }
   }
+  function SpanTextKind() {
+  }
   function SpanTextStyle$lambda($this$CssStyle) {
     _init_properties_SpanText_kt__upt1hl();
     return Unit_getInstance();
@@ -519,7 +519,7 @@
   function _init_properties_SpanText_kt__upt1hl() {
     if (!properties_initialized_SpanText_kt_kccny1) {
       properties_initialized_SpanText_kt_kccny1 = true;
-      SpanTextStyle = CssStyle_0(VOID, SpanTextStyle$lambda);
+      SpanTextStyle = CssStyle_1(VOID, SpanTextStyle$lambda);
     }
   }
   function get_LocalDeferred() {
@@ -1782,10 +1782,12 @@
   protoOf(CssStyle).intoImmutableStyle_96ijwa_k$ = function (classSelectors) {
     return new ImmutableCssStyle(classSelectors, this.extraModifier_1);
   };
-  function CssStyle_0(extraModifier, init) {
+  function ComponentKind() {
+  }
+  function base(_this__u8e3s4, extraModifier, init) {
     extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
     _init_properties_CssStyle_kt__srbhji();
-    return new CssStyle$2(init, extraModifier);
+    return base_0(_this__u8e3s4, base$lambda(extraModifier), init);
   }
   function CssStyleScope(colorMode) {
     StyleScope.call(this);
@@ -1794,11 +1796,153 @@
   protoOf(CssStyleScope).get_colorMode_trbg8z_k$ = function () {
     return this.colorMode_1;
   };
-  function ComponentKind() {
+  function toModifier(_this__u8e3s4, $composer, $changed) {
+    _init_properties_CssStyle_kt__srbhji();
+    var $composer_0 = $composer;
+    $composer_0.startReplaceGroup_5hh8aj_k$(748086722);
+    var tmp0 = _toModifier(_this__u8e3s4, $composer_0, 14 & $changed);
+    $composer_0.endReplaceGroup_ek144q_k$();
+    return tmp0;
+  }
+  function _ClassSelectors___init__impl__tbnzdx(value) {
+    return value;
+  }
+  function _get_value__a43j40($this) {
+    return $this;
+  }
+  function _ClassSelectors___get_classNames__impl__eyto04($this) {
+    // Inline function 'kotlin.collections.map' call
+    var this_0 = _get_value__a43j40($this);
+    // Inline function 'kotlin.collections.mapTo' call
+    var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_0, 10));
+    var _iterator__ex2g4s = this_0.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var item = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'com.varabyte.kobweb.silk.style.ClassSelectors.<get-classNames>.<anonymous>' call
+      var tmp$ret$0 = substringAfterLast(item, _Char___init__impl__6a9atx(46));
+      destination.add_utx5q5_k$(tmp$ret$0);
+    }
+    return destination;
+  }
+  function ClassSelectors__plus_impl_eu2y3b($this, other) {
+    return _ClassSelectors___init__impl__tbnzdx(plus_1(_get_value__a43j40($this), _get_value__a43j40(other)));
+  }
+  function ClassSelectors__toString_impl_82ebnf($this) {
+    return 'ClassSelectors(value=' + toString($this) + ')';
+  }
+  function ClassSelectors__hashCode_impl_ttk8ga($this) {
+    return hashCode($this);
+  }
+  function ClassSelectors__equals_impl_a7r10u($this, other) {
+    if (!(other instanceof ClassSelectors))
+      return false;
+    var tmp0_other_with_cast = other instanceof ClassSelectors ? other.value_1 : THROW_CCE();
+    if (!equals($this, tmp0_other_with_cast))
+      return false;
+    return true;
+  }
+  function ClassSelectors(value) {
+    this.value_1 = value;
+  }
+  protoOf(ClassSelectors).toString = function () {
+    return ClassSelectors__toString_impl_82ebnf(this.value_1);
+  };
+  protoOf(ClassSelectors).hashCode = function () {
+    return ClassSelectors__hashCode_impl_ttk8ga(this.value_1);
+  };
+  protoOf(ClassSelectors).equals = function (other) {
+    return ClassSelectors__equals_impl_a7r10u(this.value_1, other);
+  };
+  function GeneralKind() {
   }
   function CssKind() {
   }
   function RestrictedKind() {
+  }
+  function ExtendingCssStyle$_init_$lambda_m2ritn($extraModifier, $baseStyle) {
+    return function ($composer, $changed) {
+      var $composer_0 = $composer;
+      $composer_0.startReplaceGroup_5hh8aj_k$(1250101016);
+      var tmp0 = $extraModifier($composer_0, 0).then_mmfvo6_k$(toModifier($baseStyle, $composer_0, 0));
+      $composer_0.endReplaceGroup_ek144q_k$();
+      return tmp0;
+    };
+  }
+  function ExtendingCssStyle(init, extraModifier, baseStyle) {
+    CssStyle.call(this, init, ExtendingCssStyle$_init_$lambda_m2ritn(extraModifier, baseStyle));
+    this.baseStyle_1 = baseStyle;
+  }
+  protoOf(ExtendingCssStyle).get_baseStyle_lpil3d_k$ = function () {
+    return this.baseStyle_1;
+  };
+  function toAttrs_0(_this__u8e3s4, finalHandler, $composer, $changed, $default) {
+    _init_properties_CssStyle_kt__srbhji();
+    var finalHandler_0 = finalHandler;
+    var $composer_0 = $composer;
+    $composer_0.startReplaceGroup_5hh8aj_k$(-850883108);
+    if (!(($default & 1) === 0))
+      finalHandler_0 = null;
+    var tmp0 = toAttrs(toModifier(_this__u8e3s4, $composer_0, 14 & $changed), finalHandler_0);
+    $composer_0.endReplaceGroup_ek144q_k$();
+    return tmp0;
+  }
+  function _get_extraModifier__ta4m22($this) {
+    return $this.extraModifier_1;
+  }
+  function _get_classNames__oqef2z($this) {
+    return $this.classNames_1;
+  }
+  function ImmutableCssStyle(classSelectors, extraModifier) {
+    this.extraModifier_1 = extraModifier;
+    this.classNames_1 = toSet(_ClassSelectors___get_classNames__impl__eyto04(classSelectors));
+  }
+  protoOf(ImmutableCssStyle).toModifier_7iov47_k$ = function ($composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0.startReplaceGroup_5hh8aj_k$(114788234);
+    $composer_0.startReplaceGroup_5hh8aj_k$(-1790367629);
+    // Inline function 'kotlin.collections.filterNot' call
+    var tmp0 = this.classNames_1;
+    // Inline function 'kotlin.collections.filterNotTo' call
+    var destination = ArrayList_init_$Create$();
+    var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'com.varabyte.kobweb.silk.style.ImmutableCssStyle.toModifier.<anonymous>' call
+      // Inline function 'kotlin.text.lowercase' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$1 = Companion_getInstance_10().get_current_2iudd5_k$($composer_0, 6).get_opposite_ywslzk_k$().get_name_woqyms_k$().toLowerCase();
+      if (!endsWith_0(element, tmp$ret$1)) {
+        destination.add_utx5q5_k$(element);
+      }
+    }
+    $composer_0.endReplaceGroup_ek144q_k$();
+    var currentClassNames = destination;
+    var tmp;
+    // Inline function 'kotlin.collections.isNotEmpty' call
+    if (!currentClassNames.isEmpty_y1axqb_k$()) {
+      var tmp_0 = Companion_getInstance_0();
+      // Inline function 'kotlin.collections.toTypedArray' call
+      var tmp$ret$6 = copyToArray(currentClassNames);
+      tmp = classNames(tmp_0, tmp$ret$6.slice());
+    } else {
+      tmp = Companion_getInstance_0();
+    }
+    var tmp0_0 = tmp.then_mmfvo6_k$(this.extraModifier_1($composer_0, 0));
+    $composer_0.endReplaceGroup_ek144q_k$();
+    return tmp0_0;
+  };
+  function CssStyle_0(extraModifier, init) {
+    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
+    _init_properties_CssStyle_kt__srbhji();
+    return new CssStyle$2(init, extraModifier);
+  }
+  function toModifier_0(_this__u8e3s4, $composer, $changed) {
+    _init_properties_CssStyle_kt__srbhji();
+    var $composer_0 = $composer;
+    $composer_0.startReplaceGroup_5hh8aj_k$(748086722);
+    var tmp0 = _toModifier(_this__u8e3s4, $composer_0, 14 & $changed);
+    $composer_0.endReplaceGroup_ek144q_k$();
+    return tmp0;
   }
   function CssStyleBaseScope(colorMode) {
     this.colorMode_1 = colorMode;
@@ -1806,6 +1950,52 @@
   protoOf(CssStyleBaseScope).get_colorMode_trbg8z_k$ = function () {
     return this.colorMode_1;
   };
+  function CssStyle_1(extraModifier, init) {
+    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
+    _init_properties_CssStyle_kt__srbhji();
+    return new CssStyle$4(init, extraModifier);
+  }
+  function base_0(_this__u8e3s4, extraModifier, init) {
+    _init_properties_CssStyle_kt__srbhji();
+    return new base$2(extraModifier, init);
+  }
+  function base_1(_this__u8e3s4, extraModifier, init) {
+    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
+    _init_properties_CssStyle_kt__srbhji();
+    return base_2(_this__u8e3s4, base$lambda_0(extraModifier), init);
+  }
+  function com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter() {
+    return com_varabyte_kobweb_silk_style_CssStyle$stable;
+  }
+  function toModifier_1(_this__u8e3s4, variants, $composer, $changed) {
+    _init_properties_CssStyle_kt__srbhji();
+    var $composer_0 = $composer;
+    $composer_0.startReplaceGroup_5hh8aj_k$(-431222543);
+    var tmp = _toModifier(_this__u8e3s4, $composer_0, 14 & $changed);
+    var tmp0_safe_receiver = combine(toList(variants), $composer_0, 0);
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.toModifier_wob29e_k$($composer_0, 0);
+    var tmp0 = tmp.then_mmfvo6_k$(tmp1_elvis_lhs == null ? Companion_getInstance_0() : tmp1_elvis_lhs);
+    $composer_0.endReplaceGroup_ek144q_k$();
+    return tmp0;
+  }
+  function SimpleCssStyle(selector, init, extraModifier, layer) {
+    CssStyle.call(this, init, extraModifier);
+    this.selector_1 = selector;
+    this.layer_1 = layer;
+  }
+  protoOf(SimpleCssStyle).get_selector_c3i7h4_k$ = function () {
+    return this.selector_1;
+  };
+  protoOf(SimpleCssStyle).get_layer_iujprc_k$ = function () {
+    return this.layer_1;
+  };
+  protoOf(SimpleCssStyle).addStylesInto_s5snig_k$ = function (styleSheet) {
+    return this.addStylesInto_avvx4p_k$(this.selector_1, styleSheet, this.layer_1);
+  };
+  function CssStyle_2(extraModifier, init) {
+    _init_properties_CssStyle_kt__srbhji();
+    return new CssStyle$6(init, extraModifier);
+  }
   function Light(styles) {
     this.styles_1 = styles;
   }
@@ -1890,127 +2080,7 @@
   }
   function StyleGroup() {
   }
-  function _ClassSelectors___init__impl__tbnzdx(value) {
-    return value;
-  }
-  function _get_value__a43j40($this) {
-    return $this;
-  }
-  function _ClassSelectors___get_classNames__impl__eyto04($this) {
-    // Inline function 'kotlin.collections.map' call
-    var this_0 = _get_value__a43j40($this);
-    // Inline function 'kotlin.collections.mapTo' call
-    var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_0, 10));
-    var _iterator__ex2g4s = this_0.iterator_jk1svi_k$();
-    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
-      var item = _iterator__ex2g4s.next_20eer_k$();
-      // Inline function 'com.varabyte.kobweb.silk.style.ClassSelectors.<get-classNames>.<anonymous>' call
-      var tmp$ret$0 = substringAfterLast(item, _Char___init__impl__6a9atx(46));
-      destination.add_utx5q5_k$(tmp$ret$0);
-    }
-    return destination;
-  }
-  function ClassSelectors__plus_impl_eu2y3b($this, other) {
-    return _ClassSelectors___init__impl__tbnzdx(plus_1(_get_value__a43j40($this), _get_value__a43j40(other)));
-  }
-  function ClassSelectors__toString_impl_82ebnf($this) {
-    return 'ClassSelectors(value=' + toString($this) + ')';
-  }
-  function ClassSelectors__hashCode_impl_ttk8ga($this) {
-    return hashCode($this);
-  }
-  function ClassSelectors__equals_impl_a7r10u($this, other) {
-    if (!(other instanceof ClassSelectors))
-      return false;
-    var tmp0_other_with_cast = other instanceof ClassSelectors ? other.value_1 : THROW_CCE();
-    if (!equals($this, tmp0_other_with_cast))
-      return false;
-    return true;
-  }
-  function ClassSelectors(value) {
-    this.value_1 = value;
-  }
-  protoOf(ClassSelectors).toString = function () {
-    return ClassSelectors__toString_impl_82ebnf(this.value_1);
-  };
-  protoOf(ClassSelectors).hashCode = function () {
-    return ClassSelectors__hashCode_impl_ttk8ga(this.value_1);
-  };
-  protoOf(ClassSelectors).equals = function (other) {
-    return ClassSelectors__equals_impl_a7r10u(this.value_1, other);
-  };
-  function _get_extraModifier__ta4m22($this) {
-    return $this.extraModifier_1;
-  }
-  function _get_classNames__oqef2z($this) {
-    return $this.classNames_1;
-  }
-  function ImmutableCssStyle(classSelectors, extraModifier) {
-    this.extraModifier_1 = extraModifier;
-    this.classNames_1 = toSet(_ClassSelectors___get_classNames__impl__eyto04(classSelectors));
-  }
-  protoOf(ImmutableCssStyle).toModifier_7iov47_k$ = function ($composer, $changed) {
-    var $composer_0 = $composer;
-    $composer_0.startReplaceGroup_5hh8aj_k$(114788234);
-    $composer_0.startReplaceGroup_5hh8aj_k$(-1790367629);
-    // Inline function 'kotlin.collections.filterNot' call
-    var tmp0 = this.classNames_1;
-    // Inline function 'kotlin.collections.filterNotTo' call
-    var destination = ArrayList_init_$Create$();
-    var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
-    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
-      var element = _iterator__ex2g4s.next_20eer_k$();
-      // Inline function 'com.varabyte.kobweb.silk.style.ImmutableCssStyle.toModifier.<anonymous>' call
-      // Inline function 'kotlin.text.lowercase' call
-      // Inline function 'kotlin.js.asDynamic' call
-      var tmp$ret$1 = Companion_getInstance_10().get_current_2iudd5_k$($composer_0, 6).get_opposite_ywslzk_k$().get_name_woqyms_k$().toLowerCase();
-      if (!endsWith_0(element, tmp$ret$1)) {
-        destination.add_utx5q5_k$(element);
-      }
-    }
-    $composer_0.endReplaceGroup_ek144q_k$();
-    var currentClassNames = destination;
-    var tmp;
-    // Inline function 'kotlin.collections.isNotEmpty' call
-    if (!currentClassNames.isEmpty_y1axqb_k$()) {
-      var tmp_0 = Companion_getInstance_0();
-      // Inline function 'kotlin.collections.toTypedArray' call
-      var tmp$ret$6 = copyToArray(currentClassNames);
-      tmp = classNames(tmp_0, tmp$ret$6.slice());
-    } else {
-      tmp = Companion_getInstance_0();
-    }
-    var tmp0_0 = tmp.then_mmfvo6_k$(this.extraModifier_1($composer_0, 0));
-    $composer_0.endReplaceGroup_ek144q_k$();
-    return tmp0_0;
-  };
   function CssStyleScopeBase() {
-  }
-  function GeneralKind() {
-  }
-  function ExtendingCssStyle$_init_$lambda_m2ritn($extraModifier, $baseStyle) {
-    return function ($composer, $changed) {
-      var $composer_0 = $composer;
-      $composer_0.startReplaceGroup_5hh8aj_k$(1250101016);
-      var tmp0 = $extraModifier($composer_0, 0).then_mmfvo6_k$(toModifier($baseStyle, $composer_0, 0));
-      $composer_0.endReplaceGroup_ek144q_k$();
-      return tmp0;
-    };
-  }
-  function ExtendingCssStyle(init, extraModifier, baseStyle) {
-    CssStyle.call(this, init, ExtendingCssStyle$_init_$lambda_m2ritn(extraModifier, baseStyle));
-    this.baseStyle_1 = baseStyle;
-  }
-  protoOf(ExtendingCssStyle).get_baseStyle_lpil3d_k$ = function () {
-    return this.baseStyle_1;
-  };
-  function toModifier(_this__u8e3s4, $composer, $changed) {
-    _init_properties_CssStyle_kt__srbhji();
-    var $composer_0 = $composer;
-    $composer_0.startReplaceGroup_5hh8aj_k$(748086722);
-    var tmp0 = _toModifier(_this__u8e3s4, $composer_0, 14 & $changed);
-    $composer_0.endReplaceGroup_ek144q_k$();
-    return tmp0;
   }
   function _toModifier(_this__u8e3s4, $composer, $changed) {
     _init_properties_CssStyle_kt__srbhji();
@@ -2020,80 +2090,19 @@
     $composer_0.endReplaceGroup_ek144q_k$();
     return tmp0;
   }
-  function toModifier_0(_this__u8e3s4, variants, $composer, $changed) {
-    _init_properties_CssStyle_kt__srbhji();
-    var $composer_0 = $composer;
-    $composer_0.startReplaceGroup_5hh8aj_k$(-431222543);
-    var tmp = _toModifier(_this__u8e3s4, $composer_0, 14 & $changed);
-    var tmp0_safe_receiver = combine(toList(variants), $composer_0, 0);
-    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.toModifier_wob29e_k$($composer_0, 0);
-    var tmp0 = tmp.then_mmfvo6_k$(tmp1_elvis_lhs == null ? Companion_getInstance_0() : tmp1_elvis_lhs);
-    $composer_0.endReplaceGroup_ek144q_k$();
-    return tmp0;
-  }
-  function base(_this__u8e3s4, extraModifier, init) {
-    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
-    _init_properties_CssStyle_kt__srbhji();
-    return base_2(_this__u8e3s4, base$lambda(extraModifier), init);
-  }
-  function CssStyle_1(extraModifier, init) {
-    _init_properties_CssStyle_kt__srbhji();
-    return new CssStyle$4(init, extraModifier);
-  }
-  function base_0(_this__u8e3s4, extraModifier, init) {
-    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
-    _init_properties_CssStyle_kt__srbhji();
-    return base_1(_this__u8e3s4, base$lambda_0(extraModifier), init);
-  }
-  function base_1(_this__u8e3s4, extraModifier, init) {
-    _init_properties_CssStyle_kt__srbhji();
-    return new base$3(extraModifier, init);
-  }
-  function com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter() {
-    return com_varabyte_kobweb_silk_style_CssStyle$stable;
-  }
-  function CssStyle_2(extraModifier, init) {
-    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
-    _init_properties_CssStyle_kt__srbhji();
-    return new CssStyle$5(init, extraModifier);
-  }
-  function toAttrs_0(_this__u8e3s4, finalHandler, $composer, $changed, $default) {
-    _init_properties_CssStyle_kt__srbhji();
-    var finalHandler_0 = finalHandler;
-    var $composer_0 = $composer;
-    $composer_0.startReplaceGroup_5hh8aj_k$(-850883108);
-    if (!(($default & 1) === 0))
-      finalHandler_0 = null;
-    var tmp0 = toAttrs(toModifier(_this__u8e3s4, $composer_0, 14 & $changed), finalHandler_0);
-    $composer_0.endReplaceGroup_ek144q_k$();
-    return tmp0;
-  }
   function base_2(_this__u8e3s4, extraModifier, init) {
     _init_properties_CssStyle_kt__srbhji();
-    return CssStyle_1(extraModifier, base$lambda_1(init));
+    return CssStyle_2(extraModifier, base$lambda_1(init));
   }
-  function toModifier_1(_this__u8e3s4, $composer, $changed) {
-    _init_properties_CssStyle_kt__srbhji();
-    var $composer_0 = $composer;
-    $composer_0.startReplaceGroup_5hh8aj_k$(748086722);
-    var tmp0 = _toModifier(_this__u8e3s4, $composer_0, 14 & $changed);
-    $composer_0.endReplaceGroup_ek144q_k$();
-    return tmp0;
+  function base$lambda($extraModifier) {
+    return function ($composer, $changed) {
+      var $composer_0 = $composer;
+      $composer_0.startReplaceGroup_5hh8aj_k$(-2139862911);
+      var tmp0 = $extraModifier;
+      $composer_0.endReplaceGroup_ek144q_k$();
+      return tmp0;
+    };
   }
-  function SimpleCssStyle(selector, init, extraModifier, layer) {
-    CssStyle.call(this, init, extraModifier);
-    this.selector_1 = selector;
-    this.layer_1 = layer;
-  }
-  protoOf(SimpleCssStyle).get_selector_c3i7h4_k$ = function () {
-    return this.selector_1;
-  };
-  protoOf(SimpleCssStyle).get_layer_iujprc_k$ = function () {
-    return this.layer_1;
-  };
-  protoOf(SimpleCssStyle).addStylesInto_s5snig_k$ = function (styleSheet) {
-    return this.addStylesInto_avvx4p_k$(this.selector_1, styleSheet, this.layer_1);
-  };
   function CssStyle$o$_init_$lambda_60e9n6($extraModifier) {
     return function ($composer, $changed) {
       var $composer_0 = $composer;
@@ -2106,26 +2115,17 @@
   function CssStyle$2($init, $extraModifier) {
     CssStyle.call(this, $init, CssStyle$o$_init_$lambda_60e9n6($extraModifier));
   }
-  function base$lambda($extraModifier) {
+  function CssStyle$o$_init_$lambda_60e9n6_0($extraModifier) {
     return function ($composer, $changed) {
       var $composer_0 = $composer;
-      $composer_0.startReplaceGroup_5hh8aj_k$(-2139862911);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-256215983);
       var tmp0 = $extraModifier;
       $composer_0.endReplaceGroup_ek144q_k$();
       return tmp0;
     };
   }
   function CssStyle$4($init, $extraModifier) {
-    CssStyle.call(this, $init, $extraModifier);
-  }
-  function base$lambda_0($extraModifier) {
-    return function ($composer, $changed) {
-      var $composer_0 = $composer;
-      $composer_0.startReplaceGroup_5hh8aj_k$(-2139862911);
-      var tmp0 = $extraModifier;
-      $composer_0.endReplaceGroup_ek144q_k$();
-      return tmp0;
-    };
+    CssStyle.call(this, $init, CssStyle$o$_init_$lambda_60e9n6_0($extraModifier));
   }
   function base$o$_init_$lambda$lambda_d0jdie($this, $init) {
     return function () {
@@ -2140,20 +2140,20 @@
       return Unit_getInstance();
     };
   }
-  function base$3($extraModifier, $init) {
+  function base$2($extraModifier, $init) {
     CssStyle.call(this, base$o$_init_$lambda_5dljwv($init), $extraModifier);
   }
-  function CssStyle$o$_init_$lambda_60e9n6_0($extraModifier) {
+  function base$lambda_0($extraModifier) {
     return function ($composer, $changed) {
       var $composer_0 = $composer;
-      $composer_0.startReplaceGroup_5hh8aj_k$(-256215983);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-2139862911);
       var tmp0 = $extraModifier;
       $composer_0.endReplaceGroup_ek144q_k$();
       return tmp0;
     };
   }
-  function CssStyle$5($init, $extraModifier) {
-    CssStyle.call(this, $init, CssStyle$o$_init_$lambda_60e9n6_0($extraModifier));
+  function CssStyle$6($init, $extraModifier) {
+    CssStyle.call(this, $init, $extraModifier);
   }
   function base$lambda$lambda($this_CssStyle, $init) {
     return function () {
@@ -2189,11 +2189,37 @@
   var com_varabyte_kobweb_silk_style_CssStyleVariant$stable;
   var com_varabyte_kobweb_silk_style_SimpleCssStyleVariant$stable;
   var com_varabyte_kobweb_silk_style_ExtendingCssStyleVariant$stable;
+  function addVariant(_this__u8e3s4, extraModifier, init) {
+    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
+    return addVariant_0(_this__u8e3s4, addVariant$lambda(extraModifier), init);
+  }
+  function ExtendingCssStyleVariant$_init_$lambda_8avhto($extraModifier, $baseVariant) {
+    return function ($composer, $changed) {
+      var $composer_0 = $composer;
+      $composer_0.startReplaceGroup_5hh8aj_k$(1198919248);
+      var tmp0 = $extraModifier($composer_0, 0).then_mmfvo6_k$($baseVariant.toModifier_wob29e_k$($composer_0, 0));
+      $composer_0.endReplaceGroup_ek144q_k$();
+      return tmp0;
+    };
+  }
+  function ExtendingCssStyleVariant(init, extraModifier, baseVariant) {
+    SimpleCssStyleVariant_init_$Init$(init, ExtendingCssStyleVariant$_init_$lambda_8avhto(extraModifier, baseVariant), baseVariant.baseStyle_1, this);
+    this.baseVariant_1 = baseVariant;
+  }
+  protoOf(ExtendingCssStyleVariant).get_baseVariant_nxoaqa_k$ = function () {
+    return this.baseVariant_1;
+  };
+  function addVariant_0(_this__u8e3s4, extraModifier, init) {
+    return new SimpleCssStyleVariant(new addVariant$2(init, extraModifier), _this__u8e3s4);
+  }
   function CssStyleVariant() {
   }
   protoOf(CssStyleVariant).then_9h6e8h_k$ = function (next) {
     return new CompositeCssStyleVariant(this, next);
   };
+  function com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter() {
+    return com_varabyte_kobweb_silk_style_CssStyleVariant$stable;
+  }
   function SimpleCssStyleVariant_init_$Init$(init, extraModifier, baseStyle, $this) {
     SimpleCssStyleVariant.call($this, new SimpleCssStyleVariant$1(init, extraModifier), baseStyle);
     return $this;
@@ -2218,47 +2244,14 @@
   protoOf(SimpleCssStyleVariant).toModifier_wob29e_k$ = function ($composer, $changed) {
     var $composer_0 = $composer;
     $composer_0.startReplaceGroup_5hh8aj_k$(-1935545974);
-    var tmp0 = toModifier_0(this.cssStyle_1, [], $composer_0, 0);
+    var tmp0 = toModifier_1(this.cssStyle_1, [], $composer_0, 0);
     $composer_0.endReplaceGroup_ek144q_k$();
     return tmp0;
   };
-  function ExtendingCssStyleVariant$_init_$lambda_8avhto($extraModifier, $baseVariant) {
-    return function ($composer, $changed) {
-      var $composer_0 = $composer;
-      $composer_0.startReplaceGroup_5hh8aj_k$(1198919248);
-      var tmp0 = $extraModifier($composer_0, 0).then_mmfvo6_k$($baseVariant.toModifier_wob29e_k$($composer_0, 0));
-      $composer_0.endReplaceGroup_ek144q_k$();
-      return tmp0;
-    };
+  function addVariantBase(_this__u8e3s4, extraModifier, init) {
+    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
+    return addVariantBase_0(_this__u8e3s4, addVariantBase$lambda(extraModifier), init);
   }
-  function ExtendingCssStyleVariant(init, extraModifier, baseVariant) {
-    SimpleCssStyleVariant_init_$Init$(init, ExtendingCssStyleVariant$_init_$lambda_8avhto(extraModifier, baseVariant), baseVariant.baseStyle_1, this);
-    this.baseVariant_1 = baseVariant;
-  }
-  protoOf(ExtendingCssStyleVariant).get_baseVariant_nxoaqa_k$ = function () {
-    return this.baseVariant_1;
-  };
-  function addVariant(_this__u8e3s4, extraModifier, init) {
-    return new SimpleCssStyleVariant(new addVariant$1(init, extraModifier), _this__u8e3s4);
-  }
-  function _get_head__d7jo8b($this) {
-    return $this.head_1;
-  }
-  function _get_tail__de2tiz($this) {
-    return $this.tail_1;
-  }
-  function CompositeCssStyleVariant(head, tail) {
-    CssStyleVariant.call(this);
-    this.head_1 = head;
-    this.tail_1 = tail;
-  }
-  protoOf(CompositeCssStyleVariant).toModifier_wob29e_k$ = function ($composer, $changed) {
-    var $composer_0 = $composer;
-    $composer_0.startReplaceGroup_5hh8aj_k$(1761922567);
-    var tmp0 = this.head_1.toModifier_wob29e_k$($composer_0, 0).then_mmfvo6_k$(this.tail_1.toModifier_wob29e_k$($composer_0, 0));
-    $composer_0.endReplaceGroup_ek144q_k$();
-    return tmp0;
-  };
   function combine(_this__u8e3s4, $composer, $changed) {
     var $composer_0 = $composer;
     $composer_0.startReplaceGroup_5hh8aj_k$(867312062);
@@ -2289,22 +2282,26 @@
     $composer_0.endReplaceGroup_ek144q_k$();
     return tmp0;
   }
-  function addVariant_0(_this__u8e3s4, extraModifier, init) {
-    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
-    return addVariant(_this__u8e3s4, addVariant$lambda(extraModifier), init);
+  function _get_head__d7jo8b($this) {
+    return $this.head_1;
   }
-  function com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter() {
-    return com_varabyte_kobweb_silk_style_CssStyleVariant$stable;
+  function _get_tail__de2tiz($this) {
+    return $this.tail_1;
   }
-  function addVariantBase(_this__u8e3s4, extraModifier, init) {
-    extraModifier = extraModifier === VOID ? Companion_getInstance_0() : extraModifier;
-    return addVariantBase_0(_this__u8e3s4, addVariantBase$lambda(extraModifier), init);
+  function CompositeCssStyleVariant(head, tail) {
+    CssStyleVariant.call(this);
+    this.head_1 = head;
+    this.tail_1 = tail;
   }
+  protoOf(CompositeCssStyleVariant).toModifier_wob29e_k$ = function ($composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0.startReplaceGroup_5hh8aj_k$(1761922567);
+    var tmp0 = this.head_1.toModifier_wob29e_k$($composer_0, 0).then_mmfvo6_k$(this.tail_1.toModifier_wob29e_k$($composer_0, 0));
+    $composer_0.endReplaceGroup_ek144q_k$();
+    return tmp0;
+  };
   function addVariantBase_0(_this__u8e3s4, extraModifier, init) {
     return SimpleCssStyleVariant_init_$Create$(addVariantBase$lambda_0(init), extraModifier, _this__u8e3s4);
-  }
-  function addVariant$1($init, $extraModifier) {
-    CssStyle.call(this, $init, $extraModifier);
   }
   function addVariant$lambda($extraModifier) {
     return function ($composer, $changed) {
@@ -2314,6 +2311,9 @@
       $composer_0.endReplaceGroup_ek144q_k$();
       return tmp0;
     };
+  }
+  function addVariant$2($init, $extraModifier) {
+    CssStyle.call(this, $init, $extraModifier);
   }
   function addVariantBase$lambda($extraModifier) {
     return function ($composer, $changed) {
@@ -2546,6 +2546,52 @@
   }
   var com_varabyte_kobweb_silk_style_animation_KeyframesBuilder$stable;
   var com_varabyte_kobweb_silk_style_animation_Keyframes$stable;
+  function Companion_4() {
+    Companion_instance_4 = this;
+  }
+  protoOf(Companion_4).isColorModeAgnostic_fn4jgj_k$ = function (build) {
+    // Inline function 'kotlin.collections.map' call
+    var this_0 = listOf_0([ColorMode_LIGHT_getInstance(), ColorMode_DARK_getInstance()]);
+    // Inline function 'kotlin.collections.mapTo' call
+    var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_0, 10));
+    var _iterator__ex2g4s = this_0.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var item = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'com.varabyte.kobweb.silk.style.animation.Companion.isColorModeAgnostic.<anonymous>' call
+      // Inline function 'kotlin.apply' call
+      var this_1 = new KeyframesBuilder(item);
+      build(this_1);
+      destination.add_utx5q5_k$(this_1);
+    }
+    // Inline function 'kotlin.collections.count' call
+    return distinct(destination).get_size_woubt6_k$() === 1;
+  };
+  var Companion_instance_4;
+  function Companion_getInstance_9() {
+    if (Companion_instance_4 == null)
+      new Companion_4();
+    return Companion_instance_4;
+  }
+  function Keyframes$usesColorMode$delegate$lambda(this$0) {
+    return function () {
+      return !Companion_getInstance_9().isColorModeAgnostic_fn4jgj_k$(this$0.init_1);
+    };
+  }
+  function Keyframes(init) {
+    Companion_getInstance_9();
+    this.init_1 = init;
+    var tmp = this;
+    tmp.usesColorMode$delegate_1 = lazy(Keyframes$usesColorMode$delegate$lambda(this));
+  }
+  protoOf(Keyframes).get_init_pi7mx0_k$ = function () {
+    return this.init_1;
+  };
+  protoOf(Keyframes).get_usesColorMode_a99qlr_k$ = function () {
+    var tmp0 = this.usesColorMode$delegate_1;
+    // Inline function 'kotlin.getValue' call
+    usesColorMode$factory();
+    return tmp0.get_value_j01efc_k$();
+  };
   function _get_keyframeStyles__di4hej($this) {
     return $this.keyframeStyles_1;
   }
@@ -2635,52 +2681,6 @@
     var keyframeRules = destination;
     stylesheet.add_19esmm_k$(new CSSKeyframesRuleDeclaration(keyframesName, keyframeRules));
   };
-  function Companion_4() {
-    Companion_instance_4 = this;
-  }
-  protoOf(Companion_4).isColorModeAgnostic_fn4jgj_k$ = function (build) {
-    // Inline function 'kotlin.collections.map' call
-    var this_0 = listOf_0([ColorMode_LIGHT_getInstance(), ColorMode_DARK_getInstance()]);
-    // Inline function 'kotlin.collections.mapTo' call
-    var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_0, 10));
-    var _iterator__ex2g4s = this_0.iterator_jk1svi_k$();
-    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
-      var item = _iterator__ex2g4s.next_20eer_k$();
-      // Inline function 'com.varabyte.kobweb.silk.style.animation.Companion.isColorModeAgnostic.<anonymous>' call
-      // Inline function 'kotlin.apply' call
-      var this_1 = new KeyframesBuilder(item);
-      build(this_1);
-      destination.add_utx5q5_k$(this_1);
-    }
-    // Inline function 'kotlin.collections.count' call
-    return distinct(destination).get_size_woubt6_k$() === 1;
-  };
-  var Companion_instance_4;
-  function Companion_getInstance_9() {
-    if (Companion_instance_4 == null)
-      new Companion_4();
-    return Companion_instance_4;
-  }
-  function Keyframes$usesColorMode$delegate$lambda(this$0) {
-    return function () {
-      return !Companion_getInstance_9().isColorModeAgnostic_fn4jgj_k$(this$0.init_1);
-    };
-  }
-  function Keyframes(init) {
-    Companion_getInstance_9();
-    this.init_1 = init;
-    var tmp = this;
-    tmp.usesColorMode$delegate_1 = lazy(Keyframes$usesColorMode$delegate$lambda(this));
-  }
-  protoOf(Keyframes).get_init_pi7mx0_k$ = function () {
-    return this.init_1;
-  };
-  protoOf(Keyframes).get_usesColorMode_a99qlr_k$ = function () {
-    var tmp0 = this.usesColorMode$delegate_1;
-    // Inline function 'kotlin.getValue' call
-    usesColorMode$factory();
-    return tmp0.get_value_j01efc_k$();
-  };
   function toAnimation_0(_this__u8e3s4, colorMode, duration, timingFunction, delay, iterationCount, direction, fillMode, playState) {
     duration = duration === VOID ? null : duration;
     timingFunction = timingFunction === VOID ? null : timingFunction;
@@ -2745,8 +2745,6 @@
     }, null);
   }
   var com_varabyte_kobweb_silk_style_breakpoint_Breakpoint_Range$stable;
-  function BreakpointQueryProvider() {
-  }
   function _get_lower__emnxg0($this) {
     return $this.lower_1;
   }
@@ -2849,6 +2847,8 @@
   protoOf(Breakpoint).until_b4vcia_k$ = function (upper) {
     return this.rangeUntil_1e6je7_k$(upper);
   };
+  function BreakpointQueryProvider() {
+  }
   function Breakpoint_ZERO_getInstance() {
     Breakpoint_initEntries();
     return Breakpoint_ZERO_instance;
@@ -2868,18 +2868,6 @@
   function Breakpoint_XL_getInstance() {
     Breakpoint_initEntries();
     return Breakpoint_XL_instance;
-  }
-  function displayIfAtLeast(_this__u8e3s4, breakpoint) {
-    // Inline function 'kotlin.text.lowercase' call
-    // Inline function 'kotlin.js.asDynamic' call
-    var tmp$ret$1 = breakpoint.get_name_woqyms_k$().toLowerCase();
-    return classNames(_this__u8e3s4, ['silk-display-if-at-least-' + tmp$ret$1]);
-  }
-  function displayUntil(_this__u8e3s4, breakpoint) {
-    // Inline function 'kotlin.text.lowercase' call
-    // Inline function 'kotlin.js.asDynamic' call
-    var tmp$ret$1 = breakpoint.get_name_woqyms_k$().toLowerCase();
-    return classNames(_this__u8e3s4, ['silk-display-until-' + tmp$ret$1]);
   }
   function SilkBreakpointDisplayStyles($composer, $changed) {
     var $composer_0 = $composer;
@@ -3002,6 +2990,18 @@
         _this__u8e3s4.deleteRule(0);
       }
        while (inductionVariable < times);
+  }
+  function displayIfAtLeast(_this__u8e3s4, breakpoint) {
+    // Inline function 'kotlin.text.lowercase' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$1 = breakpoint.get_name_woqyms_k$().toLowerCase();
+    return classNames(_this__u8e3s4, ['silk-display-if-at-least-' + tmp$ret$1]);
+  }
+  function displayUntil(_this__u8e3s4, breakpoint) {
+    // Inline function 'kotlin.text.lowercase' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$1 = breakpoint.get_name_woqyms_k$().toLowerCase();
+    return classNames(_this__u8e3s4, ['silk-display-until-' + tmp$ret$1]);
   }
   function SilkBreakpointDisplayStyles$lambda($$changed) {
     return function ($composer, $force) {
@@ -3775,7 +3775,7 @@
       var message_1 = 'Attempting to override variant "' + name + '" twice';
       throw IllegalStateException_init_$Create$(toString(message_1));
     }
-    var tmp_1 = addVariant(variant_0.get_baseStyle_lpil3d_k$(), extraModifier, init);
+    var tmp_1 = addVariant_0(variant_0.get_baseStyle_lpil3d_k$(), extraModifier, init);
     var newVariant = tmp_1 instanceof SimpleCssStyleVariant ? tmp_1 : THROW_CCE();
     // Inline function 'kotlin.collections.set' call
     this._cssStyleVariants_1.put_4fpzoq_k$(name, newVariant);
@@ -4092,6 +4092,28 @@
     return LocalColorMode;
   }
   var LocalColorMode;
+  function loadFromLocalStorage(_this__u8e3s4, key) {
+    key = key === VOID ? 'silk-color-mode' : key;
+    _init_properties_ColorMode_kt__lz79sc();
+    var colorModeKey = createColorModeStorageKey(key);
+    return getItem(window.localStorage, colorModeKey);
+  }
+  function suffixedWith(_this__u8e3s4, colorMode) {
+    _init_properties_ColorMode_kt__lz79sc();
+    // Inline function 'kotlin.text.lowercase' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return _this__u8e3s4 + '_' + colorMode.get_name_woqyms_k$().toLowerCase();
+  }
+  function saveToLocalStorage(_this__u8e3s4, key) {
+    key = key === VOID ? 'silk-color-mode' : key;
+    _init_properties_ColorMode_kt__lz79sc();
+    var colorModeKey = createColorModeStorageKey(key);
+    setItem(window.localStorage, colorModeKey, _this__u8e3s4);
+  }
+  function get_systemPreference(_this__u8e3s4) {
+    _init_properties_ColorMode_kt__lz79sc();
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? ColorMode_DARK_getInstance() : ColorMode_LIGHT_getInstance();
+  }
   var ColorMode_LIGHT_instance;
   var ColorMode_DARK_instance;
   function Companion_5() {
@@ -4183,28 +4205,6 @@
   protoOf(ColorMode).provide_53xuu7_k$ = function () {
     return get_LocalColorMode().provides_3agxel_k$(mutableStateOf(this));
   };
-  function suffixedWith(_this__u8e3s4, colorMode) {
-    _init_properties_ColorMode_kt__lz79sc();
-    // Inline function 'kotlin.text.lowercase' call
-    // Inline function 'kotlin.js.asDynamic' call
-    return _this__u8e3s4 + '_' + colorMode.get_name_woqyms_k$().toLowerCase();
-  }
-  function loadFromLocalStorage(_this__u8e3s4, key) {
-    key = key === VOID ? 'silk-color-mode' : key;
-    _init_properties_ColorMode_kt__lz79sc();
-    var colorModeKey = createColorModeStorageKey(key);
-    return getItem(window.localStorage, colorModeKey);
-  }
-  function get_systemPreference(_this__u8e3s4) {
-    _init_properties_ColorMode_kt__lz79sc();
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? ColorMode_DARK_getInstance() : ColorMode_LIGHT_getInstance();
-  }
-  function saveToLocalStorage(_this__u8e3s4, key) {
-    key = key === VOID ? 'silk-color-mode' : key;
-    _init_properties_ColorMode_kt__lz79sc();
-    var colorModeKey = createColorModeStorageKey(key);
-    setItem(window.localStorage, colorModeKey, _this__u8e3s4);
-  }
   function createColorModeStorageKey(key) {
     _init_properties_ColorMode_kt__lz79sc();
     return createStorageKey(get_entries_1(), key);
@@ -5575,19 +5575,19 @@
   _.$_$.v = get_visited;
   _.$_$.w = ComponentKind;
   _.$_$.x = Base;
-  _.$_$.y = CssStyle_2;
-  _.$_$.z = CssStyle_0;
-  _.$_$.a1 = CssStyle_1;
+  _.$_$.y = CssStyle_0;
+  _.$_$.z = CssStyle_1;
+  _.$_$.a1 = CssStyle_2;
   _.$_$.b1 = addVariantBase;
-  _.$_$.c1 = addVariant_0;
-  _.$_$.d1 = base_1;
-  _.$_$.e1 = base_0;
-  _.$_$.f1 = base;
+  _.$_$.c1 = addVariant;
+  _.$_$.d1 = base_0;
+  _.$_$.e1 = base;
+  _.$_$.f1 = base_1;
   _.$_$.g1 = com_varabyte_kobweb_silk_style_CssStyle$stableprop_getter;
   _.$_$.h1 = com_varabyte_kobweb_silk_style_CssStyleVariant$stableprop_getter;
   _.$_$.i1 = toAttrs_0;
-  _.$_$.j1 = toModifier_1;
-  _.$_$.k1 = toModifier_0;
+  _.$_$.j1 = toModifier_0;
+  _.$_$.k1 = toModifier_1;
   _.$_$.l1 = toModifier;
   _.$_$.m1 = ColorGroup;
   _.$_$.n1 = MutablePalette;

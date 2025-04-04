@@ -34,7 +34,7 @@
   var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.x;
   var KobwebApp = kotlin_com_varabyte_kobweb_kobweb_core.$_$.c;
   var Unit_getInstance = kotlin_kotlin.$_$.f5;
-  var KobwebComposeStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z3;
+  var KobwebComposeStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a4;
   var SilkFoundationStyles = kotlin_com_varabyte_kobweb_silk_foundation.$_$.x1;
   var SilkWidgetVariables = kotlin_com_varabyte_kobweb_silk_widgets.$_$.o;
   var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
