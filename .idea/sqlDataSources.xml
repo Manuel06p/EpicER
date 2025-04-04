@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="a05eee34-ee0a-4194-b443-c0a9f22571cb" name="epicer@192.168.1.100 (DDL) Mapping">
+      <data-sources ddl="b058bf48-54bd-411d-a20f-e0dc763db1e1" />
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="b058bf48-54bd-411d-a20f-e0dc763db1e1" />
+          <option name="name" value="epicer@192.168.1.100 (DDL)" />
+          <option name="dbmsName" value="MARIADB" />
+          <option name="urls">
+            <array />
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

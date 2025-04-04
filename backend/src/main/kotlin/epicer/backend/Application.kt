@@ -20,7 +20,6 @@ fun Application.module() {
         allowCredentials = true
         allowHeader(HttpHeaders.ContentType)
 
-        allowHeader("MyCustomHeader")
         anyHost() // @TODO: Don't do this in production if possible. Try to limit it.
     }
     configureDatabases ()

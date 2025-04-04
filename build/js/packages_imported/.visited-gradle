@@ -1,137 +1,214 @@
 {
   "version": "9",
   "items": {
-    "fc44333e4fd75dcafc4f7f83be9ad0bd": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.ktor\\ktor-serialization-kotlinx-json-js\\3.1.2\\6dc3091d684ee2cbd5d9abdda1aa7df220aa6366\\ktor-serialization-kotlinx-json-js-3.1.2.klib"
+    "1923267fd7761c155bba2ccca7099aa8": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-stdlib-js\\2.1.10\\7c8de979c7f8588ea08c33a94a91e5c0b448726e\\kotlin-stdlib-js-2.1.10.klib"
     },
-    "20582bfa664f62a80b034912da8d862e": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.ktor\\ktor-serialization-kotlinx-js\\3.1.2\\94c0654e6cf625db8e7d9dbeaf349ebc117d0c54\\ktor-serialization-kotlinx-js-3.1.2.klib"
-    },
-    "23288722abfbe19c16f8808db6637628": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.ktor\\ktor-serialization-js\\3.1.2\\c391cadd2f32948ea75f69975d718034cbad08fe\\ktor-serialization-js-3.1.2.klib"
-    },
-    "30349530c170f9d5ec04516601b4bcee": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.ktor\\ktor-websockets-js\\3.1.2\\11ede45e7eb701702cfce592c40b797aee8b9e3b\\ktor-websockets-js-3.1.2.klib"
-    },
-    "273af7b27d70533c57a051892d7ae6d6": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.ktor\\ktor-http-js\\3.1.2\\d2ed92eedf325131538def5ba73ff035765cd7df\\ktor-http-js-3.1.2.klib"
-    },
-    "105e85a2f147119ea5211e82b86d7042": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.ktor\\ktor-utils-js\\3.1.2\\942c163defee24479271c0eba7399c55a4cc7921\\ktor-utils-js-3.1.2.klib"
-    },
-    "765f822f7de87e98f64b4ad278da9a6f": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.ktor\\ktor-io-js\\3.1.2\\20b9172fa984b88c414364b1cf50e5339ad6f8f4\\ktor-io-js-3.1.2.klib"
-    },
-    "3f1512bff8aa7f29ce29e75d9ea18b08": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-coroutines-core-js\\1.10.1\\9112578326a64513c6df1efdb6fae1d75457ac02\\kotlinx-coroutines-core-js-1.10.1.klib"
-    },
-    "4341b47141b70ff4531d018f1c89797d": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-dom-api-compat\\2.1.20\\d261f5f9a99e24ba6dda3688e67b2c43dac99a48\\kotlin-dom-api-compat-2.1.20.klib"
-    },
-    "db1e11384d9c145d1ba6693345e25742": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-stdlib-js\\2.1.20\\5b335b71e2d6fa1c64b80753498958d18596e43e\\kotlin-stdlib-js-2.1.20.klib"
-    },
-    "d6a970c21658969398cb0be49433e49c": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\atomicfu-js\\0.27.0\\4c0892a34d154b17bf6f59c78801ee1a85c2994c\\atomicfu-js-0.27.0.klib"
-    },
-    "cfbd571cfe13f281b3c2a4063733ac28": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-io-core-js\\0.6.0\\863ab16694a7a9c7166feb692e8ae143e76ecc4f\\kotlinx-io-core-js-0.6.0.klib"
-    },
-    "2284d9335afbb78011d8aefe6bbca4fc": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-io-bytestring-js\\0.6.0\\8aa80f8d9e359bde9085c772e0037dad7c675edd\\kotlinx-io-bytestring-js-0.6.0.klib"
+    "42f05d85f10267ae8c780fb4bac28f2c": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-serialization-json-js\\1.8.0\\8a2d869e76ce981aada9ac85caef17c2ed3b5e02\\kotlinx-serialization-json-js-1.8.0.klib"
     },
     "0e4b86de8aa74e249712c7ba13e98e68": {
       "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-serialization-core-js\\1.8.0\\ae6df61da8e0a1f5d77b39d4f0efa6fb24779564\\kotlinx-serialization-core-js-1.8.0.klib"
     },
-    "84730e39a22de110bfb02322c91a6786": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-serialization-json-io-js\\1.8.0\\5f02d1aac43c869fc31e381973ccd434532055e9\\kotlinx-serialization-json-io-js-1.8.0.klib"
-    },
-    "42f05d85f10267ae8c780fb4bac28f2c": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-serialization-json-js\\1.8.0\\8a2d869e76ce981aada9ac85caef17c2ed3b5e02\\kotlinx-serialization-json-js-1.8.0.klib"
+    "da2498cb322f3066e609531d5c6babd6": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-dom-api-compat\\2.1.10\\40b26bd1544634256a38fa11cd8b9c0afbc82d01\\kotlin-dom-api-compat-2.1.10.klib"
     },
     "3f5dd313826bd4b4a2147adb76540165": {
       "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-datetime-js\\0.6.2\\9c4811ca560d2f41f82175b1722112e26669e023\\kotlinx-datetime-js-0.6.2.klib",
       "target": "Kotlin-DateTime-library-kotlinx-datetime\\0.6.2"
     },
-    "361bba25f082bffa80948d955b8807d4": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\kobweb-core-js\\0.20.3\\1d63bb83a79ea5c875ca1573f1187c110505437b\\kobweb-core-js-0.20.3.klib"
+    "88a58ed59fc8f31efc88abe03cb8c6a1": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-js\\8.2.0\\2a26ab68f79ee1ded33e124b6594a25dd30cd214\\kvision-js-8.2.0.klib",
+      "target": "kvision\\8.2.0"
     },
-    "26bfdf622c7089c36a0ab56d316ed9da": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\compose-html-ext-js\\0.20.3\\add4b68c17501337d678432d97c4a90da123c975\\compose-html-ext-js-0.20.3.klib"
+    "3f1512bff8aa7f29ce29e75d9ea18b08": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-coroutines-core-js\\1.10.1\\9112578326a64513c6df1efdb6fae1d75457ac02\\kotlinx-coroutines-core-js-1.10.1.klib"
     },
-    "8a055c18bf814263c816aa4c0c8f48e7": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.compose.html\\html-core-js\\1.7.3\\73b6a49e4e3574b5341e7b2091b3c2d18db203be\\html-core-js-1.7.3.klib",
-      "target": "html-core-js\\1.7.3"
+    "858404fde54d6639e1ac43a05516a54f": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\atomicfu-js\\0.26.1\\ba91e363bea53a576f68a7678e2cb65872b28e2b\\atomicfu-js-0.26.1.klib"
     },
-    "18019d41f00186db65e3b283b6208ce4": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.compose.html\\internal-html-core-runtime-js\\1.7.3\\540c179d3e83841507804fe7ddea7a395427eb6f\\internal-html-core-runtime-js-1.7.3.klib"
+    "b1472c3774e341fd617b26d80c2fb730": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-common-types-js\\8.2.0\\5ad93b3d9ca1ca65455b0751499ef39544aa6271\\kvision-common-types-js-8.2.0.klib"
     },
-    "a184537d94384b675522046d5603eea0": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.compose.runtime\\runtime-js\\1.7.3\\6579cc52e8c11ce90e40429d33831c9f268426f1\\runtime-js-1.7.3.klib"
+    "61e4b5833f4d68934a0e6a6fd9c25981": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-datetime-js\\8.2.0\\50288300b3c3d756e3117b4e452f63a4cd94b61e\\kvision-datetime-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-datetime\\8.2.0"
     },
-    "aa1f46cd383c18efef3c11ddaf9bccdf": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.compose.collection-internal\\collection-js\\1.7.3\\61e298276aee83832033ac71a896995521b479dd\\collection-js-1.7.3.klib"
+    "966ae1a0ddf1d33a4c1ef5368f25dcfb": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-richtext-js\\8.2.0\\9a27c428cc661e14513c9f4a954b2545745e6473\\kvision-richtext-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-richtext\\8.2.0"
     },
-    "4cc6c24a00ab0a87d0b04bfae7c4fd96": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.compose.annotation-internal\\annotation-js\\1.7.3\\224b54be8f31cd3018909a73efaf964ddf6c6d7e\\annotation-js-1.7.3.klib"
+    "05976d189e5de055c06acdd89c8b7b63": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-tom-select-js\\8.2.0\\bbc0738a16e9222c6eae0537200bc7b3565d9eec\\kvision-tom-select-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-tom-select\\8.2.0"
     },
-    "e9306c2451bbe8784372b11cb78554d0": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlinx-atomicfu-runtime\\1.9.24\\373f8846d435f6e7f77453cefbb97c548ae4781e\\kotlinx-atomicfu-runtime-1.9.24.klib"
+    "2fa5e0aedbf8e335b1b529aa4cd224d5": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-imask-js\\8.2.0\\7778f4ad433508673ff55bbae0245c6b34cb2bbe\\kvision-imask-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-imask\\8.2.0"
     },
-    "cd4a95974f0bb583608389f60f6116dd": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\browser-ext-js\\0.20.3\\7a3e3dbb8babb73747428f6dccf4ae9fc2490ced\\browser-ext-js-0.20.3.klib"
+    "8b7bdfc781e19c1d96635c7609da201f": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-toastify-js\\8.2.0\\fa677e4441d50cca53baf8aceb457e49eff4532f\\kvision-toastify-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-toastify\\8.2.0"
     },
-    "3598770a4f3548d9ab8516e6ad0e6d22": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\framework-annotations-js\\0.20.3\\374bd4029a214609997cbdb2507e829ed2efbc15\\framework-annotations-js-0.20.3.klib"
+    "b735d5754febe98e3c9b5df6720f547c": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-fontawesome-js\\8.2.0\\1f641606620b47fc8b28f0f99507db1cd662513a\\kvision-fontawesome-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-fontawesome\\8.2.0"
     },
-    "2a9857811e44dab4dad45e50ae4a7948": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\kobweb-worker-interface-js\\0.20.3\\ed5721f2070b58c995c9c7fae481035b5fc56224\\kobweb-worker-interface-js-0.20.3.klib"
+    "0cda1001b3e425bcb58732faac52c236": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-bootstrap-icons-js\\8.2.0\\51b716cad49b94979739af5f9741f522fc4020ea\\kvision-bootstrap-icons-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-bootstrap-icons\\8.2.0"
     },
-    "20b64a8087c24c1d47f85857fda50c59": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\kobweb-client-server-internal-js\\0.20.3\\2cf6b1619d28f7bd85f494fe27247d1eb0cd7921\\client-server-internal-js-0.20.3.klib"
+    "f30e3fc5feeefd6234789b453dacdbd2": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-i18n-js\\8.2.0\\38248c5c272a2036aad87d5f06268a7cf185267\\kvision-i18n-js-8.2.0.klib"
     },
-    "aeb118dc0d8a700862b2683cbd72e139": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\kobweb-silk-js\\0.20.3\\a03f80e02dacf79c60667c7f6fd237cd182a6a34\\kobweb-silk-js-0.20.3.klib"
+    "70ba08ffcbedbf30a05e1e43cb23dbd3": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-pace-js\\8.2.0\\439faa0725f72f0a37553fe33fae137f09abf7a9\\kvision-pace-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-pace\\8.2.0"
     },
-    "78931f003da07084715559079a5a2b25": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\silk-widgets-kobweb-js\\0.20.3\\14e65df623d70faa6d19fe50ee2d30b9ebad7c00\\silk-widgets-kobweb-js-0.20.3.klib"
+    "1cb34abb79762c83dd5de97226bc80a9": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-print-js\\8.2.0\\761534e4fd48b15e794997185df40dcf86cc369e\\kvision-print-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-print\\8.2.0"
     },
-    "87c60a7a8693a9ecf4278c1d06964d27": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\silk-widgets-js\\0.20.3\\5027af32ac6cdb7742667999e489caab99296075\\silk-widgets-js-0.20.3.klib"
+    "16e1c11e204e904695dbd1f325439693": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-handlebars-js\\8.2.0\\c7c7d989d300095ae1823173ab82602d480e8137\\kvision-handlebars-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-handlebars\\8.2.0"
     },
-    "ceee7b47f159e2a3693d2dc89fcc509a": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\silk-foundation-js\\0.20.3\\7921dd315a279751b1f32004b07aa816e5d60876\\silk-foundation-js-0.20.3.klib"
+    "d21d33651d8d3dc3661f45867e945323": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-chart-js\\8.2.0\\2725e3e8226699b8525474290f0fce54fc4d55aa\\kvision-chart-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-chart\\8.2.0"
     },
-    "d19f85b0a85ddbc6f06770ecf6831d13": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobweb\\kobweb-compose-js\\0.20.3\\5f5548f5f221fa80c61a56df4c670f61deae28f5\\kobweb-compose-js-0.20.3.klib"
+    "32d0b592df629b330d49dbc44f3b5422": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-tabulator-js\\8.2.0\\ede62c0429bd16413e09cb80343baf53e1c7f06a\\kvision-tabulator-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-tabulator\\8.2.0"
     },
-    "68d470a655bd0ebdd0a946612bb4c761": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobwebx\\kobwebx-markdown-js\\0.20.3\\eb748cec91cd627fe36d1b8751a20b77c45f3474\\kobwebx-markdown-js-0.20.3.klib"
+    "57a9284f46fdbf568f05f3b43436266f": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-state-js\\8.2.0\\1bd78a9ba224f2d4dc6d7ab05c72b6dc9d9736ae\\kvision-state-js-8.2.0.klib"
     },
-    "1923267fd7761c155bba2ccca7099aa8": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-stdlib-js\\2.1.10\\7c8de979c7f8588ea08c33a94a91e5c0b448726e\\kotlin-stdlib-js-2.1.10.klib"
+    "e4e8e1b40dff61d96f12434aef710a83": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.petertrr\\kotlin-multiplatform-diff-js\\0.7.0\\b3d045072e2fab229892fe2ca5c00116ec7b41fc\\kotlin-multiplatform-diff-js-0.7.0.klib"
     },
-    "da2498cb322f3066e609531d5c6babd6": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-dom-api-compat\\2.1.10\\40b26bd1544634256a38fa11cd8b9c0afbc82d01\\kotlin-dom-api-compat-2.1.10.klib"
+    "46b6f19a80539a254edc7fdaa9baa14d": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-maps-js\\8.2.0\\54d1dd1a336de522274814e7ffb52510551034a6\\kvision-maps-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-maps\\8.2.0"
     },
-    "ba8177ecda3981427862b37308d71b44": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\atomicfu-js\\0.23.2\\e19f377f0dc24137414f5f3e1be730f60aeb9539\\atomicfu-js-0.23.2.klib"
+    "d49bacb22e28a6936fd91d7cce1589be": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-rest-js\\8.2.0\\4166f4bd048bd32735db38f9ca9a318d139a3be9\\kvision-rest-js-8.2.0.klib"
     },
-    "ec5f683e2e51ee8e5cdb632f5487b6e0": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-coroutines-core-js\\1.8.1\\6d0facd74a1b6ae17fa00d7034f31bde38ed4b2\\kotlinx-coroutines-core-js-1.8.1.klib"
+    "199dbb243e1cfae25a496cd9490ab453": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-jquery-js\\8.2.0\\d7268bd70c6a681308e36f7ef5375cf1485c2436\\kvision-jquery-js-8.2.0.klib"
     },
-    "b649bb236ae3ff48f6e2b89e55cc8694": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobwebx\\silk-icons-mdi-js\\0.20.3\\bad9a2819a952580862d0ad8518b3051289ac496\\silk-icons-mdi-js-0.20.3.klib"
+    "2664dfbf0580e3417e5d0ed237dfeb55": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\jquery-kotlin\\1.0.0\\421099cb9d65e325562217f393bd5888d7daccda\\jquery-kotlin-1.0.0.klib",
+      "target": "jquery-kotlin-jsIr\\1.0.0"
     },
-    "3302c54e1aeb9bc205019155f93e9405": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.varabyte.kobwebx\\silk-icons-fa-js\\0.20.3\\376b5eae7b05f7ff421bfac89a61735c5280989\\silk-icons-fa-js-0.20.3.klib"
+    "a5fb4640c9135f401ecb9387238db6fd": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-routing-ballast-js\\8.2.0\\738579b388ad35c0057fa82da2745f0b2f234e65\\kvision-routing-ballast-js-8.2.0.klib"
     },
-    "3f1531697b23e6c88627ed45e65192cd": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.github.stevdza-san\\KotlinBootstrap\\0.1.5\\709b7801338ae2f6bb4e9fd1d3794468111746b1\\KotlinBootstrap-0.1.5.jar"
+    "4006b9821901082d04504410d82cc368": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-navigation-js\\4.2.1\\5212295ae69f65f5e90e813b4293371cfbcb1a33\\ballast-navigation-js-4.2.1.klib"
     },
-    "57598b94fdaf84926403d9581d92854a": {
-      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.github.stevdza-san.KotlinBootstrap\\bootstrap-js\\0.1.5\\d96ec6cee04e1049b93baa5df63515f0ee125f3d\\bootstrap-js-0.1.5.klib",
-      "target": "kotlinbs-bootstrap\\0.1.5"
+    "149a100dae14589a2d00720a1bdd6a16": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-core-js\\4.2.1\\2ad14aed781c4a73ed4dbb421966d408a0a06686\\ballast-core-js-4.2.1.klib"
+    },
+    "a3b05c10bf9a9b15c4c14ed90e04361a": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-viewmodel-js\\4.2.1\\65c98d7a3fa722faf7917af38dc9c31d747771f3\\ballast-viewmodel-js-4.2.1.klib"
+    },
+    "4668bbb8612ff32763e6f7f2622f1e6c": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-api-js\\4.2.1\\f947595a6e4b4118c537faec34e24415f8466ef9\\ballast-api-js-4.2.1.klib"
+    },
+    "e82bec8814d41bc12fe0a68b558ac49b": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-logging-js\\4.2.1\\93d4f26a378e03414a0e7d94ddaadc87d4524ec1\\ballast-logging-js-4.2.1.klib"
+    },
+    "65a9a0c22633b0fa92004431d12262ac": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-utils-js\\4.2.1\\c9d2c026f3e0f5d721518c33e79ddcb77a4b2a34\\ballast-utils-js-4.2.1.klib"
+    },
+    "1bf2e070d8222c6129e7461a07933f1e": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\kudzu-core-js\\5.3.0\\cf23ff9a05f56f5124957b44790c803e71cc58fb\\kudzu-core-js-5.3.0.klib"
+    },
+    "483f0ec4dccd1dd368b8cc93dad087c9": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\com.eygraber\\uri-kmp-js\\0.0.18\\ad878cc4e007cf9a7c48030312dc97d8f4099f53\\uri-js-0.0.18.klib"
+    },
+    "cb1c7ef25ce348d91a65944eb8035165": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-state-flow-js\\8.2.0\\1b401ed45f88cdc35244d83477652c0eb5d134fd\\kvision-state-flow-js-8.2.0.klib"
+    },
+    "c63407a32ed7286d84c7fb2aabf6c80c": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-ballast-js\\8.2.0\\fa5a55ca415b6f7b2137e892a4735c7aac480b30\\kvision-ballast-js-8.2.0.klib"
+    },
+    "c0296543d4829b971a0ec74ea2d1a854": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-saved-state-js\\4.2.1\\e6b8b62aa9b52f0f7848337265f26ec3b3639a26\\ballast-saved-state-js-4.2.1.klib"
+    },
+    "a9a32713bcc4ae146ce8d102625991db": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-repository-js\\4.2.1\\7082805c23096ee156eeb04ce04b97640df8117a\\ballast-repository-js-4.2.1.klib"
+    },
+    "dc895f854162a52c3dd025776e7758a7": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-sync-js\\4.2.1\\8eeafb5a52c9372b4c551d4a50bed35714fdb78a\\ballast-sync-js-4.2.1.klib"
+    },
+    "370ab4edb0da428351a39e2a7a294b87": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.github.copper-leaf\\ballast-undo-js\\4.2.1\\c52a524fc550d04a9ce22695128c152aac0fcaa6\\ballast-undo-js-4.2.1.klib"
+    },
+    "3429af3ef6fc08376467a055bf4eaa75": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-redux-kotlin-js\\8.2.0\\c6fc421b7b6caf14b3d18e1eb643b94462f3f355\\kvision-redux-kotlin-js-8.2.0.klib"
+    },
+    "19134101d8cd57c6aed23c753a75de30": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.reduxkotlin\\redux-kotlin-thunk-js\\0.6.0\\eb09a2874538a9da9ba0a600d72f436f69269a53\\redux-kotlin-thunk-js-0.6.0.klib"
+    },
+    "980e0ac9370b34b648bf23f32b889198": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.reduxkotlin\\redux-kotlin-js\\0.6.1\\ded97d1e6ea2ddf85cca2ae665472d550876623b\\redux-kotlin-js-0.6.1.klib"
+    },
+    "f447c0c56abf53f21fcbcf9971d40c5f": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-stdlib-common\\1.8.0\\f7197e7cc76453ac59f8b0f8d5137cc600becd36\\kotlin-stdlib-common-1.8.0.jar"
+    },
+    "2ee2ba47cfbf95d6f22346fa7b7acf25": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-select-remote-js\\8.2.0\\b2fcb95ac2f6e12ab67aed560840fdbae82639d6\\kvision-select-remote-js-8.2.0.klib"
+    },
+    "098258b2d9d067b4ad47760a5113c971": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-common-remote-js\\8.2.0\\5e7a2a3ee2a17b005ce0e59984ec6b863c3a4ef1\\kvision-common-remote-js-8.2.0.klib"
+    },
+    "a5dfc2400a1e847d5cabb517e8aba94f": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-tom-select-remote-js\\8.2.0\\f830fe8113dce647102d3431464b1c9f78301462\\kvision-tom-select-remote-js-8.2.0.klib"
+    },
+    "6890e4ea90b9ee2b5f6ec198d193a041": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-tabulator-remote-js\\8.2.0\\d6d61269f22e5a004c820e507b1015730e0def92\\kvision-tabulator-remote-js-8.2.0.klib"
+    },
+    "0e2b6a923737a5d2db323cc9a8b43654": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-material-js\\8.2.0\\127434d4c8489e718fd2a0d2e467f1022e06557b\\kvision-material-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-material\\8.2.0"
+    },
+    "28cb3f70b5a55223979f2780aeaf6be3": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-test-js\\2.1.10\\1dc7247c9795e8717dd6204dfb76bb556958f616\\kotlin-test-js-2.1.10.klib"
+    },
+    "bc40dd8a9a392c702a250656501493f4": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-testutils-js\\8.2.0\\40042a11b69efbab067e8e6d3cfdef317b80eab4\\kvision-testutils-js-8.2.0.klib"
+    },
+    "2a3c86f928212cc0c2e39404fa5c811c": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kotest\\kotest-assertions-core-js\\5.9.1\\2b3de2d2e834249563d8a63df71c1529fccef8e4\\kotest-assertions-core-js-5.9.1.klib"
+    },
+    "b4433cdbb46f9d0a37de30ca4a6f69f4": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kotest\\kotest-assertions-shared-js\\5.9.1\\ba47c64356f055067e1afd2d1ecbf3ee49fe7067\\kotest-assertions-shared-js-5.9.1.klib"
+    },
+    "9660384f8764f8bb413f049b51b26f26": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kotest\\kotest-common-js\\5.9.1\\112dd4844d3a23a644c60a63eb36a635b49e45c0\\kotest-common-js-5.9.1.klib"
+    },
+    "f0eab123e4bda4057f940b6e727df6c5": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-reflect\\1.9.23\\ab01e1cc8428c2140891318838ad7039f6fa389a\\kotlin-reflect-1.9.23.jar"
+    },
+    "f9c3af4dbda523f836c92d4d018abe69": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kotest\\kotest-assertions-api-js\\5.9.1\\ab9f78458a86b5944c41765992e1b14bab231d31\\kotest-assertions-api-js-5.9.1.klib"
+    },
+    "e20873f4dbb6991f92978c4921d63d3e": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-bootstrap-js\\8.2.0\\d52795356fed87aa2424ea199072e015b8a36055\\kvision-bootstrap-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-bootstrap\\8.2.0"
+    },
+    "50ef689b5f276b730070648a137e45ed": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-bootstrap-upload-js\\8.2.0\\96a59b483905ff0a3f09a399f1f619177f333fa9\\kvision-bootstrap-upload-js-8.2.0.klib",
+      "target": "kvision-kvision-modules-kvision-bootstrap-upload\\8.2.0"
+    },
+    "c213f198645593ad395d737649649b7d": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\kvision-routing-navigo-ng-js\\8.2.0\\318f875b1b0e7c3d52ea77ea64b099450c1cf33e\\kvision-routing-navigo-ng-js-8.2.0.klib"
+    },
+    "037128f3c4f92ec707713e0dbfa78efd": {
+      "src": "C:\\Users\\Pitsch\\.gradle\\caches\\modules-2\\files-2.1\\io.kvision\\navigo-kotlin-ng\\0.0.3\\3dda07f5ed662919b795eec28605f2bac828f27\\navigo-kotlin-ng-0.0.3.klib",
+      "target": "navigo-kotlin-ng-js-ir\\0.0.3"
     }
   }
 }

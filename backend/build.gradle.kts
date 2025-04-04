@@ -55,5 +55,5 @@ dependencies {
     implementation("io.ktor:ktor-server-cors:$ktor_version")
 
 
-    implementation(project(":common"))  // Link the shared module
+    implementation(project(":common"))  // Link the common module
 }

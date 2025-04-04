@@ -1,0 +1,23 @@
+{
+  "name": "kvision-kvision-modules-kvision-material",
+  "version": "8.2.0",
+  "main": "kvision-kvision-modules-kvision-material.js",
+  "types": "kvision-kvision-modules-kvision-material.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "@material/web": "2.2.0",
+    "kvision-assets": "8.0.14",
+    "css-loader": "7.1.2",
+    "style-loader": "4.0.0",
+    "imports-loader": "5.0.0",
+    "fecha": "4.2.3",
+    "snabbdom": "3.6.2",
+    "@rjaros/snabbdom-virtualize": "1.0.0-beta.5",
+    "split.js": "1.6.5",
+    "gettext.js": "2.0.3",
+    "gettext-extract": "2.0.1"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

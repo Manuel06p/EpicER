@@ -1,0 +1,13 @@
+{
+  "name": "jquery-kotlin-jsIr",
+  "version": "1.0.0",
+  "main": "jquery-kotlin-jsIr.js",
+  "types": "jquery-kotlin-jsIr.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}
