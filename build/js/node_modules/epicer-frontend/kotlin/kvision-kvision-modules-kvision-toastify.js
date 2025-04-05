@@ -17,7 +17,7 @@
   //region block: imports
   var imul = Math.imul;
   var protoOf = kotlin_kotlin.$_$.eb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.e1;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.e2;
   var initMetadataForObject = kotlin_kotlin.$_$.ga;
   var VOID = kotlin_kotlin.$_$.e;
   var Unit_getInstance = kotlin_kotlin.$_$.b5;
@@ -36,8 +36,8 @@
   initMetadataForObject(ToastifyModule, 'ToastifyModule', VOID, VOID, [ModuleInitializer]);
   initMetadataForObject(Toast, 'Toast');
   initMetadataForClass(ToastOptions, 'ToastOptions', ToastOptions);
-  initMetadataForClass(ToastType, 'ToastType', VOID, Enum);
   initMetadataForClass(ToastPosition, 'ToastPosition', VOID, Enum);
+  initMetadataForClass(ToastType, 'ToastType', VOID, Enum);
   //endregion
   function ToastifyModule() {
     ToastifyModule_instance = this;
@@ -403,6 +403,48 @@
       return false;
     return true;
   };
+  var ToastPosition_TOPRIGHT_instance;
+  var ToastPosition_BOTTOMRIGHT_instance;
+  var ToastPosition_BOTTOMLEFT_instance;
+  var ToastPosition_TOPLEFT_instance;
+  function values() {
+    return [ToastPosition_TOPRIGHT_getInstance(), ToastPosition_BOTTOMRIGHT_getInstance(), ToastPosition_BOTTOMLEFT_getInstance(), ToastPosition_TOPLEFT_getInstance()];
+  }
+  function valueOf(value) {
+    switch (value) {
+      case 'TOPRIGHT':
+        return ToastPosition_TOPRIGHT_getInstance();
+      case 'BOTTOMRIGHT':
+        return ToastPosition_BOTTOMRIGHT_getInstance();
+      case 'BOTTOMLEFT':
+        return ToastPosition_BOTTOMLEFT_getInstance();
+      case 'TOPLEFT':
+        return ToastPosition_TOPLEFT_getInstance();
+      default:
+        ToastPosition_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries() {
+    if ($ENTRIES == null)
+      $ENTRIES = enumEntries(values());
+    return $ENTRIES;
+  }
+  var ToastPosition_entriesInitialized;
+  function ToastPosition_initEntries() {
+    if (ToastPosition_entriesInitialized)
+      return Unit_getInstance();
+    ToastPosition_entriesInitialized = true;
+    ToastPosition_TOPRIGHT_instance = new ToastPosition('TOPRIGHT', 0);
+    ToastPosition_BOTTOMRIGHT_instance = new ToastPosition('BOTTOMRIGHT', 1);
+    ToastPosition_BOTTOMLEFT_instance = new ToastPosition('BOTTOMLEFT', 2);
+    ToastPosition_TOPLEFT_instance = new ToastPosition('TOPLEFT', 3);
+  }
+  var $ENTRIES;
+  function ToastPosition(name, ordinal) {
+    Enum.call(this, name, ordinal);
+  }
   var ToastType_PRIMARY_instance;
   var ToastType_SECONDARY_instance;
   var ToastType_INFO_instance;
@@ -411,10 +453,10 @@
   var ToastType_DANGER_instance;
   var ToastType_LIGHT_instance;
   var ToastType_DARK_instance;
-  function values() {
+  function values_0() {
     return [ToastType_PRIMARY_getInstance(), ToastType_SECONDARY_getInstance(), ToastType_INFO_getInstance(), ToastType_SUCCESS_getInstance(), ToastType_WARNING_getInstance(), ToastType_DANGER_getInstance(), ToastType_LIGHT_getInstance(), ToastType_DARK_getInstance()];
   }
-  function valueOf(value) {
+  function valueOf_0(value) {
     switch (value) {
       case 'PRIMARY':
         return ToastType_PRIMARY_getInstance();
@@ -438,10 +480,10 @@
         break;
     }
   }
-  function get_entries() {
-    if ($ENTRIES == null)
-      $ENTRIES = enumEntries(values());
-    return $ENTRIES;
+  function get_entries_0() {
+    if ($ENTRIES_0 == null)
+      $ENTRIES_0 = enumEntries(values_0());
+    return $ENTRIES_0;
   }
   var ToastType_entriesInitialized;
   function ToastType_initEntries() {
@@ -457,7 +499,7 @@
     ToastType_LIGHT_instance = new ToastType('LIGHT', 6, 'kv-toastify-light');
     ToastType_DARK_instance = new ToastType('DARK', 7, 'kv-toastify-dark');
   }
-  var $ENTRIES;
+  var $ENTRIES_0;
   function ToastType(name, ordinal, type) {
     Enum.call(this, name, ordinal);
     this.type_1 = type;
@@ -532,47 +574,21 @@
       this_0.ariaLive = _this__u8e3s4.ariaLive_1;
     return this_0;
   }
-  var ToastPosition_TOPRIGHT_instance;
-  var ToastPosition_BOTTOMRIGHT_instance;
-  var ToastPosition_BOTTOMLEFT_instance;
-  var ToastPosition_TOPLEFT_instance;
-  function values_0() {
-    return [ToastPosition_TOPRIGHT_getInstance(), ToastPosition_BOTTOMRIGHT_getInstance(), ToastPosition_BOTTOMLEFT_getInstance(), ToastPosition_TOPLEFT_getInstance()];
+  function ToastPosition_TOPRIGHT_getInstance() {
+    ToastPosition_initEntries();
+    return ToastPosition_TOPRIGHT_instance;
   }
-  function valueOf_0(value) {
-    switch (value) {
-      case 'TOPRIGHT':
-        return ToastPosition_TOPRIGHT_getInstance();
-      case 'BOTTOMRIGHT':
-        return ToastPosition_BOTTOMRIGHT_getInstance();
-      case 'BOTTOMLEFT':
-        return ToastPosition_BOTTOMLEFT_getInstance();
-      case 'TOPLEFT':
-        return ToastPosition_TOPLEFT_getInstance();
-      default:
-        ToastPosition_initEntries();
-        THROW_IAE('No enum constant value.');
-        break;
-    }
+  function ToastPosition_BOTTOMRIGHT_getInstance() {
+    ToastPosition_initEntries();
+    return ToastPosition_BOTTOMRIGHT_instance;
   }
-  function get_entries_0() {
-    if ($ENTRIES_0 == null)
-      $ENTRIES_0 = enumEntries(values_0());
-    return $ENTRIES_0;
+  function ToastPosition_BOTTOMLEFT_getInstance() {
+    ToastPosition_initEntries();
+    return ToastPosition_BOTTOMLEFT_instance;
   }
-  var ToastPosition_entriesInitialized;
-  function ToastPosition_initEntries() {
-    if (ToastPosition_entriesInitialized)
-      return Unit_getInstance();
-    ToastPosition_entriesInitialized = true;
-    ToastPosition_TOPRIGHT_instance = new ToastPosition('TOPRIGHT', 0);
-    ToastPosition_BOTTOMRIGHT_instance = new ToastPosition('BOTTOMRIGHT', 1);
-    ToastPosition_BOTTOMLEFT_instance = new ToastPosition('BOTTOMLEFT', 2);
-    ToastPosition_TOPLEFT_instance = new ToastPosition('TOPLEFT', 3);
-  }
-  var $ENTRIES_0;
-  function ToastPosition(name, ordinal) {
-    Enum.call(this, name, ordinal);
+  function ToastPosition_TOPLEFT_getInstance() {
+    ToastPosition_initEntries();
+    return ToastPosition_TOPLEFT_instance;
   }
   function ToastType_PRIMARY_getInstance() {
     ToastType_initEntries();
@@ -606,26 +622,12 @@
     ToastType_initEntries();
     return ToastType_DARK_instance;
   }
-  function ToastPosition_TOPRIGHT_getInstance() {
-    ToastPosition_initEntries();
-    return ToastPosition_TOPRIGHT_instance;
-  }
-  function ToastPosition_BOTTOMRIGHT_getInstance() {
-    ToastPosition_initEntries();
-    return ToastPosition_BOTTOMRIGHT_instance;
-  }
-  function ToastPosition_BOTTOMLEFT_getInstance() {
-    ToastPosition_initEntries();
-    return ToastPosition_BOTTOMLEFT_instance;
-  }
-  function ToastPosition_TOPLEFT_getInstance() {
-    ToastPosition_initEntries();
-    return ToastPosition_TOPLEFT_instance;
-  }
   //region block: exports
   _.$_$ = _.$_$ || {};
-  _.$_$.a = Toast_getInstance;
-  _.$_$.b = ToastifyModule_getInstance;
+  _.$_$.a = ToastPosition_BOTTOMRIGHT_getInstance;
+  _.$_$.b = Toast_getInstance;
+  _.$_$.c = ToastifyModule_getInstance;
+  _.$_$.d = ToastOptions;
   //endregion
   return _;
 }));

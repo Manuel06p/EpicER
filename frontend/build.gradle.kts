@@ -22,6 +22,7 @@ val kotlinVersion: String by System.getProperties()
 val kvisionVersion: String by System.getProperties()
 
 kotlin {
+
     js(IR) {
         browser {
             commonWebpackConfig {
@@ -70,4 +71,5 @@ kotlin {
         implementation(kotlin("test-js"))
         implementation("io.kvision:kvision-testutils:$kvisionVersion")
     }
+
 }

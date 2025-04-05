@@ -17,7 +17,7 @@
   //region block: imports
   var THROW_CCE = kotlin_kotlin.$_$.pe;
   var protoOf = kotlin_kotlin.$_$.eb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.e1;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.e2;
   var initMetadataForObject = kotlin_kotlin.$_$.ga;
   var VOID = kotlin_kotlin.$_$.e;
   //endregion

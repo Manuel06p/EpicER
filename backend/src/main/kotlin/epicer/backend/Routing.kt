@@ -8,6 +8,7 @@ import epicer.common.dto.user.UpdateUserDTO
 import epicer.backend.service.`interface`.IUserService
 import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
+import epicer.common.dto.user.BaseUserDTO
 import io.ktor.http.*
 import io.ktor.serialization.JsonConvertException
 import io.ktor.server.application.*
@@ -44,7 +45,10 @@ fun Application.configureRouting(userService: IUserService) {
                     .withExpiresAt(Date(System.currentTimeMillis() + 600000)) // Scadenza: 10 minuti
                     .sign(Algorithm.HMAC256("supersegreto"))
 
-                call.respond(TokenDTO(token))
+
+
+
+                call.respond(TokenDTO(token, BaseUserDTO(user.username, user.name, user.roles, user.created_at)))
             }
         }
 

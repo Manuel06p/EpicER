@@ -1,6 +1,7 @@
 package epicer.frontend
 
 import epicer.frontend.views.LoginView
+import epicer.frontend.views.MainView
 import io.kvision.Application
 import io.kvision.CoreModule
 import io.kvision.BootstrapModule
@@ -52,15 +53,20 @@ class App : Application() {
 
         routing
             .on("/", {
-
+                root.removeAll()
+                routing.navigate("/main")
+            })
+            .on("/main", {
+                root.removeAll()
+                root.add(MainView(routing))
             })
             .on("/login", {
-                mainContainer.removeAll()
-                mainContainer.add(LoginView(routing))
+                root.removeAll()
+                root.add(LoginView(routing))
             })
             .on("/dashboard", {
-                mainContainer.removeAll()
-                mainContainer.add(H3("Welcome to Dashboard!"))
+                root.removeAll()
+                root.add(H3("Welcome to Dashboard!"))
             })
             .resolve() // Resolves the initial route
     }

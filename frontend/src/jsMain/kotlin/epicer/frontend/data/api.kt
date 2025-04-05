@@ -54,25 +54,23 @@ suspend fun login(loginUserDTO: LoginUserDTO): TokenDTO? {
     }
 }
 
-//suspend fun isLogged(): Boolean {
-//    val token = localStorage.getItem("jwtToken") ?: return false
-//
-//    try {
-//        val response = window.fetch(
-//            backend_url + "me",
-//            RequestInit(
-//                method = "GET",
-//                headers = json(
-//                    "Content-Type" to "application/json",
-//                    "Authorization" to "Bearer $token"
-//                )
-//            )
-//        ).await()
-//
-//        return response.status.toInt() == 200
-//    } catch (e: Exception) {
-//        println("Error checking login status: ${e.message}")
-//    }
-//
-//    return false
-//}
+suspend fun isLogged(): Boolean {
+    try {
+        val token = localStorage.getItem("jwtToken") ?: return false
+
+        val response = window.fetch(
+            "$backend_url/me",
+            RequestInit(
+                method = "GET",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token"
+                )
+            )
+        ).await()
+
+        return response.status.toInt() == 200
+    } catch (e: Exception) {
+        return false
+    }
+}

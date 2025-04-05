@@ -1,11 +1,14 @@
 package epicer.frontend.views
 
 import epicer.common.dto.TokenDTO
+import epicer.common.dto.user.BaseUserDTO
 import epicer.common.dto.user.LoginUserDTO
+import epicer.common.dto.user.UserDTO
 import epicer.frontend.data.backend_url
 import epicer.frontend.data.login
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
+import io.kvision.core.Position
 import io.kvision.core.onClick
 import io.kvision.core.onEventLaunch
 import io.kvision.core.onInputLaunch
@@ -69,7 +72,8 @@ class LoginView(private val routing: Routing) : VPanel() {
             val loginButton = button(
                 text = "Login",
                 className = "btn btn-primary",
-                type = ButtonType.SUBMIT,) {
+                type = ButtonType.SUBMIT,
+            ) {
                 marginTop = 10.px
                 onClick {
 
@@ -79,11 +83,24 @@ class LoginView(private val routing: Routing) : VPanel() {
 
                             if (token != null) {
                                 localStorage.setItem("jwtToken", token.token)
-                                Toast.success("Login successfull")
+                                localStorage.setItem("baseUserDTO", Json.encodeToString(BaseUserDTO.serializer(), token.baseUserDTO))
+
+                                Toast.success(
+                                    message = "Login successfull",
+                                    options = ToastOptions(
+                                        position = ToastPosition.BOTTOMRIGHT,
+                                    )
+                                )
                                 println("Login succeded")
+                                routing.kvNavigate("/main")
                             } else {
-                                localStorage.removeItem("jwtToken")
-                                Toast.danger("Login failed")
+                                localStorage.clear()
+                                Toast.danger(
+                                    message = "Login failed",
+                                    options = ToastOptions(
+                                        position = ToastPosition.BOTTOMRIGHT,
+                                    )
+                                )
                                 println("Login failed")
                             }
                         }

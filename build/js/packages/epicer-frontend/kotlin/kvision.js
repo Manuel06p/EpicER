@@ -93,9 +93,9 @@
   var Dispatchers_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var SupervisorJob = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
-  var SerializersModuleBuilder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.c2;
+  var SerializersModuleBuilder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.d2;
   var getKClass = kotlin_kotlin.$_$.d;
-  var overwriteWith = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g2;
+  var overwriteWith = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h2;
   var KtList = kotlin_kotlin.$_$.l5;
   var isInterface = kotlin_kotlin.$_$.pa;
   var Companion_getInstance = kotlin_io_kvision_kvision_common_types.$_$.a;
@@ -130,8 +130,8 @@
   var emptyList = kotlin_kotlin.$_$.n6;
   var get_KV_DEFAULT_DATE_FORMAT = kotlin_io_kvision_kvision_common_types.$_$.b;
   var buildClassSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g1;
-  var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j2;
-  var serializersModuleOf = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h2;
+  var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k2;
+  var serializersModuleOf = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i2;
   var Pair = kotlin_kotlin.$_$.me;
   //endregion
   //region block: pre-declaration
@@ -294,6 +294,7 @@
   initMetadataForInterface(Template, 'Template');
   initMetadataForClass(Tag, 'Tag', VOID, SimplePanel, [SimplePanel, Template]);
   initMetadataForClass(FieldLabel, 'FieldLabel', VOID, Tag);
+  initMetadataForClass(FieldLabelCheck, 'FieldLabelCheck', VOID, FieldLabel);
   initMetadataForCompanion(Companion_2);
   initMetadataForClass(Form, 'Form', Form);
   initMetadataForClass(FieldParams, 'FieldParams', FieldParams);
@@ -453,6 +454,12 @@
   initMetadataForCompanion(Companion_4);
   initMetadataForInterface(ObservableState, 'ObservableState');
   initMetadataForInterface(MutableState, 'MutableState', VOID, VOID, [ObservableState]);
+  initMetadataForClass(CheckBox, 'CheckBox', CheckBox, SimplePanel, [SimplePanel, BoolFormControl, MutableState]);
+  initMetadataForClass(CheckInput, 'CheckInput', VOID, Widget, [Widget, GenericFormComponent, FormInput, MutableState]);
+  initMetadataForClass(CheckBoxInput, 'CheckBoxInput', CheckBoxInput, CheckInput);
+  initMetadataForClass(CheckStyle, 'CheckStyle', VOID, Enum, [CssClass, Enum]);
+  initMetadataForClass(CheckInputType, 'CheckInputType', VOID, Enum);
+  initMetadataForCompanion(Companion_5);
   initMetadataForClass(AbstractText, 'AbstractText', VOID, SimplePanel, [SimplePanel, StringFormControl, MutableState]);
   initMetadataForClass(AbstractTextInput, 'AbstractTextInput', VOID, Widget, [Widget, GenericFormComponent, FormInput, MutableState]);
   initMetadataForInterface(MaskFactory, 'MaskFactory');
@@ -469,8 +476,12 @@
   initMetadataForClass(Div, 'Div', Div, Tag);
   initMetadataForClass(H2, 'H2', H2, Tag);
   initMetadataForClass(H3, 'H3', H3, Tag);
+  initMetadataForClass(Icon, 'Icon', VOID, Tag);
   initMetadataForClass(InputType, 'InputType', VOID, Enum);
   initMetadataForClass(Autocomplete, 'Autocomplete', VOID, Enum);
+  initMetadataForCompanion(Companion_6);
+  initMetadataForClass(Link, 'Link', VOID, SimplePanel);
+  initMetadataForClass(Span, 'Span', Span, Tag);
   initMetadataForClass(TAG, 'TAG', VOID, Enum);
   initMetadataForClass(Align, 'Align', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(TagMarker, 'TagMarker', VOID, VOID, [Annotation]);
@@ -527,7 +538,7 @@
   initMetadataForClass(FieldsetPanel, 'FieldsetPanel', FieldsetPanel, SimplePanel);
   initMetadataForClass(FlexPanel$options$1, VOID, VOID, VOID, [Container]);
   initMetadataForClass(FlexPanel, 'FlexPanel', FlexPanel, SimplePanel);
-  initMetadataForCompanion(Companion_5);
+  initMetadataForCompanion(Companion_7);
   initMetadataForClass(Root, 'Root', VOID, SimplePanel);
   initMetadataForClass(ContainerType, 'ContainerType', VOID, Enum);
   initMetadataForClass(VPanel, 'VPanel', VPanel, FlexPanel);
@@ -596,7 +607,7 @@
   }
   function startApplication$lambda($application) {
     return function (data) {
-      Companion_getInstance_6().disposeAllRoots_fs2xup_k$();
+      Companion_getInstance_8().disposeAllRoots_fs2xup_k$();
       RoutingManager_getInstance().shutdownRouter_acl6kx_k$();
       var tmp0_safe_receiver = $application._v;
       data.appState = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.dispose_rnbs4f_k$();
@@ -6209,7 +6220,7 @@
   };
   protoOf(Style).refresh_6a3uvf_k$ = function () {
     protoOf(StyledComponent).refresh_6a3uvf_k$.call(this);
-    var tmp0_safe_receiver = Companion_getInstance_6().getFirstRoot_21g3y4_k$();
+    var tmp0_safe_receiver = Companion_getInstance_8().getFirstRoot_21g3y4_k$();
     if (tmp0_safe_receiver == null)
       null;
     else {
@@ -11483,6 +11494,60 @@
     protoOf(Tag).buildAttributeSet_etcqhg_k$.call(this, attributeSetBuilder);
     attributeSetBuilder.add_lbri6p_k$('for', this.forId_1);
   };
+  function FieldLabelCheck(forId, content, rich, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    FieldLabel.call(this, forId, content, rich, className);
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(FieldLabelCheck).render_fgfjvu_k$ = function () {
+    var tmp;
+    if (!(this.get_content_h02jrk_k$() == null)) {
+      var tmp0_safe_receiver = this.get_content_h02jrk_k$();
+      var tmp_0;
+      if (tmp0_safe_receiver == null) {
+        tmp_0 = null;
+      } else {
+        // Inline function 'kotlin.let' call
+        // Inline function 'io.kvision.form.FieldLabelCheck.render.<anonymous>' call
+        tmp_0 = this.translate_s2ekyc_k$(tmp0_safe_receiver);
+      }
+      var translatedContent = tmp_0;
+      var tmp_1;
+      if (this.get_rich_woto9x_k$()) {
+        var tmp_2 = this.get_type_wovaf7_k$().get_tagName_7k7wv_k$();
+        // Inline function 'kotlin.arrayOf' call
+        // Inline function 'kotlin.js.unsafeCast' call
+        // Inline function 'kotlin.js.asDynamic' call
+        var tmp3 = [KVManager_getInstance().virtualize_d7cntb_k$('<span style="display: contents;">' + translatedContent + '<\/span>')];
+        // Inline function 'kotlin.collections.plus' call
+        var elements = this.childrenVNodes_2corie_k$();
+        // Inline function 'kotlin.js.asDynamic' call
+        var tmp$ret$6 = tmp3.concat(elements);
+        tmp_1 = this.render_prnnht_k$(tmp_2, tmp$ret$6);
+      } else {
+        var tmp_3 = this.get_type_wovaf7_k$().get_tagName_7k7wv_k$();
+        // Inline function 'kotlin.arrayOf' call
+        // Inline function 'kotlin.js.unsafeCast' call
+        // Inline function 'kotlin.js.asDynamic' call
+        var tmp6 = [translatedContent];
+        // Inline function 'kotlin.collections.plus' call
+        var elements_0 = this.childrenVNodes_2corie_k$();
+        // Inline function 'kotlin.js.asDynamic' call
+        var tmp$ret$11 = tmp6.concat(elements_0);
+        tmp_1 = this.render_prnnht_k$(tmp_3, tmp$ret$11);
+      }
+      tmp = tmp_1;
+    } else {
+      tmp = this.render_prnnht_k$(this.get_type_wovaf7_k$().get_tagName_7k7wv_k$(), this.childrenVNodes_2corie_k$());
+    }
+    return tmp;
+  };
   function _get_panel__cycb77($this) {
     return $this.panel_1;
   }
@@ -12322,6 +12387,8 @@
   protoOf(ValidationStatus).get_className_8cmv0a_k$ = function () {
     return this.className_1;
   };
+  function GenericNonNullableFormControl() {
+  }
   var InputSize_LARGE_instance;
   var InputSize_SMALL_instance;
   function values_42() {
@@ -12367,8 +12434,6 @@
   function TriStateFormControl() {
   }
   function GenericFormComponent() {
-  }
-  function GenericNonNullableFormControl() {
   }
   function ValidationStatus_VALID_getInstance() {
     ValidationStatus_initEntries();
@@ -13596,6 +13661,9 @@
     rich = rich === VOID ? false : rich;
     Tag.call(this, TAG_DIV_getInstance(), content, rich, VOID, 'invalid-feedback');
   }
+  function _get_idc__e6a609($this) {
+    return $this.idc_1;
+  }
   function Companion_4() {
     Companion_instance_4 = this;
     this.counter_1 = 0;
@@ -13612,8 +13680,1067 @@
       new Companion_4();
     return Companion_instance_4;
   }
-  function AbstractText(label, rich, floating, className) {
+  function CheckBox$inline$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckBox$reversed$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckBox$labelFirst$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckBox$flabel$lambda(this$0) {
+    return function ($this$FieldLabelCheck) {
+      $this$FieldLabelCheck.set_parent_58bm75_k$(this$0);
+      span($this$FieldLabelCheck);
+      return Unit_getInstance();
+    };
+  }
+  function CheckBox$onClick$lambda$lambda($handler, $this_setEventListener) {
+    return function (e) {
+      $handler($this_setEventListener.self, e);
+      return Unit_getInstance();
+    };
+  }
+  function CheckBox$onClick$lambda($handler) {
+    return function ($this$setEventListener) {
+      $this$setEventListener.click = CheckBox$onClick$lambda$lambda($handler, $this$setEventListener);
+      return Unit_getInstance();
+    };
+  }
+  function CheckBox(value, name, labelFirst, label, rich, init) {
     Companion_getInstance_5();
+    value = value === VOID ? false : value;
+    name = name === VOID ? null : name;
+    labelFirst = labelFirst === VOID ? false : labelFirst;
+    label = label === VOID ? null : label;
+    rich = rich === VOID ? false : rich;
+    init = init === VOID ? null : init;
+    SimplePanel.call(this, 'form-check');
+    var tmp = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction = CheckBox$inline$delegate$lambda(this);
+    tmp.inline$delegate_1 = (new RefreshDelegateProvider_0(this, false, refreshFunction)).provideDelegate_z62loi_k$(this, inline$factory());
+    var tmp_0 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_0 = CheckBox$reversed$delegate$lambda(this);
+    tmp_0.reversed$delegate_1 = (new RefreshDelegateProvider_0(this, false, refreshFunction_0)).provideDelegate_z62loi_k$(this, reversed$factory());
+    var tmp_1 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_1 = CheckBox$labelFirst$delegate$lambda(this);
+    tmp_1.labelFirst$delegate_1 = (new RefreshDelegateProvider_0(this, labelFirst, refreshFunction_1)).provideDelegate_z62loi_k$(this, labelFirst$factory());
+    this.idc_1 = 'kv_form_checkbox_' + Companion_getInstance_5().counter_1;
+    var tmp_2 = this;
+    // Inline function 'kotlin.apply' call
+    var this_0 = new CheckBoxInput(value);
+    // Inline function 'io.kvision.form.check.CheckBox.input.<anonymous>' call
+    this_0.set_parent_58bm75_k$(this);
+    this_0.set_id_wyyipr_k$(this.idc_1);
+    this_0.set_name_wkmnld_k$(name);
+    tmp_2.input_1 = this_0;
+    var tmp_3 = this;
+    tmp_3.flabel_1 = new FieldLabelCheck(this.idc_1, label, rich, 'form-check-label', CheckBox$flabel$lambda(this));
+    var tmp_4 = this;
+    // Inline function 'kotlin.apply' call
+    var this_1 = new InvalidFeedback();
+    // Inline function 'io.kvision.form.check.CheckBox.invalidFeedback.<anonymous>' call
+    this_1.set_parent_58bm75_k$(this);
+    this_1.set_visible_w9mvj4_k$(false);
+    tmp_4.invalidFeedback_1 = this_1;
+    this.input_1.set_eventTarget_i37bvc_k$(this);
+    var _unary__edvuaz = Companion_getInstance_5().counter_1;
+    Companion_getInstance_5().counter_1 = _unary__edvuaz + 1 | 0;
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(CheckBox).set_value_70roch_k$ = function (value) {
+    this.input_1.set_value_70roch_k$(value);
+  };
+  protoOf(CheckBox).set_value_v1vabv_k$ = function (_set____db54di) {
+    return this.set_value_70roch_k$((!(_set____db54di == null) ? typeof _set____db54di === 'boolean' : false) ? _set____db54di : THROW_CCE());
+  };
+  protoOf(CheckBox).get_value_j01efc_k$ = function () {
+    return this.input_1.get_value_j01efc_k$();
+  };
+  protoOf(CheckBox).set_startValue_f1ay1j_k$ = function (value) {
+    this.input_1.set_startValue_f1ay1j_k$(value);
+  };
+  protoOf(CheckBox).get_startValue_ooysvs_k$ = function () {
+    return this.input_1.get_startValue_ooysvs_k$();
+  };
+  protoOf(CheckBox).set_label_ck9rls_k$ = function (value) {
+    this.flabel_1.set_content_i5lrjv_k$(value);
+  };
+  protoOf(CheckBox).get_label_iuj8p7_k$ = function () {
+    return this.flabel_1.get_content_h02jrk_k$();
+  };
+  protoOf(CheckBox).set_rich_1alg2s_k$ = function (value) {
+    this.flabel_1.set_rich_1alg2s_k$(value);
+  };
+  protoOf(CheckBox).get_rich_woto9x_k$ = function () {
+    return this.flabel_1.get_rich_woto9x_k$();
+  };
+  protoOf(CheckBox).set_style_cafvrn_k$ = function (value) {
+    this.input_1.set_style_cafvrn_k$(value);
+  };
+  protoOf(CheckBox).get_style_iyqetk_k$ = function () {
+    return this.input_1.get_style_iyqetk_k$();
+  };
+  protoOf(CheckBox).set_circled_mf5tdu_k$ = function (value) {
+    this.input_1.set_circled_mf5tdu_k$(value);
+  };
+  protoOf(CheckBox).get_circled_e7p9yj_k$ = function () {
+    return this.input_1.get_circled_e7p9yj_k$();
+  };
+  protoOf(CheckBox).set_inline_x67j3z_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.inline$delegate_1, this, inline$factory_0(), _set____db54di);
+  };
+  protoOf(CheckBox).get_inline_etuzdu_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.inline$delegate_1, this, inline$factory_1());
+  };
+  protoOf(CheckBox).set_reversed_agljue_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.reversed$delegate_1, this, reversed$factory_0(), _set____db54di);
+  };
+  protoOf(CheckBox).get_reversed_yup56z_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.reversed$delegate_1, this, reversed$factory_1());
+  };
+  protoOf(CheckBox).set_labelFirst_q3ot2c_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.labelFirst$delegate_1, this, labelFirst$factory_0(), _set____db54di);
+  };
+  protoOf(CheckBox).get_labelFirst_n6uzdx_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.labelFirst$delegate_1, this, labelFirst$factory_1());
+  };
+  protoOf(CheckBox).set_indeterminate_291tzd_k$ = function (value) {
+    this.input_1.set_indeterminate_291tzd_k$(value);
+  };
+  protoOf(CheckBox).get_indeterminate_997h5e_k$ = function () {
+    return this.input_1.get_indeterminate_997h5e_k$();
+  };
+  protoOf(CheckBox).get_input_it4gip_k$ = function () {
+    return this.input_1;
+  };
+  protoOf(CheckBox).get_flabel_ddfcrb_k$ = function () {
+    return this.flabel_1;
+  };
+  protoOf(CheckBox).get_invalidFeedback_fj7eer_k$ = function () {
+    return this.invalidFeedback_1;
+  };
+  protoOf(CheckBox).render_fgfjvu_k$ = function () {
+    var childrenList = this.get_labelFirst_n6uzdx_k$() ? listOf([this.flabel_1, this.input_1, this.invalidFeedback_1]) : listOf([this.input_1, this.flabel_1, this.invalidFeedback_1]);
+    // Inline function 'kotlin.collections.mapNotNull' call
+    // Inline function 'kotlin.collections.mapNotNullTo' call
+    var destination = ArrayList_init_$Create$();
+    // Inline function 'kotlin.collections.forEach' call
+    var _iterator__ex2g4s = childrenList.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'kotlin.collections.mapNotNullTo.<anonymous>' call
+      // Inline function 'io.kvision.form.check.CheckBox.render.<anonymous>' call
+      var tmp0_safe_receiver = element.get_visible_8zfvk9_k$() ? element.renderVNode_r2mn32_k$() : null;
+      if (tmp0_safe_receiver == null)
+        null;
+      else {
+        // Inline function 'kotlin.let' call
+        // Inline function 'kotlin.collections.mapNotNullTo.<anonymous>.<anonymous>' call
+        destination.add_utx5q5_k$(tmp0_safe_receiver);
+      }
+    }
+    // Inline function 'kotlin.collections.toTypedArray' call
+    var children = copyToArray(destination);
+    return this.render_prnnht_k$('div', children);
+  };
+  protoOf(CheckBox).setEventListener_4rv3s8_k$ = function (block) {
+    return this.input_1.setEventListener_4rv3s8_k$(block);
+  };
+  protoOf(CheckBox).removeEventListener_9wauwy_k$ = function (id) {
+    this.input_1.removeEventListener_9wauwy_k$(id);
+  };
+  protoOf(CheckBox).removeEventListeners_vuojmv_k$ = function () {
+    this.input_1.removeEventListeners_vuojmv_k$();
+  };
+  protoOf(CheckBox).buildClassSet_myme1g_k$ = function (classSetBuilder) {
+    protoOf(SimplePanel).buildClassSet_myme1g_k$.call(this, classSetBuilder);
+    if (this.get_inline_etuzdu_k$()) {
+      classSetBuilder.add_udnk2x_k$('form-check-inline');
+    }
+    if (this.get_reversed_yup56z_k$()) {
+      classSetBuilder.add_udnk2x_k$('form-check-reverse');
+    }
+    if (!(this.get_validatorError_og9qg1_k$() == null)) {
+      classSetBuilder.add_udnk2x_k$('kv-text-danger');
+    }
+  };
+  protoOf(CheckBox).onClick_fp1x22_k$ = function (handler) {
+    return this.setEventListener_4rv3s8_k$(CheckBox$onClick$lambda(handler));
+  };
+  protoOf(CheckBox).focus_of07w8_k$ = function () {
+    this.input_1.focus_of07w8_k$();
+  };
+  protoOf(CheckBox).blur_exr7u1_k$ = function () {
+    this.input_1.blur_exr7u1_k$();
+  };
+  protoOf(CheckBox).styleForHorizontalFormPanel_9yitfk_k$ = function (horizontalRatio) {
+    if (this.get_labelFirst_n6uzdx_k$()) {
+      styleForHorizontalFormPanel.call(this, horizontalRatio);
+      this.addCssClass_ul13bg_k$('form-group');
+      this.addCssClass_ul13bg_k$('kv-mb-3');
+      this.removeCssClass_3dntip_k$('form-check');
+    } else {
+      this.addCssClass_ul13bg_k$('form-group');
+      this.addCssClass_ul13bg_k$('kv-mb-3');
+      this.addSurroundingCssClass_h2gyzy_k$('row');
+      this.addCssClass_ul13bg_k$('offset-sm-' + horizontalRatio.get_labels_g1o1zc_k$());
+      this.addCssClass_ul13bg_k$('col-sm-' + horizontalRatio.get_fields_dbuqbm_k$());
+    }
+  };
+  protoOf(CheckBox).styleForInlineFormPanel_1ffnb3_k$ = function () {
+    this.addCssClass_ul13bg_k$('form-group');
+  };
+  protoOf(CheckBox).styleForVerticalFormPanel_h0pd36_k$ = function () {
+    this.addCssClass_ul13bg_k$('form-group');
+    this.addCssClass_ul13bg_k$('kv-mb-3');
+  };
+  protoOf(CheckBox).dispose_3nnxhr_k$ = function () {
+    protoOf(SimplePanel).dispose_3nnxhr_k$.call(this);
+    this.input_1.dispose_3nnxhr_k$();
+    this.flabel_1.dispose_3nnxhr_k$();
+    this.invalidFeedback_1.dispose_3nnxhr_k$();
+  };
+  protoOf(CheckBox).getState_wi99ln_k$ = function () {
+    return this.input_1.getState_wi99ln_k$();
+  };
+  protoOf(CheckBox).subscribe_x45vei_k$ = function (observer) {
+    return this.input_1.subscribe_x45vei_k$(observer);
+  };
+  protoOf(CheckBox).subscribe_i8u9zb_k$ = function (observer) {
+    return this.subscribe_x45vei_k$(observer);
+  };
+  protoOf(CheckBox).subscribe_go603e_k$ = function (observer) {
+    return this.subscribe_x45vei_k$(observer);
+  };
+  protoOf(CheckBox).setState_o1xiu2_k$ = function (state) {
+    this.input_1.setState_o1xiu2_k$(state);
+  };
+  protoOf(CheckBox).setState_otrcj3_k$ = function (state) {
+    return this.setState_o1xiu2_k$((!(state == null) ? typeof state === 'boolean' : false) ? state : THROW_CCE());
+  };
+  function checkBox(_this__u8e3s4, value, name, labelFirst, label, rich, init) {
+    value = value === VOID ? false : value;
+    name = name === VOID ? null : name;
+    labelFirst = labelFirst === VOID ? false : labelFirst;
+    label = label === VOID ? null : label;
+    rich = rich === VOID ? false : rich;
+    init = init === VOID ? null : init;
+    var checkBox = new CheckBox(value, name, labelFirst, label, rich, init);
+    _this__u8e3s4.add_rekwpt_k$(checkBox);
+    return checkBox;
+  }
+  function inline$factory() {
+    return getPropertyCallableRef('inline', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_inline_etuzdu_k$();
+    }, function (receiver, value) {
+      return receiver.set_inline_x67j3z_k$(value);
+    });
+  }
+  function reversed$factory() {
+    return getPropertyCallableRef('reversed', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_reversed_yup56z_k$();
+    }, function (receiver, value) {
+      return receiver.set_reversed_agljue_k$(value);
+    });
+  }
+  function labelFirst$factory() {
+    return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_labelFirst_n6uzdx_k$();
+    }, function (receiver, value) {
+      return receiver.set_labelFirst_q3ot2c_k$(value);
+    });
+  }
+  function inline$factory_0() {
+    return getPropertyCallableRef('inline', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_inline_etuzdu_k$();
+    }, function (receiver, value) {
+      return receiver.set_inline_x67j3z_k$(value);
+    });
+  }
+  function inline$factory_1() {
+    return getPropertyCallableRef('inline', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_inline_etuzdu_k$();
+    }, function (receiver, value) {
+      return receiver.set_inline_x67j3z_k$(value);
+    });
+  }
+  function reversed$factory_0() {
+    return getPropertyCallableRef('reversed', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_reversed_yup56z_k$();
+    }, function (receiver, value) {
+      return receiver.set_reversed_agljue_k$(value);
+    });
+  }
+  function reversed$factory_1() {
+    return getPropertyCallableRef('reversed', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_reversed_yup56z_k$();
+    }, function (receiver, value) {
+      return receiver.set_reversed_agljue_k$(value);
+    });
+  }
+  function labelFirst$factory_0() {
+    return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_labelFirst_n6uzdx_k$();
+    }, function (receiver, value) {
+      return receiver.set_labelFirst_q3ot2c_k$(value);
+    });
+  }
+  function labelFirst$factory_1() {
+    return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_labelFirst_n6uzdx_k$();
+    }, function (receiver, value) {
+      return receiver.set_labelFirst_q3ot2c_k$(value);
+    });
+  }
+  function CheckBoxInput$indeterminate$delegate$lambda(this$0) {
+    return function (it) {
+      var tmp;
+      if (it) {
+        this$0.set_value_70roch_k$(false);
+        tmp = Unit_getInstance();
+      }
+      this$0.refreshState_mh59ye_k$();
+      var _iterator__ex2g4s = this$0.get_observers_pupmq4_k$().iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var element = _iterator__ex2g4s.next_20eer_k$();
+        // Inline function 'io.kvision.form.check.CheckBoxInput.indeterminate$delegate.<anonymous>.<anonymous>' call
+        element(this$0.get_value_j01efc_k$());
+      }
+      return Unit_getInstance();
+    };
+  }
+  function CheckBoxInput$circled$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckBoxInput(value, className, init) {
+    value = value === VOID ? false : value;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    CheckInput.call(this, CheckInputType_CHECKBOX_getInstance(), value, className);
+    var tmp = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction = CheckBoxInput$indeterminate$delegate$lambda(this);
+    tmp.indeterminate$delegate_1 = (new RefreshDelegateProvider_0(this, false, refreshFunction)).provideDelegate_z62loi_k$(this, indeterminate$factory());
+    var tmp_0 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_0 = CheckBoxInput$circled$delegate$lambda(this);
+    tmp_0.circled$delegate_1 = (new RefreshDelegateProvider_0(this, false, refreshFunction_0)).provideDelegate_z62loi_k$(this, circled$factory());
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(CheckBoxInput).set_indeterminate_291tzd_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.indeterminate$delegate_1, this, indeterminate$factory_0(), _set____db54di);
+  };
+  protoOf(CheckBoxInput).get_indeterminate_997h5e_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.indeterminate$delegate_1, this, indeterminate$factory_1());
+  };
+  protoOf(CheckBoxInput).set_circled_mf5tdu_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.circled$delegate_1, this, circled$factory_0(), _set____db54di);
+  };
+  protoOf(CheckBoxInput).get_circled_e7p9yj_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.circled$delegate_1, this, circled$factory_1());
+  };
+  protoOf(CheckBoxInput).buildClassSet_myme1g_k$ = function (classSetBuilder) {
+    protoOf(CheckInput).buildClassSet_myme1g_k$.call(this, classSetBuilder);
+    if (this.get_circled_e7p9yj_k$()) {
+      classSetBuilder.add_udnk2x_k$('kv-checkbox-circle');
+    }
+  };
+  protoOf(CheckBoxInput).refreshState_mh59ye_k$ = function () {
+    protoOf(CheckInput).refreshState_mh59ye_k$.call(this);
+    var tmp0_safe_receiver = this.getElementD_y85vem_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.indeterminate = this.get_indeterminate_997h5e_k$();
+    }
+  };
+  protoOf(CheckBoxInput).changeValue_hkbezb_k$ = function (eventType) {
+    this.set_indeterminate_291tzd_k$(false);
+    protoOf(CheckInput).changeValue_hkbezb_k$.call(this, eventType);
+  };
+  function indeterminate$factory() {
+    return getPropertyCallableRef('indeterminate', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_indeterminate_997h5e_k$();
+    }, function (receiver, value) {
+      return receiver.set_indeterminate_291tzd_k$(value);
+    });
+  }
+  function circled$factory() {
+    return getPropertyCallableRef('circled', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_circled_e7p9yj_k$();
+    }, function (receiver, value) {
+      return receiver.set_circled_mf5tdu_k$(value);
+    });
+  }
+  function indeterminate$factory_0() {
+    return getPropertyCallableRef('indeterminate', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_indeterminate_997h5e_k$();
+    }, function (receiver, value) {
+      return receiver.set_indeterminate_291tzd_k$(value);
+    });
+  }
+  function indeterminate$factory_1() {
+    return getPropertyCallableRef('indeterminate', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_indeterminate_997h5e_k$();
+    }, function (receiver, value) {
+      return receiver.set_indeterminate_291tzd_k$(value);
+    });
+  }
+  function circled$factory_0() {
+    return getPropertyCallableRef('circled', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_circled_e7p9yj_k$();
+    }, function (receiver, value) {
+      return receiver.set_circled_mf5tdu_k$(value);
+    });
+  }
+  function circled$factory_1() {
+    return getPropertyCallableRef('circled', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_circled_e7p9yj_k$();
+    }, function (receiver, value) {
+      return receiver.set_circled_mf5tdu_k$(value);
+    });
+  }
+  var CheckStyle_PRIMARY_instance;
+  var CheckStyle_SECONDARY_instance;
+  var CheckStyle_SUCCESS_instance;
+  var CheckStyle_DANGER_instance;
+  var CheckStyle_WARNING_instance;
+  var CheckStyle_INFO_instance;
+  var CheckStyle_LIGHT_instance;
+  var CheckStyle_DARK_instance;
+  function values_48() {
+    return [CheckStyle_PRIMARY_getInstance(), CheckStyle_SECONDARY_getInstance(), CheckStyle_SUCCESS_getInstance(), CheckStyle_DANGER_getInstance(), CheckStyle_WARNING_getInstance(), CheckStyle_INFO_getInstance(), CheckStyle_LIGHT_getInstance(), CheckStyle_DARK_getInstance()];
+  }
+  function valueOf_48(value) {
+    switch (value) {
+      case 'PRIMARY':
+        return CheckStyle_PRIMARY_getInstance();
+      case 'SECONDARY':
+        return CheckStyle_SECONDARY_getInstance();
+      case 'SUCCESS':
+        return CheckStyle_SUCCESS_getInstance();
+      case 'DANGER':
+        return CheckStyle_DANGER_getInstance();
+      case 'WARNING':
+        return CheckStyle_WARNING_getInstance();
+      case 'INFO':
+        return CheckStyle_INFO_getInstance();
+      case 'LIGHT':
+        return CheckStyle_LIGHT_getInstance();
+      case 'DARK':
+        return CheckStyle_DARK_getInstance();
+      default:
+        CheckStyle_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_48() {
+    if ($ENTRIES_48 == null)
+      $ENTRIES_48 = enumEntries(values_48());
+    return $ENTRIES_48;
+  }
+  var CheckStyle_entriesInitialized;
+  function CheckStyle_initEntries() {
+    if (CheckStyle_entriesInitialized)
+      return Unit_getInstance();
+    CheckStyle_entriesInitialized = true;
+    CheckStyle_PRIMARY_instance = new CheckStyle('PRIMARY', 0, 'kv-check-primary');
+    CheckStyle_SECONDARY_instance = new CheckStyle('SECONDARY', 1, 'kv-check-secondary');
+    CheckStyle_SUCCESS_instance = new CheckStyle('SUCCESS', 2, 'kv-check-success');
+    CheckStyle_DANGER_instance = new CheckStyle('DANGER', 3, 'kv-check-danger');
+    CheckStyle_WARNING_instance = new CheckStyle('WARNING', 4, 'kv-check-warning');
+    CheckStyle_INFO_instance = new CheckStyle('INFO', 5, 'kv-check-info');
+    CheckStyle_LIGHT_instance = new CheckStyle('LIGHT', 6, 'kv-check-light');
+    CheckStyle_DARK_instance = new CheckStyle('DARK', 7, 'kv-check-dark');
+  }
+  var $ENTRIES_48;
+  function CheckStyle(name, ordinal, className) {
+    Enum.call(this, name, ordinal);
+    this.className_1 = className;
+  }
+  protoOf(CheckStyle).get_className_8cmv0a_k$ = function () {
+    return this.className_1;
+  };
+  function CheckInput$value$delegate$lambda(this$0) {
+    return function (it) {
+      this$0.refreshState_mh59ye_k$();
+      var _iterator__ex2g4s = this$0.observers_1.iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var element = _iterator__ex2g4s.next_20eer_k$();
+        // Inline function 'io.kvision.form.check.CheckInput.value$delegate.<anonymous>.<anonymous>' call
+        element(it);
+      }
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$startValue$delegate$lambda(this$0) {
+    return function (it) {
+      this$0.set_value_70roch_k$(it);
+      this$0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$type$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$style$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$name$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$disabled$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$extraValue$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$size$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$validationStatus$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$lambda$lambda(this$0) {
+    return function (it) {
+      this$0.changeValue_hkbezb_k$('click');
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$lambda$lambda_0(this$0) {
+    return function (it) {
+      this$0.changeValue_hkbezb_k$('change');
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$lambda(this$0) {
+    return function ($this$setInternalEventListener) {
+      $this$setInternalEventListener.click = CheckInput$lambda$lambda(this$0);
+      $this$setInternalEventListener.change = CheckInput$lambda$lambda_0(this$0);
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$onClick$lambda$lambda($handler, $this_setEventListener) {
+    return function (e) {
+      $handler($this_setEventListener.self, e);
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$onClick$lambda($handler) {
+    return function ($this$setEventListener) {
+      $this$setEventListener.click = CheckInput$onClick$lambda$lambda($handler, $this$setEventListener);
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput$subscribe$lambda(this$0, $observer) {
+    return function () {
+      var tmp0 = this$0.observers_1;
+      var element = $observer;
+      tmp0.remove_cedx0m_k$(element);
+      return Unit_getInstance();
+    };
+  }
+  function CheckInput(type, value, className) {
+    type = type === VOID ? CheckInputType_CHECKBOX_getInstance() : type;
+    value = value === VOID ? false : value;
+    className = className === VOID ? null : className;
+    Widget.call(this, className);
+    var tmp = this;
+    // Inline function 'kotlin.collections.mutableListOf' call
+    tmp.observers_1 = ArrayList_init_$Create$();
+    var tmp_0 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction = CheckInput$value$delegate$lambda(this);
+    tmp_0.value$delegate_1 = (new RefreshDelegateProvider_0(this, value, refreshFunction)).provideDelegate_z62loi_k$(this, value$factory());
+    var tmp_1 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_0 = CheckInput$startValue$delegate$lambda(this);
+    tmp_1.startValue$delegate_1 = (new RefreshDelegateProvider_0(this, value, refreshFunction_0)).provideDelegate_z62loi_k$(this, startValue$factory());
+    var tmp_2 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_1 = CheckInput$type$delegate$lambda(this);
+    tmp_2.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction_1)).provideDelegate_z62loi_k$(this, type$factory());
+    var tmp_3 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_2 = CheckInput$style$delegate$lambda(this);
+    tmp_3.style$delegate_1 = _WidgetRefreshDelegate___init__impl__h6t5er(refreshFunction_2);
+    var tmp_4 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_3 = CheckInput$name$delegate$lambda(this);
+    tmp_4.name$delegate_1 = _WidgetRefreshDelegate___init__impl__h6t5er(refreshFunction_3);
+    var tmp_5 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_4 = CheckInput$disabled$delegate$lambda(this);
+    tmp_5.disabled$delegate_1 = (new RefreshDelegateProvider_0(this, false, refreshFunction_4)).provideDelegate_z62loi_k$(this, disabled$factory());
+    var tmp_6 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_5 = CheckInput$extraValue$delegate$lambda(this);
+    tmp_6.extraValue$delegate_1 = _WidgetRefreshDelegate___init__impl__h6t5er(refreshFunction_5);
+    var tmp_7 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_6 = CheckInput$size$delegate$lambda(this);
+    tmp_7.size$delegate_1 = _WidgetRefreshDelegate___init__impl__h6t5er(refreshFunction_6);
+    var tmp_8 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_7 = CheckInput$validationStatus$delegate$lambda(this);
+    tmp_8.validationStatus$delegate_1 = _WidgetRefreshDelegate___init__impl__h6t5er(refreshFunction_7);
+    this.useSnabbdomDistinctKey_wmc8hc_k$();
+    this.setInternalEventListener_jia4mj_k$(CheckInput$lambda(this));
+  }
+  protoOf(CheckInput).get_observers_pupmq4_k$ = function () {
+    return this.observers_1;
+  };
+  protoOf(CheckInput).set_value_70roch_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.value$delegate_1, this, value$factory_0(), _set____db54di);
+  };
+  protoOf(CheckInput).set_value_v1vabv_k$ = function (_set____db54di) {
+    return this.set_value_70roch_k$((!(_set____db54di == null) ? typeof _set____db54di === 'boolean' : false) ? _set____db54di : THROW_CCE());
+  };
+  protoOf(CheckInput).get_value_j01efc_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.value$delegate_1, this, value$factory_1());
+  };
+  protoOf(CheckInput).set_startValue_f1ay1j_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.startValue$delegate_1, this, startValue$factory_0(), _set____db54di);
+  };
+  protoOf(CheckInput).get_startValue_ooysvs_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.startValue$delegate_1, this, startValue$factory_1());
+  };
+  protoOf(CheckInput).set_type_7m8lgb_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_0(), _set____db54di);
+  };
+  protoOf(CheckInput).get_type_wovaf7_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_1());
+  };
+  protoOf(CheckInput).set_style_cafvrn_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.style$delegate_1, this, style$factory(), _set____db54di);
+  };
+  protoOf(CheckInput).get_style_iyqetk_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.style$delegate_1, this, style$factory_0());
+  };
+  protoOf(CheckInput).set_name_wkmnld_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.name$delegate_1, this, name$factory_1(), _set____db54di);
+  };
+  protoOf(CheckInput).get_name_woqyms_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.name$delegate_1, this, name$factory_2());
+  };
+  protoOf(CheckInput).set_disabled_rhu918_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.disabled$delegate_1, this, disabled$factory_0(), _set____db54di);
+  };
+  protoOf(CheckInput).get_disabled_rbmjej_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.disabled$delegate_1, this, disabled$factory_1());
+  };
+  protoOf(CheckInput).set_extraValue_kztp21_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.extraValue$delegate_1, this, extraValue$factory(), _set____db54di);
+  };
+  protoOf(CheckInput).get_extraValue_7y9yd2_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.extraValue$delegate_1, this, extraValue$factory_0());
+  };
+  protoOf(CheckInput).set_size_duu2i7_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.size$delegate_1, this, size$factory(), _set____db54di);
+  };
+  protoOf(CheckInput).get_size_woubt6_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.size$delegate_1, this, size$factory_0());
+  };
+  protoOf(CheckInput).set_validationStatus_hx0grd_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.validationStatus$delegate_1, this, validationStatus$factory(), _set____db54di);
+  };
+  protoOf(CheckInput).get_validationStatus_he6hkc_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.validationStatus$delegate_1, this, validationStatus$factory_0());
+  };
+  protoOf(CheckInput).render_fgfjvu_k$ = function () {
+    return this.render_ab0tlo_k$('input');
+  };
+  protoOf(CheckInput).buildClassSet_myme1g_k$ = function (classSetBuilder) {
+    protoOf(Widget).buildClassSet_myme1g_k$.call(this, classSetBuilder);
+    classSetBuilder.add_udnk2x_k$('form-check-input');
+    classSetBuilder.add_9rsi26_k$(this.get_validationStatus_he6hkc_k$());
+    classSetBuilder.add_9rsi26_k$(this.get_size_woubt6_k$());
+    classSetBuilder.add_9rsi26_k$(this.get_style_iyqetk_k$());
+  };
+  protoOf(CheckInput).buildAttributeSet_etcqhg_k$ = function (attributeSetBuilder) {
+    protoOf(Widget).buildAttributeSet_etcqhg_k$.call(this, attributeSetBuilder);
+    attributeSetBuilder.add_lbri6p_k$('type', this.get_type_wovaf7_k$().type_1);
+    if (this.get_startValue_ooysvs_k$()) {
+      attributeSetBuilder.add$default_4n2esg_k$('checked');
+    }
+    var tmp0_safe_receiver = this.get_name_woqyms_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.form.check.CheckInput.buildAttributeSet.<anonymous>' call
+      attributeSetBuilder.add_lbri6p_k$('name', tmp0_safe_receiver);
+    }
+    if (this.get_disabled_rbmjej_k$()) {
+      attributeSetBuilder.add$default_4n2esg_k$('disabled');
+    }
+    var tmp1_safe_receiver = this.get_extraValue_7y9yd2_k$();
+    if (tmp1_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.form.check.CheckInput.buildAttributeSet.<anonymous>' call
+      attributeSetBuilder.add_lbri6p_k$('value', tmp1_safe_receiver);
+    }
+  };
+  protoOf(CheckInput).afterInsert_6ut630_k$ = function (node) {
+    this.refreshState_mh59ye_k$();
+  };
+  protoOf(CheckInput).refreshState_mh59ye_k$ = function () {
+    var tmp0_safe_receiver = this.getElementD_y85vem_k$();
+    var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.checked;
+    var tmp;
+    if (tmp1_safe_receiver == null) {
+      tmp = null;
+    } else {
+      // Inline function 'kotlin.js.unsafeCast' call
+      tmp = tmp1_safe_receiver;
+    }
+    var v = tmp;
+    if (!(this.get_value_j01efc_k$() === v)) {
+      var tmp2_safe_receiver = this.getElementD_y85vem_k$();
+      if (tmp2_safe_receiver == null)
+        null;
+      else {
+        tmp2_safe_receiver.checked = this.get_value_j01efc_k$();
+      }
+    }
+  };
+  protoOf(CheckInput).changeValue_hkbezb_k$ = function (eventType) {
+    var tmp0_safe_receiver = this.getElementD_y85vem_k$();
+    var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.checked;
+    var tmp;
+    if (tmp1_safe_receiver == null) {
+      tmp = null;
+    } else {
+      // Inline function 'kotlin.js.unsafeCast' call
+      tmp = tmp1_safe_receiver;
+    }
+    var v = tmp;
+    var newValue = v === true;
+    if (!(this.get_value_j01efc_k$() === newValue)) {
+      this.set_value_70roch_k$(newValue);
+    }
+  };
+  protoOf(CheckInput).onClick_ldm0ex_k$ = function (handler) {
+    return this.setEventListener_4rv3s8_k$(CheckInput$onClick$lambda(handler));
+  };
+  protoOf(CheckInput).getState_wi99ln_k$ = function () {
+    return this.get_value_j01efc_k$();
+  };
+  protoOf(CheckInput).subscribe_x45vei_k$ = function (observer) {
+    // Inline function 'kotlin.collections.plusAssign' call
+    this.observers_1.add_utx5q5_k$(observer);
+    observer(this.get_value_j01efc_k$());
+    return CheckInput$subscribe$lambda(this, observer);
+  };
+  protoOf(CheckInput).subscribe_i8u9zb_k$ = function (observer) {
+    return this.subscribe_x45vei_k$(observer);
+  };
+  protoOf(CheckInput).subscribe_go603e_k$ = function (observer) {
+    return this.subscribe_x45vei_k$(observer);
+  };
+  protoOf(CheckInput).setState_o1xiu2_k$ = function (state) {
+    this.set_value_70roch_k$(state);
+  };
+  protoOf(CheckInput).setState_otrcj3_k$ = function (state) {
+    return this.setState_o1xiu2_k$((!(state == null) ? typeof state === 'boolean' : false) ? state : THROW_CCE());
+  };
+  var CheckInputType_CHECKBOX_instance;
+  var CheckInputType_RADIO_instance;
+  function values_49() {
+    return [CheckInputType_CHECKBOX_getInstance(), CheckInputType_RADIO_getInstance()];
+  }
+  function valueOf_49(value) {
+    switch (value) {
+      case 'CHECKBOX':
+        return CheckInputType_CHECKBOX_getInstance();
+      case 'RADIO':
+        return CheckInputType_RADIO_getInstance();
+      default:
+        CheckInputType_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_49() {
+    if ($ENTRIES_49 == null)
+      $ENTRIES_49 = enumEntries(values_49());
+    return $ENTRIES_49;
+  }
+  var CheckInputType_entriesInitialized;
+  function CheckInputType_initEntries() {
+    if (CheckInputType_entriesInitialized)
+      return Unit_getInstance();
+    CheckInputType_entriesInitialized = true;
+    CheckInputType_CHECKBOX_instance = new CheckInputType('CHECKBOX', 0, 'checkbox');
+    CheckInputType_RADIO_instance = new CheckInputType('RADIO', 1, 'radio');
+  }
+  var $ENTRIES_49;
+  function CheckInputType(name, ordinal, type) {
+    Enum.call(this, name, ordinal);
+    this.type_1 = type;
+  }
+  protoOf(CheckInputType).get_type_t5wobc_k$ = function () {
+    return this.type_1;
+  };
+  function CheckStyle_PRIMARY_getInstance() {
+    CheckStyle_initEntries();
+    return CheckStyle_PRIMARY_instance;
+  }
+  function CheckStyle_SECONDARY_getInstance() {
+    CheckStyle_initEntries();
+    return CheckStyle_SECONDARY_instance;
+  }
+  function CheckStyle_SUCCESS_getInstance() {
+    CheckStyle_initEntries();
+    return CheckStyle_SUCCESS_instance;
+  }
+  function CheckStyle_DANGER_getInstance() {
+    CheckStyle_initEntries();
+    return CheckStyle_DANGER_instance;
+  }
+  function CheckStyle_WARNING_getInstance() {
+    CheckStyle_initEntries();
+    return CheckStyle_WARNING_instance;
+  }
+  function CheckStyle_INFO_getInstance() {
+    CheckStyle_initEntries();
+    return CheckStyle_INFO_instance;
+  }
+  function CheckStyle_LIGHT_getInstance() {
+    CheckStyle_initEntries();
+    return CheckStyle_LIGHT_instance;
+  }
+  function CheckStyle_DARK_getInstance() {
+    CheckStyle_initEntries();
+    return CheckStyle_DARK_instance;
+  }
+  function CheckInputType_CHECKBOX_getInstance() {
+    CheckInputType_initEntries();
+    return CheckInputType_CHECKBOX_instance;
+  }
+  function CheckInputType_RADIO_getInstance() {
+    CheckInputType_initEntries();
+    return CheckInputType_RADIO_instance;
+  }
+  function value$factory() {
+    return getPropertyCallableRef('value', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_value_j01efc_k$();
+    }, function (receiver, value) {
+      return receiver.set_value_70roch_k$(value);
+    });
+  }
+  function startValue$factory() {
+    return getPropertyCallableRef('startValue', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_startValue_ooysvs_k$();
+    }, function (receiver, value) {
+      return receiver.set_startValue_f1ay1j_k$(value);
+    });
+  }
+  function type$factory() {
+    return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_type_wovaf7_k$();
+    }, function (receiver, value) {
+      return receiver.set_type_7m8lgb_k$(value);
+    });
+  }
+  function disabled$factory() {
+    return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_disabled_rbmjej_k$();
+    }, function (receiver, value) {
+      return receiver.set_disabled_rhu918_k$(value);
+    });
+  }
+  function value$factory_0() {
+    return getPropertyCallableRef('value', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_value_j01efc_k$();
+    }, function (receiver, value) {
+      return receiver.set_value_70roch_k$(value);
+    });
+  }
+  function value$factory_1() {
+    return getPropertyCallableRef('value', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_value_j01efc_k$();
+    }, function (receiver, value) {
+      return receiver.set_value_70roch_k$(value);
+    });
+  }
+  function startValue$factory_0() {
+    return getPropertyCallableRef('startValue', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_startValue_ooysvs_k$();
+    }, function (receiver, value) {
+      return receiver.set_startValue_f1ay1j_k$(value);
+    });
+  }
+  function startValue$factory_1() {
+    return getPropertyCallableRef('startValue', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_startValue_ooysvs_k$();
+    }, function (receiver, value) {
+      return receiver.set_startValue_f1ay1j_k$(value);
+    });
+  }
+  function type$factory_0() {
+    return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_type_wovaf7_k$();
+    }, function (receiver, value) {
+      return receiver.set_type_7m8lgb_k$(value);
+    });
+  }
+  function type$factory_1() {
+    return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_type_wovaf7_k$();
+    }, function (receiver, value) {
+      return receiver.set_type_7m8lgb_k$(value);
+    });
+  }
+  function style$factory() {
+    return getPropertyCallableRef('style', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_style_iyqetk_k$();
+    }, function (receiver, value) {
+      return receiver.set_style_cafvrn_k$(value);
+    });
+  }
+  function style$factory_0() {
+    return getPropertyCallableRef('style', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_style_iyqetk_k$();
+    }, function (receiver, value) {
+      return receiver.set_style_cafvrn_k$(value);
+    });
+  }
+  function name$factory_1() {
+    return getPropertyCallableRef('name', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_name_woqyms_k$();
+    }, function (receiver, value) {
+      return receiver.set_name_wkmnld_k$(value);
+    });
+  }
+  function name$factory_2() {
+    return getPropertyCallableRef('name', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_name_woqyms_k$();
+    }, function (receiver, value) {
+      return receiver.set_name_wkmnld_k$(value);
+    });
+  }
+  function disabled$factory_0() {
+    return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_disabled_rbmjej_k$();
+    }, function (receiver, value) {
+      return receiver.set_disabled_rhu918_k$(value);
+    });
+  }
+  function disabled$factory_1() {
+    return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_disabled_rbmjej_k$();
+    }, function (receiver, value) {
+      return receiver.set_disabled_rhu918_k$(value);
+    });
+  }
+  function extraValue$factory() {
+    return getPropertyCallableRef('extraValue', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_extraValue_7y9yd2_k$();
+    }, function (receiver, value) {
+      return receiver.set_extraValue_kztp21_k$(value);
+    });
+  }
+  function extraValue$factory_0() {
+    return getPropertyCallableRef('extraValue', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_extraValue_7y9yd2_k$();
+    }, function (receiver, value) {
+      return receiver.set_extraValue_kztp21_k$(value);
+    });
+  }
+  function size$factory() {
+    return getPropertyCallableRef('size', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_size_woubt6_k$();
+    }, function (receiver, value) {
+      return receiver.set_size_duu2i7_k$(value);
+    });
+  }
+  function size$factory_0() {
+    return getPropertyCallableRef('size', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_size_woubt6_k$();
+    }, function (receiver, value) {
+      return receiver.set_size_duu2i7_k$(value);
+    });
+  }
+  function validationStatus$factory() {
+    return getPropertyCallableRef('validationStatus', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_validationStatus_he6hkc_k$();
+    }, function (receiver, value) {
+      return receiver.set_validationStatus_hx0grd_k$(value);
+    });
+  }
+  function validationStatus$factory_0() {
+    return getPropertyCallableRef('validationStatus', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_validationStatus_he6hkc_k$();
+    }, function (receiver, value) {
+      return receiver.set_validationStatus_hx0grd_k$(value);
+    });
+  }
+  function Companion_5() {
+    Companion_instance_5 = this;
+    this.counter_1 = 0;
+  }
+  protoOf(Companion_5).set_counter_lagg9g_k$ = function (_set____db54di) {
+    this.counter_1 = _set____db54di;
+  };
+  protoOf(Companion_5).get_counter_5zq0k8_k$ = function () {
+    return this.counter_1;
+  };
+  var Companion_instance_5;
+  function Companion_getInstance_6() {
+    if (Companion_instance_5 == null)
+      new Companion_5();
+    return Companion_instance_5;
+  }
+  function AbstractText(label, rich, floating, className) {
+    Companion_getInstance_6();
     label = label === VOID ? null : label;
     rich = rich === VOID ? false : rich;
     floating = floating === VOID ? false : floating;
@@ -13629,7 +14756,7 @@
     var tmp1_elvis_lhs = tmp;
     SimplePanel.call(this, (tmp1_elvis_lhs == null ? '' : tmp1_elvis_lhs) + (floating ? 'form-floating kv-mb-3' : 'form-group kv-mb-3'));
     this.floating_1 = floating;
-    this.idc_1 = 'kv_form_text_' + Companion_getInstance_5().counter_1;
+    this.idc_1 = 'kv_form_text_' + Companion_getInstance_6().counter_1;
     var tmp_0 = this;
     // Inline function 'kotlin.apply' call
     var this_0 = new FieldLabel(this.idc_1, label, rich, 'form-label');
@@ -13642,8 +14769,8 @@
     // Inline function 'io.kvision.form.text.AbstractText.invalidFeedback.<anonymous>' call
     this_1.set_visible_w9mvj4_k$(false);
     tmp_1.invalidFeedback_1 = this_1;
-    var _unary__edvuaz = Companion_getInstance_5().counter_1;
-    Companion_getInstance_5().counter_1 = _unary__edvuaz + 1 | 0;
+    var _unary__edvuaz = Companion_getInstance_6().counter_1;
+    Companion_getInstance_6().counter_1 = _unary__edvuaz + 1 | 0;
   }
   protoOf(AbstractText).get_floating_1fu5lb_k$ = function () {
     return this.floating_1;
@@ -13943,11 +15070,11 @@
     var tmp2 = tmp_1;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction = AbstractTextInput$value$delegate$lambda(this);
-    tmp_0.value$delegate_1 = (new RefreshDelegateProvider_0(this, tmp2, refreshFunction)).provideDelegate_z62loi_k$(this, value$factory());
+    tmp_0.value$delegate_1 = (new RefreshDelegateProvider_0(this, tmp2, refreshFunction)).provideDelegate_z62loi_k$(this, value$factory_2());
     var tmp_3 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_0 = AbstractTextInput$startValue$delegate$lambda(this);
-    tmp_3.startValue$delegate_1 = (new RefreshDelegateProvider_0(this, value, refreshFunction_0)).provideDelegate_z62loi_k$(this, startValue$factory());
+    tmp_3.startValue$delegate_1 = (new RefreshDelegateProvider_0(this, value, refreshFunction_0)).provideDelegate_z62loi_k$(this, startValue$factory_2());
     var tmp_4 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_1 = AbstractTextInput$placeholder$delegate$lambda(this);
@@ -13963,7 +15090,7 @@
     var tmp_7 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_4 = AbstractTextInput$disabled$delegate$lambda(this);
-    tmp_7.disabled$delegate_1 = (new RefreshDelegateProvider_0(this, false, refreshFunction_4)).provideDelegate_z62loi_k$(this, disabled$factory());
+    tmp_7.disabled$delegate_1 = (new RefreshDelegateProvider_0(this, false, refreshFunction_4)).provideDelegate_z62loi_k$(this, disabled$factory_2());
     var tmp_8 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_5 = AbstractTextInput$autofocus$delegate$lambda(this);
@@ -13989,19 +15116,19 @@
     return this.observers_1;
   };
   protoOf(AbstractTextInput).set_value_utlds3_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.value$delegate_1, this, value$factory_0(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.value$delegate_1, this, value$factory_3(), _set____db54di);
   };
   protoOf(AbstractTextInput).set_value_v1vabv_k$ = function (_set____db54di) {
     return this.set_value_utlds3_k$((_set____db54di == null ? true : typeof _set____db54di === 'string') ? _set____db54di : THROW_CCE());
   };
   protoOf(AbstractTextInput).get_value_j01efc_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.value$delegate_1, this, value$factory_1());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.value$delegate_1, this, value$factory_4());
   };
   protoOf(AbstractTextInput).set_startValue_lvb9d7_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.startValue$delegate_1, this, startValue$factory_0(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.startValue$delegate_1, this, startValue$factory_3(), _set____db54di);
   };
   protoOf(AbstractTextInput).get_startValue_ooysvs_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.startValue$delegate_1, this, startValue$factory_1());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.startValue$delegate_1, this, startValue$factory_4());
   };
   protoOf(AbstractTextInput).set_placeholder_heqcsh_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.placeholder$delegate_1, this, placeholder$factory(), _set____db54di);
@@ -14010,10 +15137,10 @@
     return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.placeholder$delegate_1, this, placeholder$factory_0());
   };
   protoOf(AbstractTextInput).set_name_wkmnld_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.name$delegate_1, this, name$factory_1(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.name$delegate_1, this, name$factory_3(), _set____db54di);
   };
   protoOf(AbstractTextInput).get_name_woqyms_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.name$delegate_1, this, name$factory_2());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.name$delegate_1, this, name$factory_4());
   };
   protoOf(AbstractTextInput).set_maxlength_9qgj5a_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.maxlength$delegate_1, this, maxlength$factory_0(), _set____db54di);
@@ -14022,10 +15149,10 @@
     return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.maxlength$delegate_1, this, maxlength$factory_1());
   };
   protoOf(AbstractTextInput).set_disabled_rhu918_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.disabled$delegate_1, this, disabled$factory_0(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.disabled$delegate_1, this, disabled$factory_3(), _set____db54di);
   };
   protoOf(AbstractTextInput).get_disabled_rbmjej_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.disabled$delegate_1, this, disabled$factory_1());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.disabled$delegate_1, this, disabled$factory_4());
   };
   protoOf(AbstractTextInput).set_autofocus_w05tl8_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.autofocus$delegate_1, this, autofocus$factory(), _set____db54di);
@@ -14040,16 +15167,16 @@
     return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.readonly$delegate_1, this, readonly$factory_0());
   };
   protoOf(AbstractTextInput).set_size_duu2i7_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.size$delegate_1, this, size$factory(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.size$delegate_1, this, size$factory_1(), _set____db54di);
   };
   protoOf(AbstractTextInput).get_size_woubt6_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.size$delegate_1, this, size$factory_0());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.size$delegate_1, this, size$factory_2());
   };
   protoOf(AbstractTextInput).set_validationStatus_hx0grd_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.validationStatus$delegate_1, this, validationStatus$factory(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.validationStatus$delegate_1, this, validationStatus$factory_1(), _set____db54di);
   };
   protoOf(AbstractTextInput).get_validationStatus_he6hkc_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.validationStatus$delegate_1, this, validationStatus$factory_0());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.validationStatus$delegate_1, this, validationStatus$factory_2());
   };
   protoOf(AbstractTextInput).set_maskOptions_mn7510_k$ = function (value) {
     if (!(this.maskOptions_1 == null)) {
@@ -14268,14 +15395,14 @@
   protoOf(AbstractTextInput).setState_otrcj3_k$ = function (state) {
     return this.setState_i5i93c_k$((state == null ? true : typeof state === 'string') ? state : THROW_CCE());
   };
-  function value$factory() {
+  function value$factory_2() {
     return getPropertyCallableRef('value', 1, KMutableProperty1, function (receiver) {
       return receiver.get_value_j01efc_k$();
     }, function (receiver, value) {
       return receiver.set_value_utlds3_k$(value);
     });
   }
-  function startValue$factory() {
+  function startValue$factory_2() {
     return getPropertyCallableRef('startValue', 1, KMutableProperty1, function (receiver) {
       return receiver.get_startValue_ooysvs_k$();
     }, function (receiver, value) {
@@ -14289,35 +15416,35 @@
       return receiver.set_maxlength_9qgj5a_k$(value);
     });
   }
-  function disabled$factory() {
+  function disabled$factory_2() {
     return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
       return receiver.get_disabled_rbmjej_k$();
     }, function (receiver, value) {
       return receiver.set_disabled_rhu918_k$(value);
     });
   }
-  function value$factory_0() {
+  function value$factory_3() {
     return getPropertyCallableRef('value', 1, KMutableProperty1, function (receiver) {
       return receiver.get_value_j01efc_k$();
     }, function (receiver, value) {
       return receiver.set_value_utlds3_k$(value);
     });
   }
-  function value$factory_1() {
+  function value$factory_4() {
     return getPropertyCallableRef('value', 1, KMutableProperty1, function (receiver) {
       return receiver.get_value_j01efc_k$();
     }, function (receiver, value) {
       return receiver.set_value_utlds3_k$(value);
     });
   }
-  function startValue$factory_0() {
+  function startValue$factory_3() {
     return getPropertyCallableRef('startValue', 1, KMutableProperty1, function (receiver) {
       return receiver.get_startValue_ooysvs_k$();
     }, function (receiver, value) {
       return receiver.set_startValue_lvb9d7_k$(value);
     });
   }
-  function startValue$factory_1() {
+  function startValue$factory_4() {
     return getPropertyCallableRef('startValue', 1, KMutableProperty1, function (receiver) {
       return receiver.get_startValue_ooysvs_k$();
     }, function (receiver, value) {
@@ -14338,14 +15465,14 @@
       return receiver.set_placeholder_heqcsh_k$(value);
     });
   }
-  function name$factory_1() {
+  function name$factory_3() {
     return getPropertyCallableRef('name', 1, KMutableProperty1, function (receiver) {
       return receiver.get_name_woqyms_k$();
     }, function (receiver, value) {
       return receiver.set_name_wkmnld_k$(value);
     });
   }
-  function name$factory_2() {
+  function name$factory_4() {
     return getPropertyCallableRef('name', 1, KMutableProperty1, function (receiver) {
       return receiver.get_name_woqyms_k$();
     }, function (receiver, value) {
@@ -14366,14 +15493,14 @@
       return receiver.set_maxlength_9qgj5a_k$(value);
     });
   }
-  function disabled$factory_0() {
+  function disabled$factory_3() {
     return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
       return receiver.get_disabled_rbmjej_k$();
     }, function (receiver, value) {
       return receiver.set_disabled_rhu918_k$(value);
     });
   }
-  function disabled$factory_1() {
+  function disabled$factory_4() {
     return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
       return receiver.get_disabled_rbmjej_k$();
     }, function (receiver, value) {
@@ -14408,28 +15535,28 @@
       return receiver.set_readonly_jx0941_k$(value);
     });
   }
-  function size$factory() {
+  function size$factory_1() {
     return getPropertyCallableRef('size', 1, KMutableProperty1, function (receiver) {
       return receiver.get_size_woubt6_k$();
     }, function (receiver, value) {
       return receiver.set_size_duu2i7_k$(value);
     });
   }
-  function size$factory_0() {
+  function size$factory_2() {
     return getPropertyCallableRef('size', 1, KMutableProperty1, function (receiver) {
       return receiver.get_size_woubt6_k$();
     }, function (receiver, value) {
       return receiver.set_size_duu2i7_k$(value);
     });
   }
-  function validationStatus$factory() {
+  function validationStatus$factory_1() {
     return getPropertyCallableRef('validationStatus', 1, KMutableProperty1, function (receiver) {
       return receiver.get_validationStatus_he6hkc_k$();
     }, function (receiver, value) {
       return receiver.set_validationStatus_hx0grd_k$(value);
     });
   }
-  function validationStatus$factory_0() {
+  function validationStatus$factory_2() {
     return getPropertyCallableRef('validationStatus', 1, KMutableProperty1, function (receiver) {
       return receiver.get_validationStatus_he6hkc_k$();
     }, function (receiver, value) {
@@ -14519,6 +15646,19 @@
   protoOf(Text).get_input_it4gip_k$ = function () {
     return this.input_1;
   };
+  function text(_this__u8e3s4, type, value, name, maxlength, label, rich, floating, init) {
+    type = type === VOID ? InputType_TEXT_getInstance() : type;
+    value = value === VOID ? null : value;
+    name = name === VOID ? null : name;
+    maxlength = maxlength === VOID ? null : maxlength;
+    label = label === VOID ? null : label;
+    rich = rich === VOID ? false : rich;
+    floating = floating === VOID ? false : floating;
+    init = init === VOID ? null : init;
+    var text = new Text(type, value, name, maxlength, label, rich, floating, init);
+    _this__u8e3s4.add_rekwpt_k$(text);
+    return text;
+  }
   function TextInput$type$delegate$lambda($tmp0) {
     return function (it) {
       $tmp0.refresh_6a3uvf_k$();
@@ -14550,7 +15690,7 @@
     var tmp_0 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction = TextInput$type$delegate$lambda(this);
-    tmp_0.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction)).provideDelegate_z62loi_k$(this, type$factory());
+    tmp_0.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction)).provideDelegate_z62loi_k$(this, type$factory_2());
     var tmp_1 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_0 = TextInput$autocomplete$delegate$lambda(this);
@@ -14561,10 +15701,10 @@
       init(this);
   }
   protoOf(TextInput).set_type_kolurh_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_0(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_3(), _set____db54di);
   };
   protoOf(TextInput).get_type_wovaf7_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_1());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_4());
   };
   protoOf(TextInput).set_autocomplete_m8rt9o_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.autocomplete$delegate_1, this, autocomplete$factory_1(), _set____db54di);
@@ -14601,21 +15741,21 @@
       attributeSetBuilder.add_lbri6p_k$('autocomplete', tmp1_safe_receiver.get_type_wovaf7_k$());
     }
   };
-  function type$factory() {
+  function type$factory_2() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
       return receiver.set_type_kolurh_k$(value);
     });
   }
-  function type$factory_0() {
+  function type$factory_3() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
       return receiver.set_type_kolurh_k$(value);
     });
   }
-  function type$factory_1() {
+  function type$factory_4() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
@@ -14639,10 +15779,10 @@
   var ButtonType_BUTTON_instance;
   var ButtonType_SUBMIT_instance;
   var ButtonType_RESET_instance;
-  function values_48() {
+  function values_50() {
     return [ButtonType_BUTTON_getInstance(), ButtonType_SUBMIT_getInstance(), ButtonType_RESET_getInstance()];
   }
-  function valueOf_48(value) {
+  function valueOf_50(value) {
     switch (value) {
       case 'BUTTON':
         return ButtonType_BUTTON_getInstance();
@@ -14656,10 +15796,10 @@
         break;
     }
   }
-  function get_entries_48() {
-    if ($ENTRIES_48 == null)
-      $ENTRIES_48 = enumEntries(values_48());
-    return $ENTRIES_48;
+  function get_entries_50() {
+    if ($ENTRIES_50 == null)
+      $ENTRIES_50 = enumEntries(values_50());
+    return $ENTRIES_50;
   }
   var ButtonType_entriesInitialized;
   function ButtonType_initEntries() {
@@ -14670,7 +15810,7 @@
     ButtonType_SUBMIT_instance = new ButtonType('SUBMIT', 1, 'submit');
     ButtonType_RESET_instance = new ButtonType('RESET', 2, 'reset');
   }
-  var $ENTRIES_48;
+  var $ENTRIES_50;
   function ButtonType(name, ordinal, buttonType) {
     Enum.call(this, name, ordinal);
     this.buttonType_1 = buttonType;
@@ -14771,15 +15911,15 @@
     var tmp_1 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_1 = Button$style$delegate$lambda(this);
-    tmp_1.style$delegate_1 = (new RefreshDelegateProvider_0(this, style, refreshFunction_1)).provideDelegate_z62loi_k$(this, style$factory());
+    tmp_1.style$delegate_1 = (new RefreshDelegateProvider_0(this, style, refreshFunction_1)).provideDelegate_z62loi_k$(this, style$factory_1());
     var tmp_2 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_2 = Button$type$delegate$lambda(this);
-    tmp_2.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction_2)).provideDelegate_z62loi_k$(this, type$factory_2());
+    tmp_2.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction_2)).provideDelegate_z62loi_k$(this, type$factory_5());
     var tmp_3 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_3 = Button$disabled$delegate$lambda(this);
-    tmp_3.disabled$delegate_1 = (new RefreshDelegateProvider_0(this, disabled, refreshFunction_3)).provideDelegate_z62loi_k$(this, disabled$factory_2());
+    tmp_3.disabled$delegate_1 = (new RefreshDelegateProvider_0(this, disabled, refreshFunction_3)).provideDelegate_z62loi_k$(this, disabled$factory_5());
     var tmp_4 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_4 = Button$image$delegate$lambda(this);
@@ -14799,7 +15939,7 @@
     var tmp_8 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_8 = Button$labelFirst$delegate$lambda(this);
-    tmp_8.labelFirst$delegate_1 = (new RefreshDelegateProvider_0(this, labelFirst, refreshFunction_8)).provideDelegate_z62loi_k$(this, labelFirst$factory());
+    tmp_8.labelFirst$delegate_1 = (new RefreshDelegateProvider_0(this, labelFirst, refreshFunction_8)).provideDelegate_z62loi_k$(this, labelFirst$factory_2());
     if (init == null)
       null;
     else
@@ -14818,22 +15958,22 @@
     return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.icon$delegate_1, this, icon$factory_1());
   };
   protoOf(Button).set_style_x72dio_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.style$delegate_1, this, style$factory_0(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.style$delegate_1, this, style$factory_2(), _set____db54di);
   };
   protoOf(Button).get_style_iyqetk_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.style$delegate_1, this, style$factory_1());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.style$delegate_1, this, style$factory_3());
   };
   protoOf(Button).set_type_rmoq57_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_3(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_6(), _set____db54di);
   };
   protoOf(Button).get_type_wovaf7_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_4());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_7());
   };
   protoOf(Button).set_disabled_rhu918_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.disabled$delegate_1, this, disabled$factory_3(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.disabled$delegate_1, this, disabled$factory_6(), _set____db54di);
   };
   protoOf(Button).get_disabled_rbmjej_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.disabled$delegate_1, this, disabled$factory_4());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.disabled$delegate_1, this, disabled$factory_7());
   };
   protoOf(Button).set_image_f7p9g9_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.image$delegate_1, this, image$factory(), _set____db54di);
@@ -14842,10 +15982,10 @@
     return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.image$delegate_1, this, image$factory_0());
   };
   protoOf(Button).set_size_wi2upv_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.size$delegate_1, this, size$factory_1(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.size$delegate_1, this, size$factory_3(), _set____db54di);
   };
   protoOf(Button).get_size_woubt6_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.size$delegate_1, this, size$factory_2());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.size$delegate_1, this, size$factory_4());
   };
   protoOf(Button).set_block_7gwl97_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.block$delegate_1, this, block$factory_0(), _set____db54di);
@@ -14860,10 +16000,10 @@
     return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.separator$delegate_1, this, separator$factory_1());
   };
   protoOf(Button).set_labelFirst_q3ot2c_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.labelFirst$delegate_1, this, labelFirst$factory_0(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.labelFirst$delegate_1, this, labelFirst$factory_3(), _set____db54di);
   };
   protoOf(Button).get_labelFirst_n6uzdx_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.labelFirst$delegate_1, this, labelFirst$factory_1());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.labelFirst$delegate_1, this, labelFirst$factory_4());
   };
   protoOf(Button).render_fgfjvu_k$ = function () {
     var t = this.createLabelWithIcon_7iayj6_k$(this.get_text_wouvsm_k$(), this.get_icon_wont8i_k$(), this.get_image_it3i2a_k$(), this.get_separator_xuwon8_k$());
@@ -14931,10 +16071,10 @@
   var ButtonStyle_OUTLINEINFO_instance;
   var ButtonStyle_OUTLINELIGHT_instance;
   var ButtonStyle_OUTLINEDARK_instance;
-  function values_49() {
+  function values_51() {
     return [ButtonStyle_PRIMARY_getInstance(), ButtonStyle_SECONDARY_getInstance(), ButtonStyle_SUCCESS_getInstance(), ButtonStyle_DANGER_getInstance(), ButtonStyle_WARNING_getInstance(), ButtonStyle_INFO_getInstance(), ButtonStyle_LIGHT_getInstance(), ButtonStyle_DARK_getInstance(), ButtonStyle_LINK_getInstance(), ButtonStyle_OUTLINEPRIMARY_getInstance(), ButtonStyle_OUTLINESECONDARY_getInstance(), ButtonStyle_OUTLINESUCCESS_getInstance(), ButtonStyle_OUTLINEDANGER_getInstance(), ButtonStyle_OUTLINEWARNING_getInstance(), ButtonStyle_OUTLINEINFO_getInstance(), ButtonStyle_OUTLINELIGHT_getInstance(), ButtonStyle_OUTLINEDARK_getInstance()];
   }
-  function valueOf_49(value) {
+  function valueOf_51(value) {
     switch (value) {
       case 'PRIMARY':
         return ButtonStyle_PRIMARY_getInstance();
@@ -14976,10 +16116,10 @@
         break;
     }
   }
-  function get_entries_49() {
-    if ($ENTRIES_49 == null)
-      $ENTRIES_49 = enumEntries(values_49());
-    return $ENTRIES_49;
+  function get_entries_51() {
+    if ($ENTRIES_51 == null)
+      $ENTRIES_51 = enumEntries(values_51());
+    return $ENTRIES_51;
   }
   var ButtonStyle_entriesInitialized;
   function ButtonStyle_initEntries() {
@@ -15004,7 +16144,7 @@
     ButtonStyle_OUTLINELIGHT_instance = new ButtonStyle('OUTLINELIGHT', 15, 'btn-outline-light');
     ButtonStyle_OUTLINEDARK_instance = new ButtonStyle('OUTLINEDARK', 16, 'btn-outline-dark');
   }
-  var $ENTRIES_49;
+  var $ENTRIES_51;
   function ButtonStyle(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -15015,10 +16155,10 @@
   var ButtonSize_LARGE_instance;
   var ButtonSize_SMALL_instance;
   var ButtonSize_XSMALL_instance;
-  function values_50() {
+  function values_52() {
     return [ButtonSize_LARGE_getInstance(), ButtonSize_SMALL_getInstance(), ButtonSize_XSMALL_getInstance()];
   }
-  function valueOf_50(value) {
+  function valueOf_52(value) {
     switch (value) {
       case 'LARGE':
         return ButtonSize_LARGE_getInstance();
@@ -15032,10 +16172,10 @@
         break;
     }
   }
-  function get_entries_50() {
-    if ($ENTRIES_50 == null)
-      $ENTRIES_50 = enumEntries(values_50());
-    return $ENTRIES_50;
+  function get_entries_52() {
+    if ($ENTRIES_52 == null)
+      $ENTRIES_52 = enumEntries(values_52());
+    return $ENTRIES_52;
   }
   var ButtonSize_entriesInitialized;
   function ButtonSize_initEntries() {
@@ -15046,7 +16186,7 @@
     ButtonSize_SMALL_instance = new ButtonSize('SMALL', 1, 'btn-sm');
     ButtonSize_XSMALL_instance = new ButtonSize('XSMALL', 2, 'btn-xsm');
   }
-  var $ENTRIES_50;
+  var $ENTRIES_52;
   function ButtonSize(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -15160,21 +16300,21 @@
       return receiver.set_icon_t78tsv_k$(value);
     });
   }
-  function style$factory() {
+  function style$factory_1() {
     return getPropertyCallableRef('style', 1, KMutableProperty1, function (receiver) {
       return receiver.get_style_iyqetk_k$();
     }, function (receiver, value) {
       return receiver.set_style_x72dio_k$(value);
     });
   }
-  function type$factory_2() {
+  function type$factory_5() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
       return receiver.set_type_rmoq57_k$(value);
     });
   }
-  function disabled$factory_2() {
+  function disabled$factory_5() {
     return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
       return receiver.get_disabled_rbmjej_k$();
     }, function (receiver, value) {
@@ -15195,7 +16335,7 @@
       return receiver.set_separator_fi7cb3_k$(value);
     });
   }
-  function labelFirst$factory() {
+  function labelFirst$factory_2() {
     return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
       return receiver.get_labelFirst_n6uzdx_k$();
     }, function (receiver, value) {
@@ -15230,42 +16370,42 @@
       return receiver.set_icon_t78tsv_k$(value);
     });
   }
-  function style$factory_0() {
+  function style$factory_2() {
     return getPropertyCallableRef('style', 1, KMutableProperty1, function (receiver) {
       return receiver.get_style_iyqetk_k$();
     }, function (receiver, value) {
       return receiver.set_style_x72dio_k$(value);
     });
   }
-  function style$factory_1() {
+  function style$factory_3() {
     return getPropertyCallableRef('style', 1, KMutableProperty1, function (receiver) {
       return receiver.get_style_iyqetk_k$();
     }, function (receiver, value) {
       return receiver.set_style_x72dio_k$(value);
     });
   }
-  function type$factory_3() {
+  function type$factory_6() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
       return receiver.set_type_rmoq57_k$(value);
     });
   }
-  function type$factory_4() {
+  function type$factory_7() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
       return receiver.set_type_rmoq57_k$(value);
     });
   }
-  function disabled$factory_3() {
+  function disabled$factory_6() {
     return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
       return receiver.get_disabled_rbmjej_k$();
     }, function (receiver, value) {
       return receiver.set_disabled_rhu918_k$(value);
     });
   }
-  function disabled$factory_4() {
+  function disabled$factory_7() {
     return getPropertyCallableRef('disabled', 1, KMutableProperty1, function (receiver) {
       return receiver.get_disabled_rbmjej_k$();
     }, function (receiver, value) {
@@ -15286,14 +16426,14 @@
       return receiver.set_image_f7p9g9_k$(value);
     });
   }
-  function size$factory_1() {
+  function size$factory_3() {
     return getPropertyCallableRef('size', 1, KMutableProperty1, function (receiver) {
       return receiver.get_size_woubt6_k$();
     }, function (receiver, value) {
       return receiver.set_size_wi2upv_k$(value);
     });
   }
-  function size$factory_2() {
+  function size$factory_4() {
     return getPropertyCallableRef('size', 1, KMutableProperty1, function (receiver) {
       return receiver.get_size_woubt6_k$();
     }, function (receiver, value) {
@@ -15328,14 +16468,14 @@
       return receiver.set_separator_fi7cb3_k$(value);
     });
   }
-  function labelFirst$factory_0() {
+  function labelFirst$factory_3() {
     return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
       return receiver.get_labelFirst_n6uzdx_k$();
     }, function (receiver, value) {
       return receiver.set_labelFirst_q3ot2c_k$(value);
     });
   }
-  function labelFirst$factory_1() {
+  function labelFirst$factory_4() {
     return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
       return receiver.get_labelFirst_n6uzdx_k$();
     }, function (receiver, value) {
@@ -15388,6 +16528,61 @@
     else
       init(this);
   }
+  function icon(_this__u8e3s4, icon, init) {
+    init = init === VOID ? null : init;
+    var i = new Icon(icon, init);
+    _this__u8e3s4.add_rekwpt_k$(i);
+    return i;
+  }
+  function Icon$icon$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Icon(icon, init) {
+    init = init === VOID ? null : init;
+    Tag.call(this, TAG_SPAN_getInstance());
+    var tmp = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction = Icon$icon$delegate$lambda(this);
+    tmp.icon$delegate_1 = (new RefreshDelegateProvider_0(this, icon, refreshFunction)).provideDelegate_z62loi_k$(this, icon$factory_2());
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(Icon).set_icon_ecshbo_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.icon$delegate_1, this, icon$factory_3(), _set____db54di);
+  };
+  protoOf(Icon).get_icon_wont8i_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.icon$delegate_1, this, icon$factory_4());
+  };
+  protoOf(Icon).buildClassSet_myme1g_k$ = function (classSetBuilder) {
+    protoOf(Tag).buildClassSet_myme1g_k$.call(this, classSetBuilder);
+    classSetBuilder.addAll_kmiuje_k$(split_0(this.get_icon_wont8i_k$(), [' ']));
+  };
+  function icon$factory_2() {
+    return getPropertyCallableRef('icon', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_icon_wont8i_k$();
+    }, function (receiver, value) {
+      return receiver.set_icon_ecshbo_k$(value);
+    });
+  }
+  function icon$factory_3() {
+    return getPropertyCallableRef('icon', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_icon_wont8i_k$();
+    }, function (receiver, value) {
+      return receiver.set_icon_ecshbo_k$(value);
+    });
+  }
+  function icon$factory_4() {
+    return getPropertyCallableRef('icon', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_icon_wont8i_k$();
+    }, function (receiver, value) {
+      return receiver.set_icon_ecshbo_k$(value);
+    });
+  }
   var InputType_TEXT_instance;
   var InputType_PASSWORD_instance;
   var InputType_EMAIL_instance;
@@ -15410,10 +16605,10 @@
   var InputType_SUBMIT_instance;
   var InputType_TIME_instance;
   var InputType_WEEK_instance;
-  function values_51() {
+  function values_53() {
     return [InputType_TEXT_getInstance(), InputType_PASSWORD_getInstance(), InputType_EMAIL_getInstance(), InputType_TEL_getInstance(), InputType_COLOR_getInstance(), InputType_SEARCH_getInstance(), InputType_URL_getInstance(), InputType_HIDDEN_getInstance(), InputType_BUTTON_getInstance(), InputType_CHECKBOX_getInstance(), InputType_DATE_getInstance(), InputType_DATETIME_LOCAL_getInstance(), InputType_FILE_getInstance(), InputType_IMAGE_getInstance(), InputType_MONTH_getInstance(), InputType_NUMBER_getInstance(), InputType_RADIO_getInstance(), InputType_RANGE_getInstance(), InputType_RESET_getInstance(), InputType_SUBMIT_getInstance(), InputType_TIME_getInstance(), InputType_WEEK_getInstance()];
   }
-  function valueOf_51(value) {
+  function valueOf_53(value) {
     switch (value) {
       case 'TEXT':
         return InputType_TEXT_getInstance();
@@ -15465,10 +16660,10 @@
         break;
     }
   }
-  function get_entries_51() {
-    if ($ENTRIES_51 == null)
-      $ENTRIES_51 = enumEntries(values_51());
-    return $ENTRIES_51;
+  function get_entries_53() {
+    if ($ENTRIES_53 == null)
+      $ENTRIES_53 = enumEntries(values_53());
+    return $ENTRIES_53;
   }
   var InputType_entriesInitialized;
   function InputType_initEntries() {
@@ -15498,7 +16693,7 @@
     InputType_TIME_instance = new InputType('TIME', 20, 'time');
     InputType_WEEK_instance = new InputType('WEEK', 21, 'week');
   }
-  var $ENTRIES_51;
+  var $ENTRIES_53;
   function InputType(name, ordinal, type) {
     Enum.call(this, name, ordinal);
     this.type_1 = type;
@@ -15552,10 +16747,10 @@
   var Autocomplete_SEX_instance;
   var Autocomplete_URL_instance;
   var Autocomplete_PHOTO_instance;
-  function values_52() {
+  function values_54() {
     return [Autocomplete_OFF_getInstance(), Autocomplete_ON_getInstance(), Autocomplete_NAME_getInstance(), Autocomplete_HONORIFIC_PREFIX_getInstance(), Autocomplete_GIVEN_NAME_getInstance(), Autocomplete_ADDITIONAL_NAME_getInstance(), Autocomplete_FAMILY_NAME_getInstance(), Autocomplete_HONORIFIC_SUFFIX_getInstance(), Autocomplete_NICKNAME_getInstance(), Autocomplete_USERNAME_getInstance(), Autocomplete_NEW_PASSWORD_getInstance(), Autocomplete_CURRENT_PASSWORD_getInstance(), Autocomplete_ONE_TIME_CODE_getInstance(), Autocomplete_ORGANIZATION_TITLE_getInstance(), Autocomplete_ORGANIZATION_getInstance(), Autocomplete_STREET_ADDRESS_getInstance(), Autocomplete_ADDRESS_LINE1_getInstance(), Autocomplete_ADDRESS_LINE2_getInstance(), Autocomplete_ADDRESS_LINE3_getInstance(), Autocomplete_ADDRESS_LEVEL4_getInstance(), Autocomplete_ADDRESS_LEVEL3_getInstance(), Autocomplete_ADDRESS_LEVEL2_getInstance(), Autocomplete_ADDRESS_LEVEL1_getInstance(), Autocomplete_COUNTRY_getInstance(), Autocomplete_COUNTRY_NAME_getInstance(), Autocomplete_POSTAL_CODE_getInstance(), Autocomplete_CC_NAME_getInstance(), Autocomplete_CC_GIVEN_NAME_getInstance(), Autocomplete_CC_ADDITIONAL_NAME_getInstance(), Autocomplete_CC_FAMILY_NAME_getInstance(), Autocomplete_CC_NUMBER_getInstance(), Autocomplete_CC_EXP_getInstance(), Autocomplete_CC_EXP_MONTH_getInstance(), Autocomplete_CC_EXP_YEAR_getInstance(), Autocomplete_CC_CSC_getInstance(), Autocomplete_CC_TYPE_getInstance(), Autocomplete_TRANSACTION_CURRENCY_getInstance(), Autocomplete_TRANSACTION_AMOUNT_getInstance(), Autocomplete_LANGUAGE_getInstance(), Autocomplete_BDAY_getInstance(), Autocomplete_BDAY_DAY_getInstance(), Autocomplete_BDAY_MONTH_getInstance(), Autocomplete_BDAY_YEAR_getInstance(), Autocomplete_SEX_getInstance(), Autocomplete_URL_getInstance(), Autocomplete_PHOTO_getInstance()];
   }
-  function valueOf_52(value) {
+  function valueOf_54(value) {
     switch (value) {
       case 'OFF':
         return Autocomplete_OFF_getInstance();
@@ -15655,10 +16850,10 @@
         break;
     }
   }
-  function get_entries_52() {
-    if ($ENTRIES_52 == null)
-      $ENTRIES_52 = enumEntries(values_52());
-    return $ENTRIES_52;
+  function get_entries_54() {
+    if ($ENTRIES_54 == null)
+      $ENTRIES_54 = enumEntries(values_54());
+    return $ENTRIES_54;
   }
   var Autocomplete_entriesInitialized;
   function Autocomplete_initEntries() {
@@ -15712,7 +16907,7 @@
     Autocomplete_URL_instance = new Autocomplete('URL', 44, 'url');
     Autocomplete_PHOTO_instance = new Autocomplete('PHOTO', 45, 'photo');
   }
-  var $ENTRIES_52;
+  var $ENTRIES_54;
   function Autocomplete(name, ordinal, type) {
     Enum.call(this, name, ordinal);
     this.type_1 = type;
@@ -15992,6 +17187,425 @@
     Autocomplete_initEntries();
     return Autocomplete_PHOTO_instance;
   }
+  function Companion_6() {
+    Companion_instance_6 = this;
+    this.useDataNavigoForLinks_1 = false;
+  }
+  protoOf(Companion_6).set_useDataNavigoForLinks_1p2pi5_k$ = function (_set____db54di) {
+    this.useDataNavigoForLinks_1 = _set____db54di;
+  };
+  protoOf(Companion_6).get_useDataNavigoForLinks_plcd3u_k$ = function () {
+    return this.useDataNavigoForLinks_1;
+  };
+  var Companion_instance_6;
+  function Companion_getInstance_7() {
+    if (Companion_instance_6 == null)
+      new Companion_6();
+    return Companion_instance_6;
+  }
+  function Link$label$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Link$url$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Link$icon$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Link$image$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Link$separator$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Link$labelFirst$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Link$target$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Link$dataNavigo$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Link$onClick$lambda$lambda($handler, $this_setEventListener) {
+    return function (e) {
+      $handler($this_setEventListener.self, e);
+      return Unit_getInstance();
+    };
+  }
+  function Link$onClick$lambda($handler) {
+    return function ($this$setEventListener) {
+      $this$setEventListener.click = Link$onClick$lambda$lambda($handler, $this$setEventListener);
+      return Unit_getInstance();
+    };
+  }
+  function Link(label, url, icon, image, separator, labelFirst, target, dataNavigo, className, init) {
+    Companion_getInstance_7();
+    url = url === VOID ? null : url;
+    icon = icon === VOID ? null : icon;
+    image = image === VOID ? null : image;
+    separator = separator === VOID ? null : separator;
+    labelFirst = labelFirst === VOID ? true : labelFirst;
+    target = target === VOID ? null : target;
+    dataNavigo = dataNavigo === VOID ? null : dataNavigo;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    SimplePanel.call(this, className);
+    var tmp = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction = Link$label$delegate$lambda(this);
+    tmp.label$delegate_1 = (new RefreshDelegateProvider_0(this, label, refreshFunction)).provideDelegate_z62loi_k$(this, label$factory());
+    var tmp_0 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_0 = Link$url$delegate$lambda(this);
+    tmp_0.url$delegate_1 = (new RefreshDelegateProvider_0(this, url, refreshFunction_0)).provideDelegate_z62loi_k$(this, url$factory());
+    var tmp_1 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_1 = Link$icon$delegate$lambda(this);
+    tmp_1.icon$delegate_1 = (new RefreshDelegateProvider_0(this, icon, refreshFunction_1)).provideDelegate_z62loi_k$(this, icon$factory_5());
+    var tmp_2 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_2 = Link$image$delegate$lambda(this);
+    tmp_2.image$delegate_1 = (new RefreshDelegateProvider_0(this, image, refreshFunction_2)).provideDelegate_z62loi_k$(this, image$factory_1());
+    var tmp_3 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_3 = Link$separator$delegate$lambda(this);
+    tmp_3.separator$delegate_1 = (new RefreshDelegateProvider_0(this, separator, refreshFunction_3)).provideDelegate_z62loi_k$(this, separator$factory_2());
+    var tmp_4 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_4 = Link$labelFirst$delegate$lambda(this);
+    tmp_4.labelFirst$delegate_1 = (new RefreshDelegateProvider_0(this, labelFirst, refreshFunction_4)).provideDelegate_z62loi_k$(this, labelFirst$factory_5());
+    var tmp_5 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_5 = Link$target$delegate$lambda(this);
+    tmp_5.target$delegate_1 = (new RefreshDelegateProvider_0(this, target, refreshFunction_5)).provideDelegate_z62loi_k$(this, target$factory_1());
+    var tmp_6 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_6 = Link$dataNavigo$delegate$lambda(this);
+    tmp_6.dataNavigo$delegate_1 = (new RefreshDelegateProvider_0(this, dataNavigo, refreshFunction_6)).provideDelegate_z62loi_k$(this, dataNavigo$factory());
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(Link).set_label_nnic99_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.label$delegate_1, this, label$factory_0(), _set____db54di);
+  };
+  protoOf(Link).get_label_iuj8p7_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.label$delegate_1, this, label$factory_1());
+  };
+  protoOf(Link).set_url_fvthdx_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.url$delegate_1, this, url$factory_0(), _set____db54di);
+  };
+  protoOf(Link).get_url_18iuii_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.url$delegate_1, this, url$factory_1());
+  };
+  protoOf(Link).set_icon_t78tsv_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.icon$delegate_1, this, icon$factory_6(), _set____db54di);
+  };
+  protoOf(Link).get_icon_wont8i_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.icon$delegate_1, this, icon$factory_7());
+  };
+  protoOf(Link).set_image_f7p9g9_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.image$delegate_1, this, image$factory_2(), _set____db54di);
+  };
+  protoOf(Link).get_image_it3i2a_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.image$delegate_1, this, image$factory_3());
+  };
+  protoOf(Link).set_separator_fi7cb3_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.separator$delegate_1, this, separator$factory_3(), _set____db54di);
+  };
+  protoOf(Link).get_separator_xuwon8_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.separator$delegate_1, this, separator$factory_4());
+  };
+  protoOf(Link).set_labelFirst_q3ot2c_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.labelFirst$delegate_1, this, labelFirst$factory_6(), _set____db54di);
+  };
+  protoOf(Link).get_labelFirst_n6uzdx_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.labelFirst$delegate_1, this, labelFirst$factory_7());
+  };
+  protoOf(Link).set_target_l2qxfb_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.target$delegate_1, this, target$factory_2(), _set____db54di);
+  };
+  protoOf(Link).get_target_juba8q_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.target$delegate_1, this, target$factory_3());
+  };
+  protoOf(Link).set_dataNavigo_uqcbez_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.dataNavigo$delegate_1, this, dataNavigo$factory_0(), _set____db54di);
+  };
+  protoOf(Link).get_dataNavigo_1pkdun_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.dataNavigo$delegate_1, this, dataNavigo$factory_1());
+  };
+  protoOf(Link).render_fgfjvu_k$ = function () {
+    var t = this.createLabelWithIcon_7iayj6_k$(this.get_label_iuj8p7_k$(), this.get_icon_wont8i_k$(), this.get_image_it3i2a_k$(), this.get_separator_xuwon8_k$());
+    var tmp;
+    if (this.get_labelFirst_n6uzdx_k$()) {
+      // Inline function 'kotlin.collections.plus' call
+      var elements = this.childrenVNodes_2corie_k$();
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$1 = t.concat(elements);
+      tmp = this.render_prnnht_k$('a', tmp$ret$1);
+    } else {
+      // Inline function 'kotlin.collections.plus' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$3 = this.childrenVNodes_2corie_k$().concat(t);
+      tmp = this.render_prnnht_k$('a', tmp$ret$3);
+    }
+    return tmp;
+  };
+  protoOf(Link).buildAttributeSet_etcqhg_k$ = function (attributeSetBuilder) {
+    protoOf(SimplePanel).buildAttributeSet_etcqhg_k$.call(this, attributeSetBuilder);
+    var tmp0_safe_receiver = this.get_url_18iuii_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.html.Link.buildAttributeSet.<anonymous>' call
+      attributeSetBuilder.add_lbri6p_k$('href', tmp0_safe_receiver);
+    }
+    var tmp1_safe_receiver = this.get_target_juba8q_k$();
+    if (tmp1_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.html.Link.buildAttributeSet.<anonymous>' call
+      attributeSetBuilder.add_lbri6p_k$('target', tmp1_safe_receiver);
+    }
+    var tmp2_safe_receiver = this.get_dataNavigo_1pkdun_k$();
+    var tmp;
+    if (tmp2_safe_receiver == null) {
+      tmp = null;
+    } else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.html.Link.buildAttributeSet.<anonymous>' call
+      attributeSetBuilder.add_lbri6p_k$('data-navigo', tmp2_safe_receiver ? 'data-navigo' : 'false');
+      tmp = Unit_getInstance();
+    }
+    if (tmp == null) {
+      // Inline function 'kotlin.run' call
+      // Inline function 'io.kvision.html.Link.buildAttributeSet.<anonymous>' call
+      if (Companion_getInstance_7().useDataNavigoForLinks_1) {
+        attributeSetBuilder.add$default_4n2esg_k$('data-navigo');
+      }
+    }
+  };
+  protoOf(Link).onClick_3koad9_k$ = function (handler) {
+    return this.setEventListener_4rv3s8_k$(Link$onClick$lambda(handler));
+  };
+  function label$factory() {
+    return getPropertyCallableRef('label', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_label_iuj8p7_k$();
+    }, function (receiver, value) {
+      return receiver.set_label_nnic99_k$(value);
+    });
+  }
+  function url$factory() {
+    return getPropertyCallableRef('url', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_url_18iuii_k$();
+    }, function (receiver, value) {
+      return receiver.set_url_fvthdx_k$(value);
+    });
+  }
+  function icon$factory_5() {
+    return getPropertyCallableRef('icon', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_icon_wont8i_k$();
+    }, function (receiver, value) {
+      return receiver.set_icon_t78tsv_k$(value);
+    });
+  }
+  function image$factory_1() {
+    return getPropertyCallableRef('image', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_image_it3i2a_k$();
+    }, function (receiver, value) {
+      return receiver.set_image_f7p9g9_k$(value);
+    });
+  }
+  function separator$factory_2() {
+    return getPropertyCallableRef('separator', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_separator_xuwon8_k$();
+    }, function (receiver, value) {
+      return receiver.set_separator_fi7cb3_k$(value);
+    });
+  }
+  function labelFirst$factory_5() {
+    return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_labelFirst_n6uzdx_k$();
+    }, function (receiver, value) {
+      return receiver.set_labelFirst_q3ot2c_k$(value);
+    });
+  }
+  function target$factory_1() {
+    return getPropertyCallableRef('target', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_target_juba8q_k$();
+    }, function (receiver, value) {
+      return receiver.set_target_l2qxfb_k$(value);
+    });
+  }
+  function dataNavigo$factory() {
+    return getPropertyCallableRef('dataNavigo', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_dataNavigo_1pkdun_k$();
+    }, function (receiver, value) {
+      return receiver.set_dataNavigo_uqcbez_k$(value);
+    });
+  }
+  function label$factory_0() {
+    return getPropertyCallableRef('label', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_label_iuj8p7_k$();
+    }, function (receiver, value) {
+      return receiver.set_label_nnic99_k$(value);
+    });
+  }
+  function label$factory_1() {
+    return getPropertyCallableRef('label', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_label_iuj8p7_k$();
+    }, function (receiver, value) {
+      return receiver.set_label_nnic99_k$(value);
+    });
+  }
+  function url$factory_0() {
+    return getPropertyCallableRef('url', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_url_18iuii_k$();
+    }, function (receiver, value) {
+      return receiver.set_url_fvthdx_k$(value);
+    });
+  }
+  function url$factory_1() {
+    return getPropertyCallableRef('url', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_url_18iuii_k$();
+    }, function (receiver, value) {
+      return receiver.set_url_fvthdx_k$(value);
+    });
+  }
+  function icon$factory_6() {
+    return getPropertyCallableRef('icon', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_icon_wont8i_k$();
+    }, function (receiver, value) {
+      return receiver.set_icon_t78tsv_k$(value);
+    });
+  }
+  function icon$factory_7() {
+    return getPropertyCallableRef('icon', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_icon_wont8i_k$();
+    }, function (receiver, value) {
+      return receiver.set_icon_t78tsv_k$(value);
+    });
+  }
+  function image$factory_2() {
+    return getPropertyCallableRef('image', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_image_it3i2a_k$();
+    }, function (receiver, value) {
+      return receiver.set_image_f7p9g9_k$(value);
+    });
+  }
+  function image$factory_3() {
+    return getPropertyCallableRef('image', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_image_it3i2a_k$();
+    }, function (receiver, value) {
+      return receiver.set_image_f7p9g9_k$(value);
+    });
+  }
+  function separator$factory_3() {
+    return getPropertyCallableRef('separator', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_separator_xuwon8_k$();
+    }, function (receiver, value) {
+      return receiver.set_separator_fi7cb3_k$(value);
+    });
+  }
+  function separator$factory_4() {
+    return getPropertyCallableRef('separator', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_separator_xuwon8_k$();
+    }, function (receiver, value) {
+      return receiver.set_separator_fi7cb3_k$(value);
+    });
+  }
+  function labelFirst$factory_6() {
+    return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_labelFirst_n6uzdx_k$();
+    }, function (receiver, value) {
+      return receiver.set_labelFirst_q3ot2c_k$(value);
+    });
+  }
+  function labelFirst$factory_7() {
+    return getPropertyCallableRef('labelFirst', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_labelFirst_n6uzdx_k$();
+    }, function (receiver, value) {
+      return receiver.set_labelFirst_q3ot2c_k$(value);
+    });
+  }
+  function target$factory_2() {
+    return getPropertyCallableRef('target', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_target_juba8q_k$();
+    }, function (receiver, value) {
+      return receiver.set_target_l2qxfb_k$(value);
+    });
+  }
+  function target$factory_3() {
+    return getPropertyCallableRef('target', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_target_juba8q_k$();
+    }, function (receiver, value) {
+      return receiver.set_target_l2qxfb_k$(value);
+    });
+  }
+  function dataNavigo$factory_0() {
+    return getPropertyCallableRef('dataNavigo', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_dataNavigo_1pkdun_k$();
+    }, function (receiver, value) {
+      return receiver.set_dataNavigo_uqcbez_k$(value);
+    });
+  }
+  function dataNavigo$factory_1() {
+    return getPropertyCallableRef('dataNavigo', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_dataNavigo_1pkdun_k$();
+    }, function (receiver, value) {
+      return receiver.set_dataNavigo_uqcbez_k$(value);
+    });
+  }
+  function Span(content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    Tag.call(this, TAG_SPAN_getInstance(), content, rich, align, className);
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  function span(_this__u8e3s4, content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var span = new Span(content, rich, align, className, init);
+    _this__u8e3s4.add_rekwpt_k$(span);
+    return span;
+  }
   var TAG_A_instance;
   var TAG_ABBR_instance;
   var TAG_ADDRESS_instance;
@@ -16109,10 +17723,10 @@
   var TAG_VAR_instance;
   var TAG_VIDEO_instance;
   var TAG_WBR_instance;
-  function values_53() {
+  function values_55() {
     return [TAG_A_getInstance(), TAG_ABBR_getInstance(), TAG_ADDRESS_getInstance(), TAG_AREA_getInstance(), TAG_ARTICLE_getInstance(), TAG_ASIDE_getInstance(), TAG_AUDIO_getInstance(), TAG_B_getInstance(), TAG_BASE_getInstance(), TAG_BDI_getInstance(), TAG_BDO_getInstance(), TAG_BLOCKQUOTE_getInstance(), TAG_BODY_getInstance(), TAG_BR_getInstance(), TAG_BUTTON_getInstance(), TAG_CANVAS_getInstance(), TAG_CAPTION_getInstance(), TAG_CITE_getInstance(), TAG_CODE_getInstance(), TAG_COL_getInstance(), TAG_COLGROUP_getInstance(), TAG_DATA_getInstance(), TAG_DATALIST_getInstance(), TAG_DD_getInstance(), TAG_DEL_getInstance(), TAG_DETAILS_getInstance(), TAG_DFN_getInstance(), TAG_DIALOG_getInstance(), TAG_DIV_getInstance(), TAG_DL_getInstance(), TAG_DT_getInstance(), TAG_EM_getInstance(), TAG_EMBED_getInstance(), TAG_FIELDSET_getInstance(), TAG_FIGCAPTION_getInstance(), TAG_FIGURE_getInstance(), TAG_FOOTER_getInstance(), TAG_FORM_getInstance(), TAG_H1_getInstance(), TAG_H2_getInstance(), TAG_H3_getInstance(), TAG_H4_getInstance(), TAG_H5_getInstance(), TAG_H6_getInstance(), TAG_HEAD_getInstance(), TAG_HEADER_getInstance(), TAG_HGROUP_getInstance(), TAG_HR_getInstance(), TAG_HTML_getInstance(), TAG_I_getInstance(), TAG_IFRAME_getInstance(), TAG_IMG_getInstance(), TAG_INPUT_getInstance(), TAG_INS_getInstance(), TAG_KBD_getInstance(), TAG_LABEL_getInstance(), TAG_LEGEND_getInstance(), TAG_LI_getInstance(), TAG_LINK_getInstance(), TAG_MAIN_getInstance(), TAG_MAP_getInstance(), TAG_MARK_getInstance(), TAG_MATH_getInstance(), TAG_MENU_getInstance(), TAG_MENUITEM_getInstance(), TAG_META_getInstance(), TAG_METER_getInstance(), TAG_NAV_getInstance(), TAG_NOSCRIPT_getInstance(), TAG_OBJECT_getInstance(), TAG_OL_getInstance(), TAG_OPTGROUP_getInstance(), TAG_OPTION_getInstance(), TAG_OUTPUT_getInstance(), TAG_P_getInstance(), TAG_PARAM_getInstance(), TAG_PICTURE_getInstance(), TAG_PRE_getInstance(), TAG_PROGRESS_getInstance(), TAG_Q_getInstance(), TAG_RB_getInstance(), TAG_RP_getInstance(), TAG_RT_getInstance(), TAG_RTC_getInstance(), TAG_RUBY_getInstance(), TAG_S_getInstance(), TAG_SAMP_getInstance(), TAG_SCRIPT_getInstance(), TAG_SECTION_getInstance(), TAG_SELECT_getInstance(), TAG_SLOT_getInstance(), TAG_SMALL_getInstance(), TAG_SOURCE_getInstance(), TAG_SPAN_getInstance(), TAG_STRONG_getInstance(), TAG_STYLE_getInstance(), TAG_SUB_getInstance(), TAG_SUMMARY_getInstance(), TAG_SUP_getInstance(), TAG_SVG_getInstance(), TAG_TABLE_getInstance(), TAG_TBODY_getInstance(), TAG_TD_getInstance(), TAG_TEMPLATE_getInstance(), TAG_TEXTAREA_getInstance(), TAG_TFOOT_getInstance(), TAG_TH_getInstance(), TAG_THEAD_getInstance(), TAG_TIME_getInstance(), TAG_TITLE_getInstance(), TAG_TR_getInstance(), TAG_TRACK_getInstance(), TAG_U_getInstance(), TAG_UL_getInstance(), TAG_VAR_getInstance(), TAG_VIDEO_getInstance(), TAG_WBR_getInstance()];
   }
-  function valueOf_53(value) {
+  function valueOf_55(value) {
     switch (value) {
       case 'A':
         return TAG_A_getInstance();
@@ -16354,10 +17968,10 @@
         break;
     }
   }
-  function get_entries_53() {
-    if ($ENTRIES_53 == null)
-      $ENTRIES_53 = enumEntries(values_53());
-    return $ENTRIES_53;
+  function get_entries_55() {
+    if ($ENTRIES_55 == null)
+      $ENTRIES_55 = enumEntries(values_55());
+    return $ENTRIES_55;
   }
   var TAG_entriesInitialized;
   function TAG_initEntries() {
@@ -16482,7 +18096,7 @@
     TAG_VIDEO_instance = new TAG('VIDEO', 115, 'video');
     TAG_WBR_instance = new TAG('WBR', 116, 'wbr');
   }
-  var $ENTRIES_53;
+  var $ENTRIES_55;
   function TAG(name, ordinal, tagName) {
     Enum.call(this, name, ordinal);
     this.tagName_1 = tagName;
@@ -16498,10 +18112,10 @@
   var Align_WRAP_instance;
   var Align_NOWRAP_instance;
   var Align_JUSTIFY_instance;
-  function values_54() {
+  function values_56() {
     return [Align_LEFT_getInstance(), Align_START_getInstance(), Align_CENTER_getInstance(), Align_RIGHT_getInstance(), Align_END_getInstance(), Align_WRAP_getInstance(), Align_NOWRAP_getInstance(), Align_JUSTIFY_getInstance()];
   }
-  function valueOf_54(value) {
+  function valueOf_56(value) {
     switch (value) {
       case 'LEFT':
         return Align_LEFT_getInstance();
@@ -16525,10 +18139,10 @@
         break;
     }
   }
-  function get_entries_54() {
-    if ($ENTRIES_54 == null)
-      $ENTRIES_54 = enumEntries(values_54());
-    return $ENTRIES_54;
+  function get_entries_56() {
+    if ($ENTRIES_56 == null)
+      $ENTRIES_56 = enumEntries(values_56());
+    return $ENTRIES_56;
   }
   var Align_entriesInitialized;
   function Align_initEntries() {
@@ -16544,7 +18158,7 @@
     Align_NOWRAP_instance = new Align('NOWRAP', 6, 'kv-text-nowrap');
     Align_JUSTIFY_instance = new Align('JUSTIFY', 7, 'kv-text-justify');
   }
-  var $ENTRIES_54;
+  var $ENTRIES_56;
   function Align(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -16599,7 +18213,7 @@
     var tmp = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction = Tag$type$delegate$lambda(this);
-    tmp.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction)).provideDelegate_z62loi_k$(this, type$factory_5());
+    tmp.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction)).provideDelegate_z62loi_k$(this, type$factory_8());
     var tmp_0 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_0 = Tag$content$delegate$lambda(this);
@@ -16638,10 +18252,10 @@
       init(this);
   }
   protoOf(Tag).set_type_um17n3_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_6(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_9(), _set____db54di);
   };
   protoOf(Tag).get_type_wovaf7_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_7());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_10());
   };
   protoOf(Tag).set_content_i5lrjv_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.content$delegate_1, this, content$factory_0(), _set____db54di);
@@ -17280,7 +18894,7 @@
     Align_initEntries();
     return Align_JUSTIFY_instance;
   }
-  function type$factory_5() {
+  function type$factory_8() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
@@ -17315,14 +18929,14 @@
       return receiver.set_templates_fvcr6p_k$(value);
     });
   }
-  function type$factory_6() {
+  function type$factory_9() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
       return receiver.set_type_um17n3_k$(value);
     });
   }
-  function type$factory_7() {
+  function type$factory_10() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
@@ -17530,7 +19144,7 @@
   protoOf(I18n).set_language_m1uex7_k$ = function (value) {
     this.language_1 = value;
     // Inline function 'kotlin.collections.forEach' call
-    var _iterator__ex2g4s = Companion_getInstance_6().get_roots_iy382w_k$().iterator_jk1svi_k$();
+    var _iterator__ex2g4s = Companion_getInstance_8().get_roots_iy382w_k$().iterator_jk1svi_k$();
     while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
       var element = _iterator__ex2g4s.next_20eer_k$();
       // Inline function 'io.kvision.i18n.I18n.<set-language>.<anonymous>' call
@@ -18262,8 +19876,8 @@
     $this.addRow_1 = addRow;
     getPropertiesFromElement($this, element);
     $this.rootVnode_1 = KVManager_getInstance().patch_yfthds_k$(element, $this.renderVNode_r2mn32_k$());
-    var _unary__edvuaz = Companion_getInstance_6().counter_1;
-    Companion_getInstance_6().counter_1 = _unary__edvuaz + 1 | 0;
+    var _unary__edvuaz = Companion_getInstance_8().counter_1;
+    Companion_getInstance_8().counter_1 = _unary__edvuaz + 1 | 0;
     $this.set_id_wyyipr_k$('kv_root_' + _unary__edvuaz);
     if (init == null)
       null;
@@ -18381,7 +19995,7 @@
     var tmp;
     if ($this.isFirstRoot_1) {
       // Inline function 'kotlin.collections.filter' call
-      var tmp0 = Companion_getInstance_6().modals_1;
+      var tmp0 = Companion_getInstance_8().modals_1;
       // Inline function 'kotlin.collections.filterTo' call
       var destination = ArrayList_init_$Create$();
       var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
@@ -18438,8 +20052,8 @@
     // Inline function 'kotlin.collections.toTypedArray' call
     return copyToArray(destination_0);
   }
-  function Companion_5() {
-    Companion_instance_5 = this;
+  function Companion_7() {
+    Companion_instance_7 = this;
     this.counter_1 = 0;
     var tmp = this;
     // Inline function 'kotlin.collections.mutableListOf' call
@@ -18448,13 +20062,13 @@
     // Inline function 'kotlin.collections.mutableListOf' call
     tmp_0.roots_1 = ArrayList_init_$Create$();
   }
-  protoOf(Companion_5).set_counter_lagg9g_k$ = function (_set____db54di) {
+  protoOf(Companion_7).set_counter_lagg9g_k$ = function (_set____db54di) {
     this.counter_1 = _set____db54di;
   };
-  protoOf(Companion_5).get_counter_5zq0k8_k$ = function () {
+  protoOf(Companion_7).get_counter_5zq0k8_k$ = function () {
     return this.counter_1;
   };
-  protoOf(Companion_5).disposeAllRoots_fs2xup_k$ = function () {
+  protoOf(Companion_7).disposeAllRoots_fs2xup_k$ = function () {
     // Inline function 'kotlin.collections.forEach' call
     var _iterator__ex2g4s = this.roots_1.iterator_jk1svi_k$();
     while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
@@ -18464,10 +20078,10 @@
     }
     this.roots_1.clear_j9egeb_k$();
   };
-  protoOf(Companion_5).get_roots_iy382w_k$ = function () {
+  protoOf(Companion_7).get_roots_iy382w_k$ = function () {
     return this.roots_1;
   };
-  protoOf(Companion_5).getFirstRoot_21g3y4_k$ = function () {
+  protoOf(Companion_7).getFirstRoot_21g3y4_k$ = function () {
     var tmp;
     // Inline function 'kotlin.collections.isNotEmpty' call
     if (!this.roots_1.isEmpty_y1axqb_k$()) {
@@ -18477,7 +20091,7 @@
     }
     return tmp;
   };
-  protoOf(Companion_5).getLastRoot_a875zi_k$ = function () {
+  protoOf(Companion_7).getLastRoot_a875zi_k$ = function () {
     var tmp;
     // Inline function 'kotlin.collections.isNotEmpty' call
     if (!this.roots_1.isEmpty_y1axqb_k$()) {
@@ -18487,17 +20101,17 @@
     }
     return tmp;
   };
-  protoOf(Companion_5).addModal_6q4vcr_k$ = function (modal) {
+  protoOf(Companion_7).addModal_6q4vcr_k$ = function (modal) {
     this.modals_1.add_utx5q5_k$(modal);
   };
-  protoOf(Companion_5).removeModal_czgnry_k$ = function (modal) {
+  protoOf(Companion_7).removeModal_czgnry_k$ = function (modal) {
     this.modals_1.remove_cedx0m_k$(modal);
   };
-  var Companion_instance_5;
-  function Companion_getInstance_6() {
-    if (Companion_instance_5 == null)
-      new Companion_5();
-    return Companion_instance_5;
+  var Companion_instance_7;
+  function Companion_getInstance_8() {
+    if (Companion_instance_7 == null)
+      new Companion_7();
+    return Companion_instance_7;
   }
   function Root$render$lambda($this$snOpt) {
     // Inline function 'io.kvision.utils.snClasses' call
@@ -18690,14 +20304,14 @@
   };
   protoOf(Root).dispose_3nnxhr_k$ = function () {
     protoOf(SimplePanel).dispose_3nnxhr_k$.call(this);
-    Companion_getInstance_6().roots_1.remove_cedx0m_k$(this);
+    Companion_getInstance_8().roots_1.remove_cedx0m_k$(this);
     if (this.isFirstRoot_1) {
       Companion_getInstance_1().get_styles_swambk_k$().clear_j9egeb_k$();
-      Companion_getInstance_6().modals_1.clear_j9egeb_k$();
+      Companion_getInstance_8().modals_1.clear_j9egeb_k$();
     }
   };
   function Root() {
-    Companion_getInstance_6();
+    Companion_getInstance_8();
     var tmp = this;
     // Inline function 'kotlin.collections.mutableListOf' call
     tmp.contextMenus_1 = ArrayList_init_$Create$();
@@ -18709,13 +20323,13 @@
     tmp_0.asyncBuffer_1 = ArrayList_init_$Create$();
     this.asyncTimer_1 = null;
     this.stylesCached_1 = null;
-    this.isFirstRoot_1 = Companion_getInstance_6().roots_1.isEmpty_y1axqb_k$();
+    this.isFirstRoot_1 = Companion_getInstance_8().roots_1.isEmpty_y1axqb_k$();
     this.synchronousMode_1 = false;
     this.disableRendering_1 = false;
-    Companion_getInstance_6().roots_1.add_utx5q5_k$(this);
+    Companion_getInstance_8().roots_1.add_utx5q5_k$(this);
     if (this.isFirstRoot_1) {
       // Inline function 'kotlin.collections.forEach' call
-      var _iterator__ex2g4s = Companion_getInstance_6().modals_1.iterator_jk1svi_k$();
+      var _iterator__ex2g4s = Companion_getInstance_8().modals_1.iterator_jk1svi_k$();
       while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
         var element = _iterator__ex2g4s.next_20eer_k$();
         // Inline function 'io.kvision.panel.Root.<anonymous>' call
@@ -18731,10 +20345,10 @@
   var ContainerType_LG_instance;
   var ContainerType_XL_instance;
   var ContainerType_XXL_instance;
-  function values_55() {
+  function values_57() {
     return [ContainerType_NONE_getInstance(), ContainerType_FIXED_getInstance(), ContainerType_FLUID_getInstance(), ContainerType_SM_getInstance(), ContainerType_MD_getInstance(), ContainerType_LG_getInstance(), ContainerType_XL_getInstance(), ContainerType_XXL_getInstance()];
   }
-  function valueOf_55(value) {
+  function valueOf_57(value) {
     switch (value) {
       case 'NONE':
         return ContainerType_NONE_getInstance();
@@ -18758,10 +20372,10 @@
         break;
     }
   }
-  function get_entries_55() {
-    if ($ENTRIES_55 == null)
-      $ENTRIES_55 = enumEntries(values_55());
-    return $ENTRIES_55;
+  function get_entries_57() {
+    if ($ENTRIES_57 == null)
+      $ENTRIES_57 = enumEntries(values_57());
+    return $ENTRIES_57;
   }
   var ContainerType_entriesInitialized;
   function ContainerType_initEntries() {
@@ -18777,7 +20391,7 @@
     ContainerType_XL_instance = new ContainerType('XL', 6, 'container-xl');
     ContainerType_XXL_instance = new ContainerType('XXL', 7, 'container-xxl');
   }
-  var $ENTRIES_55;
+  var $ENTRIES_57;
   function ContainerType(name, ordinal, type) {
     Enum.call(this, name, ordinal);
     this.type_1 = type;
@@ -19491,6 +21105,19 @@
   protoOf(SimplePanel).unaryPlus_76unot_k$ = unaryPlus;
   protoOf(Tag).set_templateData_amf8aa_k$ = set_templateData;
   protoOf(Tag).get_templateData_blsneb_k$ = get_templateData;
+  protoOf(CheckBox).setValue_caf2zk_k$ = setValue_0;
+  protoOf(CheckBox).getValue_wjkqt7_k$ = getValue;
+  protoOf(CheckBox).getValueAsString_j4qkse_k$ = getValueAsString;
+  protoOf(CheckBox).set_disabled_rhu918_k$ = set_disabled;
+  protoOf(CheckBox).get_disabled_rbmjej_k$ = get_disabled;
+  protoOf(CheckBox).set_size_duu2i7_k$ = set_size;
+  protoOf(CheckBox).get_size_woubt6_k$ = get_size;
+  protoOf(CheckBox).set_name_wkmnld_k$ = set_name;
+  protoOf(CheckBox).get_name_woqyms_k$ = get_name;
+  protoOf(CheckBox).set_validationStatus_hx0grd_k$ = set_validationStatus;
+  protoOf(CheckBox).get_validationStatus_he6hkc_k$ = get_validationStatus;
+  protoOf(CheckBox).set_validatorError_mn8p6k_k$ = set_validatorError;
+  protoOf(CheckBox).get_validatorError_og9qg1_k$ = get_validatorError;
   protoOf(AbstractText).setValue_caf2zk_k$ = setValue_2;
   protoOf(AbstractText).getValueAsString_j4qkse_k$ = getValueAsString_1;
   protoOf(AbstractText).getValue_wjkqt7_k$ = getValue_0;
@@ -19518,37 +21145,63 @@
   //region block: exports
   _.$_$ = _.$_$ || {};
   _.$_$.a = AlignItems_CENTER_getInstance;
-  _.$_$.b = ButtonType_SUBMIT_getInstance;
-  _.$_$.c = MaskManager_getInstance;
-  _.$_$.d = I18n_getInstance;
-  _.$_$.e = Companion_getInstance_6;
-  _.$_$.f = RoutingManager_getInstance;
-  _.$_$.g = CoreModule_getInstance;
-  _.$_$.h = MaskFactory;
-  _.$_$.i = MaskOptions;
-  _.$_$.j = Mask;
-  _.$_$.k = Password;
-  _.$_$.l = Text;
-  _.$_$.m = FormPanel;
-  _.$_$.n = H3;
-  _.$_$.o = button;
-  _.$_$.p = h2;
-  _.$_$.q = ntr;
-  _.$_$.r = trans_0;
-  _.$_$.s = trans;
-  _.$_$.t = tr;
-  _.$_$.u = I18nManager;
-  _.$_$.v = SimplePanel;
-  _.$_$.w = VPanel;
-  _.$_$.x = root;
-  _.$_$.y = vPanel;
-  _.$_$.z = KVRouter;
-  _.$_$.a1 = RouterFactory;
-  _.$_$.b1 = get_perc;
-  _.$_$.c1 = get_px;
-  _.$_$.d1 = Application;
-  _.$_$.e1 = ModuleInitializer;
-  _.$_$.f1 = startApplication;
+  _.$_$.b = Display_BLOCK_getInstance;
+  _.$_$.c = ButtonStyle_LIGHT_getInstance;
+  _.$_$.d = ButtonStyle_PRIMARY_getInstance;
+  _.$_$.e = ButtonType_BUTTON_getInstance;
+  _.$_$.f = ButtonType_SUBMIT_getInstance;
+  _.$_$.g = TAG_FORM_getInstance;
+  _.$_$.h = TAG_H6_getInstance;
+  _.$_$.i = ContainerType_FLUID_getInstance;
+  _.$_$.j = add$default;
+  _.$_$.k = WidgetRefreshDelegate__getValue_impl_lmjmy2;
+  _.$_$.l = WidgetRefreshDelegate__setValue_impl_8tnbha;
+  _.$_$.m = MaskManager_getInstance;
+  _.$_$.n = I18n_getInstance;
+  _.$_$.o = Companion_getInstance_8;
+  _.$_$.p = RoutingManager_getInstance;
+  _.$_$.q = CoreModule_getInstance;
+  _.$_$.r = addAll;
+  _.$_$.s = add;
+  _.$_$.t = AttributeSetBuilder;
+  _.$_$.u = add_0;
+  _.$_$.v = ClassSetBuilder;
+  _.$_$.w = CssClass;
+  _.$_$.x = DomAttribute;
+  _.$_$.y = RefreshDelegateProvider_0;
+  _.$_$.z = checkBox;
+  _.$_$.a1 = MaskFactory;
+  _.$_$.b1 = MaskOptions;
+  _.$_$.c1 = Mask;
+  _.$_$.d1 = Password;
+  _.$_$.e1 = Text;
+  _.$_$.f1 = text;
+  _.$_$.g1 = FormPanel;
+  _.$_$.h1 = Button;
+  _.$_$.i1 = H3;
+  _.$_$.j1 = Link;
+  _.$_$.k1 = Tag;
+  _.$_$.l1 = button;
+  _.$_$.m1 = h2;
+  _.$_$.n1 = icon;
+  _.$_$.o1 = span;
+  _.$_$.p1 = ntr;
+  _.$_$.q1 = trans_0;
+  _.$_$.r1 = trans;
+  _.$_$.s1 = tr;
+  _.$_$.t1 = I18nManager;
+  _.$_$.u1 = SimplePanel;
+  _.$_$.v1 = VPanel;
+  _.$_$.w1 = root;
+  _.$_$.x1 = vPanel;
+  _.$_$.y1 = KVRouter;
+  _.$_$.z1 = RouterFactory;
+  _.$_$.a2 = get_auto;
+  _.$_$.b2 = get_perc;
+  _.$_$.c2 = get_px;
+  _.$_$.d2 = Application;
+  _.$_$.e2 = ModuleInitializer;
+  _.$_$.f2 = startApplication;
   //endregion
   return _;
 }));

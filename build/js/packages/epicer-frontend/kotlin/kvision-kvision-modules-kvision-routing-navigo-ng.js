@@ -18,18 +18,18 @@
 }(function (_, Navigo, kotlin_io_kvision_kvision, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var RoutingManager_getInstance = kotlin_io_kvision_kvision.$_$.f;
+  var RoutingManager_getInstance = kotlin_io_kvision_kvision.$_$.p;
   var protoOf = kotlin_kotlin.$_$.eb;
   var VOID = kotlin_kotlin.$_$.e;
   var initMetadataForCompanion = kotlin_kotlin.$_$.ca;
-  var KVRouter = kotlin_io_kvision_kvision.$_$.z;
+  var KVRouter = kotlin_io_kvision_kvision.$_$.y1;
   var initMetadataForClass = kotlin_kotlin.$_$.ba;
   var THROW_IAE = kotlin_kotlin.$_$.qe;
   var enumEntries = kotlin_kotlin.$_$.h9;
   var Unit_getInstance = kotlin_kotlin.$_$.b5;
   var Enum = kotlin_kotlin.$_$.be;
   var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.s1;
-  var RouterFactory = kotlin_io_kvision_kvision.$_$.a1;
+  var RouterFactory = kotlin_io_kvision_kvision.$_$.z1;
   //endregion
   //region block: pre-declaration
   initMetadataForCompanion(Companion);
