@@ -4,7 +4,6 @@ import epicer.common.dto.TokenDTO
 import epicer.common.dto.user.BaseUserDTO
 import epicer.common.dto.user.LoginUserDTO
 import epicer.common.dto.user.UserDTO
-import epicer.frontend.data.backend_url
 import epicer.frontend.data.login
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
@@ -92,7 +91,7 @@ class LoginView(private val routing: Routing) : VPanel() {
                                     )
                                 )
                                 println("Login succeded")
-                                routing.kvNavigate("/main")
+                                routing.navigate("/")
                             } else {
                                 localStorage.clear()
                                 Toast.danger(

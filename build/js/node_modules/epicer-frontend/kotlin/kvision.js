@@ -39,100 +39,100 @@
   var imul = Math.imul;
   var h_1 = $module$snabbdom.h;
   var h_2 = $module$snabbdom.h;
-  var protoOf = kotlin_kotlin.$_$.eb;
-  var emptyMap = kotlin_kotlin.$_$.o6;
-  var initMetadataForClass = kotlin_kotlin.$_$.ba;
-  var VOID = kotlin_kotlin.$_$.e;
-  var Unit_getInstance = kotlin_kotlin.$_$.b5;
-  var initMetadataForInterface = kotlin_kotlin.$_$.ea;
-  var initMetadataForObject = kotlin_kotlin.$_$.ga;
+  var protoOf = kotlin_kotlin.$_$.fb;
+  var emptyMap = kotlin_kotlin.$_$.p6;
+  var initMetadataForClass = kotlin_kotlin.$_$.ca;
+  var VOID = kotlin_kotlin.$_$.f;
+  var Unit_getInstance = kotlin_kotlin.$_$.c5;
+  var initMetadataForInterface = kotlin_kotlin.$_$.fa;
+  var initMetadataForObject = kotlin_kotlin.$_$.ha;
   var clear = kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.$_$.a;
-  var charSequenceLength = kotlin_kotlin.$_$.r9;
-  var asList = kotlin_kotlin.$_$.t5;
-  var THROW_IAE = kotlin_kotlin.$_$.qe;
-  var enumEntries = kotlin_kotlin.$_$.h9;
-  var Enum = kotlin_kotlin.$_$.be;
-  var toString = kotlin_kotlin.$_$.hd;
-  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.o2;
-  var padStart = kotlin_kotlin.$_$.mc;
-  var listOf = kotlin_kotlin.$_$.f7;
-  var joinToString = kotlin_kotlin.$_$.y6;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.ca;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.k;
-  var charArrayOf = kotlin_kotlin.$_$.o9;
-  var split = kotlin_kotlin.$_$.uc;
-  var last = kotlin_kotlin.$_$.d7;
-  var iterator = kotlin_kotlin.$_$.ua;
-  var to = kotlin_kotlin.$_$.sf;
-  var toString_0 = kotlin_kotlin.$_$.hb;
-  var hashCode = kotlin_kotlin.$_$.aa;
-  var THROW_CCE = kotlin_kotlin.$_$.pe;
-  var equals = kotlin_kotlin.$_$.v9;
-  var KMutableProperty1 = kotlin_kotlin.$_$.sb;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.y9;
-  var ensureNotNull = kotlin_kotlin.$_$.hf;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.x5;
-  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.j;
-  var apply = kotlin_kotlin.$_$.df;
-  var toSet = kotlin_kotlin.$_$.h8;
-  var emptySet = kotlin_kotlin.$_$.p6;
-  var intersect = kotlin_kotlin.$_$.x6;
-  var mapOf = kotlin_kotlin.$_$.h7;
-  var split_0 = kotlin_kotlin.$_$.vc;
-  var toSet_0 = kotlin_kotlin.$_$.g8;
-  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.t;
-  var toMap = kotlin_kotlin.$_$.c8;
-  var toMutableMap = kotlin_kotlin.$_$.e8;
-  var copyToArray = kotlin_kotlin.$_$.k6;
-  var first = kotlin_kotlin.$_$.r6;
-  var mutableMapOf = kotlin_kotlin.$_$.j7;
-  var startsWith = kotlin_kotlin.$_$.wc;
-  var toMutableSet = kotlin_kotlin.$_$.f8;
-  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.v;
-  var setOf = kotlin_kotlin.$_$.s7;
+  var charSequenceLength = kotlin_kotlin.$_$.s9;
+  var asList = kotlin_kotlin.$_$.u5;
+  var THROW_IAE = kotlin_kotlin.$_$.re;
+  var enumEntries = kotlin_kotlin.$_$.i9;
+  var Enum = kotlin_kotlin.$_$.ce;
+  var toString = kotlin_kotlin.$_$.id;
+  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.p2;
+  var padStart = kotlin_kotlin.$_$.nc;
+  var listOf = kotlin_kotlin.$_$.g7;
+  var joinToString = kotlin_kotlin.$_$.z6;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.da;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.l;
+  var charArrayOf = kotlin_kotlin.$_$.p9;
+  var split = kotlin_kotlin.$_$.vc;
+  var last = kotlin_kotlin.$_$.e7;
+  var iterator = kotlin_kotlin.$_$.va;
+  var to = kotlin_kotlin.$_$.tf;
+  var toString_0 = kotlin_kotlin.$_$.ib;
+  var hashCode = kotlin_kotlin.$_$.ba;
+  var THROW_CCE = kotlin_kotlin.$_$.qe;
+  var equals = kotlin_kotlin.$_$.w9;
+  var KMutableProperty1 = kotlin_kotlin.$_$.tb;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.z9;
+  var ensureNotNull = kotlin_kotlin.$_$.if;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.y5;
+  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.k;
+  var apply = kotlin_kotlin.$_$.ef;
+  var toSet = kotlin_kotlin.$_$.i8;
+  var emptySet = kotlin_kotlin.$_$.q6;
+  var intersect = kotlin_kotlin.$_$.y6;
+  var mapOf = kotlin_kotlin.$_$.i7;
+  var split_0 = kotlin_kotlin.$_$.wc;
+  var toSet_0 = kotlin_kotlin.$_$.h8;
+  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.u;
+  var toMap = kotlin_kotlin.$_$.d8;
+  var toMutableMap = kotlin_kotlin.$_$.f8;
+  var copyToArray = kotlin_kotlin.$_$.l6;
+  var first = kotlin_kotlin.$_$.s6;
+  var mutableMapOf = kotlin_kotlin.$_$.k7;
+  var startsWith = kotlin_kotlin.$_$.xc;
+  var toMutableSet = kotlin_kotlin.$_$.g8;
+  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.w;
+  var setOf = kotlin_kotlin.$_$.t7;
   var Dispatchers_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var SupervisorJob = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
   var SerializersModuleBuilder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.d2;
-  var getKClass = kotlin_kotlin.$_$.d;
+  var getKClass = kotlin_kotlin.$_$.e;
   var overwriteWith = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h2;
-  var KtList = kotlin_kotlin.$_$.l5;
-  var isInterface = kotlin_kotlin.$_$.pa;
+  var KtList = kotlin_kotlin.$_$.m5;
+  var isInterface = kotlin_kotlin.$_$.qa;
   var Companion_getInstance = kotlin_io_kvision_kvision_common_types.$_$.a;
   var ListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q;
   var Default_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
   var Json = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.b;
-  var KtMap = kotlin_kotlin.$_$.n5;
-  var contains = kotlin_kotlin.$_$.y5;
-  var mapCapacity = kotlin_kotlin.$_$.g7;
-  var coerceAtLeast = kotlin_kotlin.$_$.kb;
-  var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.s;
-  var plus = kotlin_kotlin.$_$.k7;
-  var withDefault = kotlin_kotlin.$_$.i8;
-  var toString_1 = kotlin_kotlin.$_$.rf;
-  var getBooleanHashCode = kotlin_kotlin.$_$.x9;
-  var getStringHashCode = kotlin_kotlin.$_$.z9;
-  var json = kotlin_kotlin.$_$.wa;
-  var isNumber = kotlin_kotlin.$_$.ra;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.q1;
-  var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.s1;
-  var Annotation = kotlin_kotlin.$_$.sd;
-  var dropLast = kotlin_kotlin.$_$.cc;
-  var last_0 = kotlin_kotlin.$_$.lc;
-  var Exception = kotlin_kotlin.$_$.de;
-  var charSequenceGet = kotlin_kotlin.$_$.q9;
-  var toIntOrNull = kotlin_kotlin.$_$.ed;
-  var objectCreate = kotlin_kotlin.$_$.db;
-  var asList_0 = kotlin_kotlin.$_$.tf;
-  var listOf_0 = kotlin_kotlin.$_$.e7;
-  var plus_0 = kotlin_kotlin.$_$.n7;
-  var getOrNull = kotlin_kotlin.$_$.s6;
-  var emptyList = kotlin_kotlin.$_$.n6;
+  var KtMap = kotlin_kotlin.$_$.o5;
+  var contains = kotlin_kotlin.$_$.z5;
+  var mapCapacity = kotlin_kotlin.$_$.h7;
+  var coerceAtLeast = kotlin_kotlin.$_$.lb;
+  var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.t;
+  var plus = kotlin_kotlin.$_$.l7;
+  var withDefault = kotlin_kotlin.$_$.j8;
+  var toString_1 = kotlin_kotlin.$_$.sf;
+  var getBooleanHashCode = kotlin_kotlin.$_$.y9;
+  var getStringHashCode = kotlin_kotlin.$_$.aa;
+  var json = kotlin_kotlin.$_$.xa;
+  var isNumber = kotlin_kotlin.$_$.sa;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.r1;
+  var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.t1;
+  var Annotation = kotlin_kotlin.$_$.td;
+  var dropLast = kotlin_kotlin.$_$.dc;
+  var last_0 = kotlin_kotlin.$_$.mc;
+  var Exception = kotlin_kotlin.$_$.ee;
+  var charSequenceGet = kotlin_kotlin.$_$.r9;
+  var toIntOrNull = kotlin_kotlin.$_$.fd;
+  var objectCreate = kotlin_kotlin.$_$.eb;
+  var asList_0 = kotlin_kotlin.$_$.uf;
+  var listOf_0 = kotlin_kotlin.$_$.f7;
+  var plus_0 = kotlin_kotlin.$_$.o7;
+  var getOrNull = kotlin_kotlin.$_$.t6;
+  var emptyList = kotlin_kotlin.$_$.o6;
   var get_KV_DEFAULT_DATE_FORMAT = kotlin_io_kvision_kvision_common_types.$_$.b;
   var buildClassSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g1;
   var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k2;
   var serializersModuleOf = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i2;
-  var Pair = kotlin_kotlin.$_$.me;
+  var Pair = kotlin_kotlin.$_$.ne;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(Application, 'Application');
@@ -474,9 +474,12 @@
   initMetadataForClass(ButtonStyle, 'ButtonStyle', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(ButtonSize, 'ButtonSize', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(Div, 'Div', Div, Tag);
+  initMetadataForClass(H1, 'H1', H1, Tag);
   initMetadataForClass(H2, 'H2', H2, Tag);
   initMetadataForClass(H3, 'H3', H3, Tag);
   initMetadataForClass(Icon, 'Icon', VOID, Tag);
+  initMetadataForClass(Image, 'Image', VOID, Widget);
+  initMetadataForClass(ImageShape, 'ImageShape', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(InputType, 'InputType', VOID, Enum);
   initMetadataForClass(Autocomplete, 'Autocomplete', VOID, Enum);
   initMetadataForCompanion(Companion_6);
@@ -538,6 +541,8 @@
   initMetadataForClass(FieldsetPanel, 'FieldsetPanel', FieldsetPanel, SimplePanel);
   initMetadataForClass(FlexPanel$options$1, VOID, VOID, VOID, [Container]);
   initMetadataForClass(FlexPanel, 'FlexPanel', FlexPanel, SimplePanel);
+  initMetadataForClass(GridPanel$options$1, VOID, VOID, VOID, [Container]);
+  initMetadataForClass(GridPanel, 'GridPanel', GridPanel, SimplePanel);
   initMetadataForCompanion(Companion_7);
   initMetadataForClass(Root, 'Root', VOID, SimplePanel);
   initMetadataForClass(ContainerType, 'ContainerType', VOID, Enum);
@@ -16494,6 +16499,28 @@
     else
       init(this);
   }
+  function H1(content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    Tag.call(this, TAG_H1_getInstance(), content, rich, align, className);
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  function h1(_this__u8e3s4, content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var h1 = new H1(content, rich, align, className, init);
+    _this__u8e3s4.add_rekwpt_k$(h1);
+    return h1;
+  }
   function h2(_this__u8e3s4, content, rich, align, className, init) {
     content = content === VOID ? null : content;
     rich = rich === VOID ? false : rich;
@@ -16583,6 +16610,301 @@
       return receiver.set_icon_ecshbo_k$(value);
     });
   }
+  function image(_this__u8e3s4, src, alt, responsive, shape, centered, className, init) {
+    alt = alt === VOID ? null : alt;
+    responsive = responsive === VOID ? false : responsive;
+    shape = shape === VOID ? null : shape;
+    centered = centered === VOID ? false : centered;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var image = new Image(src, alt, responsive, shape, centered, className, init);
+    _this__u8e3s4.add_rekwpt_k$(image);
+    return image;
+  }
+  function Image$src$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Image$alt$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Image$responsive$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Image$shape$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Image$centered$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Image(src, alt, responsive, shape, centered, className, init) {
+    alt = alt === VOID ? null : alt;
+    responsive = responsive === VOID ? false : responsive;
+    shape = shape === VOID ? null : shape;
+    centered = centered === VOID ? false : centered;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    Widget.call(this, className);
+    var tmp = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction = Image$src$delegate$lambda(this);
+    tmp.src$delegate_1 = (new RefreshDelegateProvider_0(this, src, refreshFunction)).provideDelegate_z62loi_k$(this, src$factory());
+    var tmp_0 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_0 = Image$alt$delegate$lambda(this);
+    tmp_0.alt$delegate_1 = (new RefreshDelegateProvider_0(this, alt, refreshFunction_0)).provideDelegate_z62loi_k$(this, alt$factory());
+    var tmp_1 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_1 = Image$responsive$delegate$lambda(this);
+    tmp_1.responsive$delegate_1 = (new RefreshDelegateProvider_0(this, responsive, refreshFunction_1)).provideDelegate_z62loi_k$(this, responsive$factory());
+    var tmp_2 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_2 = Image$shape$delegate$lambda(this);
+    tmp_2.shape$delegate_1 = (new RefreshDelegateProvider_0(this, shape, refreshFunction_2)).provideDelegate_z62loi_k$(this, shape$factory());
+    var tmp_3 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_3 = Image$centered$delegate$lambda(this);
+    tmp_3.centered$delegate_1 = (new RefreshDelegateProvider_0(this, centered, refreshFunction_3)).provideDelegate_z62loi_k$(this, centered$factory());
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(Image).set_src_vqknu8_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.src$delegate_1, this, src$factory_0(), _set____db54di);
+  };
+  protoOf(Image).get_src_18iw05_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.src$delegate_1, this, src$factory_1());
+  };
+  protoOf(Image).set_alt_i9cyk5_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.alt$delegate_1, this, alt$factory_0(), _set____db54di);
+  };
+  protoOf(Image).get_alt_18j9hc_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.alt$delegate_1, this, alt$factory_1());
+  };
+  protoOf(Image).set_responsive_6w9l18_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.responsive$delegate_1, this, responsive$factory_0(), _set____db54di);
+  };
+  protoOf(Image).get_responsive_un7bnn_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.responsive$delegate_1, this, responsive$factory_1());
+  };
+  protoOf(Image).set_shape_i86x7h_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.shape$delegate_1, this, shape$factory_0(), _set____db54di);
+  };
+  protoOf(Image).get_shape_iyi9a0_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.shape$delegate_1, this, shape$factory_1());
+  };
+  protoOf(Image).set_centered_ahf858_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.centered$delegate_1, this, centered$factory_0(), _set____db54di);
+  };
+  protoOf(Image).get_centered_p4nzb1_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.centered$delegate_1, this, centered$factory_1());
+  };
+  protoOf(Image).render_fgfjvu_k$ = function () {
+    return this.render_ab0tlo_k$('img');
+  };
+  protoOf(Image).buildAttributeSet_etcqhg_k$ = function (attributeSetBuilder) {
+    protoOf(Widget).buildAttributeSet_etcqhg_k$.call(this, attributeSetBuilder);
+    var tmp0_safe_receiver = this.get_src_18iw05_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.html.Image.buildAttributeSet.<anonymous>' call
+      attributeSetBuilder.add_lbri6p_k$('src', tmp0_safe_receiver);
+    }
+    var tmp1_safe_receiver = this.get_alt_18j9hc_k$();
+    if (tmp1_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.html.Image.buildAttributeSet.<anonymous>' call
+      attributeSetBuilder.add_lbri6p_k$('alt', this.translate_s2ekyc_k$(tmp1_safe_receiver));
+    }
+  };
+  protoOf(Image).buildClassSet_myme1g_k$ = function (classSetBuilder) {
+    protoOf(Widget).buildClassSet_myme1g_k$.call(this, classSetBuilder);
+    if (this.get_responsive_un7bnn_k$()) {
+      classSetBuilder.add_udnk2x_k$('img-fluid');
+    }
+    if (this.get_centered_p4nzb1_k$()) {
+      classSetBuilder.add_udnk2x_k$('center-block');
+    }
+    classSetBuilder.add_9rsi26_k$(this.get_shape_iyi9a0_k$());
+  };
+  var ImageShape_ROUNDED_instance;
+  var ImageShape_CIRCLE_instance;
+  var ImageShape_THUMBNAIL_instance;
+  function values_53() {
+    return [ImageShape_ROUNDED_getInstance(), ImageShape_CIRCLE_getInstance(), ImageShape_THUMBNAIL_getInstance()];
+  }
+  function valueOf_53(value) {
+    switch (value) {
+      case 'ROUNDED':
+        return ImageShape_ROUNDED_getInstance();
+      case 'CIRCLE':
+        return ImageShape_CIRCLE_getInstance();
+      case 'THUMBNAIL':
+        return ImageShape_THUMBNAIL_getInstance();
+      default:
+        ImageShape_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_53() {
+    if ($ENTRIES_53 == null)
+      $ENTRIES_53 = enumEntries(values_53());
+    return $ENTRIES_53;
+  }
+  var ImageShape_entriesInitialized;
+  function ImageShape_initEntries() {
+    if (ImageShape_entriesInitialized)
+      return Unit_getInstance();
+    ImageShape_entriesInitialized = true;
+    ImageShape_ROUNDED_instance = new ImageShape('ROUNDED', 0, 'rounded');
+    ImageShape_CIRCLE_instance = new ImageShape('CIRCLE', 1, 'rounded-circle');
+    ImageShape_THUMBNAIL_instance = new ImageShape('THUMBNAIL', 2, 'img-thumbnail');
+  }
+  var $ENTRIES_53;
+  function ImageShape(name, ordinal, className) {
+    Enum.call(this, name, ordinal);
+    this.className_1 = className;
+  }
+  protoOf(ImageShape).get_className_8cmv0a_k$ = function () {
+    return this.className_1;
+  };
+  function ImageShape_ROUNDED_getInstance() {
+    ImageShape_initEntries();
+    return ImageShape_ROUNDED_instance;
+  }
+  function ImageShape_CIRCLE_getInstance() {
+    ImageShape_initEntries();
+    return ImageShape_CIRCLE_instance;
+  }
+  function ImageShape_THUMBNAIL_getInstance() {
+    ImageShape_initEntries();
+    return ImageShape_THUMBNAIL_instance;
+  }
+  function src$factory() {
+    return getPropertyCallableRef('src', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_src_18iw05_k$();
+    }, function (receiver, value) {
+      return receiver.set_src_vqknu8_k$(value);
+    });
+  }
+  function alt$factory() {
+    return getPropertyCallableRef('alt', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_alt_18j9hc_k$();
+    }, function (receiver, value) {
+      return receiver.set_alt_i9cyk5_k$(value);
+    });
+  }
+  function responsive$factory() {
+    return getPropertyCallableRef('responsive', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_responsive_un7bnn_k$();
+    }, function (receiver, value) {
+      return receiver.set_responsive_6w9l18_k$(value);
+    });
+  }
+  function shape$factory() {
+    return getPropertyCallableRef('shape', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_shape_iyi9a0_k$();
+    }, function (receiver, value) {
+      return receiver.set_shape_i86x7h_k$(value);
+    });
+  }
+  function centered$factory() {
+    return getPropertyCallableRef('centered', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_centered_p4nzb1_k$();
+    }, function (receiver, value) {
+      return receiver.set_centered_ahf858_k$(value);
+    });
+  }
+  function src$factory_0() {
+    return getPropertyCallableRef('src', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_src_18iw05_k$();
+    }, function (receiver, value) {
+      return receiver.set_src_vqknu8_k$(value);
+    });
+  }
+  function src$factory_1() {
+    return getPropertyCallableRef('src', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_src_18iw05_k$();
+    }, function (receiver, value) {
+      return receiver.set_src_vqknu8_k$(value);
+    });
+  }
+  function alt$factory_0() {
+    return getPropertyCallableRef('alt', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_alt_18j9hc_k$();
+    }, function (receiver, value) {
+      return receiver.set_alt_i9cyk5_k$(value);
+    });
+  }
+  function alt$factory_1() {
+    return getPropertyCallableRef('alt', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_alt_18j9hc_k$();
+    }, function (receiver, value) {
+      return receiver.set_alt_i9cyk5_k$(value);
+    });
+  }
+  function responsive$factory_0() {
+    return getPropertyCallableRef('responsive', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_responsive_un7bnn_k$();
+    }, function (receiver, value) {
+      return receiver.set_responsive_6w9l18_k$(value);
+    });
+  }
+  function responsive$factory_1() {
+    return getPropertyCallableRef('responsive', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_responsive_un7bnn_k$();
+    }, function (receiver, value) {
+      return receiver.set_responsive_6w9l18_k$(value);
+    });
+  }
+  function shape$factory_0() {
+    return getPropertyCallableRef('shape', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_shape_iyi9a0_k$();
+    }, function (receiver, value) {
+      return receiver.set_shape_i86x7h_k$(value);
+    });
+  }
+  function shape$factory_1() {
+    return getPropertyCallableRef('shape', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_shape_iyi9a0_k$();
+    }, function (receiver, value) {
+      return receiver.set_shape_i86x7h_k$(value);
+    });
+  }
+  function centered$factory_0() {
+    return getPropertyCallableRef('centered', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_centered_p4nzb1_k$();
+    }, function (receiver, value) {
+      return receiver.set_centered_ahf858_k$(value);
+    });
+  }
+  function centered$factory_1() {
+    return getPropertyCallableRef('centered', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_centered_p4nzb1_k$();
+    }, function (receiver, value) {
+      return receiver.set_centered_ahf858_k$(value);
+    });
+  }
   var InputType_TEXT_instance;
   var InputType_PASSWORD_instance;
   var InputType_EMAIL_instance;
@@ -16605,10 +16927,10 @@
   var InputType_SUBMIT_instance;
   var InputType_TIME_instance;
   var InputType_WEEK_instance;
-  function values_53() {
+  function values_54() {
     return [InputType_TEXT_getInstance(), InputType_PASSWORD_getInstance(), InputType_EMAIL_getInstance(), InputType_TEL_getInstance(), InputType_COLOR_getInstance(), InputType_SEARCH_getInstance(), InputType_URL_getInstance(), InputType_HIDDEN_getInstance(), InputType_BUTTON_getInstance(), InputType_CHECKBOX_getInstance(), InputType_DATE_getInstance(), InputType_DATETIME_LOCAL_getInstance(), InputType_FILE_getInstance(), InputType_IMAGE_getInstance(), InputType_MONTH_getInstance(), InputType_NUMBER_getInstance(), InputType_RADIO_getInstance(), InputType_RANGE_getInstance(), InputType_RESET_getInstance(), InputType_SUBMIT_getInstance(), InputType_TIME_getInstance(), InputType_WEEK_getInstance()];
   }
-  function valueOf_53(value) {
+  function valueOf_54(value) {
     switch (value) {
       case 'TEXT':
         return InputType_TEXT_getInstance();
@@ -16660,10 +16982,10 @@
         break;
     }
   }
-  function get_entries_53() {
-    if ($ENTRIES_53 == null)
-      $ENTRIES_53 = enumEntries(values_53());
-    return $ENTRIES_53;
+  function get_entries_54() {
+    if ($ENTRIES_54 == null)
+      $ENTRIES_54 = enumEntries(values_54());
+    return $ENTRIES_54;
   }
   var InputType_entriesInitialized;
   function InputType_initEntries() {
@@ -16693,7 +17015,7 @@
     InputType_TIME_instance = new InputType('TIME', 20, 'time');
     InputType_WEEK_instance = new InputType('WEEK', 21, 'week');
   }
-  var $ENTRIES_53;
+  var $ENTRIES_54;
   function InputType(name, ordinal, type) {
     Enum.call(this, name, ordinal);
     this.type_1 = type;
@@ -16747,10 +17069,10 @@
   var Autocomplete_SEX_instance;
   var Autocomplete_URL_instance;
   var Autocomplete_PHOTO_instance;
-  function values_54() {
+  function values_55() {
     return [Autocomplete_OFF_getInstance(), Autocomplete_ON_getInstance(), Autocomplete_NAME_getInstance(), Autocomplete_HONORIFIC_PREFIX_getInstance(), Autocomplete_GIVEN_NAME_getInstance(), Autocomplete_ADDITIONAL_NAME_getInstance(), Autocomplete_FAMILY_NAME_getInstance(), Autocomplete_HONORIFIC_SUFFIX_getInstance(), Autocomplete_NICKNAME_getInstance(), Autocomplete_USERNAME_getInstance(), Autocomplete_NEW_PASSWORD_getInstance(), Autocomplete_CURRENT_PASSWORD_getInstance(), Autocomplete_ONE_TIME_CODE_getInstance(), Autocomplete_ORGANIZATION_TITLE_getInstance(), Autocomplete_ORGANIZATION_getInstance(), Autocomplete_STREET_ADDRESS_getInstance(), Autocomplete_ADDRESS_LINE1_getInstance(), Autocomplete_ADDRESS_LINE2_getInstance(), Autocomplete_ADDRESS_LINE3_getInstance(), Autocomplete_ADDRESS_LEVEL4_getInstance(), Autocomplete_ADDRESS_LEVEL3_getInstance(), Autocomplete_ADDRESS_LEVEL2_getInstance(), Autocomplete_ADDRESS_LEVEL1_getInstance(), Autocomplete_COUNTRY_getInstance(), Autocomplete_COUNTRY_NAME_getInstance(), Autocomplete_POSTAL_CODE_getInstance(), Autocomplete_CC_NAME_getInstance(), Autocomplete_CC_GIVEN_NAME_getInstance(), Autocomplete_CC_ADDITIONAL_NAME_getInstance(), Autocomplete_CC_FAMILY_NAME_getInstance(), Autocomplete_CC_NUMBER_getInstance(), Autocomplete_CC_EXP_getInstance(), Autocomplete_CC_EXP_MONTH_getInstance(), Autocomplete_CC_EXP_YEAR_getInstance(), Autocomplete_CC_CSC_getInstance(), Autocomplete_CC_TYPE_getInstance(), Autocomplete_TRANSACTION_CURRENCY_getInstance(), Autocomplete_TRANSACTION_AMOUNT_getInstance(), Autocomplete_LANGUAGE_getInstance(), Autocomplete_BDAY_getInstance(), Autocomplete_BDAY_DAY_getInstance(), Autocomplete_BDAY_MONTH_getInstance(), Autocomplete_BDAY_YEAR_getInstance(), Autocomplete_SEX_getInstance(), Autocomplete_URL_getInstance(), Autocomplete_PHOTO_getInstance()];
   }
-  function valueOf_54(value) {
+  function valueOf_55(value) {
     switch (value) {
       case 'OFF':
         return Autocomplete_OFF_getInstance();
@@ -16850,10 +17172,10 @@
         break;
     }
   }
-  function get_entries_54() {
-    if ($ENTRIES_54 == null)
-      $ENTRIES_54 = enumEntries(values_54());
-    return $ENTRIES_54;
+  function get_entries_55() {
+    if ($ENTRIES_55 == null)
+      $ENTRIES_55 = enumEntries(values_55());
+    return $ENTRIES_55;
   }
   var Autocomplete_entriesInitialized;
   function Autocomplete_initEntries() {
@@ -16907,7 +17229,7 @@
     Autocomplete_URL_instance = new Autocomplete('URL', 44, 'url');
     Autocomplete_PHOTO_instance = new Autocomplete('PHOTO', 45, 'photo');
   }
-  var $ENTRIES_54;
+  var $ENTRIES_55;
   function Autocomplete(name, ordinal, type) {
     Enum.call(this, name, ordinal);
     this.type_1 = type;
@@ -17723,10 +18045,10 @@
   var TAG_VAR_instance;
   var TAG_VIDEO_instance;
   var TAG_WBR_instance;
-  function values_55() {
+  function values_56() {
     return [TAG_A_getInstance(), TAG_ABBR_getInstance(), TAG_ADDRESS_getInstance(), TAG_AREA_getInstance(), TAG_ARTICLE_getInstance(), TAG_ASIDE_getInstance(), TAG_AUDIO_getInstance(), TAG_B_getInstance(), TAG_BASE_getInstance(), TAG_BDI_getInstance(), TAG_BDO_getInstance(), TAG_BLOCKQUOTE_getInstance(), TAG_BODY_getInstance(), TAG_BR_getInstance(), TAG_BUTTON_getInstance(), TAG_CANVAS_getInstance(), TAG_CAPTION_getInstance(), TAG_CITE_getInstance(), TAG_CODE_getInstance(), TAG_COL_getInstance(), TAG_COLGROUP_getInstance(), TAG_DATA_getInstance(), TAG_DATALIST_getInstance(), TAG_DD_getInstance(), TAG_DEL_getInstance(), TAG_DETAILS_getInstance(), TAG_DFN_getInstance(), TAG_DIALOG_getInstance(), TAG_DIV_getInstance(), TAG_DL_getInstance(), TAG_DT_getInstance(), TAG_EM_getInstance(), TAG_EMBED_getInstance(), TAG_FIELDSET_getInstance(), TAG_FIGCAPTION_getInstance(), TAG_FIGURE_getInstance(), TAG_FOOTER_getInstance(), TAG_FORM_getInstance(), TAG_H1_getInstance(), TAG_H2_getInstance(), TAG_H3_getInstance(), TAG_H4_getInstance(), TAG_H5_getInstance(), TAG_H6_getInstance(), TAG_HEAD_getInstance(), TAG_HEADER_getInstance(), TAG_HGROUP_getInstance(), TAG_HR_getInstance(), TAG_HTML_getInstance(), TAG_I_getInstance(), TAG_IFRAME_getInstance(), TAG_IMG_getInstance(), TAG_INPUT_getInstance(), TAG_INS_getInstance(), TAG_KBD_getInstance(), TAG_LABEL_getInstance(), TAG_LEGEND_getInstance(), TAG_LI_getInstance(), TAG_LINK_getInstance(), TAG_MAIN_getInstance(), TAG_MAP_getInstance(), TAG_MARK_getInstance(), TAG_MATH_getInstance(), TAG_MENU_getInstance(), TAG_MENUITEM_getInstance(), TAG_META_getInstance(), TAG_METER_getInstance(), TAG_NAV_getInstance(), TAG_NOSCRIPT_getInstance(), TAG_OBJECT_getInstance(), TAG_OL_getInstance(), TAG_OPTGROUP_getInstance(), TAG_OPTION_getInstance(), TAG_OUTPUT_getInstance(), TAG_P_getInstance(), TAG_PARAM_getInstance(), TAG_PICTURE_getInstance(), TAG_PRE_getInstance(), TAG_PROGRESS_getInstance(), TAG_Q_getInstance(), TAG_RB_getInstance(), TAG_RP_getInstance(), TAG_RT_getInstance(), TAG_RTC_getInstance(), TAG_RUBY_getInstance(), TAG_S_getInstance(), TAG_SAMP_getInstance(), TAG_SCRIPT_getInstance(), TAG_SECTION_getInstance(), TAG_SELECT_getInstance(), TAG_SLOT_getInstance(), TAG_SMALL_getInstance(), TAG_SOURCE_getInstance(), TAG_SPAN_getInstance(), TAG_STRONG_getInstance(), TAG_STYLE_getInstance(), TAG_SUB_getInstance(), TAG_SUMMARY_getInstance(), TAG_SUP_getInstance(), TAG_SVG_getInstance(), TAG_TABLE_getInstance(), TAG_TBODY_getInstance(), TAG_TD_getInstance(), TAG_TEMPLATE_getInstance(), TAG_TEXTAREA_getInstance(), TAG_TFOOT_getInstance(), TAG_TH_getInstance(), TAG_THEAD_getInstance(), TAG_TIME_getInstance(), TAG_TITLE_getInstance(), TAG_TR_getInstance(), TAG_TRACK_getInstance(), TAG_U_getInstance(), TAG_UL_getInstance(), TAG_VAR_getInstance(), TAG_VIDEO_getInstance(), TAG_WBR_getInstance()];
   }
-  function valueOf_55(value) {
+  function valueOf_56(value) {
     switch (value) {
       case 'A':
         return TAG_A_getInstance();
@@ -17968,10 +18290,10 @@
         break;
     }
   }
-  function get_entries_55() {
-    if ($ENTRIES_55 == null)
-      $ENTRIES_55 = enumEntries(values_55());
-    return $ENTRIES_55;
+  function get_entries_56() {
+    if ($ENTRIES_56 == null)
+      $ENTRIES_56 = enumEntries(values_56());
+    return $ENTRIES_56;
   }
   var TAG_entriesInitialized;
   function TAG_initEntries() {
@@ -18096,7 +18418,7 @@
     TAG_VIDEO_instance = new TAG('VIDEO', 115, 'video');
     TAG_WBR_instance = new TAG('WBR', 116, 'wbr');
   }
-  var $ENTRIES_55;
+  var $ENTRIES_56;
   function TAG(name, ordinal, tagName) {
     Enum.call(this, name, ordinal);
     this.tagName_1 = tagName;
@@ -18112,10 +18434,10 @@
   var Align_WRAP_instance;
   var Align_NOWRAP_instance;
   var Align_JUSTIFY_instance;
-  function values_56() {
+  function values_57() {
     return [Align_LEFT_getInstance(), Align_START_getInstance(), Align_CENTER_getInstance(), Align_RIGHT_getInstance(), Align_END_getInstance(), Align_WRAP_getInstance(), Align_NOWRAP_getInstance(), Align_JUSTIFY_getInstance()];
   }
-  function valueOf_56(value) {
+  function valueOf_57(value) {
     switch (value) {
       case 'LEFT':
         return Align_LEFT_getInstance();
@@ -18139,10 +18461,10 @@
         break;
     }
   }
-  function get_entries_56() {
-    if ($ENTRIES_56 == null)
-      $ENTRIES_56 = enumEntries(values_56());
-    return $ENTRIES_56;
+  function get_entries_57() {
+    if ($ENTRIES_57 == null)
+      $ENTRIES_57 = enumEntries(values_57());
+    return $ENTRIES_57;
   }
   var Align_entriesInitialized;
   function Align_initEntries() {
@@ -18158,7 +18480,7 @@
     Align_NOWRAP_instance = new Align('NOWRAP', 6, 'kv-text-nowrap');
     Align_JUSTIFY_instance = new Align('JUSTIFY', 7, 'kv-text-justify');
   }
-  var $ENTRIES_56;
+  var $ENTRIES_57;
   function Align(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -19792,6 +20114,484 @@
       return receiver.set_spacing_60vowb_k$(value);
     });
   }
+  function _get_useWrappers__qfktpy_0($this) {
+    return $this.useWrappers_1;
+  }
+  function GridPanel$options$1(this$0, $columnStart, $rowStart, $columnEnd, $rowEnd, $area, $justifySelf, $alignSelf, $className) {
+    this.this$0__1 = this$0;
+    this.$columnStart_1 = $columnStart;
+    this.$rowStart_1 = $rowStart;
+    this.$columnEnd_1 = $columnEnd;
+    this.$rowEnd_1 = $rowEnd;
+    this.$area_1 = $area;
+    this.$justifySelf_1 = $justifySelf;
+    this.$alignSelf_1 = $alignSelf;
+    this.$className_1 = $className;
+    this.$$delegate_0__1 = this$0;
+  }
+  protoOf(GridPanel$options$1).add_rekwpt_k$ = function (child) {
+    this.this$0__1.add_ha8v7p_k$(child, this.$columnStart_1, this.$rowStart_1, this.$columnEnd_1, this.$rowEnd_1, this.$area_1, this.$justifySelf_1, this.$alignSelf_1, this.$className_1);
+  };
+  protoOf(GridPanel$options$1).add_t9z7x3_k$ = function (position, child) {
+    this.$$delegate_0__1.add_t9z7x3_k$(position, child);
+  };
+  protoOf(GridPanel$options$1).addAll_a94ixq_k$ = function (children) {
+    this.$$delegate_0__1.addAll_a94ixq_k$(children);
+  };
+  protoOf(GridPanel$options$1).invoke_hkydh0_k$ = function (children) {
+    this.$$delegate_0__1.invoke_hkydh0_k$(children);
+  };
+  protoOf(GridPanel$options$1).remove_j7k0x0_k$ = function (child) {
+    this.$$delegate_0__1.remove_j7k0x0_k$(child);
+  };
+  protoOf(GridPanel$options$1).removeAt_rql1ap_k$ = function (position) {
+    this.$$delegate_0__1.removeAt_rql1ap_k$(position);
+  };
+  protoOf(GridPanel$options$1).removeAll_c84dd9_k$ = function () {
+    this.$$delegate_0__1.removeAll_c84dd9_k$();
+  };
+  protoOf(GridPanel$options$1).disposeAll_hpz7bi_k$ = function () {
+    this.$$delegate_0__1.disposeAll_hpz7bi_k$();
+  };
+  protoOf(GridPanel$options$1).getChildren_97y0zv_k$ = function () {
+    return this.$$delegate_0__1.getChildren_97y0zv_k$();
+  };
+  protoOf(GridPanel$options$1).unaryPlus_76unot_k$ = function (_this__u8e3s4) {
+    this.$$delegate_0__1.unaryPlus_76unot_k$(_this__u8e3s4);
+  };
+  protoOf(GridPanel$options$1).set_parent_58bm75_k$ = function (_set____db54di) {
+    this.$$delegate_0__1.set_parent_58bm75_k$(_set____db54di);
+  };
+  protoOf(GridPanel$options$1).get_parent_hy4reb_k$ = function () {
+    return this.$$delegate_0__1.get_parent_hy4reb_k$();
+  };
+  protoOf(GridPanel$options$1).set_visible_w9mvj4_k$ = function (_set____db54di) {
+    this.$$delegate_0__1.set_visible_w9mvj4_k$(_set____db54di);
+  };
+  protoOf(GridPanel$options$1).get_visible_8zfvk9_k$ = function () {
+    return this.$$delegate_0__1.get_visible_8zfvk9_k$();
+  };
+  protoOf(GridPanel$options$1).addCssClass_ul13bg_k$ = function (css) {
+    this.$$delegate_0__1.addCssClass_ul13bg_k$(css);
+  };
+  protoOf(GridPanel$options$1).addCssStyle_4edidd_k$ = function (css) {
+    this.$$delegate_0__1.addCssStyle_4edidd_k$(css);
+  };
+  protoOf(GridPanel$options$1).removeCssClass_3dntip_k$ = function (css) {
+    this.$$delegate_0__1.removeCssClass_3dntip_k$(css);
+  };
+  protoOf(GridPanel$options$1).hasCssClass_hvhhyj_k$ = function (css) {
+    return this.$$delegate_0__1.hasCssClass_hvhhyj_k$(css);
+  };
+  protoOf(GridPanel$options$1).removeCssStyle_l44kc_k$ = function (css) {
+    this.$$delegate_0__1.removeCssStyle_l44kc_k$(css);
+  };
+  protoOf(GridPanel$options$1).addSurroundingCssClass_h2gyzy_k$ = function (css) {
+    this.$$delegate_0__1.addSurroundingCssClass_h2gyzy_k$(css);
+  };
+  protoOf(GridPanel$options$1).addSurroundingCssStyle_pgxj1f_k$ = function (css) {
+    this.$$delegate_0__1.addSurroundingCssStyle_pgxj1f_k$(css);
+  };
+  protoOf(GridPanel$options$1).removeSurroundingCssClass_at56kr_k$ = function (css) {
+    this.$$delegate_0__1.removeSurroundingCssClass_at56kr_k$(css);
+  };
+  protoOf(GridPanel$options$1).removeSurroundingCssStyle_asoqhs_k$ = function (css) {
+    this.$$delegate_0__1.removeSurroundingCssStyle_asoqhs_k$(css);
+  };
+  protoOf(GridPanel$options$1).getAttribute_z2kbho_k$ = function (name) {
+    return this.$$delegate_0__1.getAttribute_z2kbho_k$(name);
+  };
+  protoOf(GridPanel$options$1).setAttribute_gbqua2_k$ = function (name, value) {
+    this.$$delegate_0__1.setAttribute_gbqua2_k$(name, value);
+  };
+  protoOf(GridPanel$options$1).removeAttribute_3xc826_k$ = function (name) {
+    this.$$delegate_0__1.removeAttribute_3xc826_k$(name);
+  };
+  protoOf(GridPanel$options$1).renderVNode_r2mn32_k$ = function () {
+    return this.$$delegate_0__1.renderVNode_r2mn32_k$();
+  };
+  protoOf(GridPanel$options$1).getElement_acounu_k$ = function () {
+    return this.$$delegate_0__1.getElement_acounu_k$();
+  };
+  protoOf(GridPanel$options$1).getElementD_y85vem_k$ = function () {
+    return this.$$delegate_0__1.getElementD_y85vem_k$();
+  };
+  protoOf(GridPanel$options$1).clearParent_npr7gn_k$ = function () {
+    this.$$delegate_0__1.clearParent_npr7gn_k$();
+  };
+  protoOf(GridPanel$options$1).getRoot_18r9uw_k$ = function () {
+    return this.$$delegate_0__1.getRoot_18r9uw_k$();
+  };
+  protoOf(GridPanel$options$1).dispose_3nnxhr_k$ = function () {
+    this.$$delegate_0__1.dispose_3nnxhr_k$();
+  };
+  protoOf(GridPanel$options$1).focus_of07w8_k$ = function () {
+    this.$$delegate_0__1.focus_of07w8_k$();
+  };
+  protoOf(GridPanel$options$1).blur_exr7u1_k$ = function () {
+    this.$$delegate_0__1.blur_exr7u1_k$();
+  };
+  protoOf(GridPanel$options$1).addAfterCreateHook_jnuj9o_k$ = function (hook) {
+    return this.$$delegate_0__1.addAfterCreateHook_jnuj9o_k$(hook);
+  };
+  protoOf(GridPanel$options$1).removeAfterCreateHook_911psh_k$ = function (hook) {
+    return this.$$delegate_0__1.removeAfterCreateHook_911psh_k$(hook);
+  };
+  protoOf(GridPanel$options$1).clearAfterCreateHooks_xde985_k$ = function () {
+    this.$$delegate_0__1.clearAfterCreateHooks_xde985_k$();
+  };
+  protoOf(GridPanel$options$1).addAfterInsertHook_s83sk1_k$ = function (hook) {
+    return this.$$delegate_0__1.addAfterInsertHook_s83sk1_k$(hook);
+  };
+  protoOf(GridPanel$options$1).removeAfterInsertHook_e440cy_k$ = function (hook) {
+    return this.$$delegate_0__1.removeAfterInsertHook_e440cy_k$(hook);
+  };
+  protoOf(GridPanel$options$1).clearAfterInsertHooks_i07bfc_k$ = function () {
+    this.$$delegate_0__1.clearAfterInsertHooks_i07bfc_k$();
+  };
+  protoOf(GridPanel$options$1).addAfterDestroyHook_7cqxpi_k$ = function (hook) {
+    return this.$$delegate_0__1.addAfterDestroyHook_7cqxpi_k$(hook);
+  };
+  protoOf(GridPanel$options$1).removeAfterDestroyHook_8vfkv1_k$ = function (hook) {
+    return this.$$delegate_0__1.removeAfterDestroyHook_8vfkv1_k$(hook);
+  };
+  protoOf(GridPanel$options$1).clearAfterDestroyHooks_h7xzgr_k$ = function () {
+    this.$$delegate_0__1.clearAfterDestroyHooks_h7xzgr_k$();
+  };
+  protoOf(GridPanel$options$1).addBeforeDisposeHook_g5p0gq_k$ = function (hook) {
+    return this.$$delegate_0__1.addBeforeDisposeHook_g5p0gq_k$(hook);
+  };
+  protoOf(GridPanel$options$1).removeBeforeDisposeHook_lzimbb_k$ = function (hook) {
+    return this.$$delegate_0__1.removeBeforeDisposeHook_lzimbb_k$(hook);
+  };
+  protoOf(GridPanel$options$1).clearBeforeDisposeHooks_mx3cfn_k$ = function () {
+    this.$$delegate_0__1.clearBeforeDisposeHooks_mx3cfn_k$();
+  };
+  protoOf(GridPanel$options$1).singleRender_ca7nu0_k$ = function (block) {
+    return this.$$delegate_0__1.singleRender_ca7nu0_k$(block);
+  };
+  protoOf(GridPanel$options$1).singleRenderAsync_haca86_k$ = function (block) {
+    this.$$delegate_0__1.singleRenderAsync_haca86_k$(block);
+  };
+  function GridPanel$addAll$lambda($children, this$0) {
+    return function () {
+      var _iterator__ex2g4s = $children.iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var element = _iterator__ex2g4s.next_20eer_k$();
+        // Inline function 'io.kvision.panel.GridPanel.addAll.<anonymous>.<anonymous>' call
+        this$0.add$default_nbz148_k$(element, null, null);
+      }
+      return Unit_getInstance();
+    };
+  }
+  function GridPanel(autoColumns, autoRows, autoFlow, templateColumns, templateRows, templateAreas, columnGap, rowGap, justifyItems, alignItems, justifyContent, alignContent, useWrappers, className, init) {
+    autoColumns = autoColumns === VOID ? null : autoColumns;
+    autoRows = autoRows === VOID ? null : autoRows;
+    autoFlow = autoFlow === VOID ? null : autoFlow;
+    templateColumns = templateColumns === VOID ? null : templateColumns;
+    templateRows = templateRows === VOID ? null : templateRows;
+    templateAreas = templateAreas === VOID ? null : templateAreas;
+    columnGap = columnGap === VOID ? null : columnGap;
+    rowGap = rowGap === VOID ? null : rowGap;
+    justifyItems = justifyItems === VOID ? null : justifyItems;
+    alignItems = alignItems === VOID ? null : alignItems;
+    justifyContent = justifyContent === VOID ? null : justifyContent;
+    alignContent = alignContent === VOID ? null : alignContent;
+    useWrappers = useWrappers === VOID ? false : useWrappers;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    SimplePanel.call(this, className);
+    this.useWrappers_1 = useWrappers;
+    this.set_display_2qo1ly_k$(Display_GRID_getInstance());
+    this.set_gridAutoColumns_byrs18_k$(autoColumns);
+    this.set_gridAutoRows_d10kgc_k$(autoRows);
+    this.set_gridAutoFlow_6hmum7_k$(autoFlow);
+    this.set_gridTemplateColumns_1zexbd_k$(templateColumns);
+    this.set_gridTemplateRows_l4bmtd_k$(templateRows);
+    this.set_gridTemplateAreas_pc9px2_k$(templateAreas);
+    this.set_gridColumnGap_lgxj26_k$(columnGap);
+    this.set_gridRowGap_s61lus_k$(rowGap);
+    this.set_justifyItems_5m2jf8_k$(justifyItems);
+    this.set_alignItems_2x4ueh_k$(alignItems);
+    this.set_justifyContent_920yxn_k$(justifyContent);
+    this.set_alignContent_faycwg_k$(alignContent);
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(GridPanel).add_ha8v7p_k$ = function (child, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className) {
+    var tmp;
+    if (!this.useWrappers_1) {
+      tmp = child;
+    } else {
+      tmp = new WidgetWrapper(child, className);
+    }
+    var wrapper = tmp;
+    var tmp0_safe_receiver = wrapper instanceof Widget ? wrapper : null;
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.panel.GridPanel.add.<anonymous>' call
+      tmp0_safe_receiver.set_gridColumnStart_na6msy_k$(columnStart);
+      tmp0_safe_receiver.set_gridRowStart_hb6r74_k$(rowStart);
+      tmp0_safe_receiver.set_gridColumnEnd_5jev79_k$(columnEnd);
+      tmp0_safe_receiver.set_gridRowEnd_rcwd03_k$(rowEnd);
+      tmp0_safe_receiver.set_gridArea_cwqvqf_k$(area);
+      tmp0_safe_receiver.set_justifySelf_nht07u_k$(justifySelf);
+      tmp0_safe_receiver.set_alignSelf_g8okn9_k$(alignSelf);
+    }
+    this.addInternal_sa14da_k$(wrapper);
+  };
+  protoOf(GridPanel).add$default_nbz148_k$ = function (child, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className, $super) {
+    columnStart = columnStart === VOID ? null : columnStart;
+    rowStart = rowStart === VOID ? null : rowStart;
+    columnEnd = columnEnd === VOID ? null : columnEnd;
+    rowEnd = rowEnd === VOID ? null : rowEnd;
+    area = area === VOID ? null : area;
+    justifySelf = justifySelf === VOID ? null : justifySelf;
+    alignSelf = alignSelf === VOID ? null : alignSelf;
+    className = className === VOID ? null : className;
+    var tmp;
+    if ($super === VOID) {
+      this.add_ha8v7p_k$(child, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className);
+      tmp = Unit_getInstance();
+    } else {
+      tmp = $super.add_ha8v7p_k$.call(this, child, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className);
+    }
+    return tmp;
+  };
+  protoOf(GridPanel).add_1gyey9_k$ = function (position, child, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className) {
+    var tmp;
+    if (!this.useWrappers_1) {
+      tmp = child;
+    } else {
+      tmp = new WidgetWrapper(child, className);
+    }
+    var wrapper = tmp;
+    var tmp0_safe_receiver = wrapper instanceof Widget ? wrapper : null;
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.panel.GridPanel.add.<anonymous>' call
+      tmp0_safe_receiver.set_gridColumnStart_na6msy_k$(columnStart);
+      tmp0_safe_receiver.set_gridRowStart_hb6r74_k$(rowStart);
+      tmp0_safe_receiver.set_gridColumnEnd_5jev79_k$(columnEnd);
+      tmp0_safe_receiver.set_gridRowEnd_rcwd03_k$(rowEnd);
+      tmp0_safe_receiver.set_gridArea_cwqvqf_k$(area);
+      tmp0_safe_receiver.set_justifySelf_nht07u_k$(justifySelf);
+      tmp0_safe_receiver.set_alignSelf_g8okn9_k$(alignSelf);
+    }
+    this.addInternal_9c012y_k$(position, wrapper);
+  };
+  protoOf(GridPanel).add$default_4k3wjo_k$ = function (position, child, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className, $super) {
+    columnStart = columnStart === VOID ? null : columnStart;
+    rowStart = rowStart === VOID ? null : rowStart;
+    columnEnd = columnEnd === VOID ? null : columnEnd;
+    rowEnd = rowEnd === VOID ? null : rowEnd;
+    area = area === VOID ? null : area;
+    justifySelf = justifySelf === VOID ? null : justifySelf;
+    alignSelf = alignSelf === VOID ? null : alignSelf;
+    className = className === VOID ? null : className;
+    var tmp;
+    if ($super === VOID) {
+      this.add_1gyey9_k$(position, child, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className);
+      tmp = Unit_getInstance();
+    } else {
+      tmp = $super.add_1gyey9_k$.call(this, position, child, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className);
+    }
+    return tmp;
+  };
+  protoOf(GridPanel).options_jf7pnj_k$ = function (columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className, builder) {
+    builder(new GridPanel$options$1(this, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className));
+  };
+  protoOf(GridPanel).options$default_3qy5yi_k$ = function (columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className, builder, $super) {
+    columnStart = columnStart === VOID ? null : columnStart;
+    rowStart = rowStart === VOID ? null : rowStart;
+    columnEnd = columnEnd === VOID ? null : columnEnd;
+    rowEnd = rowEnd === VOID ? null : rowEnd;
+    area = area === VOID ? null : area;
+    justifySelf = justifySelf === VOID ? null : justifySelf;
+    alignSelf = alignSelf === VOID ? null : alignSelf;
+    className = className === VOID ? null : className;
+    var tmp;
+    if ($super === VOID) {
+      this.options_jf7pnj_k$(columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className, builder);
+      tmp = Unit_getInstance();
+    } else {
+      tmp = $super.options_jf7pnj_k$.call(this, columnStart, rowStart, columnEnd, rowEnd, area, justifySelf, alignSelf, className, builder);
+    }
+    return tmp;
+  };
+  protoOf(GridPanel).add_rekwpt_k$ = function (child) {
+    this.add$default_nbz148_k$(child, null, null);
+  };
+  protoOf(GridPanel).add_t9z7x3_k$ = function (position, child) {
+    this.add$default_4k3wjo_k$(position, child, null, null);
+  };
+  protoOf(GridPanel).addAll_a94ixq_k$ = function (children) {
+    this.singleRender_ca7nu0_k$(GridPanel$addAll$lambda(children, this));
+  };
+  protoOf(GridPanel).remove_j7k0x0_k$ = function (child) {
+    if (!(this.get_children_4cwbp4_k$() == null)) {
+      if (ensureNotNull(this.get_children_4cwbp4_k$()).contains_aljjnj_k$(child)) {
+        protoOf(SimplePanel).remove_j7k0x0_k$.call(this, child);
+      } else {
+        // Inline function 'kotlin.collections.find' call
+        var tmp0 = ensureNotNull(this.get_children_4cwbp4_k$());
+        var tmp$ret$1;
+        $l$block: {
+          // Inline function 'kotlin.collections.firstOrNull' call
+          var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
+          while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+            var element = _iterator__ex2g4s.next_20eer_k$();
+            // Inline function 'io.kvision.panel.GridPanel.remove.<anonymous>' call
+            var tmp0_safe_receiver = element instanceof WidgetWrapper ? element : null;
+            if (equals(tmp0_safe_receiver == null ? null : tmp0_safe_receiver.get_wrapped_64pp2p_k$(), child)) {
+              tmp$ret$1 = element;
+              break $l$block;
+            }
+          }
+          tmp$ret$1 = null;
+        }
+        var tmp0_safe_receiver_0 = tmp$ret$1;
+        if (tmp0_safe_receiver_0 == null)
+          null;
+        else {
+          // Inline function 'kotlin.let' call
+          // Inline function 'io.kvision.panel.GridPanel.remove.<anonymous>' call
+          protoOf(SimplePanel).remove_j7k0x0_k$.call(this, tmp0_safe_receiver_0);
+          tmp0_safe_receiver_0.dispose_3nnxhr_k$();
+        }
+      }
+    }
+  };
+  protoOf(GridPanel).removeAll_c84dd9_k$ = function () {
+    var tmp0_safe_receiver = this.get_children_4cwbp4_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.collections.map' call
+      // Inline function 'kotlin.collections.mapTo' call
+      var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(tmp0_safe_receiver, 10));
+      var _iterator__ex2g4s = tmp0_safe_receiver.iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var item = _iterator__ex2g4s.next_20eer_k$();
+        // Inline function 'io.kvision.panel.GridPanel.removeAll.<anonymous>' call
+        item.clearParent_npr7gn_k$();
+        var tmp0_safe_receiver_0 = item instanceof WidgetWrapper ? item : null;
+        var tmp;
+        if (tmp0_safe_receiver_0 == null) {
+          tmp = null;
+        } else {
+          tmp0_safe_receiver_0.dispose_3nnxhr_k$();
+          tmp = Unit_getInstance();
+        }
+        var tmp$ret$0 = tmp;
+        destination.add_utx5q5_k$(tmp$ret$0);
+      }
+    }
+    var tmp1_safe_receiver = this.get_children_4cwbp4_k$();
+    if (tmp1_safe_receiver == null)
+      null;
+    else {
+      tmp1_safe_receiver.clear_j9egeb_k$();
+    }
+    this.set_children_3shjjk_k$(null);
+    this.refresh_6a3uvf_k$();
+  };
+  protoOf(GridPanel).disposeAll_hpz7bi_k$ = function () {
+    var tmp0_safe_receiver = this.get_children_4cwbp4_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.collections.map' call
+      // Inline function 'kotlin.collections.mapTo' call
+      var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(tmp0_safe_receiver, 10));
+      var _iterator__ex2g4s = tmp0_safe_receiver.iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var item = _iterator__ex2g4s.next_20eer_k$();
+        // Inline function 'io.kvision.panel.GridPanel.disposeAll.<anonymous>' call
+        var tmp0_safe_receiver_0 = item instanceof WidgetWrapper ? item : null;
+        var tmp;
+        if (tmp0_safe_receiver_0 == null) {
+          tmp = null;
+        } else {
+          // Inline function 'kotlin.let' call
+          // Inline function 'io.kvision.panel.GridPanel.disposeAll.<anonymous>.<anonymous>' call
+          var tmp0_safe_receiver_1 = tmp0_safe_receiver_0.get_wrapped_64pp2p_k$();
+          var tmp_0;
+          if (tmp0_safe_receiver_1 == null) {
+            tmp_0 = null;
+          } else {
+            tmp0_safe_receiver_1.dispose_3nnxhr_k$();
+            tmp_0 = Unit_getInstance();
+          }
+          tmp = tmp_0;
+        }
+        var tmp$ret$2 = tmp;
+        destination.add_utx5q5_k$(tmp$ret$2);
+      }
+    }
+    this.removeAll_c84dd9_k$();
+  };
+  protoOf(GridPanel).dispose_3nnxhr_k$ = function () {
+    var tmp0_safe_receiver = this.get_children_4cwbp4_k$();
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.collections.map' call
+      // Inline function 'kotlin.collections.mapTo' call
+      var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(tmp0_safe_receiver, 10));
+      var _iterator__ex2g4s = tmp0_safe_receiver.iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var item = _iterator__ex2g4s.next_20eer_k$();
+        // Inline function 'io.kvision.panel.GridPanel.dispose.<anonymous>' call
+        var tmp0_safe_receiver_0 = item instanceof WidgetWrapper ? item : null;
+        var tmp;
+        if (tmp0_safe_receiver_0 == null) {
+          tmp = null;
+        } else {
+          // Inline function 'kotlin.let' call
+          // Inline function 'io.kvision.panel.GridPanel.dispose.<anonymous>.<anonymous>' call
+          var tmp0_safe_receiver_1 = tmp0_safe_receiver_0.get_wrapped_64pp2p_k$();
+          var tmp_0;
+          if (tmp0_safe_receiver_1 == null) {
+            tmp_0 = null;
+          } else {
+            tmp0_safe_receiver_1.dispose_3nnxhr_k$();
+            tmp_0 = Unit_getInstance();
+          }
+          tmp = tmp_0;
+        }
+        var tmp$ret$2 = tmp;
+        destination.add_utx5q5_k$(tmp$ret$2);
+      }
+    }
+    protoOf(SimplePanel).dispose_3nnxhr_k$.call(this);
+  };
+  function gridPanel(_this__u8e3s4, autoColumns, autoRows, autoFlow, templateColumns, templateRows, templateAreas, columnGap, rowGap, justifyItems, alignItems, justifyContent, alignContent, useWrappers, className, init) {
+    autoColumns = autoColumns === VOID ? null : autoColumns;
+    autoRows = autoRows === VOID ? null : autoRows;
+    autoFlow = autoFlow === VOID ? null : autoFlow;
+    templateColumns = templateColumns === VOID ? null : templateColumns;
+    templateRows = templateRows === VOID ? null : templateRows;
+    templateAreas = templateAreas === VOID ? null : templateAreas;
+    columnGap = columnGap === VOID ? null : columnGap;
+    rowGap = rowGap === VOID ? null : rowGap;
+    justifyItems = justifyItems === VOID ? null : justifyItems;
+    alignItems = alignItems === VOID ? null : alignItems;
+    justifyContent = justifyContent === VOID ? null : justifyContent;
+    alignContent = alignContent === VOID ? null : alignContent;
+    useWrappers = useWrappers === VOID ? false : useWrappers;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var gridPanel = new GridPanel(autoColumns, autoRows, autoFlow, templateColumns, templateRows, templateAreas, columnGap, rowGap, justifyItems, alignItems, justifyContent, alignContent, useWrappers, className, init);
+    _this__u8e3s4.add_rekwpt_k$(gridPanel);
+    return gridPanel;
+  }
   function root(_this__u8e3s4, id, containerType, addRow, init) {
     containerType = containerType === VOID ? ContainerType_NONE_getInstance() : containerType;
     addRow = addRow === VOID ? !containerType.equals(ContainerType_FIXED_getInstance()) && !containerType.equals(ContainerType_NONE_getInstance()) : addRow;
@@ -20345,10 +21145,10 @@
   var ContainerType_LG_instance;
   var ContainerType_XL_instance;
   var ContainerType_XXL_instance;
-  function values_57() {
+  function values_58() {
     return [ContainerType_NONE_getInstance(), ContainerType_FIXED_getInstance(), ContainerType_FLUID_getInstance(), ContainerType_SM_getInstance(), ContainerType_MD_getInstance(), ContainerType_LG_getInstance(), ContainerType_XL_getInstance(), ContainerType_XXL_getInstance()];
   }
-  function valueOf_57(value) {
+  function valueOf_58(value) {
     switch (value) {
       case 'NONE':
         return ContainerType_NONE_getInstance();
@@ -20372,10 +21172,10 @@
         break;
     }
   }
-  function get_entries_57() {
-    if ($ENTRIES_57 == null)
-      $ENTRIES_57 = enumEntries(values_57());
-    return $ENTRIES_57;
+  function get_entries_58() {
+    if ($ENTRIES_58 == null)
+      $ENTRIES_58 = enumEntries(values_58());
+    return $ENTRIES_58;
   }
   var ContainerType_entriesInitialized;
   function ContainerType_initEntries() {
@@ -20391,7 +21191,7 @@
     ContainerType_XL_instance = new ContainerType('XL', 6, 'container-xl');
     ContainerType_XXL_instance = new ContainerType('XXL', 7, 'container-xxl');
   }
-  var $ENTRIES_57;
+  var $ENTRIES_58;
   function ContainerType(name, ordinal, type) {
     Enum.call(this, name, ordinal);
     this.type_1 = type;
@@ -21144,64 +21944,76 @@
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};
-  _.$_$.a = AlignItems_CENTER_getInstance;
-  _.$_$.b = Display_BLOCK_getInstance;
-  _.$_$.c = ButtonStyle_LIGHT_getInstance;
-  _.$_$.d = ButtonStyle_PRIMARY_getInstance;
-  _.$_$.e = ButtonType_BUTTON_getInstance;
-  _.$_$.f = ButtonType_SUBMIT_getInstance;
-  _.$_$.g = TAG_FORM_getInstance;
-  _.$_$.h = TAG_H6_getInstance;
-  _.$_$.i = ContainerType_FLUID_getInstance;
-  _.$_$.j = add$default;
-  _.$_$.k = WidgetRefreshDelegate__getValue_impl_lmjmy2;
-  _.$_$.l = WidgetRefreshDelegate__setValue_impl_8tnbha;
-  _.$_$.m = MaskManager_getInstance;
-  _.$_$.n = I18n_getInstance;
-  _.$_$.o = Companion_getInstance_8;
-  _.$_$.p = RoutingManager_getInstance;
-  _.$_$.q = CoreModule_getInstance;
-  _.$_$.r = addAll;
-  _.$_$.s = add;
-  _.$_$.t = AttributeSetBuilder;
-  _.$_$.u = add_0;
-  _.$_$.v = ClassSetBuilder;
-  _.$_$.w = CssClass;
-  _.$_$.x = DomAttribute;
-  _.$_$.y = RefreshDelegateProvider_0;
-  _.$_$.z = checkBox;
-  _.$_$.a1 = MaskFactory;
-  _.$_$.b1 = MaskOptions;
-  _.$_$.c1 = Mask;
-  _.$_$.d1 = Password;
-  _.$_$.e1 = Text;
-  _.$_$.f1 = text;
-  _.$_$.g1 = FormPanel;
-  _.$_$.h1 = Button;
-  _.$_$.i1 = H3;
-  _.$_$.j1 = Link;
-  _.$_$.k1 = Tag;
-  _.$_$.l1 = button;
-  _.$_$.m1 = h2;
-  _.$_$.n1 = icon;
-  _.$_$.o1 = span;
-  _.$_$.p1 = ntr;
-  _.$_$.q1 = trans_0;
-  _.$_$.r1 = trans;
-  _.$_$.s1 = tr;
-  _.$_$.t1 = I18nManager;
-  _.$_$.u1 = SimplePanel;
-  _.$_$.v1 = VPanel;
-  _.$_$.w1 = root;
-  _.$_$.x1 = vPanel;
-  _.$_$.y1 = KVRouter;
-  _.$_$.z1 = RouterFactory;
-  _.$_$.a2 = get_auto;
-  _.$_$.b2 = get_perc;
-  _.$_$.c2 = get_px;
-  _.$_$.d2 = Application;
-  _.$_$.e2 = ModuleInitializer;
-  _.$_$.f2 = startApplication;
+  _.$_$.a = AlignContent_CENTER_getInstance;
+  _.$_$.b = AlignItems_CENTER_getInstance;
+  _.$_$.c = Col_DARKSLATEGRAY_getInstance;
+  _.$_$.d = Display_BLOCK_getInstance;
+  _.$_$.e = JustifyContent_SPACEBETWEEN_getInstance;
+  _.$_$.f = Overflow_HIDDEN_getInstance;
+  _.$_$.g = TextAlign_CENTER_getInstance;
+  _.$_$.h = TextOverflow_ELLIPSIS_getInstance;
+  _.$_$.i = WhiteSpace_NOWRAP_getInstance;
+  _.$_$.j = ButtonStyle_LIGHT_getInstance;
+  _.$_$.k = ButtonStyle_PRIMARY_getInstance;
+  _.$_$.l = ButtonType_BUTTON_getInstance;
+  _.$_$.m = ButtonType_SUBMIT_getInstance;
+  _.$_$.n = TAG_FORM_getInstance;
+  _.$_$.o = TAG_H6_getInstance;
+  _.$_$.p = ContainerType_FLUID_getInstance;
+  _.$_$.q = add$default;
+  _.$_$.r = WidgetRefreshDelegate__getValue_impl_lmjmy2;
+  _.$_$.s = WidgetRefreshDelegate__setValue_impl_8tnbha;
+  _.$_$.t = Companion_getInstance_0;
+  _.$_$.u = MaskManager_getInstance;
+  _.$_$.v = I18n_getInstance;
+  _.$_$.w = Companion_getInstance_8;
+  _.$_$.x = RoutingManager_getInstance;
+  _.$_$.y = CoreModule_getInstance;
+  _.$_$.z = addAll;
+  _.$_$.a1 = add;
+  _.$_$.b1 = AttributeSetBuilder;
+  _.$_$.c1 = Background;
+  _.$_$.d1 = add_0;
+  _.$_$.e1 = ClassSetBuilder;
+  _.$_$.f1 = CssClass;
+  _.$_$.g1 = DomAttribute;
+  _.$_$.h1 = RefreshDelegateProvider_0;
+  _.$_$.i1 = checkBox;
+  _.$_$.j1 = MaskFactory;
+  _.$_$.k1 = MaskOptions;
+  _.$_$.l1 = Mask;
+  _.$_$.m1 = Password;
+  _.$_$.n1 = Text;
+  _.$_$.o1 = text;
+  _.$_$.p1 = FormPanel;
+  _.$_$.q1 = Button;
+  _.$_$.r1 = H3;
+  _.$_$.s1 = Link;
+  _.$_$.t1 = Tag;
+  _.$_$.u1 = button;
+  _.$_$.v1 = h1;
+  _.$_$.w1 = h2;
+  _.$_$.x1 = icon;
+  _.$_$.y1 = image;
+  _.$_$.z1 = span;
+  _.$_$.a2 = ntr;
+  _.$_$.b2 = trans_0;
+  _.$_$.c2 = trans;
+  _.$_$.d2 = tr;
+  _.$_$.e2 = I18nManager;
+  _.$_$.f2 = SimplePanel;
+  _.$_$.g2 = VPanel;
+  _.$_$.h2 = gridPanel;
+  _.$_$.i2 = root;
+  _.$_$.j2 = vPanel;
+  _.$_$.k2 = KVRouter;
+  _.$_$.l2 = RouterFactory;
+  _.$_$.m2 = get_auto;
+  _.$_$.n2 = get_perc;
+  _.$_$.o2 = get_px;
+  _.$_$.p2 = Application;
+  _.$_$.q2 = ModuleInitializer;
+  _.$_$.r2 = startApplication;
   //endregion
   return _;
 }));

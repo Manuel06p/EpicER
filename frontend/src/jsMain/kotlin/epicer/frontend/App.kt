@@ -2,6 +2,7 @@ package epicer.frontend
 
 import epicer.frontend.views.LoginView
 import epicer.frontend.views.MainView
+import epicer.frontend.views.RecipeView
 import io.kvision.Application
 import io.kvision.CoreModule
 import io.kvision.BootstrapModule
@@ -29,6 +30,7 @@ import io.kvision.require
 import io.kvision.routing.Routing
 import io.kvision.startApplication
 import io.kvision.theme.ThemeManager
+import kotlin.js.RegExp
 
 class App : Application() {
     override fun start() {
@@ -47,16 +49,13 @@ class App : Application() {
         val mainContainer = SimplePanel()
 
         // Initialize Routing with path-based navigation (no hash)
-        val routing = Routing.init()
+        val routing = Routing.init(useHash = true)
 
         root.add(mainContainer)
 
         routing
             .on("/", {
                 root.removeAll()
-                routing.navigate("/main")
-            })
-            .on("/main", {
                 root.removeAll()
                 root.add(MainView(routing))
             })
@@ -64,11 +63,16 @@ class App : Application() {
                 root.removeAll()
                 root.add(LoginView(routing))
             })
+            .on(RegExp("^recipes/(.*)"), { match ->
+                val recipeId = match.data[0]
+                root.removeAll()
+                root.add(RecipeView(routing, recipeId))
+            })
             .on("/dashboard", {
                 root.removeAll()
                 root.add(H3("Welcome to Dashboard!"))
             })
-            .resolve() // Resolves the initial route
+            .resolve()
     }
 }
 

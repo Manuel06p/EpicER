@@ -15,55 +15,56 @@
 }(function (_, kotlin_kotlin, kotlin_io_kvision_kvision) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.eb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.e2;
-  var initMetadataForObject = kotlin_kotlin.$_$.ga;
-  var VOID = kotlin_kotlin.$_$.e;
-  var THROW_IAE = kotlin_kotlin.$_$.qe;
-  var enumEntries = kotlin_kotlin.$_$.h9;
-  var Unit_getInstance = kotlin_kotlin.$_$.b5;
-  var Enum = kotlin_kotlin.$_$.be;
-  var CssClass = kotlin_io_kvision_kvision.$_$.w;
-  var initMetadataForClass = kotlin_kotlin.$_$.ba;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.ca;
-  var SimplePanel = kotlin_io_kvision_kvision.$_$.u1;
-  var Display_BLOCK_getInstance = kotlin_io_kvision_kvision.$_$.b;
-  var get_auto = kotlin_io_kvision_kvision.$_$.a2;
-  var Companion_getInstance = kotlin_io_kvision_kvision.$_$.o;
-  var numberToInt = kotlin_kotlin.$_$.bb;
-  var get_px = kotlin_io_kvision_kvision.$_$.c2;
-  var DomAttribute = kotlin_io_kvision_kvision.$_$.x;
-  var ButtonStyle_PRIMARY_getInstance = kotlin_io_kvision_kvision.$_$.d;
-  var WidgetRefreshDelegate__setValue_impl_8tnbha = kotlin_io_kvision_kvision.$_$.l;
-  var WidgetRefreshDelegate__getValue_impl_lmjmy2 = kotlin_io_kvision_kvision.$_$.k;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.x5;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.j;
-  var Link = kotlin_io_kvision_kvision.$_$.j1;
-  var RefreshDelegateProvider = kotlin_io_kvision_kvision.$_$.y;
-  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.c;
-  var THROW_CCE = kotlin_kotlin.$_$.pe;
-  var KMutableProperty1 = kotlin_kotlin.$_$.sb;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.y9;
-  var add = kotlin_io_kvision_kvision.$_$.u;
-  var ClassSetBuilder = kotlin_io_kvision_kvision.$_$.v;
-  var add$default = kotlin_io_kvision_kvision.$_$.j;
-  var add_0 = kotlin_io_kvision_kvision.$_$.s;
-  var addAll = kotlin_io_kvision_kvision.$_$.r;
-  var AttributeSetBuilder = kotlin_io_kvision_kvision.$_$.t;
-  var Button = kotlin_io_kvision_kvision.$_$.h1;
-  var ButtonType_BUTTON_getInstance = kotlin_io_kvision_kvision.$_$.e;
-  var Tag = kotlin_io_kvision_kvision.$_$.k1;
-  var TAG_H6_getInstance = kotlin_io_kvision_kvision.$_$.h;
-  var TAG_FORM_getInstance = kotlin_io_kvision_kvision.$_$.g;
-  var ContainerType_FLUID_getInstance = kotlin_io_kvision_kvision.$_$.i;
-  var equals = kotlin_kotlin.$_$.v9;
-  var ensureNotNull = kotlin_kotlin.$_$.hf;
-  var span = kotlin_io_kvision_kvision.$_$.o1;
+  var protoOf = kotlin_kotlin.$_$.fb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.q2;
+  var initMetadataForObject = kotlin_kotlin.$_$.ha;
+  var VOID = kotlin_kotlin.$_$.f;
+  var THROW_IAE = kotlin_kotlin.$_$.re;
+  var enumEntries = kotlin_kotlin.$_$.i9;
+  var Unit_getInstance = kotlin_kotlin.$_$.c5;
+  var Enum = kotlin_kotlin.$_$.ce;
+  var CssClass = kotlin_io_kvision_kvision.$_$.f1;
+  var initMetadataForClass = kotlin_kotlin.$_$.ca;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.da;
+  var SimplePanel = kotlin_io_kvision_kvision.$_$.f2;
+  var Display_BLOCK_getInstance = kotlin_io_kvision_kvision.$_$.d;
+  var get_auto = kotlin_io_kvision_kvision.$_$.m2;
+  var Companion_getInstance = kotlin_io_kvision_kvision.$_$.w;
+  var numberToInt = kotlin_kotlin.$_$.cb;
+  var get_px = kotlin_io_kvision_kvision.$_$.o2;
+  var DomAttribute = kotlin_io_kvision_kvision.$_$.g1;
+  var ButtonStyle_PRIMARY_getInstance = kotlin_io_kvision_kvision.$_$.k;
+  var WidgetRefreshDelegate__setValue_impl_8tnbha = kotlin_io_kvision_kvision.$_$.s;
+  var WidgetRefreshDelegate__getValue_impl_lmjmy2 = kotlin_io_kvision_kvision.$_$.r;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.y5;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.k;
+  var Link = kotlin_io_kvision_kvision.$_$.s1;
+  var RefreshDelegateProvider = kotlin_io_kvision_kvision.$_$.h1;
+  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.j;
+  var THROW_CCE = kotlin_kotlin.$_$.qe;
+  var KMutableProperty1 = kotlin_kotlin.$_$.tb;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.z9;
+  var add = kotlin_io_kvision_kvision.$_$.d1;
+  var ClassSetBuilder = kotlin_io_kvision_kvision.$_$.e1;
+  var add$default = kotlin_io_kvision_kvision.$_$.q;
+  var add_0 = kotlin_io_kvision_kvision.$_$.a1;
+  var addAll = kotlin_io_kvision_kvision.$_$.z;
+  var AttributeSetBuilder = kotlin_io_kvision_kvision.$_$.b1;
+  var Button = kotlin_io_kvision_kvision.$_$.q1;
+  var ButtonType_BUTTON_getInstance = kotlin_io_kvision_kvision.$_$.l;
+  var Tag = kotlin_io_kvision_kvision.$_$.t1;
+  var TAG_H6_getInstance = kotlin_io_kvision_kvision.$_$.o;
+  var TAG_FORM_getInstance = kotlin_io_kvision_kvision.$_$.n;
+  var ContainerType_FLUID_getInstance = kotlin_io_kvision_kvision.$_$.p;
+  var equals = kotlin_kotlin.$_$.w9;
+  var ensureNotNull = kotlin_kotlin.$_$.if;
+  var span = kotlin_io_kvision_kvision.$_$.z1;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(BootstrapCssModule, 'BootstrapCssModule', VOID, VOID, [ModuleInitializer]);
   initMetadataForObject(BootstrapModule, 'BootstrapModule', VOID, VOID, [ModuleInitializer]);
   initMetadataForClass(BsBgColor, 'BsBgColor', VOID, Enum, [CssClass, Enum]);
+  initMetadataForClass(BsBorder, 'BsBorder', VOID, Enum, [CssClass, Enum]);
   initMetadataForCompanion(Companion);
   initMetadataForClass(ContextMenu, 'ContextMenu', ContextMenu, SimplePanel);
   initMetadataForClass(AutoClose, 'AutoClose', VOID, Enum, [DomAttribute, Enum]);
@@ -239,6 +240,159 @@
   protoOf(BsBgColor).get_className_8cmv0a_k$ = function () {
     return this.className_1;
   };
+  function addBsBorder(_this__u8e3s4, bsBorder) {
+    // Inline function 'kotlin.collections.forEach' call
+    var inductionVariable = 0;
+    var last = bsBorder.length;
+    while (inductionVariable < last) {
+      var element = bsBorder[inductionVariable];
+      inductionVariable = inductionVariable + 1 | 0;
+      // Inline function 'io.kvision.core.addBsBorder.<anonymous>' call
+      _this__u8e3s4.addCssClass_ul13bg_k$(element.className_1);
+    }
+  }
+  var BsBorder_BORDER_instance;
+  var BsBorder_BORDERTOP_instance;
+  var BsBorder_BORDERBOTTOM_instance;
+  var BsBorder_BORDERRIGHT_instance;
+  var BsBorder_BORDERLEFT_instance;
+  var BsBorder_BORDER_0_instance;
+  var BsBorder_BORDERTOP_0_instance;
+  var BsBorder_BORDERBOTTOM_0_instance;
+  var BsBorder_BORDERRIGHT_0_instance;
+  var BsBorder_BORDERLEFT_0_instance;
+  var BsBorder_BORDERPRIMARY_instance;
+  var BsBorder_BORDERPRIMARYSUBTLE_instance;
+  var BsBorder_BORDERSECONDARY_instance;
+  var BsBorder_BORDERSECONDARYSUBTLE_instance;
+  var BsBorder_BORDERSUCCESS_instance;
+  var BsBorder_BORDERSUCCESSSUBTLE_instance;
+  var BsBorder_BORDERDANGER_instance;
+  var BsBorder_BORDERDANGERSUBTLE_instance;
+  var BsBorder_BORDERWARNING_instance;
+  var BsBorder_BORDERWARNINGSUBTLE_instance;
+  var BsBorder_BORDERINFO_instance;
+  var BsBorder_BORDERINFOSUBTLE_instance;
+  var BsBorder_BORDERLIGHT_instance;
+  var BsBorder_BORDERLIGHTSUBTLE_instance;
+  var BsBorder_BORDERDARK_instance;
+  var BsBorder_BORDERDARKSUBTLE_instance;
+  var BsBorder_BORDERWHITE_instance;
+  var BsBorder_BORDERBLACK_instance;
+  function values_0() {
+    return [BsBorder_BORDER_getInstance(), BsBorder_BORDERTOP_getInstance(), BsBorder_BORDERBOTTOM_getInstance(), BsBorder_BORDERRIGHT_getInstance(), BsBorder_BORDERLEFT_getInstance(), BsBorder_BORDER_0_getInstance(), BsBorder_BORDERTOP_0_getInstance(), BsBorder_BORDERBOTTOM_0_getInstance(), BsBorder_BORDERRIGHT_0_getInstance(), BsBorder_BORDERLEFT_0_getInstance(), BsBorder_BORDERPRIMARY_getInstance(), BsBorder_BORDERPRIMARYSUBTLE_getInstance(), BsBorder_BORDERSECONDARY_getInstance(), BsBorder_BORDERSECONDARYSUBTLE_getInstance(), BsBorder_BORDERSUCCESS_getInstance(), BsBorder_BORDERSUCCESSSUBTLE_getInstance(), BsBorder_BORDERDANGER_getInstance(), BsBorder_BORDERDANGERSUBTLE_getInstance(), BsBorder_BORDERWARNING_getInstance(), BsBorder_BORDERWARNINGSUBTLE_getInstance(), BsBorder_BORDERINFO_getInstance(), BsBorder_BORDERINFOSUBTLE_getInstance(), BsBorder_BORDERLIGHT_getInstance(), BsBorder_BORDERLIGHTSUBTLE_getInstance(), BsBorder_BORDERDARK_getInstance(), BsBorder_BORDERDARKSUBTLE_getInstance(), BsBorder_BORDERWHITE_getInstance(), BsBorder_BORDERBLACK_getInstance()];
+  }
+  function valueOf_0(value) {
+    switch (value) {
+      case 'BORDER':
+        return BsBorder_BORDER_getInstance();
+      case 'BORDERTOP':
+        return BsBorder_BORDERTOP_getInstance();
+      case 'BORDERBOTTOM':
+        return BsBorder_BORDERBOTTOM_getInstance();
+      case 'BORDERRIGHT':
+        return BsBorder_BORDERRIGHT_getInstance();
+      case 'BORDERLEFT':
+        return BsBorder_BORDERLEFT_getInstance();
+      case 'BORDER_0':
+        return BsBorder_BORDER_0_getInstance();
+      case 'BORDERTOP_0':
+        return BsBorder_BORDERTOP_0_getInstance();
+      case 'BORDERBOTTOM_0':
+        return BsBorder_BORDERBOTTOM_0_getInstance();
+      case 'BORDERRIGHT_0':
+        return BsBorder_BORDERRIGHT_0_getInstance();
+      case 'BORDERLEFT_0':
+        return BsBorder_BORDERLEFT_0_getInstance();
+      case 'BORDERPRIMARY':
+        return BsBorder_BORDERPRIMARY_getInstance();
+      case 'BORDERPRIMARYSUBTLE':
+        return BsBorder_BORDERPRIMARYSUBTLE_getInstance();
+      case 'BORDERSECONDARY':
+        return BsBorder_BORDERSECONDARY_getInstance();
+      case 'BORDERSECONDARYSUBTLE':
+        return BsBorder_BORDERSECONDARYSUBTLE_getInstance();
+      case 'BORDERSUCCESS':
+        return BsBorder_BORDERSUCCESS_getInstance();
+      case 'BORDERSUCCESSSUBTLE':
+        return BsBorder_BORDERSUCCESSSUBTLE_getInstance();
+      case 'BORDERDANGER':
+        return BsBorder_BORDERDANGER_getInstance();
+      case 'BORDERDANGERSUBTLE':
+        return BsBorder_BORDERDANGERSUBTLE_getInstance();
+      case 'BORDERWARNING':
+        return BsBorder_BORDERWARNING_getInstance();
+      case 'BORDERWARNINGSUBTLE':
+        return BsBorder_BORDERWARNINGSUBTLE_getInstance();
+      case 'BORDERINFO':
+        return BsBorder_BORDERINFO_getInstance();
+      case 'BORDERINFOSUBTLE':
+        return BsBorder_BORDERINFOSUBTLE_getInstance();
+      case 'BORDERLIGHT':
+        return BsBorder_BORDERLIGHT_getInstance();
+      case 'BORDERLIGHTSUBTLE':
+        return BsBorder_BORDERLIGHTSUBTLE_getInstance();
+      case 'BORDERDARK':
+        return BsBorder_BORDERDARK_getInstance();
+      case 'BORDERDARKSUBTLE':
+        return BsBorder_BORDERDARKSUBTLE_getInstance();
+      case 'BORDERWHITE':
+        return BsBorder_BORDERWHITE_getInstance();
+      case 'BORDERBLACK':
+        return BsBorder_BORDERBLACK_getInstance();
+      default:
+        BsBorder_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_0() {
+    if ($ENTRIES_0 == null)
+      $ENTRIES_0 = enumEntries(values_0());
+    return $ENTRIES_0;
+  }
+  var BsBorder_entriesInitialized;
+  function BsBorder_initEntries() {
+    if (BsBorder_entriesInitialized)
+      return Unit_getInstance();
+    BsBorder_entriesInitialized = true;
+    BsBorder_BORDER_instance = new BsBorder('BORDER', 0, 'border');
+    BsBorder_BORDERTOP_instance = new BsBorder('BORDERTOP', 1, 'border-top');
+    BsBorder_BORDERBOTTOM_instance = new BsBorder('BORDERBOTTOM', 2, 'border-bottom');
+    BsBorder_BORDERRIGHT_instance = new BsBorder('BORDERRIGHT', 3, 'border-end');
+    BsBorder_BORDERLEFT_instance = new BsBorder('BORDERLEFT', 4, 'border-start');
+    BsBorder_BORDER_0_instance = new BsBorder('BORDER_0', 5, 'border-0');
+    BsBorder_BORDERTOP_0_instance = new BsBorder('BORDERTOP_0', 6, 'border-top-0');
+    BsBorder_BORDERBOTTOM_0_instance = new BsBorder('BORDERBOTTOM_0', 7, 'border-bottom-0');
+    BsBorder_BORDERRIGHT_0_instance = new BsBorder('BORDERRIGHT_0', 8, 'border-end-0');
+    BsBorder_BORDERLEFT_0_instance = new BsBorder('BORDERLEFT_0', 9, 'border-start-0');
+    BsBorder_BORDERPRIMARY_instance = new BsBorder('BORDERPRIMARY', 10, 'border-primary');
+    BsBorder_BORDERPRIMARYSUBTLE_instance = new BsBorder('BORDERPRIMARYSUBTLE', 11, 'border-primary-subtle');
+    BsBorder_BORDERSECONDARY_instance = new BsBorder('BORDERSECONDARY', 12, 'border-secondary');
+    BsBorder_BORDERSECONDARYSUBTLE_instance = new BsBorder('BORDERSECONDARYSUBTLE', 13, 'border-secondary-subtle');
+    BsBorder_BORDERSUCCESS_instance = new BsBorder('BORDERSUCCESS', 14, 'border-success');
+    BsBorder_BORDERSUCCESSSUBTLE_instance = new BsBorder('BORDERSUCCESSSUBTLE', 15, 'border-success-subtle');
+    BsBorder_BORDERDANGER_instance = new BsBorder('BORDERDANGER', 16, 'border-danger');
+    BsBorder_BORDERDANGERSUBTLE_instance = new BsBorder('BORDERDANGERSUBTLE', 17, 'border-danger-subtle');
+    BsBorder_BORDERWARNING_instance = new BsBorder('BORDERWARNING', 18, 'border-warning');
+    BsBorder_BORDERWARNINGSUBTLE_instance = new BsBorder('BORDERWARNINGSUBTLE', 19, 'border-warning-subtle');
+    BsBorder_BORDERINFO_instance = new BsBorder('BORDERINFO', 20, 'border-info');
+    BsBorder_BORDERINFOSUBTLE_instance = new BsBorder('BORDERINFOSUBTLE', 21, 'border-info-subtle');
+    BsBorder_BORDERLIGHT_instance = new BsBorder('BORDERLIGHT', 22, 'border-light');
+    BsBorder_BORDERLIGHTSUBTLE_instance = new BsBorder('BORDERLIGHTSUBTLE', 23, 'border-light-subtle');
+    BsBorder_BORDERDARK_instance = new BsBorder('BORDERDARK', 24, 'border-dark');
+    BsBorder_BORDERDARKSUBTLE_instance = new BsBorder('BORDERDARKSUBTLE', 25, 'border-dark-subtle');
+    BsBorder_BORDERWHITE_instance = new BsBorder('BORDERWHITE', 26, 'border-white');
+    BsBorder_BORDERBLACK_instance = new BsBorder('BORDERBLACK', 27, 'border-black');
+  }
+  var $ENTRIES_0;
+  function BsBorder(name, ordinal, className) {
+    Enum.call(this, name, ordinal);
+    this.className_1 = className;
+  }
+  protoOf(BsBorder).get_className_8cmv0a_k$ = function () {
+    return this.className_1;
+  };
   function BsBgColor_PRIMARY_getInstance() {
     BsBgColor_initEntries();
     return BsBgColor_PRIMARY_instance;
@@ -327,6 +481,118 @@
     BsBgColor_initEntries();
     return BsBgColor_TRANSPARENT_instance;
   }
+  function BsBorder_BORDER_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDER_instance;
+  }
+  function BsBorder_BORDERTOP_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERTOP_instance;
+  }
+  function BsBorder_BORDERBOTTOM_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERBOTTOM_instance;
+  }
+  function BsBorder_BORDERRIGHT_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERRIGHT_instance;
+  }
+  function BsBorder_BORDERLEFT_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERLEFT_instance;
+  }
+  function BsBorder_BORDER_0_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDER_0_instance;
+  }
+  function BsBorder_BORDERTOP_0_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERTOP_0_instance;
+  }
+  function BsBorder_BORDERBOTTOM_0_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERBOTTOM_0_instance;
+  }
+  function BsBorder_BORDERRIGHT_0_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERRIGHT_0_instance;
+  }
+  function BsBorder_BORDERLEFT_0_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERLEFT_0_instance;
+  }
+  function BsBorder_BORDERPRIMARY_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERPRIMARY_instance;
+  }
+  function BsBorder_BORDERPRIMARYSUBTLE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERPRIMARYSUBTLE_instance;
+  }
+  function BsBorder_BORDERSECONDARY_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERSECONDARY_instance;
+  }
+  function BsBorder_BORDERSECONDARYSUBTLE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERSECONDARYSUBTLE_instance;
+  }
+  function BsBorder_BORDERSUCCESS_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERSUCCESS_instance;
+  }
+  function BsBorder_BORDERSUCCESSSUBTLE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERSUCCESSSUBTLE_instance;
+  }
+  function BsBorder_BORDERDANGER_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERDANGER_instance;
+  }
+  function BsBorder_BORDERDANGERSUBTLE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERDANGERSUBTLE_instance;
+  }
+  function BsBorder_BORDERWARNING_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERWARNING_instance;
+  }
+  function BsBorder_BORDERWARNINGSUBTLE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERWARNINGSUBTLE_instance;
+  }
+  function BsBorder_BORDERINFO_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERINFO_instance;
+  }
+  function BsBorder_BORDERINFOSUBTLE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERINFOSUBTLE_instance;
+  }
+  function BsBorder_BORDERLIGHT_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERLIGHT_instance;
+  }
+  function BsBorder_BORDERLIGHTSUBTLE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERLIGHTSUBTLE_instance;
+  }
+  function BsBorder_BORDERDARK_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERDARK_instance;
+  }
+  function BsBorder_BORDERDARKSUBTLE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERDARKSUBTLE_instance;
+  }
+  function BsBorder_BORDERWHITE_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERWHITE_instance;
+  }
+  function BsBorder_BORDERBLACK_getInstance() {
+    BsBorder_initEntries();
+    return BsBorder_BORDERBLACK_instance;
+  }
   function Companion() {
     Companion_instance = this;
     this.DEFAULT_FIXED_POS_X_1 = 5;
@@ -393,10 +659,10 @@
   var AutoClose_OUTSIDE_instance;
   var AutoClose_INSIDE_instance;
   var AutoClose_FALSE_instance;
-  function values_0() {
+  function values_1() {
     return [AutoClose_TRUE_getInstance(), AutoClose_OUTSIDE_getInstance(), AutoClose_INSIDE_getInstance(), AutoClose_FALSE_getInstance()];
   }
-  function valueOf_0(value) {
+  function valueOf_1(value) {
     switch (value) {
       case 'TRUE':
         return AutoClose_TRUE_getInstance();
@@ -412,10 +678,10 @@
         break;
     }
   }
-  function get_entries_0() {
-    if ($ENTRIES_0 == null)
-      $ENTRIES_0 = enumEntries(values_0());
-    return $ENTRIES_0;
+  function get_entries_1() {
+    if ($ENTRIES_1 == null)
+      $ENTRIES_1 = enumEntries(values_1());
+    return $ENTRIES_1;
   }
   var AutoClose_entriesInitialized;
   function AutoClose_initEntries() {
@@ -427,7 +693,7 @@
     AutoClose_INSIDE_instance = new AutoClose('INSIDE', 2, 'inside');
     AutoClose_FALSE_instance = new AutoClose('FALSE', 3, 'false');
   }
-  var $ENTRIES_0;
+  var $ENTRIES_1;
   function AutoClose(name, ordinal, attributeValue) {
     Enum.call(this, name, ordinal);
     this.attributeValue_1 = attributeValue;
@@ -712,10 +978,10 @@
   var Direction_DROPUP_instance;
   var Direction_DROPSTART_instance;
   var Direction_DROPEND_instance;
-  function values_1() {
+  function values_2() {
     return [Direction_DROPDOWN_getInstance(), Direction_DROPUP_getInstance(), Direction_DROPSTART_getInstance(), Direction_DROPEND_getInstance()];
   }
-  function valueOf_1(value) {
+  function valueOf_2(value) {
     switch (value) {
       case 'DROPDOWN':
         return Direction_DROPDOWN_getInstance();
@@ -731,10 +997,10 @@
         break;
     }
   }
-  function get_entries_1() {
-    if ($ENTRIES_1 == null)
-      $ENTRIES_1 = enumEntries(values_1());
-    return $ENTRIES_1;
+  function get_entries_2() {
+    if ($ENTRIES_2 == null)
+      $ENTRIES_2 = enumEntries(values_2());
+    return $ENTRIES_2;
   }
   var Direction_entriesInitialized;
   function Direction_initEntries() {
@@ -746,7 +1012,7 @@
     Direction_DROPSTART_instance = new Direction('DROPSTART', 2, 'dropstart');
     Direction_DROPEND_instance = new Direction('DROPEND', 3, 'dropend');
   }
-  var $ENTRIES_1;
+  var $ENTRIES_2;
   function Direction(name, ordinal, direction) {
     Enum.call(this, name, ordinal);
     this.direction_1 = direction;
@@ -757,10 +1023,10 @@
   var DD_HEADER_instance;
   var DD_DISABLED_instance;
   var DD_SEPARATOR_instance;
-  function values_2() {
+  function values_3() {
     return [DD_HEADER_getInstance(), DD_DISABLED_getInstance(), DD_SEPARATOR_getInstance()];
   }
-  function valueOf_2(value) {
+  function valueOf_3(value) {
     switch (value) {
       case 'HEADER':
         return DD_HEADER_getInstance();
@@ -774,10 +1040,10 @@
         break;
     }
   }
-  function get_entries_2() {
-    if ($ENTRIES_2 == null)
-      $ENTRIES_2 = enumEntries(values_2());
-    return $ENTRIES_2;
+  function get_entries_3() {
+    if ($ENTRIES_3 == null)
+      $ENTRIES_3 = enumEntries(values_3());
+    return $ENTRIES_3;
   }
   var DD_entriesInitialized;
   function DD_initEntries() {
@@ -788,7 +1054,7 @@
     DD_DISABLED_instance = new DD('DISABLED', 1, 'DD#DISABLED');
     DD_SEPARATOR_instance = new DD('SEPARATOR', 2, 'DD#SEPARATOR');
   }
-  var $ENTRIES_2;
+  var $ENTRIES_3;
   function DD(name, ordinal, option) {
     Enum.call(this, name, ordinal);
     this.option_1 = option;
@@ -1578,10 +1844,10 @@
   var NavbarType_FIXEDTOP_instance;
   var NavbarType_FIXEDBOTTOM_instance;
   var NavbarType_STICKYTOP_instance;
-  function values_3() {
+  function values_4() {
     return [NavbarType_FIXEDTOP_getInstance(), NavbarType_FIXEDBOTTOM_getInstance(), NavbarType_STICKYTOP_getInstance()];
   }
-  function valueOf_3(value) {
+  function valueOf_4(value) {
     switch (value) {
       case 'FIXEDTOP':
         return NavbarType_FIXEDTOP_getInstance();
@@ -1595,10 +1861,10 @@
         break;
     }
   }
-  function get_entries_3() {
-    if ($ENTRIES_3 == null)
-      $ENTRIES_3 = enumEntries(values_3());
-    return $ENTRIES_3;
+  function get_entries_4() {
+    if ($ENTRIES_4 == null)
+      $ENTRIES_4 = enumEntries(values_4());
+    return $ENTRIES_4;
   }
   var NavbarType_entriesInitialized;
   function NavbarType_initEntries() {
@@ -1609,7 +1875,7 @@
     NavbarType_FIXEDBOTTOM_instance = new NavbarType('FIXEDBOTTOM', 1, 'fixed-bottom');
     NavbarType_STICKYTOP_instance = new NavbarType('STICKYTOP', 2, 'sticky-top');
   }
-  var $ENTRIES_3;
+  var $ENTRIES_4;
   function NavbarType(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -1623,10 +1889,10 @@
   var NavbarExpand_MD_instance;
   var NavbarExpand_SM_instance;
   var NavbarExpand_XXL_instance;
-  function values_4() {
+  function values_5() {
     return [NavbarExpand_ALWAYS_getInstance(), NavbarExpand_XL_getInstance(), NavbarExpand_LG_getInstance(), NavbarExpand_MD_getInstance(), NavbarExpand_SM_getInstance(), NavbarExpand_XXL_getInstance()];
   }
-  function valueOf_4(value) {
+  function valueOf_5(value) {
     switch (value) {
       case 'ALWAYS':
         return NavbarExpand_ALWAYS_getInstance();
@@ -1646,10 +1912,10 @@
         break;
     }
   }
-  function get_entries_4() {
-    if ($ENTRIES_4 == null)
-      $ENTRIES_4 = enumEntries(values_4());
-    return $ENTRIES_4;
+  function get_entries_5() {
+    if ($ENTRIES_5 == null)
+      $ENTRIES_5 = enumEntries(values_5());
+    return $ENTRIES_5;
   }
   var NavbarExpand_entriesInitialized;
   function NavbarExpand_initEntries() {
@@ -1663,7 +1929,7 @@
     NavbarExpand_SM_instance = new NavbarExpand('SM', 4, 'navbar-expand-sm');
     NavbarExpand_XXL_instance = new NavbarExpand('XXL', 5, 'navbar-expand-xxl');
   }
-  var $ENTRIES_4;
+  var $ENTRIES_5;
   function NavbarExpand(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -1673,10 +1939,10 @@
   };
   var NavbarColor_LIGHT_instance;
   var NavbarColor_DARK_instance;
-  function values_5() {
+  function values_6() {
     return [NavbarColor_LIGHT_getInstance(), NavbarColor_DARK_getInstance()];
   }
-  function valueOf_5(value) {
+  function valueOf_6(value) {
     switch (value) {
       case 'LIGHT':
         return NavbarColor_LIGHT_getInstance();
@@ -1688,10 +1954,10 @@
         break;
     }
   }
-  function get_entries_5() {
-    if ($ENTRIES_5 == null)
-      $ENTRIES_5 = enumEntries(values_5());
-    return $ENTRIES_5;
+  function get_entries_6() {
+    if ($ENTRIES_6 == null)
+      $ENTRIES_6 = enumEntries(values_6());
+    return $ENTRIES_6;
   }
   var NavbarColor_entriesInitialized;
   function NavbarColor_initEntries() {
@@ -1701,7 +1967,7 @@
     NavbarColor_LIGHT_instance = new NavbarColor('LIGHT', 0, 'navbar-light');
     NavbarColor_DARK_instance = new NavbarColor('DARK', 1, 'navbar-dark');
   }
-  var $ENTRIES_5;
+  var $ENTRIES_6;
   function NavbarColor(name, ordinal, navbarColor) {
     Enum.call(this, name, ordinal);
     this.navbarColor_1 = navbarColor;
@@ -1878,7 +2144,7 @@
       } else {
         // Inline function 'kotlin.let' call
         // Inline function 'kotlin.collections.find' call
-        var tmp0 = get_entries_6();
+        var tmp0 = get_entries_7();
         var tmp$ret$1;
         $l$block: {
           // Inline function 'kotlin.collections.firstOrNull' call
@@ -2006,10 +2272,10 @@
   var Theme_AUTO_instance;
   var Theme_LIGHT_instance;
   var Theme_DARK_instance;
-  function values_6() {
+  function values_7() {
     return [Theme_AUTO_getInstance(), Theme_LIGHT_getInstance(), Theme_DARK_getInstance()];
   }
-  function valueOf_6(value) {
+  function valueOf_7(value) {
     switch (value) {
       case 'AUTO':
         return Theme_AUTO_getInstance();
@@ -2023,10 +2289,10 @@
         break;
     }
   }
-  function get_entries_6() {
-    if ($ENTRIES_6 == null)
-      $ENTRIES_6 = enumEntries(values_6());
-    return $ENTRIES_6;
+  function get_entries_7() {
+    if ($ENTRIES_7 == null)
+      $ENTRIES_7 = enumEntries(values_7());
+    return $ENTRIES_7;
   }
   var Theme_entriesInitialized;
   function Theme_initEntries() {
@@ -2037,7 +2303,7 @@
     Theme_LIGHT_instance = new Theme('LIGHT', 1, 'light');
     Theme_DARK_instance = new Theme('DARK', 2, 'dark');
   }
-  var $ENTRIES_6;
+  var $ENTRIES_7;
   function Theme(name, ordinal, theme) {
     Enum.call(this, name, ordinal);
     this.theme_1 = theme;
@@ -2065,14 +2331,16 @@
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};
-  _.$_$.a = ThemeManager_getInstance;
-  _.$_$.b = BootstrapCssModule_getInstance;
-  _.$_$.c = BootstrapModule_getInstance;
-  _.$_$.d = dropDown;
-  _.$_$.e = Navbar;
-  _.$_$.f = navForm;
-  _.$_$.g = navLink;
-  _.$_$.h = nav;
+  _.$_$.a = BsBorder_BORDERDARK_getInstance;
+  _.$_$.b = ThemeManager_getInstance;
+  _.$_$.c = BootstrapCssModule_getInstance;
+  _.$_$.d = BootstrapModule_getInstance;
+  _.$_$.e = addBsBorder;
+  _.$_$.f = dropDown;
+  _.$_$.g = Navbar;
+  _.$_$.h = navForm;
+  _.$_$.i = navLink;
+  _.$_$.j = nav;
   //endregion
   return _;
 }));

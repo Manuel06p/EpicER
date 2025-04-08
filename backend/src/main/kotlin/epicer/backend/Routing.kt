@@ -2,6 +2,9 @@ package epicer.backend
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
+import epicer.backend.service.ImageService
+import epicer.backend.service.RecipeService
+import epicer.backend.service.UserService
 import epicer.common.dto.user.LoginUserDTO
 import epicer.common.dto.user.NewUserDTO
 import epicer.common.dto.user.UpdateUserDTO
@@ -10,19 +13,29 @@ import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
 import epicer.common.dto.user.BaseUserDTO
 import io.ktor.http.*
+import io.ktor.http.ContentDisposition.Companion.File
 import io.ktor.serialization.JsonConvertException
 import io.ktor.server.application.*
 import io.ktor.server.auth.authenticate
 import io.ktor.server.auth.jwt.JWTPrincipal
 import io.ktor.server.auth.principal
+import io.ktor.server.http.content.staticFiles
 import io.ktor.server.request.*
 import io.ktor.server.response.respond
+import io.ktor.server.response.respondFile
 import io.ktor.server.routing.*
+import java.io.File
 import java.util.Date
 
 
-fun Application.configureRouting(userService: IUserService) {
+fun Application.configureRouting() {
+    val userService = UserService()
+    val recipeService = RecipeService()
+    val imageService = ImageService()
+
     routing {
+
+
         post("/login") {
             val loginUserDTO = call.receive<LoginUserDTO>()
 
@@ -51,12 +64,49 @@ fun Application.configureRouting(userService: IUserService) {
                 call.respond(TokenDTO(token, BaseUserDTO(user.username, user.name, user.roles, user.created_at)))
             }
         }
+        route("/images") {
+            authenticate("auth-jwt") {
+                get("/{imageId}") {
+                    val principal = call.principal<JWTPrincipal>()
+                    val userId = principal?.payload?.getClaim("id")?.asInt()
 
+                    val imageId = call.parameters["imageId"]?.toIntOrNull()
+
+                    if (imageId == null || userId == null) {
+                        call.respond(HttpStatusCode.BadRequest)
+                        return@get
+                    }
+
+                    val imageFile = imageService.getAccessibleImageById(imageId, userId)
+                    if (imageFile == null || !imageFile.exists()) {
+                        call.respond(HttpStatusCode.NotFound)
+                        return@get
+                    }
+
+                    call.respondFile(imageFile)
+                }
+            }
+        }
         route("/me") {
             authenticate("auth-jwt") {
+                staticFiles("/images", File("uploads/images/"))
                 get {
                     call.respond(HttpStatusCode.OK)
                 }
+
+                route("/recipes") {
+                    get() {
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+                        if (userId != null) {
+                            val recipes = recipeService.getBaseRecipesById(userId)
+                            call.respond(recipes)
+                        } else {
+                            call.respond(HttpStatusCode.BadRequest)
+                        }
+                    }
+                }
+
                 route("/user") {
                     get() {
                         val principal = call.principal<JWTPrincipal>()

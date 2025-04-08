@@ -1,6 +1,5 @@
 package epicer.backend
 
-import epicer.backend.service.UsersService
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.cors.routing.*
@@ -22,10 +21,11 @@ fun Application.module() {
 
         anyHost() // @TODO: Don't do this in production if possible. Try to limit it.
     }
+
     configureDatabases ()
     configureSerialization()
     configureMonitoring()
 
     configureAuthentication()
-    configureRouting(userService = UsersService())
+    configureRouting()
 }

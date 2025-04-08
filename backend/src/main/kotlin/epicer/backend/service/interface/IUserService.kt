@@ -1,5 +1,6 @@
 package epicer.backend.service.`interface`
 
+import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.user.BaseUserDTO
 import epicer.common.dto.user.FullUserDTO
 import epicer.common.dto.user.NewUserDTO

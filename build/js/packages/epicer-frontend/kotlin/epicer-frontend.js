@@ -72,21 +72,22 @@
 }(function (_, kotlin_kotlin, kotlin_io_kvision_kvision, kotlin_io_kvision_kvision_i18n, kotlin_io_kvision_kvision_bootstrap, kotlin_io_kvision_kvision_routing_navigo_ng, kotlin_io_kvision_kvision_datetime, kotlin_io_kvision_kvision_richtext, kotlin_io_kvision_kvision_tom_select, kotlin_io_kvision_kvision_bootstrap_upload, kotlin_io_kvision_kvision_imask, kotlin_io_kvision_kvision_toastify, kotlin_io_kvision_kvision_fontawesome, kotlin_io_kvision_kvision_bootstrap_icons, kotlin_io_kvision_kvision_print, kotlin_io_kvision_kvision_chart, kotlin_io_kvision_kvision_tabulator, kotlin_io_kvision_kvision_maps, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json, kotlin_epicer_common, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core) {
   'use strict';
   //region block: imports
-  var Unit_getInstance = kotlin_kotlin.$_$.b5;
-  var H3 = kotlin_io_kvision_kvision.$_$.i1;
-  var Application = kotlin_io_kvision_kvision.$_$.d2;
-  var I18n_getInstance = kotlin_io_kvision_kvision.$_$.n;
-  var to = kotlin_kotlin.$_$.sf;
-  var mapOf = kotlin_kotlin.$_$.h7;
+  var Unit_getInstance = kotlin_kotlin.$_$.c5;
+  var H3 = kotlin_io_kvision_kvision.$_$.r1;
+  var Application = kotlin_io_kvision_kvision.$_$.p2;
+  var I18n_getInstance = kotlin_io_kvision_kvision.$_$.v;
+  var to = kotlin_kotlin.$_$.tf;
+  var mapOf = kotlin_kotlin.$_$.i7;
   var DefaultI18nManager = kotlin_io_kvision_kvision_i18n.$_$.a;
-  var ThemeManager_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.a;
-  var root = kotlin_io_kvision_kvision.$_$.w1;
-  var SimplePanel = kotlin_io_kvision_kvision.$_$.u1;
+  var ThemeManager_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.b;
+  var root = kotlin_io_kvision_kvision.$_$.i2;
+  var SimplePanel = kotlin_io_kvision_kvision.$_$.f2;
   var Companion_getInstance = kotlin_io_kvision_kvision_routing_navigo_ng.$_$.a;
-  var protoOf = kotlin_kotlin.$_$.eb;
-  var initMetadataForClass = kotlin_kotlin.$_$.ba;
-  var BootstrapModule_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.c;
-  var BootstrapCssModule_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.b;
+  var VOID = kotlin_kotlin.$_$.f;
+  var protoOf = kotlin_kotlin.$_$.fb;
+  var initMetadataForClass = kotlin_kotlin.$_$.ca;
+  var BootstrapModule_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.d;
+  var BootstrapCssModule_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.c;
   var DatetimeModule_getInstance = kotlin_io_kvision_kvision_datetime.$_$.a;
   var RichTextModule_getInstance = kotlin_io_kvision_kvision_richtext.$_$.a;
   var TomSelectModule_getInstance = kotlin_io_kvision_kvision_tom_select.$_$.a;
@@ -100,90 +101,115 @@
   var TabulatorModule_getInstance = kotlin_io_kvision_kvision_tabulator.$_$.b;
   var TabulatorCssBootstrapModule_getInstance = kotlin_io_kvision_kvision_tabulator.$_$.a;
   var MapsModule_getInstance = kotlin_io_kvision_kvision_maps.$_$.a;
-  var CoreModule_getInstance = kotlin_io_kvision_kvision.$_$.q;
-  var startApplication = kotlin_io_kvision_kvision.$_$.f2;
-  var VOID = kotlin_kotlin.$_$.e;
-  var navLink = kotlin_io_kvision_kvision_bootstrap.$_$.g;
-  var listOf = kotlin_kotlin.$_$.f7;
-  var dropDown = kotlin_io_kvision_kvision_bootstrap.$_$.d;
-  var text = kotlin_io_kvision_kvision.$_$.f1;
-  var checkBox = kotlin_io_kvision_kvision.$_$.z;
+  var CoreModule_getInstance = kotlin_io_kvision_kvision.$_$.y;
+  var startApplication = kotlin_io_kvision_kvision.$_$.r2;
+  var navLink = kotlin_io_kvision_kvision_bootstrap.$_$.i;
+  var listOf = kotlin_kotlin.$_$.g7;
+  var dropDown = kotlin_io_kvision_kvision_bootstrap.$_$.f;
+  var text = kotlin_io_kvision_kvision.$_$.o1;
+  var checkBox = kotlin_io_kvision_kvision.$_$.i1;
   var Toast_getInstance = kotlin_io_kvision_kvision_toastify.$_$.b;
   var ToastPosition_BOTTOMRIGHT_getInstance = kotlin_io_kvision_kvision_toastify.$_$.a;
   var ToastOptions = kotlin_io_kvision_kvision_toastify.$_$.d;
-  var get_perc = kotlin_io_kvision_kvision.$_$.b2;
-  var AlignItems_CENTER_getInstance = kotlin_io_kvision_kvision.$_$.a;
-  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.c;
-  var button = kotlin_io_kvision_kvision.$_$.l1;
-  var get_px = kotlin_io_kvision_kvision.$_$.c2;
-  var vPanel = kotlin_io_kvision_kvision.$_$.x1;
+  var get_perc = kotlin_io_kvision_kvision.$_$.n2;
+  var AlignItems_CENTER_getInstance = kotlin_io_kvision_kvision.$_$.b;
+  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.j;
+  var button = kotlin_io_kvision_kvision.$_$.u1;
+  var get_px = kotlin_io_kvision_kvision.$_$.o2;
+  var vPanel = kotlin_io_kvision_kvision.$_$.j2;
   var Default_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
-  var BaseUserDTO = kotlin_epicer_common.$_$.a;
-  var getKClass = kotlin_kotlin.$_$.d;
-  var arrayOf = kotlin_kotlin.$_$.ef;
-  var createKType = kotlin_kotlin.$_$.a;
+  var BaseUserDTO = kotlin_epicer_common.$_$.b;
+  var getKClass = kotlin_kotlin.$_$.e;
+  var arrayOf = kotlin_kotlin.$_$.ff;
+  var createKType = kotlin_kotlin.$_$.b;
   var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t2;
-  var THROW_CCE = kotlin_kotlin.$_$.pe;
+  var THROW_CCE = kotlin_kotlin.$_$.qe;
   var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k2;
-  var isInterface = kotlin_kotlin.$_$.pa;
-  var icon = kotlin_io_kvision_kvision.$_$.n1;
-  var Navbar = kotlin_io_kvision_kvision_bootstrap.$_$.e;
-  var nav = kotlin_io_kvision_kvision_bootstrap.$_$.h;
-  var navForm = kotlin_io_kvision_kvision_bootstrap.$_$.f;
-  var CoroutineImpl = kotlin_kotlin.$_$.d9;
-  var json = kotlin_kotlin.$_$.wa;
-  var LoginUserDTO = kotlin_epicer_common.$_$.b;
-  var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.a;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.n8;
-  var TokenDTO = kotlin_epicer_common.$_$.c;
-  var Exception = kotlin_kotlin.$_$.de;
-  var initMetadataForCoroutine = kotlin_kotlin.$_$.da;
+  var isInterface = kotlin_kotlin.$_$.qa;
+  var icon = kotlin_io_kvision_kvision.$_$.x1;
+  var Navbar = kotlin_io_kvision_kvision_bootstrap.$_$.g;
+  var nav = kotlin_io_kvision_kvision_bootstrap.$_$.j;
+  var navForm = kotlin_io_kvision_kvision_bootstrap.$_$.h;
+  var TextAlign_CENTER_getInstance = kotlin_io_kvision_kvision.$_$.g;
+  var TextOverflow_ELLIPSIS_getInstance = kotlin_io_kvision_kvision.$_$.h;
+  var WhiteSpace_NOWRAP_getInstance = kotlin_io_kvision_kvision.$_$.i;
+  var Overflow_HIDDEN_getInstance = kotlin_io_kvision_kvision.$_$.f;
+  var CoroutineImpl = kotlin_kotlin.$_$.e9;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
-  var println = kotlin_kotlin.$_$.i9;
-  var Companion_getInstance_0 = kotlin_epicer_common.$_$.d;
-  var initMetadataForLambda = kotlin_kotlin.$_$.fa;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.o8;
+  var image = kotlin_io_kvision_kvision.$_$.y1;
+  var initMetadataForLambda = kotlin_kotlin.$_$.ga;
+  var JustifyContent_SPACEBETWEEN_getInstance = kotlin_io_kvision_kvision.$_$.e;
+  var h2 = kotlin_io_kvision_kvision.$_$.w1;
   var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.f;
+  var Companion_getInstance_0 = kotlin_io_kvision_kvision.$_$.t;
+  var Col_DARKSLATEGRAY_getInstance = kotlin_io_kvision_kvision.$_$.c;
+  var Background = kotlin_io_kvision_kvision.$_$.c1;
+  var BsBorder_BORDERDARK_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.a;
+  var addBsBorder = kotlin_io_kvision_kvision_bootstrap.$_$.e;
+  var get_auto = kotlin_io_kvision_kvision.$_$.m2;
+  var SuspendFunction1 = kotlin_kotlin.$_$.f9;
+  var json = kotlin_kotlin.$_$.xa;
+  var LoginUserDTO = kotlin_epicer_common.$_$.c;
+  var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.a;
+  var TokenDTO = kotlin_epicer_common.$_$.d;
+  var Exception = kotlin_kotlin.$_$.ee;
+  var initMetadataForCoroutine = kotlin_kotlin.$_$.ea;
+  var KtList = kotlin_kotlin.$_$.m5;
+  var BaseRecipeDTO = kotlin_epicer_common.$_$.a;
+  var createInvariantKTypeProjection = kotlin_kotlin.$_$.a;
+  var println = kotlin_kotlin.$_$.j9;
   var Companion_getInstance_1 = kotlin_epicer_common.$_$.e;
-  var FormPanel = kotlin_io_kvision_kvision.$_$.g1;
-  var Text = kotlin_io_kvision_kvision.$_$.e1;
-  var Password = kotlin_io_kvision_kvision.$_$.d1;
-  var ButtonType_SUBMIT_getInstance = kotlin_io_kvision_kvision.$_$.f;
-  var VPanel = kotlin_io_kvision_kvision.$_$.v1;
-  var h2 = kotlin_io_kvision_kvision.$_$.m1;
+  var Companion_getInstance_2 = kotlin_epicer_common.$_$.f;
+  var FormPanel = kotlin_io_kvision_kvision.$_$.p1;
+  var Text = kotlin_io_kvision_kvision.$_$.n1;
+  var Password = kotlin_io_kvision_kvision.$_$.m1;
+  var ButtonType_SUBMIT_getInstance = kotlin_io_kvision_kvision.$_$.m;
+  var VPanel = kotlin_io_kvision_kvision.$_$.g2;
   var Dispatchers_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var CoroutineScope_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
-  var KProperty1 = kotlin_kotlin.$_$.ub;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.y9;
-  var SuspendFunction1 = kotlin_kotlin.$_$.e9;
+  var KProperty1 = kotlin_kotlin.$_$.vb;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.z9;
+  var AlignContent_CENTER_getInstance = kotlin_io_kvision_kvision.$_$.a;
+  var gridPanel = kotlin_io_kvision_kvision.$_$.h2;
+  var h1 = kotlin_io_kvision_kvision.$_$.v1;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(App, 'App', App, Application);
   initMetadataForClass(HeaderComponent, 'HeaderComponent', VOID, Navbar);
+  initMetadataForLambda(recipeCard$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForCoroutine($loginCOROUTINE$0, CoroutineImpl);
-  initMetadataForCoroutine($isLoggedCOROUTINE$1, CoroutineImpl);
+  initMetadataForCoroutine($getMyRecipesCOROUTINE$1, CoroutineImpl);
+  initMetadataForCoroutine($isLoggedCOROUTINE$2, CoroutineImpl);
+  initMetadataForCoroutine($getImageCOROUTINE$3, CoroutineImpl);
   initMetadataForLambda(LoginView$lambda$lambda$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForClass(LoginView, 'LoginView', VOID, VPanel);
   initMetadataForLambda(MainView$slambda, CoroutineImpl, [CoroutineImpl], [1]);
+  initMetadataForLambda(MainView$slambda_1, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForClass(MainView, 'MainView', VOID, SimplePanel);
+  initMetadataForLambda(RecipeView$slambda, CoroutineImpl, [CoroutineImpl], [1]);
+  initMetadataForClass(RecipeView, 'RecipeView', VOID, SimplePanel);
   //endregion
   function App$start$lambda($root, $routing) {
     return function (it) {
       $root.removeAll_c84dd9_k$();
-      $routing.navigate('/main');
+      $root.removeAll_c84dd9_k$();
+      $root.add_rekwpt_k$(new MainView($routing));
       return Unit_getInstance();
     };
   }
   function App$start$lambda_0($root, $routing) {
     return function (it) {
       $root.removeAll_c84dd9_k$();
-      $root.add_rekwpt_k$(new MainView($routing));
+      $root.add_rekwpt_k$(new LoginView($routing));
       return Unit_getInstance();
     };
   }
   function App$start$lambda_1($root, $routing) {
-    return function (it) {
+    return function (match) {
+      var recipeId = match.data[0];
       $root.removeAll_c84dd9_k$();
-      $root.add_rekwpt_k$(new LoginView($routing));
+      $root.add_rekwpt_k$(new RecipeView($routing, recipeId));
       return Unit_getInstance();
     };
   }
@@ -202,12 +228,13 @@
     ThemeManager_getInstance().init$default_e78sbl_k$();
     var root_0 = root(this, 'kvapp');
     var mainContainer = new SimplePanel();
-    var routing = Companion_getInstance().init$default_24i12r_k$();
+    var routing = Companion_getInstance().init$default_24i12r_k$(VOID, true);
     root_0.add_rekwpt_k$(mainContainer);
     var tmp = routing.on('/', App$start$lambda(root_0, routing));
-    var tmp_0 = tmp.on('/main', App$start$lambda_0(root_0, routing));
-    var tmp_1 = tmp_0.on('/login', App$start$lambda_1(root_0, routing));
-    tmp_1.on('/dashboard', App$start$lambda_2(root_0)).resolve();
+    var tmp_0 = tmp.on('/login', App$start$lambda_0(root_0, routing));
+    var tmp_1 = new RegExp('^recipes/(.*)');
+    var tmp_2 = tmp_0.on(tmp_1, App$start$lambda_1(root_0, routing));
+    tmp_2.on('/dashboard', App$start$lambda_2(root_0)).resolve();
   };
   function main() {
     startApplication(App$_init_$ref_dfliw4(), module.hot, [BootstrapModule_getInstance(), BootstrapCssModule_getInstance(), DatetimeModule_getInstance(), RichTextModule_getInstance(), TomSelectModule_getInstance(), BootstrapUploadModule_getInstance(), ImaskModule_getInstance(), ToastifyModule_getInstance(), FontAwesomeModule_getInstance(), BootstrapIconsModule_getInstance(), PrintModule_getInstance(), ChartModule_getInstance(), TabulatorModule_getInstance(), TabulatorCssBootstrapModule_getInstance(), MapsModule_getInstance(), CoreModule_getInstance()]);
@@ -309,18 +336,148 @@
     navForm(this, VOID, VOID, HeaderComponent$lambda_0);
     nav(this, true, VOID, HeaderComponent$lambda_1(this));
   }
+  function recipeCard(_this__u8e3s4, recipe, customScope, routing) {
+    button(_this__u8e3s4, '', VOID, VOID, VOID, VOID, VOID, VOID, VOID, recipeCard$lambda(recipe, customScope, routing));
+  }
+  function recipeCard$lambda$lambda($this$h2) {
+    $this$h2.set_width_3hpb1_k$(get_perc(100));
+    $this$h2.set_textAlign_puln5o_k$(TextAlign_CENTER_getInstance());
+    $this$h2.set_fontSize_ozq5eh_k$(get_px(20));
+    $this$h2.set_textOverflow_3o6ktn_k$(TextOverflow_ELLIPSIS_getInstance());
+    $this$h2.set_whiteSpace_koztq1_k$(WhiteSpace_NOWRAP_getInstance());
+    $this$h2.set_overflow_7svzdu_k$(Overflow_HIDDEN_getInstance());
+    $this$h2.set_padding_5cj5xu_k$(get_px(15));
+    return Unit_getInstance();
+  }
+  function recipeCard$lambda$slambda$lambda($this$image) {
+    $this$image.set_height_z8kom6_k$(get_perc(80));
+    $this$image.set_width_3hpb1_k$(get_perc(100));
+    $this$image.setStyle_q2a0in_k$('object-fit', 'cover');
+    return Unit_getInstance();
+  }
+  function recipeCard$lambda$slambda($recipe, $this_button, resultContinuation) {
+    this.$recipe_1 = $recipe;
+    this.$this_button_1 = $this_button;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf(recipeCard$lambda$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
+    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(recipeCard$lambda$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
+    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  };
+  protoOf(recipeCard$lambda$slambda).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(2);
+            this.idImage0__1 = this.$recipe_1.get_imageId_wvvawd_k$();
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = getImage(this.idImage0__1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var imageUrl = suspendResult;
+            var tmp_0 = imageUrl == null ? '/assets/image_not_found.png' : imageUrl;
+            image(this.$this_button_1, tmp_0, VOID, true, VOID, VOID, VOID, recipeCard$lambda$slambda$lambda);
+            return Unit_getInstance();
+          case 2:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 2) {
+          throw e;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
+        }
+      }
+     while (true);
+  };
+  protoOf(recipeCard$lambda$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
+    var i = new recipeCard$lambda$slambda(this.$recipe_1, this.$this_button_1, completion);
+    i.$this$launch_1 = $this$launch;
+    return i;
+  };
+  protoOf(recipeCard$lambda$slambda).create_wyq9v6_k$ = function (value, completion) {
+    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
+  };
+  function recipeCard$lambda$slambda_0($recipe, $this_button, resultContinuation) {
+    var i = new recipeCard$lambda$slambda($recipe, $this_button, resultContinuation);
+    var l = function ($this$launch, $completion) {
+      return i.invoke_d9fzmj_k$($this$launch, $completion);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function recipeCard$lambda$lambda_0($routing, $recipe) {
+    return function ($this$onClick, it) {
+      $routing.navigate('/recipes/' + $recipe.get_id_kntnx8_k$());
+      return Unit_getInstance();
+    };
+  }
+  function recipeCard$lambda($recipe, $customScope, $routing) {
+    return function ($this$button) {
+      $this$button.set_justifyContent_920yxn_k$(JustifyContent_SPACEBETWEEN_getInstance());
+      var tmp = $recipe.get_name_woqyms_k$();
+      h2($this$button, tmp, VOID, VOID, VOID, recipeCard$lambda$lambda);
+      launch($customScope, VOID, VOID, recipeCard$lambda$slambda_0($recipe, $this$button, null));
+      $this$button.onClick_br9hmj_k$(recipeCard$lambda$lambda_0($routing, $recipe));
+      $this$button.set_background_fl86pt_k$(new Background(Companion_getInstance_0().name_lqbcrr_k$(Col_DARKSLATEGRAY_getInstance())));
+      addBsBorder($this$button, [BsBorder_BORDERDARK_getInstance()]);
+      $this$button.set_padding_5cj5xu_k$(get_px(0));
+      $this$button.set_overflow_7svzdu_k$(Overflow_HIDDEN_getInstance());
+      $this$button.set_width_3hpb1_k$(get_perc(80));
+      $this$button.set_marginLeft_hqxzqs_k$(get_auto());
+      $this$button.set_marginRight_b0p4mj_k$(get_auto());
+      $this$button.set_marginTop_uelzj8_k$(get_px(50));
+      $this$button.set_height_z8kom6_k$(get_px(300));
+      $this$button.set_borderRadius_tlfw5x_k$(get_px(25));
+      return Unit_getInstance();
+    };
+  }
   function get_backend_url() {
     return backend_url;
   }
   var backend_url;
+  function get_assets() {
+    return assets;
+  }
+  var assets;
+  function get_image_not_found() {
+    return image_not_found;
+  }
+  var image_not_found;
   function login(loginUserDTO, $completion) {
     var tmp = new $loginCOROUTINE$0(loginUserDTO, $completion);
     tmp.set_result_xj64lm_k$(Unit_getInstance());
     tmp.set_exception_px07aa_k$(null);
     return tmp.doResume_5yljmg_k$();
   }
+  function getMyRecipes($completion) {
+    var tmp = new $getMyRecipesCOROUTINE$1($completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  }
   function isLogged($completion) {
-    var tmp = new $isLoggedCOROUTINE$1($completion);
+    var tmp = new $isLoggedCOROUTINE$2($completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  }
+  function getImage(imageId, $completion) {
+    var tmp = new $getImageCOROUTINE$3(imageId, $completion);
     tmp.set_result_xj64lm_k$(Unit_getInstance());
     tmp.set_exception_px07aa_k$(null);
     return tmp.doResume_5yljmg_k$();
@@ -425,10 +582,115 @@
       }
      while (true);
   };
-  function $isLoggedCOROUTINE$1(resultContinuation) {
+  function $getMyRecipesCOROUTINE$1(resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf($isLoggedCOROUTINE$1).doResume_5yljmg_k$ = function () {
+  protoOf($getMyRecipesCOROUTINE$1).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(6);
+            this.set_exceptionState_fex74n_k$(5);
+            var tmp_0 = this;
+            var tmp0_elvis_lhs = localStorage.getItem('jwtToken');
+            var tmp_1;
+            if (tmp0_elvis_lhs == null) {
+              return null;
+            } else {
+              tmp_1 = tmp0_elvis_lhs;
+            }
+
+            tmp_0.token0__1 = tmp_1;
+            this.set_state_rjd8d0_k$(1);
+            var tmp_2 = window;
+            var headers = json([to('Content-Type', 'application/json'), to('Authorization', 'Bearer ' + this.token0__1)]);
+            var body = undefined;
+            var referrer = undefined;
+            var referrerPolicy = undefined;
+            var mode = undefined;
+            var credentials = undefined;
+            var cache = undefined;
+            var redirect = undefined;
+            var integrity = undefined;
+            var keepalive = undefined;
+            var window_0 = undefined;
+            var o = {};
+            o['method'] = 'GET';
+            o['headers'] = headers;
+            o['body'] = body;
+            o['referrer'] = referrer;
+            o['referrerPolicy'] = referrerPolicy;
+            o['mode'] = mode;
+            o['credentials'] = credentials;
+            o['cache'] = cache;
+            o['redirect'] = redirect;
+            o['integrity'] = integrity;
+            o['keepalive'] = keepalive;
+            o['window'] = window_0;
+            suspendResult = await_0(tmp_2.fetch('http://localhost:8080/me/recipes', o), this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            this.response1__1 = suspendResult;
+            if (this.response1__1.status === 200) {
+              this.set_state_rjd8d0_k$(4);
+              suspendResult = await_0(this.response1__1.text(), this);
+              if (suspendResult === get_COROUTINE_SUSPENDED()) {
+                return suspendResult;
+              }
+              continue $sm;
+            } else {
+              return null;
+            }
+
+          case 2:
+            this.set_exceptionState_fex74n_k$(6);
+            this.set_state_rjd8d0_k$(3);
+            continue $sm;
+          case 3:
+            this.set_exceptionState_fex74n_k$(6);
+            return Unit_getInstance();
+          case 4:
+            var responseBody = suspendResult;
+            var this_0 = Default_getInstance();
+            var this_1 = this_0.get_serializersModule_piitvg_k$();
+            var this_2 = serializer(this_1, createKType(getKClass(KtList), arrayOf([createInvariantKTypeProjection(createKType(getKClass(BaseRecipeDTO), arrayOf([]), false))]), false));
+            return this_0.decodeFromString_jwu9sq_k$(isInterface(this_2, KSerializer) ? this_2 : THROW_CCE(), responseBody);
+          case 5:
+            this.set_exceptionState_fex74n_k$(6);
+            var tmp_3 = this.get_exception_x0n6w6_k$();
+            if (tmp_3 instanceof Exception) {
+              var e = this.get_exception_x0n6w6_k$();
+              console.error('Failed to fetch recipes', e);
+              return null;
+            } else {
+              throw this.get_exception_x0n6w6_k$();
+            }
+
+          case 6:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e_0 = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 6) {
+          throw e_0;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e_0);
+        }
+      }
+     while (true);
+  };
+  function $isLoggedCOROUTINE$2(resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf($isLoggedCOROUTINE$2).doResume_5yljmg_k$ = function () {
     var suspendResult = this.get_result_iyg5d2_k$();
     $sm: do
       try {
@@ -506,6 +768,110 @@
       }
      while (true);
   };
+  function $getImageCOROUTINE$3(imageId, resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+    this.imageId_1 = imageId;
+  }
+  protoOf($getImageCOROUTINE$3).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(6);
+            this.set_exceptionState_fex74n_k$(5);
+            var tmp_0 = this;
+            var tmp0_elvis_lhs = localStorage.getItem('jwtToken');
+            var tmp_1;
+            if (tmp0_elvis_lhs == null) {
+              return null;
+            } else {
+              tmp_1 = tmp0_elvis_lhs;
+            }
+
+            tmp_0.token0__1 = tmp_1;
+            this.set_state_rjd8d0_k$(1);
+            var tmp_2 = window;
+            var tmp_3 = 'http://localhost:8080/images/' + this.imageId_1;
+            var headers = json([to('Authorization', 'Bearer ' + this.token0__1)]);
+            var body = undefined;
+            var referrer = undefined;
+            var referrerPolicy = undefined;
+            var mode = undefined;
+            var credentials = undefined;
+            var cache = undefined;
+            var redirect = undefined;
+            var integrity = undefined;
+            var keepalive = undefined;
+            var window_0 = undefined;
+            var o = {};
+            o['method'] = 'GET';
+            o['headers'] = headers;
+            o['body'] = body;
+            o['referrer'] = referrer;
+            o['referrerPolicy'] = referrerPolicy;
+            o['mode'] = mode;
+            o['credentials'] = credentials;
+            o['cache'] = cache;
+            o['redirect'] = redirect;
+            o['integrity'] = integrity;
+            o['keepalive'] = keepalive;
+            o['window'] = window_0;
+            suspendResult = await_0(tmp_2.fetch(tmp_3, o), this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            this.response1__1 = suspendResult;
+            if (this.response1__1.status === 200) {
+              this.set_state_rjd8d0_k$(4);
+              suspendResult = await_0(this.response1__1.blob(), this);
+              if (suspendResult === get_COROUTINE_SUSPENDED()) {
+                return suspendResult;
+              }
+              continue $sm;
+            } else {
+              return null;
+            }
+
+          case 2:
+            this.set_exceptionState_fex74n_k$(6);
+            this.set_state_rjd8d0_k$(3);
+            continue $sm;
+          case 3:
+            this.set_exceptionState_fex74n_k$(6);
+            return Unit_getInstance();
+          case 4:
+            var blob = suspendResult;
+            return URL.createObjectURL(blob);
+          case 5:
+            this.set_exceptionState_fex74n_k$(6);
+            var tmp_4 = this.get_exception_x0n6w6_k$();
+            if (tmp_4 instanceof Exception) {
+              var e = this.get_exception_x0n6w6_k$();
+              console.error('Failed to fetch image', e);
+              return null;
+            } else {
+              throw this.get_exception_x0n6w6_k$();
+            }
+
+          case 6:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e_0 = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 6) {
+          throw e_0;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e_0);
+        }
+      }
+     while (true);
+  };
   function _get_routing__z92sqz_0($this) {
     return $this.routing_1;
   }
@@ -547,10 +913,10 @@
             var token = suspendResult;
             if (!(token == null)) {
               localStorage.setItem('jwtToken', token.get_token_iz6pxs_k$());
-              localStorage.setItem('baseUserDTO', Default_getInstance().encodeToString_k0apqx_k$(Companion_getInstance_0().serializer_9w0wvi_k$(), token.get_baseUserDTO_liaq92_k$()));
+              localStorage.setItem('baseUserDTO', Default_getInstance().encodeToString_k0apqx_k$(Companion_getInstance_1().serializer_9w0wvi_k$(), token.get_baseUserDTO_liaq92_k$()));
               Toast_getInstance().success_t2rnjk_k$('Login successfull', new ToastOptions(ToastPosition_BOTTOMRIGHT_getInstance()));
               println('Login succeded');
-              this.this$0__1.routing_1.kvNavigate_rz6nrm_k$('/main');
+              this.this$0__1.routing_1.navigate('/');
             } else {
               localStorage.clear();
               Toast_getInstance().danger_93qmnk_k$('Login failed', new ToastOptions(ToastPosition_BOTTOMRIGHT_getInstance()));
@@ -608,7 +974,7 @@
     return function ($this$vPanel) {
       $this$vPanel.set_width_3hpb1_k$(get_perc(50));
       // Inline function 'kotlin.apply' call
-      var this_0 = new FormPanel(VOID, VOID, VOID, VOID, VOID, VOID, VOID, Companion_getInstance_1().serializer_9w0wvi_k$());
+      var this_0 = new FormPanel(VOID, VOID, VOID, VOID, VOID, VOID, VOID, Companion_getInstance_2().serializer_9w0wvi_k$());
       // Inline function 'epicer.frontend.views.LoginView.<anonymous>.<anonymous>' call
       this_0.add$default_nrpp98_k$(username$factory(), new Text(VOID, VOID, VOID, VOID, 'Username'), true);
       this_0.add$default_nrpp98_k$(password$factory(), new Password(VOID, VOID, 'Password'), true);
@@ -639,6 +1005,20 @@
     return getPropertyCallableRef('password', 1, KProperty1, function (receiver) {
       return receiver.get_password_bodifw_k$();
     }, null);
+  }
+  function MainView$slambda$lambda($myRecipes, $customScope, this$0) {
+    return function ($this$gridPanel) {
+      var tmp;
+      if (!($myRecipes._v == null)) {
+        var _iterator__ex2g4s = $myRecipes._v.iterator_jk1svi_k$();
+        while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+          var recipe = _iterator__ex2g4s.next_20eer_k$();
+          recipeCard($this$gridPanel, recipe, $customScope, this$0.routing_1);
+        }
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
   }
   function _get_routing__z92sqz_1($this) {
     return $this.routing_1;
@@ -714,15 +1094,168 @@
     l.$arity = 1;
     return l;
   }
+  function MainView$slambda_1($myRecipes, this$0, $customScope, resultContinuation) {
+    this.$myRecipes_1 = $myRecipes;
+    this.this$0__1 = this$0;
+    this.$customScope_1 = $customScope;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf(MainView$slambda_1).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
+    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(MainView$slambda_1).invoke_qns8j1_k$ = function (p1, $completion) {
+    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  };
+  protoOf(MainView$slambda_1).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(2);
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = getMyRecipes(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var ARGUMENT = suspendResult;
+            this.$myRecipes_1._v = ARGUMENT;
+            var tmp_0 = AlignItems_CENTER_getInstance();
+            var tmp_1 = AlignContent_CENTER_getInstance();
+            gridPanel(this.this$0__1, VOID, VOID, VOID, 'repeat(auto-fill, minmax(400px, 1fr))', VOID, VOID, VOID, VOID, VOID, tmp_0, VOID, tmp_1, VOID, VOID, MainView$slambda$lambda(this.$myRecipes_1, this.$customScope_1, this.this$0__1));
+            return Unit_getInstance();
+          case 2:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 2) {
+          throw e;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
+        }
+      }
+     while (true);
+  };
+  protoOf(MainView$slambda_1).create_rcuf4x_k$ = function ($this$launch, completion) {
+    var i = new MainView$slambda_1(this.$myRecipes_1, this.this$0__1, this.$customScope_1, completion);
+    i.$this$launch_1 = $this$launch;
+    return i;
+  };
+  protoOf(MainView$slambda_1).create_wyq9v6_k$ = function (value, completion) {
+    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
+  };
+  function MainView$slambda_2($myRecipes, this$0, $customScope, resultContinuation) {
+    var i = new MainView$slambda_1($myRecipes, this$0, $customScope, resultContinuation);
+    var l = function ($this$launch, $completion) {
+      return i.invoke_d9fzmj_k$($this$launch, $completion);
+    };
+    l.$arity = 1;
+    return l;
+  }
   function MainView(routing) {
     SimplePanel.call(this);
     this.routing_1 = routing;
     var customScope = CoroutineScope_0(Dispatchers_getInstance().get_Main_wo5vz6_k$());
     launch(customScope, VOID, VOID, MainView$slambda_0(this, null));
     this.add_rekwpt_k$(new HeaderComponent(this.routing_1));
+    var myRecipes = {_v: null};
+    launch(customScope, VOID, VOID, MainView$slambda_2(myRecipes, this, customScope, null));
+  }
+  function _get_routing__z92sqz_2($this) {
+    return $this.routing_1;
+  }
+  function RecipeView$slambda(this$0, resultContinuation) {
+    this.this$0__1 = this$0;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf(RecipeView$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
+    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(RecipeView$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
+    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  };
+  protoOf(RecipeView$slambda).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(3);
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = isLogged(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var ARGUMENT = suspendResult;
+            if (!ARGUMENT) {
+              this.this$0__1.routing_1.navigate('/login');
+              this.set_state_rjd8d0_k$(2);
+              continue $sm;
+            } else {
+              this.set_state_rjd8d0_k$(2);
+              continue $sm;
+            }
+
+          case 2:
+            return Unit_getInstance();
+          case 3:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 3) {
+          throw e;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
+        }
+      }
+     while (true);
+  };
+  protoOf(RecipeView$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
+    var i = new RecipeView$slambda(this.this$0__1, completion);
+    i.$this$launch_1 = $this$launch;
+    return i;
+  };
+  protoOf(RecipeView$slambda).create_wyq9v6_k$ = function (value, completion) {
+    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
+  };
+  function RecipeView$slambda_0(this$0, resultContinuation) {
+    var i = new RecipeView$slambda(this$0, resultContinuation);
+    var l = function ($this$launch, $completion) {
+      return i.invoke_d9fzmj_k$($this$launch, $completion);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function RecipeView(routing, recipeId) {
+    SimplePanel.call(this);
+    this.routing_1 = routing;
+    var customScope = CoroutineScope_0(Dispatchers_getInstance().get_Main_wo5vz6_k$());
+    launch(customScope, VOID, VOID, RecipeView$slambda_0(this, null));
+    this.add_rekwpt_k$(new HeaderComponent(this.routing_1));
+    h1(this, recipeId.toString());
   }
   //region block: init
   backend_url = 'http://localhost:8080';
+  assets = '/assets';
+  image_not_found = '/assets/image_not_found.png';
   //endregion
   mainWrapper();
   return _;
