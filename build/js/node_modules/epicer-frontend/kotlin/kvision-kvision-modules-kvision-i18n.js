@@ -16,13 +16,13 @@
   'use strict';
   //region block: imports
   var I18n_getInstance = kotlin_io_kvision_kvision.$_$.v;
-  var protoOf = kotlin_kotlin.$_$.fb;
-  var tr = kotlin_io_kvision_kvision.$_$.d2;
-  var ntr = kotlin_io_kvision_kvision.$_$.a2;
-  var trans = kotlin_io_kvision_kvision.$_$.c2;
-  var trans_0 = kotlin_io_kvision_kvision.$_$.b2;
-  var I18nManager = kotlin_io_kvision_kvision.$_$.e2;
-  var initMetadataForClass = kotlin_kotlin.$_$.ca;
+  var protoOf = kotlin_kotlin.$_$.gb;
+  var tr = kotlin_io_kvision_kvision.$_$.f2;
+  var ntr = kotlin_io_kvision_kvision.$_$.c2;
+  var trans = kotlin_io_kvision_kvision.$_$.e2;
+  var trans_0 = kotlin_io_kvision_kvision.$_$.d2;
+  var I18nManager = kotlin_io_kvision_kvision.$_$.g2;
+  var initMetadataForClass = kotlin_kotlin.$_$.da;
   var VOID = kotlin_kotlin.$_$.f;
   //endregion
   //region block: pre-declaration

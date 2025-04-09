@@ -1,13 +1,9 @@
 package epicer.backend.service.`interface`
 
 import epicer.common.dto.recipe.BaseRecipeDTO
-import epicer.common.dto.user.BaseUserDTO
-import epicer.common.dto.user.FullUserDTO
-import epicer.common.dto.user.NewUserDTO
-import epicer.common.dto.user.UpdateUserDTO
-import epicer.common.dto.user.UserDTO
+import epicer.common.dto.recipe.FullRecipeDTO
 
 interface IRecipeService {
     suspend fun getBaseRecipesById(id: Int): List<BaseRecipeDTO>
-    suspend fun getRecipeById(id: Int): BaseRecipeDTO?
+    suspend fun getAccessibleRecipeById(recipeId: Int, userId: Int): FullRecipeDTO?
 }

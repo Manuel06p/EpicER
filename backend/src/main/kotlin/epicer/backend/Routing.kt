@@ -8,12 +8,10 @@ import epicer.backend.service.UserService
 import epicer.common.dto.user.LoginUserDTO
 import epicer.common.dto.user.NewUserDTO
 import epicer.common.dto.user.UpdateUserDTO
-import epicer.backend.service.`interface`.IUserService
 import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
 import epicer.common.dto.user.BaseUserDTO
 import io.ktor.http.*
-import io.ktor.http.ContentDisposition.Companion.File
 import io.ktor.serialization.JsonConvertException
 import io.ktor.server.application.*
 import io.ktor.server.auth.authenticate
@@ -84,6 +82,25 @@ fun Application.configureRouting() {
                     }
 
                     call.respondFile(imageFile)
+                }
+            }
+        }
+
+        route("/recipes") {
+            authenticate("auth-jwt") {
+                get("/{id}") {
+                    val principal = call.principal<JWTPrincipal>()
+                    val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                    val recipeId = call.parameters["id"]?.toIntOrNull()
+
+                    if (recipeId != null && userId != null) {
+                        val recipe = recipeService.getAccessibleRecipeById(recipeId, userId)
+                        if (recipe != null) {
+                            call.respond(HttpStatusCode.OK, recipe)
+                        }
+                    }
+                    call.respond(HttpStatusCode.NoContent)
                 }
             }
         }

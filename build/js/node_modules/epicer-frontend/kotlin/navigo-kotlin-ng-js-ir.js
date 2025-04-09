@@ -12,9 +12,9 @@
 }(function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.fb;
-  var initMetadataForClass = kotlin_kotlin.$_$.ca;
-  var Function0 = kotlin_kotlin.$_$.fe;
+  var protoOf = kotlin_kotlin.$_$.gb;
+  var initMetadataForClass = kotlin_kotlin.$_$.da;
+  var Function0 = kotlin_kotlin.$_$.ge;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(DoneFunction, 'DoneFunction');

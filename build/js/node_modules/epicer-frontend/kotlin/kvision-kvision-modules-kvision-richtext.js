@@ -16,11 +16,11 @@
   'use strict';
   //region block: imports
   var I18n_getInstance = kotlin_io_kvision_kvision.$_$.v;
-  var iterator = kotlin_kotlin.$_$.va;
+  var iterator = kotlin_kotlin.$_$.wa;
   var Unit_getInstance = kotlin_kotlin.$_$.c5;
-  var protoOf = kotlin_kotlin.$_$.fb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.q2;
-  var initMetadataForObject = kotlin_kotlin.$_$.ha;
+  var protoOf = kotlin_kotlin.$_$.gb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.s2;
+  var initMetadataForObject = kotlin_kotlin.$_$.ia;
   var VOID = kotlin_kotlin.$_$.f;
   //endregion
   //region block: pre-declaration

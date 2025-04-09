@@ -19,17 +19,17 @@
   'use strict';
   //region block: imports
   var RoutingManager_getInstance = kotlin_io_kvision_kvision.$_$.x;
-  var protoOf = kotlin_kotlin.$_$.fb;
+  var protoOf = kotlin_kotlin.$_$.gb;
   var VOID = kotlin_kotlin.$_$.f;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.da;
-  var KVRouter = kotlin_io_kvision_kvision.$_$.k2;
-  var initMetadataForClass = kotlin_kotlin.$_$.ca;
-  var THROW_IAE = kotlin_kotlin.$_$.re;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ea;
+  var KVRouter = kotlin_io_kvision_kvision.$_$.m2;
+  var initMetadataForClass = kotlin_kotlin.$_$.da;
+  var THROW_IAE = kotlin_kotlin.$_$.se;
   var enumEntries = kotlin_kotlin.$_$.i9;
   var Unit_getInstance = kotlin_kotlin.$_$.c5;
-  var Enum = kotlin_kotlin.$_$.ce;
+  var Enum = kotlin_kotlin.$_$.de;
   var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.t1;
-  var RouterFactory = kotlin_io_kvision_kvision.$_$.l2;
+  var RouterFactory = kotlin_io_kvision_kvision.$_$.n2;
   //endregion
   //region block: pre-declaration
   initMetadataForCompanion(Companion);

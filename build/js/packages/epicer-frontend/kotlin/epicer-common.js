@@ -19,27 +19,30 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var protoOf = kotlin_kotlin.$_$.fb;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.da;
-  var PluginGeneratedSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.y1;
-  var THROW_CCE = kotlin_kotlin.$_$.qe;
+  var protoOf = kotlin_kotlin.$_$.gb;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ea;
+  var PluginGeneratedSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.z1;
+  var THROW_CCE = kotlin_kotlin.$_$.re;
   var UnknownFieldException_init_$Create$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.e;
-  var StringSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p;
-  var typeParametersSerializers = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t1;
-  var GeneratedSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.u1;
-  var initMetadataForObject = kotlin_kotlin.$_$.ha;
+  var StringSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q;
+  var typeParametersSerializers = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.u1;
+  var GeneratedSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.v1;
+  var initMetadataForObject = kotlin_kotlin.$_$.ia;
   var VOID = kotlin_kotlin.$_$.f;
-  var throwMissingFieldException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.b2;
-  var objectCreate = kotlin_kotlin.$_$.eb;
-  var getStringHashCode = kotlin_kotlin.$_$.aa;
-  var initMetadataForClass = kotlin_kotlin.$_$.ca;
-  var IntSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o;
-  var get_nullable = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s;
-  var ArrayListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r1;
-  var LocalDateTimeIso8601Serializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_datetime.$_$.a;
-  var toString = kotlin_kotlin.$_$.ib;
-  var hashCode = kotlin_kotlin.$_$.ba;
+  var throwMissingFieldException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.c2;
+  var objectCreate = kotlin_kotlin.$_$.fb;
+  var getStringHashCode = kotlin_kotlin.$_$.ba;
+  var initMetadataForClass = kotlin_kotlin.$_$.da;
+  var IntSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p;
+  var get_nullable = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t;
+  var DoubleSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o;
+  var toString = kotlin_kotlin.$_$.tf;
+  var getNumberHashCode = kotlin_kotlin.$_$.z9;
   var equals = kotlin_kotlin.$_$.w9;
+  var ArrayListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s1;
+  var toString_0 = kotlin_kotlin.$_$.jb;
+  var hashCode = kotlin_kotlin.$_$.ca;
+  var LocalDateTimeIso8601Serializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_datetime.$_$.a;
   //endregion
   //region block: pre-declaration
   initMetadataForCompanion(Companion);
@@ -50,10 +53,22 @@
   initMetadataForClass(BaseRecipeDTO, 'BaseRecipeDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_0});
   initMetadataForCompanion(Companion_1);
   initMetadataForObject($serializer_1, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(BaseUserDTO, 'BaseUserDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_1});
+  initMetadataForClass(FullIngredientDTO, 'FullIngredientDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_1});
   initMetadataForCompanion(Companion_2);
   initMetadataForObject($serializer_2, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(LoginUserDTO, 'LoginUserDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_2});
+  initMetadataForClass(FullIngredientInRecipeDTO, 'FullIngredientInRecipeDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_2});
+  initMetadataForCompanion(Companion_3);
+  initMetadataForObject($serializer_3, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(FullRecipeDTO, 'FullRecipeDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_3});
+  initMetadataForCompanion(Companion_4);
+  initMetadataForObject($serializer_4, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(FullUnitDTO, 'FullUnitDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_4});
+  initMetadataForCompanion(Companion_5);
+  initMetadataForObject($serializer_5, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(BaseUserDTO, 'BaseUserDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_5});
+  initMetadataForCompanion(Companion_6);
+  initMetadataForObject($serializer_6, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(LoginUserDTO, 'LoginUserDTO', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_6});
   //endregion
   function Companion() {
     Companion_instance = this;
@@ -78,7 +93,7 @@
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.token_1);
-    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, $serializer_getInstance_1(), value.baseUserDTO_1);
+    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, $serializer_getInstance_5(), value.baseUserDTO_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
   protoOf($serializer).serialize_5ase3y_k$ = function (encoder, value) {
@@ -95,7 +110,7 @@
     if (tmp6_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp6_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
-      tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_1(), tmp5_local1);
+      tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_5(), tmp5_local1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
     } else
       while (tmp1_flag) {
@@ -109,7 +124,7 @@
             tmp3_bitMask0 = tmp3_bitMask0 | 1;
             break;
           case 1:
-            tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_1(), tmp5_local1);
+            tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_5(), tmp5_local1);
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           default:
@@ -126,7 +141,7 @@
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), $serializer_getInstance_1()];
+    return [StringSerializer_getInstance(), $serializer_getInstance_5()];
   };
   var $serializer_instance;
   function $serializer_getInstance() {
@@ -346,16 +361,8 @@
       return false;
     return true;
   };
-  function _get_$childSerializers__r2zwns($this) {
-    return $this.$childSerializers_1;
-  }
   function Companion_1() {
     Companion_instance_1 = this;
-    var tmp = this;
-    // Inline function 'kotlin.arrayOf' call
-    // Inline function 'kotlin.js.unsafeCast' call
-    // Inline function 'kotlin.js.asDynamic' call
-    tmp.$childSerializers_1 = [null, null, new ArrayListSerializer(StringSerializer_getInstance()), null];
   }
   protoOf(Companion_1).serializer_9w0wvi_k$ = function () {
     return $serializer_getInstance_1();
@@ -368,6 +375,775 @@
   }
   function $serializer_1() {
     $serializer_instance_1 = this;
+    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('epicer.common.dto.recipe.FullIngredientDTO', this, 4);
+    tmp0_serialDesc.addElement_5pzumi_k$('id', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('nameSingular', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('namePlural', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('imageId', false);
+    this.descriptor_1 = tmp0_serialDesc;
+  }
+  protoOf($serializer_1).serialize_4ra0p8_k$ = function (encoder, value) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
+    tmp1_output.encodeIntElement_krhhce_k$(tmp0_desc, 0, value.id_1);
+    tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.nameSingular_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 2, StringSerializer_getInstance(), value.namePlural_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 3, IntSerializer_getInstance(), value.imageId_1);
+    tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
+  };
+  protoOf($serializer_1).serialize_5ase3y_k$ = function (encoder, value) {
+    return this.serialize_4ra0p8_k$(encoder, value instanceof FullIngredientDTO ? value : THROW_CCE());
+  };
+  protoOf($serializer_1).deserialize_sy6x50_k$ = function (decoder) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_flag = true;
+    var tmp2_index = 0;
+    var tmp3_bitMask0 = 0;
+    var tmp4_local0 = 0;
+    var tmp5_local1 = null;
+    var tmp6_local2 = null;
+    var tmp7_local3 = null;
+    var tmp8_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
+    if (tmp8_input.decodeSequentially_xlblqy_k$()) {
+      tmp4_local0 = tmp8_input.decodeIntElement_941u6a_k$(tmp0_desc, 0);
+      tmp3_bitMask0 = tmp3_bitMask0 | 1;
+      tmp5_local1 = tmp8_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+      tmp3_bitMask0 = tmp3_bitMask0 | 2;
+      tmp6_local2 = tmp8_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 2, StringSerializer_getInstance(), tmp6_local2);
+      tmp3_bitMask0 = tmp3_bitMask0 | 4;
+      tmp7_local3 = tmp8_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, IntSerializer_getInstance(), tmp7_local3);
+      tmp3_bitMask0 = tmp3_bitMask0 | 8;
+    } else
+      while (tmp1_flag) {
+        tmp2_index = tmp8_input.decodeElementIndex_bstkhp_k$(tmp0_desc);
+        switch (tmp2_index) {
+          case -1:
+            tmp1_flag = false;
+            break;
+          case 0:
+            tmp4_local0 = tmp8_input.decodeIntElement_941u6a_k$(tmp0_desc, 0);
+            tmp3_bitMask0 = tmp3_bitMask0 | 1;
+            break;
+          case 1:
+            tmp5_local1 = tmp8_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+            tmp3_bitMask0 = tmp3_bitMask0 | 2;
+            break;
+          case 2:
+            tmp6_local2 = tmp8_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 2, StringSerializer_getInstance(), tmp6_local2);
+            tmp3_bitMask0 = tmp3_bitMask0 | 4;
+            break;
+          case 3:
+            tmp7_local3 = tmp8_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, IntSerializer_getInstance(), tmp7_local3);
+            tmp3_bitMask0 = tmp3_bitMask0 | 8;
+            break;
+          default:
+            throw UnknownFieldException_init_$Create$(tmp2_index);
+        }
+      }
+    tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
+    return FullIngredientDTO_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
+  };
+  protoOf($serializer_1).get_descriptor_wjt6a0_k$ = function () {
+    return this.descriptor_1;
+  };
+  protoOf($serializer_1).childSerializers_5ghqw5_k$ = function () {
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return [IntSerializer_getInstance(), StringSerializer_getInstance(), get_nullable(StringSerializer_getInstance()), get_nullable(IntSerializer_getInstance())];
+  };
+  var $serializer_instance_1;
+  function $serializer_getInstance_1() {
+    if ($serializer_instance_1 == null)
+      new $serializer_1();
+    return $serializer_instance_1;
+  }
+  function FullIngredientDTO_init_$Init$(seen0, id, nameSingular, namePlural, imageId, serializationConstructorMarker, $this) {
+    if (!(15 === (15 & seen0))) {
+      throwMissingFieldException(seen0, 15, $serializer_getInstance_1().descriptor_1);
+    }
+    $this.id_1 = id;
+    $this.nameSingular_1 = nameSingular;
+    $this.namePlural_1 = namePlural;
+    $this.imageId_1 = imageId;
+    return $this;
+  }
+  function FullIngredientDTO_init_$Create$(seen0, id, nameSingular, namePlural, imageId, serializationConstructorMarker) {
+    return FullIngredientDTO_init_$Init$(seen0, id, nameSingular, namePlural, imageId, serializationConstructorMarker, objectCreate(protoOf(FullIngredientDTO)));
+  }
+  function FullIngredientDTO(id, nameSingular, namePlural, imageId) {
+    Companion_getInstance_1();
+    this.id_1 = id;
+    this.nameSingular_1 = nameSingular;
+    this.namePlural_1 = namePlural;
+    this.imageId_1 = imageId;
+  }
+  protoOf(FullIngredientDTO).get_id_kntnx8_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(FullIngredientDTO).get_nameSingular_ufd0cr_k$ = function () {
+    return this.nameSingular_1;
+  };
+  protoOf(FullIngredientDTO).get_namePlural_y2zlhk_k$ = function () {
+    return this.namePlural_1;
+  };
+  protoOf(FullIngredientDTO).get_imageId_wvvawd_k$ = function () {
+    return this.imageId_1;
+  };
+  protoOf(FullIngredientDTO).component1_7eebsc_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(FullIngredientDTO).component2_7eebsb_k$ = function () {
+    return this.nameSingular_1;
+  };
+  protoOf(FullIngredientDTO).component3_7eebsa_k$ = function () {
+    return this.namePlural_1;
+  };
+  protoOf(FullIngredientDTO).component4_7eebs9_k$ = function () {
+    return this.imageId_1;
+  };
+  protoOf(FullIngredientDTO).copy_hcomt7_k$ = function (id, nameSingular, namePlural, imageId) {
+    return new FullIngredientDTO(id, nameSingular, namePlural, imageId);
+  };
+  protoOf(FullIngredientDTO).copy$default_mdrqi2_k$ = function (id, nameSingular, namePlural, imageId, $super) {
+    id = id === VOID ? this.id_1 : id;
+    nameSingular = nameSingular === VOID ? this.nameSingular_1 : nameSingular;
+    namePlural = namePlural === VOID ? this.namePlural_1 : namePlural;
+    imageId = imageId === VOID ? this.imageId_1 : imageId;
+    return $super === VOID ? this.copy_hcomt7_k$(id, nameSingular, namePlural, imageId) : $super.copy_hcomt7_k$.call(this, id, nameSingular, namePlural, imageId);
+  };
+  protoOf(FullIngredientDTO).toString = function () {
+    return 'FullIngredientDTO(id=' + this.id_1 + ', nameSingular=' + this.nameSingular_1 + ', namePlural=' + this.namePlural_1 + ', imageId=' + this.imageId_1 + ')';
+  };
+  protoOf(FullIngredientDTO).hashCode = function () {
+    var result = this.id_1;
+    result = imul(result, 31) + getStringHashCode(this.nameSingular_1) | 0;
+    result = imul(result, 31) + (this.namePlural_1 == null ? 0 : getStringHashCode(this.namePlural_1)) | 0;
+    result = imul(result, 31) + (this.imageId_1 == null ? 0 : this.imageId_1) | 0;
+    return result;
+  };
+  protoOf(FullIngredientDTO).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof FullIngredientDTO))
+      return false;
+    var tmp0_other_with_cast = other instanceof FullIngredientDTO ? other : THROW_CCE();
+    if (!(this.id_1 === tmp0_other_with_cast.id_1))
+      return false;
+    if (!(this.nameSingular_1 === tmp0_other_with_cast.nameSingular_1))
+      return false;
+    if (!(this.namePlural_1 == tmp0_other_with_cast.namePlural_1))
+      return false;
+    if (!(this.imageId_1 == tmp0_other_with_cast.imageId_1))
+      return false;
+    return true;
+  };
+  function Companion_2() {
+    Companion_instance_2 = this;
+  }
+  protoOf(Companion_2).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_2();
+  };
+  var Companion_instance_2;
+  function Companion_getInstance_2() {
+    if (Companion_instance_2 == null)
+      new Companion_2();
+    return Companion_instance_2;
+  }
+  function $serializer_2() {
+    $serializer_instance_2 = this;
+    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('epicer.common.dto.recipe.FullIngredientInRecipeDTO', this, 5);
+    tmp0_serialDesc.addElement_5pzumi_k$('id', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('notes', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('quantity', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('unit', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('ingredient', false);
+    this.descriptor_1 = tmp0_serialDesc;
+  }
+  protoOf($serializer_2).serialize_9dfq4h_k$ = function (encoder, value) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
+    tmp1_output.encodeIntElement_krhhce_k$(tmp0_desc, 0, value.id_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 1, StringSerializer_getInstance(), value.notes_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 2, DoubleSerializer_getInstance(), value.quantity_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 3, $serializer_getInstance_4(), value.unit_1);
+    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 4, $serializer_getInstance_1(), value.ingredient_1);
+    tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
+  };
+  protoOf($serializer_2).serialize_5ase3y_k$ = function (encoder, value) {
+    return this.serialize_9dfq4h_k$(encoder, value instanceof FullIngredientInRecipeDTO ? value : THROW_CCE());
+  };
+  protoOf($serializer_2).deserialize_sy6x50_k$ = function (decoder) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_flag = true;
+    var tmp2_index = 0;
+    var tmp3_bitMask0 = 0;
+    var tmp4_local0 = 0;
+    var tmp5_local1 = null;
+    var tmp6_local2 = null;
+    var tmp7_local3 = null;
+    var tmp8_local4 = null;
+    var tmp9_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
+    if (tmp9_input.decodeSequentially_xlblqy_k$()) {
+      tmp4_local0 = tmp9_input.decodeIntElement_941u6a_k$(tmp0_desc, 0);
+      tmp3_bitMask0 = tmp3_bitMask0 | 1;
+      tmp5_local1 = tmp9_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 1, StringSerializer_getInstance(), tmp5_local1);
+      tmp3_bitMask0 = tmp3_bitMask0 | 2;
+      tmp6_local2 = tmp9_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 2, DoubleSerializer_getInstance(), tmp6_local2);
+      tmp3_bitMask0 = tmp3_bitMask0 | 4;
+      tmp7_local3 = tmp9_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_4(), tmp7_local3);
+      tmp3_bitMask0 = tmp3_bitMask0 | 8;
+      tmp8_local4 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 4, $serializer_getInstance_1(), tmp8_local4);
+      tmp3_bitMask0 = tmp3_bitMask0 | 16;
+    } else
+      while (tmp1_flag) {
+        tmp2_index = tmp9_input.decodeElementIndex_bstkhp_k$(tmp0_desc);
+        switch (tmp2_index) {
+          case -1:
+            tmp1_flag = false;
+            break;
+          case 0:
+            tmp4_local0 = tmp9_input.decodeIntElement_941u6a_k$(tmp0_desc, 0);
+            tmp3_bitMask0 = tmp3_bitMask0 | 1;
+            break;
+          case 1:
+            tmp5_local1 = tmp9_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 1, StringSerializer_getInstance(), tmp5_local1);
+            tmp3_bitMask0 = tmp3_bitMask0 | 2;
+            break;
+          case 2:
+            tmp6_local2 = tmp9_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 2, DoubleSerializer_getInstance(), tmp6_local2);
+            tmp3_bitMask0 = tmp3_bitMask0 | 4;
+            break;
+          case 3:
+            tmp7_local3 = tmp9_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_4(), tmp7_local3);
+            tmp3_bitMask0 = tmp3_bitMask0 | 8;
+            break;
+          case 4:
+            tmp8_local4 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 4, $serializer_getInstance_1(), tmp8_local4);
+            tmp3_bitMask0 = tmp3_bitMask0 | 16;
+            break;
+          default:
+            throw UnknownFieldException_init_$Create$(tmp2_index);
+        }
+      }
+    tmp9_input.endStructure_1xqz0n_k$(tmp0_desc);
+    return FullIngredientInRecipeDTO_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, null);
+  };
+  protoOf($serializer_2).get_descriptor_wjt6a0_k$ = function () {
+    return this.descriptor_1;
+  };
+  protoOf($serializer_2).childSerializers_5ghqw5_k$ = function () {
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return [IntSerializer_getInstance(), get_nullable(StringSerializer_getInstance()), get_nullable(DoubleSerializer_getInstance()), get_nullable($serializer_getInstance_4()), $serializer_getInstance_1()];
+  };
+  var $serializer_instance_2;
+  function $serializer_getInstance_2() {
+    if ($serializer_instance_2 == null)
+      new $serializer_2();
+    return $serializer_instance_2;
+  }
+  function FullIngredientInRecipeDTO_init_$Init$(seen0, id, notes, quantity, unit, ingredient, serializationConstructorMarker, $this) {
+    if (!(31 === (31 & seen0))) {
+      throwMissingFieldException(seen0, 31, $serializer_getInstance_2().descriptor_1);
+    }
+    $this.id_1 = id;
+    $this.notes_1 = notes;
+    $this.quantity_1 = quantity;
+    $this.unit_1 = unit;
+    $this.ingredient_1 = ingredient;
+    return $this;
+  }
+  function FullIngredientInRecipeDTO_init_$Create$(seen0, id, notes, quantity, unit, ingredient, serializationConstructorMarker) {
+    return FullIngredientInRecipeDTO_init_$Init$(seen0, id, notes, quantity, unit, ingredient, serializationConstructorMarker, objectCreate(protoOf(FullIngredientInRecipeDTO)));
+  }
+  function FullIngredientInRecipeDTO(id, notes, quantity, unit, ingredient) {
+    Companion_getInstance_2();
+    this.id_1 = id;
+    this.notes_1 = notes;
+    this.quantity_1 = quantity;
+    this.unit_1 = unit;
+    this.ingredient_1 = ingredient;
+  }
+  protoOf(FullIngredientInRecipeDTO).get_id_kntnx8_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).get_notes_ivw520_k$ = function () {
+    return this.notes_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).get_quantity_hz47ro_k$ = function () {
+    return this.quantity_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).get_unit_wovp3h_k$ = function () {
+    return this.unit_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).get_ingredient_nl550m_k$ = function () {
+    return this.ingredient_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).component1_7eebsc_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).component2_7eebsb_k$ = function () {
+    return this.notes_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).component3_7eebsa_k$ = function () {
+    return this.quantity_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).component4_7eebs9_k$ = function () {
+    return this.unit_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).component5_7eebs8_k$ = function () {
+    return this.ingredient_1;
+  };
+  protoOf(FullIngredientInRecipeDTO).copy_gr2nlf_k$ = function (id, notes, quantity, unit, ingredient) {
+    return new FullIngredientInRecipeDTO(id, notes, quantity, unit, ingredient);
+  };
+  protoOf(FullIngredientInRecipeDTO).copy$default_3c5qrg_k$ = function (id, notes, quantity, unit, ingredient, $super) {
+    id = id === VOID ? this.id_1 : id;
+    notes = notes === VOID ? this.notes_1 : notes;
+    quantity = quantity === VOID ? this.quantity_1 : quantity;
+    unit = unit === VOID ? this.unit_1 : unit;
+    ingredient = ingredient === VOID ? this.ingredient_1 : ingredient;
+    return $super === VOID ? this.copy_gr2nlf_k$(id, notes, quantity, unit, ingredient) : $super.copy_gr2nlf_k$.call(this, id, notes, quantity, unit, ingredient);
+  };
+  protoOf(FullIngredientInRecipeDTO).toString = function () {
+    return 'FullIngredientInRecipeDTO(id=' + this.id_1 + ', notes=' + this.notes_1 + ', quantity=' + this.quantity_1 + ', unit=' + toString(this.unit_1) + ', ingredient=' + this.ingredient_1.toString() + ')';
+  };
+  protoOf(FullIngredientInRecipeDTO).hashCode = function () {
+    var result = this.id_1;
+    result = imul(result, 31) + (this.notes_1 == null ? 0 : getStringHashCode(this.notes_1)) | 0;
+    result = imul(result, 31) + (this.quantity_1 == null ? 0 : getNumberHashCode(this.quantity_1)) | 0;
+    result = imul(result, 31) + (this.unit_1 == null ? 0 : this.unit_1.hashCode()) | 0;
+    result = imul(result, 31) + this.ingredient_1.hashCode() | 0;
+    return result;
+  };
+  protoOf(FullIngredientInRecipeDTO).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof FullIngredientInRecipeDTO))
+      return false;
+    var tmp0_other_with_cast = other instanceof FullIngredientInRecipeDTO ? other : THROW_CCE();
+    if (!(this.id_1 === tmp0_other_with_cast.id_1))
+      return false;
+    if (!(this.notes_1 == tmp0_other_with_cast.notes_1))
+      return false;
+    if (!equals(this.quantity_1, tmp0_other_with_cast.quantity_1))
+      return false;
+    if (!equals(this.unit_1, tmp0_other_with_cast.unit_1))
+      return false;
+    if (!this.ingredient_1.equals(tmp0_other_with_cast.ingredient_1))
+      return false;
+    return true;
+  };
+  function _get_$childSerializers__r2zwns($this) {
+    return $this.$childSerializers_1;
+  }
+  function Companion_3() {
+    Companion_instance_3 = this;
+    var tmp = this;
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp.$childSerializers_1 = [null, null, null, null, null, new ArrayListSerializer($serializer_getInstance_2())];
+  }
+  protoOf(Companion_3).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_3();
+  };
+  var Companion_instance_3;
+  function Companion_getInstance_3() {
+    if (Companion_instance_3 == null)
+      new Companion_3();
+    return Companion_instance_3;
+  }
+  function $serializer_3() {
+    $serializer_instance_3 = this;
+    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('epicer.common.dto.recipe.FullRecipeDTO', this, 6);
+    tmp0_serialDesc.addElement_5pzumi_k$('id', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('name', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('description', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('portions', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('imageId', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('ingredientsDTO', false);
+    this.descriptor_1 = tmp0_serialDesc;
+  }
+  protoOf($serializer_3).serialize_jyy9op_k$ = function (encoder, value) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
+    var tmp2_cached = Companion_getInstance_3().$childSerializers_1;
+    tmp1_output.encodeIntElement_krhhce_k$(tmp0_desc, 0, value.id_1);
+    tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 2, StringSerializer_getInstance(), value.description_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 3, IntSerializer_getInstance(), value.portions_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 4, IntSerializer_getInstance(), value.imageId_1);
+    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 5, tmp2_cached[5], value.ingredientsDTO_1);
+    tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
+  };
+  protoOf($serializer_3).serialize_5ase3y_k$ = function (encoder, value) {
+    return this.serialize_jyy9op_k$(encoder, value instanceof FullRecipeDTO ? value : THROW_CCE());
+  };
+  protoOf($serializer_3).deserialize_sy6x50_k$ = function (decoder) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_flag = true;
+    var tmp2_index = 0;
+    var tmp3_bitMask0 = 0;
+    var tmp4_local0 = 0;
+    var tmp5_local1 = null;
+    var tmp6_local2 = null;
+    var tmp7_local3 = null;
+    var tmp8_local4 = null;
+    var tmp9_local5 = null;
+    var tmp10_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
+    var tmp11_cached = Companion_getInstance_3().$childSerializers_1;
+    if (tmp10_input.decodeSequentially_xlblqy_k$()) {
+      tmp4_local0 = tmp10_input.decodeIntElement_941u6a_k$(tmp0_desc, 0);
+      tmp3_bitMask0 = tmp3_bitMask0 | 1;
+      tmp5_local1 = tmp10_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+      tmp3_bitMask0 = tmp3_bitMask0 | 2;
+      tmp6_local2 = tmp10_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 2, StringSerializer_getInstance(), tmp6_local2);
+      tmp3_bitMask0 = tmp3_bitMask0 | 4;
+      tmp7_local3 = tmp10_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, IntSerializer_getInstance(), tmp7_local3);
+      tmp3_bitMask0 = tmp3_bitMask0 | 8;
+      tmp8_local4 = tmp10_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, IntSerializer_getInstance(), tmp8_local4);
+      tmp3_bitMask0 = tmp3_bitMask0 | 16;
+      tmp9_local5 = tmp10_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 5, tmp11_cached[5], tmp9_local5);
+      tmp3_bitMask0 = tmp3_bitMask0 | 32;
+    } else
+      while (tmp1_flag) {
+        tmp2_index = tmp10_input.decodeElementIndex_bstkhp_k$(tmp0_desc);
+        switch (tmp2_index) {
+          case -1:
+            tmp1_flag = false;
+            break;
+          case 0:
+            tmp4_local0 = tmp10_input.decodeIntElement_941u6a_k$(tmp0_desc, 0);
+            tmp3_bitMask0 = tmp3_bitMask0 | 1;
+            break;
+          case 1:
+            tmp5_local1 = tmp10_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+            tmp3_bitMask0 = tmp3_bitMask0 | 2;
+            break;
+          case 2:
+            tmp6_local2 = tmp10_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 2, StringSerializer_getInstance(), tmp6_local2);
+            tmp3_bitMask0 = tmp3_bitMask0 | 4;
+            break;
+          case 3:
+            tmp7_local3 = tmp10_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, IntSerializer_getInstance(), tmp7_local3);
+            tmp3_bitMask0 = tmp3_bitMask0 | 8;
+            break;
+          case 4:
+            tmp8_local4 = tmp10_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, IntSerializer_getInstance(), tmp8_local4);
+            tmp3_bitMask0 = tmp3_bitMask0 | 16;
+            break;
+          case 5:
+            tmp9_local5 = tmp10_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 5, tmp11_cached[5], tmp9_local5);
+            tmp3_bitMask0 = tmp3_bitMask0 | 32;
+            break;
+          default:
+            throw UnknownFieldException_init_$Create$(tmp2_index);
+        }
+      }
+    tmp10_input.endStructure_1xqz0n_k$(tmp0_desc);
+    return FullRecipeDTO_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, tmp9_local5, null);
+  };
+  protoOf($serializer_3).get_descriptor_wjt6a0_k$ = function () {
+    return this.descriptor_1;
+  };
+  protoOf($serializer_3).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_3().$childSerializers_1;
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return [IntSerializer_getInstance(), StringSerializer_getInstance(), get_nullable(StringSerializer_getInstance()), get_nullable(IntSerializer_getInstance()), get_nullable(IntSerializer_getInstance()), tmp0_cached[5]];
+  };
+  var $serializer_instance_3;
+  function $serializer_getInstance_3() {
+    if ($serializer_instance_3 == null)
+      new $serializer_3();
+    return $serializer_instance_3;
+  }
+  function FullRecipeDTO_init_$Init$(seen0, id, name, description, portions, imageId, ingredientsDTO, serializationConstructorMarker, $this) {
+    if (!(63 === (63 & seen0))) {
+      throwMissingFieldException(seen0, 63, $serializer_getInstance_3().descriptor_1);
+    }
+    $this.id_1 = id;
+    $this.name_1 = name;
+    $this.description_1 = description;
+    $this.portions_1 = portions;
+    $this.imageId_1 = imageId;
+    $this.ingredientsDTO_1 = ingredientsDTO;
+    return $this;
+  }
+  function FullRecipeDTO_init_$Create$(seen0, id, name, description, portions, imageId, ingredientsDTO, serializationConstructorMarker) {
+    return FullRecipeDTO_init_$Init$(seen0, id, name, description, portions, imageId, ingredientsDTO, serializationConstructorMarker, objectCreate(protoOf(FullRecipeDTO)));
+  }
+  function FullRecipeDTO(id, name, description, portions, imageId, ingredientsDTO) {
+    Companion_getInstance_3();
+    this.id_1 = id;
+    this.name_1 = name;
+    this.description_1 = description;
+    this.portions_1 = portions;
+    this.imageId_1 = imageId;
+    this.ingredientsDTO_1 = ingredientsDTO;
+  }
+  protoOf(FullRecipeDTO).get_id_kntnx8_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(FullRecipeDTO).get_name_woqyms_k$ = function () {
+    return this.name_1;
+  };
+  protoOf(FullRecipeDTO).get_description_emjre5_k$ = function () {
+    return this.description_1;
+  };
+  protoOf(FullRecipeDTO).get_portions_jqwgy3_k$ = function () {
+    return this.portions_1;
+  };
+  protoOf(FullRecipeDTO).get_imageId_wvvawd_k$ = function () {
+    return this.imageId_1;
+  };
+  protoOf(FullRecipeDTO).get_ingredientsDTO_xkha9m_k$ = function () {
+    return this.ingredientsDTO_1;
+  };
+  protoOf(FullRecipeDTO).component1_7eebsc_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(FullRecipeDTO).component2_7eebsb_k$ = function () {
+    return this.name_1;
+  };
+  protoOf(FullRecipeDTO).component3_7eebsa_k$ = function () {
+    return this.description_1;
+  };
+  protoOf(FullRecipeDTO).component4_7eebs9_k$ = function () {
+    return this.portions_1;
+  };
+  protoOf(FullRecipeDTO).component5_7eebs8_k$ = function () {
+    return this.imageId_1;
+  };
+  protoOf(FullRecipeDTO).component6_7eebs7_k$ = function () {
+    return this.ingredientsDTO_1;
+  };
+  protoOf(FullRecipeDTO).copy_ut9x76_k$ = function (id, name, description, portions, imageId, ingredientsDTO) {
+    return new FullRecipeDTO(id, name, description, portions, imageId, ingredientsDTO);
+  };
+  protoOf(FullRecipeDTO).copy$default_7uiibk_k$ = function (id, name, description, portions, imageId, ingredientsDTO, $super) {
+    id = id === VOID ? this.id_1 : id;
+    name = name === VOID ? this.name_1 : name;
+    description = description === VOID ? this.description_1 : description;
+    portions = portions === VOID ? this.portions_1 : portions;
+    imageId = imageId === VOID ? this.imageId_1 : imageId;
+    ingredientsDTO = ingredientsDTO === VOID ? this.ingredientsDTO_1 : ingredientsDTO;
+    return $super === VOID ? this.copy_ut9x76_k$(id, name, description, portions, imageId, ingredientsDTO) : $super.copy_ut9x76_k$.call(this, id, name, description, portions, imageId, ingredientsDTO);
+  };
+  protoOf(FullRecipeDTO).toString = function () {
+    return 'FullRecipeDTO(id=' + this.id_1 + ', name=' + this.name_1 + ', description=' + this.description_1 + ', portions=' + this.portions_1 + ', imageId=' + this.imageId_1 + ', ingredientsDTO=' + toString_0(this.ingredientsDTO_1) + ')';
+  };
+  protoOf(FullRecipeDTO).hashCode = function () {
+    var result = this.id_1;
+    result = imul(result, 31) + getStringHashCode(this.name_1) | 0;
+    result = imul(result, 31) + (this.description_1 == null ? 0 : getStringHashCode(this.description_1)) | 0;
+    result = imul(result, 31) + (this.portions_1 == null ? 0 : this.portions_1) | 0;
+    result = imul(result, 31) + (this.imageId_1 == null ? 0 : this.imageId_1) | 0;
+    result = imul(result, 31) + hashCode(this.ingredientsDTO_1) | 0;
+    return result;
+  };
+  protoOf(FullRecipeDTO).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof FullRecipeDTO))
+      return false;
+    var tmp0_other_with_cast = other instanceof FullRecipeDTO ? other : THROW_CCE();
+    if (!(this.id_1 === tmp0_other_with_cast.id_1))
+      return false;
+    if (!(this.name_1 === tmp0_other_with_cast.name_1))
+      return false;
+    if (!(this.description_1 == tmp0_other_with_cast.description_1))
+      return false;
+    if (!(this.portions_1 == tmp0_other_with_cast.portions_1))
+      return false;
+    if (!(this.imageId_1 == tmp0_other_with_cast.imageId_1))
+      return false;
+    if (!equals(this.ingredientsDTO_1, tmp0_other_with_cast.ingredientsDTO_1))
+      return false;
+    return true;
+  };
+  function Companion_4() {
+    Companion_instance_4 = this;
+  }
+  protoOf(Companion_4).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_4();
+  };
+  var Companion_instance_4;
+  function Companion_getInstance_4() {
+    if (Companion_instance_4 == null)
+      new Companion_4();
+    return Companion_instance_4;
+  }
+  function $serializer_4() {
+    $serializer_instance_4 = this;
+    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('epicer.common.dto.recipe.FullUnitDTO', this, 3);
+    tmp0_serialDesc.addElement_5pzumi_k$('id', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('name', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('shortName', false);
+    this.descriptor_1 = tmp0_serialDesc;
+  }
+  protoOf($serializer_4).serialize_izimgx_k$ = function (encoder, value) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
+    tmp1_output.encodeIntElement_krhhce_k$(tmp0_desc, 0, value.id_1);
+    tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name_1);
+    tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 2, value.shortName_1);
+    tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
+  };
+  protoOf($serializer_4).serialize_5ase3y_k$ = function (encoder, value) {
+    return this.serialize_izimgx_k$(encoder, value instanceof FullUnitDTO ? value : THROW_CCE());
+  };
+  protoOf($serializer_4).deserialize_sy6x50_k$ = function (decoder) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_flag = true;
+    var tmp2_index = 0;
+    var tmp3_bitMask0 = 0;
+    var tmp4_local0 = 0;
+    var tmp5_local1 = null;
+    var tmp6_local2 = null;
+    var tmp7_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
+    if (tmp7_input.decodeSequentially_xlblqy_k$()) {
+      tmp4_local0 = tmp7_input.decodeIntElement_941u6a_k$(tmp0_desc, 0);
+      tmp3_bitMask0 = tmp3_bitMask0 | 1;
+      tmp5_local1 = tmp7_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+      tmp3_bitMask0 = tmp3_bitMask0 | 2;
+      tmp6_local2 = tmp7_input.decodeStringElement_3oenpg_k$(tmp0_desc, 2);
+      tmp3_bitMask0 = tmp3_bitMask0 | 4;
+    } else
+      while (tmp1_flag) {
+        tmp2_index = tmp7_input.decodeElementIndex_bstkhp_k$(tmp0_desc);
+        switch (tmp2_index) {
+          case -1:
+            tmp1_flag = false;
+            break;
+          case 0:
+            tmp4_local0 = tmp7_input.decodeIntElement_941u6a_k$(tmp0_desc, 0);
+            tmp3_bitMask0 = tmp3_bitMask0 | 1;
+            break;
+          case 1:
+            tmp5_local1 = tmp7_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+            tmp3_bitMask0 = tmp3_bitMask0 | 2;
+            break;
+          case 2:
+            tmp6_local2 = tmp7_input.decodeStringElement_3oenpg_k$(tmp0_desc, 2);
+            tmp3_bitMask0 = tmp3_bitMask0 | 4;
+            break;
+          default:
+            throw UnknownFieldException_init_$Create$(tmp2_index);
+        }
+      }
+    tmp7_input.endStructure_1xqz0n_k$(tmp0_desc);
+    return FullUnitDTO_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, null);
+  };
+  protoOf($serializer_4).get_descriptor_wjt6a0_k$ = function () {
+    return this.descriptor_1;
+  };
+  protoOf($serializer_4).childSerializers_5ghqw5_k$ = function () {
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return [IntSerializer_getInstance(), StringSerializer_getInstance(), StringSerializer_getInstance()];
+  };
+  var $serializer_instance_4;
+  function $serializer_getInstance_4() {
+    if ($serializer_instance_4 == null)
+      new $serializer_4();
+    return $serializer_instance_4;
+  }
+  function FullUnitDTO_init_$Init$(seen0, id, name, shortName, serializationConstructorMarker, $this) {
+    if (!(7 === (7 & seen0))) {
+      throwMissingFieldException(seen0, 7, $serializer_getInstance_4().descriptor_1);
+    }
+    $this.id_1 = id;
+    $this.name_1 = name;
+    $this.shortName_1 = shortName;
+    return $this;
+  }
+  function FullUnitDTO_init_$Create$(seen0, id, name, shortName, serializationConstructorMarker) {
+    return FullUnitDTO_init_$Init$(seen0, id, name, shortName, serializationConstructorMarker, objectCreate(protoOf(FullUnitDTO)));
+  }
+  function FullUnitDTO(id, name, shortName) {
+    Companion_getInstance_4();
+    this.id_1 = id;
+    this.name_1 = name;
+    this.shortName_1 = shortName;
+  }
+  protoOf(FullUnitDTO).get_id_kntnx8_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(FullUnitDTO).get_name_woqyms_k$ = function () {
+    return this.name_1;
+  };
+  protoOf(FullUnitDTO).get_shortName_p10yo2_k$ = function () {
+    return this.shortName_1;
+  };
+  protoOf(FullUnitDTO).component1_7eebsc_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(FullUnitDTO).component2_7eebsb_k$ = function () {
+    return this.name_1;
+  };
+  protoOf(FullUnitDTO).component3_7eebsa_k$ = function () {
+    return this.shortName_1;
+  };
+  protoOf(FullUnitDTO).copy_hrd73x_k$ = function (id, name, shortName) {
+    return new FullUnitDTO(id, name, shortName);
+  };
+  protoOf(FullUnitDTO).copy$default_9td0im_k$ = function (id, name, shortName, $super) {
+    id = id === VOID ? this.id_1 : id;
+    name = name === VOID ? this.name_1 : name;
+    shortName = shortName === VOID ? this.shortName_1 : shortName;
+    return $super === VOID ? this.copy_hrd73x_k$(id, name, shortName) : $super.copy_hrd73x_k$.call(this, id, name, shortName);
+  };
+  protoOf(FullUnitDTO).toString = function () {
+    return 'FullUnitDTO(id=' + this.id_1 + ', name=' + this.name_1 + ', shortName=' + this.shortName_1 + ')';
+  };
+  protoOf(FullUnitDTO).hashCode = function () {
+    var result = this.id_1;
+    result = imul(result, 31) + getStringHashCode(this.name_1) | 0;
+    result = imul(result, 31) + getStringHashCode(this.shortName_1) | 0;
+    return result;
+  };
+  protoOf(FullUnitDTO).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof FullUnitDTO))
+      return false;
+    var tmp0_other_with_cast = other instanceof FullUnitDTO ? other : THROW_CCE();
+    if (!(this.id_1 === tmp0_other_with_cast.id_1))
+      return false;
+    if (!(this.name_1 === tmp0_other_with_cast.name_1))
+      return false;
+    if (!(this.shortName_1 === tmp0_other_with_cast.shortName_1))
+      return false;
+    return true;
+  };
+  function _get_$childSerializers__r2zwns_0($this) {
+    return $this.$childSerializers_1;
+  }
+  function Companion_5() {
+    Companion_instance_5 = this;
+    var tmp = this;
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp.$childSerializers_1 = [null, null, new ArrayListSerializer(StringSerializer_getInstance()), null];
+  }
+  protoOf(Companion_5).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_5();
+  };
+  var Companion_instance_5;
+  function Companion_getInstance_5() {
+    if (Companion_instance_5 == null)
+      new Companion_5();
+    return Companion_instance_5;
+  }
+  function $serializer_5() {
+    $serializer_instance_5 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('epicer.common.dto.user.BaseUserDTO', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('username', false);
     tmp0_serialDesc.addElement_5pzumi_k$('name', false);
@@ -375,20 +1151,20 @@
     tmp0_serialDesc.addElement_5pzumi_k$('created_at', false);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_1).serialize_t0a3cb_k$ = function (encoder, value) {
+  protoOf($serializer_5).serialize_t0a3cb_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_1().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_5().$childSerializers_1;
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.username_1);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name_1);
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, tmp2_cached[2], value.roles_1);
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, LocalDateTimeIso8601Serializer_getInstance(), value.created_at_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_1).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_5).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_t0a3cb_k$(encoder, value instanceof BaseUserDTO ? value : THROW_CCE());
   };
-  protoOf($serializer_1).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_5).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -398,7 +1174,7 @@
     var tmp6_local2 = null;
     var tmp7_local3 = null;
     var tmp8_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp9_cached = Companion_getInstance_1().$childSerializers_1;
+    var tmp9_cached = Companion_getInstance_5().$childSerializers_1;
     if (tmp8_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp8_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
@@ -438,25 +1214,25 @@
     tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
     return BaseUserDTO_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_1).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_5).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_1).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_1().$childSerializers_1;
+  protoOf($serializer_5).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_5().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [StringSerializer_getInstance(), StringSerializer_getInstance(), tmp0_cached[2], LocalDateTimeIso8601Serializer_getInstance()];
   };
-  var $serializer_instance_1;
-  function $serializer_getInstance_1() {
-    if ($serializer_instance_1 == null)
-      new $serializer_1();
-    return $serializer_instance_1;
+  var $serializer_instance_5;
+  function $serializer_getInstance_5() {
+    if ($serializer_instance_5 == null)
+      new $serializer_5();
+    return $serializer_instance_5;
   }
   function BaseUserDTO_init_$Init$(seen0, username, name, roles, created_at, serializationConstructorMarker, $this) {
     if (!(15 === (15 & seen0))) {
-      throwMissingFieldException(seen0, 15, $serializer_getInstance_1().descriptor_1);
+      throwMissingFieldException(seen0, 15, $serializer_getInstance_5().descriptor_1);
     }
     $this.username_1 = username;
     $this.name_1 = name;
@@ -468,7 +1244,7 @@
     return BaseUserDTO_init_$Init$(seen0, username, name, roles, created_at, serializationConstructorMarker, objectCreate(protoOf(BaseUserDTO)));
   }
   function BaseUserDTO(username, name, roles, created_at) {
-    Companion_getInstance_1();
+    Companion_getInstance_5();
     this.username_1 = username;
     this.name_1 = name;
     this.roles_1 = roles;
@@ -509,7 +1285,7 @@
     return $super === VOID ? this.copy_jvsjf2_k$(username, name, roles, created_at) : $super.copy_jvsjf2_k$.call(this, username, name, roles, created_at);
   };
   protoOf(BaseUserDTO).toString = function () {
-    return 'BaseUserDTO(username=' + this.username_1 + ', name=' + this.name_1 + ', roles=' + toString(this.roles_1) + ', created_at=' + this.created_at_1.toString() + ')';
+    return 'BaseUserDTO(username=' + this.username_1 + ', name=' + this.name_1 + ', roles=' + toString_0(this.roles_1) + ', created_at=' + this.created_at_1.toString() + ')';
   };
   protoOf(BaseUserDTO).hashCode = function () {
     var result = getStringHashCode(this.username_1);
@@ -534,36 +1310,36 @@
       return false;
     return true;
   };
-  function Companion_2() {
-    Companion_instance_2 = this;
+  function Companion_6() {
+    Companion_instance_6 = this;
   }
-  protoOf(Companion_2).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_2();
+  protoOf(Companion_6).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_6();
   };
-  var Companion_instance_2;
-  function Companion_getInstance_2() {
-    if (Companion_instance_2 == null)
-      new Companion_2();
-    return Companion_instance_2;
+  var Companion_instance_6;
+  function Companion_getInstance_6() {
+    if (Companion_instance_6 == null)
+      new Companion_6();
+    return Companion_instance_6;
   }
-  function $serializer_2() {
-    $serializer_instance_2 = this;
+  function $serializer_6() {
+    $serializer_instance_6 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('epicer.common.dto.user.LoginUserDTO', this, 2);
     tmp0_serialDesc.addElement_5pzumi_k$('username', false);
     tmp0_serialDesc.addElement_5pzumi_k$('password', false);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_2).serialize_c5j6c3_k$ = function (encoder, value) {
+  protoOf($serializer_6).serialize_c5j6c3_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.username_1);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.password_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_2).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_6).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_c5j6c3_k$(encoder, value instanceof LoginUserDTO ? value : THROW_CCE());
   };
-  protoOf($serializer_2).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_6).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -598,24 +1374,24 @@
     tmp6_input.endStructure_1xqz0n_k$(tmp0_desc);
     return LoginUserDTO_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, null);
   };
-  protoOf($serializer_2).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_6).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_2).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_6).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [StringSerializer_getInstance(), StringSerializer_getInstance()];
   };
-  var $serializer_instance_2;
-  function $serializer_getInstance_2() {
-    if ($serializer_instance_2 == null)
-      new $serializer_2();
-    return $serializer_instance_2;
+  var $serializer_instance_6;
+  function $serializer_getInstance_6() {
+    if ($serializer_instance_6 == null)
+      new $serializer_6();
+    return $serializer_instance_6;
   }
   function LoginUserDTO_init_$Init$(seen0, username, password, serializationConstructorMarker, $this) {
     if (!(3 === (3 & seen0))) {
-      throwMissingFieldException(seen0, 3, $serializer_getInstance_2().descriptor_1);
+      throwMissingFieldException(seen0, 3, $serializer_getInstance_6().descriptor_1);
     }
     $this.username_1 = username;
     $this.password_1 = password;
@@ -625,7 +1401,7 @@
     return LoginUserDTO_init_$Init$(seen0, username, password, serializationConstructorMarker, objectCreate(protoOf(LoginUserDTO)));
   }
   function LoginUserDTO(username, password) {
-    Companion_getInstance_2();
+    Companion_getInstance_6();
     this.username_1 = username;
     this.password_1 = password;
   }
@@ -674,15 +1450,20 @@
   protoOf($serializer_0).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   protoOf($serializer_1).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   protoOf($serializer_2).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_3).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_4).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_5).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_6).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};
   _.$_$.a = BaseRecipeDTO;
-  _.$_$.b = BaseUserDTO;
-  _.$_$.c = LoginUserDTO;
-  _.$_$.d = TokenDTO;
-  _.$_$.e = Companion_getInstance_1;
-  _.$_$.f = Companion_getInstance_2;
+  _.$_$.b = FullRecipeDTO;
+  _.$_$.c = BaseUserDTO;
+  _.$_$.d = LoginUserDTO;
+  _.$_$.e = TokenDTO;
+  _.$_$.f = Companion_getInstance_5;
+  _.$_$.g = Companion_getInstance_6;
   //endregion
   return _;
 }));

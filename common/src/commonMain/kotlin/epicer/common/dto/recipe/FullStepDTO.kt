@@ -6,8 +6,8 @@ import kotlinx.serialization.Serializable
 data class FullStepDTO(
     val id: Int,
     val index: Int,
-    val name: String,
-    val description: String,
+    val name: String?,
+    val description: String?,
 
     val images: List<Int>,
     val ingredientsDTO: List<FullIngredientInRecipeDTO>,

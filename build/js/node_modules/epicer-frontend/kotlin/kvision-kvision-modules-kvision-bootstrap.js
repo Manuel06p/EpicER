@@ -15,23 +15,23 @@
 }(function (_, kotlin_kotlin, kotlin_io_kvision_kvision) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.fb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.q2;
-  var initMetadataForObject = kotlin_kotlin.$_$.ha;
+  var protoOf = kotlin_kotlin.$_$.gb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.s2;
+  var initMetadataForObject = kotlin_kotlin.$_$.ia;
   var VOID = kotlin_kotlin.$_$.f;
-  var THROW_IAE = kotlin_kotlin.$_$.re;
+  var THROW_IAE = kotlin_kotlin.$_$.se;
   var enumEntries = kotlin_kotlin.$_$.i9;
   var Unit_getInstance = kotlin_kotlin.$_$.c5;
-  var Enum = kotlin_kotlin.$_$.ce;
+  var Enum = kotlin_kotlin.$_$.de;
   var CssClass = kotlin_io_kvision_kvision.$_$.f1;
-  var initMetadataForClass = kotlin_kotlin.$_$.ca;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.da;
-  var SimplePanel = kotlin_io_kvision_kvision.$_$.f2;
+  var initMetadataForClass = kotlin_kotlin.$_$.da;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ea;
+  var SimplePanel = kotlin_io_kvision_kvision.$_$.h2;
   var Display_BLOCK_getInstance = kotlin_io_kvision_kvision.$_$.d;
-  var get_auto = kotlin_io_kvision_kvision.$_$.m2;
+  var get_auto = kotlin_io_kvision_kvision.$_$.o2;
   var Companion_getInstance = kotlin_io_kvision_kvision.$_$.w;
-  var numberToInt = kotlin_kotlin.$_$.cb;
-  var get_px = kotlin_io_kvision_kvision.$_$.o2;
+  var numberToInt = kotlin_kotlin.$_$.db;
+  var get_px = kotlin_io_kvision_kvision.$_$.q2;
   var DomAttribute = kotlin_io_kvision_kvision.$_$.g1;
   var ButtonStyle_PRIMARY_getInstance = kotlin_io_kvision_kvision.$_$.k;
   var WidgetRefreshDelegate__setValue_impl_8tnbha = kotlin_io_kvision_kvision.$_$.s;
@@ -41,9 +41,9 @@
   var Link = kotlin_io_kvision_kvision.$_$.s1;
   var RefreshDelegateProvider = kotlin_io_kvision_kvision.$_$.h1;
   var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.j;
-  var THROW_CCE = kotlin_kotlin.$_$.qe;
-  var KMutableProperty1 = kotlin_kotlin.$_$.tb;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.z9;
+  var THROW_CCE = kotlin_kotlin.$_$.re;
+  var KMutableProperty1 = kotlin_kotlin.$_$.ub;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.aa;
   var add = kotlin_io_kvision_kvision.$_$.d1;
   var ClassSetBuilder = kotlin_io_kvision_kvision.$_$.e1;
   var add$default = kotlin_io_kvision_kvision.$_$.q;
@@ -57,8 +57,8 @@
   var TAG_FORM_getInstance = kotlin_io_kvision_kvision.$_$.n;
   var ContainerType_FLUID_getInstance = kotlin_io_kvision_kvision.$_$.p;
   var equals = kotlin_kotlin.$_$.w9;
-  var ensureNotNull = kotlin_kotlin.$_$.if;
-  var span = kotlin_io_kvision_kvision.$_$.z1;
+  var ensureNotNull = kotlin_kotlin.$_$.jf;
+  var span = kotlin_io_kvision_kvision.$_$.b2;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(BootstrapCssModule, 'BootstrapCssModule', VOID, VOID, [ModuleInitializer]);
