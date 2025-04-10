@@ -11,5 +11,6 @@ data class FullRecipeDTO(
 
     val imageId: Int?,
 
-    val ingredientsDTO: List<FullIngredientInRecipeDTO>,
+    val ingredientsInRecipe: List<FullIngredientInRecipeDTO>,
+    val sections: List<FullSectionDTO>,
 )

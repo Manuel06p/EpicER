@@ -10,5 +10,5 @@ data class FullStepDTO(
     val description: String?,
 
     val images: List<Int>,
-    val ingredientsDTO: List<FullIngredientInRecipeDTO>,
+    val ingredientsInRecipe: List<FullIngredientInRecipeDTO>,
 )

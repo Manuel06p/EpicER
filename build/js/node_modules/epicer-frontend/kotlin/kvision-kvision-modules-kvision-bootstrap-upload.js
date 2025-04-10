@@ -18,9 +18,9 @@
 }(function (_, jQuery, kotlin_kotlin, kotlin_io_kvision_kvision) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.gb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.s2;
-  var initMetadataForObject = kotlin_kotlin.$_$.ia;
+  var protoOf = kotlin_kotlin.$_$.jb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.g3;
+  var initMetadataForObject = kotlin_kotlin.$_$.la;
   var VOID = kotlin_kotlin.$_$.f;
   //endregion
   //region block: pre-declaration

@@ -9,5 +9,5 @@ data class FullSectionDTO(
     val name: String?,
     val description: String?,
 
-    val stepsDTO: List<FullStepDTO>,
+    val steps: List<FullStepDTO>,
 )

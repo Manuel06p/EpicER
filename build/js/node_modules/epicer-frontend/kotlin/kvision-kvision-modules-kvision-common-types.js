@@ -16,22 +16,22 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var protoOf = kotlin_kotlin.$_$.gb;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.ea;
+  var protoOf = kotlin_kotlin.$_$.jb;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ha;
   var PluginGeneratedSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.z1;
   var StringSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q;
-  var THROW_CCE = kotlin_kotlin.$_$.re;
+  var THROW_CCE = kotlin_kotlin.$_$.ve;
   var UnknownFieldException_init_$Create$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.e;
   var IntSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p;
   var get_nullable = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t;
   var typeParametersSerializers = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.u1;
   var GeneratedSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.v1;
-  var initMetadataForObject = kotlin_kotlin.$_$.ia;
+  var initMetadataForObject = kotlin_kotlin.$_$.la;
   var VOID = kotlin_kotlin.$_$.f;
   var throwMissingFieldException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.c2;
-  var objectCreate = kotlin_kotlin.$_$.fb;
-  var getStringHashCode = kotlin_kotlin.$_$.ba;
-  var initMetadataForClass = kotlin_kotlin.$_$.da;
+  var objectCreate = kotlin_kotlin.$_$.ib;
+  var getStringHashCode = kotlin_kotlin.$_$.ea;
+  var initMetadataForClass = kotlin_kotlin.$_$.ga;
   //endregion
   //region block: pre-declaration
   initMetadataForCompanion(Companion);

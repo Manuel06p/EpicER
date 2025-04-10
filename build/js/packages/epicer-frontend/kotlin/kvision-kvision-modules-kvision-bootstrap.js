@@ -15,50 +15,50 @@
 }(function (_, kotlin_kotlin, kotlin_io_kvision_kvision) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.gb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.s2;
-  var initMetadataForObject = kotlin_kotlin.$_$.ia;
+  var protoOf = kotlin_kotlin.$_$.jb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.g3;
+  var initMetadataForObject = kotlin_kotlin.$_$.la;
   var VOID = kotlin_kotlin.$_$.f;
-  var THROW_IAE = kotlin_kotlin.$_$.se;
-  var enumEntries = kotlin_kotlin.$_$.i9;
-  var Unit_getInstance = kotlin_kotlin.$_$.c5;
-  var Enum = kotlin_kotlin.$_$.de;
-  var CssClass = kotlin_io_kvision_kvision.$_$.f1;
-  var initMetadataForClass = kotlin_kotlin.$_$.da;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.ea;
-  var SimplePanel = kotlin_io_kvision_kvision.$_$.h2;
-  var Display_BLOCK_getInstance = kotlin_io_kvision_kvision.$_$.d;
-  var get_auto = kotlin_io_kvision_kvision.$_$.o2;
-  var Companion_getInstance = kotlin_io_kvision_kvision.$_$.w;
-  var numberToInt = kotlin_kotlin.$_$.db;
-  var get_px = kotlin_io_kvision_kvision.$_$.q2;
-  var DomAttribute = kotlin_io_kvision_kvision.$_$.g1;
-  var ButtonStyle_PRIMARY_getInstance = kotlin_io_kvision_kvision.$_$.k;
-  var WidgetRefreshDelegate__setValue_impl_8tnbha = kotlin_io_kvision_kvision.$_$.s;
-  var WidgetRefreshDelegate__getValue_impl_lmjmy2 = kotlin_io_kvision_kvision.$_$.r;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.y5;
+  var THROW_IAE = kotlin_kotlin.$_$.we;
+  var enumEntries = kotlin_kotlin.$_$.l9;
+  var Unit_getInstance = kotlin_kotlin.$_$.d5;
+  var Enum = kotlin_kotlin.$_$.he;
+  var CssClass = kotlin_io_kvision_kvision.$_$.m1;
+  var initMetadataForClass = kotlin_kotlin.$_$.ga;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ha;
+  var SimplePanel = kotlin_io_kvision_kvision.$_$.t2;
+  var Display_BLOCK_getInstance = kotlin_io_kvision_kvision.$_$.e;
+  var get_auto = kotlin_io_kvision_kvision.$_$.c3;
+  var Companion_getInstance = kotlin_io_kvision_kvision.$_$.b1;
+  var numberToInt = kotlin_kotlin.$_$.gb;
+  var get_px = kotlin_io_kvision_kvision.$_$.e3;
+  var DomAttribute = kotlin_io_kvision_kvision.$_$.n1;
+  var ButtonStyle_PRIMARY_getInstance = kotlin_io_kvision_kvision.$_$.o;
+  var WidgetRefreshDelegate__setValue_impl_8tnbha = kotlin_io_kvision_kvision.$_$.x;
+  var WidgetRefreshDelegate__getValue_impl_lmjmy2 = kotlin_io_kvision_kvision.$_$.w;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.z5;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.k;
-  var Link = kotlin_io_kvision_kvision.$_$.s1;
-  var RefreshDelegateProvider = kotlin_io_kvision_kvision.$_$.h1;
-  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.j;
-  var THROW_CCE = kotlin_kotlin.$_$.re;
-  var KMutableProperty1 = kotlin_kotlin.$_$.ub;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.aa;
-  var add = kotlin_io_kvision_kvision.$_$.d1;
-  var ClassSetBuilder = kotlin_io_kvision_kvision.$_$.e1;
-  var add$default = kotlin_io_kvision_kvision.$_$.q;
-  var add_0 = kotlin_io_kvision_kvision.$_$.a1;
-  var addAll = kotlin_io_kvision_kvision.$_$.z;
-  var AttributeSetBuilder = kotlin_io_kvision_kvision.$_$.b1;
-  var Button = kotlin_io_kvision_kvision.$_$.q1;
-  var ButtonType_BUTTON_getInstance = kotlin_io_kvision_kvision.$_$.l;
-  var Tag = kotlin_io_kvision_kvision.$_$.t1;
-  var TAG_H6_getInstance = kotlin_io_kvision_kvision.$_$.o;
-  var TAG_FORM_getInstance = kotlin_io_kvision_kvision.$_$.n;
-  var ContainerType_FLUID_getInstance = kotlin_io_kvision_kvision.$_$.p;
-  var equals = kotlin_kotlin.$_$.w9;
-  var ensureNotNull = kotlin_kotlin.$_$.jf;
-  var span = kotlin_io_kvision_kvision.$_$.b2;
+  var Link = kotlin_io_kvision_kvision.$_$.a2;
+  var RefreshDelegateProvider = kotlin_io_kvision_kvision.$_$.o1;
+  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.n;
+  var THROW_CCE = kotlin_kotlin.$_$.ve;
+  var KMutableProperty1 = kotlin_kotlin.$_$.yb;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.da;
+  var add = kotlin_io_kvision_kvision.$_$.j1;
+  var ClassSetBuilder = kotlin_io_kvision_kvision.$_$.k1;
+  var add$default = kotlin_io_kvision_kvision.$_$.v;
+  var add_0 = kotlin_io_kvision_kvision.$_$.f1;
+  var addAll = kotlin_io_kvision_kvision.$_$.e1;
+  var AttributeSetBuilder = kotlin_io_kvision_kvision.$_$.g1;
+  var Button = kotlin_io_kvision_kvision.$_$.y1;
+  var ButtonType_BUTTON_getInstance = kotlin_io_kvision_kvision.$_$.p;
+  var Tag = kotlin_io_kvision_kvision.$_$.b2;
+  var TAG_H6_getInstance = kotlin_io_kvision_kvision.$_$.t;
+  var TAG_FORM_getInstance = kotlin_io_kvision_kvision.$_$.s;
+  var ContainerType_FLUID_getInstance = kotlin_io_kvision_kvision.$_$.u;
+  var equals = kotlin_kotlin.$_$.z9;
+  var ensureNotNull = kotlin_kotlin.$_$.nf;
+  var span = kotlin_io_kvision_kvision.$_$.n2;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(BootstrapCssModule, 'BootstrapCssModule', VOID, VOID, [ModuleInitializer]);
@@ -82,8 +82,8 @@
   initMetadataForClass(NavForm, 'NavForm', NavForm, Tag);
   initMetadataForCompanion(Companion_1);
   initMetadataForClass(Navbar, 'Navbar', Navbar, SimplePanel);
-  initMetadataForClass(NavbarType, 'NavbarType', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(NavbarExpand, 'NavbarExpand', VOID, Enum, [CssClass, Enum]);
+  initMetadataForClass(NavbarType, 'NavbarType', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(NavbarColor, 'NavbarColor', VOID, Enum);
   initMetadataForClass(NavbarButton, 'NavbarButton', VOID, SimplePanel);
   initMetadataForObject(ThemeManager, 'ThemeManager');
@@ -393,6 +393,12 @@
   protoOf(BsBorder).get_className_8cmv0a_k$ = function () {
     return this.className_1;
   };
+  function addBsBgColor(_this__u8e3s4, bsBgColor) {
+    _this__u8e3s4.addCssClass_ul13bg_k$(bsBgColor.className_1);
+  }
+  function removeBsBgColor(_this__u8e3s4, bsBgColor) {
+    _this__u8e3s4.removeCssClass_3dntip_k$(bsBgColor.className_1);
+  }
   function BsBgColor_PRIMARY_getInstance() {
     BsBgColor_initEntries();
     return BsBgColor_PRIMARY_instance;
@@ -1597,6 +1603,22 @@
       return receiver.set_rightAlign_rljb8x_k$(value);
     });
   }
+  function navbar(_this__u8e3s4, label, link, type, expand, nColor, bgColor, collapseOnClick, dataNavigo, containerType, className, init) {
+    label = label === VOID ? null : label;
+    link = link === VOID ? null : link;
+    type = type === VOID ? null : type;
+    expand = expand === VOID ? NavbarExpand_LG_getInstance() : expand;
+    nColor = nColor === VOID ? null : nColor;
+    bgColor = bgColor === VOID ? BsBgColor_BODYTERTIARY_getInstance() : bgColor;
+    collapseOnClick = collapseOnClick === VOID ? false : collapseOnClick;
+    dataNavigo = dataNavigo === VOID ? null : dataNavigo;
+    containerType = containerType === VOID ? ContainerType_FLUID_getInstance() : containerType;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var navbar = new Navbar(label, link, type, expand, nColor, bgColor, collapseOnClick, dataNavigo, containerType, className, init);
+    _this__u8e3s4.add_rekwpt_k$(navbar);
+    return navbar;
+  }
   function _get_idc__e6a609_0($this) {
     return $this.idc_1;
   }
@@ -1841,58 +1863,16 @@
     }
     classSetBuilder.add_udnk2x_k$(this.get_bgColor_24ewuj_k$().get_className_8cmv0a_k$());
   };
-  var NavbarType_FIXEDTOP_instance;
-  var NavbarType_FIXEDBOTTOM_instance;
-  var NavbarType_STICKYTOP_instance;
-  function values_4() {
-    return [NavbarType_FIXEDTOP_getInstance(), NavbarType_FIXEDBOTTOM_getInstance(), NavbarType_STICKYTOP_getInstance()];
-  }
-  function valueOf_4(value) {
-    switch (value) {
-      case 'FIXEDTOP':
-        return NavbarType_FIXEDTOP_getInstance();
-      case 'FIXEDBOTTOM':
-        return NavbarType_FIXEDBOTTOM_getInstance();
-      case 'STICKYTOP':
-        return NavbarType_STICKYTOP_getInstance();
-      default:
-        NavbarType_initEntries();
-        THROW_IAE('No enum constant value.');
-        break;
-    }
-  }
-  function get_entries_4() {
-    if ($ENTRIES_4 == null)
-      $ENTRIES_4 = enumEntries(values_4());
-    return $ENTRIES_4;
-  }
-  var NavbarType_entriesInitialized;
-  function NavbarType_initEntries() {
-    if (NavbarType_entriesInitialized)
-      return Unit_getInstance();
-    NavbarType_entriesInitialized = true;
-    NavbarType_FIXEDTOP_instance = new NavbarType('FIXEDTOP', 0, 'fixed-top');
-    NavbarType_FIXEDBOTTOM_instance = new NavbarType('FIXEDBOTTOM', 1, 'fixed-bottom');
-    NavbarType_STICKYTOP_instance = new NavbarType('STICKYTOP', 2, 'sticky-top');
-  }
-  var $ENTRIES_4;
-  function NavbarType(name, ordinal, className) {
-    Enum.call(this, name, ordinal);
-    this.className_1 = className;
-  }
-  protoOf(NavbarType).get_className_8cmv0a_k$ = function () {
-    return this.className_1;
-  };
   var NavbarExpand_ALWAYS_instance;
   var NavbarExpand_XL_instance;
   var NavbarExpand_LG_instance;
   var NavbarExpand_MD_instance;
   var NavbarExpand_SM_instance;
   var NavbarExpand_XXL_instance;
-  function values_5() {
+  function values_4() {
     return [NavbarExpand_ALWAYS_getInstance(), NavbarExpand_XL_getInstance(), NavbarExpand_LG_getInstance(), NavbarExpand_MD_getInstance(), NavbarExpand_SM_getInstance(), NavbarExpand_XXL_getInstance()];
   }
-  function valueOf_5(value) {
+  function valueOf_4(value) {
     switch (value) {
       case 'ALWAYS':
         return NavbarExpand_ALWAYS_getInstance();
@@ -1912,10 +1892,10 @@
         break;
     }
   }
-  function get_entries_5() {
-    if ($ENTRIES_5 == null)
-      $ENTRIES_5 = enumEntries(values_5());
-    return $ENTRIES_5;
+  function get_entries_4() {
+    if ($ENTRIES_4 == null)
+      $ENTRIES_4 = enumEntries(values_4());
+    return $ENTRIES_4;
   }
   var NavbarExpand_entriesInitialized;
   function NavbarExpand_initEntries() {
@@ -1929,12 +1909,54 @@
     NavbarExpand_SM_instance = new NavbarExpand('SM', 4, 'navbar-expand-sm');
     NavbarExpand_XXL_instance = new NavbarExpand('XXL', 5, 'navbar-expand-xxl');
   }
-  var $ENTRIES_5;
+  var $ENTRIES_4;
   function NavbarExpand(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
   }
   protoOf(NavbarExpand).get_className_8cmv0a_k$ = function () {
+    return this.className_1;
+  };
+  var NavbarType_FIXEDTOP_instance;
+  var NavbarType_FIXEDBOTTOM_instance;
+  var NavbarType_STICKYTOP_instance;
+  function values_5() {
+    return [NavbarType_FIXEDTOP_getInstance(), NavbarType_FIXEDBOTTOM_getInstance(), NavbarType_STICKYTOP_getInstance()];
+  }
+  function valueOf_5(value) {
+    switch (value) {
+      case 'FIXEDTOP':
+        return NavbarType_FIXEDTOP_getInstance();
+      case 'FIXEDBOTTOM':
+        return NavbarType_FIXEDBOTTOM_getInstance();
+      case 'STICKYTOP':
+        return NavbarType_STICKYTOP_getInstance();
+      default:
+        NavbarType_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_5() {
+    if ($ENTRIES_5 == null)
+      $ENTRIES_5 = enumEntries(values_5());
+    return $ENTRIES_5;
+  }
+  var NavbarType_entriesInitialized;
+  function NavbarType_initEntries() {
+    if (NavbarType_entriesInitialized)
+      return Unit_getInstance();
+    NavbarType_entriesInitialized = true;
+    NavbarType_FIXEDTOP_instance = new NavbarType('FIXEDTOP', 0, 'fixed-top');
+    NavbarType_FIXEDBOTTOM_instance = new NavbarType('FIXEDBOTTOM', 1, 'fixed-bottom');
+    NavbarType_STICKYTOP_instance = new NavbarType('STICKYTOP', 2, 'sticky-top');
+  }
+  var $ENTRIES_5;
+  function NavbarType(name, ordinal, className) {
+    Enum.call(this, name, ordinal);
+    this.className_1 = className;
+  }
+  protoOf(NavbarType).get_className_8cmv0a_k$ = function () {
     return this.className_1;
   };
   var NavbarColor_LIGHT_instance;
@@ -2000,18 +2022,6 @@
     attributeSetBuilder.add_lbri6p_k$('aria-expanded', 'false');
     attributeSetBuilder.add_lbri6p_k$('aria-label', this.toggle_1);
   };
-  function NavbarType_FIXEDTOP_getInstance() {
-    NavbarType_initEntries();
-    return NavbarType_FIXEDTOP_instance;
-  }
-  function NavbarType_FIXEDBOTTOM_getInstance() {
-    NavbarType_initEntries();
-    return NavbarType_FIXEDBOTTOM_instance;
-  }
-  function NavbarType_STICKYTOP_getInstance() {
-    NavbarType_initEntries();
-    return NavbarType_STICKYTOP_instance;
-  }
   function NavbarExpand_ALWAYS_getInstance() {
     NavbarExpand_initEntries();
     return NavbarExpand_ALWAYS_instance;
@@ -2035,6 +2045,18 @@
   function NavbarExpand_XXL_getInstance() {
     NavbarExpand_initEntries();
     return NavbarExpand_XXL_instance;
+  }
+  function NavbarType_FIXEDTOP_getInstance() {
+    NavbarType_initEntries();
+    return NavbarType_FIXEDTOP_instance;
+  }
+  function NavbarType_FIXEDBOTTOM_getInstance() {
+    NavbarType_initEntries();
+    return NavbarType_FIXEDBOTTOM_instance;
+  }
+  function NavbarType_STICKYTOP_getInstance() {
+    NavbarType_initEntries();
+    return NavbarType_STICKYTOP_instance;
   }
   function NavbarColor_LIGHT_getInstance() {
     NavbarColor_initEntries();
@@ -2331,16 +2353,21 @@
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};
-  _.$_$.a = BsBorder_BORDERDARK_getInstance;
-  _.$_$.b = ThemeManager_getInstance;
-  _.$_$.c = BootstrapCssModule_getInstance;
-  _.$_$.d = BootstrapModule_getInstance;
-  _.$_$.e = addBsBorder;
-  _.$_$.f = dropDown;
-  _.$_$.g = Navbar;
-  _.$_$.h = navForm;
-  _.$_$.i = navLink;
-  _.$_$.j = nav;
+  _.$_$.a = BsBgColor_BODYSECONDARY_getInstance;
+  _.$_$.b = BsBorder_BORDERDARK_getInstance;
+  _.$_$.c = NavbarExpand_ALWAYS_getInstance;
+  _.$_$.d = ThemeManager_getInstance;
+  _.$_$.e = BootstrapCssModule_getInstance;
+  _.$_$.f = BootstrapModule_getInstance;
+  _.$_$.g = addBsBgColor;
+  _.$_$.h = addBsBorder;
+  _.$_$.i = removeBsBgColor;
+  _.$_$.j = dropDown;
+  _.$_$.k = Navbar;
+  _.$_$.l = navForm;
+  _.$_$.m = navLink;
+  _.$_$.n = navbar;
+  _.$_$.o = nav;
   //endregion
   return _;
 }));

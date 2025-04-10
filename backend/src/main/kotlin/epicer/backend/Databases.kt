@@ -7,7 +7,7 @@ import epicer.backend.model.IngredientsTable
 import epicer.backend.model.RecipesTable
 import epicer.backend.model.RolesTable
 import epicer.backend.model.SectionsTable
-import epicer.backend.model.StepsImages
+import epicer.backend.model.StepsImagesTable
 import epicer.backend.model.StepsIngredientsInRecipe
 import epicer.backend.model.StepsTable
 import epicer.backend.model.UnitTypesTable
@@ -40,7 +40,7 @@ fun Application.configureDatabases() {
         SchemaUtils.create(SectionsTable)
         SchemaUtils.create(StepsTable)
         SchemaUtils.create(StepsIngredientsInRecipe)
-        SchemaUtils.create(StepsImages)
+        SchemaUtils.create(StepsImagesTable)
         SchemaUtils.create(RolesTable)
         SchemaUtils.create(UsersRolesTable)
     }

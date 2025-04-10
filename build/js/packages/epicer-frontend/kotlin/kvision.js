@@ -39,100 +39,104 @@
   var imul = Math.imul;
   var h_1 = $module$snabbdom.h;
   var h_2 = $module$snabbdom.h;
-  var protoOf = kotlin_kotlin.$_$.gb;
-  var emptyMap = kotlin_kotlin.$_$.p6;
-  var initMetadataForClass = kotlin_kotlin.$_$.da;
+  var protoOf = kotlin_kotlin.$_$.jb;
+  var emptyMap = kotlin_kotlin.$_$.q6;
+  var initMetadataForClass = kotlin_kotlin.$_$.ga;
   var VOID = kotlin_kotlin.$_$.f;
-  var Unit_getInstance = kotlin_kotlin.$_$.c5;
-  var initMetadataForInterface = kotlin_kotlin.$_$.ga;
-  var initMetadataForObject = kotlin_kotlin.$_$.ia;
+  var Unit_getInstance = kotlin_kotlin.$_$.d5;
+  var initMetadataForInterface = kotlin_kotlin.$_$.ja;
+  var initMetadataForObject = kotlin_kotlin.$_$.la;
   var clear = kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.$_$.a;
-  var charSequenceLength = kotlin_kotlin.$_$.s9;
-  var asList = kotlin_kotlin.$_$.u5;
-  var THROW_IAE = kotlin_kotlin.$_$.se;
-  var enumEntries = kotlin_kotlin.$_$.i9;
-  var Enum = kotlin_kotlin.$_$.de;
-  var toString = kotlin_kotlin.$_$.jd;
+  var charSequenceLength = kotlin_kotlin.$_$.v9;
+  var asList = kotlin_kotlin.$_$.v5;
+  var THROW_IAE = kotlin_kotlin.$_$.we;
+  var enumEntries = kotlin_kotlin.$_$.l9;
+  var Enum = kotlin_kotlin.$_$.he;
+  var toString = kotlin_kotlin.$_$.nd;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.p2;
-  var padStart = kotlin_kotlin.$_$.oc;
-  var listOf = kotlin_kotlin.$_$.g7;
-  var joinToString = kotlin_kotlin.$_$.z6;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.ea;
+  var padStart = kotlin_kotlin.$_$.sc;
+  var listOf = kotlin_kotlin.$_$.j7;
+  var joinToString = kotlin_kotlin.$_$.c7;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ha;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.l;
-  var charArrayOf = kotlin_kotlin.$_$.p9;
-  var split = kotlin_kotlin.$_$.wc;
-  var last = kotlin_kotlin.$_$.e7;
-  var iterator = kotlin_kotlin.$_$.wa;
-  var to = kotlin_kotlin.$_$.uf;
-  var toString_0 = kotlin_kotlin.$_$.jb;
-  var hashCode = kotlin_kotlin.$_$.ca;
-  var THROW_CCE = kotlin_kotlin.$_$.re;
-  var equals = kotlin_kotlin.$_$.w9;
-  var KMutableProperty1 = kotlin_kotlin.$_$.ub;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.aa;
-  var ensureNotNull = kotlin_kotlin.$_$.jf;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.y5;
+  var charArrayOf = kotlin_kotlin.$_$.s9;
+  var split = kotlin_kotlin.$_$.ad;
+  var last = kotlin_kotlin.$_$.h7;
+  var iterator = kotlin_kotlin.$_$.za;
+  var to = kotlin_kotlin.$_$.yf;
+  var toString_0 = kotlin_kotlin.$_$.mb;
+  var hashCode = kotlin_kotlin.$_$.fa;
+  var THROW_CCE = kotlin_kotlin.$_$.ve;
+  var equals = kotlin_kotlin.$_$.z9;
+  var KMutableProperty1 = kotlin_kotlin.$_$.yb;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.da;
+  var ensureNotNull = kotlin_kotlin.$_$.nf;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.z5;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.k;
-  var apply = kotlin_kotlin.$_$.ff;
-  var toSet = kotlin_kotlin.$_$.i8;
-  var emptySet = kotlin_kotlin.$_$.q6;
-  var intersect = kotlin_kotlin.$_$.y6;
-  var mapOf = kotlin_kotlin.$_$.i7;
-  var split_0 = kotlin_kotlin.$_$.xc;
-  var toSet_0 = kotlin_kotlin.$_$.h8;
+  var apply = kotlin_kotlin.$_$.jf;
+  var toSet = kotlin_kotlin.$_$.l8;
+  var emptySet = kotlin_kotlin.$_$.r6;
+  var intersect = kotlin_kotlin.$_$.b7;
+  var mapOf = kotlin_kotlin.$_$.l7;
+  var split_0 = kotlin_kotlin.$_$.bd;
+  var toSet_0 = kotlin_kotlin.$_$.k8;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.u;
-  var toMap = kotlin_kotlin.$_$.d8;
-  var toMutableMap = kotlin_kotlin.$_$.f8;
-  var copyToArray = kotlin_kotlin.$_$.l6;
-  var first = kotlin_kotlin.$_$.s6;
-  var mutableMapOf = kotlin_kotlin.$_$.k7;
-  var startsWith = kotlin_kotlin.$_$.yc;
-  var toMutableSet = kotlin_kotlin.$_$.g8;
+  var toMap = kotlin_kotlin.$_$.g8;
+  var toMutableMap = kotlin_kotlin.$_$.i8;
+  var copyToArray = kotlin_kotlin.$_$.m6;
+  var first = kotlin_kotlin.$_$.u6;
+  var mutableMapOf = kotlin_kotlin.$_$.n7;
+  var startsWith = kotlin_kotlin.$_$.cd;
+  var toMutableSet = kotlin_kotlin.$_$.j8;
   var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.w;
-  var setOf = kotlin_kotlin.$_$.t7;
+  var setOf = kotlin_kotlin.$_$.w7;
   var Dispatchers_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var SupervisorJob = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
   var SerializersModuleBuilder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.e2;
   var getKClass = kotlin_kotlin.$_$.e;
   var overwriteWith = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i2;
-  var KtList = kotlin_kotlin.$_$.m5;
-  var isInterface = kotlin_kotlin.$_$.ra;
+  var KtList = kotlin_kotlin.$_$.n5;
+  var isInterface = kotlin_kotlin.$_$.ua;
   var Companion_getInstance = kotlin_io_kvision_kvision_common_types.$_$.a;
   var ListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r;
   var Default_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
   var Json = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.b;
-  var KtMap = kotlin_kotlin.$_$.o5;
-  var contains = kotlin_kotlin.$_$.z5;
-  var mapCapacity = kotlin_kotlin.$_$.h7;
-  var coerceAtLeast = kotlin_kotlin.$_$.mb;
+  var KtMap = kotlin_kotlin.$_$.p5;
+  var contains = kotlin_kotlin.$_$.a6;
+  var mapCapacity = kotlin_kotlin.$_$.k7;
+  var coerceAtLeast = kotlin_kotlin.$_$.qb;
   var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.t;
-  var plus = kotlin_kotlin.$_$.l7;
-  var withDefault = kotlin_kotlin.$_$.j8;
-  var toString_1 = kotlin_kotlin.$_$.tf;
-  var getBooleanHashCode = kotlin_kotlin.$_$.y9;
-  var getStringHashCode = kotlin_kotlin.$_$.ba;
-  var json = kotlin_kotlin.$_$.ya;
-  var isNumber = kotlin_kotlin.$_$.ta;
+  var plus = kotlin_kotlin.$_$.o7;
+  var withDefault = kotlin_kotlin.$_$.m8;
+  var toString_1 = kotlin_kotlin.$_$.xf;
+  var getBooleanHashCode = kotlin_kotlin.$_$.ba;
+  var getStringHashCode = kotlin_kotlin.$_$.ea;
+  var json = kotlin_kotlin.$_$.bb;
+  var isNumber = kotlin_kotlin.$_$.wa;
   var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.r1;
   var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.t1;
-  var Annotation = kotlin_kotlin.$_$.ud;
-  var dropLast = kotlin_kotlin.$_$.ec;
-  var last_0 = kotlin_kotlin.$_$.nc;
-  var Exception = kotlin_kotlin.$_$.fe;
-  var charSequenceGet = kotlin_kotlin.$_$.r9;
-  var toIntOrNull = kotlin_kotlin.$_$.gd;
-  var objectCreate = kotlin_kotlin.$_$.fb;
-  var asList_0 = kotlin_kotlin.$_$.vf;
-  var listOf_0 = kotlin_kotlin.$_$.f7;
-  var plus_0 = kotlin_kotlin.$_$.o7;
-  var getOrNull = kotlin_kotlin.$_$.t6;
-  var emptyList = kotlin_kotlin.$_$.o6;
+  var Annotation = kotlin_kotlin.$_$.yd;
+  var dropLast = kotlin_kotlin.$_$.ic;
+  var last_0 = kotlin_kotlin.$_$.rc;
+  var Exception = kotlin_kotlin.$_$.je;
+  var charSequenceGet = kotlin_kotlin.$_$.u9;
+  var toIntOrNull = kotlin_kotlin.$_$.kd;
+  var objectCreate = kotlin_kotlin.$_$.ib;
+  var asList_0 = kotlin_kotlin.$_$.zf;
+  var listOf_0 = kotlin_kotlin.$_$.i7;
+  var plus_0 = kotlin_kotlin.$_$.r7;
+  var getOrNull = kotlin_kotlin.$_$.v6;
+  var emptyList = kotlin_kotlin.$_$.p6;
+  var indexOf = kotlin_kotlin.$_$.x6;
+  var firstOrNull = kotlin_kotlin.$_$.t6;
+  var ObservableProperty = kotlin_kotlin.$_$.ob;
+  var Delegates_getInstance = kotlin_kotlin.$_$.s4;
   var get_KV_DEFAULT_DATE_FORMAT = kotlin_io_kvision_kvision_common_types.$_$.b;
   var buildClassSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h1;
   var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l2;
   var serializersModuleOf = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j2;
-  var Pair = kotlin_kotlin.$_$.oe;
+  var Pair = kotlin_kotlin.$_$.se;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(Application, 'Application');
@@ -211,6 +215,7 @@
   initMetadataForClass(UnicodeBidi, 'UnicodeBidi', VOID, Enum);
   initMetadataForClass(Outline, 'Outline', Outline);
   initMetadataForClass(Direction, 'Direction', VOID, Enum);
+  initMetadataForClass(BorderStyle, 'BorderStyle', VOID, Enum);
   initMetadataForClass(Display, 'Display', VOID, Enum);
   initMetadataForClass(Overflow, 'Overflow', VOID, Enum);
   initMetadataForClass(TextAlign, 'TextAlign', VOID, Enum);
@@ -244,7 +249,6 @@
   initMetadataForClass(BgOrigin, 'BgOrigin', VOID, Enum);
   initMetadataForClass(BgClip, 'BgClip', VOID, Enum);
   initMetadataForClass(BgAttach, 'BgAttach', VOID, Enum);
-  initMetadataForClass(BorderStyle, 'BorderStyle', VOID, Enum);
   initMetadataForClass(OutlineStyle, 'OutlineStyle', VOID, Enum);
   initMetadataForClass(TextDecorationLine, 'TextDecorationLine', VOID, Enum);
   initMetadataForClass(TextDecorationStyle, 'TextDecorationStyle', VOID, Enum);
@@ -478,6 +482,8 @@
   initMetadataForClass(H2, 'H2', H2, Tag);
   initMetadataForClass(H3, 'H3', H3, Tag);
   initMetadataForClass(H4, 'H4', H4, Tag);
+  initMetadataForClass(H5, 'H5', H5, Tag);
+  initMetadataForClass(H6, 'H6', H6, Tag);
   initMetadataForClass(Icon, 'Icon', VOID, Tag);
   initMetadataForClass(Image, 'Image', VOID, Widget);
   initMetadataForClass(ImageShape, 'ImageShape', VOID, Enum, [CssClass, Enum]);
@@ -485,6 +491,7 @@
   initMetadataForClass(Autocomplete, 'Autocomplete', VOID, Enum);
   initMetadataForCompanion(Companion_6);
   initMetadataForClass(Link, 'Link', VOID, SimplePanel);
+  initMetadataForClass(P, 'P', P, Tag);
   initMetadataForClass(Span, 'Span', Span, Tag);
   initMetadataForClass(TAG, 'TAG', VOID, Enum);
   initMetadataForClass(Align, 'Align', VOID, Enum, [CssClass, Enum]);
@@ -547,12 +554,17 @@
   initMetadataForCompanion(Companion_7);
   initMetadataForClass(Root, 'Root', VOID, SimplePanel);
   initMetadataForClass(ContainerType, 'ContainerType', VOID, Enum);
+  initMetadataForCompanion(Companion_8);
+  initMetadataForClass(StackPanel$route$1, VOID, VOID, VOID, [Container]);
+  initMetadataForClass(StackPanel, 'StackPanel', StackPanel, SimplePanel);
   initMetadataForClass(VPanel, 'VPanel', VPanel, FlexPanel);
   initMetadataForInterface(KVRouter, 'KVRouter');
   initMetadataForObject(RoutingManager, 'RoutingManager');
   initMetadataForInterface(RouterFactory, 'RouterFactory');
   initMetadataForClass(DummyRouterFactory, 'DummyRouterFactory', DummyRouterFactory, VOID, [RouterFactory]);
   initMetadataForClass(DummyRouter, 'DummyRouter', DummyRouter, VOID, [KVRouter]);
+  initMetadataForClass(ObservableValue$value$$inlined$observable$1, VOID, VOID, ObservableProperty);
+  initMetadataForClass(ObservableValue, 'ObservableValue', VOID, VOID, [MutableState]);
   initMetadataForObject(DateSerializer, 'DateSerializer', VOID, VOID, [KSerializer]);
   initMetadataForObject(Serialization, 'Serialization');
   //endregion
@@ -1360,6 +1372,88 @@
   protoOf(Direction).get_direction_teeu7f_k$ = function () {
     return this.direction_1;
   };
+  var BorderStyle_NONE_instance;
+  var BorderStyle_HIDDEN_instance;
+  var BorderStyle_DOTTED_instance;
+  var BorderStyle_DASHED_instance;
+  var BorderStyle_SOLID_instance;
+  var BorderStyle_DOUBLE_instance;
+  var BorderStyle_GROOVE_instance;
+  var BorderStyle_RIDGE_instance;
+  var BorderStyle_INSET_instance;
+  var BorderStyle_OUTSET_instance;
+  var BorderStyle_INITIAL_instance;
+  var BorderStyle_INHERIT_instance;
+  var BorderStyle_UNSET_instance;
+  function values_7() {
+    return [BorderStyle_NONE_getInstance(), BorderStyle_HIDDEN_getInstance(), BorderStyle_DOTTED_getInstance(), BorderStyle_DASHED_getInstance(), BorderStyle_SOLID_getInstance(), BorderStyle_DOUBLE_getInstance(), BorderStyle_GROOVE_getInstance(), BorderStyle_RIDGE_getInstance(), BorderStyle_INSET_getInstance(), BorderStyle_OUTSET_getInstance(), BorderStyle_INITIAL_getInstance(), BorderStyle_INHERIT_getInstance(), BorderStyle_UNSET_getInstance()];
+  }
+  function valueOf_7(value) {
+    switch (value) {
+      case 'NONE':
+        return BorderStyle_NONE_getInstance();
+      case 'HIDDEN':
+        return BorderStyle_HIDDEN_getInstance();
+      case 'DOTTED':
+        return BorderStyle_DOTTED_getInstance();
+      case 'DASHED':
+        return BorderStyle_DASHED_getInstance();
+      case 'SOLID':
+        return BorderStyle_SOLID_getInstance();
+      case 'DOUBLE':
+        return BorderStyle_DOUBLE_getInstance();
+      case 'GROOVE':
+        return BorderStyle_GROOVE_getInstance();
+      case 'RIDGE':
+        return BorderStyle_RIDGE_getInstance();
+      case 'INSET':
+        return BorderStyle_INSET_getInstance();
+      case 'OUTSET':
+        return BorderStyle_OUTSET_getInstance();
+      case 'INITIAL':
+        return BorderStyle_INITIAL_getInstance();
+      case 'INHERIT':
+        return BorderStyle_INHERIT_getInstance();
+      case 'UNSET':
+        return BorderStyle_UNSET_getInstance();
+      default:
+        BorderStyle_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_7() {
+    if ($ENTRIES_7 == null)
+      $ENTRIES_7 = enumEntries(values_7());
+    return $ENTRIES_7;
+  }
+  var BorderStyle_entriesInitialized;
+  function BorderStyle_initEntries() {
+    if (BorderStyle_entriesInitialized)
+      return Unit_getInstance();
+    BorderStyle_entriesInitialized = true;
+    BorderStyle_NONE_instance = new BorderStyle('NONE', 0, 'none');
+    BorderStyle_HIDDEN_instance = new BorderStyle('HIDDEN', 1, 'hidden');
+    BorderStyle_DOTTED_instance = new BorderStyle('DOTTED', 2, 'dotted');
+    BorderStyle_DASHED_instance = new BorderStyle('DASHED', 3, 'dashed');
+    BorderStyle_SOLID_instance = new BorderStyle('SOLID', 4, 'solid');
+    BorderStyle_DOUBLE_instance = new BorderStyle('DOUBLE', 5, 'double');
+    BorderStyle_GROOVE_instance = new BorderStyle('GROOVE', 6, 'groove');
+    BorderStyle_RIDGE_instance = new BorderStyle('RIDGE', 7, 'ridge');
+    BorderStyle_INSET_instance = new BorderStyle('INSET', 8, 'inset');
+    BorderStyle_OUTSET_instance = new BorderStyle('OUTSET', 9, 'outset');
+    BorderStyle_INITIAL_instance = new BorderStyle('INITIAL', 10, 'initial');
+    BorderStyle_INHERIT_instance = new BorderStyle('INHERIT', 11, 'inherit');
+    BorderStyle_UNSET_instance = new BorderStyle('UNSET', 12, 'unset');
+  }
+  var $ENTRIES_7;
+  function BorderStyle(name, ordinal, borderStyle) {
+    Enum.call(this, name, ordinal);
+    this.borderStyle_1 = borderStyle;
+  }
+  protoOf(BorderStyle).get_borderStyle_53e13l_k$ = function () {
+    return this.borderStyle_1;
+  };
   var Display_INLINE_instance;
   var Display_BLOCK_instance;
   var Display_FLEX_instance;
@@ -1383,10 +1477,10 @@
   var Display_NONE_instance;
   var Display_INITIAL_instance;
   var Display_INHERIT_instance;
-  function values_7() {
+  function values_8() {
     return [Display_INLINE_getInstance(), Display_BLOCK_getInstance(), Display_FLEX_getInstance(), Display_GRID_getInstance(), Display_INLINEBLOCK_getInstance(), Display_INLINEFLEX_getInstance(), Display_INLINEGRID_getInstance(), Display_INLINETABLE_getInstance(), Display_LISTITEM_getInstance(), Display_RUNIN_getInstance(), Display_TABLE_getInstance(), Display_TABLECAPTION_getInstance(), Display_TABLECOLUMNGROUP_getInstance(), Display_TABLEHEADERGROUP_getInstance(), Display_TABLEFOOTERGROUP_getInstance(), Display_TABLEROWGROUP_getInstance(), Display_TABLECELL_getInstance(), Display_TABLECOLUMN_getInstance(), Display_TABLEROW_getInstance(), Display_CONTENTS_getInstance(), Display_NONE_getInstance(), Display_INITIAL_getInstance(), Display_INHERIT_getInstance()];
   }
-  function valueOf_7(value) {
+  function valueOf_8(value) {
     switch (value) {
       case 'INLINE':
         return Display_INLINE_getInstance();
@@ -1440,10 +1534,10 @@
         break;
     }
   }
-  function get_entries_7() {
-    if ($ENTRIES_7 == null)
-      $ENTRIES_7 = enumEntries(values_7());
-    return $ENTRIES_7;
+  function get_entries_8() {
+    if ($ENTRIES_8 == null)
+      $ENTRIES_8 = enumEntries(values_8());
+    return $ENTRIES_8;
   }
   var Display_entriesInitialized;
   function Display_initEntries() {
@@ -1474,7 +1568,7 @@
     Display_INITIAL_instance = new Display('INITIAL', 21, 'initial');
     Display_INHERIT_instance = new Display('INHERIT', 22, 'inherit');
   }
-  var $ENTRIES_7;
+  var $ENTRIES_8;
   function Display(name, ordinal, display) {
     Enum.call(this, name, ordinal);
     this.display_1 = display;
@@ -1488,10 +1582,10 @@
   var Overflow_AUTO_instance;
   var Overflow_INITIAL_instance;
   var Overflow_INHERIT_instance;
-  function values_8() {
+  function values_9() {
     return [Overflow_VISIBLE_getInstance(), Overflow_HIDDEN_getInstance(), Overflow_SCROLL_getInstance(), Overflow_AUTO_getInstance(), Overflow_INITIAL_getInstance(), Overflow_INHERIT_getInstance()];
   }
-  function valueOf_8(value) {
+  function valueOf_9(value) {
     switch (value) {
       case 'VISIBLE':
         return Overflow_VISIBLE_getInstance();
@@ -1511,10 +1605,10 @@
         break;
     }
   }
-  function get_entries_8() {
-    if ($ENTRIES_8 == null)
-      $ENTRIES_8 = enumEntries(values_8());
-    return $ENTRIES_8;
+  function get_entries_9() {
+    if ($ENTRIES_9 == null)
+      $ENTRIES_9 = enumEntries(values_9());
+    return $ENTRIES_9;
   }
   var Overflow_entriesInitialized;
   function Overflow_initEntries() {
@@ -1528,7 +1622,7 @@
     Overflow_INITIAL_instance = new Overflow('INITIAL', 4, 'initial');
     Overflow_INHERIT_instance = new Overflow('INHERIT', 5, 'inherit');
   }
-  var $ENTRIES_8;
+  var $ENTRIES_9;
   function Overflow(name, ordinal, overflow) {
     Enum.call(this, name, ordinal);
     this.overflow_1 = overflow;
@@ -1542,10 +1636,10 @@
   var TextAlign_JUSTIFY_instance;
   var TextAlign_INITIAL_instance;
   var TextAlign_INHERIT_instance;
-  function values_9() {
+  function values_10() {
     return [TextAlign_LEFT_getInstance(), TextAlign_RIGHT_getInstance(), TextAlign_CENTER_getInstance(), TextAlign_JUSTIFY_getInstance(), TextAlign_INITIAL_getInstance(), TextAlign_INHERIT_getInstance()];
   }
-  function valueOf_9(value) {
+  function valueOf_10(value) {
     switch (value) {
       case 'LEFT':
         return TextAlign_LEFT_getInstance();
@@ -1565,10 +1659,10 @@
         break;
     }
   }
-  function get_entries_9() {
-    if ($ENTRIES_9 == null)
-      $ENTRIES_9 = enumEntries(values_9());
-    return $ENTRIES_9;
+  function get_entries_10() {
+    if ($ENTRIES_10 == null)
+      $ENTRIES_10 = enumEntries(values_10());
+    return $ENTRIES_10;
   }
   var TextAlign_entriesInitialized;
   function TextAlign_initEntries() {
@@ -1582,7 +1676,7 @@
     TextAlign_INITIAL_instance = new TextAlign('INITIAL', 4, 'initial');
     TextAlign_INHERIT_instance = new TextAlign('INHERIT', 5, 'inherit');
   }
-  var $ENTRIES_9;
+  var $ENTRIES_10;
   function TextAlign(name, ordinal, textAlign) {
     Enum.call(this, name, ordinal);
     this.textAlign_1 = textAlign;
@@ -1657,10 +1751,10 @@
   var FontVariant_SMALLCAPS_instance;
   var FontVariant_INITIAL_instance;
   var FontVariant_INHERIT_instance;
-  function values_10() {
+  function values_11() {
     return [FontVariant_NORMAL_getInstance(), FontVariant_SMALLCAPS_getInstance(), FontVariant_INITIAL_getInstance(), FontVariant_INHERIT_getInstance()];
   }
-  function valueOf_10(value) {
+  function valueOf_11(value) {
     switch (value) {
       case 'NORMAL':
         return FontVariant_NORMAL_getInstance();
@@ -1676,10 +1770,10 @@
         break;
     }
   }
-  function get_entries_10() {
-    if ($ENTRIES_10 == null)
-      $ENTRIES_10 = enumEntries(values_10());
-    return $ENTRIES_10;
+  function get_entries_11() {
+    if ($ENTRIES_11 == null)
+      $ENTRIES_11 = enumEntries(values_11());
+    return $ENTRIES_11;
   }
   var FontVariant_entriesInitialized;
   function FontVariant_initEntries() {
@@ -1691,7 +1785,7 @@
     FontVariant_INITIAL_instance = new FontVariant('INITIAL', 2, 'initial');
     FontVariant_INHERIT_instance = new FontVariant('INHERIT', 3, 'inherit');
   }
-  var $ENTRIES_10;
+  var $ENTRIES_11;
   function FontVariant(name, ordinal, fontVariant) {
     Enum.call(this, name, ordinal);
     this.fontVariant_1 = fontVariant;
@@ -1737,10 +1831,10 @@
   var Cursor_ZOOMOUT_instance;
   var Cursor_INITIAL_instance;
   var Cursor_INHERIT_instance;
-  function values_11() {
+  function values_12() {
     return [Cursor_DEFAULT_getInstance(), Cursor_AUTO_getInstance(), Cursor_NONE_getInstance(), Cursor_ALIAS_getInstance(), Cursor_ALLSCROLL_getInstance(), Cursor_CELL_getInstance(), Cursor_CONTEXTMENU_getInstance(), Cursor_COLRESIZE_getInstance(), Cursor_COPY_getInstance(), Cursor_CROSSHAIR_getInstance(), Cursor_ERESIZE_getInstance(), Cursor_EWRESIZE_getInstance(), Cursor_GRAB_getInstance(), Cursor_GRABBING_getInstance(), Cursor_HELP_getInstance(), Cursor_MOVE_getInstance(), Cursor_NRESIZE_getInstance(), Cursor_NERESIZE_getInstance(), Cursor_NESWRESIZE_getInstance(), Cursor_NSRESIZE_getInstance(), Cursor_NWRESIZE_getInstance(), Cursor_NWSERESIZE_getInstance(), Cursor_NODROP_getInstance(), Cursor_NOTALLOWED_getInstance(), Cursor_POINTER_getInstance(), Cursor_PROGRESS_getInstance(), Cursor_ROWRESIZE_getInstance(), Cursor_SRESIZE_getInstance(), Cursor_SERESIZE_getInstance(), Cursor_SWRESIZE_getInstance(), Cursor_TEXT_getInstance(), Cursor_VERTICALTEXT_getInstance(), Cursor_WRESIZE_getInstance(), Cursor_WAIT_getInstance(), Cursor_ZOOMIN_getInstance(), Cursor_ZOOMOUT_getInstance(), Cursor_INITIAL_getInstance(), Cursor_INHERIT_getInstance()];
   }
-  function valueOf_11(value) {
+  function valueOf_12(value) {
     switch (value) {
       case 'DEFAULT':
         return Cursor_DEFAULT_getInstance();
@@ -1824,10 +1918,10 @@
         break;
     }
   }
-  function get_entries_11() {
-    if ($ENTRIES_11 == null)
-      $ENTRIES_11 = enumEntries(values_11());
-    return $ENTRIES_11;
+  function get_entries_12() {
+    if ($ENTRIES_12 == null)
+      $ENTRIES_12 = enumEntries(values_12());
+    return $ENTRIES_12;
   }
   var Cursor_entriesInitialized;
   function Cursor_initEntries() {
@@ -1873,7 +1967,7 @@
     Cursor_INITIAL_instance = new Cursor('INITIAL', 36, 'initial');
     Cursor_INHERIT_instance = new Cursor('INHERIT', 37, 'inherit');
   }
-  var $ENTRIES_11;
+  var $ENTRIES_12;
   function Cursor(name, ordinal, cursor) {
     Enum.call(this, name, ordinal);
     this.cursor_1 = cursor;
@@ -1933,10 +2027,10 @@
   var AlignItems_STRETCH_instance;
   var AlignItems_START_instance;
   var AlignItems_END_instance;
-  function values_12() {
+  function values_13() {
     return [AlignItems_FLEXSTART_getInstance(), AlignItems_FLEXEND_getInstance(), AlignItems_CENTER_getInstance(), AlignItems_BASELINE_getInstance(), AlignItems_STRETCH_getInstance(), AlignItems_START_getInstance(), AlignItems_END_getInstance()];
   }
-  function valueOf_12(value) {
+  function valueOf_13(value) {
     switch (value) {
       case 'FLEXSTART':
         return AlignItems_FLEXSTART_getInstance();
@@ -1958,10 +2052,10 @@
         break;
     }
   }
-  function get_entries_12() {
-    if ($ENTRIES_12 == null)
-      $ENTRIES_12 = enumEntries(values_12());
-    return $ENTRIES_12;
+  function get_entries_13() {
+    if ($ENTRIES_13 == null)
+      $ENTRIES_13 = enumEntries(values_13());
+    return $ENTRIES_13;
   }
   var AlignItems_entriesInitialized;
   function AlignItems_initEntries() {
@@ -1976,7 +2070,7 @@
     AlignItems_START_instance = new AlignItems('START', 5, 'start');
     AlignItems_END_instance = new AlignItems('END', 6, 'end');
   }
-  var $ENTRIES_12;
+  var $ENTRIES_13;
   function AlignItems(name, ordinal, alignItems) {
     Enum.call(this, name, ordinal);
     this.alignItems_1 = alignItems;
@@ -1989,10 +2083,10 @@
   var LineBreak_NORMAL_instance;
   var LineBreak_STRICT_instance;
   var LineBreak_ANYWHERE_instance;
-  function values_13() {
+  function values_14() {
     return [LineBreak_AUTO_getInstance(), LineBreak_LOOSE_getInstance(), LineBreak_NORMAL_getInstance(), LineBreak_STRICT_getInstance(), LineBreak_ANYWHERE_getInstance()];
   }
-  function valueOf_13(value) {
+  function valueOf_14(value) {
     switch (value) {
       case 'AUTO':
         return LineBreak_AUTO_getInstance();
@@ -2010,10 +2104,10 @@
         break;
     }
   }
-  function get_entries_13() {
-    if ($ENTRIES_13 == null)
-      $ENTRIES_13 = enumEntries(values_13());
-    return $ENTRIES_13;
+  function get_entries_14() {
+    if ($ENTRIES_14 == null)
+      $ENTRIES_14 = enumEntries(values_14());
+    return $ENTRIES_14;
   }
   var LineBreak_entriesInitialized;
   function LineBreak_initEntries() {
@@ -2026,7 +2120,7 @@
     LineBreak_STRICT_instance = new LineBreak('STRICT', 3, 'strict');
     LineBreak_ANYWHERE_instance = new LineBreak('ANYWHERE', 4, 'anywhere');
   }
-  var $ENTRIES_13;
+  var $ENTRIES_14;
   function LineBreak(name, ordinal, lineBreak) {
     Enum.call(this, name, ordinal);
     this.lineBreak_1 = lineBreak;
@@ -2037,10 +2131,10 @@
   var FlexWrap_NOWRAP_instance;
   var FlexWrap_WRAP_instance;
   var FlexWrap_WRAPREV_instance;
-  function values_14() {
+  function values_15() {
     return [FlexWrap_NOWRAP_getInstance(), FlexWrap_WRAP_getInstance(), FlexWrap_WRAPREV_getInstance()];
   }
-  function valueOf_14(value) {
+  function valueOf_15(value) {
     switch (value) {
       case 'NOWRAP':
         return FlexWrap_NOWRAP_getInstance();
@@ -2054,10 +2148,10 @@
         break;
     }
   }
-  function get_entries_14() {
-    if ($ENTRIES_14 == null)
-      $ENTRIES_14 = enumEntries(values_14());
-    return $ENTRIES_14;
+  function get_entries_15() {
+    if ($ENTRIES_15 == null)
+      $ENTRIES_15 = enumEntries(values_15());
+    return $ENTRIES_15;
   }
   var FlexWrap_entriesInitialized;
   function FlexWrap_initEntries() {
@@ -2068,7 +2162,7 @@
     FlexWrap_WRAP_instance = new FlexWrap('WRAP', 1, 'wrap');
     FlexWrap_WRAPREV_instance = new FlexWrap('WRAPREV', 2, 'wrap-reverse');
   }
-  var $ENTRIES_14;
+  var $ENTRIES_15;
   function FlexWrap(name, ordinal, wrap) {
     Enum.call(this, name, ordinal);
     this.wrap_1 = wrap;
@@ -2080,10 +2174,10 @@
   var GridAutoFlow_COLUMN_instance;
   var GridAutoFlow_ROWDENSE_instance;
   var GridAutoFlow_COLUMNDENSE_instance;
-  function values_15() {
+  function values_16() {
     return [GridAutoFlow_ROW_getInstance(), GridAutoFlow_COLUMN_getInstance(), GridAutoFlow_ROWDENSE_getInstance(), GridAutoFlow_COLUMNDENSE_getInstance()];
   }
-  function valueOf_15(value) {
+  function valueOf_16(value) {
     switch (value) {
       case 'ROW':
         return GridAutoFlow_ROW_getInstance();
@@ -2099,10 +2193,10 @@
         break;
     }
   }
-  function get_entries_15() {
-    if ($ENTRIES_15 == null)
-      $ENTRIES_15 = enumEntries(values_15());
-    return $ENTRIES_15;
+  function get_entries_16() {
+    if ($ENTRIES_16 == null)
+      $ENTRIES_16 = enumEntries(values_16());
+    return $ENTRIES_16;
   }
   var GridAutoFlow_entriesInitialized;
   function GridAutoFlow_initEntries() {
@@ -2114,7 +2208,7 @@
     GridAutoFlow_ROWDENSE_instance = new GridAutoFlow('ROWDENSE', 2, 'row dense');
     GridAutoFlow_COLUMNDENSE_instance = new GridAutoFlow('COLUMNDENSE', 3, 'column dense');
   }
-  var $ENTRIES_15;
+  var $ENTRIES_16;
   function GridAutoFlow(name, ordinal, flow) {
     Enum.call(this, name, ordinal);
     this.flow_1 = flow;
@@ -2128,10 +2222,10 @@
   var Clear_BOTH_instance;
   var Clear_INITIAL_instance;
   var Clear_INHERIT_instance;
-  function values_16() {
+  function values_17() {
     return [Clear_NONE_getInstance(), Clear_LEFT_getInstance(), Clear_RIGHT_getInstance(), Clear_BOTH_getInstance(), Clear_INITIAL_getInstance(), Clear_INHERIT_getInstance()];
   }
-  function valueOf_16(value) {
+  function valueOf_17(value) {
     switch (value) {
       case 'NONE':
         return Clear_NONE_getInstance();
@@ -2151,10 +2245,10 @@
         break;
     }
   }
-  function get_entries_16() {
-    if ($ENTRIES_16 == null)
-      $ENTRIES_16 = enumEntries(values_16());
-    return $ENTRIES_16;
+  function get_entries_17() {
+    if ($ENTRIES_17 == null)
+      $ENTRIES_17 = enumEntries(values_17());
+    return $ENTRIES_17;
   }
   var Clear_entriesInitialized;
   function Clear_initEntries() {
@@ -2168,7 +2262,7 @@
     Clear_INITIAL_instance = new Clear('INITIAL', 4, 'initial');
     Clear_INHERIT_instance = new Clear('INHERIT', 5, 'inherit');
   }
-  var $ENTRIES_16;
+  var $ENTRIES_17;
   function Clear(name, ordinal, clear) {
     Enum.call(this, name, ordinal);
     this.clear_1 = clear;
@@ -2180,10 +2274,10 @@
   var TextOverflow_ELLIPSIS_instance;
   var TextOverflow_INITIAL_instance;
   var TextOverflow_INHERIT_instance;
-  function values_17() {
+  function values_18() {
     return [TextOverflow_CLIP_getInstance(), TextOverflow_ELLIPSIS_getInstance(), TextOverflow_INITIAL_getInstance(), TextOverflow_INHERIT_getInstance()];
   }
-  function valueOf_17(value) {
+  function valueOf_18(value) {
     switch (value) {
       case 'CLIP':
         return TextOverflow_CLIP_getInstance();
@@ -2199,10 +2293,10 @@
         break;
     }
   }
-  function get_entries_17() {
-    if ($ENTRIES_17 == null)
-      $ENTRIES_17 = enumEntries(values_17());
-    return $ENTRIES_17;
+  function get_entries_18() {
+    if ($ENTRIES_18 == null)
+      $ENTRIES_18 = enumEntries(values_18());
+    return $ENTRIES_18;
   }
   var TextOverflow_entriesInitialized;
   function TextOverflow_initEntries() {
@@ -2214,7 +2308,7 @@
     TextOverflow_INITIAL_instance = new TextOverflow('INITIAL', 2, 'initial');
     TextOverflow_INHERIT_instance = new TextOverflow('INHERIT', 3, 'inherit');
   }
-  var $ENTRIES_17;
+  var $ENTRIES_18;
   function TextOverflow(name, ordinal, textOverflow) {
     Enum.call(this, name, ordinal);
     this.textOverflow_1 = textOverflow;
@@ -2263,10 +2357,10 @@
   var WhiteSpace_PREWRAP_instance;
   var WhiteSpace_INITIAL_instance;
   var WhiteSpace_INHERIT_instance;
-  function values_18() {
+  function values_19() {
     return [WhiteSpace_NORMAL_getInstance(), WhiteSpace_NOWRAP_getInstance(), WhiteSpace_PRE_getInstance(), WhiteSpace_PRELINE_getInstance(), WhiteSpace_PREWRAP_getInstance(), WhiteSpace_INITIAL_getInstance(), WhiteSpace_INHERIT_getInstance()];
   }
-  function valueOf_18(value) {
+  function valueOf_19(value) {
     switch (value) {
       case 'NORMAL':
         return WhiteSpace_NORMAL_getInstance();
@@ -2288,10 +2382,10 @@
         break;
     }
   }
-  function get_entries_18() {
-    if ($ENTRIES_18 == null)
-      $ENTRIES_18 = enumEntries(values_18());
-    return $ENTRIES_18;
+  function get_entries_19() {
+    if ($ENTRIES_19 == null)
+      $ENTRIES_19 = enumEntries(values_19());
+    return $ENTRIES_19;
   }
   var WhiteSpace_entriesInitialized;
   function WhiteSpace_initEntries() {
@@ -2306,7 +2400,7 @@
     WhiteSpace_INITIAL_instance = new WhiteSpace('INITIAL', 5, 'initial');
     WhiteSpace_INHERIT_instance = new WhiteSpace('INHERIT', 6, 'inherit');
   }
-  var $ENTRIES_18;
+  var $ENTRIES_19;
   function WhiteSpace(name, ordinal, whiteSpace) {
     Enum.call(this, name, ordinal);
     this.whiteSpace_1 = whiteSpace;
@@ -2361,10 +2455,10 @@
   var JustifyItems_END_instance;
   var JustifyItems_CENTER_instance;
   var JustifyItems_STRETCH_instance;
-  function values_19() {
+  function values_20() {
     return [JustifyItems_START_getInstance(), JustifyItems_END_getInstance(), JustifyItems_CENTER_getInstance(), JustifyItems_STRETCH_getInstance()];
   }
-  function valueOf_19(value) {
+  function valueOf_20(value) {
     switch (value) {
       case 'START':
         return JustifyItems_START_getInstance();
@@ -2380,10 +2474,10 @@
         break;
     }
   }
-  function get_entries_19() {
-    if ($ENTRIES_19 == null)
-      $ENTRIES_19 = enumEntries(values_19());
-    return $ENTRIES_19;
+  function get_entries_20() {
+    if ($ENTRIES_20 == null)
+      $ENTRIES_20 = enumEntries(values_20());
+    return $ENTRIES_20;
   }
   var JustifyItems_entriesInitialized;
   function JustifyItems_initEntries() {
@@ -2395,7 +2489,7 @@
     JustifyItems_CENTER_instance = new JustifyItems('CENTER', 2, 'center');
     JustifyItems_STRETCH_instance = new JustifyItems('STRETCH', 3, 'stretch');
   }
-  var $ENTRIES_19;
+  var $ENTRIES_20;
   function JustifyItems(name, ordinal, justify) {
     Enum.call(this, name, ordinal);
     this.justify_1 = justify;
@@ -2408,10 +2502,10 @@
   var FontStyle_OBLIQUE_instance;
   var FontStyle_INITIAL_instance;
   var FontStyle_INHERIT_instance;
-  function values_20() {
+  function values_21() {
     return [FontStyle_NORMAL_getInstance(), FontStyle_ITALIC_getInstance(), FontStyle_OBLIQUE_getInstance(), FontStyle_INITIAL_getInstance(), FontStyle_INHERIT_getInstance()];
   }
-  function valueOf_20(value) {
+  function valueOf_21(value) {
     switch (value) {
       case 'NORMAL':
         return FontStyle_NORMAL_getInstance();
@@ -2429,10 +2523,10 @@
         break;
     }
   }
-  function get_entries_20() {
-    if ($ENTRIES_20 == null)
-      $ENTRIES_20 = enumEntries(values_20());
-    return $ENTRIES_20;
+  function get_entries_21() {
+    if ($ENTRIES_21 == null)
+      $ENTRIES_21 = enumEntries(values_21());
+    return $ENTRIES_21;
   }
   var FontStyle_entriesInitialized;
   function FontStyle_initEntries() {
@@ -2445,7 +2539,7 @@
     FontStyle_INITIAL_instance = new FontStyle('INITIAL', 3, 'initial');
     FontStyle_INHERIT_instance = new FontStyle('INHERIT', 4, 'inherit');
   }
-  var $ENTRIES_20;
+  var $ENTRIES_21;
   function FontStyle(name, ordinal, fontStyle) {
     Enum.call(this, name, ordinal);
     this.fontStyle_1 = fontStyle;
@@ -2594,10 +2688,10 @@
   var Col_WHITESMOKE_instance;
   var Col_YELLOW_instance;
   var Col_YELLOWGREEN_instance;
-  function values_21() {
+  function values_22() {
     return [Col_ALICEBLUE_getInstance(), Col_ANTIQUEWHITE_getInstance(), Col_AQUA_getInstance(), Col_AQUAMARINE_getInstance(), Col_AZURE_getInstance(), Col_BEIGE_getInstance(), Col_BISQUE_getInstance(), Col_BLACK_getInstance(), Col_BLANCHEDALMOND_getInstance(), Col_BLUE_getInstance(), Col_BLUEVIOLET_getInstance(), Col_BROWN_getInstance(), Col_BURLYWOOD_getInstance(), Col_CADETBLUE_getInstance(), Col_CHARTREUSE_getInstance(), Col_CHOCOLATE_getInstance(), Col_CORAL_getInstance(), Col_CORNFLOWERBLUE_getInstance(), Col_CORNSILK_getInstance(), Col_CRIMSON_getInstance(), Col_CYAN_getInstance(), Col_DARKBLUE_getInstance(), Col_DARKCYAN_getInstance(), Col_DARKGOLDENROD_getInstance(), Col_DARKGRAY_getInstance(), Col_DARKGREEN_getInstance(), Col_DARKKHAKI_getInstance(), Col_DARKMAGENTA_getInstance(), Col_DARKOLIVEGREEN_getInstance(), Col_DARKORANGE_getInstance(), Col_DARKORCHID_getInstance(), Col_DARKRED_getInstance(), Col_DARKSALMON_getInstance(), Col_DARKSEAGREEN_getInstance(), Col_DARKSLATEBLUE_getInstance(), Col_DARKSLATEGRAY_getInstance(), Col_DARKTURQUOISE_getInstance(), Col_DARKVIOLET_getInstance(), Col_DEEPPINK_getInstance(), Col_DEEPSKYBLUE_getInstance(), Col_DIMGRAY_getInstance(), Col_DODGERBLUE_getInstance(), Col_FIREBRICK_getInstance(), Col_FLORALWHITE_getInstance(), Col_FORESTGREEN_getInstance(), Col_FUCHSIA_getInstance(), Col_GAINSBORO_getInstance(), Col_GHOSTWHITE_getInstance(), Col_GOLD_getInstance(), Col_GOLDENROD_getInstance(), Col_GRAY_getInstance(), Col_GREEN_getInstance(), Col_GREENYELLOW_getInstance(), Col_HONEYDEW_getInstance(), Col_HOTPINK_getInstance(), Col_INDIANRED_getInstance(), Col_INDIGO_getInstance(), Col_IVORY_getInstance(), Col_KHAKI_getInstance(), Col_LAVENDER_getInstance(), Col_LAVENDERBLUSH_getInstance(), Col_LAWNGREEN_getInstance(), Col_LEMONCHIFFON_getInstance(), Col_LIGHTBLUE_getInstance(), Col_LIGHTCORAL_getInstance(), Col_LIGHTCYAN_getInstance(), Col_LIGHTGOLDENRODYELLOW_getInstance(), Col_LIGHTGRAY_getInstance(), Col_LIGHTGREEN_getInstance(), Col_LIGHTPINK_getInstance(), Col_LIGHTSALMON_getInstance(), Col_LIGHTSEAGREEN_getInstance(), Col_LIGHTSKYBLUE_getInstance(), Col_LIGHTSLATEGRAY_getInstance(), Col_LIGHTSTEELBLUE_getInstance(), Col_LIGHTYELLOW_getInstance(), Col_LIME_getInstance(), Col_LIMEGREEN_getInstance(), Col_LINEN_getInstance(), Col_MAGENTA_getInstance(), Col_MAROON_getInstance(), Col_MEDIUMAQUAMARINE_getInstance(), Col_MEDIUMBLUE_getInstance(), Col_MEDIUMORCHID_getInstance(), Col_MEDIUMPURPLE_getInstance(), Col_MEDIUMSEAGREEN_getInstance(), Col_MEDIUMSLATEBLUE_getInstance(), Col_MEDIUMSPRINGGREEN_getInstance(), Col_MEDIUMTURQUOISE_getInstance(), Col_MEDIUMVIOLETRED_getInstance(), Col_MIDNIGHTBLUE_getInstance(), Col_MINTCREAM_getInstance(), Col_MISTYROSE_getInstance(), Col_MOCCASIN_getInstance(), Col_NAVAJOWHITE_getInstance(), Col_NAVY_getInstance(), Col_OLDLACE_getInstance(), Col_OLIVE_getInstance(), Col_OLIVEDRAB_getInstance(), Col_ORANGE_getInstance(), Col_ORANGERED_getInstance(), Col_ORCHID_getInstance(), Col_PALEGOLDENROD_getInstance(), Col_PALEGREEN_getInstance(), Col_PALETURQUOISE_getInstance(), Col_PALEVIOLETRED_getInstance(), Col_PAPAYAWHIP_getInstance(), Col_PEACHPUFF_getInstance(), Col_PERU_getInstance(), Col_PINK_getInstance(), Col_PLUM_getInstance(), Col_POWDERBLUE_getInstance(), Col_PURPLE_getInstance(), Col_REBECCAPURPLE_getInstance(), Col_RED_getInstance(), Col_ROSYBROWN_getInstance(), Col_ROYALBLUE_getInstance(), Col_SADDLEBROWN_getInstance(), Col_SALMON_getInstance(), Col_SANDYBROWN_getInstance(), Col_SEAGREEN_getInstance(), Col_SEASHELL_getInstance(), Col_SIENNA_getInstance(), Col_SILVER_getInstance(), Col_SKYBLUE_getInstance(), Col_SLATEBLUE_getInstance(), Col_SLATEGRAY_getInstance(), Col_SNOW_getInstance(), Col_SPRINGGREEN_getInstance(), Col_STEELBLUE_getInstance(), Col_TAN_getInstance(), Col_TEAL_getInstance(), Col_THISTLE_getInstance(), Col_TOMATO_getInstance(), Col_TURQUOISE_getInstance(), Col_VIOLET_getInstance(), Col_WHEAT_getInstance(), Col_WHITE_getInstance(), Col_WHITESMOKE_getInstance(), Col_YELLOW_getInstance(), Col_YELLOWGREEN_getInstance()];
   }
-  function valueOf_21(value) {
+  function valueOf_22(value) {
     switch (value) {
       case 'ALICEBLUE':
         return Col_ALICEBLUE_getInstance();
@@ -2887,10 +2981,10 @@
         break;
     }
   }
-  function get_entries_21() {
-    if ($ENTRIES_21 == null)
-      $ENTRIES_21 = enumEntries(values_21());
-    return $ENTRIES_21;
+  function get_entries_22() {
+    if ($ENTRIES_22 == null)
+      $ENTRIES_22 = enumEntries(values_22());
+    return $ENTRIES_22;
   }
   var Col_entriesInitialized;
   function Col_initEntries() {
@@ -3039,7 +3133,7 @@
     Col_YELLOW_instance = new Col('YELLOW', 139, 'yellow');
     Col_YELLOWGREEN_instance = new Col('YELLOWGREEN', 140, 'yellowgreen');
   }
-  var $ENTRIES_21;
+  var $ENTRIES_22;
   function Col(name, ordinal, color) {
     Enum.call(this, name, ordinal);
     this.color_1 = color;
@@ -3052,10 +3146,10 @@
   var Position_FIXED_instance;
   var Position_ABSOLUTE_instance;
   var Position_STICKY_instance;
-  function values_22() {
+  function values_23() {
     return [Position_STATIC_getInstance(), Position_RELATIVE_getInstance(), Position_FIXED_getInstance(), Position_ABSOLUTE_getInstance(), Position_STICKY_getInstance()];
   }
-  function valueOf_22(value) {
+  function valueOf_23(value) {
     switch (value) {
       case 'STATIC':
         return Position_STATIC_getInstance();
@@ -3073,10 +3167,10 @@
         break;
     }
   }
-  function get_entries_22() {
-    if ($ENTRIES_22 == null)
-      $ENTRIES_22 = enumEntries(values_22());
-    return $ENTRIES_22;
+  function get_entries_23() {
+    if ($ENTRIES_23 == null)
+      $ENTRIES_23 = enumEntries(values_23());
+    return $ENTRIES_23;
   }
   var Position_entriesInitialized;
   function Position_initEntries() {
@@ -3089,7 +3183,7 @@
     Position_ABSOLUTE_instance = new Position('ABSOLUTE', 3, 'absolute');
     Position_STICKY_instance = new Position('STICKY', 4, 'sticky');
   }
-  var $ENTRIES_22;
+  var $ENTRIES_23;
   function Position(name, ordinal, position) {
     Enum.call(this, name, ordinal);
     this.position_1 = position;
@@ -3185,10 +3279,10 @@
   var JustifyContent_START_instance;
   var JustifyContent_END_instance;
   var JustifyContent_STRETCH_instance;
-  function values_23() {
+  function values_24() {
     return [JustifyContent_FLEXSTART_getInstance(), JustifyContent_FLEXEND_getInstance(), JustifyContent_CENTER_getInstance(), JustifyContent_SPACEBETWEEN_getInstance(), JustifyContent_SPACEAROUND_getInstance(), JustifyContent_SPACEEVENLY_getInstance(), JustifyContent_START_getInstance(), JustifyContent_END_getInstance(), JustifyContent_STRETCH_getInstance()];
   }
-  function valueOf_23(value) {
+  function valueOf_24(value) {
     switch (value) {
       case 'FLEXSTART':
         return JustifyContent_FLEXSTART_getInstance();
@@ -3214,10 +3308,10 @@
         break;
     }
   }
-  function get_entries_23() {
-    if ($ENTRIES_23 == null)
-      $ENTRIES_23 = enumEntries(values_23());
-    return $ENTRIES_23;
+  function get_entries_24() {
+    if ($ENTRIES_24 == null)
+      $ENTRIES_24 = enumEntries(values_24());
+    return $ENTRIES_24;
   }
   var JustifyContent_entriesInitialized;
   function JustifyContent_initEntries() {
@@ -3234,7 +3328,7 @@
     JustifyContent_END_instance = new JustifyContent('END', 7, 'end');
     JustifyContent_STRETCH_instance = new JustifyContent('STRETCH', 8, 'stretch');
   }
-  var $ENTRIES_23;
+  var $ENTRIES_24;
   function JustifyContent(name, ordinal, justifyContent) {
     Enum.call(this, name, ordinal);
     this.justifyContent_1 = justifyContent;
@@ -3258,10 +3352,10 @@
   var UNIT_perc_instance;
   var UNIT_auto_instance;
   var UNIT_normal_instance;
-  function values_24() {
+  function values_25() {
     return [UNIT_px_getInstance(), UNIT_pt_getInstance(), UNIT_em_getInstance(), UNIT_cm_getInstance(), UNIT_mm_getInstance(), UNIT_in_getInstance(), UNIT_pc_getInstance(), UNIT_ch_getInstance(), UNIT_rem_getInstance(), UNIT_vw_getInstance(), UNIT_vh_getInstance(), UNIT_vmin_getInstance(), UNIT_vmax_getInstance(), UNIT_perc_getInstance(), UNIT_auto_getInstance(), UNIT_normal_getInstance()];
   }
-  function valueOf_24(value) {
+  function valueOf_25(value) {
     switch (value) {
       case 'px':
         return UNIT_px_getInstance();
@@ -3301,10 +3395,10 @@
         break;
     }
   }
-  function get_entries_24() {
-    if ($ENTRIES_24 == null)
-      $ENTRIES_24 = enumEntries(values_24());
-    return $ENTRIES_24;
+  function get_entries_25() {
+    if ($ENTRIES_25 == null)
+      $ENTRIES_25 = enumEntries(values_25());
+    return $ENTRIES_25;
   }
   var UNIT_entriesInitialized;
   function UNIT_initEntries() {
@@ -3328,7 +3422,7 @@
     UNIT_auto_instance = new UNIT('auto', 14, 'auto');
     UNIT_normal_instance = new UNIT('normal', 15, 'normal');
   }
-  var $ENTRIES_24;
+  var $ENTRIES_25;
   function UNIT(name, ordinal, unit) {
     Enum.call(this, name, ordinal);
     this.unit_1 = unit;
@@ -3339,10 +3433,10 @@
   var OverflowWrap_NORMAL_instance;
   var OverflowWrap_BREAKWORD_instance;
   var OverflowWrap_ANYWHERE_instance;
-  function values_25() {
+  function values_26() {
     return [OverflowWrap_NORMAL_getInstance(), OverflowWrap_BREAKWORD_getInstance(), OverflowWrap_ANYWHERE_getInstance()];
   }
-  function valueOf_25(value) {
+  function valueOf_26(value) {
     switch (value) {
       case 'NORMAL':
         return OverflowWrap_NORMAL_getInstance();
@@ -3356,10 +3450,10 @@
         break;
     }
   }
-  function get_entries_25() {
-    if ($ENTRIES_25 == null)
-      $ENTRIES_25 = enumEntries(values_25());
-    return $ENTRIES_25;
+  function get_entries_26() {
+    if ($ENTRIES_26 == null)
+      $ENTRIES_26 = enumEntries(values_26());
+    return $ENTRIES_26;
   }
   var OverflowWrap_entriesInitialized;
   function OverflowWrap_initEntries() {
@@ -3370,7 +3464,7 @@
     OverflowWrap_BREAKWORD_instance = new OverflowWrap('BREAKWORD', 1, 'break-word');
     OverflowWrap_ANYWHERE_instance = new OverflowWrap('ANYWHERE', 2, 'anywhere');
   }
-  var $ENTRIES_25;
+  var $ENTRIES_26;
   function OverflowWrap(name, ordinal, overflowWrap) {
     Enum.call(this, name, ordinal);
     this.overflowWrap_1 = overflowWrap;
@@ -3387,10 +3481,10 @@
   var AlignContent_START_instance;
   var AlignContent_END_instance;
   var AlignContent_SPACEEVENLY_instance;
-  function values_26() {
+  function values_27() {
     return [AlignContent_FLEXSTART_getInstance(), AlignContent_FLEXEND_getInstance(), AlignContent_CENTER_getInstance(), AlignContent_SPACEBETWEEN_getInstance(), AlignContent_SPACEAROUND_getInstance(), AlignContent_STRETCH_getInstance(), AlignContent_START_getInstance(), AlignContent_END_getInstance(), AlignContent_SPACEEVENLY_getInstance()];
   }
-  function valueOf_26(value) {
+  function valueOf_27(value) {
     switch (value) {
       case 'FLEXSTART':
         return AlignContent_FLEXSTART_getInstance();
@@ -3416,10 +3510,10 @@
         break;
     }
   }
-  function get_entries_26() {
-    if ($ENTRIES_26 == null)
-      $ENTRIES_26 = enumEntries(values_26());
-    return $ENTRIES_26;
+  function get_entries_27() {
+    if ($ENTRIES_27 == null)
+      $ENTRIES_27 = enumEntries(values_27());
+    return $ENTRIES_27;
   }
   var AlignContent_entriesInitialized;
   function AlignContent_initEntries() {
@@ -3436,7 +3530,7 @@
     AlignContent_END_instance = new AlignContent('END', 7, 'end');
     AlignContent_SPACEEVENLY_instance = new AlignContent('SPACEEVENLY', 8, 'space-evenly');
   }
-  var $ENTRIES_26;
+  var $ENTRIES_27;
   function AlignContent(name, ordinal, alignContent) {
     Enum.call(this, name, ordinal);
     this.alignContent_1 = alignContent;
@@ -3450,10 +3544,10 @@
   var Resize_VERTICAL_instance;
   var Resize_INITIAL_instance;
   var Resize_INHERIT_instance;
-  function values_27() {
+  function values_28() {
     return [Resize_NONE_getInstance(), Resize_BOTH_getInstance(), Resize_HORIZONTAL_getInstance(), Resize_VERTICAL_getInstance(), Resize_INITIAL_getInstance(), Resize_INHERIT_getInstance()];
   }
-  function valueOf_27(value) {
+  function valueOf_28(value) {
     switch (value) {
       case 'NONE':
         return Resize_NONE_getInstance();
@@ -3473,10 +3567,10 @@
         break;
     }
   }
-  function get_entries_27() {
-    if ($ENTRIES_27 == null)
-      $ENTRIES_27 = enumEntries(values_27());
-    return $ENTRIES_27;
+  function get_entries_28() {
+    if ($ENTRIES_28 == null)
+      $ENTRIES_28 = enumEntries(values_28());
+    return $ENTRIES_28;
   }
   var Resize_entriesInitialized;
   function Resize_initEntries() {
@@ -3490,7 +3584,7 @@
     Resize_INITIAL_instance = new Resize('INITIAL', 4, 'initial');
     Resize_INHERIT_instance = new Resize('INHERIT', 5, 'inherit');
   }
-  var $ENTRIES_27;
+  var $ENTRIES_28;
   function Resize(name, ordinal, resize) {
     Enum.call(this, name, ordinal);
     this.resize_1 = resize;
@@ -3500,10 +3594,10 @@
   };
   var BgSize_COVER_instance;
   var BgSize_CONTAIN_instance;
-  function values_28() {
+  function values_29() {
     return [BgSize_COVER_getInstance(), BgSize_CONTAIN_getInstance()];
   }
-  function valueOf_28(value) {
+  function valueOf_29(value) {
     switch (value) {
       case 'COVER':
         return BgSize_COVER_getInstance();
@@ -3515,10 +3609,10 @@
         break;
     }
   }
-  function get_entries_28() {
-    if ($ENTRIES_28 == null)
-      $ENTRIES_28 = enumEntries(values_28());
-    return $ENTRIES_28;
+  function get_entries_29() {
+    if ($ENTRIES_29 == null)
+      $ENTRIES_29 = enumEntries(values_29());
+    return $ENTRIES_29;
   }
   var BgSize_entriesInitialized;
   function BgSize_initEntries() {
@@ -3528,7 +3622,7 @@
     BgSize_COVER_instance = new BgSize('COVER', 0, 'cover');
     BgSize_CONTAIN_instance = new BgSize('CONTAIN', 1, 'contain');
   }
-  var $ENTRIES_28;
+  var $ENTRIES_29;
   function BgSize(name, ordinal, size) {
     Enum.call(this, name, ordinal);
     this.size_1 = size;
@@ -3540,10 +3634,10 @@
   var BgRepeat_REPEATX_instance;
   var BgRepeat_REPEATY_instance;
   var BgRepeat_NOREPEAT_instance;
-  function values_29() {
+  function values_30() {
     return [BgRepeat_REPEAT_getInstance(), BgRepeat_REPEATX_getInstance(), BgRepeat_REPEATY_getInstance(), BgRepeat_NOREPEAT_getInstance()];
   }
-  function valueOf_29(value) {
+  function valueOf_30(value) {
     switch (value) {
       case 'REPEAT':
         return BgRepeat_REPEAT_getInstance();
@@ -3559,10 +3653,10 @@
         break;
     }
   }
-  function get_entries_29() {
-    if ($ENTRIES_29 == null)
-      $ENTRIES_29 = enumEntries(values_29());
-    return $ENTRIES_29;
+  function get_entries_30() {
+    if ($ENTRIES_30 == null)
+      $ENTRIES_30 = enumEntries(values_30());
+    return $ENTRIES_30;
   }
   var BgRepeat_entriesInitialized;
   function BgRepeat_initEntries() {
@@ -3574,7 +3668,7 @@
     BgRepeat_REPEATY_instance = new BgRepeat('REPEATY', 2, 'repeat-y');
     BgRepeat_NOREPEAT_instance = new BgRepeat('NOREPEAT', 3, 'no-repeat');
   }
-  var $ENTRIES_29;
+  var $ENTRIES_30;
   function BgRepeat(name, ordinal, repeat) {
     Enum.call(this, name, ordinal);
     this.repeat_1 = repeat;
@@ -3585,10 +3679,10 @@
   var BgOrigin_PADDING_instance;
   var BgOrigin_BORDER_instance;
   var BgOrigin_CONTENT_instance;
-  function values_30() {
+  function values_31() {
     return [BgOrigin_PADDING_getInstance(), BgOrigin_BORDER_getInstance(), BgOrigin_CONTENT_getInstance()];
   }
-  function valueOf_30(value) {
+  function valueOf_31(value) {
     switch (value) {
       case 'PADDING':
         return BgOrigin_PADDING_getInstance();
@@ -3602,10 +3696,10 @@
         break;
     }
   }
-  function get_entries_30() {
-    if ($ENTRIES_30 == null)
-      $ENTRIES_30 = enumEntries(values_30());
-    return $ENTRIES_30;
+  function get_entries_31() {
+    if ($ENTRIES_31 == null)
+      $ENTRIES_31 = enumEntries(values_31());
+    return $ENTRIES_31;
   }
   var BgOrigin_entriesInitialized;
   function BgOrigin_initEntries() {
@@ -3616,7 +3710,7 @@
     BgOrigin_BORDER_instance = new BgOrigin('BORDER', 1, 'border-box');
     BgOrigin_CONTENT_instance = new BgOrigin('CONTENT', 2, 'content-box');
   }
-  var $ENTRIES_30;
+  var $ENTRIES_31;
   function BgOrigin(name, ordinal, origin) {
     Enum.call(this, name, ordinal);
     this.origin_1 = origin;
@@ -3627,10 +3721,10 @@
   var BgClip_PADDING_instance;
   var BgClip_BORDER_instance;
   var BgClip_CONTENT_instance;
-  function values_31() {
+  function values_32() {
     return [BgClip_PADDING_getInstance(), BgClip_BORDER_getInstance(), BgClip_CONTENT_getInstance()];
   }
-  function valueOf_31(value) {
+  function valueOf_32(value) {
     switch (value) {
       case 'PADDING':
         return BgClip_PADDING_getInstance();
@@ -3644,10 +3738,10 @@
         break;
     }
   }
-  function get_entries_31() {
-    if ($ENTRIES_31 == null)
-      $ENTRIES_31 = enumEntries(values_31());
-    return $ENTRIES_31;
+  function get_entries_32() {
+    if ($ENTRIES_32 == null)
+      $ENTRIES_32 = enumEntries(values_32());
+    return $ENTRIES_32;
   }
   var BgClip_entriesInitialized;
   function BgClip_initEntries() {
@@ -3658,7 +3752,7 @@
     BgClip_BORDER_instance = new BgClip('BORDER', 1, 'border-box');
     BgClip_CONTENT_instance = new BgClip('CONTENT', 2, 'content-box');
   }
-  var $ENTRIES_31;
+  var $ENTRIES_32;
   function BgClip(name, ordinal, clip) {
     Enum.call(this, name, ordinal);
     this.clip_1 = clip;
@@ -3669,10 +3763,10 @@
   var BgAttach_SCROLL_instance;
   var BgAttach_FIXED_instance;
   var BgAttach_LOCAL_instance;
-  function values_32() {
+  function values_33() {
     return [BgAttach_SCROLL_getInstance(), BgAttach_FIXED_getInstance(), BgAttach_LOCAL_getInstance()];
   }
-  function valueOf_32(value) {
+  function valueOf_33(value) {
     switch (value) {
       case 'SCROLL':
         return BgAttach_SCROLL_getInstance();
@@ -3686,10 +3780,10 @@
         break;
     }
   }
-  function get_entries_32() {
-    if ($ENTRIES_32 == null)
-      $ENTRIES_32 = enumEntries(values_32());
-    return $ENTRIES_32;
+  function get_entries_33() {
+    if ($ENTRIES_33 == null)
+      $ENTRIES_33 = enumEntries(values_33());
+    return $ENTRIES_33;
   }
   var BgAttach_entriesInitialized;
   function BgAttach_initEntries() {
@@ -3700,95 +3794,13 @@
     BgAttach_FIXED_instance = new BgAttach('FIXED', 1, 'fixed');
     BgAttach_LOCAL_instance = new BgAttach('LOCAL', 2, 'local');
   }
-  var $ENTRIES_32;
+  var $ENTRIES_33;
   function BgAttach(name, ordinal, attachment) {
     Enum.call(this, name, ordinal);
     this.attachment_1 = attachment;
   }
   protoOf(BgAttach).get_attachment_qofup_k$ = function () {
     return this.attachment_1;
-  };
-  var BorderStyle_NONE_instance;
-  var BorderStyle_HIDDEN_instance;
-  var BorderStyle_DOTTED_instance;
-  var BorderStyle_DASHED_instance;
-  var BorderStyle_SOLID_instance;
-  var BorderStyle_DOUBLE_instance;
-  var BorderStyle_GROOVE_instance;
-  var BorderStyle_RIDGE_instance;
-  var BorderStyle_INSET_instance;
-  var BorderStyle_OUTSET_instance;
-  var BorderStyle_INITIAL_instance;
-  var BorderStyle_INHERIT_instance;
-  var BorderStyle_UNSET_instance;
-  function values_33() {
-    return [BorderStyle_NONE_getInstance(), BorderStyle_HIDDEN_getInstance(), BorderStyle_DOTTED_getInstance(), BorderStyle_DASHED_getInstance(), BorderStyle_SOLID_getInstance(), BorderStyle_DOUBLE_getInstance(), BorderStyle_GROOVE_getInstance(), BorderStyle_RIDGE_getInstance(), BorderStyle_INSET_getInstance(), BorderStyle_OUTSET_getInstance(), BorderStyle_INITIAL_getInstance(), BorderStyle_INHERIT_getInstance(), BorderStyle_UNSET_getInstance()];
-  }
-  function valueOf_33(value) {
-    switch (value) {
-      case 'NONE':
-        return BorderStyle_NONE_getInstance();
-      case 'HIDDEN':
-        return BorderStyle_HIDDEN_getInstance();
-      case 'DOTTED':
-        return BorderStyle_DOTTED_getInstance();
-      case 'DASHED':
-        return BorderStyle_DASHED_getInstance();
-      case 'SOLID':
-        return BorderStyle_SOLID_getInstance();
-      case 'DOUBLE':
-        return BorderStyle_DOUBLE_getInstance();
-      case 'GROOVE':
-        return BorderStyle_GROOVE_getInstance();
-      case 'RIDGE':
-        return BorderStyle_RIDGE_getInstance();
-      case 'INSET':
-        return BorderStyle_INSET_getInstance();
-      case 'OUTSET':
-        return BorderStyle_OUTSET_getInstance();
-      case 'INITIAL':
-        return BorderStyle_INITIAL_getInstance();
-      case 'INHERIT':
-        return BorderStyle_INHERIT_getInstance();
-      case 'UNSET':
-        return BorderStyle_UNSET_getInstance();
-      default:
-        BorderStyle_initEntries();
-        THROW_IAE('No enum constant value.');
-        break;
-    }
-  }
-  function get_entries_33() {
-    if ($ENTRIES_33 == null)
-      $ENTRIES_33 = enumEntries(values_33());
-    return $ENTRIES_33;
-  }
-  var BorderStyle_entriesInitialized;
-  function BorderStyle_initEntries() {
-    if (BorderStyle_entriesInitialized)
-      return Unit_getInstance();
-    BorderStyle_entriesInitialized = true;
-    BorderStyle_NONE_instance = new BorderStyle('NONE', 0, 'none');
-    BorderStyle_HIDDEN_instance = new BorderStyle('HIDDEN', 1, 'hidden');
-    BorderStyle_DOTTED_instance = new BorderStyle('DOTTED', 2, 'dotted');
-    BorderStyle_DASHED_instance = new BorderStyle('DASHED', 3, 'dashed');
-    BorderStyle_SOLID_instance = new BorderStyle('SOLID', 4, 'solid');
-    BorderStyle_DOUBLE_instance = new BorderStyle('DOUBLE', 5, 'double');
-    BorderStyle_GROOVE_instance = new BorderStyle('GROOVE', 6, 'groove');
-    BorderStyle_RIDGE_instance = new BorderStyle('RIDGE', 7, 'ridge');
-    BorderStyle_INSET_instance = new BorderStyle('INSET', 8, 'inset');
-    BorderStyle_OUTSET_instance = new BorderStyle('OUTSET', 9, 'outset');
-    BorderStyle_INITIAL_instance = new BorderStyle('INITIAL', 10, 'initial');
-    BorderStyle_INHERIT_instance = new BorderStyle('INHERIT', 11, 'inherit');
-    BorderStyle_UNSET_instance = new BorderStyle('UNSET', 12, 'unset');
-  }
-  var $ENTRIES_33;
-  function BorderStyle(name, ordinal, borderStyle) {
-    Enum.call(this, name, ordinal);
-    this.borderStyle_1 = borderStyle;
-  }
-  protoOf(BorderStyle).get_borderStyle_53e13l_k$ = function () {
-    return this.borderStyle_1;
   };
   var OutlineStyle_AUTO_instance;
   var OutlineStyle_NONE_instance;
@@ -4347,6 +4359,58 @@
   function Direction_INHERIT_getInstance() {
     Direction_initEntries();
     return Direction_INHERIT_instance;
+  }
+  function BorderStyle_NONE_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_NONE_instance;
+  }
+  function BorderStyle_HIDDEN_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_HIDDEN_instance;
+  }
+  function BorderStyle_DOTTED_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_DOTTED_instance;
+  }
+  function BorderStyle_DASHED_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_DASHED_instance;
+  }
+  function BorderStyle_SOLID_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_SOLID_instance;
+  }
+  function BorderStyle_DOUBLE_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_DOUBLE_instance;
+  }
+  function BorderStyle_GROOVE_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_GROOVE_instance;
+  }
+  function BorderStyle_RIDGE_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_RIDGE_instance;
+  }
+  function BorderStyle_INSET_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_INSET_instance;
+  }
+  function BorderStyle_OUTSET_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_OUTSET_instance;
+  }
+  function BorderStyle_INITIAL_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_INITIAL_instance;
+  }
+  function BorderStyle_INHERIT_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_INHERIT_instance;
+  }
+  function BorderStyle_UNSET_getInstance() {
+    BorderStyle_initEntries();
+    return BorderStyle_UNSET_instance;
   }
   function Display_INLINE_getInstance() {
     Display_initEntries();
@@ -5651,58 +5715,6 @@
   function BgAttach_LOCAL_getInstance() {
     BgAttach_initEntries();
     return BgAttach_LOCAL_instance;
-  }
-  function BorderStyle_NONE_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_NONE_instance;
-  }
-  function BorderStyle_HIDDEN_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_HIDDEN_instance;
-  }
-  function BorderStyle_DOTTED_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_DOTTED_instance;
-  }
-  function BorderStyle_DASHED_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_DASHED_instance;
-  }
-  function BorderStyle_SOLID_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_SOLID_instance;
-  }
-  function BorderStyle_DOUBLE_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_DOUBLE_instance;
-  }
-  function BorderStyle_GROOVE_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_GROOVE_instance;
-  }
-  function BorderStyle_RIDGE_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_RIDGE_instance;
-  }
-  function BorderStyle_INSET_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_INSET_instance;
-  }
-  function BorderStyle_OUTSET_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_OUTSET_instance;
-  }
-  function BorderStyle_INITIAL_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_INITIAL_instance;
-  }
-  function BorderStyle_INHERIT_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_INHERIT_instance;
-  }
-  function BorderStyle_UNSET_getInstance() {
-    BorderStyle_initEntries();
-    return BorderStyle_UNSET_instance;
   }
   function OutlineStyle_AUTO_getInstance() {
     OutlineStyle_initEntries();
@@ -15747,6 +15759,16 @@
       attributeSetBuilder.add_lbri6p_k$('autocomplete', tmp1_safe_receiver.get_type_wovaf7_k$());
     }
   };
+  function textInput(_this__u8e3s4, type, value, maxlength, className, init) {
+    type = type === VOID ? InputType_TEXT_getInstance() : type;
+    value = value === VOID ? null : value;
+    maxlength = maxlength === VOID ? null : maxlength;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var textInput = new TextInput(type, value, maxlength, className, init);
+    _this__u8e3s4.add_rekwpt_k$(textInput);
+    return textInput;
+  }
   function type$factory_2() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
@@ -16488,6 +16510,16 @@
       return receiver.set_labelFirst_q3ot2c_k$(value);
     });
   }
+  function div(_this__u8e3s4, content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var div = new Div(content, rich, align, className, init);
+    _this__u8e3s4.add_rekwpt_k$(div);
+    return div;
+  }
   function Div(content, rich, align, className, init) {
     content = content === VOID ? null : content;
     rich = rich === VOID ? false : rich;
@@ -16587,6 +16619,50 @@
     var h4 = new H4(content, rich, align, className, init);
     _this__u8e3s4.add_rekwpt_k$(h4);
     return h4;
+  }
+  function H5(content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    Tag.call(this, TAG_H5_getInstance(), content, rich, align, className);
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  function h5(_this__u8e3s4, content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var h5 = new H5(content, rich, align, className, init);
+    _this__u8e3s4.add_rekwpt_k$(h5);
+    return h5;
+  }
+  function h6(_this__u8e3s4, content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var h6 = new H6(content, rich, align, className, init);
+    _this__u8e3s4.add_rekwpt_k$(h6);
+    return h6;
+  }
+  function H6(content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    Tag.call(this, TAG_H6_getInstance(), content, rich, align, className);
+    if (init == null)
+      null;
+    else
+      init(this);
   }
   function icon(_this__u8e3s4, icon, init) {
     init = init === VOID ? null : init;
@@ -17938,6 +18014,28 @@
     }, function (receiver, value) {
       return receiver.set_dataNavigo_uqcbez_k$(value);
     });
+  }
+  function p(_this__u8e3s4, content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var p = new P(content, rich, align, className, init);
+    _this__u8e3s4.add_rekwpt_k$(p);
+    return p;
+  }
+  function P(content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    Tag.call(this, TAG_P_getInstance(), content, rich, align, className);
+    if (init == null)
+      null;
+    else
+      init(this);
   }
   function Span(content, rich, align, className, init) {
     content = content === VOID ? null : content;
@@ -21574,6 +21672,353 @@
     }
     this.privateChildren_1 = null;
   };
+  function stackPanel(_this__u8e3s4, activateLast, className, init) {
+    activateLast = activateLast === VOID ? true : activateLast;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var stackPanel = new StackPanel(activateLast, className, init);
+    _this__u8e3s4.add_rekwpt_k$(stackPanel);
+    return stackPanel;
+  }
+  function _get_activateLast__mbzvb6($this) {
+    return $this.activateLast_1;
+  }
+  function Companion_8() {
+    Companion_instance_8 = this;
+    this.counter_1 = 0;
+  }
+  protoOf(Companion_8).set_counter_lagg9g_k$ = function (_set____db54di) {
+    this.counter_1 = _set____db54di;
+  };
+  protoOf(Companion_8).get_counter_5zq0k8_k$ = function () {
+    return this.counter_1;
+  };
+  var Companion_instance_8;
+  function Companion_getInstance_9() {
+    if (Companion_instance_8 == null)
+      new Companion_8();
+    return Companion_instance_8;
+  }
+  function StackPanel$activeIndex$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function StackPanel$add$lambda(this$0, $currentIndex) {
+    return function (_unused_var__etf5q3) {
+      this$0.set_activeChild_xxdgo0_k$(ensureNotNull(this$0.childrenMap_1.get_wei43m_k$($currentIndex)));
+      return Unit_getInstance();
+    };
+  }
+  function StackPanel$route$1(this$0, $route) {
+    this.this$0__1 = this$0;
+    this.$route_1 = $route;
+    this.$$delegate_0__1 = this$0;
+  }
+  protoOf(StackPanel$route$1).add_rekwpt_k$ = function (child) {
+    this.this$0__1.add_cxqxwb_k$(child, this.$route_1);
+  };
+  protoOf(StackPanel$route$1).add_t9z7x3_k$ = function (position, child) {
+    this.$$delegate_0__1.add_t9z7x3_k$(position, child);
+  };
+  protoOf(StackPanel$route$1).addAll_a94ixq_k$ = function (children) {
+    this.$$delegate_0__1.addAll_a94ixq_k$(children);
+  };
+  protoOf(StackPanel$route$1).invoke_hkydh0_k$ = function (children) {
+    this.$$delegate_0__1.invoke_hkydh0_k$(children);
+  };
+  protoOf(StackPanel$route$1).remove_j7k0x0_k$ = function (child) {
+    this.$$delegate_0__1.remove_j7k0x0_k$(child);
+  };
+  protoOf(StackPanel$route$1).removeAt_rql1ap_k$ = function (position) {
+    this.$$delegate_0__1.removeAt_rql1ap_k$(position);
+  };
+  protoOf(StackPanel$route$1).removeAll_c84dd9_k$ = function () {
+    this.$$delegate_0__1.removeAll_c84dd9_k$();
+  };
+  protoOf(StackPanel$route$1).disposeAll_hpz7bi_k$ = function () {
+    this.$$delegate_0__1.disposeAll_hpz7bi_k$();
+  };
+  protoOf(StackPanel$route$1).getChildren_97y0zv_k$ = function () {
+    return this.$$delegate_0__1.getChildren_97y0zv_k$();
+  };
+  protoOf(StackPanel$route$1).unaryPlus_76unot_k$ = function (_this__u8e3s4) {
+    this.$$delegate_0__1.unaryPlus_76unot_k$(_this__u8e3s4);
+  };
+  protoOf(StackPanel$route$1).set_parent_58bm75_k$ = function (_set____db54di) {
+    this.$$delegate_0__1.set_parent_58bm75_k$(_set____db54di);
+  };
+  protoOf(StackPanel$route$1).get_parent_hy4reb_k$ = function () {
+    return this.$$delegate_0__1.get_parent_hy4reb_k$();
+  };
+  protoOf(StackPanel$route$1).set_visible_w9mvj4_k$ = function (_set____db54di) {
+    this.$$delegate_0__1.set_visible_w9mvj4_k$(_set____db54di);
+  };
+  protoOf(StackPanel$route$1).get_visible_8zfvk9_k$ = function () {
+    return this.$$delegate_0__1.get_visible_8zfvk9_k$();
+  };
+  protoOf(StackPanel$route$1).addCssClass_ul13bg_k$ = function (css) {
+    this.$$delegate_0__1.addCssClass_ul13bg_k$(css);
+  };
+  protoOf(StackPanel$route$1).addCssStyle_4edidd_k$ = function (css) {
+    this.$$delegate_0__1.addCssStyle_4edidd_k$(css);
+  };
+  protoOf(StackPanel$route$1).removeCssClass_3dntip_k$ = function (css) {
+    this.$$delegate_0__1.removeCssClass_3dntip_k$(css);
+  };
+  protoOf(StackPanel$route$1).hasCssClass_hvhhyj_k$ = function (css) {
+    return this.$$delegate_0__1.hasCssClass_hvhhyj_k$(css);
+  };
+  protoOf(StackPanel$route$1).removeCssStyle_l44kc_k$ = function (css) {
+    this.$$delegate_0__1.removeCssStyle_l44kc_k$(css);
+  };
+  protoOf(StackPanel$route$1).addSurroundingCssClass_h2gyzy_k$ = function (css) {
+    this.$$delegate_0__1.addSurroundingCssClass_h2gyzy_k$(css);
+  };
+  protoOf(StackPanel$route$1).addSurroundingCssStyle_pgxj1f_k$ = function (css) {
+    this.$$delegate_0__1.addSurroundingCssStyle_pgxj1f_k$(css);
+  };
+  protoOf(StackPanel$route$1).removeSurroundingCssClass_at56kr_k$ = function (css) {
+    this.$$delegate_0__1.removeSurroundingCssClass_at56kr_k$(css);
+  };
+  protoOf(StackPanel$route$1).removeSurroundingCssStyle_asoqhs_k$ = function (css) {
+    this.$$delegate_0__1.removeSurroundingCssStyle_asoqhs_k$(css);
+  };
+  protoOf(StackPanel$route$1).getAttribute_z2kbho_k$ = function (name) {
+    return this.$$delegate_0__1.getAttribute_z2kbho_k$(name);
+  };
+  protoOf(StackPanel$route$1).setAttribute_gbqua2_k$ = function (name, value) {
+    this.$$delegate_0__1.setAttribute_gbqua2_k$(name, value);
+  };
+  protoOf(StackPanel$route$1).removeAttribute_3xc826_k$ = function (name) {
+    this.$$delegate_0__1.removeAttribute_3xc826_k$(name);
+  };
+  protoOf(StackPanel$route$1).renderVNode_r2mn32_k$ = function () {
+    return this.$$delegate_0__1.renderVNode_r2mn32_k$();
+  };
+  protoOf(StackPanel$route$1).getElement_acounu_k$ = function () {
+    return this.$$delegate_0__1.getElement_acounu_k$();
+  };
+  protoOf(StackPanel$route$1).getElementD_y85vem_k$ = function () {
+    return this.$$delegate_0__1.getElementD_y85vem_k$();
+  };
+  protoOf(StackPanel$route$1).clearParent_npr7gn_k$ = function () {
+    this.$$delegate_0__1.clearParent_npr7gn_k$();
+  };
+  protoOf(StackPanel$route$1).getRoot_18r9uw_k$ = function () {
+    return this.$$delegate_0__1.getRoot_18r9uw_k$();
+  };
+  protoOf(StackPanel$route$1).dispose_3nnxhr_k$ = function () {
+    this.$$delegate_0__1.dispose_3nnxhr_k$();
+  };
+  protoOf(StackPanel$route$1).focus_of07w8_k$ = function () {
+    this.$$delegate_0__1.focus_of07w8_k$();
+  };
+  protoOf(StackPanel$route$1).blur_exr7u1_k$ = function () {
+    this.$$delegate_0__1.blur_exr7u1_k$();
+  };
+  protoOf(StackPanel$route$1).addAfterCreateHook_jnuj9o_k$ = function (hook) {
+    return this.$$delegate_0__1.addAfterCreateHook_jnuj9o_k$(hook);
+  };
+  protoOf(StackPanel$route$1).removeAfterCreateHook_911psh_k$ = function (hook) {
+    return this.$$delegate_0__1.removeAfterCreateHook_911psh_k$(hook);
+  };
+  protoOf(StackPanel$route$1).clearAfterCreateHooks_xde985_k$ = function () {
+    this.$$delegate_0__1.clearAfterCreateHooks_xde985_k$();
+  };
+  protoOf(StackPanel$route$1).addAfterInsertHook_s83sk1_k$ = function (hook) {
+    return this.$$delegate_0__1.addAfterInsertHook_s83sk1_k$(hook);
+  };
+  protoOf(StackPanel$route$1).removeAfterInsertHook_e440cy_k$ = function (hook) {
+    return this.$$delegate_0__1.removeAfterInsertHook_e440cy_k$(hook);
+  };
+  protoOf(StackPanel$route$1).clearAfterInsertHooks_i07bfc_k$ = function () {
+    this.$$delegate_0__1.clearAfterInsertHooks_i07bfc_k$();
+  };
+  protoOf(StackPanel$route$1).addAfterDestroyHook_7cqxpi_k$ = function (hook) {
+    return this.$$delegate_0__1.addAfterDestroyHook_7cqxpi_k$(hook);
+  };
+  protoOf(StackPanel$route$1).removeAfterDestroyHook_8vfkv1_k$ = function (hook) {
+    return this.$$delegate_0__1.removeAfterDestroyHook_8vfkv1_k$(hook);
+  };
+  protoOf(StackPanel$route$1).clearAfterDestroyHooks_h7xzgr_k$ = function () {
+    this.$$delegate_0__1.clearAfterDestroyHooks_h7xzgr_k$();
+  };
+  protoOf(StackPanel$route$1).addBeforeDisposeHook_g5p0gq_k$ = function (hook) {
+    return this.$$delegate_0__1.addBeforeDisposeHook_g5p0gq_k$(hook);
+  };
+  protoOf(StackPanel$route$1).removeBeforeDisposeHook_lzimbb_k$ = function (hook) {
+    return this.$$delegate_0__1.removeBeforeDisposeHook_lzimbb_k$(hook);
+  };
+  protoOf(StackPanel$route$1).clearBeforeDisposeHooks_mx3cfn_k$ = function () {
+    this.$$delegate_0__1.clearBeforeDisposeHooks_mx3cfn_k$();
+  };
+  protoOf(StackPanel$route$1).singleRender_ca7nu0_k$ = function (block) {
+    return this.$$delegate_0__1.singleRender_ca7nu0_k$(block);
+  };
+  protoOf(StackPanel$route$1).singleRenderAsync_haca86_k$ = function (block) {
+    this.$$delegate_0__1.singleRenderAsync_haca86_k$(block);
+  };
+  function StackPanel(activateLast, className, init) {
+    Companion_getInstance_9();
+    activateLast = activateLast === VOID ? true : activateLast;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    SimplePanel.call(this, className);
+    this.activateLast_1 = activateLast;
+    var tmp = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction = StackPanel$activeIndex$delegate$lambda(this);
+    tmp.activeIndex$delegate_1 = (new RefreshDelegateProvider_0(this, -1, refreshFunction)).provideDelegate_z62loi_k$(this, activeIndex$factory());
+    var tmp_0 = this;
+    // Inline function 'kotlin.collections.mutableMapOf' call
+    tmp_0.childrenMap_1 = LinkedHashMap_init_$Create$();
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(StackPanel).set_activeIndex_2mqwdj_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.activeIndex$delegate_1, this, activeIndex$factory_0(), _set____db54di);
+  };
+  protoOf(StackPanel).get_activeIndex_3txs71_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.activeIndex$delegate_1, this, activeIndex$factory_1());
+  };
+  protoOf(StackPanel).set_activeChild_xxdgo0_k$ = function (value) {
+    var tmp0_safe_receiver = this.get_children_4cwbp4_k$();
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : indexOf(tmp0_safe_receiver, value);
+    this.set_activeIndex_2mqwdj_k$(tmp1_elvis_lhs == null ? -1 : tmp1_elvis_lhs);
+  };
+  protoOf(StackPanel).get_activeChild_3xc9tf_k$ = function () {
+    var tmp0_safe_receiver = this.get_children_4cwbp4_k$();
+    return tmp0_safe_receiver == null ? null : tmp0_safe_receiver.get_c1px32_k$(this.get_activeIndex_3txs71_k$());
+  };
+  protoOf(StackPanel).get_childrenMap_v3zq47_k$ = function () {
+    return this.childrenMap_1;
+  };
+  protoOf(StackPanel).childrenVNodes_2corie_k$ = function () {
+    var tmp;
+    var tmp_0;
+    if (!(this.get_children_4cwbp4_k$() == null)) {
+      var containsUpper = ensureNotNull(this.get_children_4cwbp4_k$()).get_size_woubt6_k$() - 1 | 0;
+      var containsArg = this.get_activeIndex_3txs71_k$();
+      tmp_0 = 0 <= containsArg ? containsArg <= containsUpper : false;
+    } else {
+      tmp_0 = false;
+    }
+    if (tmp_0) {
+      // Inline function 'kotlin.arrayOf' call
+      // Inline function 'kotlin.js.unsafeCast' call
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = [ensureNotNull(this.get_children_4cwbp4_k$()).get_c1px32_k$(this.get_activeIndex_3txs71_k$()).renderVNode_r2mn32_k$()];
+    } else {
+      // Inline function 'kotlin.arrayOf' call
+      // Inline function 'kotlin.js.unsafeCast' call
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = [];
+    }
+    return tmp;
+  };
+  protoOf(StackPanel).add_cxqxwb_k$ = function (panel, route) {
+    this.add_rekwpt_k$(panel);
+    var _unary__edvuaz = Companion_getInstance_9().counter_1;
+    Companion_getInstance_9().counter_1 = _unary__edvuaz + 1 | 0;
+    var currentIndex = _unary__edvuaz;
+    // Inline function 'kotlin.collections.set' call
+    this.childrenMap_1.put_4fpzoq_k$(currentIndex, panel);
+    var tmp = RoutingManager_getInstance().getRouter_cqyofz_k$();
+    tmp.kvOn_ic624w_k$(route, StackPanel$add$lambda(this, currentIndex));
+  };
+  protoOf(StackPanel).route_kez6ia_k$ = function (route, builder) {
+    builder(new StackPanel$route$1(this, route));
+  };
+  protoOf(StackPanel).add_rekwpt_k$ = function (child) {
+    protoOf(SimplePanel).add_rekwpt_k$.call(this, child);
+    if (this.activateLast_1) {
+      this.set_activeIndex_2mqwdj_k$(ensureNotNull(this.get_children_4cwbp4_k$()).get_size_woubt6_k$() - 1 | 0);
+    } else if (this.get_activeIndex_3txs71_k$() === -1) {
+      this.set_activeIndex_2mqwdj_k$(0);
+    }
+  };
+  protoOf(StackPanel).add_t9z7x3_k$ = function (position, child) {
+    protoOf(SimplePanel).add_t9z7x3_k$.call(this, position, child);
+    if (this.activateLast_1) {
+      this.set_activeIndex_2mqwdj_k$(ensureNotNull(this.get_children_4cwbp4_k$()).get_size_woubt6_k$() - 1 | 0);
+    } else if (this.get_activeIndex_3txs71_k$() === -1) {
+      this.set_activeIndex_2mqwdj_k$(0);
+    }
+  };
+  protoOf(StackPanel).addAll_a94ixq_k$ = function (children) {
+    protoOf(SimplePanel).addAll_a94ixq_k$.call(this, children);
+    if (this.activateLast_1) {
+      this.set_activeIndex_2mqwdj_k$(ensureNotNull(this.get_children_4cwbp4_k$()).get_size_woubt6_k$() - 1 | 0);
+    } else if (this.get_activeIndex_3txs71_k$() === -1) {
+      this.set_activeIndex_2mqwdj_k$(0);
+    }
+  };
+  protoOf(StackPanel).remove_j7k0x0_k$ = function (child) {
+    protoOf(SimplePanel).remove_j7k0x0_k$.call(this, child);
+    // Inline function 'kotlin.collections.filter' call
+    var tmp0 = this.childrenMap_1;
+    // Inline function 'kotlin.collections.filterTo' call
+    var destination = LinkedHashMap_init_$Create$();
+    // Inline function 'kotlin.collections.iterator' call
+    var _iterator__ex2g4s = tmp0.get_entries_p20ztl_k$().iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'io.kvision.panel.StackPanel.remove.<anonymous>' call
+      if (equals(element.get_value_j01efc_k$(), child)) {
+        destination.put_4fpzoq_k$(element.get_key_18j28a_k$(), element.get_value_j01efc_k$());
+      }
+    }
+    var tmp0_safe_receiver = firstOrNull(destination.get_keys_wop4xp_k$());
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.panel.StackPanel.remove.<anonymous>' call
+      this.childrenMap_1.remove_gppy8k_k$(tmp0_safe_receiver);
+    }
+    if (!(this.get_children_4cwbp4_k$() == null) && this.get_activeIndex_3txs71_k$() > (ensureNotNull(this.get_children_4cwbp4_k$()).get_size_woubt6_k$() - 1 | 0)) {
+      this.set_activeIndex_2mqwdj_k$(ensureNotNull(this.get_children_4cwbp4_k$()).get_size_woubt6_k$() - 1 | 0);
+    }
+  };
+  protoOf(StackPanel).removeAt_rql1ap_k$ = function (position) {
+    var tmp0_safe_receiver = this.get_children_4cwbp4_k$();
+    var child = tmp0_safe_receiver == null ? null : getOrNull(tmp0_safe_receiver, position);
+    if (!(child == null)) {
+      this.remove_j7k0x0_k$(child);
+    }
+  };
+  protoOf(StackPanel).removeAll_c84dd9_k$ = function () {
+    protoOf(SimplePanel).removeAll_c84dd9_k$.call(this);
+    this.childrenMap_1.clear_j9egeb_k$();
+    if (!(this.get_children_4cwbp4_k$() == null) && this.get_activeIndex_3txs71_k$() > (ensureNotNull(this.get_children_4cwbp4_k$()).get_size_woubt6_k$() - 1 | 0)) {
+      this.set_activeIndex_2mqwdj_k$(ensureNotNull(this.get_children_4cwbp4_k$()).get_size_woubt6_k$() - 1 | 0);
+    }
+  };
+  function activeIndex$factory() {
+    return getPropertyCallableRef('activeIndex', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_activeIndex_3txs71_k$();
+    }, function (receiver, value) {
+      return receiver.set_activeIndex_2mqwdj_k$(value);
+    });
+  }
+  function activeIndex$factory_0() {
+    return getPropertyCallableRef('activeIndex', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_activeIndex_3txs71_k$();
+    }, function (receiver, value) {
+      return receiver.set_activeIndex_2mqwdj_k$(value);
+    });
+  }
+  function activeIndex$factory_1() {
+    return getPropertyCallableRef('activeIndex', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_activeIndex_3txs71_k$();
+    }, function (receiver, value) {
+      return receiver.set_activeIndex_2mqwdj_k$(value);
+    });
+  }
   function VPanel(justify, alignItems, spacing, useWrappers, className, init) {
     justify = justify === VOID ? null : justify;
     alignItems = alignItems === VOID ? null : alignItems;
@@ -21692,6 +22137,94 @@
   function MutableState() {
   }
   function ObservableState() {
+  }
+  function ObservableValue$value$$inlined$observable$1($initialValue, this$0) {
+    this.this$0__1 = this$0;
+    ObservableProperty.call(this, $initialValue);
+  }
+  protoOf(ObservableValue$value$$inlined$observable$1).afterChange_239zsc_k$ = function (property, oldValue, newValue) {
+    // Inline function 'kotlin.collections.map' call
+    var this_0 = this.this$0__1.observers_1;
+    // Inline function 'kotlin.collections.mapTo' call
+    var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_0, 10));
+    var _iterator__ex2g4s = this_0.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var item = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'io.kvision.state.ObservableValue.value$delegate.<anonymous>.<anonymous>' call
+      destination.add_utx5q5_k$(item);
+    }
+    var copy = destination;
+    var _iterator__ex2g4s_0 = copy.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s_0.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s_0.next_20eer_k$();
+      // Inline function 'io.kvision.state.ObservableValue.value$delegate.<anonymous>.<anonymous>' call
+      if (this.this$0__1.observers_1.contains_aljjnj_k$(element)) {
+        element(newValue);
+      }
+    }
+    return Unit_getInstance();
+  };
+  protoOf(ObservableValue$value$$inlined$observable$1).afterChange_l5zxww_k$ = function (property, oldValue, newValue) {
+    var tmp = (oldValue == null ? true : !(oldValue == null)) ? oldValue : THROW_CCE();
+    return this.afterChange_239zsc_k$(property, tmp, (newValue == null ? true : !(newValue == null)) ? newValue : THROW_CCE());
+  };
+  function ObservableValue$subscribe$lambda(this$0, $observer) {
+    return function () {
+      var tmp0 = this$0.observers_1;
+      var element = $observer;
+      tmp0.remove_cedx0m_k$(element);
+      return Unit_getInstance();
+    };
+  }
+  function ObservableValue(value) {
+    var tmp = this;
+    // Inline function 'kotlin.collections.mutableListOf' call
+    tmp.observers_1 = ArrayList_init_$Create$();
+    var tmp_0 = this;
+    // Inline function 'kotlin.properties.Delegates.observable' call
+    Delegates_getInstance();
+    tmp_0.value$delegate_1 = new ObservableValue$value$$inlined$observable$1(value, this);
+  }
+  protoOf(ObservableValue).get_observers_pupmq4_k$ = function () {
+    return this.observers_1;
+  };
+  protoOf(ObservableValue).set_value_v1vabv_k$ = function (_set____db54di) {
+    return this.value$delegate_1.setValue_b1qg0h_k$(this, value$factory_5(), _set____db54di);
+  };
+  protoOf(ObservableValue).get_value_j01efc_k$ = function () {
+    return this.value$delegate_1.getValue_4u4kqi_k$(this, value$factory_6());
+  };
+  protoOf(ObservableValue).getState_wi99ln_k$ = function () {
+    return this.get_value_j01efc_k$();
+  };
+  protoOf(ObservableValue).setState_yqp4r4_k$ = function (state) {
+    this.set_value_v1vabv_k$(state);
+  };
+  protoOf(ObservableValue).setState_otrcj3_k$ = function (state) {
+    return this.setState_yqp4r4_k$((state == null ? true : !(state == null)) ? state : THROW_CCE());
+  };
+  protoOf(ObservableValue).subscribe_i8u9zb_k$ = function (observer) {
+    // Inline function 'kotlin.collections.plusAssign' call
+    this.observers_1.add_utx5q5_k$(observer);
+    observer(this.get_value_j01efc_k$());
+    return ObservableValue$subscribe$lambda(this, observer);
+  };
+  protoOf(ObservableValue).subscribe_go603e_k$ = function (observer) {
+    return this.subscribe_i8u9zb_k$(observer);
+  };
+  function value$factory_5() {
+    return getPropertyCallableRef('value', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_value_j01efc_k$();
+    }, function (receiver, value) {
+      return receiver.set_value_v1vabv_k$(value);
+    });
+  }
+  function value$factory_6() {
+    return getPropertyCallableRef('value', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_value_j01efc_k$();
+    }, function (receiver, value) {
+      return receiver.set_value_v1vabv_k$(value);
+    });
   }
   function toStringF(_this__u8e3s4, format) {
     format = format === VOID ? get_KV_DEFAULT_DATE_FORMAT() : format;
@@ -21979,76 +22512,90 @@
   _.$_$ = _.$_$ || {};
   _.$_$.a = AlignContent_CENTER_getInstance;
   _.$_$.b = AlignItems_CENTER_getInstance;
-  _.$_$.c = Col_DARKSLATEGRAY_getInstance;
-  _.$_$.d = Display_BLOCK_getInstance;
-  _.$_$.e = JustifyContent_SPACEBETWEEN_getInstance;
-  _.$_$.f = Overflow_HIDDEN_getInstance;
-  _.$_$.g = TextAlign_CENTER_getInstance;
-  _.$_$.h = TextOverflow_ELLIPSIS_getInstance;
-  _.$_$.i = WhiteSpace_NOWRAP_getInstance;
-  _.$_$.j = ButtonStyle_LIGHT_getInstance;
-  _.$_$.k = ButtonStyle_PRIMARY_getInstance;
-  _.$_$.l = ButtonType_BUTTON_getInstance;
-  _.$_$.m = ButtonType_SUBMIT_getInstance;
-  _.$_$.n = TAG_FORM_getInstance;
-  _.$_$.o = TAG_H6_getInstance;
-  _.$_$.p = ContainerType_FLUID_getInstance;
-  _.$_$.q = add$default;
-  _.$_$.r = WidgetRefreshDelegate__getValue_impl_lmjmy2;
-  _.$_$.s = WidgetRefreshDelegate__setValue_impl_8tnbha;
-  _.$_$.t = Companion_getInstance_0;
-  _.$_$.u = MaskManager_getInstance;
-  _.$_$.v = I18n_getInstance;
-  _.$_$.w = Companion_getInstance_8;
-  _.$_$.x = RoutingManager_getInstance;
-  _.$_$.y = CoreModule_getInstance;
-  _.$_$.z = addAll;
-  _.$_$.a1 = add;
-  _.$_$.b1 = AttributeSetBuilder;
-  _.$_$.c1 = Background;
-  _.$_$.d1 = add_0;
-  _.$_$.e1 = ClassSetBuilder;
-  _.$_$.f1 = CssClass;
-  _.$_$.g1 = DomAttribute;
-  _.$_$.h1 = RefreshDelegateProvider_0;
-  _.$_$.i1 = checkBox;
-  _.$_$.j1 = MaskFactory;
-  _.$_$.k1 = MaskOptions;
-  _.$_$.l1 = Mask;
-  _.$_$.m1 = Password;
-  _.$_$.n1 = Text;
-  _.$_$.o1 = text;
-  _.$_$.p1 = FormPanel;
-  _.$_$.q1 = Button;
-  _.$_$.r1 = H3;
-  _.$_$.s1 = Link;
-  _.$_$.t1 = Tag;
-  _.$_$.u1 = button;
-  _.$_$.v1 = h1;
-  _.$_$.w1 = h2;
-  _.$_$.x1 = h3;
-  _.$_$.y1 = h4;
-  _.$_$.z1 = icon;
-  _.$_$.a2 = image;
-  _.$_$.b2 = span;
-  _.$_$.c2 = ntr;
-  _.$_$.d2 = trans_0;
-  _.$_$.e2 = trans;
-  _.$_$.f2 = tr;
-  _.$_$.g2 = I18nManager;
-  _.$_$.h2 = SimplePanel;
-  _.$_$.i2 = VPanel;
-  _.$_$.j2 = gridPanel;
-  _.$_$.k2 = root;
-  _.$_$.l2 = vPanel;
-  _.$_$.m2 = KVRouter;
-  _.$_$.n2 = RouterFactory;
-  _.$_$.o2 = get_auto;
-  _.$_$.p2 = get_perc;
-  _.$_$.q2 = get_px;
-  _.$_$.r2 = Application;
-  _.$_$.s2 = ModuleInitializer;
-  _.$_$.t2 = startApplication;
+  _.$_$.c = BorderStyle_NONE_getInstance;
+  _.$_$.d = Col_DARKSLATEGRAY_getInstance;
+  _.$_$.e = Display_BLOCK_getInstance;
+  _.$_$.f = Display_FLEX_getInstance;
+  _.$_$.g = FlexWrap_WRAP_getInstance;
+  _.$_$.h = JustifyContent_SPACEBETWEEN_getInstance;
+  _.$_$.i = Overflow_HIDDEN_getInstance;
+  _.$_$.j = TextAlign_CENTER_getInstance;
+  _.$_$.k = TextAlign_LEFT_getInstance;
+  _.$_$.l = TextOverflow_ELLIPSIS_getInstance;
+  _.$_$.m = WhiteSpace_NOWRAP_getInstance;
+  _.$_$.n = ButtonStyle_LIGHT_getInstance;
+  _.$_$.o = ButtonStyle_PRIMARY_getInstance;
+  _.$_$.p = ButtonType_BUTTON_getInstance;
+  _.$_$.q = ButtonType_SUBMIT_getInstance;
+  _.$_$.r = InputType_NUMBER_getInstance;
+  _.$_$.s = TAG_FORM_getInstance;
+  _.$_$.t = TAG_H6_getInstance;
+  _.$_$.u = ContainerType_FLUID_getInstance;
+  _.$_$.v = add$default;
+  _.$_$.w = WidgetRefreshDelegate__getValue_impl_lmjmy2;
+  _.$_$.x = WidgetRefreshDelegate__setValue_impl_8tnbha;
+  _.$_$.y = Companion_getInstance_0;
+  _.$_$.z = MaskManager_getInstance;
+  _.$_$.a1 = I18n_getInstance;
+  _.$_$.b1 = Companion_getInstance_8;
+  _.$_$.c1 = RoutingManager_getInstance;
+  _.$_$.d1 = CoreModule_getInstance;
+  _.$_$.e1 = addAll;
+  _.$_$.f1 = add;
+  _.$_$.g1 = AttributeSetBuilder;
+  _.$_$.h1 = Background;
+  _.$_$.i1 = Border;
+  _.$_$.j1 = add_0;
+  _.$_$.k1 = ClassSetBuilder;
+  _.$_$.l1 = Container;
+  _.$_$.m1 = CssClass;
+  _.$_$.n1 = DomAttribute;
+  _.$_$.o1 = RefreshDelegateProvider_0;
+  _.$_$.p1 = checkBox;
+  _.$_$.q1 = MaskFactory;
+  _.$_$.r1 = MaskOptions;
+  _.$_$.s1 = Mask;
+  _.$_$.t1 = Password;
+  _.$_$.u1 = Text;
+  _.$_$.v1 = textInput;
+  _.$_$.w1 = text;
+  _.$_$.x1 = FormPanel;
+  _.$_$.y1 = Button;
+  _.$_$.z1 = H3;
+  _.$_$.a2 = Link;
+  _.$_$.b2 = Tag;
+  _.$_$.c2 = button;
+  _.$_$.d2 = div;
+  _.$_$.e2 = h1;
+  _.$_$.f2 = h2;
+  _.$_$.g2 = h3;
+  _.$_$.h2 = h4;
+  _.$_$.i2 = h5;
+  _.$_$.j2 = h6;
+  _.$_$.k2 = icon;
+  _.$_$.l2 = image;
+  _.$_$.m2 = p;
+  _.$_$.n2 = span;
+  _.$_$.o2 = ntr;
+  _.$_$.p2 = trans_0;
+  _.$_$.q2 = trans;
+  _.$_$.r2 = tr;
+  _.$_$.s2 = I18nManager;
+  _.$_$.t2 = SimplePanel;
+  _.$_$.u2 = VPanel;
+  _.$_$.v2 = gridPanel;
+  _.$_$.w2 = root;
+  _.$_$.x2 = stackPanel;
+  _.$_$.y2 = vPanel;
+  _.$_$.z2 = KVRouter;
+  _.$_$.a3 = RouterFactory;
+  _.$_$.b3 = ObservableValue;
+  _.$_$.c3 = get_auto;
+  _.$_$.d3 = get_perc;
+  _.$_$.e3 = get_px;
+  _.$_$.f3 = Application;
+  _.$_$.g3 = ModuleInitializer;
+  _.$_$.h3 = startApplication;
   //endregion
   return _;
 }));
