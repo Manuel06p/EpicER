@@ -39,104 +39,108 @@
   var imul = Math.imul;
   var h_1 = $module$snabbdom.h;
   var h_2 = $module$snabbdom.h;
-  var protoOf = kotlin_kotlin.$_$.jb;
-  var emptyMap = kotlin_kotlin.$_$.q6;
-  var initMetadataForClass = kotlin_kotlin.$_$.ga;
-  var VOID = kotlin_kotlin.$_$.f;
-  var Unit_getInstance = kotlin_kotlin.$_$.d5;
-  var initMetadataForInterface = kotlin_kotlin.$_$.ja;
-  var initMetadataForObject = kotlin_kotlin.$_$.la;
+  var h_3 = $module$snabbdom.h;
+  var protoOf = kotlin_kotlin.$_$.mb;
+  var emptyMap = kotlin_kotlin.$_$.s6;
+  var initMetadataForClass = kotlin_kotlin.$_$.ja;
+  var VOID = kotlin_kotlin.$_$.g;
+  var Unit_getInstance = kotlin_kotlin.$_$.e5;
+  var initMetadataForInterface = kotlin_kotlin.$_$.ma;
+  var initMetadataForObject = kotlin_kotlin.$_$.oa;
   var clear = kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.$_$.a;
-  var charSequenceLength = kotlin_kotlin.$_$.v9;
-  var asList = kotlin_kotlin.$_$.v5;
-  var THROW_IAE = kotlin_kotlin.$_$.we;
-  var enumEntries = kotlin_kotlin.$_$.l9;
-  var Enum = kotlin_kotlin.$_$.he;
-  var toString = kotlin_kotlin.$_$.nd;
-  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.p2;
-  var padStart = kotlin_kotlin.$_$.sc;
-  var listOf = kotlin_kotlin.$_$.j7;
-  var joinToString = kotlin_kotlin.$_$.c7;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.ha;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.l;
-  var charArrayOf = kotlin_kotlin.$_$.s9;
-  var split = kotlin_kotlin.$_$.ad;
-  var last = kotlin_kotlin.$_$.h7;
-  var iterator = kotlin_kotlin.$_$.za;
-  var to = kotlin_kotlin.$_$.yf;
-  var toString_0 = kotlin_kotlin.$_$.mb;
-  var hashCode = kotlin_kotlin.$_$.fa;
-  var THROW_CCE = kotlin_kotlin.$_$.ve;
-  var equals = kotlin_kotlin.$_$.z9;
-  var KMutableProperty1 = kotlin_kotlin.$_$.yb;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.da;
-  var ensureNotNull = kotlin_kotlin.$_$.nf;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.z5;
-  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.k;
-  var apply = kotlin_kotlin.$_$.jf;
-  var toSet = kotlin_kotlin.$_$.l8;
-  var emptySet = kotlin_kotlin.$_$.r6;
-  var intersect = kotlin_kotlin.$_$.b7;
-  var mapOf = kotlin_kotlin.$_$.l7;
-  var split_0 = kotlin_kotlin.$_$.bd;
-  var toSet_0 = kotlin_kotlin.$_$.k8;
-  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.u;
-  var toMap = kotlin_kotlin.$_$.g8;
-  var toMutableMap = kotlin_kotlin.$_$.i8;
-  var copyToArray = kotlin_kotlin.$_$.m6;
-  var first = kotlin_kotlin.$_$.u6;
-  var mutableMapOf = kotlin_kotlin.$_$.n7;
-  var startsWith = kotlin_kotlin.$_$.cd;
-  var toMutableSet = kotlin_kotlin.$_$.j8;
-  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.w;
-  var setOf = kotlin_kotlin.$_$.w7;
+  var charSequenceLength = kotlin_kotlin.$_$.y9;
+  var asList = kotlin_kotlin.$_$.w5;
+  var THROW_IAE = kotlin_kotlin.$_$.ze;
+  var enumEntries = kotlin_kotlin.$_$.o9;
+  var Enum = kotlin_kotlin.$_$.ke;
+  var toString = kotlin_kotlin.$_$.qd;
+  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.q2;
+  var padStart = kotlin_kotlin.$_$.vc;
+  var listOf = kotlin_kotlin.$_$.l7;
+  var joinToString = kotlin_kotlin.$_$.e7;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ka;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.m;
+  var charArrayOf = kotlin_kotlin.$_$.v9;
+  var split = kotlin_kotlin.$_$.dd;
+  var last = kotlin_kotlin.$_$.j7;
+  var iterator = kotlin_kotlin.$_$.cb;
+  var to = kotlin_kotlin.$_$.bg;
+  var toString_0 = kotlin_kotlin.$_$.pb;
+  var hashCode = kotlin_kotlin.$_$.ia;
+  var THROW_CCE = kotlin_kotlin.$_$.ye;
+  var equals = kotlin_kotlin.$_$.ca;
+  var KMutableProperty1 = kotlin_kotlin.$_$.bc;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.ga;
+  var ensureNotNull = kotlin_kotlin.$_$.qf;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.b6;
+  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.l;
+  var apply = kotlin_kotlin.$_$.mf;
+  var toSet = kotlin_kotlin.$_$.o8;
+  var emptySet = kotlin_kotlin.$_$.t6;
+  var intersect = kotlin_kotlin.$_$.d7;
+  var mapOf = kotlin_kotlin.$_$.n7;
+  var split_0 = kotlin_kotlin.$_$.ed;
+  var toSet_0 = kotlin_kotlin.$_$.n8;
+  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.v;
+  var toMap = kotlin_kotlin.$_$.j8;
+  var toMutableMap = kotlin_kotlin.$_$.l8;
+  var copyToArray = kotlin_kotlin.$_$.o6;
+  var first = kotlin_kotlin.$_$.w6;
+  var mutableMapOf = kotlin_kotlin.$_$.p7;
+  var startsWith = kotlin_kotlin.$_$.fd;
+  var toMutableSet = kotlin_kotlin.$_$.m8;
+  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.x;
+  var setOf = kotlin_kotlin.$_$.z7;
   var Dispatchers_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var SupervisorJob = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
   var SerializersModuleBuilder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.e2;
-  var getKClass = kotlin_kotlin.$_$.e;
+  var getKClass = kotlin_kotlin.$_$.f;
   var overwriteWith = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i2;
-  var KtList = kotlin_kotlin.$_$.n5;
-  var isInterface = kotlin_kotlin.$_$.ua;
+  var KtList = kotlin_kotlin.$_$.o5;
+  var isInterface = kotlin_kotlin.$_$.xa;
   var Companion_getInstance = kotlin_io_kvision_kvision_common_types.$_$.a;
   var ListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r;
   var Default_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
   var Json = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.b;
-  var KtMap = kotlin_kotlin.$_$.p5;
-  var contains = kotlin_kotlin.$_$.a6;
-  var mapCapacity = kotlin_kotlin.$_$.k7;
-  var coerceAtLeast = kotlin_kotlin.$_$.qb;
-  var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.t;
-  var plus = kotlin_kotlin.$_$.o7;
-  var withDefault = kotlin_kotlin.$_$.m8;
-  var toString_1 = kotlin_kotlin.$_$.xf;
-  var getBooleanHashCode = kotlin_kotlin.$_$.ba;
-  var getStringHashCode = kotlin_kotlin.$_$.ea;
-  var json = kotlin_kotlin.$_$.bb;
-  var isNumber = kotlin_kotlin.$_$.wa;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.r1;
-  var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.t1;
-  var Annotation = kotlin_kotlin.$_$.yd;
-  var dropLast = kotlin_kotlin.$_$.ic;
-  var last_0 = kotlin_kotlin.$_$.rc;
-  var Exception = kotlin_kotlin.$_$.je;
-  var charSequenceGet = kotlin_kotlin.$_$.u9;
-  var toIntOrNull = kotlin_kotlin.$_$.kd;
-  var objectCreate = kotlin_kotlin.$_$.ib;
-  var asList_0 = kotlin_kotlin.$_$.zf;
-  var listOf_0 = kotlin_kotlin.$_$.i7;
-  var plus_0 = kotlin_kotlin.$_$.r7;
-  var getOrNull = kotlin_kotlin.$_$.v6;
-  var emptyList = kotlin_kotlin.$_$.p6;
-  var indexOf = kotlin_kotlin.$_$.x6;
-  var firstOrNull = kotlin_kotlin.$_$.t6;
-  var ObservableProperty = kotlin_kotlin.$_$.ob;
-  var Delegates_getInstance = kotlin_kotlin.$_$.s4;
+  var KtMap = kotlin_kotlin.$_$.q5;
+  var contains = kotlin_kotlin.$_$.c6;
+  var mapCapacity = kotlin_kotlin.$_$.m7;
+  var coerceAtLeast = kotlin_kotlin.$_$.tb;
+  var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.u;
+  var plus = kotlin_kotlin.$_$.q7;
+  var withDefault = kotlin_kotlin.$_$.p8;
+  var toString_1 = kotlin_kotlin.$_$.ag;
+  var getBooleanHashCode = kotlin_kotlin.$_$.ea;
+  var getStringHashCode = kotlin_kotlin.$_$.ha;
+  var json = kotlin_kotlin.$_$.eb;
+  var isNumber = kotlin_kotlin.$_$.za;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.s1;
+  var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.u1;
+  var listOf_0 = kotlin_kotlin.$_$.k7;
+  var checkIndexOverflow = kotlin_kotlin.$_$.a6;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.wf;
+  var Annotation = kotlin_kotlin.$_$.be;
+  var dropLast = kotlin_kotlin.$_$.lc;
+  var last_0 = kotlin_kotlin.$_$.uc;
+  var Exception = kotlin_kotlin.$_$.me;
+  var charSequenceGet = kotlin_kotlin.$_$.x9;
+  var toIntOrNull = kotlin_kotlin.$_$.nd;
+  var objectCreate = kotlin_kotlin.$_$.lb;
+  var asList_0 = kotlin_kotlin.$_$.cg;
+  var plus_0 = kotlin_kotlin.$_$.u7;
+  var getOrNull = kotlin_kotlin.$_$.x6;
+  var emptyList = kotlin_kotlin.$_$.r6;
+  var indexOf = kotlin_kotlin.$_$.z6;
+  var firstOrNull = kotlin_kotlin.$_$.v6;
+  var ObservableProperty = kotlin_kotlin.$_$.rb;
+  var Delegates_getInstance = kotlin_kotlin.$_$.t4;
   var get_KV_DEFAULT_DATE_FORMAT = kotlin_io_kvision_kvision_common_types.$_$.b;
   var buildClassSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h1;
   var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l2;
+  var plus_1 = kotlin_kotlin.$_$.r7;
   var serializersModuleOf = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j2;
-  var Pair = kotlin_kotlin.$_$.se;
+  var Pair = kotlin_kotlin.$_$.ve;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(Application, 'Application');
@@ -217,6 +221,7 @@
   initMetadataForClass(Direction, 'Direction', VOID, Enum);
   initMetadataForClass(BorderStyle, 'BorderStyle', VOID, Enum);
   initMetadataForClass(Display, 'Display', VOID, Enum);
+  initMetadataForClass(ListStyleType, 'ListStyleType', VOID, Enum);
   initMetadataForClass(Overflow, 'Overflow', VOID, Enum);
   initMetadataForClass(TextAlign, 'TextAlign', VOID, Enum);
   initMetadataForClass(BoxShadow, 'BoxShadow', BoxShadow);
@@ -252,7 +257,6 @@
   initMetadataForClass(OutlineStyle, 'OutlineStyle', VOID, Enum);
   initMetadataForClass(TextDecorationLine, 'TextDecorationLine', VOID, Enum);
   initMetadataForClass(TextDecorationStyle, 'TextDecorationStyle', VOID, Enum);
-  initMetadataForClass(ListStyleType, 'ListStyleType', VOID, Enum);
   initMetadataForClass(ListStylePosition, 'ListStylePosition', VOID, Enum);
   initMetadataForInterface(CssClass, 'CssClass');
   initMetadataForInterface(DomAttribute, 'DomAttribute');
@@ -489,14 +493,19 @@
   initMetadataForClass(ImageShape, 'ImageShape', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(InputType, 'InputType', VOID, Enum);
   initMetadataForClass(Autocomplete, 'Autocomplete', VOID, Enum);
+  initMetadataForClass(Li, 'Li', Li, Tag);
   initMetadataForCompanion(Companion_6);
   initMetadataForClass(Link, 'Link', VOID, SimplePanel);
+  initMetadataForClass(ListType, 'ListType', VOID, Enum);
+  initMetadataForClass(ListTag, 'ListTag', VOID, SimplePanel);
+  initMetadataForClass(Ol, 'Ol', Ol, ListTag);
   initMetadataForClass(P, 'P', P, Tag);
   initMetadataForClass(Span, 'Span', Span, Tag);
   initMetadataForClass(TAG, 'TAG', VOID, Enum);
   initMetadataForClass(Align, 'Align', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(TagMarker, 'TagMarker', VOID, VOID, [Annotation]);
   initMetadataForClass(TextNode, 'TextNode', VOID, Widget);
+  initMetadataForClass(Ul, 'Ul', Ul, ListTag);
   function tr(key) {
     return '###KvI18nS###' + key;
   }
@@ -551,6 +560,7 @@
   initMetadataForClass(FlexPanel, 'FlexPanel', FlexPanel, SimplePanel);
   initMetadataForClass(GridPanel$options$1, VOID, VOID, VOID, [Container]);
   initMetadataForClass(GridPanel, 'GridPanel', GridPanel, SimplePanel);
+  initMetadataForClass(HPanel, 'HPanel', HPanel, FlexPanel);
   initMetadataForCompanion(Companion_7);
   initMetadataForClass(Root, 'Root', VOID, SimplePanel);
   initMetadataForClass(ContainerType, 'ContainerType', VOID, Enum);
@@ -1576,16 +1586,162 @@
   protoOf(Display).get_display_nrp3e6_k$ = function () {
     return this.display_1;
   };
+  var ListStyleType_DISC_instance;
+  var ListStyleType_CIRCLE_instance;
+  var ListStyleType_SQUARE_instance;
+  var ListStyleType_DECIMAL_instance;
+  var ListStyleType_CJKDECIMAL_instance;
+  var ListStyleType_DECIMALLEADINGZERO_instance;
+  var ListStyleType_LOWERROMAN_instance;
+  var ListStyleType_UPPERROMAN_instance;
+  var ListStyleType_LOWERGREEK_instance;
+  var ListStyleType_LOWERLATIN_instance;
+  var ListStyleType_UPPERALPHA_instance;
+  var ListStyleType_LOWERALPHA_instance;
+  var ListStyleType_UPPERLATIN_instance;
+  var ListStyleType_ARABICINDIC_instance;
+  var ListStyleType_ARMENIAN_instance;
+  var ListStyleType_BENGALI_instance;
+  var ListStyleType_CAMBODIAN_instance;
+  var ListStyleType_CJKIDEOGRAPHIC_instance;
+  var ListStyleType_GEORGIAN_instance;
+  var ListStyleType_HEBREW_instance;
+  var ListStyleType_HIRAGANA_instance;
+  var ListStyleType_HIRAGANAIROHA_instance;
+  var ListStyleType_JAPANESEFORMAL_instance;
+  var ListStyleType_JAPANESEINFORMAL_instance;
+  var ListStyleType_KATAKANA_instance;
+  var ListStyleType_KATAKANAIROHA_instance;
+  var ListStyleType_NONE_instance;
+  var ListStyleType_INITIAL_instance;
+  var ListStyleType_INHERIT_instance;
+  function values_9() {
+    return [ListStyleType_DISC_getInstance(), ListStyleType_CIRCLE_getInstance(), ListStyleType_SQUARE_getInstance(), ListStyleType_DECIMAL_getInstance(), ListStyleType_CJKDECIMAL_getInstance(), ListStyleType_DECIMALLEADINGZERO_getInstance(), ListStyleType_LOWERROMAN_getInstance(), ListStyleType_UPPERROMAN_getInstance(), ListStyleType_LOWERGREEK_getInstance(), ListStyleType_LOWERLATIN_getInstance(), ListStyleType_UPPERALPHA_getInstance(), ListStyleType_LOWERALPHA_getInstance(), ListStyleType_UPPERLATIN_getInstance(), ListStyleType_ARABICINDIC_getInstance(), ListStyleType_ARMENIAN_getInstance(), ListStyleType_BENGALI_getInstance(), ListStyleType_CAMBODIAN_getInstance(), ListStyleType_CJKIDEOGRAPHIC_getInstance(), ListStyleType_GEORGIAN_getInstance(), ListStyleType_HEBREW_getInstance(), ListStyleType_HIRAGANA_getInstance(), ListStyleType_HIRAGANAIROHA_getInstance(), ListStyleType_JAPANESEFORMAL_getInstance(), ListStyleType_JAPANESEINFORMAL_getInstance(), ListStyleType_KATAKANA_getInstance(), ListStyleType_KATAKANAIROHA_getInstance(), ListStyleType_NONE_getInstance(), ListStyleType_INITIAL_getInstance(), ListStyleType_INHERIT_getInstance()];
+  }
+  function valueOf_9(value) {
+    switch (value) {
+      case 'DISC':
+        return ListStyleType_DISC_getInstance();
+      case 'CIRCLE':
+        return ListStyleType_CIRCLE_getInstance();
+      case 'SQUARE':
+        return ListStyleType_SQUARE_getInstance();
+      case 'DECIMAL':
+        return ListStyleType_DECIMAL_getInstance();
+      case 'CJKDECIMAL':
+        return ListStyleType_CJKDECIMAL_getInstance();
+      case 'DECIMALLEADINGZERO':
+        return ListStyleType_DECIMALLEADINGZERO_getInstance();
+      case 'LOWERROMAN':
+        return ListStyleType_LOWERROMAN_getInstance();
+      case 'UPPERROMAN':
+        return ListStyleType_UPPERROMAN_getInstance();
+      case 'LOWERGREEK':
+        return ListStyleType_LOWERGREEK_getInstance();
+      case 'LOWERLATIN':
+        return ListStyleType_LOWERLATIN_getInstance();
+      case 'UPPERALPHA':
+        return ListStyleType_UPPERALPHA_getInstance();
+      case 'LOWERALPHA':
+        return ListStyleType_LOWERALPHA_getInstance();
+      case 'UPPERLATIN':
+        return ListStyleType_UPPERLATIN_getInstance();
+      case 'ARABICINDIC':
+        return ListStyleType_ARABICINDIC_getInstance();
+      case 'ARMENIAN':
+        return ListStyleType_ARMENIAN_getInstance();
+      case 'BENGALI':
+        return ListStyleType_BENGALI_getInstance();
+      case 'CAMBODIAN':
+        return ListStyleType_CAMBODIAN_getInstance();
+      case 'CJKIDEOGRAPHIC':
+        return ListStyleType_CJKIDEOGRAPHIC_getInstance();
+      case 'GEORGIAN':
+        return ListStyleType_GEORGIAN_getInstance();
+      case 'HEBREW':
+        return ListStyleType_HEBREW_getInstance();
+      case 'HIRAGANA':
+        return ListStyleType_HIRAGANA_getInstance();
+      case 'HIRAGANAIROHA':
+        return ListStyleType_HIRAGANAIROHA_getInstance();
+      case 'JAPANESEFORMAL':
+        return ListStyleType_JAPANESEFORMAL_getInstance();
+      case 'JAPANESEINFORMAL':
+        return ListStyleType_JAPANESEINFORMAL_getInstance();
+      case 'KATAKANA':
+        return ListStyleType_KATAKANA_getInstance();
+      case 'KATAKANAIROHA':
+        return ListStyleType_KATAKANAIROHA_getInstance();
+      case 'NONE':
+        return ListStyleType_NONE_getInstance();
+      case 'INITIAL':
+        return ListStyleType_INITIAL_getInstance();
+      case 'INHERIT':
+        return ListStyleType_INHERIT_getInstance();
+      default:
+        ListStyleType_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_9() {
+    if ($ENTRIES_9 == null)
+      $ENTRIES_9 = enumEntries(values_9());
+    return $ENTRIES_9;
+  }
+  var ListStyleType_entriesInitialized;
+  function ListStyleType_initEntries() {
+    if (ListStyleType_entriesInitialized)
+      return Unit_getInstance();
+    ListStyleType_entriesInitialized = true;
+    ListStyleType_DISC_instance = new ListStyleType('DISC', 0, 'disc');
+    ListStyleType_CIRCLE_instance = new ListStyleType('CIRCLE', 1, 'circle');
+    ListStyleType_SQUARE_instance = new ListStyleType('SQUARE', 2, 'square');
+    ListStyleType_DECIMAL_instance = new ListStyleType('DECIMAL', 3, 'decimal');
+    ListStyleType_CJKDECIMAL_instance = new ListStyleType('CJKDECIMAL', 4, 'cjk-decimal');
+    ListStyleType_DECIMALLEADINGZERO_instance = new ListStyleType('DECIMALLEADINGZERO', 5, 'decimal-leading-zero');
+    ListStyleType_LOWERROMAN_instance = new ListStyleType('LOWERROMAN', 6, 'lower-roman');
+    ListStyleType_UPPERROMAN_instance = new ListStyleType('UPPERROMAN', 7, 'upper-roman');
+    ListStyleType_LOWERGREEK_instance = new ListStyleType('LOWERGREEK', 8, 'lower-greek');
+    ListStyleType_LOWERLATIN_instance = new ListStyleType('LOWERLATIN', 9, 'lower-latin');
+    ListStyleType_UPPERALPHA_instance = new ListStyleType('UPPERALPHA', 10, 'upper-alpha');
+    ListStyleType_LOWERALPHA_instance = new ListStyleType('LOWERALPHA', 11, 'lower-alpha');
+    ListStyleType_UPPERLATIN_instance = new ListStyleType('UPPERLATIN', 12, 'upper-latin');
+    ListStyleType_ARABICINDIC_instance = new ListStyleType('ARABICINDIC', 13, 'arabic-indic');
+    ListStyleType_ARMENIAN_instance = new ListStyleType('ARMENIAN', 14, 'armenian');
+    ListStyleType_BENGALI_instance = new ListStyleType('BENGALI', 15, 'bengali');
+    ListStyleType_CAMBODIAN_instance = new ListStyleType('CAMBODIAN', 16, 'cambodian');
+    ListStyleType_CJKIDEOGRAPHIC_instance = new ListStyleType('CJKIDEOGRAPHIC', 17, 'cjk-ideographic');
+    ListStyleType_GEORGIAN_instance = new ListStyleType('GEORGIAN', 18, 'georgian');
+    ListStyleType_HEBREW_instance = new ListStyleType('HEBREW', 19, 'hebrew');
+    ListStyleType_HIRAGANA_instance = new ListStyleType('HIRAGANA', 20, 'hiragana');
+    ListStyleType_HIRAGANAIROHA_instance = new ListStyleType('HIRAGANAIROHA', 21, 'hiragana-iroha');
+    ListStyleType_JAPANESEFORMAL_instance = new ListStyleType('JAPANESEFORMAL', 22, 'japanese-formal');
+    ListStyleType_JAPANESEINFORMAL_instance = new ListStyleType('JAPANESEINFORMAL', 23, 'japanese-informal');
+    ListStyleType_KATAKANA_instance = new ListStyleType('KATAKANA', 24, 'katakana');
+    ListStyleType_KATAKANAIROHA_instance = new ListStyleType('KATAKANAIROHA', 25, 'katakana-iroha');
+    ListStyleType_NONE_instance = new ListStyleType('NONE', 26, 'none');
+    ListStyleType_INITIAL_instance = new ListStyleType('INITIAL', 27, 'initial');
+    ListStyleType_INHERIT_instance = new ListStyleType('INHERIT', 28, 'inherit');
+  }
+  var $ENTRIES_9;
+  function ListStyleType(name, ordinal, type) {
+    Enum.call(this, name, ordinal);
+    this.type_1 = type;
+  }
+  protoOf(ListStyleType).get_type_t5wobc_k$ = function () {
+    return this.type_1;
+  };
   var Overflow_VISIBLE_instance;
   var Overflow_HIDDEN_instance;
   var Overflow_SCROLL_instance;
   var Overflow_AUTO_instance;
   var Overflow_INITIAL_instance;
   var Overflow_INHERIT_instance;
-  function values_9() {
+  function values_10() {
     return [Overflow_VISIBLE_getInstance(), Overflow_HIDDEN_getInstance(), Overflow_SCROLL_getInstance(), Overflow_AUTO_getInstance(), Overflow_INITIAL_getInstance(), Overflow_INHERIT_getInstance()];
   }
-  function valueOf_9(value) {
+  function valueOf_10(value) {
     switch (value) {
       case 'VISIBLE':
         return Overflow_VISIBLE_getInstance();
@@ -1605,10 +1761,10 @@
         break;
     }
   }
-  function get_entries_9() {
-    if ($ENTRIES_9 == null)
-      $ENTRIES_9 = enumEntries(values_9());
-    return $ENTRIES_9;
+  function get_entries_10() {
+    if ($ENTRIES_10 == null)
+      $ENTRIES_10 = enumEntries(values_10());
+    return $ENTRIES_10;
   }
   var Overflow_entriesInitialized;
   function Overflow_initEntries() {
@@ -1622,7 +1778,7 @@
     Overflow_INITIAL_instance = new Overflow('INITIAL', 4, 'initial');
     Overflow_INHERIT_instance = new Overflow('INHERIT', 5, 'inherit');
   }
-  var $ENTRIES_9;
+  var $ENTRIES_10;
   function Overflow(name, ordinal, overflow) {
     Enum.call(this, name, ordinal);
     this.overflow_1 = overflow;
@@ -1636,10 +1792,10 @@
   var TextAlign_JUSTIFY_instance;
   var TextAlign_INITIAL_instance;
   var TextAlign_INHERIT_instance;
-  function values_10() {
+  function values_11() {
     return [TextAlign_LEFT_getInstance(), TextAlign_RIGHT_getInstance(), TextAlign_CENTER_getInstance(), TextAlign_JUSTIFY_getInstance(), TextAlign_INITIAL_getInstance(), TextAlign_INHERIT_getInstance()];
   }
-  function valueOf_10(value) {
+  function valueOf_11(value) {
     switch (value) {
       case 'LEFT':
         return TextAlign_LEFT_getInstance();
@@ -1659,10 +1815,10 @@
         break;
     }
   }
-  function get_entries_10() {
-    if ($ENTRIES_10 == null)
-      $ENTRIES_10 = enumEntries(values_10());
-    return $ENTRIES_10;
+  function get_entries_11() {
+    if ($ENTRIES_11 == null)
+      $ENTRIES_11 = enumEntries(values_11());
+    return $ENTRIES_11;
   }
   var TextAlign_entriesInitialized;
   function TextAlign_initEntries() {
@@ -1676,7 +1832,7 @@
     TextAlign_INITIAL_instance = new TextAlign('INITIAL', 4, 'initial');
     TextAlign_INHERIT_instance = new TextAlign('INHERIT', 5, 'inherit');
   }
-  var $ENTRIES_10;
+  var $ENTRIES_11;
   function TextAlign(name, ordinal, textAlign) {
     Enum.call(this, name, ordinal);
     this.textAlign_1 = textAlign;
@@ -1751,10 +1907,10 @@
   var FontVariant_SMALLCAPS_instance;
   var FontVariant_INITIAL_instance;
   var FontVariant_INHERIT_instance;
-  function values_11() {
+  function values_12() {
     return [FontVariant_NORMAL_getInstance(), FontVariant_SMALLCAPS_getInstance(), FontVariant_INITIAL_getInstance(), FontVariant_INHERIT_getInstance()];
   }
-  function valueOf_11(value) {
+  function valueOf_12(value) {
     switch (value) {
       case 'NORMAL':
         return FontVariant_NORMAL_getInstance();
@@ -1770,10 +1926,10 @@
         break;
     }
   }
-  function get_entries_11() {
-    if ($ENTRIES_11 == null)
-      $ENTRIES_11 = enumEntries(values_11());
-    return $ENTRIES_11;
+  function get_entries_12() {
+    if ($ENTRIES_12 == null)
+      $ENTRIES_12 = enumEntries(values_12());
+    return $ENTRIES_12;
   }
   var FontVariant_entriesInitialized;
   function FontVariant_initEntries() {
@@ -1785,7 +1941,7 @@
     FontVariant_INITIAL_instance = new FontVariant('INITIAL', 2, 'initial');
     FontVariant_INHERIT_instance = new FontVariant('INHERIT', 3, 'inherit');
   }
-  var $ENTRIES_11;
+  var $ENTRIES_12;
   function FontVariant(name, ordinal, fontVariant) {
     Enum.call(this, name, ordinal);
     this.fontVariant_1 = fontVariant;
@@ -1831,10 +1987,10 @@
   var Cursor_ZOOMOUT_instance;
   var Cursor_INITIAL_instance;
   var Cursor_INHERIT_instance;
-  function values_12() {
+  function values_13() {
     return [Cursor_DEFAULT_getInstance(), Cursor_AUTO_getInstance(), Cursor_NONE_getInstance(), Cursor_ALIAS_getInstance(), Cursor_ALLSCROLL_getInstance(), Cursor_CELL_getInstance(), Cursor_CONTEXTMENU_getInstance(), Cursor_COLRESIZE_getInstance(), Cursor_COPY_getInstance(), Cursor_CROSSHAIR_getInstance(), Cursor_ERESIZE_getInstance(), Cursor_EWRESIZE_getInstance(), Cursor_GRAB_getInstance(), Cursor_GRABBING_getInstance(), Cursor_HELP_getInstance(), Cursor_MOVE_getInstance(), Cursor_NRESIZE_getInstance(), Cursor_NERESIZE_getInstance(), Cursor_NESWRESIZE_getInstance(), Cursor_NSRESIZE_getInstance(), Cursor_NWRESIZE_getInstance(), Cursor_NWSERESIZE_getInstance(), Cursor_NODROP_getInstance(), Cursor_NOTALLOWED_getInstance(), Cursor_POINTER_getInstance(), Cursor_PROGRESS_getInstance(), Cursor_ROWRESIZE_getInstance(), Cursor_SRESIZE_getInstance(), Cursor_SERESIZE_getInstance(), Cursor_SWRESIZE_getInstance(), Cursor_TEXT_getInstance(), Cursor_VERTICALTEXT_getInstance(), Cursor_WRESIZE_getInstance(), Cursor_WAIT_getInstance(), Cursor_ZOOMIN_getInstance(), Cursor_ZOOMOUT_getInstance(), Cursor_INITIAL_getInstance(), Cursor_INHERIT_getInstance()];
   }
-  function valueOf_12(value) {
+  function valueOf_13(value) {
     switch (value) {
       case 'DEFAULT':
         return Cursor_DEFAULT_getInstance();
@@ -1918,10 +2074,10 @@
         break;
     }
   }
-  function get_entries_12() {
-    if ($ENTRIES_12 == null)
-      $ENTRIES_12 = enumEntries(values_12());
-    return $ENTRIES_12;
+  function get_entries_13() {
+    if ($ENTRIES_13 == null)
+      $ENTRIES_13 = enumEntries(values_13());
+    return $ENTRIES_13;
   }
   var Cursor_entriesInitialized;
   function Cursor_initEntries() {
@@ -1967,7 +2123,7 @@
     Cursor_INITIAL_instance = new Cursor('INITIAL', 36, 'initial');
     Cursor_INHERIT_instance = new Cursor('INHERIT', 37, 'inherit');
   }
-  var $ENTRIES_12;
+  var $ENTRIES_13;
   function Cursor(name, ordinal, cursor) {
     Enum.call(this, name, ordinal);
     this.cursor_1 = cursor;
@@ -2027,10 +2183,10 @@
   var AlignItems_STRETCH_instance;
   var AlignItems_START_instance;
   var AlignItems_END_instance;
-  function values_13() {
+  function values_14() {
     return [AlignItems_FLEXSTART_getInstance(), AlignItems_FLEXEND_getInstance(), AlignItems_CENTER_getInstance(), AlignItems_BASELINE_getInstance(), AlignItems_STRETCH_getInstance(), AlignItems_START_getInstance(), AlignItems_END_getInstance()];
   }
-  function valueOf_13(value) {
+  function valueOf_14(value) {
     switch (value) {
       case 'FLEXSTART':
         return AlignItems_FLEXSTART_getInstance();
@@ -2052,10 +2208,10 @@
         break;
     }
   }
-  function get_entries_13() {
-    if ($ENTRIES_13 == null)
-      $ENTRIES_13 = enumEntries(values_13());
-    return $ENTRIES_13;
+  function get_entries_14() {
+    if ($ENTRIES_14 == null)
+      $ENTRIES_14 = enumEntries(values_14());
+    return $ENTRIES_14;
   }
   var AlignItems_entriesInitialized;
   function AlignItems_initEntries() {
@@ -2070,7 +2226,7 @@
     AlignItems_START_instance = new AlignItems('START', 5, 'start');
     AlignItems_END_instance = new AlignItems('END', 6, 'end');
   }
-  var $ENTRIES_13;
+  var $ENTRIES_14;
   function AlignItems(name, ordinal, alignItems) {
     Enum.call(this, name, ordinal);
     this.alignItems_1 = alignItems;
@@ -2083,10 +2239,10 @@
   var LineBreak_NORMAL_instance;
   var LineBreak_STRICT_instance;
   var LineBreak_ANYWHERE_instance;
-  function values_14() {
+  function values_15() {
     return [LineBreak_AUTO_getInstance(), LineBreak_LOOSE_getInstance(), LineBreak_NORMAL_getInstance(), LineBreak_STRICT_getInstance(), LineBreak_ANYWHERE_getInstance()];
   }
-  function valueOf_14(value) {
+  function valueOf_15(value) {
     switch (value) {
       case 'AUTO':
         return LineBreak_AUTO_getInstance();
@@ -2104,10 +2260,10 @@
         break;
     }
   }
-  function get_entries_14() {
-    if ($ENTRIES_14 == null)
-      $ENTRIES_14 = enumEntries(values_14());
-    return $ENTRIES_14;
+  function get_entries_15() {
+    if ($ENTRIES_15 == null)
+      $ENTRIES_15 = enumEntries(values_15());
+    return $ENTRIES_15;
   }
   var LineBreak_entriesInitialized;
   function LineBreak_initEntries() {
@@ -2120,7 +2276,7 @@
     LineBreak_STRICT_instance = new LineBreak('STRICT', 3, 'strict');
     LineBreak_ANYWHERE_instance = new LineBreak('ANYWHERE', 4, 'anywhere');
   }
-  var $ENTRIES_14;
+  var $ENTRIES_15;
   function LineBreak(name, ordinal, lineBreak) {
     Enum.call(this, name, ordinal);
     this.lineBreak_1 = lineBreak;
@@ -2131,10 +2287,10 @@
   var FlexWrap_NOWRAP_instance;
   var FlexWrap_WRAP_instance;
   var FlexWrap_WRAPREV_instance;
-  function values_15() {
+  function values_16() {
     return [FlexWrap_NOWRAP_getInstance(), FlexWrap_WRAP_getInstance(), FlexWrap_WRAPREV_getInstance()];
   }
-  function valueOf_15(value) {
+  function valueOf_16(value) {
     switch (value) {
       case 'NOWRAP':
         return FlexWrap_NOWRAP_getInstance();
@@ -2148,10 +2304,10 @@
         break;
     }
   }
-  function get_entries_15() {
-    if ($ENTRIES_15 == null)
-      $ENTRIES_15 = enumEntries(values_15());
-    return $ENTRIES_15;
+  function get_entries_16() {
+    if ($ENTRIES_16 == null)
+      $ENTRIES_16 = enumEntries(values_16());
+    return $ENTRIES_16;
   }
   var FlexWrap_entriesInitialized;
   function FlexWrap_initEntries() {
@@ -2162,7 +2318,7 @@
     FlexWrap_WRAP_instance = new FlexWrap('WRAP', 1, 'wrap');
     FlexWrap_WRAPREV_instance = new FlexWrap('WRAPREV', 2, 'wrap-reverse');
   }
-  var $ENTRIES_15;
+  var $ENTRIES_16;
   function FlexWrap(name, ordinal, wrap) {
     Enum.call(this, name, ordinal);
     this.wrap_1 = wrap;
@@ -2174,10 +2330,10 @@
   var GridAutoFlow_COLUMN_instance;
   var GridAutoFlow_ROWDENSE_instance;
   var GridAutoFlow_COLUMNDENSE_instance;
-  function values_16() {
+  function values_17() {
     return [GridAutoFlow_ROW_getInstance(), GridAutoFlow_COLUMN_getInstance(), GridAutoFlow_ROWDENSE_getInstance(), GridAutoFlow_COLUMNDENSE_getInstance()];
   }
-  function valueOf_16(value) {
+  function valueOf_17(value) {
     switch (value) {
       case 'ROW':
         return GridAutoFlow_ROW_getInstance();
@@ -2193,10 +2349,10 @@
         break;
     }
   }
-  function get_entries_16() {
-    if ($ENTRIES_16 == null)
-      $ENTRIES_16 = enumEntries(values_16());
-    return $ENTRIES_16;
+  function get_entries_17() {
+    if ($ENTRIES_17 == null)
+      $ENTRIES_17 = enumEntries(values_17());
+    return $ENTRIES_17;
   }
   var GridAutoFlow_entriesInitialized;
   function GridAutoFlow_initEntries() {
@@ -2208,7 +2364,7 @@
     GridAutoFlow_ROWDENSE_instance = new GridAutoFlow('ROWDENSE', 2, 'row dense');
     GridAutoFlow_COLUMNDENSE_instance = new GridAutoFlow('COLUMNDENSE', 3, 'column dense');
   }
-  var $ENTRIES_16;
+  var $ENTRIES_17;
   function GridAutoFlow(name, ordinal, flow) {
     Enum.call(this, name, ordinal);
     this.flow_1 = flow;
@@ -2222,10 +2378,10 @@
   var Clear_BOTH_instance;
   var Clear_INITIAL_instance;
   var Clear_INHERIT_instance;
-  function values_17() {
+  function values_18() {
     return [Clear_NONE_getInstance(), Clear_LEFT_getInstance(), Clear_RIGHT_getInstance(), Clear_BOTH_getInstance(), Clear_INITIAL_getInstance(), Clear_INHERIT_getInstance()];
   }
-  function valueOf_17(value) {
+  function valueOf_18(value) {
     switch (value) {
       case 'NONE':
         return Clear_NONE_getInstance();
@@ -2245,10 +2401,10 @@
         break;
     }
   }
-  function get_entries_17() {
-    if ($ENTRIES_17 == null)
-      $ENTRIES_17 = enumEntries(values_17());
-    return $ENTRIES_17;
+  function get_entries_18() {
+    if ($ENTRIES_18 == null)
+      $ENTRIES_18 = enumEntries(values_18());
+    return $ENTRIES_18;
   }
   var Clear_entriesInitialized;
   function Clear_initEntries() {
@@ -2262,7 +2418,7 @@
     Clear_INITIAL_instance = new Clear('INITIAL', 4, 'initial');
     Clear_INHERIT_instance = new Clear('INHERIT', 5, 'inherit');
   }
-  var $ENTRIES_17;
+  var $ENTRIES_18;
   function Clear(name, ordinal, clear) {
     Enum.call(this, name, ordinal);
     this.clear_1 = clear;
@@ -2274,10 +2430,10 @@
   var TextOverflow_ELLIPSIS_instance;
   var TextOverflow_INITIAL_instance;
   var TextOverflow_INHERIT_instance;
-  function values_18() {
+  function values_19() {
     return [TextOverflow_CLIP_getInstance(), TextOverflow_ELLIPSIS_getInstance(), TextOverflow_INITIAL_getInstance(), TextOverflow_INHERIT_getInstance()];
   }
-  function valueOf_18(value) {
+  function valueOf_19(value) {
     switch (value) {
       case 'CLIP':
         return TextOverflow_CLIP_getInstance();
@@ -2293,10 +2449,10 @@
         break;
     }
   }
-  function get_entries_18() {
-    if ($ENTRIES_18 == null)
-      $ENTRIES_18 = enumEntries(values_18());
-    return $ENTRIES_18;
+  function get_entries_19() {
+    if ($ENTRIES_19 == null)
+      $ENTRIES_19 = enumEntries(values_19());
+    return $ENTRIES_19;
   }
   var TextOverflow_entriesInitialized;
   function TextOverflow_initEntries() {
@@ -2308,7 +2464,7 @@
     TextOverflow_INITIAL_instance = new TextOverflow('INITIAL', 2, 'initial');
     TextOverflow_INHERIT_instance = new TextOverflow('INHERIT', 3, 'inherit');
   }
-  var $ENTRIES_18;
+  var $ENTRIES_19;
   function TextOverflow(name, ordinal, textOverflow) {
     Enum.call(this, name, ordinal);
     this.textOverflow_1 = textOverflow;
@@ -2357,10 +2513,10 @@
   var WhiteSpace_PREWRAP_instance;
   var WhiteSpace_INITIAL_instance;
   var WhiteSpace_INHERIT_instance;
-  function values_19() {
+  function values_20() {
     return [WhiteSpace_NORMAL_getInstance(), WhiteSpace_NOWRAP_getInstance(), WhiteSpace_PRE_getInstance(), WhiteSpace_PRELINE_getInstance(), WhiteSpace_PREWRAP_getInstance(), WhiteSpace_INITIAL_getInstance(), WhiteSpace_INHERIT_getInstance()];
   }
-  function valueOf_19(value) {
+  function valueOf_20(value) {
     switch (value) {
       case 'NORMAL':
         return WhiteSpace_NORMAL_getInstance();
@@ -2382,10 +2538,10 @@
         break;
     }
   }
-  function get_entries_19() {
-    if ($ENTRIES_19 == null)
-      $ENTRIES_19 = enumEntries(values_19());
-    return $ENTRIES_19;
+  function get_entries_20() {
+    if ($ENTRIES_20 == null)
+      $ENTRIES_20 = enumEntries(values_20());
+    return $ENTRIES_20;
   }
   var WhiteSpace_entriesInitialized;
   function WhiteSpace_initEntries() {
@@ -2400,7 +2556,7 @@
     WhiteSpace_INITIAL_instance = new WhiteSpace('INITIAL', 5, 'initial');
     WhiteSpace_INHERIT_instance = new WhiteSpace('INHERIT', 6, 'inherit');
   }
-  var $ENTRIES_19;
+  var $ENTRIES_20;
   function WhiteSpace(name, ordinal, whiteSpace) {
     Enum.call(this, name, ordinal);
     this.whiteSpace_1 = whiteSpace;
@@ -2455,10 +2611,10 @@
   var JustifyItems_END_instance;
   var JustifyItems_CENTER_instance;
   var JustifyItems_STRETCH_instance;
-  function values_20() {
+  function values_21() {
     return [JustifyItems_START_getInstance(), JustifyItems_END_getInstance(), JustifyItems_CENTER_getInstance(), JustifyItems_STRETCH_getInstance()];
   }
-  function valueOf_20(value) {
+  function valueOf_21(value) {
     switch (value) {
       case 'START':
         return JustifyItems_START_getInstance();
@@ -2474,10 +2630,10 @@
         break;
     }
   }
-  function get_entries_20() {
-    if ($ENTRIES_20 == null)
-      $ENTRIES_20 = enumEntries(values_20());
-    return $ENTRIES_20;
+  function get_entries_21() {
+    if ($ENTRIES_21 == null)
+      $ENTRIES_21 = enumEntries(values_21());
+    return $ENTRIES_21;
   }
   var JustifyItems_entriesInitialized;
   function JustifyItems_initEntries() {
@@ -2489,7 +2645,7 @@
     JustifyItems_CENTER_instance = new JustifyItems('CENTER', 2, 'center');
     JustifyItems_STRETCH_instance = new JustifyItems('STRETCH', 3, 'stretch');
   }
-  var $ENTRIES_20;
+  var $ENTRIES_21;
   function JustifyItems(name, ordinal, justify) {
     Enum.call(this, name, ordinal);
     this.justify_1 = justify;
@@ -2502,10 +2658,10 @@
   var FontStyle_OBLIQUE_instance;
   var FontStyle_INITIAL_instance;
   var FontStyle_INHERIT_instance;
-  function values_21() {
+  function values_22() {
     return [FontStyle_NORMAL_getInstance(), FontStyle_ITALIC_getInstance(), FontStyle_OBLIQUE_getInstance(), FontStyle_INITIAL_getInstance(), FontStyle_INHERIT_getInstance()];
   }
-  function valueOf_21(value) {
+  function valueOf_22(value) {
     switch (value) {
       case 'NORMAL':
         return FontStyle_NORMAL_getInstance();
@@ -2523,10 +2679,10 @@
         break;
     }
   }
-  function get_entries_21() {
-    if ($ENTRIES_21 == null)
-      $ENTRIES_21 = enumEntries(values_21());
-    return $ENTRIES_21;
+  function get_entries_22() {
+    if ($ENTRIES_22 == null)
+      $ENTRIES_22 = enumEntries(values_22());
+    return $ENTRIES_22;
   }
   var FontStyle_entriesInitialized;
   function FontStyle_initEntries() {
@@ -2539,7 +2695,7 @@
     FontStyle_INITIAL_instance = new FontStyle('INITIAL', 3, 'initial');
     FontStyle_INHERIT_instance = new FontStyle('INHERIT', 4, 'inherit');
   }
-  var $ENTRIES_21;
+  var $ENTRIES_22;
   function FontStyle(name, ordinal, fontStyle) {
     Enum.call(this, name, ordinal);
     this.fontStyle_1 = fontStyle;
@@ -2688,10 +2844,10 @@
   var Col_WHITESMOKE_instance;
   var Col_YELLOW_instance;
   var Col_YELLOWGREEN_instance;
-  function values_22() {
+  function values_23() {
     return [Col_ALICEBLUE_getInstance(), Col_ANTIQUEWHITE_getInstance(), Col_AQUA_getInstance(), Col_AQUAMARINE_getInstance(), Col_AZURE_getInstance(), Col_BEIGE_getInstance(), Col_BISQUE_getInstance(), Col_BLACK_getInstance(), Col_BLANCHEDALMOND_getInstance(), Col_BLUE_getInstance(), Col_BLUEVIOLET_getInstance(), Col_BROWN_getInstance(), Col_BURLYWOOD_getInstance(), Col_CADETBLUE_getInstance(), Col_CHARTREUSE_getInstance(), Col_CHOCOLATE_getInstance(), Col_CORAL_getInstance(), Col_CORNFLOWERBLUE_getInstance(), Col_CORNSILK_getInstance(), Col_CRIMSON_getInstance(), Col_CYAN_getInstance(), Col_DARKBLUE_getInstance(), Col_DARKCYAN_getInstance(), Col_DARKGOLDENROD_getInstance(), Col_DARKGRAY_getInstance(), Col_DARKGREEN_getInstance(), Col_DARKKHAKI_getInstance(), Col_DARKMAGENTA_getInstance(), Col_DARKOLIVEGREEN_getInstance(), Col_DARKORANGE_getInstance(), Col_DARKORCHID_getInstance(), Col_DARKRED_getInstance(), Col_DARKSALMON_getInstance(), Col_DARKSEAGREEN_getInstance(), Col_DARKSLATEBLUE_getInstance(), Col_DARKSLATEGRAY_getInstance(), Col_DARKTURQUOISE_getInstance(), Col_DARKVIOLET_getInstance(), Col_DEEPPINK_getInstance(), Col_DEEPSKYBLUE_getInstance(), Col_DIMGRAY_getInstance(), Col_DODGERBLUE_getInstance(), Col_FIREBRICK_getInstance(), Col_FLORALWHITE_getInstance(), Col_FORESTGREEN_getInstance(), Col_FUCHSIA_getInstance(), Col_GAINSBORO_getInstance(), Col_GHOSTWHITE_getInstance(), Col_GOLD_getInstance(), Col_GOLDENROD_getInstance(), Col_GRAY_getInstance(), Col_GREEN_getInstance(), Col_GREENYELLOW_getInstance(), Col_HONEYDEW_getInstance(), Col_HOTPINK_getInstance(), Col_INDIANRED_getInstance(), Col_INDIGO_getInstance(), Col_IVORY_getInstance(), Col_KHAKI_getInstance(), Col_LAVENDER_getInstance(), Col_LAVENDERBLUSH_getInstance(), Col_LAWNGREEN_getInstance(), Col_LEMONCHIFFON_getInstance(), Col_LIGHTBLUE_getInstance(), Col_LIGHTCORAL_getInstance(), Col_LIGHTCYAN_getInstance(), Col_LIGHTGOLDENRODYELLOW_getInstance(), Col_LIGHTGRAY_getInstance(), Col_LIGHTGREEN_getInstance(), Col_LIGHTPINK_getInstance(), Col_LIGHTSALMON_getInstance(), Col_LIGHTSEAGREEN_getInstance(), Col_LIGHTSKYBLUE_getInstance(), Col_LIGHTSLATEGRAY_getInstance(), Col_LIGHTSTEELBLUE_getInstance(), Col_LIGHTYELLOW_getInstance(), Col_LIME_getInstance(), Col_LIMEGREEN_getInstance(), Col_LINEN_getInstance(), Col_MAGENTA_getInstance(), Col_MAROON_getInstance(), Col_MEDIUMAQUAMARINE_getInstance(), Col_MEDIUMBLUE_getInstance(), Col_MEDIUMORCHID_getInstance(), Col_MEDIUMPURPLE_getInstance(), Col_MEDIUMSEAGREEN_getInstance(), Col_MEDIUMSLATEBLUE_getInstance(), Col_MEDIUMSPRINGGREEN_getInstance(), Col_MEDIUMTURQUOISE_getInstance(), Col_MEDIUMVIOLETRED_getInstance(), Col_MIDNIGHTBLUE_getInstance(), Col_MINTCREAM_getInstance(), Col_MISTYROSE_getInstance(), Col_MOCCASIN_getInstance(), Col_NAVAJOWHITE_getInstance(), Col_NAVY_getInstance(), Col_OLDLACE_getInstance(), Col_OLIVE_getInstance(), Col_OLIVEDRAB_getInstance(), Col_ORANGE_getInstance(), Col_ORANGERED_getInstance(), Col_ORCHID_getInstance(), Col_PALEGOLDENROD_getInstance(), Col_PALEGREEN_getInstance(), Col_PALETURQUOISE_getInstance(), Col_PALEVIOLETRED_getInstance(), Col_PAPAYAWHIP_getInstance(), Col_PEACHPUFF_getInstance(), Col_PERU_getInstance(), Col_PINK_getInstance(), Col_PLUM_getInstance(), Col_POWDERBLUE_getInstance(), Col_PURPLE_getInstance(), Col_REBECCAPURPLE_getInstance(), Col_RED_getInstance(), Col_ROSYBROWN_getInstance(), Col_ROYALBLUE_getInstance(), Col_SADDLEBROWN_getInstance(), Col_SALMON_getInstance(), Col_SANDYBROWN_getInstance(), Col_SEAGREEN_getInstance(), Col_SEASHELL_getInstance(), Col_SIENNA_getInstance(), Col_SILVER_getInstance(), Col_SKYBLUE_getInstance(), Col_SLATEBLUE_getInstance(), Col_SLATEGRAY_getInstance(), Col_SNOW_getInstance(), Col_SPRINGGREEN_getInstance(), Col_STEELBLUE_getInstance(), Col_TAN_getInstance(), Col_TEAL_getInstance(), Col_THISTLE_getInstance(), Col_TOMATO_getInstance(), Col_TURQUOISE_getInstance(), Col_VIOLET_getInstance(), Col_WHEAT_getInstance(), Col_WHITE_getInstance(), Col_WHITESMOKE_getInstance(), Col_YELLOW_getInstance(), Col_YELLOWGREEN_getInstance()];
   }
-  function valueOf_22(value) {
+  function valueOf_23(value) {
     switch (value) {
       case 'ALICEBLUE':
         return Col_ALICEBLUE_getInstance();
@@ -2981,10 +3137,10 @@
         break;
     }
   }
-  function get_entries_22() {
-    if ($ENTRIES_22 == null)
-      $ENTRIES_22 = enumEntries(values_22());
-    return $ENTRIES_22;
+  function get_entries_23() {
+    if ($ENTRIES_23 == null)
+      $ENTRIES_23 = enumEntries(values_23());
+    return $ENTRIES_23;
   }
   var Col_entriesInitialized;
   function Col_initEntries() {
@@ -3133,7 +3289,7 @@
     Col_YELLOW_instance = new Col('YELLOW', 139, 'yellow');
     Col_YELLOWGREEN_instance = new Col('YELLOWGREEN', 140, 'yellowgreen');
   }
-  var $ENTRIES_22;
+  var $ENTRIES_23;
   function Col(name, ordinal, color) {
     Enum.call(this, name, ordinal);
     this.color_1 = color;
@@ -3146,10 +3302,10 @@
   var Position_FIXED_instance;
   var Position_ABSOLUTE_instance;
   var Position_STICKY_instance;
-  function values_23() {
+  function values_24() {
     return [Position_STATIC_getInstance(), Position_RELATIVE_getInstance(), Position_FIXED_getInstance(), Position_ABSOLUTE_getInstance(), Position_STICKY_getInstance()];
   }
-  function valueOf_23(value) {
+  function valueOf_24(value) {
     switch (value) {
       case 'STATIC':
         return Position_STATIC_getInstance();
@@ -3167,10 +3323,10 @@
         break;
     }
   }
-  function get_entries_23() {
-    if ($ENTRIES_23 == null)
-      $ENTRIES_23 = enumEntries(values_23());
-    return $ENTRIES_23;
+  function get_entries_24() {
+    if ($ENTRIES_24 == null)
+      $ENTRIES_24 = enumEntries(values_24());
+    return $ENTRIES_24;
   }
   var Position_entriesInitialized;
   function Position_initEntries() {
@@ -3183,7 +3339,7 @@
     Position_ABSOLUTE_instance = new Position('ABSOLUTE', 3, 'absolute');
     Position_STICKY_instance = new Position('STICKY', 4, 'sticky');
   }
-  var $ENTRIES_23;
+  var $ENTRIES_24;
   function Position(name, ordinal, position) {
     Enum.call(this, name, ordinal);
     this.position_1 = position;
@@ -3279,10 +3435,10 @@
   var JustifyContent_START_instance;
   var JustifyContent_END_instance;
   var JustifyContent_STRETCH_instance;
-  function values_24() {
+  function values_25() {
     return [JustifyContent_FLEXSTART_getInstance(), JustifyContent_FLEXEND_getInstance(), JustifyContent_CENTER_getInstance(), JustifyContent_SPACEBETWEEN_getInstance(), JustifyContent_SPACEAROUND_getInstance(), JustifyContent_SPACEEVENLY_getInstance(), JustifyContent_START_getInstance(), JustifyContent_END_getInstance(), JustifyContent_STRETCH_getInstance()];
   }
-  function valueOf_24(value) {
+  function valueOf_25(value) {
     switch (value) {
       case 'FLEXSTART':
         return JustifyContent_FLEXSTART_getInstance();
@@ -3308,10 +3464,10 @@
         break;
     }
   }
-  function get_entries_24() {
-    if ($ENTRIES_24 == null)
-      $ENTRIES_24 = enumEntries(values_24());
-    return $ENTRIES_24;
+  function get_entries_25() {
+    if ($ENTRIES_25 == null)
+      $ENTRIES_25 = enumEntries(values_25());
+    return $ENTRIES_25;
   }
   var JustifyContent_entriesInitialized;
   function JustifyContent_initEntries() {
@@ -3328,7 +3484,7 @@
     JustifyContent_END_instance = new JustifyContent('END', 7, 'end');
     JustifyContent_STRETCH_instance = new JustifyContent('STRETCH', 8, 'stretch');
   }
-  var $ENTRIES_24;
+  var $ENTRIES_25;
   function JustifyContent(name, ordinal, justifyContent) {
     Enum.call(this, name, ordinal);
     this.justifyContent_1 = justifyContent;
@@ -3352,10 +3508,10 @@
   var UNIT_perc_instance;
   var UNIT_auto_instance;
   var UNIT_normal_instance;
-  function values_25() {
+  function values_26() {
     return [UNIT_px_getInstance(), UNIT_pt_getInstance(), UNIT_em_getInstance(), UNIT_cm_getInstance(), UNIT_mm_getInstance(), UNIT_in_getInstance(), UNIT_pc_getInstance(), UNIT_ch_getInstance(), UNIT_rem_getInstance(), UNIT_vw_getInstance(), UNIT_vh_getInstance(), UNIT_vmin_getInstance(), UNIT_vmax_getInstance(), UNIT_perc_getInstance(), UNIT_auto_getInstance(), UNIT_normal_getInstance()];
   }
-  function valueOf_25(value) {
+  function valueOf_26(value) {
     switch (value) {
       case 'px':
         return UNIT_px_getInstance();
@@ -3395,10 +3551,10 @@
         break;
     }
   }
-  function get_entries_25() {
-    if ($ENTRIES_25 == null)
-      $ENTRIES_25 = enumEntries(values_25());
-    return $ENTRIES_25;
+  function get_entries_26() {
+    if ($ENTRIES_26 == null)
+      $ENTRIES_26 = enumEntries(values_26());
+    return $ENTRIES_26;
   }
   var UNIT_entriesInitialized;
   function UNIT_initEntries() {
@@ -3422,7 +3578,7 @@
     UNIT_auto_instance = new UNIT('auto', 14, 'auto');
     UNIT_normal_instance = new UNIT('normal', 15, 'normal');
   }
-  var $ENTRIES_25;
+  var $ENTRIES_26;
   function UNIT(name, ordinal, unit) {
     Enum.call(this, name, ordinal);
     this.unit_1 = unit;
@@ -3433,10 +3589,10 @@
   var OverflowWrap_NORMAL_instance;
   var OverflowWrap_BREAKWORD_instance;
   var OverflowWrap_ANYWHERE_instance;
-  function values_26() {
+  function values_27() {
     return [OverflowWrap_NORMAL_getInstance(), OverflowWrap_BREAKWORD_getInstance(), OverflowWrap_ANYWHERE_getInstance()];
   }
-  function valueOf_26(value) {
+  function valueOf_27(value) {
     switch (value) {
       case 'NORMAL':
         return OverflowWrap_NORMAL_getInstance();
@@ -3450,10 +3606,10 @@
         break;
     }
   }
-  function get_entries_26() {
-    if ($ENTRIES_26 == null)
-      $ENTRIES_26 = enumEntries(values_26());
-    return $ENTRIES_26;
+  function get_entries_27() {
+    if ($ENTRIES_27 == null)
+      $ENTRIES_27 = enumEntries(values_27());
+    return $ENTRIES_27;
   }
   var OverflowWrap_entriesInitialized;
   function OverflowWrap_initEntries() {
@@ -3464,7 +3620,7 @@
     OverflowWrap_BREAKWORD_instance = new OverflowWrap('BREAKWORD', 1, 'break-word');
     OverflowWrap_ANYWHERE_instance = new OverflowWrap('ANYWHERE', 2, 'anywhere');
   }
-  var $ENTRIES_26;
+  var $ENTRIES_27;
   function OverflowWrap(name, ordinal, overflowWrap) {
     Enum.call(this, name, ordinal);
     this.overflowWrap_1 = overflowWrap;
@@ -3481,10 +3637,10 @@
   var AlignContent_START_instance;
   var AlignContent_END_instance;
   var AlignContent_SPACEEVENLY_instance;
-  function values_27() {
+  function values_28() {
     return [AlignContent_FLEXSTART_getInstance(), AlignContent_FLEXEND_getInstance(), AlignContent_CENTER_getInstance(), AlignContent_SPACEBETWEEN_getInstance(), AlignContent_SPACEAROUND_getInstance(), AlignContent_STRETCH_getInstance(), AlignContent_START_getInstance(), AlignContent_END_getInstance(), AlignContent_SPACEEVENLY_getInstance()];
   }
-  function valueOf_27(value) {
+  function valueOf_28(value) {
     switch (value) {
       case 'FLEXSTART':
         return AlignContent_FLEXSTART_getInstance();
@@ -3510,10 +3666,10 @@
         break;
     }
   }
-  function get_entries_27() {
-    if ($ENTRIES_27 == null)
-      $ENTRIES_27 = enumEntries(values_27());
-    return $ENTRIES_27;
+  function get_entries_28() {
+    if ($ENTRIES_28 == null)
+      $ENTRIES_28 = enumEntries(values_28());
+    return $ENTRIES_28;
   }
   var AlignContent_entriesInitialized;
   function AlignContent_initEntries() {
@@ -3530,7 +3686,7 @@
     AlignContent_END_instance = new AlignContent('END', 7, 'end');
     AlignContent_SPACEEVENLY_instance = new AlignContent('SPACEEVENLY', 8, 'space-evenly');
   }
-  var $ENTRIES_27;
+  var $ENTRIES_28;
   function AlignContent(name, ordinal, alignContent) {
     Enum.call(this, name, ordinal);
     this.alignContent_1 = alignContent;
@@ -3544,10 +3700,10 @@
   var Resize_VERTICAL_instance;
   var Resize_INITIAL_instance;
   var Resize_INHERIT_instance;
-  function values_28() {
+  function values_29() {
     return [Resize_NONE_getInstance(), Resize_BOTH_getInstance(), Resize_HORIZONTAL_getInstance(), Resize_VERTICAL_getInstance(), Resize_INITIAL_getInstance(), Resize_INHERIT_getInstance()];
   }
-  function valueOf_28(value) {
+  function valueOf_29(value) {
     switch (value) {
       case 'NONE':
         return Resize_NONE_getInstance();
@@ -3567,10 +3723,10 @@
         break;
     }
   }
-  function get_entries_28() {
-    if ($ENTRIES_28 == null)
-      $ENTRIES_28 = enumEntries(values_28());
-    return $ENTRIES_28;
+  function get_entries_29() {
+    if ($ENTRIES_29 == null)
+      $ENTRIES_29 = enumEntries(values_29());
+    return $ENTRIES_29;
   }
   var Resize_entriesInitialized;
   function Resize_initEntries() {
@@ -3584,7 +3740,7 @@
     Resize_INITIAL_instance = new Resize('INITIAL', 4, 'initial');
     Resize_INHERIT_instance = new Resize('INHERIT', 5, 'inherit');
   }
-  var $ENTRIES_28;
+  var $ENTRIES_29;
   function Resize(name, ordinal, resize) {
     Enum.call(this, name, ordinal);
     this.resize_1 = resize;
@@ -3594,10 +3750,10 @@
   };
   var BgSize_COVER_instance;
   var BgSize_CONTAIN_instance;
-  function values_29() {
+  function values_30() {
     return [BgSize_COVER_getInstance(), BgSize_CONTAIN_getInstance()];
   }
-  function valueOf_29(value) {
+  function valueOf_30(value) {
     switch (value) {
       case 'COVER':
         return BgSize_COVER_getInstance();
@@ -3609,10 +3765,10 @@
         break;
     }
   }
-  function get_entries_29() {
-    if ($ENTRIES_29 == null)
-      $ENTRIES_29 = enumEntries(values_29());
-    return $ENTRIES_29;
+  function get_entries_30() {
+    if ($ENTRIES_30 == null)
+      $ENTRIES_30 = enumEntries(values_30());
+    return $ENTRIES_30;
   }
   var BgSize_entriesInitialized;
   function BgSize_initEntries() {
@@ -3622,7 +3778,7 @@
     BgSize_COVER_instance = new BgSize('COVER', 0, 'cover');
     BgSize_CONTAIN_instance = new BgSize('CONTAIN', 1, 'contain');
   }
-  var $ENTRIES_29;
+  var $ENTRIES_30;
   function BgSize(name, ordinal, size) {
     Enum.call(this, name, ordinal);
     this.size_1 = size;
@@ -3634,10 +3790,10 @@
   var BgRepeat_REPEATX_instance;
   var BgRepeat_REPEATY_instance;
   var BgRepeat_NOREPEAT_instance;
-  function values_30() {
+  function values_31() {
     return [BgRepeat_REPEAT_getInstance(), BgRepeat_REPEATX_getInstance(), BgRepeat_REPEATY_getInstance(), BgRepeat_NOREPEAT_getInstance()];
   }
-  function valueOf_30(value) {
+  function valueOf_31(value) {
     switch (value) {
       case 'REPEAT':
         return BgRepeat_REPEAT_getInstance();
@@ -3653,10 +3809,10 @@
         break;
     }
   }
-  function get_entries_30() {
-    if ($ENTRIES_30 == null)
-      $ENTRIES_30 = enumEntries(values_30());
-    return $ENTRIES_30;
+  function get_entries_31() {
+    if ($ENTRIES_31 == null)
+      $ENTRIES_31 = enumEntries(values_31());
+    return $ENTRIES_31;
   }
   var BgRepeat_entriesInitialized;
   function BgRepeat_initEntries() {
@@ -3668,7 +3824,7 @@
     BgRepeat_REPEATY_instance = new BgRepeat('REPEATY', 2, 'repeat-y');
     BgRepeat_NOREPEAT_instance = new BgRepeat('NOREPEAT', 3, 'no-repeat');
   }
-  var $ENTRIES_30;
+  var $ENTRIES_31;
   function BgRepeat(name, ordinal, repeat) {
     Enum.call(this, name, ordinal);
     this.repeat_1 = repeat;
@@ -3679,10 +3835,10 @@
   var BgOrigin_PADDING_instance;
   var BgOrigin_BORDER_instance;
   var BgOrigin_CONTENT_instance;
-  function values_31() {
+  function values_32() {
     return [BgOrigin_PADDING_getInstance(), BgOrigin_BORDER_getInstance(), BgOrigin_CONTENT_getInstance()];
   }
-  function valueOf_31(value) {
+  function valueOf_32(value) {
     switch (value) {
       case 'PADDING':
         return BgOrigin_PADDING_getInstance();
@@ -3696,10 +3852,10 @@
         break;
     }
   }
-  function get_entries_31() {
-    if ($ENTRIES_31 == null)
-      $ENTRIES_31 = enumEntries(values_31());
-    return $ENTRIES_31;
+  function get_entries_32() {
+    if ($ENTRIES_32 == null)
+      $ENTRIES_32 = enumEntries(values_32());
+    return $ENTRIES_32;
   }
   var BgOrigin_entriesInitialized;
   function BgOrigin_initEntries() {
@@ -3710,7 +3866,7 @@
     BgOrigin_BORDER_instance = new BgOrigin('BORDER', 1, 'border-box');
     BgOrigin_CONTENT_instance = new BgOrigin('CONTENT', 2, 'content-box');
   }
-  var $ENTRIES_31;
+  var $ENTRIES_32;
   function BgOrigin(name, ordinal, origin) {
     Enum.call(this, name, ordinal);
     this.origin_1 = origin;
@@ -3721,10 +3877,10 @@
   var BgClip_PADDING_instance;
   var BgClip_BORDER_instance;
   var BgClip_CONTENT_instance;
-  function values_32() {
+  function values_33() {
     return [BgClip_PADDING_getInstance(), BgClip_BORDER_getInstance(), BgClip_CONTENT_getInstance()];
   }
-  function valueOf_32(value) {
+  function valueOf_33(value) {
     switch (value) {
       case 'PADDING':
         return BgClip_PADDING_getInstance();
@@ -3738,10 +3894,10 @@
         break;
     }
   }
-  function get_entries_32() {
-    if ($ENTRIES_32 == null)
-      $ENTRIES_32 = enumEntries(values_32());
-    return $ENTRIES_32;
+  function get_entries_33() {
+    if ($ENTRIES_33 == null)
+      $ENTRIES_33 = enumEntries(values_33());
+    return $ENTRIES_33;
   }
   var BgClip_entriesInitialized;
   function BgClip_initEntries() {
@@ -3752,7 +3908,7 @@
     BgClip_BORDER_instance = new BgClip('BORDER', 1, 'border-box');
     BgClip_CONTENT_instance = new BgClip('CONTENT', 2, 'content-box');
   }
-  var $ENTRIES_32;
+  var $ENTRIES_33;
   function BgClip(name, ordinal, clip) {
     Enum.call(this, name, ordinal);
     this.clip_1 = clip;
@@ -3763,10 +3919,10 @@
   var BgAttach_SCROLL_instance;
   var BgAttach_FIXED_instance;
   var BgAttach_LOCAL_instance;
-  function values_33() {
+  function values_34() {
     return [BgAttach_SCROLL_getInstance(), BgAttach_FIXED_getInstance(), BgAttach_LOCAL_getInstance()];
   }
-  function valueOf_33(value) {
+  function valueOf_34(value) {
     switch (value) {
       case 'SCROLL':
         return BgAttach_SCROLL_getInstance();
@@ -3780,10 +3936,10 @@
         break;
     }
   }
-  function get_entries_33() {
-    if ($ENTRIES_33 == null)
-      $ENTRIES_33 = enumEntries(values_33());
-    return $ENTRIES_33;
+  function get_entries_34() {
+    if ($ENTRIES_34 == null)
+      $ENTRIES_34 = enumEntries(values_34());
+    return $ENTRIES_34;
   }
   var BgAttach_entriesInitialized;
   function BgAttach_initEntries() {
@@ -3794,7 +3950,7 @@
     BgAttach_FIXED_instance = new BgAttach('FIXED', 1, 'fixed');
     BgAttach_LOCAL_instance = new BgAttach('LOCAL', 2, 'local');
   }
-  var $ENTRIES_33;
+  var $ENTRIES_34;
   function BgAttach(name, ordinal, attachment) {
     Enum.call(this, name, ordinal);
     this.attachment_1 = attachment;
@@ -3816,10 +3972,10 @@
   var OutlineStyle_INITIAL_instance;
   var OutlineStyle_INHERIT_instance;
   var OutlineStyle_UNSET_instance;
-  function values_34() {
+  function values_35() {
     return [OutlineStyle_AUTO_getInstance(), OutlineStyle_NONE_getInstance(), OutlineStyle_HIDDEN_getInstance(), OutlineStyle_DOTTED_getInstance(), OutlineStyle_DASHED_getInstance(), OutlineStyle_SOLID_getInstance(), OutlineStyle_DOUBLE_getInstance(), OutlineStyle_GROOVE_getInstance(), OutlineStyle_RIDGE_getInstance(), OutlineStyle_INSET_getInstance(), OutlineStyle_OUTSET_getInstance(), OutlineStyle_INITIAL_getInstance(), OutlineStyle_INHERIT_getInstance(), OutlineStyle_UNSET_getInstance()];
   }
-  function valueOf_34(value) {
+  function valueOf_35(value) {
     switch (value) {
       case 'AUTO':
         return OutlineStyle_AUTO_getInstance();
@@ -3855,10 +4011,10 @@
         break;
     }
   }
-  function get_entries_34() {
-    if ($ENTRIES_34 == null)
-      $ENTRIES_34 = enumEntries(values_34());
-    return $ENTRIES_34;
+  function get_entries_35() {
+    if ($ENTRIES_35 == null)
+      $ENTRIES_35 = enumEntries(values_35());
+    return $ENTRIES_35;
   }
   var OutlineStyle_entriesInitialized;
   function OutlineStyle_initEntries() {
@@ -3880,7 +4036,7 @@
     OutlineStyle_INHERIT_instance = new OutlineStyle('INHERIT', 12, 'inherit');
     OutlineStyle_UNSET_instance = new OutlineStyle('UNSET', 13, 'unset');
   }
-  var $ENTRIES_34;
+  var $ENTRIES_35;
   function OutlineStyle(name, ordinal, outlineStyle) {
     Enum.call(this, name, ordinal);
     this.outlineStyle_1 = outlineStyle;
@@ -3895,10 +4051,10 @@
   var TextDecorationLine_JUSTIFY_instance;
   var TextDecorationLine_INITIAL_instance;
   var TextDecorationLine_INHERIT_instance;
-  function values_35() {
+  function values_36() {
     return [TextDecorationLine_NONE_getInstance(), TextDecorationLine_UNDERLINE_getInstance(), TextDecorationLine_OVERLINE_getInstance(), TextDecorationLine_LINETHROUGH_getInstance(), TextDecorationLine_JUSTIFY_getInstance(), TextDecorationLine_INITIAL_getInstance(), TextDecorationLine_INHERIT_getInstance()];
   }
-  function valueOf_35(value) {
+  function valueOf_36(value) {
     switch (value) {
       case 'NONE':
         return TextDecorationLine_NONE_getInstance();
@@ -3920,10 +4076,10 @@
         break;
     }
   }
-  function get_entries_35() {
-    if ($ENTRIES_35 == null)
-      $ENTRIES_35 = enumEntries(values_35());
-    return $ENTRIES_35;
+  function get_entries_36() {
+    if ($ENTRIES_36 == null)
+      $ENTRIES_36 = enumEntries(values_36());
+    return $ENTRIES_36;
   }
   var TextDecorationLine_entriesInitialized;
   function TextDecorationLine_initEntries() {
@@ -3938,7 +4094,7 @@
     TextDecorationLine_INITIAL_instance = new TextDecorationLine('INITIAL', 5, 'initial');
     TextDecorationLine_INHERIT_instance = new TextDecorationLine('INHERIT', 6, 'inherit');
   }
-  var $ENTRIES_35;
+  var $ENTRIES_36;
   function TextDecorationLine(name, ordinal, textDecorationLine) {
     Enum.call(this, name, ordinal);
     this.textDecorationLine_1 = textDecorationLine;
@@ -3953,10 +4109,10 @@
   var TextDecorationStyle_WAVY_instance;
   var TextDecorationStyle_INITIAL_instance;
   var TextDecorationStyle_INHERIT_instance;
-  function values_36() {
+  function values_37() {
     return [TextDecorationStyle_SOLID_getInstance(), TextDecorationStyle_DOUBLE_getInstance(), TextDecorationStyle_DOTTED_getInstance(), TextDecorationStyle_DASHED_getInstance(), TextDecorationStyle_WAVY_getInstance(), TextDecorationStyle_INITIAL_getInstance(), TextDecorationStyle_INHERIT_getInstance()];
   }
-  function valueOf_36(value) {
+  function valueOf_37(value) {
     switch (value) {
       case 'SOLID':
         return TextDecorationStyle_SOLID_getInstance();
@@ -3978,10 +4134,10 @@
         break;
     }
   }
-  function get_entries_36() {
-    if ($ENTRIES_36 == null)
-      $ENTRIES_36 = enumEntries(values_36());
-    return $ENTRIES_36;
+  function get_entries_37() {
+    if ($ENTRIES_37 == null)
+      $ENTRIES_37 = enumEntries(values_37());
+    return $ENTRIES_37;
   }
   var TextDecorationStyle_entriesInitialized;
   function TextDecorationStyle_initEntries() {
@@ -3996,159 +4152,13 @@
     TextDecorationStyle_INITIAL_instance = new TextDecorationStyle('INITIAL', 5, 'initial');
     TextDecorationStyle_INHERIT_instance = new TextDecorationStyle('INHERIT', 6, 'inherit');
   }
-  var $ENTRIES_36;
+  var $ENTRIES_37;
   function TextDecorationStyle(name, ordinal, textDecorationStyle) {
     Enum.call(this, name, ordinal);
     this.textDecorationStyle_1 = textDecorationStyle;
   }
   protoOf(TextDecorationStyle).get_textDecorationStyle_8bgjds_k$ = function () {
     return this.textDecorationStyle_1;
-  };
-  var ListStyleType_DISC_instance;
-  var ListStyleType_CIRCLE_instance;
-  var ListStyleType_SQUARE_instance;
-  var ListStyleType_DECIMAL_instance;
-  var ListStyleType_CJKDECIMAL_instance;
-  var ListStyleType_DECIMALLEADINGZERO_instance;
-  var ListStyleType_LOWERROMAN_instance;
-  var ListStyleType_UPPERROMAN_instance;
-  var ListStyleType_LOWERGREEK_instance;
-  var ListStyleType_LOWERLATIN_instance;
-  var ListStyleType_UPPERALPHA_instance;
-  var ListStyleType_LOWERALPHA_instance;
-  var ListStyleType_UPPERLATIN_instance;
-  var ListStyleType_ARABICINDIC_instance;
-  var ListStyleType_ARMENIAN_instance;
-  var ListStyleType_BENGALI_instance;
-  var ListStyleType_CAMBODIAN_instance;
-  var ListStyleType_CJKIDEOGRAPHIC_instance;
-  var ListStyleType_GEORGIAN_instance;
-  var ListStyleType_HEBREW_instance;
-  var ListStyleType_HIRAGANA_instance;
-  var ListStyleType_HIRAGANAIROHA_instance;
-  var ListStyleType_JAPANESEFORMAL_instance;
-  var ListStyleType_JAPANESEINFORMAL_instance;
-  var ListStyleType_KATAKANA_instance;
-  var ListStyleType_KATAKANAIROHA_instance;
-  var ListStyleType_NONE_instance;
-  var ListStyleType_INITIAL_instance;
-  var ListStyleType_INHERIT_instance;
-  function values_37() {
-    return [ListStyleType_DISC_getInstance(), ListStyleType_CIRCLE_getInstance(), ListStyleType_SQUARE_getInstance(), ListStyleType_DECIMAL_getInstance(), ListStyleType_CJKDECIMAL_getInstance(), ListStyleType_DECIMALLEADINGZERO_getInstance(), ListStyleType_LOWERROMAN_getInstance(), ListStyleType_UPPERROMAN_getInstance(), ListStyleType_LOWERGREEK_getInstance(), ListStyleType_LOWERLATIN_getInstance(), ListStyleType_UPPERALPHA_getInstance(), ListStyleType_LOWERALPHA_getInstance(), ListStyleType_UPPERLATIN_getInstance(), ListStyleType_ARABICINDIC_getInstance(), ListStyleType_ARMENIAN_getInstance(), ListStyleType_BENGALI_getInstance(), ListStyleType_CAMBODIAN_getInstance(), ListStyleType_CJKIDEOGRAPHIC_getInstance(), ListStyleType_GEORGIAN_getInstance(), ListStyleType_HEBREW_getInstance(), ListStyleType_HIRAGANA_getInstance(), ListStyleType_HIRAGANAIROHA_getInstance(), ListStyleType_JAPANESEFORMAL_getInstance(), ListStyleType_JAPANESEINFORMAL_getInstance(), ListStyleType_KATAKANA_getInstance(), ListStyleType_KATAKANAIROHA_getInstance(), ListStyleType_NONE_getInstance(), ListStyleType_INITIAL_getInstance(), ListStyleType_INHERIT_getInstance()];
-  }
-  function valueOf_37(value) {
-    switch (value) {
-      case 'DISC':
-        return ListStyleType_DISC_getInstance();
-      case 'CIRCLE':
-        return ListStyleType_CIRCLE_getInstance();
-      case 'SQUARE':
-        return ListStyleType_SQUARE_getInstance();
-      case 'DECIMAL':
-        return ListStyleType_DECIMAL_getInstance();
-      case 'CJKDECIMAL':
-        return ListStyleType_CJKDECIMAL_getInstance();
-      case 'DECIMALLEADINGZERO':
-        return ListStyleType_DECIMALLEADINGZERO_getInstance();
-      case 'LOWERROMAN':
-        return ListStyleType_LOWERROMAN_getInstance();
-      case 'UPPERROMAN':
-        return ListStyleType_UPPERROMAN_getInstance();
-      case 'LOWERGREEK':
-        return ListStyleType_LOWERGREEK_getInstance();
-      case 'LOWERLATIN':
-        return ListStyleType_LOWERLATIN_getInstance();
-      case 'UPPERALPHA':
-        return ListStyleType_UPPERALPHA_getInstance();
-      case 'LOWERALPHA':
-        return ListStyleType_LOWERALPHA_getInstance();
-      case 'UPPERLATIN':
-        return ListStyleType_UPPERLATIN_getInstance();
-      case 'ARABICINDIC':
-        return ListStyleType_ARABICINDIC_getInstance();
-      case 'ARMENIAN':
-        return ListStyleType_ARMENIAN_getInstance();
-      case 'BENGALI':
-        return ListStyleType_BENGALI_getInstance();
-      case 'CAMBODIAN':
-        return ListStyleType_CAMBODIAN_getInstance();
-      case 'CJKIDEOGRAPHIC':
-        return ListStyleType_CJKIDEOGRAPHIC_getInstance();
-      case 'GEORGIAN':
-        return ListStyleType_GEORGIAN_getInstance();
-      case 'HEBREW':
-        return ListStyleType_HEBREW_getInstance();
-      case 'HIRAGANA':
-        return ListStyleType_HIRAGANA_getInstance();
-      case 'HIRAGANAIROHA':
-        return ListStyleType_HIRAGANAIROHA_getInstance();
-      case 'JAPANESEFORMAL':
-        return ListStyleType_JAPANESEFORMAL_getInstance();
-      case 'JAPANESEINFORMAL':
-        return ListStyleType_JAPANESEINFORMAL_getInstance();
-      case 'KATAKANA':
-        return ListStyleType_KATAKANA_getInstance();
-      case 'KATAKANAIROHA':
-        return ListStyleType_KATAKANAIROHA_getInstance();
-      case 'NONE':
-        return ListStyleType_NONE_getInstance();
-      case 'INITIAL':
-        return ListStyleType_INITIAL_getInstance();
-      case 'INHERIT':
-        return ListStyleType_INHERIT_getInstance();
-      default:
-        ListStyleType_initEntries();
-        THROW_IAE('No enum constant value.');
-        break;
-    }
-  }
-  function get_entries_37() {
-    if ($ENTRIES_37 == null)
-      $ENTRIES_37 = enumEntries(values_37());
-    return $ENTRIES_37;
-  }
-  var ListStyleType_entriesInitialized;
-  function ListStyleType_initEntries() {
-    if (ListStyleType_entriesInitialized)
-      return Unit_getInstance();
-    ListStyleType_entriesInitialized = true;
-    ListStyleType_DISC_instance = new ListStyleType('DISC', 0, 'disc');
-    ListStyleType_CIRCLE_instance = new ListStyleType('CIRCLE', 1, 'circle');
-    ListStyleType_SQUARE_instance = new ListStyleType('SQUARE', 2, 'square');
-    ListStyleType_DECIMAL_instance = new ListStyleType('DECIMAL', 3, 'decimal');
-    ListStyleType_CJKDECIMAL_instance = new ListStyleType('CJKDECIMAL', 4, 'cjk-decimal');
-    ListStyleType_DECIMALLEADINGZERO_instance = new ListStyleType('DECIMALLEADINGZERO', 5, 'decimal-leading-zero');
-    ListStyleType_LOWERROMAN_instance = new ListStyleType('LOWERROMAN', 6, 'lower-roman');
-    ListStyleType_UPPERROMAN_instance = new ListStyleType('UPPERROMAN', 7, 'upper-roman');
-    ListStyleType_LOWERGREEK_instance = new ListStyleType('LOWERGREEK', 8, 'lower-greek');
-    ListStyleType_LOWERLATIN_instance = new ListStyleType('LOWERLATIN', 9, 'lower-latin');
-    ListStyleType_UPPERALPHA_instance = new ListStyleType('UPPERALPHA', 10, 'upper-alpha');
-    ListStyleType_LOWERALPHA_instance = new ListStyleType('LOWERALPHA', 11, 'lower-alpha');
-    ListStyleType_UPPERLATIN_instance = new ListStyleType('UPPERLATIN', 12, 'upper-latin');
-    ListStyleType_ARABICINDIC_instance = new ListStyleType('ARABICINDIC', 13, 'arabic-indic');
-    ListStyleType_ARMENIAN_instance = new ListStyleType('ARMENIAN', 14, 'armenian');
-    ListStyleType_BENGALI_instance = new ListStyleType('BENGALI', 15, 'bengali');
-    ListStyleType_CAMBODIAN_instance = new ListStyleType('CAMBODIAN', 16, 'cambodian');
-    ListStyleType_CJKIDEOGRAPHIC_instance = new ListStyleType('CJKIDEOGRAPHIC', 17, 'cjk-ideographic');
-    ListStyleType_GEORGIAN_instance = new ListStyleType('GEORGIAN', 18, 'georgian');
-    ListStyleType_HEBREW_instance = new ListStyleType('HEBREW', 19, 'hebrew');
-    ListStyleType_HIRAGANA_instance = new ListStyleType('HIRAGANA', 20, 'hiragana');
-    ListStyleType_HIRAGANAIROHA_instance = new ListStyleType('HIRAGANAIROHA', 21, 'hiragana-iroha');
-    ListStyleType_JAPANESEFORMAL_instance = new ListStyleType('JAPANESEFORMAL', 22, 'japanese-formal');
-    ListStyleType_JAPANESEINFORMAL_instance = new ListStyleType('JAPANESEINFORMAL', 23, 'japanese-informal');
-    ListStyleType_KATAKANA_instance = new ListStyleType('KATAKANA', 24, 'katakana');
-    ListStyleType_KATAKANAIROHA_instance = new ListStyleType('KATAKANAIROHA', 25, 'katakana-iroha');
-    ListStyleType_NONE_instance = new ListStyleType('NONE', 26, 'none');
-    ListStyleType_INITIAL_instance = new ListStyleType('INITIAL', 27, 'initial');
-    ListStyleType_INHERIT_instance = new ListStyleType('INHERIT', 28, 'inherit');
-  }
-  var $ENTRIES_37;
-  function ListStyleType(name, ordinal, type) {
-    Enum.call(this, name, ordinal);
-    this.type_1 = type;
-  }
-  protoOf(ListStyleType).get_type_t5wobc_k$ = function () {
-    return this.type_1;
   };
   var ListStylePosition_INSIDE_instance;
   var ListStylePosition_OUTSIDE_instance;
@@ -4503,6 +4513,122 @@
   function Display_INHERIT_getInstance() {
     Display_initEntries();
     return Display_INHERIT_instance;
+  }
+  function ListStyleType_DISC_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_DISC_instance;
+  }
+  function ListStyleType_CIRCLE_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_CIRCLE_instance;
+  }
+  function ListStyleType_SQUARE_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_SQUARE_instance;
+  }
+  function ListStyleType_DECIMAL_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_DECIMAL_instance;
+  }
+  function ListStyleType_CJKDECIMAL_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_CJKDECIMAL_instance;
+  }
+  function ListStyleType_DECIMALLEADINGZERO_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_DECIMALLEADINGZERO_instance;
+  }
+  function ListStyleType_LOWERROMAN_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_LOWERROMAN_instance;
+  }
+  function ListStyleType_UPPERROMAN_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_UPPERROMAN_instance;
+  }
+  function ListStyleType_LOWERGREEK_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_LOWERGREEK_instance;
+  }
+  function ListStyleType_LOWERLATIN_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_LOWERLATIN_instance;
+  }
+  function ListStyleType_UPPERALPHA_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_UPPERALPHA_instance;
+  }
+  function ListStyleType_LOWERALPHA_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_LOWERALPHA_instance;
+  }
+  function ListStyleType_UPPERLATIN_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_UPPERLATIN_instance;
+  }
+  function ListStyleType_ARABICINDIC_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_ARABICINDIC_instance;
+  }
+  function ListStyleType_ARMENIAN_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_ARMENIAN_instance;
+  }
+  function ListStyleType_BENGALI_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_BENGALI_instance;
+  }
+  function ListStyleType_CAMBODIAN_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_CAMBODIAN_instance;
+  }
+  function ListStyleType_CJKIDEOGRAPHIC_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_CJKIDEOGRAPHIC_instance;
+  }
+  function ListStyleType_GEORGIAN_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_GEORGIAN_instance;
+  }
+  function ListStyleType_HEBREW_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_HEBREW_instance;
+  }
+  function ListStyleType_HIRAGANA_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_HIRAGANA_instance;
+  }
+  function ListStyleType_HIRAGANAIROHA_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_HIRAGANAIROHA_instance;
+  }
+  function ListStyleType_JAPANESEFORMAL_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_JAPANESEFORMAL_instance;
+  }
+  function ListStyleType_JAPANESEINFORMAL_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_JAPANESEINFORMAL_instance;
+  }
+  function ListStyleType_KATAKANA_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_KATAKANA_instance;
+  }
+  function ListStyleType_KATAKANAIROHA_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_KATAKANAIROHA_instance;
+  }
+  function ListStyleType_NONE_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_NONE_instance;
+  }
+  function ListStyleType_INITIAL_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_INITIAL_instance;
+  }
+  function ListStyleType_INHERIT_getInstance() {
+    ListStyleType_initEntries();
+    return ListStyleType_INHERIT_instance;
   }
   function Overflow_VISIBLE_getInstance() {
     Overflow_initEntries();
@@ -5827,122 +5953,6 @@
   function TextDecorationStyle_INHERIT_getInstance() {
     TextDecorationStyle_initEntries();
     return TextDecorationStyle_INHERIT_instance;
-  }
-  function ListStyleType_DISC_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_DISC_instance;
-  }
-  function ListStyleType_CIRCLE_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_CIRCLE_instance;
-  }
-  function ListStyleType_SQUARE_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_SQUARE_instance;
-  }
-  function ListStyleType_DECIMAL_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_DECIMAL_instance;
-  }
-  function ListStyleType_CJKDECIMAL_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_CJKDECIMAL_instance;
-  }
-  function ListStyleType_DECIMALLEADINGZERO_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_DECIMALLEADINGZERO_instance;
-  }
-  function ListStyleType_LOWERROMAN_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_LOWERROMAN_instance;
-  }
-  function ListStyleType_UPPERROMAN_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_UPPERROMAN_instance;
-  }
-  function ListStyleType_LOWERGREEK_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_LOWERGREEK_instance;
-  }
-  function ListStyleType_LOWERLATIN_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_LOWERLATIN_instance;
-  }
-  function ListStyleType_UPPERALPHA_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_UPPERALPHA_instance;
-  }
-  function ListStyleType_LOWERALPHA_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_LOWERALPHA_instance;
-  }
-  function ListStyleType_UPPERLATIN_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_UPPERLATIN_instance;
-  }
-  function ListStyleType_ARABICINDIC_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_ARABICINDIC_instance;
-  }
-  function ListStyleType_ARMENIAN_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_ARMENIAN_instance;
-  }
-  function ListStyleType_BENGALI_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_BENGALI_instance;
-  }
-  function ListStyleType_CAMBODIAN_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_CAMBODIAN_instance;
-  }
-  function ListStyleType_CJKIDEOGRAPHIC_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_CJKIDEOGRAPHIC_instance;
-  }
-  function ListStyleType_GEORGIAN_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_GEORGIAN_instance;
-  }
-  function ListStyleType_HEBREW_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_HEBREW_instance;
-  }
-  function ListStyleType_HIRAGANA_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_HIRAGANA_instance;
-  }
-  function ListStyleType_HIRAGANAIROHA_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_HIRAGANAIROHA_instance;
-  }
-  function ListStyleType_JAPANESEFORMAL_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_JAPANESEFORMAL_instance;
-  }
-  function ListStyleType_JAPANESEINFORMAL_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_JAPANESEINFORMAL_instance;
-  }
-  function ListStyleType_KATAKANA_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_KATAKANA_instance;
-  }
-  function ListStyleType_KATAKANAIROHA_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_KATAKANAIROHA_instance;
-  }
-  function ListStyleType_NONE_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_NONE_instance;
-  }
-  function ListStyleType_INITIAL_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_INITIAL_instance;
-  }
-  function ListStyleType_INHERIT_getInstance() {
-    ListStyleType_initEntries();
-    return ListStyleType_INHERIT_instance;
   }
   function ListStylePosition_INSIDE_getInstance() {
     ListStylePosition_initEntries();
@@ -17618,6 +17628,28 @@
     Autocomplete_initEntries();
     return Autocomplete_PHOTO_instance;
   }
+  function li(_this__u8e3s4, content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var li = new Li(content, rich, align, className, init);
+    _this__u8e3s4.add_rekwpt_k$(li);
+    return li;
+  }
+  function Li(content, rich, align, className, init) {
+    content = content === VOID ? null : content;
+    rich = rich === VOID ? false : rich;
+    align = align === VOID ? null : align;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    Tag.call(this, TAG_LI_getInstance(), content, rich, align, className);
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
   function Companion_6() {
     Companion_instance_6 = this;
     this.useDataNavigoForLinks_1 = false;
@@ -18015,6 +18047,536 @@
       return receiver.set_dataNavigo_uqcbez_k$(value);
     });
   }
+  var ListType_UL_instance;
+  var ListType_OL_instance;
+  var ListType_UNSTYLED_instance;
+  var ListType_INLINE_instance;
+  var ListType_DL_instance;
+  var ListType_DL_HORIZ_instance;
+  function values_56() {
+    return [ListType_UL_getInstance(), ListType_OL_getInstance(), ListType_UNSTYLED_getInstance(), ListType_INLINE_getInstance(), ListType_DL_getInstance(), ListType_DL_HORIZ_getInstance()];
+  }
+  function valueOf_56(value) {
+    switch (value) {
+      case 'UL':
+        return ListType_UL_getInstance();
+      case 'OL':
+        return ListType_OL_getInstance();
+      case 'UNSTYLED':
+        return ListType_UNSTYLED_getInstance();
+      case 'INLINE':
+        return ListType_INLINE_getInstance();
+      case 'DL':
+        return ListType_DL_getInstance();
+      case 'DL_HORIZ':
+        return ListType_DL_HORIZ_getInstance();
+      default:
+        ListType_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_56() {
+    if ($ENTRIES_56 == null)
+      $ENTRIES_56 = enumEntries(values_56());
+    return $ENTRIES_56;
+  }
+  var ListType_entriesInitialized;
+  function ListType_initEntries() {
+    if (ListType_entriesInitialized)
+      return Unit_getInstance();
+    ListType_entriesInitialized = true;
+    ListType_UL_instance = new ListType('UL', 0, 'ul');
+    ListType_OL_instance = new ListType('OL', 1, 'ol');
+    ListType_UNSTYLED_instance = new ListType('UNSTYLED', 2, 'ul');
+    ListType_INLINE_instance = new ListType('INLINE', 3, 'ul');
+    ListType_DL_instance = new ListType('DL', 4, 'dl');
+    ListType_DL_HORIZ_instance = new ListType('DL_HORIZ', 5, 'dl');
+  }
+  var $ENTRIES_56;
+  function ListType(name, ordinal, tagName) {
+    Enum.call(this, name, ordinal);
+    this.tagName_1 = tagName;
+  }
+  protoOf(ListType).get_tagName_7k7wv_k$ = function () {
+    return this.tagName_1;
+  };
+  function element($this, name, value, rich, inline) {
+    var translatedValue = $this.translate_s2ekyc_k$(value);
+    var tmp;
+    if (inline) {
+      // Inline function 'io.kvision.utils.snOpt' call
+      var block = ListTag$element$lambda;
+      // Inline function 'io.kvision.utils.vNodeData' call
+      var tmp$ret$0 = {};
+      tmp = apply$ref_8(tmp$ret$0)(block);
+    } else {
+      // Inline function 'io.kvision.utils.snOpt' call
+      var block_0 = ListTag$element$lambda_0;
+      // Inline function 'io.kvision.utils.vNodeData' call
+      var tmp$ret$2 = {};
+      tmp = apply$ref_9(tmp$ret$2)(block_0);
+    }
+    var opt = tmp;
+    var tmp_0;
+    if (rich) {
+      // Inline function 'kotlin.arrayOf' call
+      // Inline function 'kotlin.js.unsafeCast' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$6 = [KVManager_getInstance().virtualize_d7cntb_k$('<span style="display: contents;">' + translatedValue + '<\/span>')];
+      tmp_0 = h(name, opt, tmp$ret$6);
+    } else {
+      tmp_0 = h_1(name, opt, translatedValue);
+    }
+    return tmp_0;
+  }
+  function ListTag$type$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function ListTag$elements$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function ListTag$rich$delegate$lambda($tmp0) {
+    return function (it) {
+      $tmp0.refresh_6a3uvf_k$();
+      return Unit_getInstance();
+    };
+  }
+  function ListTag$childrenVNodes$lambda($this$snOpt) {
+    // Inline function 'io.kvision.utils.snClasses' call
+    var pairs = listOf_0(to('list-inline-item', true));
+    // Inline function 'io.kvision.utils.obj' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = new Object();
+    // Inline function 'io.kvision.utils.snClasses.<anonymous>' call
+    // Inline function 'kotlin.collections.forEach' call
+    var _iterator__ex2g4s = pairs.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'io.kvision.utils.snClasses.<anonymous>.<anonymous>' call
+      var key = element.component1_7eebsc_k$();
+      var value = element.component2_7eebsb_k$();
+      this_0[key] = value;
+    }
+    $this$snOpt.class = this_0;
+    return Unit_getInstance();
+  }
+  function apply$ref_7($boundThis) {
+    var l = function (p0) {
+      return apply($boundThis, p0);
+    };
+    l.callableName = 'apply';
+    return l;
+  }
+  function ListTag$element$lambda($this$snOpt) {
+    // Inline function 'io.kvision.utils.snClasses' call
+    var pairs = listOf_0(to('list-inline-item', true));
+    // Inline function 'io.kvision.utils.obj' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = new Object();
+    // Inline function 'io.kvision.utils.snClasses.<anonymous>' call
+    // Inline function 'kotlin.collections.forEach' call
+    var _iterator__ex2g4s = pairs.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'io.kvision.utils.snClasses.<anonymous>.<anonymous>' call
+      var key = element.component1_7eebsc_k$();
+      var value = element.component2_7eebsb_k$();
+      this_0[key] = value;
+    }
+    $this$snOpt.class = this_0;
+    return Unit_getInstance();
+  }
+  function apply$ref_8($boundThis) {
+    var l = function (p0) {
+      return apply($boundThis, p0);
+    };
+    l.callableName = 'apply';
+    return l;
+  }
+  function ListTag$element$lambda_0($this$snOpt) {
+    return Unit_getInstance();
+  }
+  function apply$ref_9($boundThis) {
+    var l = function (p0) {
+      return apply($boundThis, p0);
+    };
+    l.callableName = 'apply';
+    return l;
+  }
+  function ListTag(type, elements, rich, className, init) {
+    elements = elements === VOID ? null : elements;
+    rich = rich === VOID ? false : rich;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    SimplePanel.call(this, className);
+    var tmp = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction = ListTag$type$delegate$lambda(this);
+    tmp.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction)).provideDelegate_z62loi_k$(this, type$factory_8());
+    var tmp_0 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_0 = ListTag$elements$delegate$lambda(this);
+    tmp_0.elements$delegate_1 = (new RefreshDelegateProvider_0(this, elements, refreshFunction_0)).provideDelegate_z62loi_k$(this, elements$factory());
+    var tmp_1 = this;
+    // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
+    var refreshFunction_1 = ListTag$rich$delegate$lambda(this);
+    tmp_1.rich$delegate_1 = (new RefreshDelegateProvider_0(this, rich, refreshFunction_1)).provideDelegate_z62loi_k$(this, rich$factory());
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  protoOf(ListTag).set_type_2kfr1h_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_9(), _set____db54di);
+  };
+  protoOf(ListTag).get_type_wovaf7_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_10());
+  };
+  protoOf(ListTag).set_elements_l7o2gl_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.elements$delegate_1, this, elements$factory_0(), _set____db54di);
+  };
+  protoOf(ListTag).get_elements_vxwh8g_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.elements$delegate_1, this, elements$factory_1());
+  };
+  protoOf(ListTag).set_rich_1alg2s_k$ = function (_set____db54di) {
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.rich$delegate_1, this, rich$factory_0(), _set____db54di);
+  };
+  protoOf(ListTag).get_rich_woto9x_k$ = function () {
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.rich$delegate_1, this, rich$factory_1());
+  };
+  protoOf(ListTag).render_fgfjvu_k$ = function () {
+    var tmp;
+    switch (this.get_type_wovaf7_k$().get_ordinal_ip24qg_k$()) {
+      case 0:
+      case 1:
+      case 2:
+      case 3:
+        var tmp1_safe_receiver = this.get_elements_vxwh8g_k$();
+        var tmp_0;
+        if (tmp1_safe_receiver == null) {
+          tmp_0 = null;
+        } else {
+          // Inline function 'kotlin.collections.map' call
+          // Inline function 'kotlin.collections.mapTo' call
+          var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(tmp1_safe_receiver, 10));
+          var _iterator__ex2g4s = tmp1_safe_receiver.iterator_jk1svi_k$();
+          while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+            var item = _iterator__ex2g4s.next_20eer_k$();
+            // Inline function 'io.kvision.html.ListTag.render.<anonymous>' call
+            var tmp$ret$0 = element(this, 'li', item, this.get_rich_woto9x_k$(), this.get_type_wovaf7_k$().equals(ListType_INLINE_getInstance()));
+            destination.add_utx5q5_k$(tmp$ret$0);
+          }
+          tmp_0 = destination;
+        }
+
+        tmp = tmp_0;
+        break;
+      case 4:
+      case 5:
+        var tmp2_safe_receiver = this.get_elements_vxwh8g_k$();
+        var tmp_1;
+        if (tmp2_safe_receiver == null) {
+          tmp_1 = null;
+        } else {
+          // Inline function 'kotlin.collections.mapIndexed' call
+          // Inline function 'kotlin.collections.mapIndexedTo' call
+          var destination_0 = ArrayList_init_$Create$_0(collectionSizeOrDefault(tmp2_safe_receiver, 10));
+          var index = 0;
+          var _iterator__ex2g4s_0 = tmp2_safe_receiver.iterator_jk1svi_k$();
+          while (_iterator__ex2g4s_0.hasNext_bitz1p_k$()) {
+            var item_0 = _iterator__ex2g4s_0.next_20eer_k$();
+            var _unary__edvuaz = index;
+            index = _unary__edvuaz + 1 | 0;
+            // Inline function 'io.kvision.html.ListTag.render.<anonymous>' call
+            var index_0 = checkIndexOverflow(_unary__edvuaz);
+            var tmp$ret$3 = element(this, (index_0 % 2 | 0) === 0 ? 'dt' : 'dd', item_0, this.get_rich_woto9x_k$(), false);
+            destination_0.add_utx5q5_k$(tmp$ret$3);
+          }
+          tmp_1 = destination_0;
+        }
+
+        tmp = tmp_1;
+        break;
+      default:
+        noWhenBranchMatchedException();
+        break;
+    }
+    var tmp3_safe_receiver = tmp;
+    var tmp_2;
+    if (tmp3_safe_receiver == null) {
+      tmp_2 = null;
+    } else {
+      // Inline function 'kotlin.collections.toTypedArray' call
+      tmp_2 = copyToArray(tmp3_safe_receiver);
+    }
+    var childrenElements = tmp_2;
+    var tmp_3;
+    if (!(childrenElements == null)) {
+      var tmp_4 = this.get_type_wovaf7_k$().tagName_1;
+      // Inline function 'kotlin.collections.plus' call
+      var elements = this.childrenVNodes_2corie_k$();
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$8 = childrenElements.concat(elements);
+      tmp_3 = this.render_prnnht_k$(tmp_4, tmp$ret$8);
+    } else {
+      tmp_3 = this.render_prnnht_k$(this.get_type_wovaf7_k$().tagName_1, this.childrenVNodes_2corie_k$());
+    }
+    return tmp_3;
+  };
+  protoOf(ListTag).childrenVNodes_2corie_k$ = function () {
+    // Inline function 'kotlin.collections.filter' call
+    var tmp0 = this.getChildren_97y0zv_k$();
+    // Inline function 'kotlin.collections.filterTo' call
+    var destination = ArrayList_init_$Create$();
+    var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
+      // Inline function 'io.kvision.html.ListTag.childrenVNodes.<anonymous>' call
+      if (element.get_visible_8zfvk9_k$()) {
+        destination.add_utx5q5_k$(element);
+      }
+    }
+    var childrenElements = destination;
+    var tmp;
+    switch (this.get_type_wovaf7_k$().get_ordinal_ip24qg_k$()) {
+      case 0:
+      case 1:
+      case 2:
+      case 3:
+        // Inline function 'kotlin.collections.map' call
+
+        // Inline function 'kotlin.collections.mapTo' call
+
+        var destination_0 = ArrayList_init_$Create$_0(collectionSizeOrDefault(childrenElements, 10));
+        var _iterator__ex2g4s_0 = childrenElements.iterator_jk1svi_k$();
+        while (_iterator__ex2g4s_0.hasNext_bitz1p_k$()) {
+          var item = _iterator__ex2g4s_0.next_20eer_k$();
+          // Inline function 'io.kvision.html.ListTag.childrenVNodes.<anonymous>' call
+          var tmp_0;
+          var tmp_1;
+          var tmp_2;
+          if (item instanceof Tag) {
+            tmp_2 = item.get_type_wovaf7_k$().equals(TAG_LI_getInstance()) || item.get_type_wovaf7_k$().equals(TAG_OL_getInstance()) || item.get_type_wovaf7_k$().equals(TAG_UL_getInstance());
+          } else {
+            tmp_2 = false;
+          }
+          if (tmp_2) {
+            tmp_1 = true;
+          } else {
+            tmp_1 = item instanceof ListTag;
+          }
+          if (tmp_1) {
+            tmp_0 = item.renderVNode_r2mn32_k$();
+          } else {
+            var tmp_3;
+            if (this.get_type_wovaf7_k$().equals(ListType_INLINE_getInstance())) {
+              // Inline function 'io.kvision.utils.snOpt' call
+              var block = ListTag$childrenVNodes$lambda;
+              // Inline function 'io.kvision.utils.vNodeData' call
+              var tmp$ret$3 = {};
+              var opt = apply$ref_7(tmp$ret$3)(block);
+              // Inline function 'kotlin.arrayOf' call
+              // Inline function 'kotlin.js.unsafeCast' call
+              // Inline function 'kotlin.js.asDynamic' call
+              var tmp$ret$7 = [item.renderVNode_r2mn32_k$()];
+              tmp_3 = h('li', opt, tmp$ret$7);
+            } else {
+              // Inline function 'kotlin.arrayOf' call
+              // Inline function 'kotlin.js.unsafeCast' call
+              // Inline function 'kotlin.js.asDynamic' call
+              var tmp$ret$10 = [item.renderVNode_r2mn32_k$()];
+              tmp_3 = h_2('li', tmp$ret$10);
+            }
+            tmp_0 = tmp_3;
+          }
+          var tmp$ret$11 = tmp_0;
+          destination_0.add_utx5q5_k$(tmp$ret$11);
+        }
+
+        tmp = destination_0;
+        break;
+      case 4:
+      case 5:
+        // Inline function 'kotlin.collections.mapIndexed' call
+
+        // Inline function 'kotlin.collections.mapIndexedTo' call
+
+        var destination_1 = ArrayList_init_$Create$_0(collectionSizeOrDefault(childrenElements, 10));
+        var index = 0;
+        var _iterator__ex2g4s_1 = childrenElements.iterator_jk1svi_k$();
+        while (_iterator__ex2g4s_1.hasNext_bitz1p_k$()) {
+          var item_0 = _iterator__ex2g4s_1.next_20eer_k$();
+          var _unary__edvuaz = index;
+          index = _unary__edvuaz + 1 | 0;
+          // Inline function 'io.kvision.html.ListTag.childrenVNodes.<anonymous>' call
+          var index_0 = checkIndexOverflow(_unary__edvuaz);
+          var tmp_4;
+          var tmp_5;
+          if (item_0 instanceof Tag) {
+            var tmp_6;
+            if (item_0.get_type_wovaf7_k$().equals(TAG_LI_getInstance()) || item_0.get_type_wovaf7_k$().equals(TAG_OL_getInstance()) || item_0.get_type_wovaf7_k$().equals(TAG_UL_getInstance())) {
+              tmp_6 = true;
+            } else {
+              tmp_6 = item_0 instanceof ListTag;
+            }
+            tmp_5 = tmp_6;
+          } else {
+            tmp_5 = false;
+          }
+          if (tmp_5) {
+            tmp_4 = item_0.renderVNode_r2mn32_k$();
+          } else {
+            var tmp_7 = (index_0 % 2 | 0) === 0 ? 'dt' : 'dd';
+            // Inline function 'kotlin.arrayOf' call
+            // Inline function 'kotlin.js.unsafeCast' call
+            // Inline function 'kotlin.js.asDynamic' call
+            var tmp$ret$16 = [item_0.renderVNode_r2mn32_k$()];
+            tmp_4 = h_2(tmp_7, tmp$ret$16);
+          }
+          var tmp$ret$17 = tmp_4;
+          destination_1.add_utx5q5_k$(tmp$ret$17);
+        }
+
+        tmp = destination_1;
+        break;
+      default:
+        noWhenBranchMatchedException();
+        break;
+    }
+    var res = tmp;
+    // Inline function 'kotlin.collections.toTypedArray' call
+    return copyToArray(res);
+  };
+  protoOf(ListTag).buildClassSet_myme1g_k$ = function (classSetBuilder) {
+    protoOf(SimplePanel).buildClassSet_myme1g_k$.call(this, classSetBuilder);
+    switch (this.get_type_wovaf7_k$().get_ordinal_ip24qg_k$()) {
+      case 2:
+        classSetBuilder.add_udnk2x_k$('list-unstyled');
+        break;
+      case 3:
+        classSetBuilder.add_udnk2x_k$('list-inline');
+        break;
+      case 5:
+        classSetBuilder.add_udnk2x_k$('dl-horizontal');
+        break;
+      default:
+        break;
+    }
+  };
+  function ListType_UL_getInstance() {
+    ListType_initEntries();
+    return ListType_UL_instance;
+  }
+  function ListType_OL_getInstance() {
+    ListType_initEntries();
+    return ListType_OL_instance;
+  }
+  function ListType_UNSTYLED_getInstance() {
+    ListType_initEntries();
+    return ListType_UNSTYLED_instance;
+  }
+  function ListType_INLINE_getInstance() {
+    ListType_initEntries();
+    return ListType_INLINE_instance;
+  }
+  function ListType_DL_getInstance() {
+    ListType_initEntries();
+    return ListType_DL_instance;
+  }
+  function ListType_DL_HORIZ_getInstance() {
+    ListType_initEntries();
+    return ListType_DL_HORIZ_instance;
+  }
+  function type$factory_8() {
+    return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_type_wovaf7_k$();
+    }, function (receiver, value) {
+      return receiver.set_type_2kfr1h_k$(value);
+    });
+  }
+  function elements$factory() {
+    return getPropertyCallableRef('elements', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_elements_vxwh8g_k$();
+    }, function (receiver, value) {
+      return receiver.set_elements_l7o2gl_k$(value);
+    });
+  }
+  function rich$factory() {
+    return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_rich_woto9x_k$();
+    }, function (receiver, value) {
+      return receiver.set_rich_1alg2s_k$(value);
+    });
+  }
+  function type$factory_9() {
+    return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_type_wovaf7_k$();
+    }, function (receiver, value) {
+      return receiver.set_type_2kfr1h_k$(value);
+    });
+  }
+  function type$factory_10() {
+    return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_type_wovaf7_k$();
+    }, function (receiver, value) {
+      return receiver.set_type_2kfr1h_k$(value);
+    });
+  }
+  function elements$factory_0() {
+    return getPropertyCallableRef('elements', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_elements_vxwh8g_k$();
+    }, function (receiver, value) {
+      return receiver.set_elements_l7o2gl_k$(value);
+    });
+  }
+  function elements$factory_1() {
+    return getPropertyCallableRef('elements', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_elements_vxwh8g_k$();
+    }, function (receiver, value) {
+      return receiver.set_elements_l7o2gl_k$(value);
+    });
+  }
+  function rich$factory_0() {
+    return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_rich_woto9x_k$();
+    }, function (receiver, value) {
+      return receiver.set_rich_1alg2s_k$(value);
+    });
+  }
+  function rich$factory_1() {
+    return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
+      return receiver.get_rich_woto9x_k$();
+    }, function (receiver, value) {
+      return receiver.set_rich_1alg2s_k$(value);
+    });
+  }
+  function ol(_this__u8e3s4, elements, rich, className, init) {
+    elements = elements === VOID ? null : elements;
+    rich = rich === VOID ? false : rich;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var ol = new Ol(elements, rich, className, init);
+    _this__u8e3s4.add_rekwpt_k$(ol);
+    return ol;
+  }
+  function Ol(elements, rich, className, init) {
+    elements = elements === VOID ? null : elements;
+    rich = rich === VOID ? false : rich;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    ListTag.call(this, ListType_OL_getInstance(), elements, rich, className);
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
   function p(_this__u8e3s4, content, rich, align, className, init) {
     content = content === VOID ? null : content;
     rich = rich === VOID ? false : rich;
@@ -18176,10 +18738,10 @@
   var TAG_VAR_instance;
   var TAG_VIDEO_instance;
   var TAG_WBR_instance;
-  function values_56() {
+  function values_57() {
     return [TAG_A_getInstance(), TAG_ABBR_getInstance(), TAG_ADDRESS_getInstance(), TAG_AREA_getInstance(), TAG_ARTICLE_getInstance(), TAG_ASIDE_getInstance(), TAG_AUDIO_getInstance(), TAG_B_getInstance(), TAG_BASE_getInstance(), TAG_BDI_getInstance(), TAG_BDO_getInstance(), TAG_BLOCKQUOTE_getInstance(), TAG_BODY_getInstance(), TAG_BR_getInstance(), TAG_BUTTON_getInstance(), TAG_CANVAS_getInstance(), TAG_CAPTION_getInstance(), TAG_CITE_getInstance(), TAG_CODE_getInstance(), TAG_COL_getInstance(), TAG_COLGROUP_getInstance(), TAG_DATA_getInstance(), TAG_DATALIST_getInstance(), TAG_DD_getInstance(), TAG_DEL_getInstance(), TAG_DETAILS_getInstance(), TAG_DFN_getInstance(), TAG_DIALOG_getInstance(), TAG_DIV_getInstance(), TAG_DL_getInstance(), TAG_DT_getInstance(), TAG_EM_getInstance(), TAG_EMBED_getInstance(), TAG_FIELDSET_getInstance(), TAG_FIGCAPTION_getInstance(), TAG_FIGURE_getInstance(), TAG_FOOTER_getInstance(), TAG_FORM_getInstance(), TAG_H1_getInstance(), TAG_H2_getInstance(), TAG_H3_getInstance(), TAG_H4_getInstance(), TAG_H5_getInstance(), TAG_H6_getInstance(), TAG_HEAD_getInstance(), TAG_HEADER_getInstance(), TAG_HGROUP_getInstance(), TAG_HR_getInstance(), TAG_HTML_getInstance(), TAG_I_getInstance(), TAG_IFRAME_getInstance(), TAG_IMG_getInstance(), TAG_INPUT_getInstance(), TAG_INS_getInstance(), TAG_KBD_getInstance(), TAG_LABEL_getInstance(), TAG_LEGEND_getInstance(), TAG_LI_getInstance(), TAG_LINK_getInstance(), TAG_MAIN_getInstance(), TAG_MAP_getInstance(), TAG_MARK_getInstance(), TAG_MATH_getInstance(), TAG_MENU_getInstance(), TAG_MENUITEM_getInstance(), TAG_META_getInstance(), TAG_METER_getInstance(), TAG_NAV_getInstance(), TAG_NOSCRIPT_getInstance(), TAG_OBJECT_getInstance(), TAG_OL_getInstance(), TAG_OPTGROUP_getInstance(), TAG_OPTION_getInstance(), TAG_OUTPUT_getInstance(), TAG_P_getInstance(), TAG_PARAM_getInstance(), TAG_PICTURE_getInstance(), TAG_PRE_getInstance(), TAG_PROGRESS_getInstance(), TAG_Q_getInstance(), TAG_RB_getInstance(), TAG_RP_getInstance(), TAG_RT_getInstance(), TAG_RTC_getInstance(), TAG_RUBY_getInstance(), TAG_S_getInstance(), TAG_SAMP_getInstance(), TAG_SCRIPT_getInstance(), TAG_SECTION_getInstance(), TAG_SELECT_getInstance(), TAG_SLOT_getInstance(), TAG_SMALL_getInstance(), TAG_SOURCE_getInstance(), TAG_SPAN_getInstance(), TAG_STRONG_getInstance(), TAG_STYLE_getInstance(), TAG_SUB_getInstance(), TAG_SUMMARY_getInstance(), TAG_SUP_getInstance(), TAG_SVG_getInstance(), TAG_TABLE_getInstance(), TAG_TBODY_getInstance(), TAG_TD_getInstance(), TAG_TEMPLATE_getInstance(), TAG_TEXTAREA_getInstance(), TAG_TFOOT_getInstance(), TAG_TH_getInstance(), TAG_THEAD_getInstance(), TAG_TIME_getInstance(), TAG_TITLE_getInstance(), TAG_TR_getInstance(), TAG_TRACK_getInstance(), TAG_U_getInstance(), TAG_UL_getInstance(), TAG_VAR_getInstance(), TAG_VIDEO_getInstance(), TAG_WBR_getInstance()];
   }
-  function valueOf_56(value) {
+  function valueOf_57(value) {
     switch (value) {
       case 'A':
         return TAG_A_getInstance();
@@ -18421,10 +18983,10 @@
         break;
     }
   }
-  function get_entries_56() {
-    if ($ENTRIES_56 == null)
-      $ENTRIES_56 = enumEntries(values_56());
-    return $ENTRIES_56;
+  function get_entries_57() {
+    if ($ENTRIES_57 == null)
+      $ENTRIES_57 = enumEntries(values_57());
+    return $ENTRIES_57;
   }
   var TAG_entriesInitialized;
   function TAG_initEntries() {
@@ -18549,7 +19111,7 @@
     TAG_VIDEO_instance = new TAG('VIDEO', 115, 'video');
     TAG_WBR_instance = new TAG('WBR', 116, 'wbr');
   }
-  var $ENTRIES_56;
+  var $ENTRIES_57;
   function TAG(name, ordinal, tagName) {
     Enum.call(this, name, ordinal);
     this.tagName_1 = tagName;
@@ -18565,10 +19127,10 @@
   var Align_WRAP_instance;
   var Align_NOWRAP_instance;
   var Align_JUSTIFY_instance;
-  function values_57() {
+  function values_58() {
     return [Align_LEFT_getInstance(), Align_START_getInstance(), Align_CENTER_getInstance(), Align_RIGHT_getInstance(), Align_END_getInstance(), Align_WRAP_getInstance(), Align_NOWRAP_getInstance(), Align_JUSTIFY_getInstance()];
   }
-  function valueOf_57(value) {
+  function valueOf_58(value) {
     switch (value) {
       case 'LEFT':
         return Align_LEFT_getInstance();
@@ -18592,10 +19154,10 @@
         break;
     }
   }
-  function get_entries_57() {
-    if ($ENTRIES_57 == null)
-      $ENTRIES_57 = enumEntries(values_57());
-    return $ENTRIES_57;
+  function get_entries_58() {
+    if ($ENTRIES_58 == null)
+      $ENTRIES_58 = enumEntries(values_58());
+    return $ENTRIES_58;
   }
   var Align_entriesInitialized;
   function Align_initEntries() {
@@ -18611,7 +19173,7 @@
     Align_NOWRAP_instance = new Align('NOWRAP', 6, 'kv-text-nowrap');
     Align_JUSTIFY_instance = new Align('JUSTIFY', 7, 'kv-text-justify');
   }
-  var $ENTRIES_57;
+  var $ENTRIES_58;
   function Align(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -18666,7 +19228,7 @@
     var tmp = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction = Tag$type$delegate$lambda(this);
-    tmp.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction)).provideDelegate_z62loi_k$(this, type$factory_8());
+    tmp.type$delegate_1 = (new RefreshDelegateProvider_0(this, type, refreshFunction)).provideDelegate_z62loi_k$(this, type$factory_11());
     var tmp_0 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_0 = Tag$content$delegate$lambda(this);
@@ -18674,7 +19236,7 @@
     var tmp_1 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_1 = Tag$rich$delegate$lambda(this);
-    tmp_1.rich$delegate_1 = (new RefreshDelegateProvider_0(this, rich, refreshFunction_1)).provideDelegate_z62loi_k$(this, rich$factory());
+    tmp_1.rich$delegate_1 = (new RefreshDelegateProvider_0(this, rich, refreshFunction_1)).provideDelegate_z62loi_k$(this, rich$factory_2());
     var tmp_2 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_2 = Tag$align$delegate$lambda(this);
@@ -18705,10 +19267,10 @@
       init(this);
   }
   protoOf(Tag).set_type_um17n3_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_9(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.type$delegate_1, this, type$factory_12(), _set____db54di);
   };
   protoOf(Tag).get_type_wovaf7_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_10());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.type$delegate_1, this, type$factory_13());
   };
   protoOf(Tag).set_content_i5lrjv_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.content$delegate_1, this, content$factory_0(), _set____db54di);
@@ -18717,10 +19279,10 @@
     return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.content$delegate_1, this, content$factory_1());
   };
   protoOf(Tag).set_rich_1alg2s_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.rich$delegate_1, this, rich$factory_0(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.rich$delegate_1, this, rich$factory_3(), _set____db54di);
   };
   protoOf(Tag).get_rich_woto9x_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.rich$delegate_1, this, rich$factory_1());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.rich$delegate_1, this, rich$factory_4());
   };
   protoOf(Tag).set_align_odqfc5_k$ = function (_set____db54di) {
     return WidgetRefreshDelegate__setValue_impl_8tnbha(this.align$delegate_1, this, align$factory_0(), _set____db54di);
@@ -19347,7 +19909,7 @@
     Align_initEntries();
     return Align_JUSTIFY_instance;
   }
-  function type$factory_8() {
+  function type$factory_11() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
@@ -19361,7 +19923,7 @@
       return receiver.set_content_i5lrjv_k$(value);
     });
   }
-  function rich$factory() {
+  function rich$factory_2() {
     return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
       return receiver.get_rich_woto9x_k$();
     }, function (receiver, value) {
@@ -19382,14 +19944,14 @@
       return receiver.set_templates_fvcr6p_k$(value);
     });
   }
-  function type$factory_9() {
+  function type$factory_12() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
       return receiver.set_type_um17n3_k$(value);
     });
   }
-  function type$factory_10() {
+  function type$factory_13() {
     return getPropertyCallableRef('type', 1, KMutableProperty1, function (receiver) {
       return receiver.get_type_wovaf7_k$();
     }, function (receiver, value) {
@@ -19410,14 +19972,14 @@
       return receiver.set_content_i5lrjv_k$(value);
     });
   }
-  function rich$factory_0() {
+  function rich$factory_3() {
     return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
       return receiver.get_rich_woto9x_k$();
     }, function (receiver, value) {
       return receiver.set_rich_1alg2s_k$(value);
     });
   }
-  function rich$factory_1() {
+  function rich$factory_4() {
     return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
       return receiver.get_rich_woto9x_k$();
     }, function (receiver, value) {
@@ -19505,7 +20067,7 @@
     var tmp_0 = this;
     // Inline function 'io.kvision.core.Widget.refreshOnUpdate' call
     var refreshFunction_0 = TextNode$rich$delegate$lambda(this);
-    tmp_0.rich$delegate_1 = (new RefreshDelegateProvider_0(this, rich, refreshFunction_0)).provideDelegate_z62loi_k$(this, rich$factory_2());
+    tmp_0.rich$delegate_1 = (new RefreshDelegateProvider_0(this, rich, refreshFunction_0)).provideDelegate_z62loi_k$(this, rich$factory_5());
     if (init == null)
       null;
     else
@@ -19518,10 +20080,10 @@
     return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.content$delegate_1, this, content$factory_4());
   };
   protoOf(TextNode).set_rich_1alg2s_k$ = function (_set____db54di) {
-    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.rich$delegate_1, this, rich$factory_3(), _set____db54di);
+    return WidgetRefreshDelegate__setValue_impl_8tnbha(this.rich$delegate_1, this, rich$factory_6(), _set____db54di);
   };
   protoOf(TextNode).get_rich_woto9x_k$ = function () {
-    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.rich$delegate_1, this, rich$factory_4());
+    return WidgetRefreshDelegate__getValue_impl_lmjmy2(this.rich$delegate_1, this, rich$factory_7());
   };
   protoOf(TextNode).getElement_acounu_k$ = function () {
     return null;
@@ -19544,7 +20106,7 @@
       return receiver.set_content_lzqutq_k$(value);
     });
   }
-  function rich$factory_2() {
+  function rich$factory_5() {
     return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
       return receiver.get_rich_woto9x_k$();
     }, function (receiver, value) {
@@ -19565,19 +20127,39 @@
       return receiver.set_content_lzqutq_k$(value);
     });
   }
-  function rich$factory_3() {
+  function rich$factory_6() {
     return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
       return receiver.get_rich_woto9x_k$();
     }, function (receiver, value) {
       return receiver.set_rich_1alg2s_k$(value);
     });
   }
-  function rich$factory_4() {
+  function rich$factory_7() {
     return getPropertyCallableRef('rich', 1, KMutableProperty1, function (receiver) {
       return receiver.get_rich_woto9x_k$();
     }, function (receiver, value) {
       return receiver.set_rich_1alg2s_k$(value);
     });
+  }
+  function ul(_this__u8e3s4, elements, rich, className, init) {
+    elements = elements === VOID ? null : elements;
+    rich = rich === VOID ? false : rich;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var ul = new Ul(elements, rich, className, init);
+    _this__u8e3s4.add_rekwpt_k$(ul);
+    return ul;
+  }
+  function Ul(elements, rich, className, init) {
+    elements = elements === VOID ? null : elements;
+    rich = rich === VOID ? false : rich;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    ListTag.call(this, ListType_UL_getInstance(), elements, rich, className);
+    if (init == null)
+      null;
+    else
+      init(this);
   }
   function _get_defaultLanguage__md4goo($this) {
     return $this.defaultLanguage_1;
@@ -20723,6 +21305,32 @@
     _this__u8e3s4.add_rekwpt_k$(gridPanel);
     return gridPanel;
   }
+  function HPanel(wrap, justify, alignItems, spacing, useWrappers, className, init) {
+    wrap = wrap === VOID ? null : wrap;
+    justify = justify === VOID ? null : justify;
+    alignItems = alignItems === VOID ? null : alignItems;
+    spacing = spacing === VOID ? null : spacing;
+    useWrappers = useWrappers === VOID ? false : useWrappers;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    FlexPanel.call(this, null, wrap, justify, alignItems, null, spacing, useWrappers, className);
+    if (init == null)
+      null;
+    else
+      init(this);
+  }
+  function hPanel(_this__u8e3s4, wrap, justify, alignItems, spacing, useWrappers, className, init) {
+    wrap = wrap === VOID ? null : wrap;
+    justify = justify === VOID ? null : justify;
+    alignItems = alignItems === VOID ? null : alignItems;
+    spacing = spacing === VOID ? null : spacing;
+    useWrappers = useWrappers === VOID ? false : useWrappers;
+    className = className === VOID ? null : className;
+    init = init === VOID ? null : init;
+    var hpanel = new HPanel(wrap, justify, alignItems, spacing, useWrappers, className, init);
+    _this__u8e3s4.add_rekwpt_k$(hpanel);
+    return hpanel;
+  }
   function root(_this__u8e3s4, id, containerType, addRow, init) {
     containerType = containerType === VOID ? ContainerType_NONE_getInstance() : containerType;
     addRow = addRow === VOID ? !containerType.equals(ContainerType_FIXED_getInstance()) && !containerType.equals(ContainerType_NONE_getInstance()) : addRow;
@@ -20906,7 +21514,7 @@
         // Inline function 'kotlin.arrayOf' call
         // Inline function 'kotlin.js.unsafeCast' call
         // Inline function 'kotlin.js.asDynamic' call
-        tmp_0 = [h_1('style', tmp$ret$14)];
+        tmp_0 = [h_2('style', tmp$ret$14)];
       } else {
         // Inline function 'kotlin.arrayOf' call
         // Inline function 'kotlin.js.unsafeCast' call
@@ -21063,7 +21671,7 @@
     $this$snOpt.class = this_0;
     return Unit_getInstance();
   }
-  function apply$ref_7($boundThis) {
+  function apply$ref_10($boundThis) {
     var l = function (p0) {
       return apply($boundThis, p0);
     };
@@ -21148,7 +21756,7 @@
       var block = Root$render$lambda;
       // Inline function 'io.kvision.utils.vNodeData' call
       var tmp$ret$0 = {};
-      var tmp$ret$1 = apply$ref_7(tmp$ret$0)(block);
+      var tmp$ret$1 = apply$ref_10(tmp$ret$0)(block);
       // Inline function 'kotlin.arrayOf' call
       // Inline function 'kotlin.js.unsafeCast' call
       // Inline function 'kotlin.js.asDynamic' call
@@ -21223,7 +21831,7 @@
   };
   protoOf(Root).restart_nz0dof_k$ = function () {
     if (!(this.rootVnode_1 == null)) {
-      this.rootVnode_1 = KVManager_getInstance().patch_5fv7el_k$(ensureNotNull(this.rootVnode_1), h_2('div'));
+      this.rootVnode_1 = KVManager_getInstance().patch_5fv7el_k$(ensureNotNull(this.rootVnode_1), h_3('div'));
       this.rootVnode_1 = KVManager_getInstance().patch_5fv7el_k$(ensureNotNull(this.rootVnode_1), this.renderVNode_r2mn32_k$());
     }
   };
@@ -21276,10 +21884,10 @@
   var ContainerType_LG_instance;
   var ContainerType_XL_instance;
   var ContainerType_XXL_instance;
-  function values_58() {
+  function values_59() {
     return [ContainerType_NONE_getInstance(), ContainerType_FIXED_getInstance(), ContainerType_FLUID_getInstance(), ContainerType_SM_getInstance(), ContainerType_MD_getInstance(), ContainerType_LG_getInstance(), ContainerType_XL_getInstance(), ContainerType_XXL_getInstance()];
   }
-  function valueOf_58(value) {
+  function valueOf_59(value) {
     switch (value) {
       case 'NONE':
         return ContainerType_NONE_getInstance();
@@ -21303,10 +21911,10 @@
         break;
     }
   }
-  function get_entries_58() {
-    if ($ENTRIES_58 == null)
-      $ENTRIES_58 = enumEntries(values_58());
-    return $ENTRIES_58;
+  function get_entries_59() {
+    if ($ENTRIES_59 == null)
+      $ENTRIES_59 = enumEntries(values_59());
+    return $ENTRIES_59;
   }
   var ContainerType_entriesInitialized;
   function ContainerType_initEntries() {
@@ -21322,7 +21930,7 @@
     ContainerType_XL_instance = new ContainerType('XL', 6, 'container-xl');
     ContainerType_XXL_instance = new ContainerType('XXL', 7, 'container-xxl');
   }
-  var $ENTRIES_58;
+  var $ENTRIES_59;
   function ContainerType(name, ordinal, type) {
     Enum.call(this, name, ordinal);
     this.type_1 = type;
@@ -22265,6 +22873,13 @@
     return DateSerializer_instance;
   }
   function obj(init) {
+    var tmp = {};
+    // Inline function 'kotlin.apply' call
+    var this_0 = (tmp == null ? true : !(tmp == null)) ? tmp : THROW_CCE();
+    init(this_0);
+    return this_0;
+  }
+  function obj_0(init) {
     // Inline function 'kotlin.apply' call
     var this_0 = new Object();
     init(this_0);
@@ -22273,12 +22888,13 @@
   function delete_0(thing, key) {
     delete(thing[key]);
   }
-  function obj_0(init) {
-    var tmp = {};
-    // Inline function 'kotlin.apply' call
-    var this_0 = (tmp == null ? true : !(tmp == null)) ? tmp : THROW_CCE();
-    init(this_0);
-    return this_0;
+  function createInstance(_this__u8e3s4, args) {
+    var jsClassConstructor = _this__u8e3s4;
+    // Inline function 'kotlin.collections.toTypedArray' call
+    var this_0 = plus_1(listOf_0(null), args);
+    var argsArray = copyToArray(this_0);
+    // Inline function 'kotlin.js.unsafeCast' call
+    return new (Function.prototype.bind.apply(jsClassConstructor, argsArray))();
   }
   function Serialization$plain$lambda($this$Json) {
     $this$Json.set_serializersModule_6xge6s_k$(serializersModuleOf(getKClass(Date), DateSerializer_getInstance()));
@@ -22359,12 +22975,12 @@
   function snOpt(block) {
     // Inline function 'io.kvision.utils.vNodeData' call
     var tmp$ret$0 = {};
-    return apply$ref_8(tmp$ret$0)(block);
+    return apply$ref_11(tmp$ret$0)(block);
   }
   function vNodeData() {
     return {};
   }
-  function apply$ref_8($boundThis) {
+  function apply$ref_11($boundThis) {
     var l = function (p0) {
       return apply($boundThis, p0);
     };
@@ -22512,90 +23128,102 @@
   _.$_$ = _.$_$ || {};
   _.$_$.a = AlignContent_CENTER_getInstance;
   _.$_$.b = AlignItems_CENTER_getInstance;
-  _.$_$.c = BorderStyle_NONE_getInstance;
-  _.$_$.d = Col_DARKSLATEGRAY_getInstance;
-  _.$_$.e = Display_BLOCK_getInstance;
-  _.$_$.f = Display_FLEX_getInstance;
-  _.$_$.g = FlexWrap_WRAP_getInstance;
-  _.$_$.h = JustifyContent_SPACEBETWEEN_getInstance;
-  _.$_$.i = Overflow_HIDDEN_getInstance;
-  _.$_$.j = TextAlign_CENTER_getInstance;
-  _.$_$.k = TextAlign_LEFT_getInstance;
-  _.$_$.l = TextOverflow_ELLIPSIS_getInstance;
-  _.$_$.m = WhiteSpace_NOWRAP_getInstance;
-  _.$_$.n = ButtonStyle_LIGHT_getInstance;
-  _.$_$.o = ButtonStyle_PRIMARY_getInstance;
-  _.$_$.p = ButtonType_BUTTON_getInstance;
-  _.$_$.q = ButtonType_SUBMIT_getInstance;
-  _.$_$.r = InputType_NUMBER_getInstance;
-  _.$_$.s = TAG_FORM_getInstance;
-  _.$_$.t = TAG_H6_getInstance;
-  _.$_$.u = ContainerType_FLUID_getInstance;
-  _.$_$.v = add$default;
-  _.$_$.w = WidgetRefreshDelegate__getValue_impl_lmjmy2;
-  _.$_$.x = WidgetRefreshDelegate__setValue_impl_8tnbha;
-  _.$_$.y = Companion_getInstance_0;
-  _.$_$.z = MaskManager_getInstance;
-  _.$_$.a1 = I18n_getInstance;
-  _.$_$.b1 = Companion_getInstance_8;
-  _.$_$.c1 = RoutingManager_getInstance;
-  _.$_$.d1 = CoreModule_getInstance;
-  _.$_$.e1 = addAll;
-  _.$_$.f1 = add;
-  _.$_$.g1 = AttributeSetBuilder;
-  _.$_$.h1 = Background;
-  _.$_$.i1 = Border;
-  _.$_$.j1 = add_0;
-  _.$_$.k1 = ClassSetBuilder;
-  _.$_$.l1 = Container;
-  _.$_$.m1 = CssClass;
-  _.$_$.n1 = DomAttribute;
-  _.$_$.o1 = RefreshDelegateProvider_0;
-  _.$_$.p1 = checkBox;
-  _.$_$.q1 = MaskFactory;
-  _.$_$.r1 = MaskOptions;
-  _.$_$.s1 = Mask;
-  _.$_$.t1 = Password;
-  _.$_$.u1 = Text;
-  _.$_$.v1 = textInput;
-  _.$_$.w1 = text;
-  _.$_$.x1 = FormPanel;
-  _.$_$.y1 = Button;
-  _.$_$.z1 = H3;
-  _.$_$.a2 = Link;
-  _.$_$.b2 = Tag;
-  _.$_$.c2 = button;
-  _.$_$.d2 = div;
-  _.$_$.e2 = h1;
-  _.$_$.f2 = h2;
-  _.$_$.g2 = h3;
-  _.$_$.h2 = h4;
-  _.$_$.i2 = h5;
-  _.$_$.j2 = h6;
-  _.$_$.k2 = icon;
-  _.$_$.l2 = image;
-  _.$_$.m2 = p;
-  _.$_$.n2 = span;
-  _.$_$.o2 = ntr;
-  _.$_$.p2 = trans_0;
-  _.$_$.q2 = trans;
-  _.$_$.r2 = tr;
-  _.$_$.s2 = I18nManager;
-  _.$_$.t2 = SimplePanel;
-  _.$_$.u2 = VPanel;
-  _.$_$.v2 = gridPanel;
-  _.$_$.w2 = root;
-  _.$_$.x2 = stackPanel;
-  _.$_$.y2 = vPanel;
-  _.$_$.z2 = KVRouter;
-  _.$_$.a3 = RouterFactory;
-  _.$_$.b3 = ObservableValue;
-  _.$_$.c3 = get_auto;
-  _.$_$.d3 = get_perc;
-  _.$_$.e3 = get_px;
-  _.$_$.f3 = Application;
-  _.$_$.g3 = ModuleInitializer;
-  _.$_$.h3 = startApplication;
+  _.$_$.c = AlignItems_START_getInstance;
+  _.$_$.d = BorderStyle_NONE_getInstance;
+  _.$_$.e = Col_DARKSLATEGRAY_getInstance;
+  _.$_$.f = Display_BLOCK_getInstance;
+  _.$_$.g = Display_FLEX_getInstance;
+  _.$_$.h = FlexWrap_WRAP_getInstance;
+  _.$_$.i = FontWeight_BOLD_getInstance;
+  _.$_$.j = FontWeight_LIGHTER_getInstance;
+  _.$_$.k = FontWeight_NORMAL_getInstance;
+  _.$_$.l = JustifyContent_SPACEBETWEEN_getInstance;
+  _.$_$.m = ListStyleType_NONE_getInstance;
+  _.$_$.n = Overflow_HIDDEN_getInstance;
+  _.$_$.o = TextAlign_CENTER_getInstance;
+  _.$_$.p = TextAlign_LEFT_getInstance;
+  _.$_$.q = TextOverflow_ELLIPSIS_getInstance;
+  _.$_$.r = WhiteSpace_NOWRAP_getInstance;
+  _.$_$.s = ButtonStyle_LIGHT_getInstance;
+  _.$_$.t = ButtonStyle_PRIMARY_getInstance;
+  _.$_$.u = ButtonType_BUTTON_getInstance;
+  _.$_$.v = ButtonType_SUBMIT_getInstance;
+  _.$_$.w = ImageShape_CIRCLE_getInstance;
+  _.$_$.x = InputType_NUMBER_getInstance;
+  _.$_$.y = TAG_FORM_getInstance;
+  _.$_$.z = TAG_H6_getInstance;
+  _.$_$.a1 = ContainerType_FLUID_getInstance;
+  _.$_$.b1 = add$default;
+  _.$_$.c1 = WidgetRefreshDelegate__getValue_impl_lmjmy2;
+  _.$_$.d1 = WidgetRefreshDelegate__setValue_impl_8tnbha;
+  _.$_$.e1 = Companion_getInstance_0;
+  _.$_$.f1 = MaskManager_getInstance;
+  _.$_$.g1 = I18n_getInstance;
+  _.$_$.h1 = Companion_getInstance_8;
+  _.$_$.i1 = RoutingManager_getInstance;
+  _.$_$.j1 = CoreModule_getInstance;
+  _.$_$.k1 = addAll;
+  _.$_$.l1 = add;
+  _.$_$.m1 = AttributeSetBuilder;
+  _.$_$.n1 = Background;
+  _.$_$.o1 = Border;
+  _.$_$.p1 = add_0;
+  _.$_$.q1 = ClassSetBuilder;
+  _.$_$.r1 = Container;
+  _.$_$.s1 = CssClass;
+  _.$_$.t1 = DomAttribute;
+  _.$_$.u1 = ListStyle;
+  _.$_$.v1 = RefreshDelegateProvider_0;
+  _.$_$.w1 = checkBox;
+  _.$_$.x1 = MaskFactory;
+  _.$_$.y1 = MaskOptions;
+  _.$_$.z1 = Mask;
+  _.$_$.a2 = Password;
+  _.$_$.b2 = Text;
+  _.$_$.c2 = textInput;
+  _.$_$.d2 = text;
+  _.$_$.e2 = FormPanel;
+  _.$_$.f2 = Button;
+  _.$_$.g2 = H3;
+  _.$_$.h2 = Link;
+  _.$_$.i2 = Tag;
+  _.$_$.j2 = button;
+  _.$_$.k2 = div;
+  _.$_$.l2 = h1;
+  _.$_$.m2 = h2;
+  _.$_$.n2 = h3;
+  _.$_$.o2 = h4;
+  _.$_$.p2 = h5;
+  _.$_$.q2 = h6;
+  _.$_$.r2 = icon;
+  _.$_$.s2 = image;
+  _.$_$.t2 = li;
+  _.$_$.u2 = ol;
+  _.$_$.v2 = p;
+  _.$_$.w2 = span;
+  _.$_$.x2 = ul;
+  _.$_$.y2 = ntr;
+  _.$_$.z2 = trans_0;
+  _.$_$.a3 = trans;
+  _.$_$.b3 = tr;
+  _.$_$.c3 = I18nManager;
+  _.$_$.d3 = SimplePanel;
+  _.$_$.e3 = VPanel;
+  _.$_$.f3 = gridPanel;
+  _.$_$.g3 = hPanel;
+  _.$_$.h3 = root;
+  _.$_$.i3 = stackPanel;
+  _.$_$.j3 = vPanel;
+  _.$_$.k3 = KVRouter;
+  _.$_$.l3 = RouterFactory;
+  _.$_$.m3 = ObservableValue;
+  _.$_$.n3 = get_auto;
+  _.$_$.o3 = createInstance;
+  _.$_$.p3 = get_perc;
+  _.$_$.q3 = get_px;
+  _.$_$.r3 = Application;
+  _.$_$.s3 = ModuleInitializer;
+  _.$_$.t3 = startApplication;
   //endregion
   return _;
 }));

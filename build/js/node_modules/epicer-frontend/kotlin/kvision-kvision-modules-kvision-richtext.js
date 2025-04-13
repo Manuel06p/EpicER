@@ -15,13 +15,13 @@
 }(function (_, kotlin_io_kvision_kvision, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var I18n_getInstance = kotlin_io_kvision_kvision.$_$.a1;
-  var iterator = kotlin_kotlin.$_$.za;
-  var Unit_getInstance = kotlin_kotlin.$_$.d5;
-  var protoOf = kotlin_kotlin.$_$.jb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.g3;
-  var initMetadataForObject = kotlin_kotlin.$_$.la;
-  var VOID = kotlin_kotlin.$_$.f;
+  var I18n_getInstance = kotlin_io_kvision_kvision.$_$.g1;
+  var iterator = kotlin_kotlin.$_$.cb;
+  var Unit_getInstance = kotlin_kotlin.$_$.e5;
+  var protoOf = kotlin_kotlin.$_$.mb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.s3;
+  var initMetadataForObject = kotlin_kotlin.$_$.oa;
+  var VOID = kotlin_kotlin.$_$.g;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(RichTextModule, 'RichTextModule', VOID, VOID, [ModuleInitializer]);

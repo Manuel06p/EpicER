@@ -1,8 +1,8 @@
 (function (factory) {
   if (typeof define === 'function' && define.amd)
-    define(['exports', './kotlin-kotlin-stdlib.js', './kvision.js', './kvision-kvision-modules-kvision-i18n.js', './kvision-kvision-modules-kvision-bootstrap.js', './kvision-kvision-modules-kvision-routing-navigo-ng.js', './kvision-kvision-modules-kvision-datetime.js', './kvision-kvision-modules-kvision-richtext.js', './kvision-kvision-modules-kvision-tom-select.js', './kvision-kvision-modules-kvision-bootstrap-upload.js', './kvision-kvision-modules-kvision-imask.js', './kvision-kvision-modules-kvision-toastify.js', './kvision-kvision-modules-kvision-fontawesome.js', './kvision-kvision-modules-kvision-bootstrap-icons.js', './kvision-kvision-modules-kvision-print.js', './kvision-kvision-modules-kvision-chart.js', './kvision-kvision-modules-kvision-tabulator.js', './kvision-kvision-modules-kvision-maps.js', './kotlinx-serialization-kotlinx-serialization-json.js', './epicer-common.js', './kotlinx-serialization-kotlinx-serialization-core.js', './kotlinx-coroutines-core.js', './kvision-kvision-modules-kvision-state.js'], factory);
+    define(['exports', './kotlin-kotlin-stdlib.js', './kvision.js', './kvision-kvision-modules-kvision-i18n.js', './kvision-kvision-modules-kvision-bootstrap.js', './kvision-kvision-modules-kvision-routing-navigo-ng.js', './kvision-kvision-modules-kvision-datetime.js', './kvision-kvision-modules-kvision-richtext.js', './kvision-kvision-modules-kvision-tom-select.js', './kvision-kvision-modules-kvision-bootstrap-upload.js', './kvision-kvision-modules-kvision-imask.js', './kvision-kvision-modules-kvision-toastify.js', './kvision-kvision-modules-kvision-fontawesome.js', './kvision-kvision-modules-kvision-bootstrap-icons.js', './kvision-kvision-modules-kvision-print.js', './kvision-kvision-modules-kvision-chart.js', './kvision-kvision-modules-kvision-tabulator.js', './kvision-kvision-modules-kvision-maps.js', './kotlinx-serialization-kotlinx-serialization-json.js', './epicer-common.js', './kotlinx-serialization-kotlinx-serialization-core.js', './kvision-kvision-modules-kvision-state.js', './kotlinx-coroutines-core.js'], factory);
   else if (typeof exports === 'object')
-    factory(module.exports, require('./kotlin-kotlin-stdlib.js'), require('./kvision.js'), require('./kvision-kvision-modules-kvision-i18n.js'), require('./kvision-kvision-modules-kvision-bootstrap.js'), require('./kvision-kvision-modules-kvision-routing-navigo-ng.js'), require('./kvision-kvision-modules-kvision-datetime.js'), require('./kvision-kvision-modules-kvision-richtext.js'), require('./kvision-kvision-modules-kvision-tom-select.js'), require('./kvision-kvision-modules-kvision-bootstrap-upload.js'), require('./kvision-kvision-modules-kvision-imask.js'), require('./kvision-kvision-modules-kvision-toastify.js'), require('./kvision-kvision-modules-kvision-fontawesome.js'), require('./kvision-kvision-modules-kvision-bootstrap-icons.js'), require('./kvision-kvision-modules-kvision-print.js'), require('./kvision-kvision-modules-kvision-chart.js'), require('./kvision-kvision-modules-kvision-tabulator.js'), require('./kvision-kvision-modules-kvision-maps.js'), require('./kotlinx-serialization-kotlinx-serialization-json.js'), require('./epicer-common.js'), require('./kotlinx-serialization-kotlinx-serialization-core.js'), require('./kotlinx-coroutines-core.js'), require('./kvision-kvision-modules-kvision-state.js'));
+    factory(module.exports, require('./kotlin-kotlin-stdlib.js'), require('./kvision.js'), require('./kvision-kvision-modules-kvision-i18n.js'), require('./kvision-kvision-modules-kvision-bootstrap.js'), require('./kvision-kvision-modules-kvision-routing-navigo-ng.js'), require('./kvision-kvision-modules-kvision-datetime.js'), require('./kvision-kvision-modules-kvision-richtext.js'), require('./kvision-kvision-modules-kvision-tom-select.js'), require('./kvision-kvision-modules-kvision-bootstrap-upload.js'), require('./kvision-kvision-modules-kvision-imask.js'), require('./kvision-kvision-modules-kvision-toastify.js'), require('./kvision-kvision-modules-kvision-fontawesome.js'), require('./kvision-kvision-modules-kvision-bootstrap-icons.js'), require('./kvision-kvision-modules-kvision-print.js'), require('./kvision-kvision-modules-kvision-chart.js'), require('./kvision-kvision-modules-kvision-tabulator.js'), require('./kvision-kvision-modules-kvision-maps.js'), require('./kotlinx-serialization-kotlinx-serialization-json.js'), require('./epicer-common.js'), require('./kotlinx-serialization-kotlinx-serialization-core.js'), require('./kvision-kvision-modules-kvision-state.js'), require('./kotlinx-coroutines-core.js'));
   else {
     if (typeof globalThis['kotlin-kotlin-stdlib'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:frontend'. Its dependency 'kotlin-kotlin-stdlib' was not found. Please, check whether 'kotlin-kotlin-stdlib' is loaded prior to 'epicer.frontend:frontend'.");
@@ -64,33 +64,33 @@
     if (typeof globalThis['kotlinx-serialization-kotlinx-serialization-core'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:frontend'. Its dependency 'kotlinx-serialization-kotlinx-serialization-core' was not found. Please, check whether 'kotlinx-serialization-kotlinx-serialization-core' is loaded prior to 'epicer.frontend:frontend'.");
     }
-    if (typeof globalThis['kotlinx-coroutines-core'] === 'undefined') {
-      throw new Error("Error loading module 'epicer.frontend:frontend'. Its dependency 'kotlinx-coroutines-core' was not found. Please, check whether 'kotlinx-coroutines-core' is loaded prior to 'epicer.frontend:frontend'.");
-    }
     if (typeof globalThis['kvision-kvision-modules-kvision-state'] === 'undefined') {
       throw new Error("Error loading module 'epicer.frontend:frontend'. Its dependency 'kvision-kvision-modules-kvision-state' was not found. Please, check whether 'kvision-kvision-modules-kvision-state' is loaded prior to 'epicer.frontend:frontend'.");
     }
-    globalThis['epicer.frontend:frontend'] = factory(typeof globalThis['epicer.frontend:frontend'] === 'undefined' ? {} : globalThis['epicer.frontend:frontend'], globalThis['kotlin-kotlin-stdlib'], kvision, globalThis['kvision-kvision-modules-kvision-i18n'], globalThis['kvision-kvision-modules-kvision-bootstrap'], globalThis['kvision-kvision-modules-kvision-routing-navigo-ng'], globalThis['kvision-kvision-modules-kvision-datetime'], globalThis['kvision-kvision-modules-kvision-richtext'], globalThis['kvision-kvision-modules-kvision-tom-select'], globalThis['kvision-kvision-modules-kvision-bootstrap-upload'], globalThis['kvision-kvision-modules-kvision-imask'], globalThis['kvision-kvision-modules-kvision-toastify'], globalThis['kvision-kvision-modules-kvision-fontawesome'], globalThis['kvision-kvision-modules-kvision-bootstrap-icons'], globalThis['kvision-kvision-modules-kvision-print'], globalThis['kvision-kvision-modules-kvision-chart'], globalThis['kvision-kvision-modules-kvision-tabulator'], globalThis['kvision-kvision-modules-kvision-maps'], globalThis['kotlinx-serialization-kotlinx-serialization-json'], globalThis['epicer-common'], globalThis['kotlinx-serialization-kotlinx-serialization-core'], globalThis['kotlinx-coroutines-core'], globalThis['kvision-kvision-modules-kvision-state']);
+    if (typeof globalThis['kotlinx-coroutines-core'] === 'undefined') {
+      throw new Error("Error loading module 'epicer.frontend:frontend'. Its dependency 'kotlinx-coroutines-core' was not found. Please, check whether 'kotlinx-coroutines-core' is loaded prior to 'epicer.frontend:frontend'.");
+    }
+    globalThis['epicer.frontend:frontend'] = factory(typeof globalThis['epicer.frontend:frontend'] === 'undefined' ? {} : globalThis['epicer.frontend:frontend'], globalThis['kotlin-kotlin-stdlib'], kvision, globalThis['kvision-kvision-modules-kvision-i18n'], globalThis['kvision-kvision-modules-kvision-bootstrap'], globalThis['kvision-kvision-modules-kvision-routing-navigo-ng'], globalThis['kvision-kvision-modules-kvision-datetime'], globalThis['kvision-kvision-modules-kvision-richtext'], globalThis['kvision-kvision-modules-kvision-tom-select'], globalThis['kvision-kvision-modules-kvision-bootstrap-upload'], globalThis['kvision-kvision-modules-kvision-imask'], globalThis['kvision-kvision-modules-kvision-toastify'], globalThis['kvision-kvision-modules-kvision-fontawesome'], globalThis['kvision-kvision-modules-kvision-bootstrap-icons'], globalThis['kvision-kvision-modules-kvision-print'], globalThis['kvision-kvision-modules-kvision-chart'], globalThis['kvision-kvision-modules-kvision-tabulator'], globalThis['kvision-kvision-modules-kvision-maps'], globalThis['kotlinx-serialization-kotlinx-serialization-json'], globalThis['epicer-common'], globalThis['kotlinx-serialization-kotlinx-serialization-core'], globalThis['kvision-kvision-modules-kvision-state'], globalThis['kotlinx-coroutines-core']);
   }
-}(function (_, kotlin_kotlin, kotlin_io_kvision_kvision, kotlin_io_kvision_kvision_i18n, kotlin_io_kvision_kvision_bootstrap, kotlin_io_kvision_kvision_routing_navigo_ng, kotlin_io_kvision_kvision_datetime, kotlin_io_kvision_kvision_richtext, kotlin_io_kvision_kvision_tom_select, kotlin_io_kvision_kvision_bootstrap_upload, kotlin_io_kvision_kvision_imask, kotlin_io_kvision_kvision_toastify, kotlin_io_kvision_kvision_fontawesome, kotlin_io_kvision_kvision_bootstrap_icons, kotlin_io_kvision_kvision_print, kotlin_io_kvision_kvision_chart, kotlin_io_kvision_kvision_tabulator, kotlin_io_kvision_kvision_maps, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json, kotlin_epicer_common, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core, kotlin_io_kvision_kvision_state) {
+}(function (_, kotlin_kotlin, kotlin_io_kvision_kvision, kotlin_io_kvision_kvision_i18n, kotlin_io_kvision_kvision_bootstrap, kotlin_io_kvision_kvision_routing_navigo_ng, kotlin_io_kvision_kvision_datetime, kotlin_io_kvision_kvision_richtext, kotlin_io_kvision_kvision_tom_select, kotlin_io_kvision_kvision_bootstrap_upload, kotlin_io_kvision_kvision_imask, kotlin_io_kvision_kvision_toastify, kotlin_io_kvision_kvision_fontawesome, kotlin_io_kvision_kvision_bootstrap_icons, kotlin_io_kvision_kvision_print, kotlin_io_kvision_kvision_chart, kotlin_io_kvision_kvision_tabulator, kotlin_io_kvision_kvision_maps, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json, kotlin_epicer_common, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_io_kvision_kvision_state, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core) {
   'use strict';
   //region block: imports
-  var Unit_getInstance = kotlin_kotlin.$_$.d5;
-  var H3 = kotlin_io_kvision_kvision.$_$.z1;
-  var Application = kotlin_io_kvision_kvision.$_$.f3;
-  var I18n_getInstance = kotlin_io_kvision_kvision.$_$.a1;
-  var to = kotlin_kotlin.$_$.yf;
-  var mapOf = kotlin_kotlin.$_$.l7;
+  var Unit_getInstance = kotlin_kotlin.$_$.e5;
+  var H3 = kotlin_io_kvision_kvision.$_$.g2;
+  var Application = kotlin_io_kvision_kvision.$_$.r3;
+  var I18n_getInstance = kotlin_io_kvision_kvision.$_$.g1;
+  var to = kotlin_kotlin.$_$.bg;
+  var mapOf = kotlin_kotlin.$_$.n7;
   var DefaultI18nManager = kotlin_io_kvision_kvision_i18n.$_$.a;
-  var ThemeManager_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.d;
-  var root = kotlin_io_kvision_kvision.$_$.w2;
-  var SimplePanel = kotlin_io_kvision_kvision.$_$.t2;
+  var ThemeManager_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.g;
+  var root = kotlin_io_kvision_kvision.$_$.h3;
+  var SimplePanel = kotlin_io_kvision_kvision.$_$.d3;
   var Companion_getInstance = kotlin_io_kvision_kvision_routing_navigo_ng.$_$.a;
-  var VOID = kotlin_kotlin.$_$.f;
-  var protoOf = kotlin_kotlin.$_$.jb;
-  var initMetadataForClass = kotlin_kotlin.$_$.ga;
-  var BootstrapModule_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.f;
-  var BootstrapCssModule_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.e;
+  var VOID = kotlin_kotlin.$_$.g;
+  var protoOf = kotlin_kotlin.$_$.mb;
+  var initMetadataForClass = kotlin_kotlin.$_$.ja;
+  var BootstrapModule_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.i;
+  var BootstrapCssModule_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.h;
   var DatetimeModule_getInstance = kotlin_io_kvision_kvision_datetime.$_$.a;
   var RichTextModule_getInstance = kotlin_io_kvision_kvision_richtext.$_$.a;
   var TomSelectModule_getInstance = kotlin_io_kvision_kvision_tom_select.$_$.a;
@@ -104,108 +104,127 @@
   var TabulatorModule_getInstance = kotlin_io_kvision_kvision_tabulator.$_$.b;
   var TabulatorCssBootstrapModule_getInstance = kotlin_io_kvision_kvision_tabulator.$_$.a;
   var MapsModule_getInstance = kotlin_io_kvision_kvision_maps.$_$.a;
-  var CoreModule_getInstance = kotlin_io_kvision_kvision.$_$.d1;
-  var startApplication = kotlin_io_kvision_kvision.$_$.h3;
-  var navLink = kotlin_io_kvision_kvision_bootstrap.$_$.m;
-  var listOf = kotlin_kotlin.$_$.j7;
-  var dropDown = kotlin_io_kvision_kvision_bootstrap.$_$.j;
-  var text = kotlin_io_kvision_kvision.$_$.w1;
-  var checkBox = kotlin_io_kvision_kvision.$_$.p1;
+  var CoreModule_getInstance = kotlin_io_kvision_kvision.$_$.j1;
+  var startApplication = kotlin_io_kvision_kvision.$_$.t3;
+  var navLink = kotlin_io_kvision_kvision_bootstrap.$_$.r;
+  var listOf = kotlin_kotlin.$_$.l7;
+  var dropDown = kotlin_io_kvision_kvision_bootstrap.$_$.o;
+  var text = kotlin_io_kvision_kvision.$_$.d2;
+  var checkBox = kotlin_io_kvision_kvision.$_$.w1;
   var Toast_getInstance = kotlin_io_kvision_kvision_toastify.$_$.b;
   var ToastPosition_BOTTOMRIGHT_getInstance = kotlin_io_kvision_kvision_toastify.$_$.a;
   var ToastOptions = kotlin_io_kvision_kvision_toastify.$_$.d;
-  var get_perc = kotlin_io_kvision_kvision.$_$.d3;
+  var get_perc = kotlin_io_kvision_kvision.$_$.p3;
   var AlignItems_CENTER_getInstance = kotlin_io_kvision_kvision.$_$.b;
-  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.n;
-  var button = kotlin_io_kvision_kvision.$_$.c2;
-  var get_px = kotlin_io_kvision_kvision.$_$.e3;
-  var vPanel = kotlin_io_kvision_kvision.$_$.y2;
+  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.s;
+  var button = kotlin_io_kvision_kvision.$_$.j2;
+  var get_px = kotlin_io_kvision_kvision.$_$.q3;
+  var vPanel = kotlin_io_kvision_kvision.$_$.j3;
   var Default_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
   var BaseUserDTO = kotlin_epicer_common.$_$.c;
-  var getKClass = kotlin_kotlin.$_$.e;
-  var arrayOf = kotlin_kotlin.$_$.kf;
-  var createKType = kotlin_kotlin.$_$.b;
+  var getKClass = kotlin_kotlin.$_$.f;
+  var arrayOf = kotlin_kotlin.$_$.nf;
+  var createKType = kotlin_kotlin.$_$.c;
   var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.u2;
-  var THROW_CCE = kotlin_kotlin.$_$.ve;
+  var THROW_CCE = kotlin_kotlin.$_$.ye;
   var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l2;
-  var isInterface = kotlin_kotlin.$_$.ua;
-  var icon = kotlin_io_kvision_kvision.$_$.k2;
-  var Navbar = kotlin_io_kvision_kvision_bootstrap.$_$.k;
-  var nav = kotlin_io_kvision_kvision_bootstrap.$_$.o;
-  var navForm = kotlin_io_kvision_kvision_bootstrap.$_$.l;
-  var TextAlign_CENTER_getInstance = kotlin_io_kvision_kvision.$_$.j;
-  var TextOverflow_ELLIPSIS_getInstance = kotlin_io_kvision_kvision.$_$.l;
-  var WhiteSpace_NOWRAP_getInstance = kotlin_io_kvision_kvision.$_$.m;
-  var Overflow_HIDDEN_getInstance = kotlin_io_kvision_kvision.$_$.i;
-  var CoroutineImpl = kotlin_kotlin.$_$.h9;
+  var isInterface = kotlin_kotlin.$_$.xa;
+  var icon = kotlin_io_kvision_kvision.$_$.r2;
+  var Navbar = kotlin_io_kvision_kvision_bootstrap.$_$.p;
+  var nav = kotlin_io_kvision_kvision_bootstrap.$_$.t;
+  var navForm = kotlin_io_kvision_kvision_bootstrap.$_$.q;
+  var hPanel = kotlin_io_kvision_kvision.$_$.g3;
+  var ImageShape_CIRCLE_getInstance = kotlin_io_kvision_kvision.$_$.w;
+  var Placement_RIGHT_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.c;
+  var Trigger_CLICK_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.d;
+  var Trigger_HOVER_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.e;
+  var TooltipOptions = kotlin_io_kvision_kvision_bootstrap.$_$.j;
+  var enableTooltip = kotlin_io_kvision_kvision_bootstrap.$_$.m;
+  var numberToInt = kotlin_kotlin.$_$.jb;
+  var h4 = kotlin_io_kvision_kvision.$_$.o2;
+  var toString = kotlin_kotlin.$_$.pb;
+  var h6 = kotlin_io_kvision_kvision.$_$.q2;
+  var bind = kotlin_io_kvision_kvision_state.$_$.a;
+  var CoroutineImpl = kotlin_kotlin.$_$.k9;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.r8;
-  var image = kotlin_io_kvision_kvision.$_$.l2;
-  var initMetadataForLambda = kotlin_kotlin.$_$.ka;
-  var JustifyContent_SPACEBETWEEN_getInstance = kotlin_io_kvision_kvision.$_$.h;
-  var h2 = kotlin_io_kvision_kvision.$_$.f2;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.u8;
+  var initMetadataForLambda = kotlin_kotlin.$_$.na;
+  var image = kotlin_io_kvision_kvision.$_$.s2;
   var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.f;
-  var Companion_getInstance_0 = kotlin_io_kvision_kvision.$_$.y;
-  var Col_DARKSLATEGRAY_getInstance = kotlin_io_kvision_kvision.$_$.d;
-  var Background = kotlin_io_kvision_kvision.$_$.h1;
+  var SuspendFunction1 = kotlin_kotlin.$_$.l9;
+  var TextAlign_CENTER_getInstance = kotlin_io_kvision_kvision.$_$.o;
+  var TextOverflow_ELLIPSIS_getInstance = kotlin_io_kvision_kvision.$_$.q;
+  var WhiteSpace_NOWRAP_getInstance = kotlin_io_kvision_kvision.$_$.r;
+  var Overflow_HIDDEN_getInstance = kotlin_io_kvision_kvision.$_$.n;
+  var JustifyContent_SPACEBETWEEN_getInstance = kotlin_io_kvision_kvision.$_$.l;
+  var h2 = kotlin_io_kvision_kvision.$_$.m2;
+  var Companion_getInstance_0 = kotlin_io_kvision_kvision.$_$.e1;
+  var Col_DARKSLATEGRAY_getInstance = kotlin_io_kvision_kvision.$_$.e;
+  var Background = kotlin_io_kvision_kvision.$_$.n1;
   var BsBorder_BORDERDARK_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.b;
-  var addBsBorder = kotlin_io_kvision_kvision_bootstrap.$_$.h;
-  var get_auto = kotlin_io_kvision_kvision.$_$.c3;
-  var SuspendFunction1 = kotlin_kotlin.$_$.i9;
-  var json = kotlin_kotlin.$_$.bb;
+  var addBsBorder = kotlin_io_kvision_kvision_bootstrap.$_$.l;
+  var get_auto = kotlin_io_kvision_kvision.$_$.n3;
+  var json = kotlin_kotlin.$_$.eb;
   var LoginUserDTO = kotlin_epicer_common.$_$.d;
   var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.a;
   var TokenDTO = kotlin_epicer_common.$_$.e;
-  var Exception = kotlin_kotlin.$_$.je;
-  var initMetadataForCoroutine = kotlin_kotlin.$_$.ia;
+  var Exception = kotlin_kotlin.$_$.me;
+  var initMetadataForCoroutine = kotlin_kotlin.$_$.la;
   var FullRecipeDTO = kotlin_epicer_common.$_$.b;
-  var KtList = kotlin_kotlin.$_$.n5;
+  var KtList = kotlin_kotlin.$_$.o5;
   var BaseRecipeDTO = kotlin_epicer_common.$_$.a;
-  var createInvariantKTypeProjection = kotlin_kotlin.$_$.a;
-  var println = kotlin_kotlin.$_$.m9;
+  var createInvariantKTypeProjection = kotlin_kotlin.$_$.b;
+  var println = kotlin_kotlin.$_$.p9;
   var Companion_getInstance_1 = kotlin_epicer_common.$_$.f;
   var Companion_getInstance_2 = kotlin_epicer_common.$_$.g;
-  var FormPanel = kotlin_io_kvision_kvision.$_$.x1;
-  var Text = kotlin_io_kvision_kvision.$_$.u1;
-  var Password = kotlin_io_kvision_kvision.$_$.t1;
-  var ButtonType_SUBMIT_getInstance = kotlin_io_kvision_kvision.$_$.q;
-  var VPanel = kotlin_io_kvision_kvision.$_$.u2;
+  var FormPanel = kotlin_io_kvision_kvision.$_$.e2;
+  var Text = kotlin_io_kvision_kvision.$_$.b2;
+  var Password = kotlin_io_kvision_kvision.$_$.a2;
+  var ButtonType_SUBMIT_getInstance = kotlin_io_kvision_kvision.$_$.v;
+  var VPanel = kotlin_io_kvision_kvision.$_$.e3;
   var Dispatchers_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var CoroutineScope_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
-  var KProperty1 = kotlin_kotlin.$_$.ac;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.da;
+  var KProperty1 = kotlin_kotlin.$_$.dc;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.ga;
   var AlignContent_CENTER_getInstance = kotlin_io_kvision_kvision.$_$.a;
-  var gridPanel = kotlin_io_kvision_kvision.$_$.v2;
-  var h1 = kotlin_io_kvision_kvision.$_$.e2;
-  var p = kotlin_io_kvision_kvision.$_$.m2;
-  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.wf;
+  var gridPanel = kotlin_io_kvision_kvision.$_$.f3;
+  var h1 = kotlin_io_kvision_kvision.$_$.l2;
+  var p = kotlin_io_kvision_kvision.$_$.v2;
+  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.zf;
   var BsBgColor_BODYSECONDARY_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.a;
-  var removeBsBgColor = kotlin_io_kvision_kvision_bootstrap.$_$.i;
-  var addBsBgColor = kotlin_io_kvision_kvision_bootstrap.$_$.g;
-  var BorderStyle_NONE_getInstance = kotlin_io_kvision_kvision.$_$.c;
-  var Border = kotlin_io_kvision_kvision.$_$.i1;
-  var toIntOrNull = kotlin_kotlin.$_$.kd;
-  var TextAlign_LEFT_getInstance = kotlin_io_kvision_kvision.$_$.k;
-  var Display_FLEX_getInstance = kotlin_io_kvision_kvision.$_$.f;
-  var FlexWrap_WRAP_getInstance = kotlin_io_kvision_kvision.$_$.g;
-  var span = kotlin_io_kvision_kvision.$_$.n2;
-  var toString = kotlin_kotlin.$_$.xf;
-  var InputType_NUMBER_getInstance = kotlin_io_kvision_kvision.$_$.r;
-  var textInput = kotlin_io_kvision_kvision.$_$.v1;
-  var h4 = kotlin_io_kvision_kvision.$_$.h2;
-  var h6 = kotlin_io_kvision_kvision.$_$.j2;
-  var bind = kotlin_io_kvision_kvision_state.$_$.a;
-  var h3 = kotlin_io_kvision_kvision.$_$.g2;
-  var h5 = kotlin_io_kvision_kvision.$_$.i2;
-  var div = kotlin_io_kvision_kvision.$_$.d2;
-  var NavbarExpand_ALWAYS_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.c;
-  var navbar = kotlin_io_kvision_kvision_bootstrap.$_$.n;
-  var stackPanel = kotlin_io_kvision_kvision.$_$.x2;
-  var ObservableValue = kotlin_io_kvision_kvision.$_$.b3;
+  var removeBsBgColor = kotlin_io_kvision_kvision_bootstrap.$_$.n;
+  var addBsBgColor = kotlin_io_kvision_kvision_bootstrap.$_$.k;
+  var BorderStyle_NONE_getInstance = kotlin_io_kvision_kvision.$_$.d;
+  var Border = kotlin_io_kvision_kvision.$_$.o1;
+  var toIntOrNull = kotlin_kotlin.$_$.nd;
+  var TextAlign_LEFT_getInstance = kotlin_io_kvision_kvision.$_$.p;
+  var Display_FLEX_getInstance = kotlin_io_kvision_kvision.$_$.g;
+  var FlexWrap_WRAP_getInstance = kotlin_io_kvision_kvision.$_$.h;
+  var span = kotlin_io_kvision_kvision.$_$.w2;
+  var toString_0 = kotlin_kotlin.$_$.ag;
+  var InputType_NUMBER_getInstance = kotlin_io_kvision_kvision.$_$.x;
+  var textInput = kotlin_io_kvision_kvision.$_$.c2;
+  var FontWeight_BOLD_getInstance = kotlin_io_kvision_kvision.$_$.i;
+  var FontWeight_NORMAL_getInstance = kotlin_io_kvision_kvision.$_$.k;
+  var FontWeight_LIGHTER_getInstance = kotlin_io_kvision_kvision.$_$.j;
+  var ListStyleType_NONE_getInstance = kotlin_io_kvision_kvision.$_$.m;
+  var ListStyle = kotlin_io_kvision_kvision.$_$.u1;
+  var h5 = kotlin_io_kvision_kvision.$_$.p2;
+  var ul = kotlin_io_kvision_kvision.$_$.x2;
+  var li = kotlin_io_kvision_kvision.$_$.t2;
+  var h3 = kotlin_io_kvision_kvision.$_$.n2;
+  var ol = kotlin_io_kvision_kvision.$_$.u2;
+  var AlignItems_START_getInstance = kotlin_io_kvision_kvision.$_$.c;
+  var div = kotlin_io_kvision_kvision.$_$.k2;
+  var NavbarExpand_ALWAYS_getInstance = kotlin_io_kvision_kvision_bootstrap.$_$.f;
+  var navbar = kotlin_io_kvision_kvision_bootstrap.$_$.s;
+  var stackPanel = kotlin_io_kvision_kvision.$_$.i3;
+  var ObservableValue = kotlin_io_kvision_kvision.$_$.m3;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(App, 'App', App, Application);
   initMetadataForClass(HeaderComponent, 'HeaderComponent', VOID, Navbar);
+  initMetadataForLambda(ingredientInRecipeCard$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForLambda(recipeCard$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForCoroutine($loginCOROUTINE$0, CoroutineImpl);
   initMetadataForCoroutine($getRecipeCOROUTINE$1, CoroutineImpl);
@@ -366,6 +385,144 @@
     nav(this, VOID, VOID, HeaderComponent$lambda);
     navForm(this, VOID, VOID, HeaderComponent$lambda_0);
     nav(this, true, VOID, HeaderComponent$lambda_1(this));
+  }
+  function ingredientInRecipeCard(_this__u8e3s4, ingredientInRecipe, portionsState, recipePortions, customScope, imageSize, nameFontSize, quantityFontSize, imageRightMargin) {
+    imageSize = imageSize === VOID ? get_px(72) : imageSize;
+    nameFontSize = nameFontSize === VOID ? null : nameFontSize;
+    quantityFontSize = quantityFontSize === VOID ? null : quantityFontSize;
+    imageRightMargin = imageRightMargin === VOID ? get_px(32) : imageRightMargin;
+    hPanel(_this__u8e3s4, VOID, VOID, VOID, VOID, VOID, VOID, ingredientInRecipeCard$lambda(customScope, imageSize, imageRightMargin, portionsState, ingredientInRecipe, recipePortions, nameFontSize, quantityFontSize));
+  }
+  function ingredientInRecipeCard$lambda$lambda($imageSize, $imageRightMargin) {
+    return function ($this$image) {
+      $this$image.set_height_z8kom6_k$($imageSize);
+      $this$image.set_width_3hpb1_k$($imageSize);
+      $this$image.set_shape_i86x7h_k$(ImageShape_CIRCLE_getInstance());
+      $this$image.setStyle_q2a0in_k$('object-fit', 'cover');
+      $this$image.set_marginRight_b0p4mj_k$($imageRightMargin);
+      return Unit_getInstance();
+    };
+  }
+  function ingredientInRecipeCard$lambda$lambda$lambda$lambda($ingredientInRecipe, $nameFontSize) {
+    return function ($this$h4) {
+      enableTooltip($this$h4, new TooltipOptions($ingredientInRecipe.get_notes_ivw520_k$(), true, VOID, 0, VOID, Placement_RIGHT_getInstance(), listOf([Trigger_CLICK_getInstance(), Trigger_HOVER_getInstance()])));
+      $this$h4.set_fontSize_ozq5eh_k$($nameFontSize);
+      return Unit_getInstance();
+    };
+  }
+  function ingredientInRecipeCard$lambda$lambda$lambda$lambda_0($quantityFontSize) {
+    return function ($this$h6) {
+      $this$h6.set_fontSize_ozq5eh_k$($quantityFontSize);
+      return Unit_getInstance();
+    };
+  }
+  function ingredientInRecipeCard$lambda$lambda$lambda($ingredientInRecipe, $recipePortions, $nameFontSize, $quantityFontSize) {
+    return function ($this$bind, newPortions) {
+      var tmp0_safe_receiver = $ingredientInRecipe.get_quantity_hz47ro_k$();
+      var tmp;
+      if (tmp0_safe_receiver == null) {
+        tmp = null;
+      } else {
+        var tmp1_elvis_lhs = $recipePortions;
+        tmp = tmp0_safe_receiver / (tmp1_elvis_lhs == null ? 1 : tmp1_elvis_lhs);
+      }
+      var tmp2_safe_receiver = tmp;
+      var tmp_0;
+      if (tmp2_safe_receiver == null) {
+        tmp_0 = null;
+      } else {
+        tmp_0 = tmp2_safe_receiver * (newPortions == null ? 1 : newPortions);
+      }
+      var adjustedQuantity = tmp_0;
+      var name = !($ingredientInRecipe.get_unit_wovp3h_k$() == null) || adjustedQuantity == null || numberToInt(adjustedQuantity) === 1 || $ingredientInRecipe.get_ingredient_nl550m_k$().get_namePlural_y2zlhk_k$() == null ? $ingredientInRecipe.get_ingredient_nl550m_k$().get_nameSingular_ufd0cr_k$() : $ingredientInRecipe.get_ingredient_nl550m_k$().get_namePlural_y2zlhk_k$();
+      h4($this$bind, name, VOID, VOID, VOID, ingredientInRecipeCard$lambda$lambda$lambda$lambda($ingredientInRecipe, $nameFontSize));
+      var tmp_1 = toString(adjustedQuantity == null ? '-' : adjustedQuantity);
+      var tmp5_safe_receiver = $ingredientInRecipe.get_unit_wovp3h_k$();
+      var tmp6_elvis_lhs = tmp5_safe_receiver == null ? null : tmp5_safe_receiver.get_shortName_p10yo2_k$();
+      var tmp_2 = tmp_1 + ' ' + (tmp6_elvis_lhs == null ? '' : tmp6_elvis_lhs);
+      h6($this$bind, tmp_2, VOID, VOID, VOID, ingredientInRecipeCard$lambda$lambda$lambda$lambda_0($quantityFontSize));
+      return Unit_getInstance();
+    };
+  }
+  function ingredientInRecipeCard$lambda$lambda_0($portionsState, $ingredientInRecipe, $recipePortions, $nameFontSize, $quantityFontSize) {
+    return function ($this$vPanel) {
+      bind($this$vPanel, $portionsState, VOID, VOID, ingredientInRecipeCard$lambda$lambda$lambda($ingredientInRecipe, $recipePortions, $nameFontSize, $quantityFontSize));
+      return Unit_getInstance();
+    };
+  }
+  function ingredientInRecipeCard$lambda$slambda($ingredientInRecipe, $imageComponent, resultContinuation) {
+    this.$ingredientInRecipe_1 = $ingredientInRecipe;
+    this.$imageComponent_1 = $imageComponent;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf(ingredientInRecipeCard$lambda$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
+    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(ingredientInRecipeCard$lambda$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
+    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  };
+  protoOf(ingredientInRecipeCard$lambda$slambda).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(2);
+            this.idImage0__1 = this.$ingredientInRecipe_1.get_ingredient_nl550m_k$().get_imageId_wvvawd_k$();
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = getImage(this.idImage0__1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var imageUrl = suspendResult;
+            this.$imageComponent_1.set_src_vqknu8_k$(imageUrl == null ? '/assets/image_not_found.png' : imageUrl);
+            return Unit_getInstance();
+          case 2:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 2) {
+          throw e;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
+        }
+      }
+     while (true);
+  };
+  protoOf(ingredientInRecipeCard$lambda$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
+    var i = new ingredientInRecipeCard$lambda$slambda(this.$ingredientInRecipe_1, this.$imageComponent_1, completion);
+    i.$this$launch_1 = $this$launch;
+    return i;
+  };
+  protoOf(ingredientInRecipeCard$lambda$slambda).create_wyq9v6_k$ = function (value, completion) {
+    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
+  };
+  function ingredientInRecipeCard$lambda$slambda_0($ingredientInRecipe, $imageComponent, resultContinuation) {
+    var i = new ingredientInRecipeCard$lambda$slambda($ingredientInRecipe, $imageComponent, resultContinuation);
+    var l = function ($this$launch, $completion) {
+      return i.invoke_d9fzmj_k$($this$launch, $completion);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function ingredientInRecipeCard$lambda($customScope, $imageSize, $imageRightMargin, $portionsState, $ingredientInRecipe, $recipePortions, $nameFontSize, $quantityFontSize) {
+    return function ($this$hPanel) {
+      $this$hPanel.set_marginBottom_q6omk0_k$(get_px(15));
+      $this$hPanel.set_alignItems_2x4ueh_k$(AlignItems_CENTER_getInstance());
+      var imageComponent = image($this$hPanel, '/assets/image_not_found.png', VOID, true, VOID, VOID, VOID, ingredientInRecipeCard$lambda$lambda($imageSize, $imageRightMargin));
+      vPanel($this$hPanel, VOID, VOID, VOID, VOID, VOID, ingredientInRecipeCard$lambda$lambda_0($portionsState, $ingredientInRecipe, $recipePortions, $nameFontSize, $quantityFontSize));
+      launch($customScope, VOID, VOID, ingredientInRecipeCard$lambda$slambda_0($ingredientInRecipe, imageComponent, null));
+      return Unit_getInstance();
+    };
   }
   function recipeCard(_this__u8e3s4, recipe, customScope, routing) {
     button(_this__u8e3s4, '', VOID, VOID, VOID, VOID, VOID, VOID, VOID, recipeCard$lambda(recipe, customScope, routing));
@@ -1442,26 +1599,6 @@
       return Unit_getInstance();
     };
   }
-  function RecipeView$slambda$lambda$lambda$lambda$lambda_3($portionsInput, $recipe) {
-    return function ($this$onInput, it) {
-      var tmp0_safe_receiver = $portionsInput.get_value_j01efc_k$();
-      var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : toIntOrNull(tmp0_safe_receiver);
-      var newPortions = tmp1_elvis_lhs == null ? $recipe.get_portions_jqwgy3_k$() : tmp1_elvis_lhs;
-      return Unit_getInstance();
-    };
-  }
-  function RecipeView$slambda$lambda$lambda$lambda$lambda$lambda_3($handler, $this_setEventListener) {
-    return function (e) {
-      $handler($this_setEventListener.self, e);
-      return Unit_getInstance();
-    };
-  }
-  function RecipeView$slambda$lambda$lambda$lambda$lambda_4($handler) {
-    return function ($this$setEventListener) {
-      $this$setEventListener.input = RecipeView$slambda$lambda$lambda$lambda$lambda$lambda_3($handler, $this$setEventListener);
-      return Unit_getInstance();
-    };
-  }
   function RecipeView$slambda$lambda$lambda$lambda_0($recipe, $portionsState) {
     return function ($this$nav) {
       $this$nav.set_height_z8kom6_k$(get_perc(100));
@@ -1469,12 +1606,9 @@
       $this$nav.set_alignItems_2x4ueh_k$(AlignItems_CENTER_getInstance());
       $this$nav.set_flexWrap_te3tvl_k$(FlexWrap_WRAP_getInstance());
       span($this$nav, 'Portions:', VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda_1);
-      var tmp0_value = toString($recipe.get_portions_jqwgy3_k$());
+      var tmp0_value = toString_0($recipe.get_portions_jqwgy3_k$());
       var tmp1_type = InputType_NUMBER_getInstance();
       var portionsInput = textInput($this$nav, tmp1_type, tmp0_value, 4, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda_2($recipe, $portionsState));
-      // Inline function 'io.kvision.core.onInput' call
-      var handler = RecipeView$slambda$lambda$lambda$lambda$lambda_3(portionsInput, $recipe);
-      portionsInput.setEventListener_4rv3s8_k$(RecipeView$slambda$lambda$lambda$lambda$lambda_4(handler));
       return Unit_getInstance();
     };
   }
@@ -1491,100 +1625,105 @@
       return Unit_getInstance();
     };
   }
-  function RecipeView$slambda$lambda$lambda$lambda$lambda_5($recipe) {
-    return function ($this$bind, newPortions) {
+  function RecipeView$slambda$lambda$lambda$lambda_1($recipe, $portionsState, $customScope) {
+    return function ($this$vPanel) {
+      $this$vPanel.set_marginTop_uelzj8_k$(get_px(40));
       var _iterator__ex2g4s = $recipe.get_ingredientsInRecipe_3mm3yk_k$().iterator_jk1svi_k$();
       while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
         var element = _iterator__ex2g4s.next_20eer_k$();
-        // Inline function 'epicer.frontend.views.RecipeView.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-        h4($this$bind, element.get_ingredient_nl550m_k$().get_nameSingular_ufd0cr_k$());
-        var tmp0_safe_receiver = element.get_quantity_hz47ro_k$();
-        var tmp;
-        if (tmp0_safe_receiver == null) {
-          tmp = null;
-        } else {
-          var tmp1_elvis_lhs = $recipe.get_portions_jqwgy3_k$();
-          tmp = tmp0_safe_receiver / (tmp1_elvis_lhs == null ? 1 : tmp1_elvis_lhs);
-        }
-        var tmp2_safe_receiver = tmp;
-        var tmp_0;
-        if (tmp2_safe_receiver == null) {
-          tmp_0 = null;
-        } else {
-          tmp_0 = tmp2_safe_receiver * (newPortions == null ? 1 : newPortions);
-        }
-        h6($this$bind, toString(tmp_0));
-        var tmp4_safe_receiver = element.get_unit_wovp3h_k$();
-        h6($this$bind, tmp4_safe_receiver == null ? null : tmp4_safe_receiver.get_name_woqyms_k$());
+        // Inline function 'epicer.frontend.views.RecipeView.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        ingredientInRecipeCard($this$vPanel, element, $portionsState, $recipe.get_portions_jqwgy3_k$(), $customScope);
       }
       return Unit_getInstance();
     };
   }
-  function RecipeView$slambda$lambda$lambda$lambda_1($portionsState, $recipe) {
-    return function ($this$vPanel) {
-      bind($this$vPanel, $portionsState, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda_5($recipe));
+  function RecipeView$slambda$lambda$lambda$lambda$lambda$lambda_3($this$h3) {
+    $this$h3.set_marginTop_uelzj8_k$(get_px(20));
+    $this$h3.set_marginBottom_q6omk0_k$(get_px(10));
+    $this$h3.set_fontWeight_3x4rur_k$(FontWeight_BOLD_getInstance());
+    $this$h3.set_fontSize_ozq5eh_k$(get_px(30));
+    return Unit_getInstance();
+  }
+  function RecipeView$slambda$lambda$lambda$lambda$lambda$lambda$lambda_0($this$h4) {
+    $this$h4.set_marginTop_uelzj8_k$(get_px(15));
+    $this$h4.set_marginBottom_q6omk0_k$(get_px(5));
+    $this$h4.set_fontWeight_3x4rur_k$(FontWeight_NORMAL_getInstance());
+    $this$h4.set_fontSize_ozq5eh_k$(get_px(24));
+    return Unit_getInstance();
+  }
+  function RecipeView$slambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda($this$h5) {
+    $this$h5.set_marginBottom_q6omk0_k$(get_px(15));
+    $this$h5.set_fontWeight_3x4rur_k$(FontWeight_LIGHTER_getInstance());
+    $this$h5.set_fontSize_ozq5eh_k$(get_px(20));
+    return Unit_getInstance();
+  }
+  function RecipeView$slambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($step, $portionsState, $recipe, $customScope) {
+    return function ($this$ul) {
+      $this$ul.set_listStyle_x4n8lv_k$(new ListStyle(ListStyleType_NONE_getInstance()));
+      var _iterator__ex2g4s = $step.get_ingredientsInRecipe_3mm3yk_k$().iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var element = _iterator__ex2g4s.next_20eer_k$();
+        // Inline function 'epicer.frontend.views.RecipeView.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        ingredientInRecipeCard($this$ul, element, $portionsState, $recipe.get_portions_jqwgy3_k$(), $customScope, get_px(64), get_px(18), get_px(15), get_px(20));
+      }
       return Unit_getInstance();
     };
   }
-  function RecipeView$slambda$lambda$lambda$lambda$lambda_6($recipe) {
-    return function ($this$bind, newPortions) {
+  function RecipeView$slambda$lambda$lambda$lambda$lambda$lambda$lambda_1($step, $portionsState, $recipe, $customScope) {
+    return function ($this$li) {
+      var tmp = $step.get_description_emjre5_k$();
+      h5($this$li, tmp, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda);
+      ul($this$li, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($step, $portionsState, $recipe, $customScope));
+      $this$li.set_marginBottom_q6omk0_k$(get_px(15));
+      return Unit_getInstance();
+    };
+  }
+  function RecipeView$slambda$lambda$lambda$lambda$lambda$lambda_4($section, $portionsState, $recipe, $customScope) {
+    return function ($this$ol) {
+      $this$ol.set_listStyle_x4n8lv_k$(new ListStyle(ListStyleType_NONE_getInstance()));
+      var _iterator__ex2g4s = $section.get_steps_iyq03i_k$().iterator_jk1svi_k$();
+      while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+        var element = _iterator__ex2g4s.next_20eer_k$();
+        // Inline function 'epicer.frontend.views.RecipeView.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        var tmp = '' + element.get_index_it478p_k$() + '. ' + element.get_name_woqyms_k$();
+        h4($this$ol, tmp, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
+        li($this$ol, VOID, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda$lambda$lambda_1(element, $portionsState, $recipe, $customScope));
+      }
+      return Unit_getInstance();
+    };
+  }
+  function RecipeView$slambda$lambda$lambda$lambda$lambda_3($recipe, $portionsState, $customScope) {
+    return function ($this$ol) {
+      $this$ol.set_listStyle_x4n8lv_k$(new ListStyle(ListStyleType_NONE_getInstance()));
       var _iterator__ex2g4s = $recipe.get_sections_g4k5xl_k$().iterator_jk1svi_k$();
       while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
         var element = _iterator__ex2g4s.next_20eer_k$();
         // Inline function 'epicer.frontend.views.RecipeView.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-        h3($this$bind, '' + element.get_name_woqyms_k$() + ' ' + element.get_index_it478p_k$());
-        // Inline function 'kotlin.collections.forEach' call
-        var _iterator__ex2g4s_0 = element.get_steps_iyq03i_k$().iterator_jk1svi_k$();
-        while (_iterator__ex2g4s_0.hasNext_bitz1p_k$()) {
-          var element_0 = _iterator__ex2g4s_0.next_20eer_k$();
-          // Inline function 'epicer.frontend.views.RecipeView.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          h4($this$bind, '' + element_0.get_name_woqyms_k$() + ' ' + element_0.get_index_it478p_k$());
-          h5($this$bind, element_0.get_description_emjre5_k$());
-          // Inline function 'kotlin.collections.forEach' call
-          var _iterator__ex2g4s_1 = element_0.get_ingredientsInRecipe_3mm3yk_k$().iterator_jk1svi_k$();
-          while (_iterator__ex2g4s_1.hasNext_bitz1p_k$()) {
-            var element_1 = _iterator__ex2g4s_1.next_20eer_k$();
-            // Inline function 'epicer.frontend.views.RecipeView.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-            h6($this$bind, element_1.get_ingredient_nl550m_k$().get_nameSingular_ufd0cr_k$());
-            var tmp0_safe_receiver = element_1.get_quantity_hz47ro_k$();
-            var tmp;
-            if (tmp0_safe_receiver == null) {
-              tmp = null;
-            } else {
-              var tmp1_elvis_lhs = $recipe.get_portions_jqwgy3_k$();
-              tmp = tmp0_safe_receiver / (tmp1_elvis_lhs == null ? 1 : tmp1_elvis_lhs);
-            }
-            var tmp2_safe_receiver = tmp;
-            var tmp_0;
-            if (tmp2_safe_receiver == null) {
-              tmp_0 = null;
-            } else {
-              tmp_0 = tmp2_safe_receiver * (newPortions == null ? 1 : newPortions);
-            }
-            h6($this$bind, toString(tmp_0));
-            var tmp4_safe_receiver = element_1.get_unit_wovp3h_k$();
-            h6($this$bind, tmp4_safe_receiver == null ? null : tmp4_safe_receiver.get_name_woqyms_k$());
-          }
-        }
+        var tmp = '' + element.get_index_it478p_k$() + '. ' + element.get_name_woqyms_k$();
+        h3($this$ol, tmp, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda$lambda_3);
+        ol($this$ol, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda$lambda_4(element, $portionsState, $recipe, $customScope));
       }
       return Unit_getInstance();
     };
   }
-  function RecipeView$slambda$lambda$lambda$lambda_2($portionsState, $recipe) {
+  function RecipeView$slambda$lambda$lambda$lambda_2($recipe, $portionsState, $customScope) {
     return function ($this$vPanel) {
-      bind($this$vPanel, $portionsState, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda_6($recipe));
+      $this$vPanel.set_marginTop_uelzj8_k$(get_px(25));
+      $this$vPanel.set_padding_5cj5xu_k$(get_px(15));
+      $this$vPanel.set_alignItems_2x4ueh_k$(AlignItems_START_getInstance());
+      ol($this$vPanel, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda$lambda_3($recipe, $portionsState, $customScope));
       return Unit_getInstance();
     };
   }
-  function RecipeView$slambda$lambda$lambda_1($portionsState, $recipe) {
+  function RecipeView$slambda$lambda$lambda_1($recipe, $portionsState, $customScope) {
     return function ($this$stackPanel) {
-      vPanel($this$stackPanel, VOID, VOID, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda_1($portionsState, $recipe));
-      vPanel($this$stackPanel, VOID, VOID, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda_2($portionsState, $recipe));
+      vPanel($this$stackPanel, VOID, VOID, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda_1($recipe, $portionsState, $customScope));
+      vPanel($this$stackPanel, VOID, VOID, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda$lambda_2($recipe, $portionsState, $customScope));
       $this$stackPanel.set_activeIndex_2mqwdj_k$(0);
       return Unit_getInstance();
     };
   }
-  function RecipeView$slambda$lambda($recipe, $portionsState) {
+  function RecipeView$slambda$lambda($recipe, $portionsState, $customScope) {
     return function ($this$vPanel) {
       $this$vPanel.set_marginTop_uelzj8_k$(get_px(25));
       $this$vPanel.set_alignItems_2x4ueh_k$(AlignItems_CENTER_getInstance());
@@ -1595,7 +1734,7 @@
       var tmp0_bgColor = BsBgColor_BODYSECONDARY_getInstance();
       var tmp1_expand = NavbarExpand_ALWAYS_getInstance();
       navbar($this$vPanel, VOID, VOID, VOID, tmp1_expand, VOID, tmp0_bgColor, VOID, VOID, VOID, VOID, RecipeView$slambda$lambda$lambda_0(panel, $recipe, $portionsState));
-      panel._v = stackPanel($this$vPanel, VOID, VOID, RecipeView$slambda$lambda$lambda_1($portionsState, $recipe));
+      panel._v = stackPanel($this$vPanel, VOID, VOID, RecipeView$slambda$lambda$lambda_1($recipe, $portionsState, $customScope));
       return Unit_getInstance();
     };
   }
@@ -1673,9 +1812,10 @@
     l.$arity = 1;
     return l;
   }
-  function RecipeView$slambda_1($recipeId, this$0, resultContinuation) {
+  function RecipeView$slambda_1($recipeId, this$0, $customScope, resultContinuation) {
     this.$recipeId_1 = $recipeId;
     this.this$0__1 = this$0;
+    this.$customScope_1 = $customScope;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(RecipeView$slambda_1).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
@@ -1706,7 +1846,7 @@
             var recipe = suspendResult;
             if (!(recipe == null)) {
               var portionsState = new ObservableValue(recipe.get_portions_jqwgy3_k$());
-              vPanel(this.this$0__1, VOID, VOID, VOID, VOID, VOID, RecipeView$slambda$lambda(recipe, portionsState));
+              vPanel(this.this$0__1, VOID, VOID, VOID, VOID, VOID, RecipeView$slambda$lambda(recipe, portionsState, this.$customScope_1));
             }
 
             return Unit_getInstance();
@@ -1725,15 +1865,15 @@
      while (true);
   };
   protoOf(RecipeView$slambda_1).create_rcuf4x_k$ = function ($this$launch, completion) {
-    var i = new RecipeView$slambda_1(this.$recipeId_1, this.this$0__1, completion);
+    var i = new RecipeView$slambda_1(this.$recipeId_1, this.this$0__1, this.$customScope_1, completion);
     i.$this$launch_1 = $this$launch;
     return i;
   };
   protoOf(RecipeView$slambda_1).create_wyq9v6_k$ = function (value, completion) {
     return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
   };
-  function RecipeView$slambda_2($recipeId, this$0, resultContinuation) {
-    var i = new RecipeView$slambda_1($recipeId, this$0, resultContinuation);
+  function RecipeView$slambda_2($recipeId, this$0, $customScope, resultContinuation) {
+    var i = new RecipeView$slambda_1($recipeId, this$0, $customScope, resultContinuation);
     var l = function ($this$launch, $completion) {
       return i.invoke_d9fzmj_k$($this$launch, $completion);
     };
@@ -1746,7 +1886,7 @@
     var customScope = CoroutineScope_0(Dispatchers_getInstance().get_Main_wo5vz6_k$());
     launch(customScope, VOID, VOID, RecipeView$slambda_0(this, null));
     this.add_rekwpt_k$(new HeaderComponent(this.routing_1));
-    launch(customScope, VOID, VOID, RecipeView$slambda_2(recipeId, this, null));
+    launch(customScope, VOID, VOID, RecipeView$slambda_2(recipeId, this, customScope, null));
   }
   //region block: init
   backend_url = 'http://localhost:8080';

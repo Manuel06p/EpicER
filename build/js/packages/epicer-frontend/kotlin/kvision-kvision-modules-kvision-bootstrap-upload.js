@@ -18,10 +18,10 @@
 }(function (_, jQuery, kotlin_kotlin, kotlin_io_kvision_kvision) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.jb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.g3;
-  var initMetadataForObject = kotlin_kotlin.$_$.la;
-  var VOID = kotlin_kotlin.$_$.f;
+  var protoOf = kotlin_kotlin.$_$.mb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.s3;
+  var initMetadataForObject = kotlin_kotlin.$_$.oa;
+  var VOID = kotlin_kotlin.$_$.g;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(BootstrapUploadModule, 'BootstrapUploadModule', VOID, VOID, [ModuleInitializer]);

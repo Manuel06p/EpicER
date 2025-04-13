@@ -15,15 +15,15 @@
 }(function (_, kotlin_io_kvision_kvision, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var I18n_getInstance = kotlin_io_kvision_kvision.$_$.a1;
-  var protoOf = kotlin_kotlin.$_$.jb;
-  var tr = kotlin_io_kvision_kvision.$_$.r2;
-  var ntr = kotlin_io_kvision_kvision.$_$.o2;
-  var trans = kotlin_io_kvision_kvision.$_$.q2;
-  var trans_0 = kotlin_io_kvision_kvision.$_$.p2;
-  var I18nManager = kotlin_io_kvision_kvision.$_$.s2;
-  var initMetadataForClass = kotlin_kotlin.$_$.ga;
-  var VOID = kotlin_kotlin.$_$.f;
+  var I18n_getInstance = kotlin_io_kvision_kvision.$_$.g1;
+  var protoOf = kotlin_kotlin.$_$.mb;
+  var tr = kotlin_io_kvision_kvision.$_$.b3;
+  var ntr = kotlin_io_kvision_kvision.$_$.y2;
+  var trans = kotlin_io_kvision_kvision.$_$.a3;
+  var trans_0 = kotlin_io_kvision_kvision.$_$.z2;
+  var I18nManager = kotlin_io_kvision_kvision.$_$.c3;
+  var initMetadataForClass = kotlin_kotlin.$_$.ja;
+  var VOID = kotlin_kotlin.$_$.g;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(DefaultI18nManager, 'DefaultI18nManager', VOID, VOID, [I18nManager]);

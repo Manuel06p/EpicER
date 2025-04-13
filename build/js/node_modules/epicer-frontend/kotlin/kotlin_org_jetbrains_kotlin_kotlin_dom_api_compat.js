@@ -12,8 +12,8 @@
 }(function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var ensureNotNull = kotlin_kotlin.$_$.nf;
-  var VOID = kotlin_kotlin.$_$.f;
+  var ensureNotNull = kotlin_kotlin.$_$.qf;
+  var VOID = kotlin_kotlin.$_$.g;
   //endregion
   //region block: pre-declaration
   //endregion

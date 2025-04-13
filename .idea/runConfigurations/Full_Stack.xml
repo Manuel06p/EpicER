@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Full Stack" type="CompoundRunConfigurationType">
+    <toRun name="Frontend" type="GradleRunConfiguration" />
+    <toRun name="Backend" type="KtorApplicationConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>

@@ -12,7 +12,7 @@
 }(function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var Regex_init_$Create$ = kotlin_kotlin.$_$.b1;
+  var Regex_init_$Create$ = kotlin_kotlin.$_$.c1;
   //endregion
   //region block: pre-declaration
   //endregion

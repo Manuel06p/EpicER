@@ -15,10 +15,10 @@
 }(function (_, kotlin_kotlin, kotlin_io_kvision_kvision) {
   'use strict';
   //region block: imports
-  var VOID = kotlin_kotlin.$_$.f;
-  var Container = kotlin_io_kvision_kvision.$_$.l1;
-  var isInterface = kotlin_kotlin.$_$.ua;
-  var Unit_getInstance = kotlin_kotlin.$_$.d5;
+  var VOID = kotlin_kotlin.$_$.g;
+  var Container = kotlin_io_kvision_kvision.$_$.r1;
+  var isInterface = kotlin_kotlin.$_$.xa;
+  var Unit_getInstance = kotlin_kotlin.$_$.e5;
   //endregion
   //region block: pre-declaration
   //endregion

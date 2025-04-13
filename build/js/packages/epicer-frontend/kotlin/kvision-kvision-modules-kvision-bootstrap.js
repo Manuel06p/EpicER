@@ -15,56 +15,67 @@
 }(function (_, kotlin_kotlin, kotlin_io_kvision_kvision) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.jb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.g3;
-  var initMetadataForObject = kotlin_kotlin.$_$.la;
-  var VOID = kotlin_kotlin.$_$.f;
-  var THROW_IAE = kotlin_kotlin.$_$.we;
-  var enumEntries = kotlin_kotlin.$_$.l9;
-  var Unit_getInstance = kotlin_kotlin.$_$.d5;
-  var Enum = kotlin_kotlin.$_$.he;
-  var CssClass = kotlin_io_kvision_kvision.$_$.m1;
-  var initMetadataForClass = kotlin_kotlin.$_$.ga;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.ha;
-  var SimplePanel = kotlin_io_kvision_kvision.$_$.t2;
-  var Display_BLOCK_getInstance = kotlin_io_kvision_kvision.$_$.e;
-  var get_auto = kotlin_io_kvision_kvision.$_$.c3;
-  var Companion_getInstance = kotlin_io_kvision_kvision.$_$.b1;
-  var numberToInt = kotlin_kotlin.$_$.gb;
-  var get_px = kotlin_io_kvision_kvision.$_$.e3;
-  var DomAttribute = kotlin_io_kvision_kvision.$_$.n1;
-  var ButtonStyle_PRIMARY_getInstance = kotlin_io_kvision_kvision.$_$.o;
-  var WidgetRefreshDelegate__setValue_impl_8tnbha = kotlin_io_kvision_kvision.$_$.x;
-  var WidgetRefreshDelegate__getValue_impl_lmjmy2 = kotlin_io_kvision_kvision.$_$.w;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.z5;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.k;
-  var Link = kotlin_io_kvision_kvision.$_$.a2;
-  var RefreshDelegateProvider = kotlin_io_kvision_kvision.$_$.o1;
-  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.n;
-  var THROW_CCE = kotlin_kotlin.$_$.ve;
-  var KMutableProperty1 = kotlin_kotlin.$_$.yb;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.da;
-  var add = kotlin_io_kvision_kvision.$_$.j1;
-  var ClassSetBuilder = kotlin_io_kvision_kvision.$_$.k1;
-  var add$default = kotlin_io_kvision_kvision.$_$.v;
-  var add_0 = kotlin_io_kvision_kvision.$_$.f1;
-  var addAll = kotlin_io_kvision_kvision.$_$.e1;
-  var AttributeSetBuilder = kotlin_io_kvision_kvision.$_$.g1;
-  var Button = kotlin_io_kvision_kvision.$_$.y1;
-  var ButtonType_BUTTON_getInstance = kotlin_io_kvision_kvision.$_$.p;
-  var Tag = kotlin_io_kvision_kvision.$_$.b2;
-  var TAG_H6_getInstance = kotlin_io_kvision_kvision.$_$.t;
-  var TAG_FORM_getInstance = kotlin_io_kvision_kvision.$_$.s;
-  var ContainerType_FLUID_getInstance = kotlin_io_kvision_kvision.$_$.u;
-  var equals = kotlin_kotlin.$_$.z9;
-  var ensureNotNull = kotlin_kotlin.$_$.nf;
-  var span = kotlin_io_kvision_kvision.$_$.n2;
+  var imul = Math.imul;
+  var protoOf = kotlin_kotlin.$_$.mb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.s3;
+  var initMetadataForObject = kotlin_kotlin.$_$.oa;
+  var VOID = kotlin_kotlin.$_$.g;
+  var THROW_IAE = kotlin_kotlin.$_$.ze;
+  var enumEntries = kotlin_kotlin.$_$.o9;
+  var Unit_getInstance = kotlin_kotlin.$_$.e5;
+  var Enum = kotlin_kotlin.$_$.ke;
+  var CssClass = kotlin_io_kvision_kvision.$_$.s1;
+  var initMetadataForClass = kotlin_kotlin.$_$.ja;
+  var toString = kotlin_kotlin.$_$.ag;
+  var getStringHashCode = kotlin_kotlin.$_$.ha;
+  var getBooleanHashCode = kotlin_kotlin.$_$.ea;
+  var hashCode = kotlin_kotlin.$_$.ia;
+  var THROW_CCE = kotlin_kotlin.$_$.ye;
+  var equals = kotlin_kotlin.$_$.ca;
+  var joinToString = kotlin_kotlin.$_$.e7;
+  var arrayConcat = kotlin_kotlin.$_$.a;
+  var createInstance = kotlin_io_kvision_kvision.$_$.o3;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.ka;
+  var SimplePanel = kotlin_io_kvision_kvision.$_$.d3;
+  var Display_BLOCK_getInstance = kotlin_io_kvision_kvision.$_$.f;
+  var get_auto = kotlin_io_kvision_kvision.$_$.n3;
+  var Companion_getInstance = kotlin_io_kvision_kvision.$_$.h1;
+  var numberToInt = kotlin_kotlin.$_$.jb;
+  var get_px = kotlin_io_kvision_kvision.$_$.q3;
+  var DomAttribute = kotlin_io_kvision_kvision.$_$.t1;
+  var ButtonStyle_PRIMARY_getInstance = kotlin_io_kvision_kvision.$_$.t;
+  var WidgetRefreshDelegate__setValue_impl_8tnbha = kotlin_io_kvision_kvision.$_$.d1;
+  var WidgetRefreshDelegate__getValue_impl_lmjmy2 = kotlin_io_kvision_kvision.$_$.c1;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.b6;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.l;
+  var Link = kotlin_io_kvision_kvision.$_$.h2;
+  var RefreshDelegateProvider = kotlin_io_kvision_kvision.$_$.v1;
+  var ButtonStyle_LIGHT_getInstance = kotlin_io_kvision_kvision.$_$.s;
+  var KMutableProperty1 = kotlin_kotlin.$_$.bc;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.ga;
+  var add = kotlin_io_kvision_kvision.$_$.p1;
+  var ClassSetBuilder = kotlin_io_kvision_kvision.$_$.q1;
+  var add$default = kotlin_io_kvision_kvision.$_$.b1;
+  var add_0 = kotlin_io_kvision_kvision.$_$.l1;
+  var addAll = kotlin_io_kvision_kvision.$_$.k1;
+  var AttributeSetBuilder = kotlin_io_kvision_kvision.$_$.m1;
+  var Button = kotlin_io_kvision_kvision.$_$.f2;
+  var ButtonType_BUTTON_getInstance = kotlin_io_kvision_kvision.$_$.u;
+  var Tag = kotlin_io_kvision_kvision.$_$.i2;
+  var TAG_H6_getInstance = kotlin_io_kvision_kvision.$_$.z;
+  var TAG_FORM_getInstance = kotlin_io_kvision_kvision.$_$.y;
+  var ContainerType_FLUID_getInstance = kotlin_io_kvision_kvision.$_$.a1;
+  var ensureNotNull = kotlin_kotlin.$_$.qf;
+  var span = kotlin_io_kvision_kvision.$_$.w2;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(BootstrapCssModule, 'BootstrapCssModule', VOID, VOID, [ModuleInitializer]);
   initMetadataForObject(BootstrapModule, 'BootstrapModule', VOID, VOID, [ModuleInitializer]);
   initMetadataForClass(BsBgColor, 'BsBgColor', VOID, Enum, [CssClass, Enum]);
   initMetadataForClass(BsBorder, 'BsBorder', VOID, Enum, [CssClass, Enum]);
+  initMetadataForClass(TooltipOptions, 'TooltipOptions', TooltipOptions);
+  initMetadataForClass(Placement, 'Placement', VOID, Enum);
+  initMetadataForClass(Trigger, 'Trigger', VOID, Enum);
   initMetadataForCompanion(Companion);
   initMetadataForClass(ContextMenu, 'ContextMenu', ContextMenu, SimplePanel);
   initMetadataForClass(AutoClose, 'AutoClose', VOID, Enum, [DomAttribute, Enum]);
@@ -599,6 +610,410 @@
     BsBorder_initEntries();
     return BsBorder_BORDERBLACK_instance;
   }
+  function TooltipOptions(title, rich, animation, delay, hideDelay, placement, triggers, sanitize) {
+    title = title === VOID ? null : title;
+    rich = rich === VOID ? null : rich;
+    animation = animation === VOID ? null : animation;
+    delay = delay === VOID ? null : delay;
+    hideDelay = hideDelay === VOID ? null : hideDelay;
+    placement = placement === VOID ? null : placement;
+    triggers = triggers === VOID ? null : triggers;
+    sanitize = sanitize === VOID ? null : sanitize;
+    this.title_1 = title;
+    this.rich_1 = rich;
+    this.animation_1 = animation;
+    this.delay_1 = delay;
+    this.hideDelay_1 = hideDelay;
+    this.placement_1 = placement;
+    this.triggers_1 = triggers;
+    this.sanitize_1 = sanitize;
+  }
+  protoOf(TooltipOptions).get_title_iz32un_k$ = function () {
+    return this.title_1;
+  };
+  protoOf(TooltipOptions).get_rich_woto9x_k$ = function () {
+    return this.rich_1;
+  };
+  protoOf(TooltipOptions).get_animation_r0gd0b_k$ = function () {
+    return this.animation_1;
+  };
+  protoOf(TooltipOptions).get_delay_iq7n8a_k$ = function () {
+    return this.delay_1;
+  };
+  protoOf(TooltipOptions).get_hideDelay_m7o7nc_k$ = function () {
+    return this.hideDelay_1;
+  };
+  protoOf(TooltipOptions).get_placement_wv4cec_k$ = function () {
+    return this.placement_1;
+  };
+  protoOf(TooltipOptions).get_triggers_6y18jg_k$ = function () {
+    return this.triggers_1;
+  };
+  protoOf(TooltipOptions).get_sanitize_18lrn6_k$ = function () {
+    return this.sanitize_1;
+  };
+  protoOf(TooltipOptions).component1_7eebsc_k$ = function () {
+    return this.title_1;
+  };
+  protoOf(TooltipOptions).component2_7eebsb_k$ = function () {
+    return this.rich_1;
+  };
+  protoOf(TooltipOptions).component3_7eebsa_k$ = function () {
+    return this.animation_1;
+  };
+  protoOf(TooltipOptions).component4_7eebs9_k$ = function () {
+    return this.delay_1;
+  };
+  protoOf(TooltipOptions).component5_7eebs8_k$ = function () {
+    return this.hideDelay_1;
+  };
+  protoOf(TooltipOptions).component6_7eebs7_k$ = function () {
+    return this.placement_1;
+  };
+  protoOf(TooltipOptions).component7_7eebs6_k$ = function () {
+    return this.triggers_1;
+  };
+  protoOf(TooltipOptions).component8_7eebs5_k$ = function () {
+    return this.sanitize_1;
+  };
+  protoOf(TooltipOptions).copy_8a4bqd_k$ = function (title, rich, animation, delay, hideDelay, placement, triggers, sanitize) {
+    return new TooltipOptions(title, rich, animation, delay, hideDelay, placement, triggers, sanitize);
+  };
+  protoOf(TooltipOptions).copy$default_x54bv_k$ = function (title, rich, animation, delay, hideDelay, placement, triggers, sanitize, $super) {
+    title = title === VOID ? this.title_1 : title;
+    rich = rich === VOID ? this.rich_1 : rich;
+    animation = animation === VOID ? this.animation_1 : animation;
+    delay = delay === VOID ? this.delay_1 : delay;
+    hideDelay = hideDelay === VOID ? this.hideDelay_1 : hideDelay;
+    placement = placement === VOID ? this.placement_1 : placement;
+    triggers = triggers === VOID ? this.triggers_1 : triggers;
+    sanitize = sanitize === VOID ? this.sanitize_1 : sanitize;
+    return $super === VOID ? this.copy_8a4bqd_k$(title, rich, animation, delay, hideDelay, placement, triggers, sanitize) : $super.copy_8a4bqd_k$.call(this, title, rich, animation, delay, hideDelay, placement, triggers, sanitize);
+  };
+  protoOf(TooltipOptions).toString = function () {
+    return 'TooltipOptions(title=' + this.title_1 + ', rich=' + this.rich_1 + ', animation=' + this.animation_1 + ', delay=' + this.delay_1 + ', hideDelay=' + this.hideDelay_1 + ', placement=' + toString(this.placement_1) + ', triggers=' + toString(this.triggers_1) + ', sanitize=' + this.sanitize_1 + ')';
+  };
+  protoOf(TooltipOptions).hashCode = function () {
+    var result = this.title_1 == null ? 0 : getStringHashCode(this.title_1);
+    result = imul(result, 31) + (this.rich_1 == null ? 0 : getBooleanHashCode(this.rich_1)) | 0;
+    result = imul(result, 31) + (this.animation_1 == null ? 0 : getBooleanHashCode(this.animation_1)) | 0;
+    result = imul(result, 31) + (this.delay_1 == null ? 0 : this.delay_1) | 0;
+    result = imul(result, 31) + (this.hideDelay_1 == null ? 0 : this.hideDelay_1) | 0;
+    result = imul(result, 31) + (this.placement_1 == null ? 0 : this.placement_1.hashCode()) | 0;
+    result = imul(result, 31) + (this.triggers_1 == null ? 0 : hashCode(this.triggers_1)) | 0;
+    result = imul(result, 31) + (this.sanitize_1 == null ? 0 : getBooleanHashCode(this.sanitize_1)) | 0;
+    return result;
+  };
+  protoOf(TooltipOptions).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof TooltipOptions))
+      return false;
+    var tmp0_other_with_cast = other instanceof TooltipOptions ? other : THROW_CCE();
+    if (!(this.title_1 == tmp0_other_with_cast.title_1))
+      return false;
+    if (!(this.rich_1 == tmp0_other_with_cast.rich_1))
+      return false;
+    if (!(this.animation_1 == tmp0_other_with_cast.animation_1))
+      return false;
+    if (!(this.delay_1 == tmp0_other_with_cast.delay_1))
+      return false;
+    if (!(this.hideDelay_1 == tmp0_other_with_cast.hideDelay_1))
+      return false;
+    if (!equals(this.placement_1, tmp0_other_with_cast.placement_1))
+      return false;
+    if (!equals(this.triggers_1, tmp0_other_with_cast.triggers_1))
+      return false;
+    if (!(this.sanitize_1 == tmp0_other_with_cast.sanitize_1))
+      return false;
+    return true;
+  };
+  var Placement_AUTO_instance;
+  var Placement_TOP_instance;
+  var Placement_BOTTOM_instance;
+  var Placement_LEFT_instance;
+  var Placement_RIGHT_instance;
+  function values_1() {
+    return [Placement_AUTO_getInstance(), Placement_TOP_getInstance(), Placement_BOTTOM_getInstance(), Placement_LEFT_getInstance(), Placement_RIGHT_getInstance()];
+  }
+  function valueOf_1(value) {
+    switch (value) {
+      case 'AUTO':
+        return Placement_AUTO_getInstance();
+      case 'TOP':
+        return Placement_TOP_getInstance();
+      case 'BOTTOM':
+        return Placement_BOTTOM_getInstance();
+      case 'LEFT':
+        return Placement_LEFT_getInstance();
+      case 'RIGHT':
+        return Placement_RIGHT_getInstance();
+      default:
+        Placement_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_1() {
+    if ($ENTRIES_1 == null)
+      $ENTRIES_1 = enumEntries(values_1());
+    return $ENTRIES_1;
+  }
+  var Placement_entriesInitialized;
+  function Placement_initEntries() {
+    if (Placement_entriesInitialized)
+      return Unit_getInstance();
+    Placement_entriesInitialized = true;
+    Placement_AUTO_instance = new Placement('AUTO', 0, 'auto');
+    Placement_TOP_instance = new Placement('TOP', 1, 'top');
+    Placement_BOTTOM_instance = new Placement('BOTTOM', 2, 'bottom');
+    Placement_LEFT_instance = new Placement('LEFT', 3, 'left');
+    Placement_RIGHT_instance = new Placement('RIGHT', 4, 'right');
+  }
+  var $ENTRIES_1;
+  function Placement(name, ordinal, placement) {
+    Enum.call(this, name, ordinal);
+    this.placement_1 = placement;
+  }
+  protoOf(Placement).get_placement_hr78a8_k$ = function () {
+    return this.placement_1;
+  };
+  var Trigger_CLICK_instance;
+  var Trigger_HOVER_instance;
+  var Trigger_FOCUS_instance;
+  var Trigger_MANUAL_instance;
+  function values_2() {
+    return [Trigger_CLICK_getInstance(), Trigger_HOVER_getInstance(), Trigger_FOCUS_getInstance(), Trigger_MANUAL_getInstance()];
+  }
+  function valueOf_2(value) {
+    switch (value) {
+      case 'CLICK':
+        return Trigger_CLICK_getInstance();
+      case 'HOVER':
+        return Trigger_HOVER_getInstance();
+      case 'FOCUS':
+        return Trigger_FOCUS_getInstance();
+      case 'MANUAL':
+        return Trigger_MANUAL_getInstance();
+      default:
+        Trigger_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_2() {
+    if ($ENTRIES_2 == null)
+      $ENTRIES_2 = enumEntries(values_2());
+    return $ENTRIES_2;
+  }
+  var Trigger_entriesInitialized;
+  function Trigger_initEntries() {
+    if (Trigger_entriesInitialized)
+      return Unit_getInstance();
+    Trigger_entriesInitialized = true;
+    Trigger_CLICK_instance = new Trigger('CLICK', 0, 'click');
+    Trigger_HOVER_instance = new Trigger('HOVER', 1, 'hover');
+    Trigger_FOCUS_instance = new Trigger('FOCUS', 2, 'focus');
+    Trigger_MANUAL_instance = new Trigger('MANUAL', 3, 'manual');
+  }
+  var $ENTRIES_2;
+  function Trigger(name, ordinal, trigger) {
+    Enum.call(this, name, ordinal);
+    this.trigger_1 = trigger;
+  }
+  protoOf(Trigger).get_trigger_77053x_k$ = function () {
+    return this.trigger_1;
+  };
+  function toJs(_this__u8e3s4) {
+    var tmp0_safe_receiver = _this__u8e3s4.triggers_1;
+    var tmp;
+    if (tmp0_safe_receiver == null) {
+      tmp = null;
+    } else {
+      tmp = joinToString(tmp0_safe_receiver, ' ', VOID, VOID, VOID, VOID, toJs$lambda);
+    }
+    var trigger = tmp;
+    // Inline function 'io.kvision.utils.obj' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = new Object();
+    // Inline function 'io.kvision.core.toJs.<anonymous>' call
+    if (!(_this__u8e3s4.title_1 == null))
+      this_0.title = _this__u8e3s4.title_1;
+    if (!(_this__u8e3s4.rich_1 == null))
+      this_0.html = _this__u8e3s4.rich_1;
+    if (!(_this__u8e3s4.animation_1 == null))
+      this_0.animation = _this__u8e3s4.animation_1;
+    if (!(_this__u8e3s4.delay_1 == null) && !(_this__u8e3s4.hideDelay_1 == null)) {
+      // Inline function 'io.kvision.utils.obj' call
+      // Inline function 'kotlin.apply' call
+      var this_1 = new Object();
+      // Inline function 'io.kvision.core.toJs.<anonymous>.<anonymous>' call
+      this_1.show = _this__u8e3s4.delay_1;
+      this_1.hide = _this__u8e3s4.hideDelay_1;
+      this_0.delay = this_1;
+    } else if (!(_this__u8e3s4.delay_1 == null)) {
+      this_0.delay = _this__u8e3s4.delay_1;
+    } else if (!(_this__u8e3s4.hideDelay_1 == null)) {
+      // Inline function 'io.kvision.utils.obj' call
+      // Inline function 'kotlin.apply' call
+      var this_2 = new Object();
+      // Inline function 'io.kvision.core.toJs.<anonymous>.<anonymous>' call
+      this_2.show = 0;
+      this_2.hide = _this__u8e3s4.hideDelay_1;
+      this_0.delay = this_2;
+    }
+    if (!(_this__u8e3s4.placement_1 == null))
+      this_0.placement = _this__u8e3s4.placement_1.placement_1;
+    if (!(trigger == null))
+      this_0.trigger = trigger;
+    if (!(_this__u8e3s4.sanitize_1 == null))
+      this_0.sanitize = _this__u8e3s4.sanitize_1;
+    return this_0;
+  }
+  function toJs$lambda(it) {
+    return it.trigger_1;
+  }
+  function Placement_AUTO_getInstance() {
+    Placement_initEntries();
+    return Placement_AUTO_instance;
+  }
+  function Placement_TOP_getInstance() {
+    Placement_initEntries();
+    return Placement_TOP_instance;
+  }
+  function Placement_BOTTOM_getInstance() {
+    Placement_initEntries();
+    return Placement_BOTTOM_instance;
+  }
+  function Placement_LEFT_getInstance() {
+    Placement_initEntries();
+    return Placement_LEFT_instance;
+  }
+  function Placement_RIGHT_getInstance() {
+    Placement_initEntries();
+    return Placement_RIGHT_instance;
+  }
+  function Trigger_CLICK_getInstance() {
+    Trigger_initEntries();
+    return Trigger_CLICK_instance;
+  }
+  function Trigger_HOVER_getInstance() {
+    Trigger_initEntries();
+    return Trigger_HOVER_instance;
+  }
+  function Trigger_FOCUS_getInstance() {
+    Trigger_initEntries();
+    return Trigger_FOCUS_instance;
+  }
+  function Trigger_MANUAL_getInstance() {
+    Trigger_initEntries();
+    return Trigger_MANUAL_instance;
+  }
+  function enableTooltip(_this__u8e3s4, options) {
+    options = options === VOID ? new TooltipOptions() : options;
+    disablePopover(_this__u8e3s4);
+    _this__u8e3s4.set_tooltipOptions_m2j12w_k$(options);
+    var tmp = enableTooltip$lambda;
+    var tmp0_safe_receiver = options.get_title_iz32un_k$();
+    var tmp_0;
+    if (tmp0_safe_receiver == null) {
+      tmp_0 = null;
+    } else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.core.enableTooltip.<anonymous>' call
+      tmp_0 = _this__u8e3s4.translate_s2ekyc_k$(tmp0_safe_receiver);
+    }
+    createBsInstance(_this__u8e3s4, tmp, [toJs(options.copy$default_x54bv_k$(tmp_0))]);
+    if (!_this__u8e3s4.get_tooltipHooksActive_s2u8v0_k$()) {
+      _this__u8e3s4.addAfterInsertHook_s83sk1_k$(enableTooltip$lambda_0(_this__u8e3s4, options));
+      _this__u8e3s4.addAfterDestroyHook_7cqxpi_k$(enableTooltip$lambda_1(_this__u8e3s4));
+      _this__u8e3s4.set_tooltipHooksActive_4sbdhh_k$(true);
+    }
+  }
+  function disablePopover(_this__u8e3s4) {
+    if (_this__u8e3s4.get_popoverOptions_5s2b0i_k$() != null) {
+      _this__u8e3s4.set_popoverOptions_smwxd2_k$(null);
+      var tmp0_safe_receiver = getBsInstance(_this__u8e3s4, disablePopover$lambda);
+      if (tmp0_safe_receiver == null)
+        null;
+      else
+        tmp0_safe_receiver.dispose();
+    }
+  }
+  function createBsInstance(_this__u8e3s4, constructor, args) {
+    var tmp0_safe_receiver = _this__u8e3s4.getElement_acounu_k$();
+    var tmp;
+    if (tmp0_safe_receiver == null) {
+      tmp = null;
+    } else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.core.createBsInstance.<anonymous>' call
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0 = constructor(BootstrapModule_getInstance().get_bootstrap_5xrc6f_k$());
+      tmp = createInstance(tmp$ret$0, arrayConcat([[tmp0_safe_receiver], args]));
+    }
+    return tmp;
+  }
+  function getBsInstance(_this__u8e3s4, constructor) {
+    var tmp0_safe_receiver = _this__u8e3s4.getElement_acounu_k$();
+    var tmp;
+    if (tmp0_safe_receiver == null) {
+      tmp = null;
+    } else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'io.kvision.core.getBsInstance.<anonymous>' call
+      tmp = constructor(BootstrapModule_getInstance().get_bootstrap_5xrc6f_k$()).getInstance(tmp0_safe_receiver);
+    }
+    return tmp;
+  }
+  function enableTooltip$lambda($this$createBsInstance) {
+    return $this$createBsInstance.Tooltip;
+  }
+  function enableTooltip$lambda$lambda($this$createBsInstance) {
+    return $this$createBsInstance.Tooltip;
+  }
+  function enableTooltip$lambda_0($this_enableTooltip, $options) {
+    return function (it) {
+      var tmp;
+      if ($this_enableTooltip.get_tooltipOptions_upbtwk_k$() != null) {
+        var tmp_0 = enableTooltip$lambda$lambda;
+        // Inline function 'kotlin.js.unsafeCast' call
+        var tmp_1 = $this_enableTooltip.get_tooltipOptions_upbtwk_k$();
+        var tmp0_safe_receiver = $options.get_title_iz32un_k$();
+        var tmp_2;
+        if (tmp0_safe_receiver == null) {
+          tmp_2 = null;
+        } else {
+          // Inline function 'kotlin.let' call
+          // Inline function 'io.kvision.core.enableTooltip.<anonymous>.<anonymous>' call
+          tmp_2 = $this_enableTooltip.translate_s2ekyc_k$(tmp0_safe_receiver);
+        }
+        createBsInstance($this_enableTooltip, tmp_0, [toJs(tmp_1.copy$default_x54bv_k$(tmp_2))]);
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function enableTooltip$lambda$lambda_0($this$getBsInstance) {
+    return $this$getBsInstance.Tooltip;
+  }
+  function enableTooltip$lambda_1($this_enableTooltip) {
+    return function () {
+      var tmp;
+      if ($this_enableTooltip.get_tooltipOptions_upbtwk_k$() != null) {
+        var tmp0_safe_receiver = getBsInstance($this_enableTooltip, enableTooltip$lambda$lambda_0);
+        if (tmp0_safe_receiver == null)
+          null;
+        else
+          tmp0_safe_receiver.dispose();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function disablePopover$lambda($this$getBsInstance) {
+    return $this$getBsInstance.Popover;
+  }
   function Companion() {
     Companion_instance = this;
     this.DEFAULT_FIXED_POS_X_1 = 5;
@@ -665,10 +1080,10 @@
   var AutoClose_OUTSIDE_instance;
   var AutoClose_INSIDE_instance;
   var AutoClose_FALSE_instance;
-  function values_1() {
+  function values_3() {
     return [AutoClose_TRUE_getInstance(), AutoClose_OUTSIDE_getInstance(), AutoClose_INSIDE_getInstance(), AutoClose_FALSE_getInstance()];
   }
-  function valueOf_1(value) {
+  function valueOf_3(value) {
     switch (value) {
       case 'TRUE':
         return AutoClose_TRUE_getInstance();
@@ -684,10 +1099,10 @@
         break;
     }
   }
-  function get_entries_1() {
-    if ($ENTRIES_1 == null)
-      $ENTRIES_1 = enumEntries(values_1());
-    return $ENTRIES_1;
+  function get_entries_3() {
+    if ($ENTRIES_3 == null)
+      $ENTRIES_3 = enumEntries(values_3());
+    return $ENTRIES_3;
   }
   var AutoClose_entriesInitialized;
   function AutoClose_initEntries() {
@@ -699,7 +1114,7 @@
     AutoClose_INSIDE_instance = new AutoClose('INSIDE', 2, 'inside');
     AutoClose_FALSE_instance = new AutoClose('FALSE', 3, 'false');
   }
-  var $ENTRIES_1;
+  var $ENTRIES_3;
   function AutoClose(name, ordinal, attributeValue) {
     Enum.call(this, name, ordinal);
     this.attributeValue_1 = attributeValue;
@@ -984,10 +1399,10 @@
   var Direction_DROPUP_instance;
   var Direction_DROPSTART_instance;
   var Direction_DROPEND_instance;
-  function values_2() {
+  function values_4() {
     return [Direction_DROPDOWN_getInstance(), Direction_DROPUP_getInstance(), Direction_DROPSTART_getInstance(), Direction_DROPEND_getInstance()];
   }
-  function valueOf_2(value) {
+  function valueOf_4(value) {
     switch (value) {
       case 'DROPDOWN':
         return Direction_DROPDOWN_getInstance();
@@ -1003,10 +1418,10 @@
         break;
     }
   }
-  function get_entries_2() {
-    if ($ENTRIES_2 == null)
-      $ENTRIES_2 = enumEntries(values_2());
-    return $ENTRIES_2;
+  function get_entries_4() {
+    if ($ENTRIES_4 == null)
+      $ENTRIES_4 = enumEntries(values_4());
+    return $ENTRIES_4;
   }
   var Direction_entriesInitialized;
   function Direction_initEntries() {
@@ -1018,7 +1433,7 @@
     Direction_DROPSTART_instance = new Direction('DROPSTART', 2, 'dropstart');
     Direction_DROPEND_instance = new Direction('DROPEND', 3, 'dropend');
   }
-  var $ENTRIES_2;
+  var $ENTRIES_4;
   function Direction(name, ordinal, direction) {
     Enum.call(this, name, ordinal);
     this.direction_1 = direction;
@@ -1029,10 +1444,10 @@
   var DD_HEADER_instance;
   var DD_DISABLED_instance;
   var DD_SEPARATOR_instance;
-  function values_3() {
+  function values_5() {
     return [DD_HEADER_getInstance(), DD_DISABLED_getInstance(), DD_SEPARATOR_getInstance()];
   }
-  function valueOf_3(value) {
+  function valueOf_5(value) {
     switch (value) {
       case 'HEADER':
         return DD_HEADER_getInstance();
@@ -1046,10 +1461,10 @@
         break;
     }
   }
-  function get_entries_3() {
-    if ($ENTRIES_3 == null)
-      $ENTRIES_3 = enumEntries(values_3());
-    return $ENTRIES_3;
+  function get_entries_5() {
+    if ($ENTRIES_5 == null)
+      $ENTRIES_5 = enumEntries(values_5());
+    return $ENTRIES_5;
   }
   var DD_entriesInitialized;
   function DD_initEntries() {
@@ -1060,7 +1475,7 @@
     DD_DISABLED_instance = new DD('DISABLED', 1, 'DD#DISABLED');
     DD_SEPARATOR_instance = new DD('SEPARATOR', 2, 'DD#SEPARATOR');
   }
-  var $ENTRIES_3;
+  var $ENTRIES_5;
   function DD(name, ordinal, option) {
     Enum.call(this, name, ordinal);
     this.option_1 = option;
@@ -1869,10 +2284,10 @@
   var NavbarExpand_MD_instance;
   var NavbarExpand_SM_instance;
   var NavbarExpand_XXL_instance;
-  function values_4() {
+  function values_6() {
     return [NavbarExpand_ALWAYS_getInstance(), NavbarExpand_XL_getInstance(), NavbarExpand_LG_getInstance(), NavbarExpand_MD_getInstance(), NavbarExpand_SM_getInstance(), NavbarExpand_XXL_getInstance()];
   }
-  function valueOf_4(value) {
+  function valueOf_6(value) {
     switch (value) {
       case 'ALWAYS':
         return NavbarExpand_ALWAYS_getInstance();
@@ -1892,10 +2307,10 @@
         break;
     }
   }
-  function get_entries_4() {
-    if ($ENTRIES_4 == null)
-      $ENTRIES_4 = enumEntries(values_4());
-    return $ENTRIES_4;
+  function get_entries_6() {
+    if ($ENTRIES_6 == null)
+      $ENTRIES_6 = enumEntries(values_6());
+    return $ENTRIES_6;
   }
   var NavbarExpand_entriesInitialized;
   function NavbarExpand_initEntries() {
@@ -1909,7 +2324,7 @@
     NavbarExpand_SM_instance = new NavbarExpand('SM', 4, 'navbar-expand-sm');
     NavbarExpand_XXL_instance = new NavbarExpand('XXL', 5, 'navbar-expand-xxl');
   }
-  var $ENTRIES_4;
+  var $ENTRIES_6;
   function NavbarExpand(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -1920,10 +2335,10 @@
   var NavbarType_FIXEDTOP_instance;
   var NavbarType_FIXEDBOTTOM_instance;
   var NavbarType_STICKYTOP_instance;
-  function values_5() {
+  function values_7() {
     return [NavbarType_FIXEDTOP_getInstance(), NavbarType_FIXEDBOTTOM_getInstance(), NavbarType_STICKYTOP_getInstance()];
   }
-  function valueOf_5(value) {
+  function valueOf_7(value) {
     switch (value) {
       case 'FIXEDTOP':
         return NavbarType_FIXEDTOP_getInstance();
@@ -1937,10 +2352,10 @@
         break;
     }
   }
-  function get_entries_5() {
-    if ($ENTRIES_5 == null)
-      $ENTRIES_5 = enumEntries(values_5());
-    return $ENTRIES_5;
+  function get_entries_7() {
+    if ($ENTRIES_7 == null)
+      $ENTRIES_7 = enumEntries(values_7());
+    return $ENTRIES_7;
   }
   var NavbarType_entriesInitialized;
   function NavbarType_initEntries() {
@@ -1951,7 +2366,7 @@
     NavbarType_FIXEDBOTTOM_instance = new NavbarType('FIXEDBOTTOM', 1, 'fixed-bottom');
     NavbarType_STICKYTOP_instance = new NavbarType('STICKYTOP', 2, 'sticky-top');
   }
-  var $ENTRIES_5;
+  var $ENTRIES_7;
   function NavbarType(name, ordinal, className) {
     Enum.call(this, name, ordinal);
     this.className_1 = className;
@@ -1961,10 +2376,10 @@
   };
   var NavbarColor_LIGHT_instance;
   var NavbarColor_DARK_instance;
-  function values_6() {
+  function values_8() {
     return [NavbarColor_LIGHT_getInstance(), NavbarColor_DARK_getInstance()];
   }
-  function valueOf_6(value) {
+  function valueOf_8(value) {
     switch (value) {
       case 'LIGHT':
         return NavbarColor_LIGHT_getInstance();
@@ -1976,10 +2391,10 @@
         break;
     }
   }
-  function get_entries_6() {
-    if ($ENTRIES_6 == null)
-      $ENTRIES_6 = enumEntries(values_6());
-    return $ENTRIES_6;
+  function get_entries_8() {
+    if ($ENTRIES_8 == null)
+      $ENTRIES_8 = enumEntries(values_8());
+    return $ENTRIES_8;
   }
   var NavbarColor_entriesInitialized;
   function NavbarColor_initEntries() {
@@ -1989,7 +2404,7 @@
     NavbarColor_LIGHT_instance = new NavbarColor('LIGHT', 0, 'navbar-light');
     NavbarColor_DARK_instance = new NavbarColor('DARK', 1, 'navbar-dark');
   }
-  var $ENTRIES_6;
+  var $ENTRIES_8;
   function NavbarColor(name, ordinal, navbarColor) {
     Enum.call(this, name, ordinal);
     this.navbarColor_1 = navbarColor;
@@ -2166,7 +2581,7 @@
       } else {
         // Inline function 'kotlin.let' call
         // Inline function 'kotlin.collections.find' call
-        var tmp0 = get_entries_7();
+        var tmp0 = get_entries_9();
         var tmp$ret$1;
         $l$block: {
           // Inline function 'kotlin.collections.firstOrNull' call
@@ -2294,10 +2709,10 @@
   var Theme_AUTO_instance;
   var Theme_LIGHT_instance;
   var Theme_DARK_instance;
-  function values_7() {
+  function values_9() {
     return [Theme_AUTO_getInstance(), Theme_LIGHT_getInstance(), Theme_DARK_getInstance()];
   }
-  function valueOf_7(value) {
+  function valueOf_9(value) {
     switch (value) {
       case 'AUTO':
         return Theme_AUTO_getInstance();
@@ -2311,10 +2726,10 @@
         break;
     }
   }
-  function get_entries_7() {
-    if ($ENTRIES_7 == null)
-      $ENTRIES_7 = enumEntries(values_7());
-    return $ENTRIES_7;
+  function get_entries_9() {
+    if ($ENTRIES_9 == null)
+      $ENTRIES_9 = enumEntries(values_9());
+    return $ENTRIES_9;
   }
   var Theme_entriesInitialized;
   function Theme_initEntries() {
@@ -2325,7 +2740,7 @@
     Theme_LIGHT_instance = new Theme('LIGHT', 1, 'light');
     Theme_DARK_instance = new Theme('DARK', 2, 'dark');
   }
-  var $ENTRIES_7;
+  var $ENTRIES_9;
   function Theme(name, ordinal, theme) {
     Enum.call(this, name, ordinal);
     this.theme_1 = theme;
@@ -2355,19 +2770,24 @@
   _.$_$ = _.$_$ || {};
   _.$_$.a = BsBgColor_BODYSECONDARY_getInstance;
   _.$_$.b = BsBorder_BORDERDARK_getInstance;
-  _.$_$.c = NavbarExpand_ALWAYS_getInstance;
-  _.$_$.d = ThemeManager_getInstance;
-  _.$_$.e = BootstrapCssModule_getInstance;
-  _.$_$.f = BootstrapModule_getInstance;
-  _.$_$.g = addBsBgColor;
-  _.$_$.h = addBsBorder;
-  _.$_$.i = removeBsBgColor;
-  _.$_$.j = dropDown;
-  _.$_$.k = Navbar;
-  _.$_$.l = navForm;
-  _.$_$.m = navLink;
-  _.$_$.n = navbar;
-  _.$_$.o = nav;
+  _.$_$.c = Placement_RIGHT_getInstance;
+  _.$_$.d = Trigger_CLICK_getInstance;
+  _.$_$.e = Trigger_HOVER_getInstance;
+  _.$_$.f = NavbarExpand_ALWAYS_getInstance;
+  _.$_$.g = ThemeManager_getInstance;
+  _.$_$.h = BootstrapCssModule_getInstance;
+  _.$_$.i = BootstrapModule_getInstance;
+  _.$_$.j = TooltipOptions;
+  _.$_$.k = addBsBgColor;
+  _.$_$.l = addBsBorder;
+  _.$_$.m = enableTooltip;
+  _.$_$.n = removeBsBgColor;
+  _.$_$.o = dropDown;
+  _.$_$.p = Navbar;
+  _.$_$.q = navForm;
+  _.$_$.r = navLink;
+  _.$_$.s = navbar;
+  _.$_$.t = nav;
   //endregion
   return _;
 }));

@@ -15,11 +15,11 @@
 }(function (_, kotlin_kotlin, kotlin_io_kvision_kvision) {
   'use strict';
   //region block: imports
-  var THROW_CCE = kotlin_kotlin.$_$.ve;
-  var protoOf = kotlin_kotlin.$_$.jb;
-  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.g3;
-  var initMetadataForObject = kotlin_kotlin.$_$.la;
-  var VOID = kotlin_kotlin.$_$.f;
+  var THROW_CCE = kotlin_kotlin.$_$.ye;
+  var protoOf = kotlin_kotlin.$_$.mb;
+  var ModuleInitializer = kotlin_io_kvision_kvision.$_$.s3;
+  var initMetadataForObject = kotlin_kotlin.$_$.oa;
+  var VOID = kotlin_kotlin.$_$.g;
   //endregion
   //region block: pre-declaration
   initMetadataForObject(MapsModule, 'MapsModule', VOID, VOID, [ModuleInitializer]);
