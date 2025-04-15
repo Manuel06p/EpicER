@@ -39,6 +39,7 @@ import io.kvision.core.removeBsBorder
 import io.kvision.core.style
 import io.kvision.dropdown.dropDown
 import io.kvision.form.form
+import io.kvision.form.number.spinnerInput
 import io.kvision.form.text.text
 import io.kvision.form.text.textArea
 import io.kvision.form.text.textInput
@@ -94,11 +95,6 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
     init {
         val customScope = CoroutineScope(Dispatchers.Main)
 
-        customScope.launch {
-            if (!isLogged()) {
-                routing.navigate("/login")
-            }
-        }
         add(HeaderComponent(routing))
 
         customScope.launch {
@@ -179,22 +175,18 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                             span("Portions:") {
                                 marginRight = 8.px
                             }
-                            val portionsInput = textInput(
-                                value = recipe.portions.toString(),
-                                maxlength = 4,
-                                type = InputType.NUMBER,
+
+                            val portionsInput = spinnerInput(
+                                value = recipe.portions,
+                                min = 1,
                             ) {
                                 height = auto
                                 width = 80.px
                                 textAlign = TextAlign.LEFT
 
                                 onInput {
-                                    val newPortion = this.value?.toIntOrNull() ?: recipe.portions
-                                    if (newPortion != null && newPortion >= 1) {
-                                        portionsState.value = newPortion
-                                    } else {
-                                        this.value = 1.toString()
-                                    }
+                                    val newPortion = this.value?.toInt() ?: recipe.portions
+                                    portionsState.value = newPortion
                                 }
                             }
                         }

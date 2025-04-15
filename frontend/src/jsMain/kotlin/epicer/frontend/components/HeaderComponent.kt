@@ -1,8 +1,12 @@
 package epicer.frontend.components
 
+import epicer.common.dto.administratorRole
 import epicer.common.dto.user.BaseUserDTO
 import epicer.frontend.data.isLogged
+import epicer.frontend.isRole
 import io.kvision.core.AlignItems
+import io.kvision.core.BsColor
+import io.kvision.core.onClick
 import io.kvision.dropdown.dropDown
 import io.kvision.form.check.checkBox
 import io.kvision.form.text.text
@@ -16,6 +20,8 @@ import io.kvision.navbar.navLink
 import io.kvision.panel.vPanel
 import io.kvision.routing.Routing
 import io.kvision.toast.Toast
+import io.kvision.toast.ToastContainer
+import io.kvision.toast.ToastContainerPosition
 import io.kvision.toast.ToastOptions
 import io.kvision.toast.ToastPosition
 import io.kvision.utils.perc
@@ -27,10 +33,21 @@ import kotlinx.serialization.json.Json
 
 class HeaderComponent(private val routing: Routing): Navbar("navbar-header") {
     init {
+        val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
+
+
+
         padding = 20.px
         nav {
             navLink("File", icon = "fas fa-file")
             navLink("Edit", icon = "fas fa-bars")
+            if (isRole(administratorRole))
+             {
+                navLink("Administration", icon = "fas fa-bars")
+                onClick {
+                    routing.navigate("/administration")
+                }
+            }
             dropDown(
                 "Favourites",
                 listOf("HTML" to "#!/basic", "Forms" to "#!/forms"),
@@ -44,6 +61,10 @@ class HeaderComponent(private val routing: Routing): Navbar("navbar-header") {
                 inline = true
             }
         }
+
+
+
+
         nav(rightAlign = true) {
             alignItems = AlignItems.CENTER
 
@@ -68,11 +89,9 @@ class HeaderComponent(private val routing: Routing): Navbar("navbar-header") {
                         onClick {
                             // Your logout logic here:
                             localStorage.clear()
-                            Toast.success(
+                            toastContainer.showToast(
                                 message = "You have been logged out",
-                                options = ToastOptions(
-                                    position = ToastPosition.BOTTOMRIGHT,
-                                )
+                                color = BsColor.SUCCESSBG,
                             )
                             routing.navigate("/login")
                         }

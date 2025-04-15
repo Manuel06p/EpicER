@@ -45,12 +45,6 @@ class MainView(private val routing: Routing) : SimplePanel() {
     init {
         val customScope = CoroutineScope(Dispatchers.Main)
 
-        customScope.launch {
-            if (!isLogged()) {
-                routing.navigate("/login")
-            }
-        }
-
         add(HeaderComponent(routing))
 
         var myRecipes: List<BaseRecipeDTO>? = null
@@ -64,9 +58,9 @@ class MainView(private val routing: Routing) : SimplePanel() {
                 if (myRecipes != null) {
                     for (recipe in myRecipes) {
                         recipeCard(recipe, customScope, routing)
+                    }
                 }
             }
         }
     }
 }
-    }

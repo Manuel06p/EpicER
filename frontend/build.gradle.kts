@@ -1,5 +1,5 @@
 tasks.register("prepareKotlinBuildScriptModel"){}
-
+val kotlinx_datetime_version: String by project
 
 plugins {
     val kotlinVersion: String by System.getProperties()
@@ -64,6 +64,7 @@ kotlin {
         implementation("io.kvision:kvision-select-remote:$kvisionVersion")
         implementation("io.kvision:kvision-tom-select-remote:$kvisionVersion")
         implementation("io.kvision:kvision-tabulator-remote:$kvisionVersion")
+        implementation("org.jetbrains.kotlinx:kotlinx-datetime:$kotlinx_datetime_version")
 
         implementation(project(":common"))  // Link the common module
     }

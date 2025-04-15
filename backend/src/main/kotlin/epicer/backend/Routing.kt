@@ -10,6 +10,7 @@ import epicer.common.dto.user.NewUserDTO
 import epicer.common.dto.user.UpdateUserDTO
 import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
+import epicer.common.dto.administratorRole
 import epicer.common.dto.user.BaseUserDTO
 import io.ktor.http.*
 import io.ktor.serialization.JsonConvertException
@@ -27,9 +28,6 @@ import java.util.Date
 
 
 fun Application.configureRouting() {
-    val userService = UserService()
-    val recipeService = RecipeService()
-    val imageService = ImageService()
 
     routing {
 
@@ -37,7 +35,7 @@ fun Application.configureRouting() {
         post("/login") {
             val loginUserDTO = call.receive<LoginUserDTO>()
 
-            val user = userService.getFullUserByUsername(loginUserDTO.username)
+            val user = UserService.getFullUserByUsername(loginUserDTO.username)
 
             // Controllo credenziali
             if (user == null) {
@@ -75,7 +73,7 @@ fun Application.configureRouting() {
                         return@get
                     }
 
-                    val imageFile = imageService.getAccessibleImageById(imageId, userId)
+                    val imageFile = ImageService.getAccessibleImageById(imageId, userId)
                     if (imageFile == null || !imageFile.exists()) {
                         call.respond(HttpStatusCode.NotFound)
                         return@get
@@ -95,7 +93,7 @@ fun Application.configureRouting() {
                     val recipeId = call.parameters["id"]?.toIntOrNull()
 
                     if (recipeId != null && userId != null) {
-                        val recipe = recipeService.getAccessibleRecipeById(recipeId, userId)
+                        val recipe = RecipeService.getAccessibleRecipeById(recipeId, userId)
                         if (recipe != null) {
                             call.respond(HttpStatusCode.OK, recipe)
                         }
@@ -116,7 +114,7 @@ fun Application.configureRouting() {
                         val principal = call.principal<JWTPrincipal>()
                         val userId = principal?.payload?.getClaim("id")?.asInt()
                         if (userId != null) {
-                            val recipes = recipeService.getBaseRecipesById(userId)
+                            val recipes = RecipeService.getBaseRecipesById(userId)
                             call.respond(recipes)
                         } else {
                             call.respond(HttpStatusCode.BadRequest)
@@ -130,7 +128,7 @@ fun Application.configureRouting() {
                         val userId = principal?.payload?.getClaim("id")?.asInt()
 
                         if (userId != null) {
-                            val baseUserDTO = userService.getBaseUserById(userId)
+                            val baseUserDTO = UserService.getBaseUserById(userId)
                             if (baseUserDTO != null) {
                                 call.respond(HttpStatusCode.OK, baseUserDTO)
                             } else {
@@ -145,7 +143,7 @@ fun Application.configureRouting() {
                         val updateUser = call.receive<UpdateUserDTO>()
 
                         if (userId != null) {
-                            userService.updateUserById(userId, updateUser)
+                            UserService.updateUserById(userId, updateUser)
                             call.respond(HttpStatusCode.NoContent)
                         }
                     }
@@ -154,7 +152,7 @@ fun Application.configureRouting() {
                         val userId = principal?.payload?.getClaim("id")?.asInt()
 
                         if (userId != null) {
-                            userService.deleteUserById(userId)
+                            UserService.deleteUserById(userId)
                             call.respond(HttpStatusCode.NoContent)
                         }
                     }
@@ -162,20 +160,29 @@ fun Application.configureRouting() {
 
             }
         }
+        route("/administration") {
+            authenticate("auth-jwt") {
+                withRoles(administratorRole) {
+                    route("/users") {
+                        get {
+                            val users = UserService.getBaseUsers()
+                            call.respond(HttpStatusCode.OK, users)
+                        }
+                    }
+                }
+            }
+        }
         route("/users") {
             authenticate("auth-jwt") {
                 withRoles("administrator") {
-                    get {
-                        val users = userService.getBaseUsers()
-                        call.respond(HttpStatusCode.OK, users)
-                    }
+
                 }
             }
 
             post {
                 try {
                     val newUser = call.receive<NewUserDTO>()
-                    userService.createUser(newUser)
+                    UserService.createUser(newUser)
                     call.respond(HttpStatusCode.NoContent)
                 } catch (ex: IllegalStateException) {
                     call.respond(HttpStatusCode.BadRequest)

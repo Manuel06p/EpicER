@@ -7,6 +7,7 @@ import epicer.common.dto.user.UserDTO
 import epicer.frontend.data.login
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
+import io.kvision.core.BsColor
 import io.kvision.core.Position
 import io.kvision.core.onClick
 import io.kvision.core.onEventLaunch
@@ -27,6 +28,8 @@ import io.kvision.panel.VPanel
 import io.kvision.panel.vPanel
 import io.kvision.routing.Routing
 import io.kvision.toast.Toast
+import io.kvision.toast.ToastContainer
+import io.kvision.toast.ToastContainerPosition
 import io.kvision.toast.ToastOptions
 import io.kvision.toast.ToastPosition
 import io.kvision.utils.perc
@@ -49,6 +52,8 @@ import kotlin.js.json
 class LoginView(private val routing: Routing) : VPanel() {
 
     init {
+
+        val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
 
         h2("Login", className = "text-center")
         marginLeft = 20.px
@@ -84,21 +89,18 @@ class LoginView(private val routing: Routing) : VPanel() {
                                 localStorage.setItem("jwtToken", token.token)
                                 localStorage.setItem("baseUserDTO", Json.encodeToString(BaseUserDTO.serializer(), token.baseUserDTO))
 
-                                Toast.success(
+                                toastContainer.showToast(
                                     message = "Login successfull",
-                                    options = ToastOptions(
-                                        position = ToastPosition.BOTTOMRIGHT,
-                                    )
+                                    color = BsColor.SUCCESSBG,
                                 )
+
                                 println("Login succeded")
                                 routing.navigate("/")
                             } else {
                                 localStorage.clear()
-                                Toast.danger(
+                                toastContainer.showToast(
                                     message = "Login failed",
-                                    options = ToastOptions(
-                                        position = ToastPosition.BOTTOMRIGHT,
-                                    )
+                                    color = BsColor.DANGERBG,
                                 )
                                 println("Login failed")
                             }

@@ -3,6 +3,7 @@ package epicer.frontend.data
 import epicer.common.dto.TokenDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
+import epicer.common.dto.user.BaseUserDTO
 import epicer.common.dto.user.FullUserDTO
 import epicer.common.dto.user.LoginUserDTO
 import epicer.frontend.backend_url
@@ -109,6 +110,36 @@ suspend fun getMyRecipes(): List<BaseRecipeDTO>? {
         }
     } catch (e: Exception) {
         console.error("Failed to fetch recipes", e)
+        return null
+    }
+}
+
+suspend fun getUsers(): List<BaseUserDTO>? {
+    try {
+        val token = localStorage.getItem("jwtToken") ?: return null
+
+        val response = window.fetch(
+            "$backend_url/administration/users",
+            RequestInit(
+                method = "GET",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token"
+                )
+            )
+        ).await()
+
+        if (response.status.toInt() == 200) {
+            val responseBody = response.text().await()
+
+            // Decode the response body into list of BaseRecipeDTO
+            return Json.decodeFromString<List<BaseUserDTO>>(responseBody)
+        } else {
+            // Optionally log or handle errors
+            return null
+        }
+    } catch (e: Exception) {
+        console.error("Failed to fetch users", e)
         return null
     }
 }
