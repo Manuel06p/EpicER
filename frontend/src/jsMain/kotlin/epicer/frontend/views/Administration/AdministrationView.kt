@@ -1,12 +1,9 @@
-package epicer.frontend.views
+package epicer.frontend.views.Administration
 
-import epicer.common.dto.user.BaseUserDTO
 import epicer.frontend.data.getUsers
-import io.kvision.form.text.text
 import io.kvision.html.Span
-import io.kvision.html.div
+import io.kvision.html.button
 import io.kvision.html.h2
-import io.kvision.html.span
 import io.kvision.panel.SimplePanel
 import io.kvision.panel.responsiveGridPanel
 import io.kvision.routing.Routing
@@ -25,18 +22,39 @@ class AdministrationView(private val routing: Routing) : SimplePanel() {
 
             responsiveGridPanel {
                 // Optional: Add headers
-                add(Span("Username"), col = 1, row = 1)
+                add(Span("Username"), col = 1, row = 0)
                 add(Span("Name"), col = 2, row = 1)
                 add(Span("Roles"), col = 3, row = 1)
                 add(Span("Created At"), col = 4, row = 1)
+                add(Span("Edit"), col = 5, row = 1)
 
                 users?.forEachIndexed { index, user ->
-                    val rowIndex = index + 2 // Row 0 is the header
-
+                    val rowIndex = index + 1 // Row 0 is the header
                     add(Span(user.username), col = 1, row = rowIndex)
                     add(Span(user.name), col = 2, row = rowIndex)
                     add(Span(user.roles.toString()), col = 3, row = rowIndex)
                     add(Span(user.created_at.toString()), col = 4, row = rowIndex)
+
+                    add(button(
+                        text = "Edit",
+                        icon = "fas fa-edit",
+                    ) {
+                        onClick {
+                            routing.navigate("/administration/users/${user.id}")
+                        }
+                    },
+                        col = 5,
+                        row = rowIndex,
+                    )
+                }
+            }
+
+            button(
+                text = "New User",
+                icon = "fas fa-create",
+            ) {
+                onClick {
+                    routing.navigate("/administration/users/new")
                 }
             }
         }

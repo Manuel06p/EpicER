@@ -1,6 +1,6 @@
 package epicer.frontend.components
 
-import epicer.common.dto.administratorRole
+import epicer.common.administratorRole
 import epicer.common.dto.user.BaseUserDTO
 import epicer.frontend.data.isLogged
 import epicer.frontend.isRole

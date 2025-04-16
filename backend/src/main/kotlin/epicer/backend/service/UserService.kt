@@ -37,6 +37,7 @@ class UserService {
                 .groupBy { it[UsersTable.id] }
                 .map { (userId, rows) ->
                     BaseUserDTO(
+                        id = rows.first()[UsersTable.id].value,
                         username = rows.first()[UsersTable.username],
                         name = rows.first()[UsersTable.name],
                         created_at = rows.first()[UsersTable.created_at].toKotlinLocalDateTime(),
@@ -116,6 +117,7 @@ class UserService {
                 .groupBy { it[UsersTable.id] }
                 .map { (userId, rows) ->
                     BaseUserDTO(
+                        id = rows.first()[UsersTable.id].value,
                         username = rows.first()[UsersTable.username],
                         name = rows.first()[UsersTable.name],
                         created_at = rows.first()[UsersTable.created_at].toKotlinLocalDateTime(),

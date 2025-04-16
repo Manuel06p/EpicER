@@ -10,7 +10,7 @@ import epicer.common.dto.user.NewUserDTO
 import epicer.common.dto.user.UpdateUserDTO
 import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
-import epicer.common.dto.administratorRole
+import epicer.common.administratorRole
 import epicer.common.dto.user.BaseUserDTO
 import io.ktor.http.*
 import io.ktor.serialization.JsonConvertException
@@ -57,7 +57,7 @@ fun Application.configureRouting() {
 
 
 
-                call.respond(TokenDTO(token, BaseUserDTO(user.username, user.name, user.roles, user.created_at)))
+                call.respond(TokenDTO(token, BaseUserDTO(user.id, user.username, user.name, user.roles, user.created_at)))
             }
         }
         route("/images") {
@@ -168,26 +168,30 @@ fun Application.configureRouting() {
                             val users = UserService.getBaseUsers()
                             call.respond(HttpStatusCode.OK, users)
                         }
+                        post {
+                            try {
+                                val newUser = call.receive<NewUserDTO>()
+                                UserService.createUser(newUser)
+                                call.respond(HttpStatusCode.NoContent)
+                            } catch (ex: IllegalStateException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            } catch (ex: JsonConvertException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            }
+                        }
+                        get("/{userId}") {
+                            val userId = call.parameters["userId"]?.toIntOrNull()
+                            if (userId != null) {
+                                val baseUserDTO = UserService.getBaseUserById(userId)
+                                if (baseUserDTO != null) {
+                                    call.respond(HttpStatusCode.OK, baseUserDTO)
+                                } else {
+                                    call.respond(HttpStatusCode.NotFound, "User not found")
+                                }
+                            }
+                            call.respond(message = HttpStatusCode.BadRequest)
+                        }
                     }
-                }
-            }
-        }
-        route("/users") {
-            authenticate("auth-jwt") {
-                withRoles("administrator") {
-
-                }
-            }
-
-            post {
-                try {
-                    val newUser = call.receive<NewUserDTO>()
-                    UserService.createUser(newUser)
-                    call.respond(HttpStatusCode.NoContent)
-                } catch (ex: IllegalStateException) {
-                    call.respond(HttpStatusCode.BadRequest)
-                } catch (ex: JsonConvertException) {
-                    call.respond(HttpStatusCode.BadRequest)
                 }
             }
         }

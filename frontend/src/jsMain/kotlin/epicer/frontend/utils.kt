@@ -1,6 +1,6 @@
 package epicer.frontend
 
-import epicer.common.dto.administratorRole
+import epicer.common.administratorRole
 import epicer.common.dto.user.BaseUserDTO
 import epicer.frontend.data.isLogged
 import io.kvision.core.BsColor

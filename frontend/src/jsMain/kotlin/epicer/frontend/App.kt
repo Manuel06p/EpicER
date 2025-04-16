@@ -1,10 +1,12 @@
 package epicer.frontend
 
-import epicer.common.dto.administratorRole
-import epicer.frontend.views.AdministrationView
+import epicer.common.administratorRole
+import epicer.frontend.views.Administration.AdministrationView
+import epicer.frontend.views.Administration.NewUserView
 import epicer.frontend.views.LoginView
 import epicer.frontend.views.MainView
 import epicer.frontend.views.RecipeView
+import epicer.frontend.views.Administration.UserEditView
 import io.kvision.Application
 import io.kvision.CoreModule
 import io.kvision.BootstrapModule
@@ -22,8 +24,6 @@ import io.kvision.ChartModule
 import io.kvision.TabulatorModule
 import io.kvision.TabulatorCssBootstrapModule
 import io.kvision.MapsModule
-import io.kvision.core.BsColor
-import io.kvision.html.H3
 import io.kvision.i18n.DefaultI18nManager
 import io.kvision.i18n.I18n
 import io.kvision.module
@@ -35,7 +35,6 @@ import io.kvision.startApplication
 import io.kvision.theme.ThemeManager
 import io.kvision.toast.ToastContainer
 import io.kvision.toast.ToastContainerPosition
-import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlin.js.RegExp
 
 class App : Application() {
@@ -84,6 +83,20 @@ class App : Application() {
                 authRoleNavigate(administratorRole, routing, toastContainer) {
                     root.removeAll()
                     root.add(AdministrationView(routing))
+                }
+            })
+            .on("/administration/users/new", {
+                authRoleNavigate(administratorRole, routing, toastContainer) {
+                    root.removeAll()
+                    root.add(NewUserView(routing))
+                }
+            })
+            .on(RegExp("^administration/users/(.*)"), { match ->
+                authRoleNavigate(administratorRole, routing, toastContainer) {
+                    val userId = match.data[0]
+                    println(userId)
+                    root.removeAll()
+                    root.add(UserEditView(routing, userId))
                 }
             })
             .resolve()

@@ -16,11 +16,10 @@ import epicer.backend.model.UsersRolesTable
 import epicer.backend.model.UsersTable
 import epicer.backend.service.UserService
 import epicer.backend.utils.hashPassword
-import epicer.common.dto.administratorPassword
-import epicer.common.dto.administratorRole
-import epicer.common.dto.maintainerRole
+import epicer.common.administratorPassword
+import epicer.common.administratorRole
+import epicer.common.maintainerRole
 import epicer.common.dto.user.NewUserDTO
-import epicer.common.dto.userRole
 import io.ktor.server.application.*
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.sql.*
@@ -65,7 +64,7 @@ suspend fun <T> suspendTransaction(block: Transaction.() -> T): T =
     newSuspendedTransaction(Dispatchers.IO, statement = block)
 
 fun createDefaultRoles() {
-    val defaultRoles = listOf(administratorRole, maintainerRole, userRole)
+    val defaultRoles = listOf(administratorRole, maintainerRole)
 
     defaultRoles.forEach { role ->
         val exists = RolesTable

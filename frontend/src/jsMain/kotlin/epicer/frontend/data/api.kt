@@ -4,8 +4,8 @@ import epicer.common.dto.TokenDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
 import epicer.common.dto.user.BaseUserDTO
-import epicer.common.dto.user.FullUserDTO
 import epicer.common.dto.user.LoginUserDTO
+import epicer.common.dto.user.NewUserDTO
 import epicer.frontend.backend_url
 import kotlinx.browser.localStorage
 import kotlinx.browser.window
@@ -114,35 +114,7 @@ suspend fun getMyRecipes(): List<BaseRecipeDTO>? {
     }
 }
 
-suspend fun getUsers(): List<BaseUserDTO>? {
-    try {
-        val token = localStorage.getItem("jwtToken") ?: return null
 
-        val response = window.fetch(
-            "$backend_url/administration/users",
-            RequestInit(
-                method = "GET",
-                headers = json(
-                    "Content-Type" to "application/json",
-                    "Authorization" to "Bearer $token"
-                )
-            )
-        ).await()
-
-        if (response.status.toInt() == 200) {
-            val responseBody = response.text().await()
-
-            // Decode the response body into list of BaseRecipeDTO
-            return Json.decodeFromString<List<BaseUserDTO>>(responseBody)
-        } else {
-            // Optionally log or handle errors
-            return null
-        }
-    } catch (e: Exception) {
-        console.error("Failed to fetch users", e)
-        return null
-    }
-}
 
 
 suspend fun isLogged(): Boolean {
@@ -195,5 +167,94 @@ suspend fun getImage(imageId: Int?): String? {
     } catch (e: Exception) {
         console.error("Failed to fetch image", e)
         return null
+    }
+}
+
+//
+// ADMINISTRATION
+//
+
+// Get user by id
+suspend fun getUser(userId: Int): BaseUserDTO? {
+    try {
+        val token = localStorage.getItem("jwtToken") ?: return null
+
+        val response = window.fetch(
+            "$backend_url/administration/users/$userId",
+            RequestInit(
+                method = "GET",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token"
+                )
+            )
+        ).await()
+
+        if (response.status.toInt() == 200) {
+            val responseBody = response.text().await()
+
+            return Json.decodeFromString<BaseUserDTO>(responseBody)
+        } else {
+            // Optionally log or handle errors
+            return null
+        }
+    } catch (e: Exception) {
+        console.error("Failed to fetch the user", e)
+        return null
+    }
+}
+
+// Get all users base dto
+suspend fun getUsers(): List<BaseUserDTO>? {
+    try {
+        val token = localStorage.getItem("jwtToken") ?: return null
+
+        val response = window.fetch(
+            "$backend_url/administration/users",
+            RequestInit(
+                method = "GET",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token"
+                )
+            )
+        ).await()
+
+        if (response.status.toInt() == 200) {
+            val responseBody = response.text().await()
+
+            // Decode the response body into list of BaseRecipeDTO
+            return Json.decodeFromString<List<BaseUserDTO>>(responseBody)
+        } else {
+            // Optionally log or handle errors
+            return null
+        }
+    } catch (e: Exception) {
+        console.error("Failed to fetch users", e)
+        return null
+    }
+}
+
+// Creates a new user
+suspend fun createUser(newUserDTO: NewUserDTO): Boolean {
+    return try {
+        val token = localStorage.getItem("jwtToken") ?: return false
+
+        val response = window.fetch(
+            "$backend_url/administration/users",
+            RequestInit(
+                method = "POST",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token",
+                ),
+                body = Json.encodeToString(newUserDTO)
+            )
+        ).await()
+
+        response.status.toInt() == 204 // HttpStatusCode.NoContent
+    } catch (e: Exception) {
+        console.error("User registration failed:", e)
+        false
     }
 }
