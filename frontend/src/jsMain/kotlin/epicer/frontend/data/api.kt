@@ -3,10 +3,13 @@ package epicer.frontend.data
 import epicer.common.dto.TokenDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
+import epicer.common.dto.role.RoleDTO
 import epicer.common.dto.user.BaseUserDTO
 import epicer.common.dto.user.LoginUserDTO
 import epicer.common.dto.user.NewUserDTO
+import epicer.common.dto.user.UpdateUserDTO
 import epicer.frontend.backend_url
+import io.kvision.remote.HttpMethod
 import kotlinx.browser.localStorage
 import kotlinx.browser.window
 import kotlinx.coroutines.await
@@ -256,5 +259,60 @@ suspend fun createUser(newUserDTO: NewUserDTO): Boolean {
     } catch (e: Exception) {
         console.error("User registration failed:", e)
         false
+    }
+}
+
+// Updates a new user
+suspend fun updateUser(updateUserDTO: UpdateUserDTO): Boolean {
+    return try {
+        val token = localStorage.getItem("jwtToken") ?: return false
+
+        val response = window.fetch(
+            "$backend_url/administration/users",
+            RequestInit(
+                method = "PATCH",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token",
+                ),
+                body = Json.encodeToString(updateUserDTO)
+            )
+        ).await()
+
+        response.status.toInt() == 204 // HttpStatusCode.NoContent
+    } catch (e: Exception) {
+        console.error("User update failed:", e)
+        false
+    }
+}
+
+// Get all roles
+suspend fun getRoles(): List<RoleDTO>? {
+    try {
+        val token = localStorage.getItem("jwtToken") ?: return null
+
+        val response = window.fetch(
+            "$backend_url/administration/roles",
+            RequestInit(
+                method = "GET",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token"
+                )
+            )
+        ).await()
+
+        if (response.status.toInt() == 200) {
+            val responseBody = response.text().await()
+
+            // Decode the response body into list of BaseRecipeDTO
+            return Json.decodeFromString<List<RoleDTO>>(responseBody)
+        } else {
+            // Optionally log or handle errors
+            return null
+        }
+    } catch (e: Exception) {
+        console.error("Failed to fetch roles", e)
+        return null
     }
 }

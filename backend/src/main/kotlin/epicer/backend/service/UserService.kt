@@ -90,11 +90,26 @@ class UserService {
                 }
         }
 
-        suspend fun updateUserById(updateId: Int, updateUser: UpdateUserDTO): Unit = suspendTransaction {
-            UsersTable.update({ UsersTable.id eq updateId }) {
-                updateUser.username?.let { new -> it[username] = new }
-                updateUser.password?.let { new -> it[hashed_password] = hashPassword(new) }
-                updateUser.name?.let { new -> it[name] = new }
+        suspend fun updateUser(updateUser: UpdateUserDTO): Unit = suspendTransaction {
+            if (updateUser.username != null || updateUser.password != null || updateUser.name != null) {
+                UsersTable.update({ UsersTable.id eq updateUser.id }) {
+                    updateUser.username?.let { new -> it[username] = new }
+                    updateUser.password?.let { new -> it[hashed_password] = hashPassword(new) }
+                    updateUser.name?.let { new -> it[name] = new }
+                }
+            }
+
+            if (updateUser.roles != null) {
+                val roleIds = updateUser.roles
+
+                UsersRolesTable.deleteWhere { UsersRolesTable.user eq updateUser.id }
+
+                roleIds?.distinct()?.forEach { roleId ->
+                    UsersRolesTable.insert {
+                        it[user] = updateUser.id
+                        it[role] = roleId
+                    }
+                }
             }
         }
 

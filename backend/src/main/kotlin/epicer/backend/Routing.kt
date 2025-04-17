@@ -4,6 +4,7 @@ import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
 import epicer.backend.service.ImageService
 import epicer.backend.service.RecipeService
+import epicer.backend.service.RoleService
 import epicer.backend.service.UserService
 import epicer.common.dto.user.LoginUserDTO
 import epicer.common.dto.user.NewUserDTO
@@ -136,17 +137,6 @@ fun Application.configureRouting() {
                             }
                         }
                     }
-                    patch() {
-                        val principal = call.principal<JWTPrincipal>()
-                        val userId = principal?.payload?.getClaim("id")?.asInt()
-
-                        val updateUser = call.receive<UpdateUserDTO>()
-
-                        if (userId != null) {
-                            UserService.updateUserById(userId, updateUser)
-                            call.respond(HttpStatusCode.NoContent)
-                        }
-                    }
                     delete() {
                         val principal = call.principal<JWTPrincipal>()
                         val userId = principal?.payload?.getClaim("id")?.asInt()
@@ -190,6 +180,17 @@ fun Application.configureRouting() {
                                 }
                             }
                             call.respond(message = HttpStatusCode.BadRequest)
+                        }
+                        patch() {
+                            val updateUser = call.receive<UpdateUserDTO>()
+                            UserService.updateUser(updateUser)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                    }
+                    route("/roles") {
+                        get {
+                            val roles = RoleService.getRoles()
+                            call.respond(HttpStatusCode.OK, roles)
                         }
                     }
                 }

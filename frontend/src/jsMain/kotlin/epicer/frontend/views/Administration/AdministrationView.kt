@@ -51,7 +51,7 @@ class AdministrationView(private val routing: Routing) : SimplePanel() {
 
             button(
                 text = "New User",
-                icon = "fas fa-create",
+                icon = "fas fa-user-plus",
             ) {
                 onClick {
                     routing.navigate("/administration/users/new")
