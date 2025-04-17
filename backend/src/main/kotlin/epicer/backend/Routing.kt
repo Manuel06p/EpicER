@@ -181,6 +181,14 @@ fun Application.configureRouting() {
                             }
                             call.respond(message = HttpStatusCode.BadRequest)
                         }
+                        delete("/{userId}") {
+                            val userId = call.parameters["userId"]?.toIntOrNull()
+
+                            if (userId != null) {
+                                UserService.deleteUserById(userId)
+                                call.respond(HttpStatusCode.NoContent)
+                            }
+                        }
                         patch() {
                             val updateUser = call.receive<UpdateUserDTO>()
                             UserService.updateUser(updateUser)

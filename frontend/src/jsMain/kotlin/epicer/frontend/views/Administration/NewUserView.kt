@@ -2,6 +2,7 @@ package epicer.frontend.views.Administration
 
 import epicer.common.dto.user.NewUserDTO
 import epicer.frontend.data.createUser
+import epicer.frontend.usersRoute
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
@@ -127,7 +128,7 @@ class NewUserView(private val routing: Routing) : VPanel() {
                         ) {
                             customScope.launch {
                                 if (createUser(newUserDTO)) {
-                                    routing.navigate("/administration")
+                                    routing.navigate(usersRoute)
                                     toastContainer.showToast(
                                         message = "User created successfully!",
                                         color = BsColor.SUCCESSBG,

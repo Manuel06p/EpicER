@@ -262,6 +262,30 @@ suspend fun createUser(newUserDTO: NewUserDTO): Boolean {
     }
 }
 
+// Delete a user
+suspend fun deleteUser(userId: Int): Boolean {
+    return try {
+        val token = localStorage.getItem("jwtToken") ?: return false
+
+        val response = window.fetch(
+            "$backend_url/administration/users/$userId",
+            RequestInit(
+                method = "DELETE",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token",
+                ),
+                body = Json.encodeToString(userId)
+            )
+        ).await()
+
+        response.status.toInt() == 204 // HttpStatusCode.NoContent
+    } catch (e: Exception) {
+        console.error("User deletion failed:", e)
+        false
+    }
+}
+
 // Updates a new user
 suspend fun updateUser(updateUserDTO: UpdateUserDTO): Boolean {
     return try {

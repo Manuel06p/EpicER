@@ -4,6 +4,7 @@ import epicer.common.dto.user.UpdateUserDTO
 import epicer.frontend.data.getRoles
 import epicer.frontend.data.getUser
 import epicer.frontend.data.updateUser
+import epicer.frontend.usersRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
 import io.kvision.core.FlexWrap
@@ -18,7 +19,6 @@ import io.kvision.html.button
 import io.kvision.html.h2
 import io.kvision.modal.Confirm
 import io.kvision.panel.HPanel
-import io.kvision.panel.SimplePanel
 import io.kvision.panel.VPanel
 import io.kvision.panel.vPanel
 import io.kvision.routing.Routing
@@ -32,7 +32,7 @@ import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
 
 
-class UserEditView(private val routing: Routing, userId: Int) : VPanel() {
+class UpdateUserView(private val routing: Routing, userId: Int) : VPanel() {
     @Serializable
     data class UpdateUserFormDTO(
         val username: String?,
@@ -98,7 +98,10 @@ class UserEditView(private val routing: Routing, userId: Int) : VPanel() {
                         options = roles?.map { it.id.toString() to it.role },
                         label = "Roles",
                         multiple = true
-                    )
+                    ) {
+                        val placeholderText = "Current roles: ${if (user?.roles?.isEmpty() == true) "none" else user?.roles?.joinToString(", ")}"
+                        placeholder = placeholderText
+                    }
 
                     add(UpdateUserFormDTO::updateRoles, updateRolesCheckbox)
                     add(UpdateUserFormDTO::roles, rolesSelect)
@@ -169,7 +172,7 @@ class UserEditView(private val routing: Routing, userId: Int) : VPanel() {
                             ) {
                                 customScope.launch {
                                     if (updateUser(updateUserDTO)) {
-                                        routing.navigate("/administration")
+                                        routing.navigate(usersRoute)
                                         toastContainer.showToast(
                                             message = "User updated successfully!",
                                             color = BsColor.SUCCESSBG,

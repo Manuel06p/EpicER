@@ -1,12 +1,12 @@
 package epicer.frontend
 
 import epicer.common.administratorRole
-import epicer.frontend.views.Administration.AdministrationView
+import epicer.frontend.views.Administration.UsersView
 import epicer.frontend.views.Administration.NewUserView
 import epicer.frontend.views.LoginView
 import epicer.frontend.views.MainView
 import epicer.frontend.views.RecipeView
-import epicer.frontend.views.Administration.UserEditView
+import epicer.frontend.views.Administration.UpdateUserView
 import io.kvision.Application
 import io.kvision.CoreModule
 import io.kvision.BootstrapModule
@@ -79,10 +79,10 @@ class App : Application() {
                     root.add(RecipeView(routing, recipeId))
                 }
             })
-            .on("/administration", {
+            .on(usersRoute, {
                 authRoleNavigate(administratorRole, routing, toastContainer) {
                     root.removeAll()
-                    root.add(AdministrationView(routing))
+                    root.add(UsersView(routing))
                 }
             })
             .on("/administration/users/new", {
@@ -96,7 +96,7 @@ class App : Application() {
                     val userId = match.data[0]
                     println(userId)
                     root.removeAll()
-                    root.add(UserEditView(routing, userId))
+                    root.add(UpdateUserView(routing, userId))
                 }
             })
             .resolve()

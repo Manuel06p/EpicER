@@ -4,6 +4,7 @@ import epicer.common.administratorRole
 import epicer.common.dto.user.BaseUserDTO
 import epicer.frontend.data.isLogged
 import epicer.frontend.isRole
+import epicer.frontend.usersRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
 import io.kvision.core.onClick
@@ -45,7 +46,7 @@ class HeaderComponent(private val routing: Routing): Navbar("navbar-header") {
              {
                 navLink("Administration", icon = "fas fa-bars")
                 onClick {
-                    routing.navigate("/administration")
+                    routing.navigate(usersRoute)
                 }
             }
             dropDown(

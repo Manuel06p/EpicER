@@ -8,6 +8,8 @@ import io.kvision.routing.Routing
 import io.kvision.toast.ToastContainer
 import kotlinx.browser.localStorage
 import kotlinx.coroutines.launch
+import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.format.char
 import kotlinx.serialization.json.Json
 
 fun isRole(role: String) : Boolean {
@@ -50,4 +52,20 @@ fun authRoleNavigate(
     } else {
         authNavigate(routing, toastContainer, onLoggedIn)
     }
+}
+
+val formatDateTime = LocalDateTime.Format {
+    year()
+    char('-')
+    monthNumber()
+    char('-')
+    dayOfMonth()
+
+    char(' ')
+
+    hour()
+    char(':')
+    minute()
+    char(':')
+    second()
 }
