@@ -11,7 +11,7 @@ import epicer.backend.model.StepsTable
 import epicer.backend.model.UnitsTable
 import epicer.backend.suspendTransaction
 import epicer.common.dto.recipe.BaseRecipeDTO
-import epicer.common.dto.recipe.FullIngredientDTO
+import epicer.common.dto.ingredient.FullIngredientDTO
 import epicer.common.dto.recipe.FullIngredientInRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
 import epicer.common.dto.recipe.FullSectionDTO

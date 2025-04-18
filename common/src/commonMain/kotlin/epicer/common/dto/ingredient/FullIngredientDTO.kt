@@ -1,4 +1,4 @@
-package epicer.common.dto.recipe
+package epicer.common.dto.ingredient
 
 import kotlinx.serialization.Serializable
 

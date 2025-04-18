@@ -1,12 +1,15 @@
 package epicer.frontend
 
 import epicer.common.administratorRole
+import epicer.common.maintainerRole
 import epicer.frontend.views.Administration.UsersView
-import epicer.frontend.views.Administration.NewUserView
+import epicer.frontend.views.Administration.CreateUserView
 import epicer.frontend.views.LoginView
 import epicer.frontend.views.MainView
 import epicer.frontend.views.RecipeView
 import epicer.frontend.views.Administration.UpdateUserView
+import epicer.frontend.views.Maintenance.Ingredients.CreateIngredientView
+import epicer.frontend.views.Maintenance.Ingredients.IngredientsView
 import io.kvision.Application
 import io.kvision.CoreModule
 import io.kvision.BootstrapModule
@@ -32,6 +35,7 @@ import io.kvision.panel.root
 import io.kvision.require
 import io.kvision.routing.Routing
 import io.kvision.startApplication
+import io.kvision.theme.Theme
 import io.kvision.theme.ThemeManager
 import io.kvision.toast.ToastContainer
 import io.kvision.toast.ToastContainerPosition
@@ -48,7 +52,7 @@ class App : Application() {
                 )
             )
 
-        ThemeManager.init()
+        ThemeManager.init(initialTheme = Theme.DARK, remember = false)
 
         val root = root("kvapp")
         val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
@@ -85,10 +89,10 @@ class App : Application() {
                     root.add(UsersView(routing))
                 }
             })
-            .on("/administration/users/new", {
+            .on(createUserRoute, {
                 authRoleNavigate(administratorRole, routing, toastContainer) {
                     root.removeAll()
-                    root.add(NewUserView(routing))
+                    root.add(CreateUserView(routing))
                 }
             })
             .on(RegExp("^administration/users/(.*)"), { match ->
@@ -97,6 +101,18 @@ class App : Application() {
                     println(userId)
                     root.removeAll()
                     root.add(UpdateUserView(routing, userId))
+                }
+            })
+            .on(ingredientsRoute, {
+                authRoleNavigate(maintainerRole, routing, toastContainer) {
+                    root.removeAll()
+                    root.add(IngredientsView(routing))
+                }
+            })
+            .on(createIngredientsRoute, {
+                authRoleNavigate(maintainerRole, routing, toastContainer) {
+                    root.removeAll()
+                    root.add(CreateIngredientView(routing))
                 }
             })
             .resolve()

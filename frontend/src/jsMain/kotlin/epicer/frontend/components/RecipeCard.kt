@@ -4,6 +4,8 @@ import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.frontend.data.getImage
 import epicer.frontend.image_not_found
 import io.kvision.core.Background
+import io.kvision.core.Border
+import io.kvision.core.BsBgColor
 import io.kvision.core.BsBorder
 import io.kvision.core.Col
 import io.kvision.core.Color
@@ -13,6 +15,7 @@ import io.kvision.core.Overflow
 import io.kvision.core.TextAlign
 import io.kvision.core.TextOverflow
 import io.kvision.core.WhiteSpace
+import io.kvision.core.addBsBgColor
 import io.kvision.core.addBsBorder
 import io.kvision.html.button
 import io.kvision.html.h2

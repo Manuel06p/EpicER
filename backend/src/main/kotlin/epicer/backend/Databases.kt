@@ -14,12 +14,10 @@ import epicer.backend.model.UnitTypesTable
 import epicer.backend.model.UnitsTable
 import epicer.backend.model.UsersRolesTable
 import epicer.backend.model.UsersTable
-import epicer.backend.service.UserService
 import epicer.backend.utils.hashPassword
 import epicer.common.administratorPassword
 import epicer.common.administratorRole
 import epicer.common.maintainerRole
-import epicer.common.dto.user.NewUserDTO
 import io.ktor.server.application.*
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.sql.*

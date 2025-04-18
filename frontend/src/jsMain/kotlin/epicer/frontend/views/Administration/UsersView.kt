@@ -1,5 +1,7 @@
 package epicer.frontend.views.Administration
 
+import epicer.frontend.components.HeaderComponent
+import epicer.frontend.createUserRoute
 import epicer.frontend.data.deleteUser
 import epicer.frontend.data.getUsers
 import epicer.frontend.formatDateTime
@@ -48,13 +50,17 @@ class UsersView(private val routing: Routing) : SimplePanel() {
 
     fun initStart() {
         removeAll()
+        add(HeaderComponent(routing))
+
 
         alignItems = AlignItems.CENTER
 
+
         customScope.launch {
             val users = getUsers()
-            marginTop = 30.px
+
             vPanel {
+                marginTop = 30.px
                 alignItems = AlignItems.CENTER
 
                 h2("User Administration") {
@@ -62,7 +68,7 @@ class UsersView(private val routing: Routing) : SimplePanel() {
                 }
                 button(text = "New User", icon = "fas fa-user-plus") {
                     onClick {
-                        routing.navigate("/administration/users/new")
+                        routing.navigate(createUserRoute)
                     }
                     width = 30.perc
                     minWidth = 300.px

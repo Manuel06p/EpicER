@@ -2,11 +2,14 @@ package epicer.frontend.components
 
 import epicer.common.administratorRole
 import epicer.common.dto.user.BaseUserDTO
+import epicer.common.maintainerRole
 import epicer.frontend.data.isLogged
+import epicer.frontend.ingredientsRoute
 import epicer.frontend.isRole
 import epicer.frontend.usersRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
+import io.kvision.core.Cursor
 import io.kvision.core.onClick
 import io.kvision.dropdown.dropDown
 import io.kvision.form.check.checkBox
@@ -20,6 +23,9 @@ import io.kvision.navbar.navForm
 import io.kvision.navbar.navLink
 import io.kvision.panel.vPanel
 import io.kvision.routing.Routing
+import io.kvision.theme.Theme
+import io.kvision.theme.ThemeManager
+import io.kvision.theme.themeSwitcher
 import io.kvision.toast.Toast
 import io.kvision.toast.ToastContainer
 import io.kvision.toast.ToastContainerPosition
@@ -32,38 +38,43 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.serialization.json.Json
 
-class HeaderComponent(private val routing: Routing): Navbar("navbar-header") {
+class HeaderComponent(private val routing: Routing): Navbar() {
     init {
         val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
 
-
+        width = 100.perc
 
         padding = 20.px
         nav {
-            navLink("File", icon = "fas fa-file")
-            navLink("Edit", icon = "fas fa-bars")
-            if (isRole(administratorRole))
-             {
-                navLink("Administration", icon = "fas fa-bars")
+            fontSize = 24.px
+
+
+            navLink("My Recipes", icon = "fas fa-pizza-slice") {
+                cursor = Cursor.POINTER
                 onClick {
-                    routing.navigate(usersRoute)
+                    routing.navigate("/")
                 }
             }
-            dropDown(
-                "Favourites",
-                listOf("HTML" to "#!/basic", "Forms" to "#!/forms"),
-                icon = "fas fa-star",
-                forNavbar = true
-            )
-        }
-        navForm {
-            text(label = "Search:")
-            checkBox(label = "Search") {
-                inline = true
+            if (isRole(administratorRole))
+             {
+                navLink("Administration", icon = "fas fa-screwdriver-wrench") {
+                    cursor = Cursor.POINTER
+                    onClick {
+                        routing.navigate(usersRoute)
+                    }
+                }
+            }
+
+            if (isRole(maintainerRole))
+            {
+                navLink("Ingredients", icon = "fas fa-screwdriver-wrench") {
+                    cursor = Cursor.POINTER
+                    onClick {
+                        routing.navigate(ingredientsRoute)
+                    }
+                }
             }
         }
-
-
 
 
         nav(rightAlign = true) {

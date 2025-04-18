@@ -3,17 +3,23 @@ package epicer.backend
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
 import epicer.backend.service.ImageService
+import epicer.backend.service.IngredientService
 import epicer.backend.service.RecipeService
 import epicer.backend.service.RoleService
 import epicer.backend.service.UserService
 import epicer.common.dto.user.LoginUserDTO
-import epicer.common.dto.user.NewUserDTO
+import epicer.common.dto.user.CreateUserDTO
 import epicer.common.dto.user.UpdateUserDTO
 import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
 import epicer.common.administratorRole
+import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.user.BaseUserDTO
+import epicer.common.maintainerRole
 import io.ktor.http.*
+import io.ktor.http.content.PartData
+import io.ktor.http.content.forEachPart
+import io.ktor.http.content.streamProvider
 import io.ktor.serialization.JsonConvertException
 import io.ktor.server.application.*
 import io.ktor.server.auth.authenticate
@@ -24,6 +30,11 @@ import io.ktor.server.request.*
 import io.ktor.server.response.respond
 import io.ktor.server.response.respondFile
 import io.ktor.server.routing.*
+import io.ktor.util.decodeBase64Bytes
+import io.ktor.utils.io.readByte
+import io.ktor.utils.io.readByteArray
+import io.ktor.utils.io.toByteArray
+import kotlinx.serialization.json.Json
 import java.io.File
 import java.util.Date
 
@@ -150,6 +161,47 @@ fun Application.configureRouting() {
 
             }
         }
+        route("/ingredients") {
+            authenticate("auth-jwt") {
+                get {
+                    val ingredients = IngredientService.getIngredients()
+                    call.respond(HttpStatusCode.OK, ingredients)
+                }
+            }
+        }
+        route("/maintenance") {
+            authenticate("auth-jwt") {
+                withRoles(maintainerRole) {
+                    route("/ingredients") {
+                        post {
+                            val createIngredientDTO = try {
+                                call.receive<CreateIngredientDTO>()
+                            } catch (e: Exception) {
+                                call.respond(HttpStatusCode.BadRequest, "Invalid request body: ${e.message}")
+                                return@post
+                            }
+
+                            val success = IngredientService.createIngredient(createIngredientDTO)
+
+                            if (success) {
+                                call.respond(HttpStatusCode.NoContent)
+                            } else {
+                                call.respond(HttpStatusCode.BadRequest, "Failed to create ingredient")
+                            }
+                        }
+                        delete("/{ingredientId}") {
+                            val ingredientId = call.parameters["ingredientId"]?.toIntOrNull()
+
+                            if (ingredientId != null) {
+                                IngredientService.deleteIngredient(ingredientId)
+                                call.respond(HttpStatusCode.NoContent)
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
         route("/administration") {
             authenticate("auth-jwt") {
                 withRoles(administratorRole) {
@@ -160,7 +212,7 @@ fun Application.configureRouting() {
                         }
                         post {
                             try {
-                                val newUser = call.receive<NewUserDTO>()
+                                val newUser = call.receive<CreateUserDTO>()
                                 UserService.createUser(newUser)
                                 call.respond(HttpStatusCode.NoContent)
                             } catch (ex: IllegalStateException) {

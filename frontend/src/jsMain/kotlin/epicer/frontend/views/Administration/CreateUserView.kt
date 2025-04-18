@@ -1,9 +1,9 @@
 package epicer.frontend.views.Administration
 
-import epicer.common.dto.user.NewUserDTO
+import epicer.common.dto.user.CreateUserDTO
+import epicer.frontend.components.HeaderComponent
 import epicer.frontend.data.createUser
 import epicer.frontend.usersRoute
-import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
 import io.kvision.core.FlexWrap
@@ -16,7 +16,6 @@ import io.kvision.html.button
 import io.kvision.html.h2
 import io.kvision.modal.Confirm
 import io.kvision.panel.HPanel
-import io.kvision.panel.SimplePanel
 import io.kvision.panel.VPanel
 import io.kvision.panel.vPanel
 import io.kvision.routing.Routing
@@ -31,7 +30,11 @@ import kotlinx.serialization.Serializable
 
 
 
-class NewUserView(private val routing: Routing) : VPanel() {
+class CreateUserView(private val routing: Routing) : VPanel() {
+
+    private val customScope = CoroutineScope(Dispatchers.Main)
+    private val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
+
     @Serializable
     data class NewUserFormDTO(
         val username: String,
@@ -41,14 +44,13 @@ class NewUserView(private val routing: Routing) : VPanel() {
     )
 
     init {
-        val customScope = CoroutineScope(Dispatchers.Main)
-        val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
-
-        marginTop = 30.px
+        add(HeaderComponent(routing))
 
         alignItems = AlignItems.CENTER
 
         vPanel {
+            marginTop = 30.px
+
             width = 80.perc
             maxWidth = 800.px
 
@@ -116,7 +118,7 @@ class NewUserView(private val routing: Routing) : VPanel() {
                 button("Create", "fas fa-user-plus").onClick {
                     if (formPanel.validate()) {
                         val newUserFormDTO = formPanel.getData()
-                        val newUserDTO = NewUserDTO(
+                        val createUserDTO = CreateUserDTO(
                             username = newUserFormDTO.username,
                             password = newUserFormDTO.password,
                             name = newUserFormDTO.name,
@@ -127,7 +129,7 @@ class NewUserView(private val routing: Routing) : VPanel() {
                             align = Align.LEFT,
                         ) {
                             customScope.launch {
-                                if (createUser(newUserDTO)) {
+                                if (createUser(createUserDTO)) {
                                     routing.navigate(usersRoute)
                                     toastContainer.showToast(
                                         message = "User created successfully!",

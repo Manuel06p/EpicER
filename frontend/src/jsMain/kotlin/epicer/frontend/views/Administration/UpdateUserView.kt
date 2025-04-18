@@ -1,6 +1,7 @@
 package epicer.frontend.views.Administration
 
 import epicer.common.dto.user.UpdateUserDTO
+import epicer.frontend.components.HeaderComponent
 import epicer.frontend.data.getRoles
 import epicer.frontend.data.getUser
 import epicer.frontend.data.updateUser
@@ -33,6 +34,10 @@ import kotlinx.serialization.Serializable
 
 
 class UpdateUserView(private val routing: Routing, userId: Int) : VPanel() {
+
+    private val customScope = CoroutineScope(Dispatchers.Main)
+    private val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
+
     @Serializable
     data class UpdateUserFormDTO(
         val username: String?,
@@ -44,10 +49,9 @@ class UpdateUserView(private val routing: Routing, userId: Int) : VPanel() {
     )
 
     init {
-        val customScope = CoroutineScope(Dispatchers.Main)
-        val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
+        add(HeaderComponent(routing))
 
-        marginTop = 30.px
+
 
         alignItems = AlignItems.CENTER
 
@@ -58,6 +62,7 @@ class UpdateUserView(private val routing: Routing, userId: Int) : VPanel() {
 
 
             vPanel {
+                marginTop = 30.px
                 width = 80.perc
                 maxWidth = 800.px
 

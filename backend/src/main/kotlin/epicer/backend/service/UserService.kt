@@ -1,16 +1,13 @@
 package epicer.backend.service
 
-import epicer.backend.model.ImagesTable
-import epicer.backend.model.RecipesTable
 import epicer.backend.model.RolesTable
 import epicer.backend.model.UsersRolesTable
 import epicer.backend.model.UsersTable
 import epicer.backend.suspendTransaction
 import epicer.backend.utils.hashPassword
-import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.user.BaseUserDTO
 import epicer.common.dto.user.FullUserDTO
-import epicer.common.dto.user.NewUserDTO
+import epicer.common.dto.user.CreateUserDTO
 import epicer.common.dto.user.UpdateUserDTO
 import epicer.common.dto.user.*
 import kotlinx.datetime.toKotlinLocalDateTime
@@ -154,7 +151,7 @@ class UserService {
 //    }
 
 
-        suspend fun createUser(newUser: NewUserDTO): Unit = suspendTransaction {
+        suspend fun createUser(newUser: CreateUserDTO): Unit = suspendTransaction {
             UsersTable.insert {
                 it[username] = newUser.username
                 it[hashed_password] = hashPassword(newUser.password)
