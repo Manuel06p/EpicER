@@ -6,6 +6,7 @@ import epicer.backend.service.ImageService
 import epicer.backend.service.IngredientService
 import epicer.backend.service.RecipeService
 import epicer.backend.service.RoleService
+import epicer.backend.service.UnitService
 import epicer.backend.service.UserService
 import epicer.common.dto.user.LoginUserDTO
 import epicer.common.dto.user.CreateUserDTO
@@ -14,12 +15,10 @@ import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
 import epicer.common.administratorRole
 import epicer.common.dto.ingredient.CreateIngredientDTO
+import epicer.common.dto.unitType.UpdateUnitTypeDTO
 import epicer.common.dto.user.BaseUserDTO
 import epicer.common.maintainerRole
 import io.ktor.http.*
-import io.ktor.http.content.PartData
-import io.ktor.http.content.forEachPart
-import io.ktor.http.content.streamProvider
 import io.ktor.serialization.JsonConvertException
 import io.ktor.server.application.*
 import io.ktor.server.auth.authenticate
@@ -30,11 +29,6 @@ import io.ktor.server.request.*
 import io.ktor.server.response.respond
 import io.ktor.server.response.respondFile
 import io.ktor.server.routing.*
-import io.ktor.util.decodeBase64Bytes
-import io.ktor.utils.io.readByte
-import io.ktor.utils.io.readByteArray
-import io.ktor.utils.io.toByteArray
-import kotlinx.serialization.json.Json
 import java.io.File
 import java.util.Date
 
@@ -172,6 +166,55 @@ fun Application.configureRouting() {
         route("/maintenance") {
             authenticate("auth-jwt") {
                 withRoles(maintainerRole) {
+                    route("units") {
+                        get {
+                            val units = UnitService.getUnits()
+                            call.respond(HttpStatusCode.OK, units)
+                        }
+                    }
+                    route("unit_types") {
+                        get {
+                            val unitTypes = UnitService.getUnitTypes()
+                            call.respond(HttpStatusCode.OK, unitTypes)
+                        }
+                        patch() {
+                            val updateUnitType = call.receive<UpdateUnitTypeDTO>()
+                            UnitService.updateUnitType(updateUnitType)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                        route("/{unitTypeId}") {
+                            delete() {
+                                val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
+
+                                if (unitTypeId != null) {
+                                    UnitService.deleteUnitType(unitTypeId)
+                                    call.respond(HttpStatusCode.NoContent)
+                                }
+                            }
+                            get() {
+                                val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
+                                if (unitTypeId != null) {
+                                    val unitTypeDTO = UnitService.getUnitTypeById(unitTypeId)
+                                    if (unitTypeDTO != null) {
+                                        call.respond(HttpStatusCode.OK, unitTypeDTO)
+                                    } else {
+                                        call.respond(HttpStatusCode.NotFound, "Unit type not found")
+                                    }
+                                }
+                                call.respond(message = HttpStatusCode.BadRequest)
+                            }
+                            get("reference_units") {
+                                val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
+                                if (unitTypeId != null) {
+                                    val unitsDTO = UnitService.getReferenceUnits(unitTypeId)
+                                    call.respond(HttpStatusCode.OK, unitsDTO)
+                                }
+                                call.respond(message = HttpStatusCode.BadRequest)
+                            }
+                        }
+
+
+                    }
                     route("/ingredients") {
                         post {
                             val createIngredientDTO = try {

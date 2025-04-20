@@ -6,6 +6,7 @@ import epicer.common.maintainerRole
 import epicer.frontend.data.isLogged
 import epicer.frontend.ingredientsRoute
 import epicer.frontend.isRole
+import epicer.frontend.unitsRoute
 import epicer.frontend.usersRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
@@ -71,6 +72,12 @@ class HeaderComponent(private val routing: Routing): Navbar() {
                     cursor = Cursor.POINTER
                     onClick {
                         routing.navigate(ingredientsRoute)
+                    }
+                }
+                navLink("Units", icon = "fas fa-screwdriver-wrench") {
+                    cursor = Cursor.POINTER
+                    onClick {
+                        routing.navigate(unitsRoute)
                     }
                 }
             }

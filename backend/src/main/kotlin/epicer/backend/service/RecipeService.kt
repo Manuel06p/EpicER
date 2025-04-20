@@ -1,6 +1,5 @@
 package epicer.backend.service
 
-import epicer.backend.model.ImagesTable
 import epicer.backend.model.IngredientsInRecipesTable
 import epicer.backend.model.IngredientsTable
 import epicer.backend.model.RecipesTable
@@ -16,7 +15,7 @@ import epicer.common.dto.recipe.FullIngredientInRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
 import epicer.common.dto.recipe.FullSectionDTO
 import epicer.common.dto.recipe.FullStepDTO
-import epicer.common.dto.recipe.FullUnitDTO
+import epicer.common.dto.unit.BaseUnitDTO
 import org.jetbrains.exposed.sql.JoinType
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.and
@@ -66,7 +65,7 @@ class RecipeService {
                         notes = row[IngredientsInRecipesTable.notes],
                         quantity = row[IngredientsInRecipesTable.quantity],
                         unit = row[UnitsTable.id]?.value?.let { unitId ->
-                            FullUnitDTO(
+                            BaseUnitDTO(
                                 id = unitId,
                                 name = row[UnitsTable.name],
                                 shortName = row[UnitsTable.short_name]

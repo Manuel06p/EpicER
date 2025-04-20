@@ -10,6 +10,9 @@ import epicer.frontend.views.RecipeView
 import epicer.frontend.views.Administration.UpdateUserView
 import epicer.frontend.views.Maintenance.Ingredients.CreateIngredientView
 import epicer.frontend.views.Maintenance.Ingredients.IngredientsView
+import epicer.frontend.views.Maintenance.Units.CreateUnitTypeView
+import epicer.frontend.views.Maintenance.Units.UnitsView
+import epicer.frontend.views.Maintenance.Units.UpdateUnitTypeView
 import io.kvision.Application
 import io.kvision.CoreModule
 import io.kvision.BootstrapModule
@@ -113,6 +116,24 @@ class App : Application() {
                 authRoleNavigate(maintainerRole, routing, toastContainer) {
                     root.removeAll()
                     root.add(CreateIngredientView(routing))
+                }
+            })
+            .on(unitsRoute, {
+                authRoleNavigate(maintainerRole, routing, toastContainer) {
+                    root.removeAll()
+                    root.add(UnitsView(routing))
+                }
+            }).on(createUnitTypesRoute, {
+                authRoleNavigate(maintainerRole, routing, toastContainer) {
+                    root.removeAll()
+                    root.add(CreateUnitTypeView(routing))
+                }
+            })
+            .on(RegExp("^maintenance/units/types/(.*)"), { match ->
+                authRoleNavigate(administratorRole, routing, toastContainer) {
+                    val unitTypeId = match.data[0]
+                    root.removeAll()
+                    root.add(UpdateUnitTypeView(routing, unitTypeId))
                 }
             })
             .resolve()
