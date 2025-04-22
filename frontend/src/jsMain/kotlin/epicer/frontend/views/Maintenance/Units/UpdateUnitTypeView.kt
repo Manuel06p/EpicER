@@ -4,9 +4,9 @@ import epicer.common.dto.unit.BaseUnitDTO
 import epicer.common.dto.unitType.UnitTypeDTO
 import epicer.common.dto.unitType.UpdateUnitTypeDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.getReferenceUnits
-import epicer.frontend.data.getUnitType
-import epicer.frontend.data.updateUnitType
+import epicer.frontend.data.UnitTypeService.Companion.getReferenceUnits
+import epicer.frontend.data.UnitTypeService.Companion.getUnitType
+import epicer.frontend.data.UnitTypeService.Companion.updateUnitType
 import epicer.frontend.unitsRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor

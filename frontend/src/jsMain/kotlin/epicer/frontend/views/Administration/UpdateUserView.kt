@@ -2,9 +2,9 @@ package epicer.frontend.views.Administration
 
 import epicer.common.dto.user.UpdateUserDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.getRoles
-import epicer.frontend.data.getUser
-import epicer.frontend.data.updateUser
+import epicer.frontend.data.UserService.Companion.getRoles
+import epicer.frontend.data.UserService.Companion.getUser
+import epicer.frontend.data.UserService.Companion.updateUser
 import epicer.frontend.usersRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor

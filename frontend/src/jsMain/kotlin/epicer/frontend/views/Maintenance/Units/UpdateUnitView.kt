@@ -6,12 +6,9 @@ import epicer.common.dto.unit.UpdateUnitDTO
 import epicer.common.dto.unitType.UnitTypeDTO
 import epicer.common.dto.unitType.UpdateUnitTypeDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.getReferenceUnits
-import epicer.frontend.data.getUnit
-import epicer.frontend.data.getUnitType
-import epicer.frontend.data.getUnitTypes
-import epicer.frontend.data.updateUnit
-import epicer.frontend.data.updateUnitType
+import epicer.frontend.data.UnitService.Companion.getUnit
+import epicer.frontend.data.UnitService.Companion.updateUnit
+import epicer.frontend.data.UnitTypeService.Companion.getUnitTypes
 import epicer.frontend.unitsRoute
 import epicer.frontend.views.Maintenance.Units.CreateUnitView.CreateUnitFormDTO
 import io.kvision.core.AlignItems

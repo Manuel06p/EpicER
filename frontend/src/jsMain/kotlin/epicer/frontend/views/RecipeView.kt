@@ -2,9 +2,7 @@ package epicer.frontend.views
 
 import epicer.frontend.components.HeaderComponent
 import epicer.frontend.components.ingredientInRecipeCard
-import epicer.frontend.data.getImage
-import epicer.frontend.data.getRecipe
-import epicer.frontend.data.isLogged
+import epicer.frontend.data.RecipeService.Companion.getRecipe
 import epicer.frontend.image_not_found
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems

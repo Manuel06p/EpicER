@@ -3,9 +3,7 @@ package epicer.frontend.views
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.frontend.components.HeaderComponent
 import epicer.frontend.components.recipeCard
-import epicer.frontend.data.getImage
-import epicer.frontend.data.getMyRecipes
-import epicer.frontend.data.isLogged
+import epicer.frontend.data.RecipeService.Companion.getMyRecipes
 import epicer.frontend.image_not_found
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems

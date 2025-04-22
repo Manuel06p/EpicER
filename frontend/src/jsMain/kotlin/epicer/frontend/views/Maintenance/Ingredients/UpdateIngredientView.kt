@@ -1,36 +1,21 @@
 package epicer.frontend.views.Maintenance.Ingredients
 
-import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.ingredient.UpdateIngredientDTO
-import epicer.common.dto.user.UpdateUserDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.createIngredient
-import epicer.frontend.data.getIngredient
-import epicer.frontend.data.getRoles
-import epicer.frontend.data.getUser
-import epicer.frontend.data.updateIngredient
-import epicer.frontend.data.updateUser
+import epicer.frontend.data.IngredientService.Companion.getIngredient
+import epicer.frontend.data.IngredientService.Companion.updateIngredient
 import epicer.frontend.ingredientsRoute
-import epicer.frontend.usersRoute
-import epicer.frontend.views.Maintenance.Ingredients.CreateIngredientView.CreateIngredientFormDTO
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
-import io.kvision.core.FlexWrap
 import io.kvision.core.onClickLaunch
-import io.kvision.core.onEvent
-import io.kvision.form.FormPanel
-import io.kvision.form.check.CheckBox
 import io.kvision.form.formPanel
 import io.kvision.form.getDataWithFileContent
-import io.kvision.form.select.TomSelect
-import io.kvision.form.text.Password
 import io.kvision.form.text.Text
 import io.kvision.form.upload.BootstrapUpload
 import io.kvision.html.Align
 import io.kvision.html.button
 import io.kvision.html.h2
 import io.kvision.modal.Confirm
-import io.kvision.panel.HPanel
 import io.kvision.panel.VPanel
 import io.kvision.panel.hPanel
 import io.kvision.panel.vPanel
@@ -46,7 +31,7 @@ import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
 
 
-class UpdateIngredientView(private val routing: Routing, ingrdientId: Int) : VPanel() {
+class UpdateIngredientView(private val routing: Routing, ingredientId: Int) : VPanel() {
 
     private val customScope = CoroutineScope(Dispatchers.Main)
     private val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
@@ -67,7 +52,7 @@ class UpdateIngredientView(private val routing: Routing, ingrdientId: Int) : VPa
 
         customScope.launch {
 
-            val ingredient = getIngredient(ingrdientId)
+            val ingredient = getIngredient(ingredientId)
 
             vPanel {
                 marginTop = 30.px
@@ -120,7 +105,7 @@ class UpdateIngredientView(private val routing: Routing, ingrdientId: Int) : VPa
                             val imageBase64 = updateIngredientFormDTO.image?.firstOrNull()?.content
 
                             val updateIngredientDTO = UpdateIngredientDTO(
-                                id = ingrdientId,
+                                id = ingredientId,
                                 nameSingular = updateIngredientFormDTO.nameSingular,
                                 namePlural = updateIngredientFormDTO.namePlural,
                                 imageBase64 = imageBase64,

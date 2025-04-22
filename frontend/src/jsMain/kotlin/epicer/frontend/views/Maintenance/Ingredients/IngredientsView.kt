@@ -3,11 +3,9 @@ package epicer.frontend.views.Maintenance.Ingredients
 import epicer.frontend.components.HeaderComponent
 import epicer.frontend.createIngredientsRoute
 import epicer.frontend.createUserRoute
-import epicer.frontend.data.deleteIngredient
-import epicer.frontend.data.deleteUser
-import epicer.frontend.data.getImage
-import epicer.frontend.data.getIngredients
-import epicer.frontend.data.getUsers
+import epicer.frontend.data.ImageService.Companion.getImage
+import epicer.frontend.data.IngredientService.Companion.deleteIngredient
+import epicer.frontend.data.IngredientService.Companion.getIngredients
 import epicer.frontend.formatDateTime
 import epicer.frontend.image_not_found
 import io.kvision.core.AlignContent

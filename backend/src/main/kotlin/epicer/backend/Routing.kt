@@ -7,6 +7,7 @@ import epicer.backend.service.IngredientService
 import epicer.backend.service.RecipeService
 import epicer.backend.service.RoleService
 import epicer.backend.service.UnitService
+import epicer.backend.service.UnitTypeService
 import epicer.backend.service.UserService
 import epicer.common.dto.user.LoginUserDTO
 import epicer.common.dto.user.CreateUserDTO
@@ -268,13 +269,13 @@ fun Application.configureRouting() {
             withRoles(maintainerRole) {
                 patch() {
                     val updateUnitType = call.receive<UpdateUnitTypeDTO>()
-                    UnitService.updateUnitType(updateUnitType)
+                    UnitTypeService.updateUnitType(updateUnitType)
                     call.respond(HttpStatusCode.NoContent)
                 }
                 post {
                     try {
                         val createUnitTypeDTO = call.receive<CreateUnitTypeDTO>()
-                        UnitService.createUnitType(createUnitTypeDTO)
+                        UnitTypeService.createUnitType(createUnitTypeDTO)
                         call.respond(HttpStatusCode.NoContent)
                     } catch (ex: IllegalStateException) {
                         call.respond(HttpStatusCode.BadRequest)
@@ -287,7 +288,7 @@ fun Application.configureRouting() {
                         val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
 
                         if (unitTypeId != null) {
-                            UnitService.deleteUnitType(unitTypeId)
+                            UnitTypeService.deleteUnitType(unitTypeId)
                             call.respond(HttpStatusCode.NoContent)
                         }
                     }
@@ -295,7 +296,7 @@ fun Application.configureRouting() {
             }
 
             get {
-                val unitTypes = UnitService.getUnitTypes()
+                val unitTypes = UnitTypeService.getUnitTypes()
                 call.respond(HttpStatusCode.OK, unitTypes)
             }
 
@@ -303,7 +304,7 @@ fun Application.configureRouting() {
                 get() {
                     val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
                     if (unitTypeId != null) {
-                        val unitTypeDTO = UnitService.getUnitTypeById(unitTypeId)
+                        val unitTypeDTO = UnitTypeService.getUnitTypeById(unitTypeId)
                         if (unitTypeDTO != null) {
                             call.respond(HttpStatusCode.OK, unitTypeDTO)
                         } else {
@@ -315,7 +316,7 @@ fun Application.configureRouting() {
                 get("reference_units") {
                     val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
                     if (unitTypeId != null) {
-                        val unitsDTO = UnitService.getReferenceUnits(unitTypeId)
+                        val unitsDTO = UnitTypeService.getReferenceUnits(unitTypeId)
                         call.respond(HttpStatusCode.OK, unitsDTO)
                     }
                     call.respond(message = HttpStatusCode.BadRequest)

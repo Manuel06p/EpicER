@@ -4,7 +4,8 @@ import epicer.common.dto.TokenDTO
 import epicer.common.dto.user.BaseUserDTO
 import epicer.common.dto.user.LoginUserDTO
 import epicer.common.dto.user.UserDTO
-import epicer.frontend.data.login
+import epicer.frontend.data.LoginService
+import epicer.frontend.data.LoginService.Companion.login
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor

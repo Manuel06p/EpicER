@@ -2,7 +2,7 @@ package epicer.frontend.views.Administration
 
 import epicer.common.dto.user.CreateUserDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.createUser
+import epicer.frontend.data.UserService.Companion.createUser
 import epicer.frontend.usersRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor

@@ -2,7 +2,7 @@ package epicer.frontend
 
 import epicer.common.administratorRole
 import epicer.common.dto.user.BaseUserDTO
-import epicer.frontend.data.isLogged
+import epicer.frontend.data.LoginService.Companion.isLogged
 import io.kvision.core.BsColor
 import io.kvision.routing.Routing
 import io.kvision.toast.ToastContainer

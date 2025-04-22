@@ -3,8 +3,7 @@ package epicer.frontend.views.Maintenance.Units
 import epicer.common.dto.unitType.CreateUnitTypeDTO
 import epicer.common.dto.unitType.UpdateUnitTypeDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.createUnitType
-import epicer.frontend.data.updateUnitType
+import epicer.frontend.data.UnitTypeService.Companion.createUnitType
 import epicer.frontend.unitsRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor

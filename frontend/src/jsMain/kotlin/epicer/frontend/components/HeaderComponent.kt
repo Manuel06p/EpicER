@@ -3,7 +3,6 @@ package epicer.frontend.components
 import epicer.common.administratorRole
 import epicer.common.dto.user.BaseUserDTO
 import epicer.common.maintainerRole
-import epicer.frontend.data.isLogged
 import epicer.frontend.ingredientsRoute
 import epicer.frontend.isRole
 import epicer.frontend.unitsRoute

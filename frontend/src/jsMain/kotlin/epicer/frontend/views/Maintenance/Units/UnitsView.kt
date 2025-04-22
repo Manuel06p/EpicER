@@ -4,13 +4,10 @@ import epicer.frontend.components.HeaderComponent
 import epicer.frontend.createIngredientsRoute
 import epicer.frontend.createUnitRoute
 import epicer.frontend.createUnitTypesRoute
-import epicer.frontend.data.deleteIngredient
-import epicer.frontend.data.deleteUnit
-import epicer.frontend.data.deleteUnitType
-import epicer.frontend.data.getImage
-import epicer.frontend.data.getIngredients
-import epicer.frontend.data.getUnitTypes
-import epicer.frontend.data.getUnits
+import epicer.frontend.data.UnitService.Companion.deleteUnit
+import epicer.frontend.data.UnitService.Companion.getUnits
+import epicer.frontend.data.UnitTypeService.Companion.deleteUnitType
+import epicer.frontend.data.UnitTypeService.Companion.getUnitTypes
 import epicer.frontend.image_not_found
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems

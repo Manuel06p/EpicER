@@ -4,10 +4,8 @@ import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.unit.CreateUnitDTO
 import epicer.common.dto.unitType.CreateUnitTypeDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.createIngredient
-import epicer.frontend.data.createUnit
-import epicer.frontend.data.createUnitType
-import epicer.frontend.data.getUnitTypes
+import epicer.frontend.data.UnitService.Companion.createUnit
+import epicer.frontend.data.UnitTypeService.Companion.getUnitTypes
 import epicer.frontend.ingredientsRoute
 import epicer.frontend.unitsRoute
 import epicer.frontend.views.Maintenance.Units.CreateUnitTypeView.CreateUnitTypeFormDTO

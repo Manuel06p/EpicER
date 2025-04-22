@@ -2,8 +2,8 @@ package epicer.frontend.views.Administration
 
 import epicer.frontend.components.HeaderComponent
 import epicer.frontend.createUserRoute
-import epicer.frontend.data.deleteUser
-import epicer.frontend.data.getUsers
+import epicer.frontend.data.UserService.Companion.deleteUser
+import epicer.frontend.data.UserService.Companion.getUsers
 import epicer.frontend.formatDateTime
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems

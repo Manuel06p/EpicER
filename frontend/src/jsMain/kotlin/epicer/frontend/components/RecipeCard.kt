@@ -1,7 +1,7 @@
 package epicer.frontend.components
 
 import epicer.common.dto.recipe.BaseRecipeDTO
-import epicer.frontend.data.getImage
+import epicer.frontend.data.ImageService.Companion.getImage
 import epicer.frontend.image_not_found
 import io.kvision.core.Background
 import io.kvision.core.Border

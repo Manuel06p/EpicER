@@ -2,7 +2,7 @@ package epicer.frontend.views.Maintenance.Ingredients
 
 import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.createIngredient
+import epicer.frontend.data.IngredientService.Companion.createIngredient
 import epicer.frontend.ingredientsRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
