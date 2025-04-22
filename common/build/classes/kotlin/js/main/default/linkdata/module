@@ -1,2 +1,2 @@
 
-<epicer:common>:epicer.common:epicer.common.dto:epicer.common.dto.ingredient:epicer.common.dto.recipe:epicer.common.dto.role:epicer.common.dto.unit:epicer.common.dto.unitType:epicer.common.dto.user
+<epicer:common>:epicer.common:epicer.common.dto:epicer.common.dto.ingredient:$epicer.common.dto.ingredientInRecipe:epicer.common.dto.recipe:epicer.common.dto.role:epicer.common.dto.unit:epicer.common.dto.unitType:epicer.common.dto.user

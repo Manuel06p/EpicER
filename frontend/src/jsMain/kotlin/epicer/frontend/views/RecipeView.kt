@@ -4,6 +4,7 @@ import epicer.frontend.components.HeaderComponent
 import epicer.frontend.components.ingredientInRecipeCard
 import epicer.frontend.data.RecipeService.Companion.getRecipe
 import epicer.frontend.image_not_found
+import epicer.frontend.recipesRoute
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
 import io.kvision.core.Background
@@ -99,7 +100,11 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
             val recipe = getRecipe(recipeId)
             if (recipe != null) {
                 val portionsState = ObservableValue(recipe.portions)
-
+                button("edit ingredients") {
+                    onClick {
+                        routing.navigate("$recipesRoute/$recipeId/ingredients")
+                    }
+                }
                 vPanel {
                     marginTop = 25.px
                     alignItems = AlignItems.CENTER

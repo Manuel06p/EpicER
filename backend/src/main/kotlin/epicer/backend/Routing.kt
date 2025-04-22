@@ -3,6 +3,7 @@ package epicer.backend
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
 import epicer.backend.service.ImageService
+import epicer.backend.service.IngredientInRecipeService
 import epicer.backend.service.IngredientService
 import epicer.backend.service.RecipeService
 import epicer.backend.service.RoleService
@@ -17,6 +18,7 @@ import epicer.common.dto.TokenDTO
 import epicer.common.administratorRole
 import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.ingredient.UpdateIngredientDTO
+import epicer.common.dto.ingredientInRecipe.CreateIngredientInRecipeDTO
 import epicer.common.dto.recipe.CreateRecipeDTO
 import epicer.common.dto.unit.CreateUnitDTO
 import epicer.common.dto.unit.UpdateUnitDTO
@@ -122,6 +124,28 @@ fun Application.configureRouting() {
                 }
 
                 route("/recipes") {
+                    route("/ingredients") {
+                        post {
+
+                            try {
+                                val principal = call.principal<JWTPrincipal>()
+                                val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                                val createIngredientInRecipeDTO = call.receive<CreateIngredientInRecipeDTO>()
+                                if (userId != null) {
+                                    IngredientInRecipeService.createIngredientInRecipe(createIngredientInRecipeDTO, userId)
+                                } else {
+                                    call.respond(HttpStatusCode.BadRequest)
+                                }
+
+                                call.respond(HttpStatusCode.NoContent)
+                            } catch (ex: IllegalStateException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            } catch (ex: JsonConvertException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            }
+                        }
+                    }
                     get() {
                         val principal = call.principal<JWTPrincipal>()
                         val userId = principal?.payload?.getClaim("id")?.asInt()
