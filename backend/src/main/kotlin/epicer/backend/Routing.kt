@@ -17,6 +17,7 @@ import epicer.common.dto.TokenDTO
 import epicer.common.administratorRole
 import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.ingredient.UpdateIngredientDTO
+import epicer.common.dto.recipe.CreateRecipeDTO
 import epicer.common.dto.unit.CreateUnitDTO
 import epicer.common.dto.unit.UpdateUnitDTO
 import epicer.common.dto.unitType.CreateUnitTypeDTO
@@ -130,6 +131,22 @@ fun Application.configureRouting() {
                         } else {
                             call.respond(HttpStatusCode.BadRequest)
                         }
+                    }
+                    post {
+                        val createRecipeDTO = try {
+                            call.receive<CreateRecipeDTO>()
+                        } catch (e: Exception) {
+                            call.respond(HttpStatusCode.BadRequest, "Invalid request body: ${e.message}")
+                            return@post
+                        }
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+                        if (userId != null) {
+                            RecipeService.createRecipe(createRecipeDTO, userId)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                        call.respond(HttpStatusCode.BadRequest, "Failed to create ingredient")
+
                     }
                 }
 
@@ -323,8 +340,6 @@ fun Application.configureRouting() {
                 }
             }
         }
-
-
         route("/administration") {
             authenticate("auth-jwt") {
                 withRoles(administratorRole) {

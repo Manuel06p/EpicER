@@ -1,6 +1,8 @@
 package epicer.frontend.data
 
+import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
+import epicer.common.dto.recipe.CreateRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
 import epicer.frontend.backend_url
 import kotlinx.browser.localStorage
@@ -38,6 +40,29 @@ class RecipeService {
             } catch (e: Exception) {
                 console.error("Failed to fetch recipes", e)
                 return null
+            }
+        }
+
+        suspend fun createRecipe(createRecipeDTO: CreateRecipeDTO): Boolean {
+            return try {
+                val token = localStorage.getItem("jwtToken") ?: return false
+
+                val response = window.fetch(
+                    "$backend_url/me/recipes",
+                    RequestInit(
+                        method = "POST",
+                        headers = json(
+                            "Content-Type" to "application/json",
+                            "Authorization" to "Bearer $token",
+                        ),
+                        body = Json.encodeToString(createRecipeDTO)
+                    )
+                ).await()
+
+                response.status.toInt() == 204 // HttpStatusCode.NoContent
+            } catch (e: Exception) {
+                console.error("Recipe registration failed:", e)
+                false
             }
         }
 

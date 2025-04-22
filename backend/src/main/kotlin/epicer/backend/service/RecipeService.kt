@@ -8,9 +8,13 @@ import epicer.backend.model.StepsImagesTable
 import epicer.backend.model.StepsIngredientsInRecipe
 import epicer.backend.model.StepsTable
 import epicer.backend.model.UnitsTable
+import epicer.backend.service.ImageService.Companion.createImage
+import epicer.backend.service.ImageService.Companion.deleteImageFile
 import epicer.backend.suspendTransaction
+import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.ingredient.FullIngredientDTO
+import epicer.common.dto.recipe.CreateRecipeDTO
 import epicer.common.dto.recipe.FullIngredientInRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
 import epicer.common.dto.recipe.FullSectionDTO
@@ -19,12 +23,46 @@ import epicer.common.dto.unit.BaseUnitDTO
 import org.jetbrains.exposed.sql.JoinType
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.and
+import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.or
 import org.jetbrains.exposed.sql.selectAll
 import kotlin.collections.map
 
 class RecipeService {
     companion object {
+        suspend fun createRecipe(createRecipeDTO: CreateRecipeDTO, ownerId: Int): Unit = suspendTransaction {
+            val imageFileDTO = try {
+                // Create the image and get the path (if successful)
+                createImage(createRecipeDTO.imageBase64)
+            } catch (e: Exception) {
+                // Handle errors in image creation, but proceed with the ingredient creation
+                throw Exception("Failed to create recipe")
+            }
+
+            try {
+                // Insert the ingredient into the database
+                RecipesTable.insert {
+                    it[name] = createRecipeDTO.name
+                    it[description] = createRecipeDTO.description
+                    it[portions] = createRecipeDTO.portions
+                    it[is_public] = createRecipeDTO.isPublic
+                    it[owner] = ownerId
+                    it[RecipesTable.image] = imageFileDTO?.id
+                }
+
+            } catch (e: Exception) {
+                // If the insert fails, cleanup the image (if it was written)
+                println("Failed to create recipe: ${e.message}")
+
+                // If the image was created and inserted correctly into the file system but not into DB, delete it
+                if (imageFileDTO != null) {
+                    deleteImageFile(imageFileDTO.path)
+                }
+
+                throw e // Rollback transaction
+            }
+        }
+
         suspend fun getBaseRecipesById(id: Int): List<BaseRecipeDTO> = suspendTransaction {
             RecipesTable
                 .select(
@@ -125,41 +163,6 @@ class RecipeService {
             } else {
                 null
             }
-
-//        if (rows.isNotEmpty()) {
-//            val firstRow = rows.first()
-//
-//            val ingredients = rows.map { row ->
-//                FullIngredientInRecipeDTO(
-//                    id = row[IngredientsInRecipesTable.id].value,
-//                    notes = row[IngredientsInRecipesTable.notes],
-//                    quantity = row[IngredientsInRecipesTable.quantity],
-//                    unit = FullUnitDTO(
-//                        id = row[UnitsTable.id].value,
-//                        name = row[UnitsTable.name],
-//                        shortName = row[UnitsTable.short_name]
-//                    ),
-//                    ingredient = FullIngredientDTO(
-//                        id = row[IngredientsTable.id].value,
-//                        nameSingular = row[IngredientsTable.name_singular],
-//                        namePlural = row[IngredientsTable.name_plural],
-//                        imageId = row[IngredientsTable.image]?.value
-//                    )
-//                )
-//            }
-//
-//            FullRecipeDTO(
-//                id = firstRow[RecipesTable.id].value,
-//                name = firstRow[RecipesTable.name],
-//                description = firstRow[RecipesTable.description],
-//                portions = firstRow[RecipesTable.portions],
-//                imageId = firstRow[RecipesTable.image]?.value,
-//                ingredientsInRecipe = ingredients
-//            )
-//        }
-//        else {
-//            null
-//        }
         }
     }
 }

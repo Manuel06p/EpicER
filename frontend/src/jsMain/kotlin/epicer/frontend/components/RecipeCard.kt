@@ -5,6 +5,7 @@ import epicer.frontend.data.ImageService.Companion.getImage
 import epicer.frontend.image_not_found
 import io.kvision.core.Background
 import io.kvision.core.Border
+import io.kvision.core.BorderStyle
 import io.kvision.core.BsBgColor
 import io.kvision.core.BsBorder
 import io.kvision.core.Col
@@ -62,7 +63,7 @@ fun Container.recipeCard(recipe: BaseRecipeDTO, customScope: CoroutineScope, rou
         background = Background(
             color = Color.name(Col.DARKSLATEGRAY),
         )
-        addBsBorder(BsBorder.BORDERDARK)
+        border = Border(0.px, BorderStyle.HIDDEN)
 
         padding = 0.px
         overflow = Overflow.HIDDEN // To have radius borders over the image

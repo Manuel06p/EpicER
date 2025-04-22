@@ -67,13 +67,13 @@ class HeaderComponent(private val routing: Routing): Navbar() {
 
             if (isRole(maintainerRole))
             {
-                navLink("Ingredients", icon = "fas fa-screwdriver-wrench") {
+                navLink("Ingredients", icon = "fas fa-egg") {
                     cursor = Cursor.POINTER
                     onClick {
                         routing.navigate(ingredientsRoute)
                     }
                 }
-                navLink("Units", icon = "fas fa-screwdriver-wrench") {
+                navLink("Units", icon = "fas fa-ruler") {
                     cursor = Cursor.POINTER
                     onClick {
                         routing.navigate(unitsRoute)

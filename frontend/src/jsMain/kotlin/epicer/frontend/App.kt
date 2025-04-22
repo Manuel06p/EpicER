@@ -8,6 +8,7 @@ import epicer.frontend.views.LoginView
 import epicer.frontend.views.MainView
 import epicer.frontend.views.RecipeView
 import epicer.frontend.views.Administration.UpdateUserView
+import epicer.frontend.views.CreateRecipeView
 import epicer.frontend.views.Maintenance.Ingredients.CreateIngredientView
 import epicer.frontend.views.Maintenance.Ingredients.IngredientsView
 import epicer.frontend.views.Maintenance.Ingredients.UpdateIngredientView
@@ -74,13 +75,24 @@ class App : Application() {
             .on("/", {
                 authNavigate(routing, toastContainer) {
                     root.removeAll()
-                    root.removeAll()
-                    root.add(MainView(routing))
+                    routing.navigate(recipesRoute)
                 }
             })
             .on("/login", {
                 root.removeAll()
                 root.add(LoginView(routing))
+            })
+            .on(recipesRoute, {
+                authNavigate(routing, toastContainer) {
+                    root.removeAll()
+                    root.add(MainView(routing))
+                }
+            })
+            .on(createRecipeRoute, {
+                authNavigate(routing, toastContainer) {
+                    root.removeAll()
+                    root.add(CreateRecipeView(routing))
+                }
             })
             .on(RegExp("^recipes/(.*)"), { match ->
                 authNavigate(routing, toastContainer) {
@@ -89,6 +101,7 @@ class App : Application() {
                     root.add(RecipeView(routing, recipeId))
                 }
             })
+
             .on(usersRoute, {
                 authRoleNavigate(administratorRole, routing, toastContainer) {
                     root.removeAll()
