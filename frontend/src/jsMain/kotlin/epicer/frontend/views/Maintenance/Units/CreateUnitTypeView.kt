@@ -60,7 +60,7 @@ class CreateUnitTypeView(private val routing: Routing) : VPanel() {
                     add(
                         CreateUnitTypeFormDTO::name,
                         Text(label = "Name: ") {
-                            placeholder = "ex: Weight"
+                            placeholder = "ex: weight"
                         },
                         required = true
                     )

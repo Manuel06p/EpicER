@@ -15,6 +15,9 @@ import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
 import epicer.common.administratorRole
 import epicer.common.dto.ingredient.CreateIngredientDTO
+import epicer.common.dto.unit.CreateUnitDTO
+import epicer.common.dto.unit.UpdateUnitDTO
+import epicer.common.dto.unitType.CreateUnitTypeDTO
 import epicer.common.dto.unitType.UpdateUnitTypeDTO
 import epicer.common.dto.user.BaseUserDTO
 import epicer.common.maintainerRole
@@ -171,6 +174,44 @@ fun Application.configureRouting() {
                             val units = UnitService.getUnits()
                             call.respond(HttpStatusCode.OK, units)
                         }
+                        patch() {
+                            val updateUnit = call.receive<UpdateUnitDTO>()
+                            UnitService.updateUnit(updateUnit)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                        post {
+                            try {
+                                val createUnitDTO = call.receive<CreateUnitDTO>()
+                                UnitService.createUnit(createUnitDTO)
+                                call.respond(HttpStatusCode.NoContent)
+                            } catch (ex: IllegalStateException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            } catch (ex: JsonConvertException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            }
+                        }
+                        route("/{unitId}") {
+                            delete() {
+                                val unitId = call.parameters["unitId"]?.toIntOrNull()
+
+                                if (unitId != null) {
+                                    UnitService.deleteUnit(unitId)
+                                    call.respond(HttpStatusCode.NoContent)
+                                }
+                            }
+                            get() {
+                                val unitId = call.parameters["unitId"]?.toIntOrNull()
+                                if (unitId != null) {
+                                    val fullUnitDTO = UnitService.getUnitById(unitId)
+                                    if (fullUnitDTO != null) {
+                                        call.respond(HttpStatusCode.OK, fullUnitDTO)
+                                    } else {
+                                        call.respond(HttpStatusCode.NotFound, "Unit not found")
+                                    }
+                                }
+                                call.respond(message = HttpStatusCode.BadRequest)
+                            }
+                        }
                     }
                     route("unit_types") {
                         get {
@@ -181,6 +222,17 @@ fun Application.configureRouting() {
                             val updateUnitType = call.receive<UpdateUnitTypeDTO>()
                             UnitService.updateUnitType(updateUnitType)
                             call.respond(HttpStatusCode.NoContent)
+                        }
+                        post {
+                            try {
+                                val createUnitTypeDTO = call.receive<CreateUnitTypeDTO>()
+                                UnitService.createUnitType(createUnitTypeDTO)
+                                call.respond(HttpStatusCode.NoContent)
+                            } catch (ex: IllegalStateException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            } catch (ex: JsonConvertException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            }
                         }
                         route("/{unitTypeId}") {
                             delete() {

@@ -7,7 +7,9 @@ import epicer.common.dto.ingredient.FullIngredientDTO
 import epicer.common.dto.recipe.FullRecipeDTO
 import epicer.common.dto.role.RoleDTO
 import epicer.common.dto.unit.BaseUnitDTO
+import epicer.common.dto.unit.CreateUnitDTO
 import epicer.common.dto.unit.FullUnitDTO
+import epicer.common.dto.unit.UpdateUnitDTO
 import epicer.common.dto.unitType.CreateUnitTypeDTO
 import epicer.common.dto.unitType.UnitTypeDTO
 import epicer.common.dto.unitType.UpdateUnitTypeDTO
@@ -281,7 +283,6 @@ suspend fun deleteUser(userId: Int): Boolean {
                     "Content-Type" to "application/json",
                     "Authorization" to "Bearer $token",
                 ),
-                body = Json.encodeToString(userId)
             )
         ).await()
 
@@ -417,7 +418,6 @@ suspend fun deleteIngredient(ingredientId: Int): Boolean {
                     "Content-Type" to "application/json",
                     "Authorization" to "Bearer $token",
                 ),
-                body = Json.encodeToString(ingredientId)
             )
         ).await()
 
@@ -503,7 +503,6 @@ suspend fun deleteUnitType(unitTypeId: Int): Boolean {
                     "Content-Type" to "application/json",
                     "Authorization" to "Bearer $token",
                 ),
-                body = Json.encodeToString(unitTypeId)
             )
         ).await()
 
@@ -616,6 +615,104 @@ suspend fun createUnitType(createUnitTypeDTO: CreateUnitTypeDTO): Boolean {
         response.status.toInt() == 204 // HttpStatusCode.NoContent
     } catch (e: Exception) {
         console.error("Unit type creation failed:", e)
+        false
+    }
+}
+
+
+suspend fun createUnit(createUnitDTO: CreateUnitDTO): Boolean {
+    return try {
+        val token = localStorage.getItem("jwtToken") ?: return false
+
+        val response = window.fetch(
+            "$backend_url/maintenance/units",
+            RequestInit(
+                method = "POST",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token",
+                ),
+                body = Json.encodeToString(createUnitDTO)
+            )
+        ).await()
+
+        response.status.toInt() == 204 // HttpStatusCode.NoContent
+    } catch (e: Exception) {
+        console.error("Unit creation failed:", e)
+        false
+    }
+}
+
+suspend fun deleteUnit(unitId: Int): Boolean {
+    return try {
+        val token = localStorage.getItem("jwtToken") ?: return false
+
+        val response = window.fetch(
+            "$backend_url/maintenance/units/$unitId",
+            RequestInit(
+                method = "DELETE",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token",
+                ),
+            )
+        ).await()
+
+        response.status.toInt() == 204 // HttpStatusCode.NoContent
+    } catch (e: Exception) {
+        console.error("Unit deletion failed:", e)
+        false
+    }
+}
+
+suspend fun getUnit(unitId: Int): FullUnitDTO? {
+    try {
+        val token = localStorage.getItem("jwtToken") ?: return null
+
+        val response = window.fetch(
+            "$backend_url/maintenance/units/$unitId",
+            RequestInit(
+                method = "GET",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token"
+                )
+            )
+        ).await()
+
+        if (response.status.toInt() == 200) {
+            val responseBody = response.text().await()
+
+            return Json.decodeFromString<FullUnitDTO>(responseBody)
+        } else {
+            // Optionally log or handle errors
+            return null
+        }
+    } catch (e: Exception) {
+        console.error("Failed to fetch the unit", e)
+        return null
+    }
+}
+
+suspend fun updateUnit(updateUnitDTO: UpdateUnitDTO): Boolean {
+    return try {
+        val token = localStorage.getItem("jwtToken") ?: return false
+
+        val response = window.fetch(
+            "$backend_url/maintenance/units",
+            RequestInit(
+                method = "PATCH",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token",
+                ),
+                body = Json.encodeToString(updateUnitDTO)
+            )
+        ).await()
+
+        response.status.toInt() == 204 // HttpStatusCode.NoContent
+    } catch (e: Exception) {
+        console.error("Unit update failed:", e)
         false
     }
 }

@@ -2,8 +2,10 @@ package epicer.frontend.views.Maintenance.Units
 
 import epicer.frontend.components.HeaderComponent
 import epicer.frontend.createIngredientsRoute
+import epicer.frontend.createUnitRoute
 import epicer.frontend.createUnitTypesRoute
 import epicer.frontend.data.deleteIngredient
+import epicer.frontend.data.deleteUnit
 import epicer.frontend.data.deleteUnitType
 import epicer.frontend.data.getImage
 import epicer.frontend.data.getIngredients
@@ -12,8 +14,10 @@ import epicer.frontend.data.getUnits
 import epicer.frontend.image_not_found
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
+import io.kvision.core.Background
 import io.kvision.core.BsBgColor
 import io.kvision.core.BsColor
+import io.kvision.core.Color
 import io.kvision.core.Display
 import io.kvision.core.FontWeight
 import io.kvision.core.JustifyContent
@@ -42,7 +46,6 @@ import io.kvision.utils.px
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-
 
 class UnitsView(private val routing: Routing) : SimplePanel() {
 
@@ -175,6 +178,15 @@ class UnitsView(private val routing: Routing) : SimplePanel() {
                     }
                 }
             }
+            add(div {
+                height = 1.px
+                background = Background(Color("lightgray"))
+                marginTop = 16.px
+                marginBottom = 16.px
+                width = 80.perc
+                marginRight = auto
+                marginLeft = auto
+            })
 
             vPanel {
                 marginTop = 30.px
@@ -185,7 +197,7 @@ class UnitsView(private val routing: Routing) : SimplePanel() {
                 }
                 button(text = "New Unit", icon = "fas fa-plus") {
                     onClick {
-                        routing.navigate(createUnitTypesRoute)
+                        routing.navigate(createUnitRoute)
                     }
                     width = 30.perc
                     minWidth = 300.px
@@ -193,6 +205,7 @@ class UnitsView(private val routing: Routing) : SimplePanel() {
 
                 marginBottom = 30.px
             }
+
 
             gridPanel(
                 templateColumns = "repeat(auto-fill, minmax(400px, 1fr))",
@@ -260,7 +273,7 @@ class UnitsView(private val routing: Routing) : SimplePanel() {
 
                             button(text = "Edit", icon = "fas fa-edit") {
                                 onClick {
-//                                    routing.navigate("/maintenance/units/types/${unitType.id}")
+                                    routing.navigate("/maintenance/units/${unit.id}")
                                 }
                             }
 
@@ -276,18 +289,18 @@ class UnitsView(private val routing: Routing) : SimplePanel() {
                                         align = Align.LEFT
                                     ) {
                                         customScope.launch {
-//                                            if (deleteUnitType(unitType.id)) {
-//                                                initStart()
-//                                                toastContainer.showToast(
-//                                                    message = "Unit type deleted successfully!",
-//                                                    color = BsColor.SUCCESSBG
-//                                                )
-//                                            } else {
-//                                                toastContainer.showToast(
-//                                                    message = "Unit type deletion failed",
-//                                                    color = BsColor.DANGERBG
-//                                                )
-//                                            }
+                                            if (deleteUnit(unit.id)) {
+                                                initStart()
+                                                toastContainer.showToast(
+                                                    message = "Unit deleted successfully!",
+                                                    color = BsColor.SUCCESSBG
+                                                )
+                                            } else {
+                                                toastContainer.showToast(
+                                                    message = "Unit deletion failed",
+                                                    color = BsColor.DANGERBG
+                                                )
+                                            }
                                         }
                                     }
                                 }
