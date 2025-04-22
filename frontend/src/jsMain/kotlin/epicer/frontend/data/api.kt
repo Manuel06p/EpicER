@@ -4,6 +4,7 @@ import epicer.common.dto.TokenDTO
 import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.ingredient.FullIngredientDTO
+import epicer.common.dto.ingredient.UpdateIngredientDTO
 import epicer.common.dto.recipe.FullRecipeDTO
 import epicer.common.dto.role.RoleDTO
 import epicer.common.dto.unit.BaseUnitDTO
@@ -383,12 +384,42 @@ suspend fun getIngredients(): List<FullIngredientDTO>? {
     }
 }
 
+// Get unit type by id
+suspend fun getIngredient(ingredientId: Int): FullIngredientDTO? {
+    try {
+        val token = localStorage.getItem("jwtToken") ?: return null
+
+        val response = window.fetch(
+            "$backend_url/ingredients/$ingredientId",
+            RequestInit(
+                method = "GET",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token"
+                )
+            )
+        ).await()
+
+        if (response.status.toInt() == 200) {
+            val responseBody = response.text().await()
+
+            return Json.decodeFromString<FullIngredientDTO>(responseBody)
+        } else {
+            // Optionally log or handle errors
+            return null
+        }
+    } catch (e: Exception) {
+        console.error("Failed to fetch the ingredient", e)
+        return null
+    }
+}
+
 suspend fun createIngredient(createIngredientDTO: CreateIngredientDTO): Boolean {
     return try {
         val token = localStorage.getItem("jwtToken") ?: return false
 
         val response = window.fetch(
-            "$backend_url/maintenance/ingredients",
+            "$backend_url/ingredients",
             RequestInit(
                 method = "POST",
                 headers = json(
@@ -411,7 +442,7 @@ suspend fun deleteIngredient(ingredientId: Int): Boolean {
         val token = localStorage.getItem("jwtToken") ?: return false
 
         val response = window.fetch(
-            "$backend_url/maintenance/ingredients/$ingredientId",
+            "$backend_url/ingredients/$ingredientId",
             RequestInit(
                 method = "DELETE",
                 headers = json(
@@ -436,7 +467,7 @@ suspend fun getUnits(): List<FullUnitDTO>? {
         val token = localStorage.getItem("jwtToken") ?: return null
 
         val response = window.fetch(
-            "$backend_url/maintenance/units",
+            "$backend_url/units",
             RequestInit(
                 method = "GET",
                 headers = json(
@@ -466,7 +497,7 @@ suspend fun getUnitTypes(): List<UnitTypeDTO>? {
         val token = localStorage.getItem("jwtToken") ?: return null
 
         val response = window.fetch(
-            "$backend_url/maintenance/unit_types",
+            "$backend_url/unit_types",
             RequestInit(
                 method = "GET",
                 headers = json(
@@ -496,7 +527,7 @@ suspend fun deleteUnitType(unitTypeId: Int): Boolean {
         val token = localStorage.getItem("jwtToken") ?: return false
 
         val response = window.fetch(
-            "$backend_url/maintenance/unit_types/$unitTypeId",
+            "$backend_url/unit_types/$unitTypeId",
             RequestInit(
                 method = "DELETE",
                 headers = json(
@@ -519,7 +550,7 @@ suspend fun getUnitType(unitTypeId: Int): UnitTypeDTO? {
         val token = localStorage.getItem("jwtToken") ?: return null
 
         val response = window.fetch(
-            "$backend_url/maintenance/unit_types/$unitTypeId",
+            "$backend_url/unit_types/$unitTypeId",
             RequestInit(
                 method = "GET",
                 headers = json(
@@ -548,7 +579,7 @@ suspend fun getReferenceUnits(unitTypeId: Int): List<BaseUnitDTO>? {
         val token = localStorage.getItem("jwtToken") ?: return null
 
         val response = window.fetch(
-            "$backend_url/maintenance/unit_types/$unitTypeId/reference_units",
+            "$backend_url/unit_types/$unitTypeId/reference_units",
             RequestInit(
                 method = "GET",
                 headers = json(
@@ -578,7 +609,7 @@ suspend fun updateUnitType(updateUnitTypeDTO: UpdateUnitTypeDTO): Boolean {
         val token = localStorage.getItem("jwtToken") ?: return false
 
         val response = window.fetch(
-            "$backend_url/maintenance/unit_types",
+            "$backend_url/unit_types",
             RequestInit(
                 method = "PATCH",
                 headers = json(
@@ -601,7 +632,7 @@ suspend fun createUnitType(createUnitTypeDTO: CreateUnitTypeDTO): Boolean {
         val token = localStorage.getItem("jwtToken") ?: return false
 
         val response = window.fetch(
-            "$backend_url/maintenance/unit_types",
+            "$backend_url/unit_types",
             RequestInit(
                 method = "POST",
                 headers = json(
@@ -625,7 +656,7 @@ suspend fun createUnit(createUnitDTO: CreateUnitDTO): Boolean {
         val token = localStorage.getItem("jwtToken") ?: return false
 
         val response = window.fetch(
-            "$backend_url/maintenance/units",
+            "$backend_url/units",
             RequestInit(
                 method = "POST",
                 headers = json(
@@ -648,7 +679,7 @@ suspend fun deleteUnit(unitId: Int): Boolean {
         val token = localStorage.getItem("jwtToken") ?: return false
 
         val response = window.fetch(
-            "$backend_url/maintenance/units/$unitId",
+            "$backend_url/units/$unitId",
             RequestInit(
                 method = "DELETE",
                 headers = json(
@@ -670,7 +701,7 @@ suspend fun getUnit(unitId: Int): FullUnitDTO? {
         val token = localStorage.getItem("jwtToken") ?: return null
 
         val response = window.fetch(
-            "$backend_url/maintenance/units/$unitId",
+            "$backend_url/units/$unitId",
             RequestInit(
                 method = "GET",
                 headers = json(
@@ -699,7 +730,7 @@ suspend fun updateUnit(updateUnitDTO: UpdateUnitDTO): Boolean {
         val token = localStorage.getItem("jwtToken") ?: return false
 
         val response = window.fetch(
-            "$backend_url/maintenance/units",
+            "$backend_url/units",
             RequestInit(
                 method = "PATCH",
                 headers = json(
@@ -713,6 +744,29 @@ suspend fun updateUnit(updateUnitDTO: UpdateUnitDTO): Boolean {
         response.status.toInt() == 204 // HttpStatusCode.NoContent
     } catch (e: Exception) {
         console.error("Unit update failed:", e)
+        false
+    }
+}
+
+suspend fun updateIngredient(updateIngredientDTO: UpdateIngredientDTO): Boolean {
+    return try {
+        val token = localStorage.getItem("jwtToken") ?: return false
+
+        val response = window.fetch(
+            "$backend_url/ingredients",
+            RequestInit(
+                method = "PATCH",
+                headers = json(
+                    "Content-Type" to "application/json",
+                    "Authorization" to "Bearer $token",
+                ),
+                body = Json.encodeToString(updateIngredientDTO)
+            )
+        ).await()
+
+        response.status.toInt() == 204 // HttpStatusCode.NoContent
+    } catch (e: Exception) {
+        console.error("Ingredient update failed:", e)
         false
     }
 }

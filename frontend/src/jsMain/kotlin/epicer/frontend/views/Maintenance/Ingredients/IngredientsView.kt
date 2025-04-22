@@ -155,7 +155,7 @@ class IngredientsView(private val routing: Routing) : SimplePanel() {
 
                             button(text = "Edit", icon = "fas fa-edit") {
                                 onClick {
-//                                    routing.navigate("/administration/users/${user.id}")
+                                    routing.navigate("/maintenance/ingredients/${ingredient.id}")
                                 }
                             }
 

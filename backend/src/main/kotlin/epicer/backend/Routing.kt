@@ -15,6 +15,7 @@ import epicer.backend.utils.verifyPassword
 import epicer.common.dto.TokenDTO
 import epicer.common.administratorRole
 import epicer.common.dto.ingredient.CreateIngredientDTO
+import epicer.common.dto.ingredient.UpdateIngredientDTO
 import epicer.common.dto.unit.CreateUnitDTO
 import epicer.common.dto.unit.UpdateUnitDTO
 import epicer.common.dto.unitType.CreateUnitTypeDTO
@@ -160,131 +161,30 @@ fun Application.configureRouting() {
         }
         route("/ingredients") {
             authenticate("auth-jwt") {
-                get {
-                    val ingredients = IngredientService.getIngredients()
-                    call.respond(HttpStatusCode.OK, ingredients)
-                }
-            }
-        }
-        route("/maintenance") {
-            authenticate("auth-jwt") {
                 withRoles(maintainerRole) {
-                    route("units") {
-                        get {
-                            val units = UnitService.getUnits()
-                            call.respond(HttpStatusCode.OK, units)
+                    post {
+                        val createIngredientDTO = try {
+                            call.receive<CreateIngredientDTO>()
+                        } catch (e: Exception) {
+                            call.respond(HttpStatusCode.BadRequest, "Invalid request body: ${e.message}")
+                            return@post
                         }
-                        patch() {
-                            val updateUnit = call.receive<UpdateUnitDTO>()
-                            UnitService.updateUnit(updateUnit)
-                            call.respond(HttpStatusCode.NoContent)
-                        }
-                        post {
-                            try {
-                                val createUnitDTO = call.receive<CreateUnitDTO>()
-                                UnitService.createUnit(createUnitDTO)
-                                call.respond(HttpStatusCode.NoContent)
-                            } catch (ex: IllegalStateException) {
-                                call.respond(HttpStatusCode.BadRequest)
-                            } catch (ex: JsonConvertException) {
-                                call.respond(HttpStatusCode.BadRequest)
-                            }
-                        }
-                        route("/{unitId}") {
-                            delete() {
-                                val unitId = call.parameters["unitId"]?.toIntOrNull()
 
-                                if (unitId != null) {
-                                    UnitService.deleteUnit(unitId)
-                                    call.respond(HttpStatusCode.NoContent)
-                                }
-                            }
-                            get() {
-                                val unitId = call.parameters["unitId"]?.toIntOrNull()
-                                if (unitId != null) {
-                                    val fullUnitDTO = UnitService.getUnitById(unitId)
-                                    if (fullUnitDTO != null) {
-                                        call.respond(HttpStatusCode.OK, fullUnitDTO)
-                                    } else {
-                                        call.respond(HttpStatusCode.NotFound, "Unit not found")
-                                    }
-                                }
-                                call.respond(message = HttpStatusCode.BadRequest)
-                            }
+                        val success = IngredientService.createIngredient(createIngredientDTO)
+
+                        if (success) {
+                            call.respond(HttpStatusCode.NoContent)
+                        } else {
+                            call.respond(HttpStatusCode.BadRequest, "Failed to create ingredient")
                         }
                     }
-                    route("unit_types") {
-                        get {
-                            val unitTypes = UnitService.getUnitTypes()
-                            call.respond(HttpStatusCode.OK, unitTypes)
-                        }
-                        patch() {
-                            val updateUnitType = call.receive<UpdateUnitTypeDTO>()
-                            UnitService.updateUnitType(updateUnitType)
-                            call.respond(HttpStatusCode.NoContent)
-                        }
-                        post {
-                            try {
-                                val createUnitTypeDTO = call.receive<CreateUnitTypeDTO>()
-                                UnitService.createUnitType(createUnitTypeDTO)
-                                call.respond(HttpStatusCode.NoContent)
-                            } catch (ex: IllegalStateException) {
-                                call.respond(HttpStatusCode.BadRequest)
-                            } catch (ex: JsonConvertException) {
-                                call.respond(HttpStatusCode.BadRequest)
-                            }
-                        }
-                        route("/{unitTypeId}") {
-                            delete() {
-                                val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
-
-                                if (unitTypeId != null) {
-                                    UnitService.deleteUnitType(unitTypeId)
-                                    call.respond(HttpStatusCode.NoContent)
-                                }
-                            }
-                            get() {
-                                val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
-                                if (unitTypeId != null) {
-                                    val unitTypeDTO = UnitService.getUnitTypeById(unitTypeId)
-                                    if (unitTypeDTO != null) {
-                                        call.respond(HttpStatusCode.OK, unitTypeDTO)
-                                    } else {
-                                        call.respond(HttpStatusCode.NotFound, "Unit type not found")
-                                    }
-                                }
-                                call.respond(message = HttpStatusCode.BadRequest)
-                            }
-                            get("reference_units") {
-                                val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
-                                if (unitTypeId != null) {
-                                    val unitsDTO = UnitService.getReferenceUnits(unitTypeId)
-                                    call.respond(HttpStatusCode.OK, unitsDTO)
-                                }
-                                call.respond(message = HttpStatusCode.BadRequest)
-                            }
-                        }
-
-
+                    patch() {
+                        val updateIngredient = call.receive<UpdateIngredientDTO>()
+                        IngredientService.updateIngredient(updateIngredient)
+                        call.respond(HttpStatusCode.NoContent)
                     }
-                    route("/ingredients") {
-                        post {
-                            val createIngredientDTO = try {
-                                call.receive<CreateIngredientDTO>()
-                            } catch (e: Exception) {
-                                call.respond(HttpStatusCode.BadRequest, "Invalid request body: ${e.message}")
-                                return@post
-                            }
-
-                            val success = IngredientService.createIngredient(createIngredientDTO)
-
-                            if (success) {
-                                call.respond(HttpStatusCode.NoContent)
-                            } else {
-                                call.respond(HttpStatusCode.BadRequest, "Failed to create ingredient")
-                            }
-                        }
-                        delete("/{ingredientId}") {
+                    route("/{ingredientId}") {
+                        delete() {
                             val ingredientId = call.parameters["ingredientId"]?.toIntOrNull()
 
                             if (ingredientId != null) {
@@ -292,11 +192,138 @@ fun Application.configureRouting() {
                                 call.respond(HttpStatusCode.NoContent)
                             }
                         }
-
+                    }
+                }
+                get {
+                    val ingredients = IngredientService.getIngredients()
+                    call.respond(HttpStatusCode.OK, ingredients)
+                }
+                route("/{ingredientId}") {
+                    get() {
+                        val ingredientId = call.parameters["ingredientId"]?.toIntOrNull()
+                        if (ingredientId != null) {
+                            val fullIngredientDTO = IngredientService.getIngredientById(ingredientId)
+                            if (fullIngredientDTO != null) {
+                                call.respond(HttpStatusCode.OK, fullIngredientDTO)
+                            } else {
+                                call.respond(HttpStatusCode.NotFound, "Ingredient not found")
+                            }
+                        }
+                        call.respond(message = HttpStatusCode.BadRequest)
                     }
                 }
             }
         }
+        route("/units") {
+            authenticate("auth-jwt") {
+                withRoles(maintainerRole) {
+                    patch() {
+                        val updateUnit = call.receive<UpdateUnitDTO>()
+                        UnitService.updateUnit(updateUnit)
+                        call.respond(HttpStatusCode.NoContent)
+                    }
+                    post {
+                        try {
+                            val createUnitDTO = call.receive<CreateUnitDTO>()
+                            UnitService.createUnit(createUnitDTO)
+                            call.respond(HttpStatusCode.NoContent)
+                        } catch (ex: IllegalStateException) {
+                            call.respond(HttpStatusCode.BadRequest)
+                        } catch (ex: JsonConvertException) {
+                            call.respond(HttpStatusCode.BadRequest)
+                        }
+                    }
+                    route("/{unitId}") {
+                        delete() {
+                            val unitId = call.parameters["unitId"]?.toIntOrNull()
+
+                            if (unitId != null) {
+                                UnitService.deleteUnit(unitId)
+                                call.respond(HttpStatusCode.NoContent)
+                            }
+                        }
+                    }
+                }
+                get {
+                    val units = UnitService.getUnits()
+                    call.respond(HttpStatusCode.OK, units)
+                }
+                route("/{unitId}") {
+                    get() {
+                        val unitId = call.parameters["unitId"]?.toIntOrNull()
+                        if (unitId != null) {
+                            val fullUnitDTO = UnitService.getUnitById(unitId)
+                            if (fullUnitDTO != null) {
+                                call.respond(HttpStatusCode.OK, fullUnitDTO)
+                            } else {
+                                call.respond(HttpStatusCode.NotFound, "Unit not found")
+                            }
+                        }
+                        call.respond(message = HttpStatusCode.BadRequest)
+                    }
+                }
+            }
+        }
+        route("unit_types") {
+            withRoles(maintainerRole) {
+                patch() {
+                    val updateUnitType = call.receive<UpdateUnitTypeDTO>()
+                    UnitService.updateUnitType(updateUnitType)
+                    call.respond(HttpStatusCode.NoContent)
+                }
+                post {
+                    try {
+                        val createUnitTypeDTO = call.receive<CreateUnitTypeDTO>()
+                        UnitService.createUnitType(createUnitTypeDTO)
+                        call.respond(HttpStatusCode.NoContent)
+                    } catch (ex: IllegalStateException) {
+                        call.respond(HttpStatusCode.BadRequest)
+                    } catch (ex: JsonConvertException) {
+                        call.respond(HttpStatusCode.BadRequest)
+                    }
+                }
+                route("/{unitTypeId}") {
+                    delete() {
+                        val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
+
+                        if (unitTypeId != null) {
+                            UnitService.deleteUnitType(unitTypeId)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                    }
+                }
+            }
+
+            get {
+                val unitTypes = UnitService.getUnitTypes()
+                call.respond(HttpStatusCode.OK, unitTypes)
+            }
+
+            route("/{unitTypeId}") {
+                get() {
+                    val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
+                    if (unitTypeId != null) {
+                        val unitTypeDTO = UnitService.getUnitTypeById(unitTypeId)
+                        if (unitTypeDTO != null) {
+                            call.respond(HttpStatusCode.OK, unitTypeDTO)
+                        } else {
+                            call.respond(HttpStatusCode.NotFound, "Unit type not found")
+                        }
+                    }
+                    call.respond(message = HttpStatusCode.BadRequest)
+                }
+                get("reference_units") {
+                    val unitTypeId = call.parameters["unitTypeId"]?.toIntOrNull()
+                    if (unitTypeId != null) {
+                        val unitsDTO = UnitService.getReferenceUnits(unitTypeId)
+                        call.respond(HttpStatusCode.OK, unitsDTO)
+                    }
+                    call.respond(message = HttpStatusCode.BadRequest)
+                }
+            }
+        }
+
+
         route("/administration") {
             authenticate("auth-jwt") {
                 withRoles(administratorRole) {

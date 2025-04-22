@@ -10,6 +10,7 @@ import epicer.frontend.views.RecipeView
 import epicer.frontend.views.Administration.UpdateUserView
 import epicer.frontend.views.Maintenance.Ingredients.CreateIngredientView
 import epicer.frontend.views.Maintenance.Ingredients.IngredientsView
+import epicer.frontend.views.Maintenance.Ingredients.UpdateIngredientView
 import epicer.frontend.views.Maintenance.Units.CreateUnitTypeView
 import epicer.frontend.views.Maintenance.Units.CreateUnitView
 import epicer.frontend.views.Maintenance.Units.UnitsView
@@ -118,6 +119,13 @@ class App : Application() {
                 authRoleNavigate(maintainerRole, routing, toastContainer) {
                     root.removeAll()
                     root.add(CreateIngredientView(routing))
+                }
+            })
+            .on(RegExp("^maintenance/ingredients/(.*)"), { match ->
+                authRoleNavigate(administratorRole, routing, toastContainer) {
+                    val ingredientId = match.data[0]
+                    root.removeAll()
+                    root.add(UpdateIngredientView(routing, ingredientId))
                 }
             })
             .on(unitsRoute, {
