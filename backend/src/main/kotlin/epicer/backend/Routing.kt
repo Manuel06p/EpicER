@@ -4,6 +4,7 @@ import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
 import epicer.backend.service.ImageService
 import epicer.backend.service.IngredientInRecipeService
+import epicer.backend.service.IngredientInRecipeService.Companion.getIngredientsInRecipe
 import epicer.backend.service.IngredientService
 import epicer.backend.service.RecipeService
 import epicer.backend.service.RoleService
@@ -19,6 +20,7 @@ import epicer.common.administratorRole
 import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.ingredient.UpdateIngredientDTO
 import epicer.common.dto.ingredientInRecipe.CreateIngredientInRecipeDTO
+import epicer.common.dto.ingredientInRecipe.UpdateIngredientInRecipeDTO
 import epicer.common.dto.recipe.CreateRecipeDTO
 import epicer.common.dto.unit.CreateUnitDTO
 import epicer.common.dto.unit.UpdateUnitDTO
@@ -125,8 +127,45 @@ fun Application.configureRouting() {
 
                 route("/recipes") {
                     route("/ingredients") {
-                        post {
+                        put {
+                            val principal = call.principal<JWTPrincipal>()
+                            val userId = principal?.payload?.getClaim("id")?.asInt()
+                            if (userId != null) {
+                                val updateIngredientInRecipe = call.receive<UpdateIngredientInRecipeDTO>()
+                                IngredientInRecipeService.updateIngredientInRecipe(updateIngredientInRecipe, userId)
+                                call.respond(HttpStatusCode.NoContent)
+                            }
+                            call.respond(HttpStatusCode.BadRequest)
+                        }
+                        route("/{recipeId}") {
+                            get() {
+                                val recipeId = call.parameters["recipeId"]?.toIntOrNull()
+                                val principal = call.principal<JWTPrincipal>()
+                                val userId = principal?.payload?.getClaim("id")?.asInt()
 
+                                if (recipeId != null && userId != null) {
+                                    val ingredientsInRecipe = getIngredientsInRecipe(recipeId, userId)
+                                    call.respond(HttpStatusCode.OK, ingredientsInRecipe)
+                                }
+                                call.respond(message = HttpStatusCode.BadRequest)
+                            }
+                            route("/{ingredientInRecipeId}") {
+                                delete{
+                                    val recipeId = call.parameters["recipeId"]?.toIntOrNull()
+                                    val ingredientInRecipeId = call.parameters["ingredientInRecipeId"]?.toIntOrNull()
+
+                                    val principal = call.principal<JWTPrincipal>()
+                                    val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                                    if (userId != null && recipeId != null && ingredientInRecipeId != null) {
+                                        IngredientInRecipeService.deleteIngredientInRecipe(ingredientInRecipeId, recipeId, userId)
+                                        call.respond(HttpStatusCode.NoContent)
+                                    }
+                                }
+
+                            }
+                        }
+                        post {
                             try {
                                 val principal = call.principal<JWTPrincipal>()
                                 val userId = principal?.payload?.getClaim("id")?.asInt()

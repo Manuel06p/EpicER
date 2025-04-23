@@ -100,11 +100,7 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
             val recipe = getRecipe(recipeId)
             if (recipe != null) {
                 val portionsState = ObservableValue(recipe.portions)
-                button("edit ingredients") {
-                    onClick {
-                        routing.navigate("$recipesRoute/$recipeId/ingredients")
-                    }
-                }
+
                 vPanel {
                     marginTop = 25.px
                     alignItems = AlignItems.CENTER
@@ -204,7 +200,12 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                             recipe.ingredientsInRecipe.forEach { ingredientInRecipe ->
                                 ingredientInRecipeCard(ingredientInRecipe, portionsState, recipe.portions, customScope)
                             }
-
+                            button("Edit ingredients", icon = "fas fa-edit") {
+                                marginTop = 25.px
+                                onClick {
+                                    routing.navigate("$recipesRoute/$recipeId/ingredients")
+                                }
+                            }
                         }
                         vPanel {
                             marginTop = 25.px
