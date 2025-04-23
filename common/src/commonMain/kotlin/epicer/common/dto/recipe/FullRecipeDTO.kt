@@ -8,7 +8,7 @@ data class FullRecipeDTO(
     val name: String,
     val description: String?,
     val portions: Int?,
-
+    val owner: Int,
     val imageId: Int?,
 
     val ingredientsInRecipe: List<FullIngredientInRecipeDTO>,

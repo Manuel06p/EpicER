@@ -19,6 +19,13 @@ fun isRole(role: String) : Boolean {
     return (roles != null && roles.contains(role))
 }
 
+fun getMyId(): Int? {
+    val id = localStorage.getItem("baseUserDTO")
+        ?.let { Json.decodeFromString<BaseUserDTO>(it).id }
+
+    return id
+}
+
 fun authNavigate(
     routing: Routing,
     toastContainer: ToastContainer,

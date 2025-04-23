@@ -155,6 +155,7 @@ class RecipeService {
                     id = firstRow[RecipesTable.id].value,
                     name = firstRow[RecipesTable.name],
                     description = firstRow[RecipesTable.description],
+                    owner = firstRow[RecipesTable.owner].value,
                     portions = firstRow[RecipesTable.portions],
                     imageId = firstRow[RecipesTable.image]?.value,
                     ingredientsInRecipe = ingredientsInRecipe,

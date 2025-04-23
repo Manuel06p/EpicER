@@ -3,6 +3,7 @@ package epicer.frontend.views
 import epicer.frontend.components.HeaderComponent
 import epicer.frontend.components.ingredientInRecipeCard
 import epicer.frontend.data.RecipeService.Companion.getRecipe
+import epicer.frontend.getMyId
 import epicer.frontend.image_not_found
 import epicer.frontend.recipesRoute
 import io.kvision.core.AlignContent
@@ -200,12 +201,15 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                             recipe.ingredientsInRecipe.forEach { ingredientInRecipe ->
                                 ingredientInRecipeCard(ingredientInRecipe, portionsState, recipe.portions, customScope)
                             }
-                            button("Edit ingredients", icon = "fas fa-edit") {
-                                marginTop = 25.px
-                                onClick {
-                                    routing.navigate("$recipesRoute/$recipeId/ingredients")
+                            if (recipe.owner == getMyId()) {
+                                button("Edit ingredients", icon = "fas fa-edit") {
+                                    marginTop = 25.px
+                                    onClick {
+                                        routing.navigate("$recipesRoute/$recipeId/ingredients")
+                                    }
                                 }
                             }
+
                         }
                         vPanel {
                             marginTop = 25.px
