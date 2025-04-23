@@ -143,7 +143,7 @@ class App : Application() {
                 }
             })
             .on(RegExp("^maintenance/ingredients/(.*)"), { match ->
-                authRoleNavigate(administratorRole, routing, toastContainer) {
+                authRoleNavigate(maintainerRole, routing, toastContainer) {
                     val ingredientId = match.data[0]
                     root.removeAll()
                     root.add(UpdateIngredientView(routing, ingredientId))
@@ -162,7 +162,7 @@ class App : Application() {
                 }
             })
             .on(RegExp("^maintenance/units/types/(.*)"), { match ->
-                authRoleNavigate(administratorRole, routing, toastContainer) {
+                authRoleNavigate(maintainerRole, routing, toastContainer) {
                     val unitTypeId = match.data[0]
                     root.removeAll()
                     root.add(UpdateUnitTypeView(routing, unitTypeId))
@@ -175,7 +175,7 @@ class App : Application() {
                 }
             })
             .on(RegExp("^maintenance/units/(.*)"), { match ->
-                authRoleNavigate(administratorRole, routing, toastContainer) {
+                authRoleNavigate(maintainerRole, routing, toastContainer) {
                     val unitId = match.data[0]
                     root.removeAll()
                     root.add(UpdateUnitView(routing, unitId))

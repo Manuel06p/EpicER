@@ -75,7 +75,7 @@ fun Container.ingredientInRecipeCard(
                             rich = true,
                             delay = 0,
                             placement = Placement.RIGHT,
-                            triggers = listOf(Trigger.CLICK, Trigger.HOVER)
+                            triggers = listOf(Trigger.HOVER)
                         )
                     )
                     fontSize = nameFontSize
