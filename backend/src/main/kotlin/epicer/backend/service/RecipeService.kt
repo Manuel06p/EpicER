@@ -91,14 +91,31 @@ class RecipeService {
             }
         }
 
-        suspend fun getBaseRecipesById(id: Int): List<BaseRecipeDTO> = suspendTransaction {
+        suspend fun getAccessibleBaseRecipes(owner: Int): List<BaseRecipeDTO> = suspendTransaction {
             RecipesTable
                 .select(
                     RecipesTable.id,
                     RecipesTable.name,
                     RecipesTable.image,
                 )
-                .where(RecipesTable.owner eq id)
+                .where((RecipesTable.owner eq owner) or (RecipesTable.is_public eq true))
+                .map { row ->
+                    BaseRecipeDTO(
+                        id = row[RecipesTable.id].value,
+                        name = row[RecipesTable.name],
+                        imageId = row[RecipesTable.image]?.value,
+                    )
+                }
+        }
+
+        suspend fun getBaseRecipesById(owner: Int): List<BaseRecipeDTO> = suspendTransaction {
+            RecipesTable
+                .select(
+                    RecipesTable.id,
+                    RecipesTable.name,
+                    RecipesTable.image,
+                )
+                .where(RecipesTable.owner eq owner)
                 .map { row ->
                     BaseRecipeDTO(
                         id = row[RecipesTable.id].value,

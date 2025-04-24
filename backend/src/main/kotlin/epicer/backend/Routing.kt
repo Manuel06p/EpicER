@@ -123,6 +123,16 @@ fun Application.configureRouting() {
                     }
                     call.respond(HttpStatusCode.NoContent)
                 }
+                get() {
+                    val principal = call.principal<JWTPrincipal>()
+                    val userId = principal?.payload?.getClaim("id")?.asInt()
+                    if (userId != null) {
+                        val recipes = RecipeService.getAccessibleBaseRecipes(userId)
+                        call.respond(recipes)
+                    } else {
+                        call.respond(HttpStatusCode.BadRequest)
+                    }
+                }
             }
         }
         route("/me") {

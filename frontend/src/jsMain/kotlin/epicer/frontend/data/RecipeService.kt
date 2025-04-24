@@ -113,6 +113,36 @@ class RecipeService {
             }
         }
 
+        suspend fun getRecipes(): List<BaseRecipeDTO>? {
+            try {
+                val token = localStorage.getItem("jwtToken") ?: return null
+
+                val response = window.fetch(
+                    "$backend_url/recipes",
+                    RequestInit(
+                        method = "GET",
+                        headers = json(
+                            "Content-Type" to "application/json",
+                            "Authorization" to "Bearer $token"
+                        )
+                    )
+                ).await()
+
+                if (response.status.toInt() == 200) {
+                    val responseBody = response.text().await()
+
+                    // Decode the response body into list of BaseRecipeDTO
+                    return Json.decodeFromString<List<BaseRecipeDTO>>(responseBody)
+                } else {
+                    // Optionally log or handle errors
+                    return null
+                }
+            } catch (e: Exception) {
+                console.error("Failed to fetch recipes", e)
+                return null
+            }
+        }
+
         suspend fun getMyRecipes(): List<BaseRecipeDTO>? {
             try {
                 val token = localStorage.getItem("jwtToken") ?: return null

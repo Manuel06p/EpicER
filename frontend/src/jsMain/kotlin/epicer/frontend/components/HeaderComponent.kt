@@ -5,18 +5,21 @@ import epicer.common.dto.user.BaseUserDTO
 import epicer.common.maintainerRole
 import epicer.frontend.ingredientsRoute
 import epicer.frontend.isRole
+import epicer.frontend.recipesRoute
 import epicer.frontend.unitsRoute
 import epicer.frontend.usersRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
 import io.kvision.core.Cursor
 import io.kvision.core.onClick
+import io.kvision.dropdown.ddLink
 import io.kvision.dropdown.dropDown
 import io.kvision.form.check.checkBox
 import io.kvision.form.text.text
 import io.kvision.html.ButtonStyle
 import io.kvision.html.button
 import io.kvision.html.icon
+import io.kvision.html.image
 import io.kvision.navbar.Navbar
 import io.kvision.navbar.nav
 import io.kvision.navbar.navForm
@@ -31,6 +34,7 @@ import io.kvision.toast.ToastContainer
 import io.kvision.toast.ToastContainerPosition
 import io.kvision.toast.ToastOptions
 import io.kvision.toast.ToastPosition
+import io.kvision.utils.auto
 import io.kvision.utils.perc
 import io.kvision.utils.px
 import kotlinx.browser.localStorage
@@ -48,11 +52,28 @@ class HeaderComponent(private val routing: Routing): Navbar() {
         nav {
             fontSize = 24.px
 
+            image(src = "/assets/brand/EpicER_logo.svg", alt = "Logo") {
+                height = 40.px
+                marginTop = auto
+                marginBottom = auto
+                marginRight = 30.px
+                cursor = Cursor.POINTER
+
+                onClick {
+                    routing.navigate("/")
+                }
+            }
 
             navLink("My Recipes", icon = "fas fa-pizza-slice") {
                 cursor = Cursor.POINTER
                 onClick {
-                    routing.navigate("/")
+                    routing.navigate(recipesRoute)
+                }
+            }
+            navLink("All Recipes", icon = "fas fa-globe") {
+                cursor = Cursor.POINTER
+                onClick {
+                    routing.navigate("/allRecipes")
                 }
             }
             if (isRole(administratorRole))
@@ -84,43 +105,31 @@ class HeaderComponent(private val routing: Routing): Navbar() {
 
 
         nav(rightAlign = true) {
-            alignItems = AlignItems.CENTER
+            alignItems = AlignItems.END
 
             dropDown(
                 text = localStorage.getItem("baseUserDTO")
                     ?.let { Json.decodeFromString<BaseUserDTO>(it).username }
                     ?: "!UsernameNotFound",
                 arrowVisible = false,
+                icon = "fas fa-circle-user",
                 forNavbar = true,
                 rightAligned = true,
             ) {
                 fontSize = 30.px
                 marginRight = 10.px
-                vPanel() {
-                    alignItems = AlignItems.CENTER
-                    button(
-                        text = "Logout",
-                        icon = "fas fa-right-from-bracket",
-                        style = ButtonStyle.LIGHT,
-                    ) {
-                        width = 70.perc
-                        onClick {
-                            // Your logout logic here:
-                            localStorage.clear()
-                            toastContainer.showToast(
-                                message = "You have been logged out",
-                                color = BsColor.SUCCESSBG,
-                            )
-                            routing.navigate("/login")
-                        }
+                ddLink(label = "Logout", icon = "fas fa-logout") {
+                    cursor = Cursor.POINTER
+                    onClick {
+                        // Your logout logic here:
+                        localStorage.clear()
+                        toastContainer.showToast(
+                            message = "You have been logged out",
+                            color = BsColor.SUCCESSBG,
+                        )
+                        routing.navigate("/login")
                     }
                 }
-
-            }
-            icon(
-                "fas fa-circle-user",
-            ) {
-                fontSize = 35.px
             }
         }
     }
