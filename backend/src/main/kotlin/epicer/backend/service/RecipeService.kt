@@ -9,6 +9,7 @@ import epicer.backend.model.StepsIngredientsInRecipe
 import epicer.backend.model.StepsTable
 import epicer.backend.model.UnitsTable
 import epicer.backend.service.ImageService.Companion.createImage
+import epicer.backend.service.ImageService.Companion.deleteImage
 import epicer.backend.service.ImageService.Companion.deleteImageFile
 import epicer.backend.suspendTransaction
 import epicer.common.dto.recipe.BaseRecipeDTO
@@ -22,6 +23,7 @@ import epicer.common.dto.unit.BaseUnitDTO
 import org.jetbrains.exposed.sql.JoinType
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.and
+import org.jetbrains.exposed.sql.deleteWhere
 import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.or
 import org.jetbrains.exposed.sql.selectAll
@@ -59,6 +61,29 @@ class RecipeService {
                 }
 
                 throw e // Rollback transaction
+            }
+        }
+        suspend fun deleteRecipe(recipeId: Int, owner: Int): Unit = suspendTransaction {
+            try {
+                val recipe = RecipesTable.selectAll().where(RecipesTable.id eq recipeId).singleOrNull()
+                    ?: return@suspendTransaction
+
+                if (recipe[RecipesTable.owner].value != owner) {
+                    throw Exception("Logged user cant delete recipe, as it is not its owner")
+                }
+
+                val imageId = recipe[RecipesTable.image]
+
+                // Delete the ingredient
+                RecipesTable.deleteWhere { RecipesTable.id eq recipeId } > 0
+
+                // Clean up associated image if exists
+                if (imageId != null) {
+                    deleteImage(imageId.value)
+                }
+
+            } catch (e: Exception) {
+                println("Failed to remove ingredient: ${e.message}")
             }
         }
 

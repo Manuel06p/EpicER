@@ -1,37 +1,23 @@
-package epicer.frontend.views
+package epicer.frontend.views.Recipes
 
-import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.recipe.CreateRecipeDTO
 import epicer.frontend.components.HeaderComponent
-import epicer.frontend.data.IngredientService.Companion.createIngredient
-import epicer.frontend.data.RecipeService.Companion.createRecipe
-import epicer.frontend.ingredientsRoute
+import epicer.frontend.data.RecipeService
 import epicer.frontend.recipesRoute
 import io.kvision.core.AlignItems
 import io.kvision.core.BsColor
-import io.kvision.core.FlexWrap
 import io.kvision.core.onClickLaunch
-import io.kvision.form.Form
 import io.kvision.form.FormPanel
 import io.kvision.form.check.CheckBox
 import io.kvision.form.formPanel
 import io.kvision.form.getDataWithFileContent
-import io.kvision.form.number.Numeric
 import io.kvision.form.number.Spinner
-
-import io.kvision.form.text.Password
 import io.kvision.form.text.Text
 import io.kvision.form.upload.BootstrapUpload
-import io.kvision.form.upload.Capture
-import io.kvision.form.upload.Upload
-import io.kvision.form.upload.UploadInput
-import io.kvision.form.upload.getFileWithContent
 import io.kvision.html.Align
 import io.kvision.html.button
 import io.kvision.html.h2
-import io.kvision.modal.Alert
 import io.kvision.modal.Confirm
-import io.kvision.panel.HPanel
 import io.kvision.panel.VPanel
 import io.kvision.panel.hPanel
 import io.kvision.panel.vPanel
@@ -39,17 +25,12 @@ import io.kvision.routing.Routing
 import io.kvision.toast.ToastContainer
 import io.kvision.toast.ToastContainerPosition
 import io.kvision.types.KFile
-import io.kvision.types.contentType
 import io.kvision.utils.perc
 import io.kvision.utils.px
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.serialization.Contextual
 import kotlinx.serialization.Serializable
-import org.w3c.files.File
-import kotlin.js.Date
-
 
 class CreateRecipeView(private val routing: Routing) : VPanel() {
     @Serializable
@@ -141,13 +122,13 @@ class CreateRecipeView(private val routing: Routing) : VPanel() {
                             imageBase64 = imageBase64
                         )
 
-                        Confirm.show(
+                        Confirm.Companion.show(
                             "Recipe creation",
                             "Do you really want to create the recipe?",
                             align = Align.LEFT,
                         ) {
                             customScope.launch {
-                                if (createRecipe(createRecipeDTO)) {
+                                if (RecipeService.Companion.createRecipe(createRecipeDTO)) {
                                     routing.navigate(recipesRoute)
                                     toastContainer.showToast(
                                         message = "Recipe created successfully!",

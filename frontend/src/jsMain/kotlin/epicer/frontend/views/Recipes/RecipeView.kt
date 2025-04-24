@@ -1,105 +1,76 @@
-package epicer.frontend.views
+package epicer.frontend.views.Recipes
 
 import epicer.frontend.components.HeaderComponent
 import epicer.frontend.components.ingredientInRecipeCard
-import epicer.frontend.data.RecipeService.Companion.getRecipe
+import epicer.frontend.data.RecipeService
+import epicer.frontend.data.RecipeService.Companion.deleteRecipe
+import epicer.frontend.data.SectionService.Companion.deleteSection
 import epicer.frontend.getMyId
-import epicer.frontend.image_not_found
 import epicer.frontend.recipesRoute
 import io.kvision.core.AlignContent
 import io.kvision.core.AlignItems
-import io.kvision.core.Background
 import io.kvision.core.Border
 import io.kvision.core.BorderStyle
 import io.kvision.core.BsBgColor
-import io.kvision.core.BsBorder
-import io.kvision.core.Col
-import io.kvision.core.Color
+import io.kvision.core.BsColor
 import io.kvision.core.Cursor
 import io.kvision.core.Display
-import io.kvision.core.FlexDirection
 import io.kvision.core.FlexWrap
 import io.kvision.core.FontWeight
 import io.kvision.core.ListStyle
 import io.kvision.core.ListStyleType
-import io.kvision.core.Placement
-import io.kvision.core.Style
 import io.kvision.core.TextAlign
-import io.kvision.core.TooltipOptions
-import io.kvision.core.Transition
-import io.kvision.core.Trigger
-import io.kvision.core.VerticalAlign
 import io.kvision.core.addBsBgColor
-import io.kvision.core.addBsBorder
-import io.kvision.core.enableTooltip
-import io.kvision.core.onChange
 import io.kvision.core.onInput
 import io.kvision.core.removeBsBgColor
-import io.kvision.core.removeBsBorder
-import io.kvision.core.style
+import io.kvision.dropdown.ddLink
 import io.kvision.dropdown.dropDown
-import io.kvision.form.form
 import io.kvision.form.number.spinnerInput
-import io.kvision.form.text.text
-import io.kvision.form.text.textArea
-import io.kvision.form.text.textInput
 import io.kvision.html.Align
 import io.kvision.html.Button
-import io.kvision.html.ImageShape
-import io.kvision.html.InputType
-import io.kvision.html.br
+import io.kvision.html.ButtonStyle
 import io.kvision.html.button
 import io.kvision.html.div
 import io.kvision.html.h1
 import io.kvision.html.h3
 import io.kvision.html.h4
 import io.kvision.html.h5
-import io.kvision.html.h6
-import io.kvision.html.icon
-import io.kvision.html.image
 import io.kvision.html.li
 import io.kvision.html.ol
 import io.kvision.html.p
 import io.kvision.html.span
-import io.kvision.html.ul
-import io.kvision.navbar.NavbarColor
+import io.kvision.modal.Confirm
 import io.kvision.navbar.NavbarExpand
 import io.kvision.navbar.nav
-import io.kvision.navbar.navLink
-import io.kvision.navbar.navText
 import io.kvision.navbar.navbar
-import io.kvision.panel.SimplePanel
 import io.kvision.panel.StackPanel
 import io.kvision.panel.VPanel
 import io.kvision.panel.gridPanel
-import io.kvision.panel.hPanel
 import io.kvision.panel.stackPanel
 import io.kvision.panel.vPanel
 import io.kvision.routing.Routing
-import io.kvision.state.ObservableState
 import io.kvision.state.ObservableValue
-import io.kvision.state.bind
-import io.kvision.toolbar.buttonGroup
-import io.kvision.toolbar.toolbar
+import io.kvision.toast.ToastContainer
+import io.kvision.toast.ToastContainerPosition
 import io.kvision.utils.auto
-import io.kvision.utils.pc
 import io.kvision.utils.perc
 import io.kvision.utils.px
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.w3c.dom.mediacapture.MediaDevices
-import kotlin.Double
-import kotlin.properties.Delegates.observable
 
 class RecipeView(private val routing: Routing, recipeId: Int) : VPanel() {
+    private val customScope = CoroutineScope(Dispatchers.Main)
+    private val toastContainer = ToastContainer(ToastContainerPosition.BOTTOMRIGHT)
+
     init {
-        val customScope = CoroutineScope(Dispatchers.Main)
+
+        marginBottom = 50.px
 
         add(HeaderComponent(routing))
         alignItems = AlignItems.CENTER
         customScope.launch {
-            val recipe = getRecipe(recipeId)
+            val recipe = RecipeService.Companion.getRecipe(recipeId)
             if (recipe != null) {
                 val portionsState = ObservableValue(recipe.portions)
 
@@ -120,7 +91,6 @@ class RecipeView(private val routing: Routing, recipeId: Int) : VPanel() {
 
                         marginBottom = 25.px
                     }
-
                     navbar(
                         bgColor = BsBgColor.BODYSECONDARY,
                         expand = NavbarExpand.ALWAYS
@@ -133,7 +103,38 @@ class RecipeView(private val routing: Routing, recipeId: Int) : VPanel() {
 
                         nav {
                             padding = 7.px
-
+                            dropDown(text = "", icon = "fas fa-bars", arrowVisible = false, style = ButtonStyle.SECONDARY) {
+                                marginRight = 10.px
+                                ddLink("Update", icon = "fas fa-edit") {
+                                    cursor = Cursor.POINTER
+                                    onClick {}
+                                }
+                                ddLink("Delete", icon = "fas fa-trash") {
+                                    cursor = Cursor.POINTER
+                                    onClick {
+                                        Confirm.show(
+                                            "Recipe deletion",
+                                            "Do you really want to delete this recipe?",
+                                            align = Align.LEFT
+                                        ) {
+                                            customScope.launch {
+                                                if (deleteRecipe(recipeId = recipeId)) {
+                                                    routing.navigate(recipesRoute)
+                                                    toastContainer.showToast(
+                                                        message = "Recipe deleted successfully!",
+                                                        color = BsColor.SUCCESSBG
+                                                    )
+                                                } else {
+                                                    toastContainer.showToast(
+                                                        message = "Recipe deletion failed",
+                                                        color = BsColor.DANGERBG
+                                                    )
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             ingredientsButton = button(
                                 text = "Ingredients",
                                 icon = "fas fa-carrot",
@@ -216,7 +217,7 @@ class RecipeView(private val routing: Routing, recipeId: Int) : VPanel() {
                                     marginTop = 25.px
                                     width = 100.perc
                                     onClick {
-                                        routing.navigate("$recipesRoute/$recipeId/ingredients")
+                                        routing.navigate("${recipesRoute}/$recipeId/ingredients")
                                     }
                                 }
                             }
@@ -295,7 +296,7 @@ class RecipeView(private val routing: Routing, recipeId: Int) : VPanel() {
                                     marginTop = 25.px
                                     width = 100.perc
                                     onClick {
-                                        routing.navigate("$recipesRoute/$recipeId/steps")
+                                        routing.navigate("${recipesRoute}/$recipeId/steps")
                                     }
                                 }
                             }
@@ -309,4 +310,3 @@ class RecipeView(private val routing: Routing, recipeId: Int) : VPanel() {
         }
     }
 }
-

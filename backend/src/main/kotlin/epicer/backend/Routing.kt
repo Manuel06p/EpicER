@@ -132,6 +132,22 @@ fun Application.configureRouting() {
                 }
 
                 route("/recipes") {
+                    route("/{recipeId}") {
+                        delete {
+                            val recipeId = call.parameters["recipeId"]?.toIntOrNull()
+
+                            val principal = call.principal<JWTPrincipal>()
+                            val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                            if (userId != null && recipeId != null) {
+                                RecipeService.deleteRecipe(
+                                    recipeId = recipeId,
+                                    owner = userId,
+                                )
+                                call.respond(HttpStatusCode.NoContent)
+                            }
+                        }
+                    }
                     route("/ingredients") {
                         put {
                             val principal = call.principal<JWTPrincipal>()

@@ -6,9 +6,9 @@ import epicer.frontend.views.Administration.UsersView
 import epicer.frontend.views.Administration.CreateUserView
 import epicer.frontend.views.LoginView
 import epicer.frontend.views.MainView
-import epicer.frontend.views.RecipeView
+import epicer.frontend.views.Recipes.RecipeView
 import epicer.frontend.views.Administration.UpdateUserView
-import epicer.frontend.views.CreateRecipeView
+import epicer.frontend.views.Recipes.CreateRecipeView
 import epicer.frontend.views.Maintenance.Ingredients.CreateIngredientView
 import epicer.frontend.views.Maintenance.Ingredients.IngredientsView
 import epicer.frontend.views.Maintenance.Ingredients.UpdateIngredientView

@@ -43,6 +43,28 @@ class RecipeService {
             }
         }
 
+        suspend fun deleteRecipe(recipeId: Int): Boolean {
+            return try {
+                val token = localStorage.getItem("jwtToken") ?: return false
+
+                val response = window.fetch(
+                    "$backend_url/me/recipes/$recipeId",
+                    RequestInit(
+                        method = "DELETE",
+                        headers = json(
+                            "Content-Type" to "application/json",
+                            "Authorization" to "Bearer $token",
+                        ),
+                    )
+                ).await()
+
+                response.status.toInt() == 204 // HttpStatusCode.NoContent
+            } catch (e: Exception) {
+                console.error("Recipe deletion failed:", e)
+                false
+            }
+        }
+
         suspend fun createRecipe(createRecipeDTO: CreateRecipeDTO): Boolean {
             return try {
                 val token = localStorage.getItem("jwtToken") ?: return false
