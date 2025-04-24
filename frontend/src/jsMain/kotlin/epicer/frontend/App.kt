@@ -18,6 +18,7 @@ import epicer.frontend.views.Maintenance.Units.UnitsView
 import epicer.frontend.views.Maintenance.Units.UpdateUnitTypeView
 import epicer.frontend.views.Maintenance.Units.UpdateUnitView
 import epicer.frontend.views.Recipes.UpdateIngredientsInRecipeView
+import epicer.frontend.views.Recipes.UpdateRecipeView
 import epicer.frontend.views.Recipes.UpdateStepsView
 import io.kvision.Application
 import io.kvision.CoreModule
@@ -108,6 +109,13 @@ class App : Application() {
                     val recipeId = match.data[0]
                     root.removeAll()
                     root.add(UpdateStepsView(routing, recipeId))
+                }
+            })
+            .on(RegExp("^recipes/(.*)/edit"), { match ->
+                authNavigate(routing, toastContainer) {
+                    val recipeId = match.data[0]
+                    root.removeAll()
+                    root.add(UpdateRecipeView(routing, recipeId))
                 }
             })
             .on(RegExp("^recipes/(.*)"), { match ->

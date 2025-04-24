@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 data class CreateRecipeDTO(
     val name: String,
     val description: String?,
-    val portions: Int,
+    val portions: Int?,
     val isPublic: Boolean,
     val imageBase64: String?
 )

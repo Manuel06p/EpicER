@@ -24,6 +24,7 @@ import epicer.common.dto.ingredient.UpdateIngredientDTO
 import epicer.common.dto.ingredientInRecipe.CreateIngredientInRecipeDTO
 import epicer.common.dto.ingredientInRecipe.UpdateIngredientInRecipeDTO
 import epicer.common.dto.recipe.CreateRecipeDTO
+import epicer.common.dto.recipe.UpdateRecipeDTO
 import epicer.common.dto.section.CreateSectionDTO
 import epicer.common.dto.section.UpdateSectionDTO
 import epicer.common.dto.step.CreateStepDTO
@@ -132,6 +133,16 @@ fun Application.configureRouting() {
                 }
 
                 route("/recipes") {
+                    patch() {
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+                        val updateRecipe = call.receive<UpdateRecipeDTO>()
+                        if (userId != null) {
+                            RecipeService.updateRecipe(updateRecipe, userId)
+                            call.respond(HttpStatusCode.NoContent)
+                        }
+                        call.respond(HttpStatusCode.BadRequest)
+                    }
                     route("/{recipeId}") {
                         delete {
                             val recipeId = call.parameters["recipeId"]?.toIntOrNull()

@@ -103,32 +103,41 @@ class RecipeView(private val routing: Routing, recipeId: Int) : VPanel() {
 
                         nav {
                             padding = 7.px
-                            dropDown(text = "", icon = "fas fa-bars", arrowVisible = false, style = ButtonStyle.SECONDARY) {
-                                marginRight = 10.px
-                                ddLink("Update", icon = "fas fa-edit") {
-                                    cursor = Cursor.POINTER
-                                    onClick {}
-                                }
-                                ddLink("Delete", icon = "fas fa-trash") {
-                                    cursor = Cursor.POINTER
-                                    onClick {
-                                        Confirm.show(
-                                            "Recipe deletion",
-                                            "Do you really want to delete this recipe?",
-                                            align = Align.LEFT
-                                        ) {
-                                            customScope.launch {
-                                                if (deleteRecipe(recipeId = recipeId)) {
-                                                    routing.navigate(recipesRoute)
-                                                    toastContainer.showToast(
-                                                        message = "Recipe deleted successfully!",
-                                                        color = BsColor.SUCCESSBG
-                                                    )
-                                                } else {
-                                                    toastContainer.showToast(
-                                                        message = "Recipe deletion failed",
-                                                        color = BsColor.DANGERBG
-                                                    )
+                            if (recipe.owner == getMyId()) {
+                                dropDown(
+                                    text = "",
+                                    icon = "fas fa-bars",
+                                    arrowVisible = false,
+                                    style = ButtonStyle.SECONDARY
+                                ) {
+                                    marginRight = 10.px
+                                    ddLink("Update", icon = "fas fa-edit") {
+                                        cursor = Cursor.POINTER
+                                        onClick {
+                                            routing.navigate("$recipesRoute/${recipe.id}/edit")
+                                        }
+                                    }
+                                    ddLink("Delete", icon = "fas fa-trash") {
+                                        cursor = Cursor.POINTER
+                                        onClick {
+                                            Confirm.show(
+                                                "Recipe deletion",
+                                                "Do you really want to delete this recipe?",
+                                                align = Align.LEFT
+                                            ) {
+                                                customScope.launch {
+                                                    if (deleteRecipe(recipeId = recipeId)) {
+                                                        routing.navigate(recipesRoute)
+                                                        toastContainer.showToast(
+                                                            message = "Recipe deleted successfully!",
+                                                            color = BsColor.SUCCESSBG
+                                                        )
+                                                    } else {
+                                                        toastContainer.showToast(
+                                                            message = "Recipe deletion failed",
+                                                            color = BsColor.DANGERBG
+                                                        )
+                                                    }
                                                 }
                                             }
                                         }

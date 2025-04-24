@@ -1,9 +1,11 @@
 package epicer.frontend.data
 
 import epicer.common.dto.ingredient.CreateIngredientDTO
+import epicer.common.dto.ingredient.UpdateIngredientDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.recipe.CreateRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
+import epicer.common.dto.recipe.UpdateRecipeDTO
 import epicer.frontend.backend_url
 import kotlinx.browser.localStorage
 import kotlinx.browser.window
@@ -84,6 +86,29 @@ class RecipeService {
                 response.status.toInt() == 204 // HttpStatusCode.NoContent
             } catch (e: Exception) {
                 console.error("Recipe registration failed:", e)
+                false
+            }
+        }
+
+        suspend fun updateRecipe(updateRecipeDTO: UpdateRecipeDTO): Boolean {
+            return try {
+                val token = localStorage.getItem("jwtToken") ?: return false
+
+                val response = window.fetch(
+                    "$backend_url/me/recipes",
+                    RequestInit(
+                        method = "PATCH",
+                        headers = json(
+                            "Content-Type" to "application/json",
+                            "Authorization" to "Bearer $token",
+                        ),
+                        body = Json.encodeToString(updateRecipeDTO)
+                    )
+                ).await()
+
+                response.status.toInt() == 204 // HttpStatusCode.NoContent
+            } catch (e: Exception) {
+                console.error("Recipe update failed:", e)
                 false
             }
         }

@@ -93,7 +93,6 @@ class CreateRecipeView(private val routing: Routing) : VPanel() {
                         min = 1
                         value = 1
                     },
-                    required = true
                 )
                 add(
                     CreateRecipeFormDTO::isPublic,

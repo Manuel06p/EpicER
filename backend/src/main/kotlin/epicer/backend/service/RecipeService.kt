@@ -1,5 +1,6 @@
 package epicer.backend.service
 
+import epicer.backend.model.ImagesTable
 import epicer.backend.model.IngredientsInRecipesTable
 import epicer.backend.model.IngredientsTable
 import epicer.backend.model.RecipesTable
@@ -12,11 +13,13 @@ import epicer.backend.service.ImageService.Companion.createImage
 import epicer.backend.service.ImageService.Companion.deleteImage
 import epicer.backend.service.ImageService.Companion.deleteImageFile
 import epicer.backend.suspendTransaction
+import epicer.common.dto.ImageFileDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.ingredient.FullIngredientDTO
 import epicer.common.dto.recipe.CreateRecipeDTO
 import epicer.common.dto.ingredientInRecipe.FullIngredientInRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
+import epicer.common.dto.recipe.UpdateRecipeDTO
 import epicer.common.dto.section.FullSectionDTO
 import epicer.common.dto.step.FullStepDTO
 import epicer.common.dto.unit.BaseUnitDTO
@@ -27,6 +30,7 @@ import org.jetbrains.exposed.sql.deleteWhere
 import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.or
 import org.jetbrains.exposed.sql.selectAll
+import org.jetbrains.exposed.sql.update
 import kotlin.collections.map
 
 class RecipeService {
@@ -185,11 +189,82 @@ class RecipeService {
                     portions = firstRow[RecipesTable.portions],
                     imageId = firstRow[RecipesTable.image]?.value,
                     ingredientsInRecipe = ingredientsInRecipe,
-                    sections = sections
+                    sections = sections,
+                    isPublic = firstRow[RecipesTable.is_public],
                 )
             } else {
                 null
             }
         }
+
+        suspend fun updateRecipe(dto: UpdateRecipeDTO, ownerId: Int): Boolean = suspendTransaction {
+            val current = RecipesTable
+                .selectAll()
+                .where(RecipesTable.id eq dto.id)
+                .singleOrNull() ?: throw IllegalArgumentException("Recipe not found")
+
+            // Check ownership
+            if (current[RecipesTable.owner].value != ownerId) {
+                throw IllegalAccessException("Recipe does not belong to the logged-in user")
+            }
+
+            val currentImageId = current[RecipesTable.image]?.value
+            var newImageFileDTO: ImageFileDTO? = null
+
+            try {
+                // If image update is requested and provided, create the new image
+                if (dto.updateImageBase64 && !dto.imageBase64.isNullOrBlank()) {
+                    newImageFileDTO = createImage(dto.imageBase64)
+                }
+
+                // Perform the update
+                RecipesTable.update({ RecipesTable.id eq dto.id }) {
+                    if (dto.name != null) {
+                        it[name] = dto.name.toString()
+                    }
+
+                    it[is_public] = dto.isPublic
+
+                    if (dto.updateDescription) {
+                        it[description] = dto.description
+                    }
+
+                    if (dto.updatePortions) {
+                        it[portions] = dto.portions
+                    }
+
+                    if (dto.updateImageBase64 && newImageFileDTO != null) {
+                        it[image] = newImageFileDTO.id
+                    }
+                }
+
+                // Clean up old image if a new one was created
+                if (newImageFileDTO != null && currentImageId != null) {
+                    val oldImage = ImagesTable
+                        .selectAll()
+                        .where(ImagesTable.id eq currentImageId)
+                        .singleOrNull()
+
+                    val extension = oldImage?.get(ImagesTable.extension)
+                    if (extension != null) {
+                        val oldPath = "uploads/images/$currentImageId.$extension"
+                        deleteImageFile(oldPath)
+                    }
+
+                    // Delete image from DB
+                    deleteImage(currentImageId)
+                }
+
+                true
+            } catch (e: Exception) {
+                // Rollback-safe cleanup
+                if (newImageFileDTO != null) {
+                    deleteImageFile(newImageFileDTO.path)
+                }
+                println("Failed to update recipe: ${e.message}")
+                throw e
+            }
+        }
+
     }
 }

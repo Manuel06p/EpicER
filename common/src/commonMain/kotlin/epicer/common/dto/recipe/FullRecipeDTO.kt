@@ -12,6 +12,7 @@ data class FullRecipeDTO(
     val portions: Int?,
     val owner: Int,
     val imageId: Int?,
+    val isPublic: Boolean,
 
     val ingredientsInRecipe: List<FullIngredientInRecipeDTO>,
     val sections: List<FullSectionDTO>,
