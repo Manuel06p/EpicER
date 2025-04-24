@@ -5,7 +5,7 @@ import org.jetbrains.exposed.sql.ReferenceOption
 
 object StepsTable: IntIdTable("steps") {
     val index = integer("index")
-    val title = varchar("name", 255).nullable()
+    val name = varchar("name", 255).nullable()
     val description = text("description").nullable()
     val section = reference("section", SectionsTable, onUpdate = ReferenceOption.CASCADE, onDelete = ReferenceOption.CASCADE)
     init {

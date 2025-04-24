@@ -1,13 +1,13 @@
-package epicer.common.dto.recipe
+package epicer.common.dto.section
 
 import kotlinx.serialization.Serializable
 
+
 @Serializable
-data class FullSectionDTO(
+data class UpdateSectionDTO(
     val id: Int,
     val index: Int,
     val name: String?,
     val description: String?,
-
-    val steps: List<FullStepDTO>,
+    val recipe: Int,
 )

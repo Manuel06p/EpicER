@@ -8,6 +8,6 @@ object RecipesTable : IntIdTable("recipes") {
     val description = text("description").nullable()
     val portions = integer("portions").nullable()
     val is_public = bool("is_public")
-    val owner = reference("owner", UsersTable, onUpdate = ReferenceOption.CASCADE, onDelete = ReferenceOption.CASCADE)
+    val owner = reference("owner", UsersTable, onUpdate = ReferenceOption.CASCADE, onDelete = ReferenceOption.RESTRICT)
     val image = reference("image", ImagesTable, onUpdate = ReferenceOption.CASCADE, onDelete = ReferenceOption.SET_NULL).nullable()
 }

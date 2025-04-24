@@ -8,6 +8,8 @@ import epicer.backend.service.IngredientInRecipeService.Companion.getIngredients
 import epicer.backend.service.IngredientService
 import epicer.backend.service.RecipeService
 import epicer.backend.service.RoleService
+import epicer.backend.service.SectionService
+import epicer.backend.service.StepService
 import epicer.backend.service.UnitService
 import epicer.backend.service.UnitTypeService
 import epicer.backend.service.UserService
@@ -22,6 +24,10 @@ import epicer.common.dto.ingredient.UpdateIngredientDTO
 import epicer.common.dto.ingredientInRecipe.CreateIngredientInRecipeDTO
 import epicer.common.dto.ingredientInRecipe.UpdateIngredientInRecipeDTO
 import epicer.common.dto.recipe.CreateRecipeDTO
+import epicer.common.dto.section.CreateSectionDTO
+import epicer.common.dto.section.UpdateSectionDTO
+import epicer.common.dto.step.CreateStepDTO
+import epicer.common.dto.step.UpdateStepDTO
 import epicer.common.dto.unit.CreateUnitDTO
 import epicer.common.dto.unit.UpdateUnitDTO
 import epicer.common.dto.unitType.CreateUnitTypeDTO
@@ -150,7 +156,7 @@ fun Application.configureRouting() {
                                 call.respond(message = HttpStatusCode.BadRequest)
                             }
                             route("/{ingredientInRecipeId}") {
-                                delete{
+                                delete {
                                     val recipeId = call.parameters["recipeId"]?.toIntOrNull()
                                     val ingredientInRecipeId = call.parameters["ingredientInRecipeId"]?.toIntOrNull()
 
@@ -158,7 +164,11 @@ fun Application.configureRouting() {
                                     val userId = principal?.payload?.getClaim("id")?.asInt()
 
                                     if (userId != null && recipeId != null && ingredientInRecipeId != null) {
-                                        IngredientInRecipeService.deleteIngredientInRecipe(ingredientInRecipeId, recipeId, userId)
+                                        IngredientInRecipeService.deleteIngredientInRecipe(
+                                            ingredientInRecipeId,
+                                            recipeId,
+                                            userId
+                                        )
                                         call.respond(HttpStatusCode.NoContent)
                                     }
                                 }
@@ -172,7 +182,10 @@ fun Application.configureRouting() {
 
                                 val createIngredientInRecipeDTO = call.receive<CreateIngredientInRecipeDTO>()
                                 if (userId != null) {
-                                    IngredientInRecipeService.createIngredientInRecipe(createIngredientInRecipeDTO, userId)
+                                    IngredientInRecipeService.createIngredientInRecipe(
+                                        createIngredientInRecipeDTO,
+                                        userId
+                                    )
                                 } else {
                                     call.respond(HttpStatusCode.BadRequest)
                                 }
@@ -182,6 +195,101 @@ fun Application.configureRouting() {
                                 call.respond(HttpStatusCode.BadRequest)
                             } catch (ex: JsonConvertException) {
                                 call.respond(HttpStatusCode.BadRequest)
+                            }
+                        }
+                    }
+                    route("/sections") {
+                        post {
+                            try {
+                                val principal = call.principal<JWTPrincipal>()
+                                val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                                val createSectionDTO = call.receive<CreateSectionDTO>()
+                                if (userId != null) {
+                                    SectionService.createSection(createSectionDTO, userId)
+                                } else {
+                                    call.respond(HttpStatusCode.BadRequest)
+                                }
+
+                                call.respond(HttpStatusCode.NoContent)
+                            } catch (ex: IllegalStateException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            } catch (ex: JsonConvertException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            }
+                        }
+                        put {
+                            val principal = call.principal<JWTPrincipal>()
+                            val userId = principal?.payload?.getClaim("id")?.asInt()
+                            if (userId != null) {
+                                val updateSectionDTO = call.receive<UpdateSectionDTO>()
+                                SectionService.updateSection(updateSectionDTO, userId)
+                                call.respond(HttpStatusCode.NoContent)
+                            }
+                            call.respond(HttpStatusCode.BadRequest)
+                        }
+                        route("/{sectionId}") {
+                            delete {
+                                val sectionId = call.parameters["sectionId"]?.toIntOrNull()
+
+                                val principal = call.principal<JWTPrincipal>()
+                                val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                                if (userId != null && sectionId != null) {
+                                    SectionService.deleteSection(
+                                        sectionId = sectionId,
+                                        owner = userId
+                                    )
+                                    call.respond(HttpStatusCode.NoContent)
+                                }
+                            }
+
+                        }
+                    }
+                    route("/steps") {
+                        post {
+                            try {
+                                val principal = call.principal<JWTPrincipal>()
+                                val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                                val createStepDTO = call.receive<CreateStepDTO>()
+                                if (userId != null) {
+                                    StepService.createStep(createStepDTO, userId)
+                                } else {
+                                    call.respond(HttpStatusCode.BadRequest)
+                                }
+
+                                call.respond(HttpStatusCode.NoContent)
+                            } catch (ex: IllegalStateException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            } catch (ex: JsonConvertException) {
+                                call.respond(HttpStatusCode.BadRequest)
+                            }
+                        }
+                        put {
+                            val principal = call.principal<JWTPrincipal>()
+                            val userId = principal?.payload?.getClaim("id")?.asInt()
+                            if (userId != null) {
+                                val updateStepDTO = call.receive<UpdateStepDTO>()
+                                StepService.updateStep(updateStepDTO, userId)
+                                call.respond(HttpStatusCode.NoContent)
+                            }
+                            call.respond(HttpStatusCode.BadRequest)
+                        }
+                        route("/{stepId}") {
+                            delete {
+                                val stepId = call.parameters["stepId"]?.toIntOrNull()
+
+                                val principal = call.principal<JWTPrincipal>()
+                                val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                                if (userId != null && stepId != null) {
+                                    StepService.deleteStep(
+                                        stepId = stepId,
+                                        owner = userId
+                                    )
+                                    call.respond(HttpStatusCode.NoContent)
+                                }
                             }
                         }
                     }
@@ -240,6 +348,7 @@ fun Application.configureRouting() {
 
             }
         }
+
         route("/ingredients") {
             authenticate("auth-jwt") {
                 withRoles(maintainerRole) {

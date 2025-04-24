@@ -70,6 +70,7 @@ import io.kvision.navbar.navText
 import io.kvision.navbar.navbar
 import io.kvision.panel.SimplePanel
 import io.kvision.panel.StackPanel
+import io.kvision.panel.VPanel
 import io.kvision.panel.gridPanel
 import io.kvision.panel.hPanel
 import io.kvision.panel.stackPanel
@@ -91,12 +92,12 @@ import org.w3c.dom.mediacapture.MediaDevices
 import kotlin.Double
 import kotlin.properties.Delegates.observable
 
-class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
+class RecipeView(private val routing: Routing, recipeId: Int) : VPanel() {
     init {
         val customScope = CoroutineScope(Dispatchers.Main)
 
         add(HeaderComponent(routing))
-
+        alignItems = AlignItems.CENTER
         customScope.launch {
             val recipe = getRecipe(recipeId)
             if (recipe != null) {
@@ -105,7 +106,8 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                 vPanel {
                     marginTop = 25.px
                     alignItems = AlignItems.CENTER
-
+                    width = 80.perc
+                    maxWidth = 800.px
                     marginRight = 50.px
                     marginLeft = 50.px
 
@@ -125,7 +127,6 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                     ) {
                         borderRadius = 25.px
                         width = 100.perc
-                        maxWidth = 900.px
 
                         lateinit var ingredientsButton: Button
                         lateinit var stepsButton: Button
@@ -193,17 +194,27 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                     }
 
                     panel = stackPanel {
-
+                        width = 100.perc
                         // Ingredients Panel
                         vPanel {
                             marginTop = 40.px
-
-                            recipe.ingredientsInRecipe.forEach { ingredientInRecipe ->
-                                ingredientInRecipeCard(ingredientInRecipe, portionsState, recipe.portions, customScope)
+                            alignItems = AlignItems.CENTER
+                            gridPanel(
+                                templateColumns = "repeat(auto-fill, minmax(300px, 1fr))",
+                                alignItems = AlignItems.CENTER,
+                                alignContent = AlignContent.CENTER,
+                                rowGap = 15
+                            ) {
+                                width = 90.perc
+                                recipe.ingredientsInRecipe.forEach { ingredientInRecipe ->
+                                    ingredientInRecipeCard(ingredientInRecipe, portionsState, recipe.portions, customScope)
+                                }
                             }
+
                             if (recipe.owner == getMyId()) {
                                 button("Edit ingredients", icon = "fas fa-edit") {
                                     marginTop = 25.px
+                                    width = 100.perc
                                     onClick {
                                         routing.navigate("$recipesRoute/$recipeId/ingredients")
                                     }
@@ -214,24 +225,27 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                         vPanel {
                             marginTop = 25.px
                             padding = 15.px
-                            alignItems = AlignItems.START  // Align items to the left to maintain readability
-
-
+                            alignItems = AlignItems.STRETCH // <-- This is key
                             ol() {
                                 listStyle = ListStyle(ListStyleType.NONE)
                                 recipe.sections.forEach { section ->
                                     // Section Title
-                                    h3("${section.index}. ${section.name}") {
+                                    h3("${section.index}. ${section.name?:""}") {
                                         marginTop = 20.px
                                         marginBottom = 10.px
                                         fontWeight = FontWeight.BOLD
                                         fontSize = 30.px
                                     }
+                                    h5(section.description ?: "") {
+                                        marginBottom = 15.px
+                                        fontWeight = FontWeight.LIGHTER
+                                        fontSize = 20.px
+                                    }
                                     ol() {
                                         listStyle = ListStyle(ListStyleType.NONE)
                                         section.steps.forEach { step ->
                                             // Step Title
-                                            h4("${step.index}. ${step.name}") {
+                                            h4("Step ${step.index}. ${step.name?:""}") {
                                                 marginTop = 15.px
                                                 marginBottom = 5.px
                                                 fontWeight = FontWeight.NORMAL
@@ -247,8 +261,11 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                                                 }
 
                                                 // Ingredients list for this step
-                                                ul() {
-                                                    listStyle = ListStyle(ListStyleType.NONE)
+                                                gridPanel(
+                                                    templateColumns = "repeat(auto-fill, minmax(200px, 1fr))",
+                                                    alignItems = AlignItems.CENTER,
+                                                    alignContent = AlignContent.CENTER,
+                                                )  {
                                                     step.ingredientsInRecipe.forEach { ingredientInRecipe ->
                                                         // Card or panel to display ingredient info
                                                         ingredientInRecipeCard(
@@ -259,7 +276,8 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                                                             imageSize = 64.px,
                                                             nameFontSize = 18.px,
                                                             quantityFontSize = 15.px,
-                                                            imageRightMargin = 20.px
+                                                            imageRightMargin = 20.px,
+                                                            leftMargin = 40.px,
                                                         )
                                                     }
                                                 }
@@ -270,6 +288,15 @@ class RecipeView(private val routing: Routing, recipeId: Int) : SimplePanel() {
                                         }
                                     }
 
+                                }
+                            }
+                            if (recipe.owner == getMyId()) {
+                                button("Edit steps", icon = "fas fa-edit") {
+                                    marginTop = 25.px
+                                    width = 100.perc
+                                    onClick {
+                                        routing.navigate("$recipesRoute/$recipeId/steps")
+                                    }
                                 }
                             }
 

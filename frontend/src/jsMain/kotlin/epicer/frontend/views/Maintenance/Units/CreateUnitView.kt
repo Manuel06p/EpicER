@@ -88,7 +88,7 @@ class CreateUnitView(private val routing: Routing) : VPanel() {
                     add(
                         CreateUnitFormDTO::conversionFactor,
                         Numeric(label = "Conversion factor: ") {
-                            decimals = 3
+                            decimals = 2
                             placeholder = "ex: 1,000"
                             min = 0
                         },

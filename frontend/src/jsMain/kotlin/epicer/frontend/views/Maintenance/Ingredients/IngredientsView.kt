@@ -107,7 +107,7 @@ class IngredientsView(private val routing: Routing) : SimplePanel() {
                         addBsBgColor(BsBgColor.BODYSECONDARY)
                         padding = 20.px
                         borderRadius = 16.px
-                        height = 300.px
+                        minHeight = 300.px
                         width = 80.perc
                         justifyContent = JustifyContent.SPACEBETWEEN
                         display = Display.FLEX

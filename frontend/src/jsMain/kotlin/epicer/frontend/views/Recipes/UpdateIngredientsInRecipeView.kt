@@ -160,7 +160,7 @@ class UpdateIngredientsInRecipeView(private val routing: Routing, val recipeId: 
                             add(
                                 IngredientInRecipeFormDTO::quantity,
                                 Numeric(label = "Quantity") {
-                                    decimals = 3
+                                    decimals = 2
                                     min = 0
                                     value = ingredientInRecipe.quantity
                                 }
@@ -342,7 +342,7 @@ class CreateIngredientInRecipeModal(
             add(
                 IngredientInRecipeFormDTO::quantity,
                 Numeric(label = "Quantity") {
-                    decimals = 3
+                    decimals = 2
                     placeholder = ""
                     min = 0
                 },

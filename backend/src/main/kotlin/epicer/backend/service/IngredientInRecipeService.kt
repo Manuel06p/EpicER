@@ -12,7 +12,7 @@ import epicer.backend.suspendTransaction
 import epicer.common.dto.ingredient.FullIngredientDTO
 import epicer.common.dto.ingredientInRecipe.CreateIngredientInRecipeDTO
 import epicer.common.dto.ingredientInRecipe.UpdateIngredientInRecipeDTO
-import epicer.common.dto.recipe.FullIngredientInRecipeDTO
+import epicer.common.dto.ingredientInRecipe.FullIngredientInRecipeDTO
 import epicer.common.dto.unit.BaseUnitDTO
 import epicer.common.dto.unit.CreateUnitDTO
 import org.jetbrains.exposed.sql.JoinType

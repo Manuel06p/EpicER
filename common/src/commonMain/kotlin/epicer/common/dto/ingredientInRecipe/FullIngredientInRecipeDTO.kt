@@ -1,4 +1,4 @@
-package epicer.common.dto.recipe
+package epicer.common.dto.ingredientInRecipe
 
 import epicer.common.dto.ingredient.FullIngredientDTO
 import epicer.common.dto.unit.BaseUnitDTO

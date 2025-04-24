@@ -88,7 +88,7 @@ class UpdateUnitView(private val routing: Routing, unitId: Int) : VPanel() {
                     add(
                         UpdateUnitFormDTO::conversionFactor,
                         Numeric(label = "Conversion factor (Leave it blank to not update it)") {
-                            decimals = 3
+                            decimals = 2
                             placeholder = "Current conversion factor: ${unit?.conversionFactor}"
                             min = 0
                         },

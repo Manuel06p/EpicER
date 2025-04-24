@@ -5,7 +5,7 @@ import epicer.common.dto.ingredient.FullIngredientDTO
 import epicer.common.dto.ingredient.UpdateIngredientDTO
 import epicer.common.dto.ingredientInRecipe.CreateIngredientInRecipeDTO
 import epicer.common.dto.ingredientInRecipe.UpdateIngredientInRecipeDTO
-import epicer.common.dto.recipe.FullIngredientInRecipeDTO
+import epicer.common.dto.ingredientInRecipe.FullIngredientInRecipeDTO
 import epicer.frontend.backend_url
 import kotlinx.browser.localStorage
 import kotlinx.browser.window

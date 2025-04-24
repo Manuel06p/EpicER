@@ -11,14 +11,13 @@ import epicer.backend.model.UnitsTable
 import epicer.backend.service.ImageService.Companion.createImage
 import epicer.backend.service.ImageService.Companion.deleteImageFile
 import epicer.backend.suspendTransaction
-import epicer.common.dto.ingredient.CreateIngredientDTO
 import epicer.common.dto.recipe.BaseRecipeDTO
 import epicer.common.dto.ingredient.FullIngredientDTO
 import epicer.common.dto.recipe.CreateRecipeDTO
-import epicer.common.dto.recipe.FullIngredientInRecipeDTO
+import epicer.common.dto.ingredientInRecipe.FullIngredientInRecipeDTO
 import epicer.common.dto.recipe.FullRecipeDTO
-import epicer.common.dto.recipe.FullSectionDTO
-import epicer.common.dto.recipe.FullStepDTO
+import epicer.common.dto.section.FullSectionDTO
+import epicer.common.dto.step.FullStepDTO
 import epicer.common.dto.unit.BaseUnitDTO
 import org.jetbrains.exposed.sql.JoinType
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
@@ -126,7 +125,7 @@ class RecipeService {
                     FullSectionDTO(
                         id = sectionId!!,
                         index = sectionRows.first()[SectionsTable.index],
-                        name = sectionRows.first()[SectionsTable.title],
+                        name = sectionRows.first()[SectionsTable.name],
                         description = sectionRows.first()[SectionsTable.description],
                         steps = sectionRows
                             .groupBy { it[StepsTable.id]?.value }
@@ -135,7 +134,7 @@ class RecipeService {
                                 FullStepDTO(
                                     id = stepId!!,
                                     index = stepRows.first()[StepsTable.index],
-                                    name = stepRows.first()[StepsTable.title],
+                                    name = stepRows.first()[StepsTable.name],
                                     description = stepRows.first()[StepsTable.description],
                                     images = stepRows.mapNotNull { it[StepsImagesTable.image]?.value }.distinct(),
                                     ingredientsInRecipe = stepRows.mapNotNull { row ->
@@ -145,8 +144,10 @@ class RecipeService {
                                     }.distinctBy { it.id }
                                 )
                             }
+                            .sortedBy { it.index }
                     )
                 }
+                .sortedBy { it.index }
 
             if (rows.isNotEmpty()) {
                 val firstRow = rows.first()

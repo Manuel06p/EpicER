@@ -1,5 +1,7 @@
 package epicer.common.dto.recipe
 
+import epicer.common.dto.ingredientInRecipe.FullIngredientInRecipeDTO
+import epicer.common.dto.section.FullSectionDTO
 import kotlinx.serialization.Serializable
 
 @Serializable
