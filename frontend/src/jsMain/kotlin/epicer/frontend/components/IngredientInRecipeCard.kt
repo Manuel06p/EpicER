@@ -95,7 +95,7 @@ fun Container.ingredientInRecipeCard(
                     }
 
                 }
-                h6("${adjustedQuantity ?: "-"} ${ingredientInRecipe.unit?.shortName ?: ""}") {
+                h6("${adjustedQuantity.asDynamic()?.toFixed(2) ?: "-"} ${ingredientInRecipe.unit?.shortName ?: ""}") {
                     fontSize = quantityFontSize
                 }
             }
