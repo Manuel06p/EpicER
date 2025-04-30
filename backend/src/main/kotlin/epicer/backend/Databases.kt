@@ -27,10 +27,10 @@ import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 
 fun Application.configureDatabases() {
     Database.connect(
-        "jdbc:mariadb://192.168.1.100:3306/epicer",
+        "jdbc:mariadb://localhost:3306/epicer",
         driver = "org.mariadb.jdbc.Driver",
-        user = "epicer",
-        password = "epicerpass"
+        user = "user",
+        password = "user"
     )
 
     transaction {

@@ -1,8 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="frontend-js-1.0.0-SNAPSHOT">
     <output-path>$PROJECT_DIR$/frontend/build/libs</output-path>
-    <root id="archive" name="frontend-js-1.0.0-SNAPSHOT.jar">
-      <element id="module-output" name="epicer.frontend.jsMain" />
-    </root>
+    <root id="archive" name="frontend-js-1.0.0-SNAPSHOT.jar" />
   </artifact>
 </component>
