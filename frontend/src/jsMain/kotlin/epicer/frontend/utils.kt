@@ -19,6 +19,12 @@ fun isRole(role: String) : Boolean {
     return (roles != null && roles.contains(role))
 }
 
+fun getMyUser(): BaseUserDTO? {
+    val myUserDTO = localStorage.getItem("baseUserDTO")?.let { Json.decodeFromString<BaseUserDTO>(it) }
+
+    return myUserDTO
+}
+
 fun getMyId(): Int? {
     val id = localStorage.getItem("baseUserDTO")
         ?.let { Json.decodeFromString<BaseUserDTO>(it).id }

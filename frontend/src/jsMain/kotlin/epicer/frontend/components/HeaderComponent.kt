@@ -109,7 +109,7 @@ class HeaderComponent(private val routing: Routing): Navbar() {
 
             dropDown(
                 text = localStorage.getItem("baseUserDTO")
-                    ?.let { Json.decodeFromString<BaseUserDTO>(it).username }
+                    ?.let { Json.decodeFromString<BaseUserDTO>(it).name }
                     ?: "!UsernameNotFound",
                 arrowVisible = false,
                 icon = "fas fa-circle-user",
@@ -118,7 +118,13 @@ class HeaderComponent(private val routing: Routing): Navbar() {
             ) {
                 fontSize = 30.px
                 marginRight = 10.px
-                ddLink(label = "Logout", icon = "fas fa-logout") {
+                ddLink(label = "Edit user") {
+                    cursor = Cursor.POINTER
+                    onClick {
+                        routing.navigate("/my-user")
+                    }
+                }
+                ddLink(label = "Logout") {
                     cursor = Cursor.POINTER
                     onClick {
                         // Your logout logic here:

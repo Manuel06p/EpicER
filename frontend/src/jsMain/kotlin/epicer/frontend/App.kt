@@ -19,6 +19,7 @@ import epicer.frontend.views.Maintenance.Units.CreateUnitView
 import epicer.frontend.views.Maintenance.Units.UnitsView
 import epicer.frontend.views.Maintenance.Units.UpdateUnitTypeView
 import epicer.frontend.views.Maintenance.Units.UpdateUnitView
+import epicer.frontend.views.MyUserView
 import epicer.frontend.views.Recipes.AllRecipesView
 import epicer.frontend.views.Recipes.UpdateIngredientsInRecipeView
 import epicer.frontend.views.Recipes.UpdateRecipeView
@@ -117,6 +118,12 @@ class App : Application() {
             .on("/login", {
                 main.removeAll()
                 main.add(LoginView(routing))
+            })
+            .on("/my-user", {
+                authNavigate(routing, toastContainer) {
+                    main.removeAll()
+                    main.add(MyUserView(routing))
+                }
             })
             .on(recipesRoute, {
                 authNavigate(routing, toastContainer) {

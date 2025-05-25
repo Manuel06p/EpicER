@@ -145,6 +145,30 @@ class UserService {
             }
         }
 
+        // Updates a new user
+        suspend fun updateMyUser(updateUserDTO: UpdateUserDTO): Boolean {
+            return try {
+                val token = localStorage.getItem("jwtToken") ?: return false
+
+                val response = window.fetch(
+                    "$backend_url/me/user",
+                    RequestInit(
+                        method = "PATCH",
+                        headers = json(
+                            "Content-Type" to "application/json",
+                            "Authorization" to "Bearer $token",
+                        ),
+                        body = Json.encodeToString(updateUserDTO)
+                    )
+                ).await()
+
+                response.status.toInt() == 204 // HttpStatusCode.NoContent
+            } catch (e: Exception) {
+                console.error("User update failed:", e)
+                false
+            }
+        }
+
         // Get all roles
         suspend fun getRoles(): List<RoleDTO>? {
             try {

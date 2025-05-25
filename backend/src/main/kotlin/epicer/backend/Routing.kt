@@ -381,6 +381,20 @@ fun Application.configureRouting() {
                             call.respond(HttpStatusCode.NoContent)
                         }
                     }
+                    patch() {
+                        val updateUser = call.receive<UpdateUserDTO>()
+
+                        val principal = call.principal<JWTPrincipal>()
+                        val userId = principal?.payload?.getClaim("id")?.asInt()
+
+                        if (userId != null && updateUser.id == userId) {
+                            UserService.updateUser(updateUser)
+                            call.respond(HttpStatusCode.NoContent)
+                        } else {
+                            call.respond(HttpStatusCode.Unauthorized)
+                        }
+
+                    }
                 }
 
             }

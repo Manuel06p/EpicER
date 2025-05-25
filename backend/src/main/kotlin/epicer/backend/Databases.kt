@@ -27,7 +27,7 @@ import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 
 fun Application.configureDatabases() {
     Database.connect(
-        "jdbc:mariadb://localhost:3306/epicer",
+        "jdbc:mariadb://server-00:3306/epicer",
         driver = "org.mariadb.jdbc.Driver",
         user = "user",
         password = "user"

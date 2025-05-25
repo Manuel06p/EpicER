@@ -158,8 +158,6 @@ class UpdateUserView(private val routing: Routing, userId: Int) : VPanel() {
                                 ?.mapNotNull { it.toIntOrNull() }  // Convert to Int safely
                                 ?: emptyList()
 
-                            println("Roles: $roleIds")
-                            println(formPanel.getData())
 
 
                             val updateUserDTO = UpdateUserDTO(
